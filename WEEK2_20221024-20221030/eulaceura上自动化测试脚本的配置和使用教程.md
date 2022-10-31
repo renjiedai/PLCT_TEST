@@ -4,7 +4,7 @@
 
 进行多线程自动化测试脚本的配置和使用之前，建议首先学习以下知识：
 
-- [在eulaceura系统上配置mugen的教程]()
+- [mugen在eulaceura系统上的配置使用](https://github.com/renjiedai/PLCT_TEST/blob/master/WEEK2_20221024-20221030/mugen%E5%9C%A8eulaceura%E7%B3%BB%E7%BB%9F%E4%B8%8A%E7%9A%84%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8.md)
 - [openEuler系统上自动化测试脚本的基本知识](https://github.com/brsf11/mugen-riscv/tree/riscv/doc_riscv/Markdown)
 
 ### 环境配置
