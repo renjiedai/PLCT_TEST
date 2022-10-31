@@ -1,0 +1,29 @@
+Sun Oct 30 23:09:46 2022 - INFO  - Start to prepare the test environment.
+ln: 无法创建符号链接 '/etc/raddb/mods-enabled/counter': No such file or directory
+Job for radiusd.service failed because the control process exited with error code.
+See "systemctl status radiusd.service" and "journalctl -xeu radiusd.service" for details.
+Sun Oct 30 23:11:47 2022 - INFO  - End to prepare the test environment.
+Sun Oct 30 23:11:50 2022 - INFO  - Start to run test.
+Cannot open /etc/raddb/db.daily: No such file or directory
+Sun Oct 30 23:11:54 2022 - ERROR - rad_counter --user execution failed.
+Sun Oct 30 23:11:56 2022 - ERROR - oe_test_freeradius_freeradius-utils_rad_counter.sh line 36
+Cannot open /etc/raddb/db.daily: No such file or directory
+Sun Oct 30 23:12:00 2022 - ERROR - rad_counter --match execution failed.
+Sun Oct 30 23:12:02 2022 - ERROR - oe_test_freeradius_freeradius-utils_rad_counter.sh line 38
+Cannot open /etc/raddb/db.daily: No such file or directory
+Sun Oct 30 23:12:07 2022 - ERROR - rad_counter --reset execution failed.
+Sun Oct 30 23:12:09 2022 - ERROR - oe_test_freeradius_freeradius-utils_rad_counter.sh line 40
+Usage: rad_counter --file=<counter filename> [OPTION...]
+Cannot open /etc/raddb/db.daily: No such file or directory
+Sun Oct 30 23:12:14 2022 - ERROR - rad_counter --hours execution failed.
+Sun Oct 30 23:12:17 2022 - ERROR - oe_test_freeradius_freeradius-utils_rad_counter.sh line 44
+Cannot open /etc/raddb/db.daily: No such file or directory
+Sun Oct 30 23:12:21 2022 - ERROR - rad_counter --minutes execution failed.
+Sun Oct 30 23:12:23 2022 - ERROR - oe_test_freeradius_freeradius-utils_rad_counter.sh line 46
+Cannot open /etc/raddb/db.daily: No such file or directory
+Sun Oct 30 23:12:27 2022 - ERROR - rad_counter --seconds execution failed.
+Sun Oct 30 23:12:29 2022 - ERROR - oe_test_freeradius_freeradius-utils_rad_counter.sh line 48
+Sun Oct 30 23:12:31 2022 - INFO  - End to run test.
+Sun Oct 30 23:12:34 2022 - ERROR - failed to execute the case.
+Sun Oct 30 23:12:36 2022 - INFO  - Start to restore the test environment.
+Sun Oct 30 23:13:31 2022 - INFO  - End to restore the test environment.

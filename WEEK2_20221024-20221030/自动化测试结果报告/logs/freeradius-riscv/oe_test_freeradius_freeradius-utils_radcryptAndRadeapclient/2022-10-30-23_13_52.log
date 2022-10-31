@@ -1,0 +1,19 @@
+Sun Oct 30 23:14:11 2022 - INFO  - Start to prepare the test environment.
+Sun Oct 30 23:16:03 2022 - INFO  - End to prepare the test environment.
+Sun Oct 30 23:16:05 2022 - INFO  - Start to run test.
+kDtRDJNB6J1oA
+$1$7iK.o8Wh$21QSU/ZhT4vwfOK1UWO1l.
+Password OK
+Job for radiusd.service failed because the control process exited with error code.
+See "systemctl status radiusd.service" and "journalctl -xeu radiusd.service" for details.
+Sun Oct 30 23:16:32 2022 : Info: Main loop: done.
+Sun Oct 30 23:16:48 2022 : Info: Main loop: done.
+Sun Oct 30 23:17:04 2022 : Info: Main loop: done.
+Sun Oct 30 23:17:20 2022 : Info: Main loop: done.
+Sun Oct 30 23:17:37 2022 : Info: Main loop: done.
+Usage: radeapclient [options] server[:port] <command> [<secret>]
+  -h                     Print usage help information.
+Sun Oct 30 23:17:39 2022 - INFO  - End to run test.
+Sun Oct 30 23:17:42 2022 - INFO  - succeed to execute the case.
+Sun Oct 30 23:17:44 2022 - INFO  - Start to restore the test environment.
+Sun Oct 30 23:18:39 2022 - INFO  - End to restore the test environment.

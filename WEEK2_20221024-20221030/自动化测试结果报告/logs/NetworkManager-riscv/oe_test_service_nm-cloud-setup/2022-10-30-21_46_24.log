@@ -1,0 +1,9 @@
+Sun Oct 30 21:46:58 2022 - INFO  - Start environmental preparation.
+Sun Oct 30 21:47:10 2022 - INFO  - End of environmental preparation!
+Sun Oct 30 21:47:13 2022 - INFO  - Start testing...
+/etc/systemd/system/NetworkManager.service.wants/nm-cloud-setup.service
+Removed /etc/systemd/system/NetworkManager.service.wants/nm-cloud-setup.service.
+find: ‘/etc/systemd/system/NetworkManager.service.wants/nm-cloud-setup.service’: No such file or directory
+Sun Oct 30 21:47:51 2022 - INFO  - Finish test!
+Sun Oct 30 21:47:54 2022 - INFO  - succeed to execute the case.
+Sun Oct 30 21:47:57 2022 - INFO  - oe_test_service_nm-cloud-setup.sh post_test
