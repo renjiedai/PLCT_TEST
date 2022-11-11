@@ -1,0 +1,12 @@
+Fri Nov  4 02:53:35 2022 - INFO  - Start environmental preparation.
+Fri Nov  4 02:53:39 2022 - INFO  - End of environmental preparation!
+Fri Nov  4 02:53:42 2022 - INFO  - Start executing testcase.
+新的密码： 重新输入新的密码： 更改用户 example 的密码 。
+passwd：所有的身份验证令牌已经成功更新。
+/etc/shadow: Permission denied
+/usr/bin/less cap_dac_override=eip
+root:$6$OXhNxlKO4hwzddc2$BM/OPbzU7k12TKxgLk6EO2FSCYqX/uaKq75E08/IlaAy2gyjjIyTWyOVNgCVdppC/5j6EjZGEGyok.isK.SMH.:19268:0:99999:7:::
+Fri Nov  4 02:54:10 2022 - INFO  - Finish testcase execution.
+Fri Nov  4 02:54:13 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 02:54:17 2022 - INFO  - start environment cleanup.
+Fri Nov  4 02:54:24 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,2445 @@
+Fri Nov  4 03:52:42 2022 - INFO  - Start to prepare the test environment.
+Fri Nov  4 03:55:51 2022 - INFO  - End to prepare the test environment.
+Fri Nov  4 03:55:56 2022 - INFO  - Start to run test.
+xml2wbxml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  xml2wbxml -o output.wbxml input.xml
+  xml2wbxml -k -n -v 1.1 -o output.wbxml input.xml
+
+Options: 
+    -o output.wbxml : output file
+    -k : keep ignorable whitespaces (Default: ignore)
+    -n : do NOT generate String Table (Default: generate)
+    -v X (WBXML Version of output document)
+       1.0 : WBXML 1.0
+       1.1 : WBXML 1.1
+       1.2 : WBXML 1.2
+       1.3 : WBXML 1.3
+    -a : anonymous format
+         do NOT include any format information (e.g. public ID or DTD)
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:56:00 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 34
+diff: output.xml: No such file or directory
+Fri Nov  4 03:56:04 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 36
+cp: 无法获取'output.xml' 的文件状态(stat): No such file or directory
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:56:08 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 41
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+diff: output.xml: No such file or directory
+diff: output.xml-bak: No such file or directory
+Fri Nov  4 03:56:13 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 45
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:56:17 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 49
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+wc: output.xml: No such file or directory
+Fri Nov  4 03:56:21 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 53
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+Fri Nov  4 03:56:26 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 58
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:56:30 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 62
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:56:35 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 66
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:56:40 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 70
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:56:44 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 74
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:56:49 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 78
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:56:53 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 82
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:56:58 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 86
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:57:03 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 90
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:57:07 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 94
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:57:12 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 98
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:57:16 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 102
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:57:20 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 106
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:57:25 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 110
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:57:29 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 114
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:57:34 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 118
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:57:38 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 122
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:57:42 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 126
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:57:46 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 130
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:57:51 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 134
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:57:55 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 138
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:57:59 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 142
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:58:04 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 146
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:58:09 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 150
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:58:13 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 154
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:58:17 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 158
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:58:21 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 162
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:58:26 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 166
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:58:31 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 170
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+grep: output.xml: No such file or directory
+Fri Nov  4 03:58:35 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 174
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
+Fri Nov  4 03:58:40 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 179
+diff: output.xml: No such file or directory
+Fri Nov  4 03:58:44 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 181
+Fri Nov  4 03:58:48 2022 - INFO  - End to run test.
+Fri Nov  4 03:58:52 2022 - ERROR - failed to execute the case.
+Fri Nov  4 03:58:57 2022 - INFO  - Start to restore the test environment.
+Fri Nov  4 04:00:27 2022 - INFO  - End to restore the test environment.

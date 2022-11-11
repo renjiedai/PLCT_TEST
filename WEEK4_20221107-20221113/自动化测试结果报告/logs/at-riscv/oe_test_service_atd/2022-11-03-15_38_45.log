@@ -1,0 +1,17 @@
+Thu Nov  3 15:39:27 2022 - INFO  - Start environmental preparation.
+Thu Nov  3 15:40:37 2022 - INFO  - pkgs:(at) is already installed
+Thu Nov  3 15:40:43 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 15:40:47 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-11-03 15:40:49 CST; 11s ago
+     Active: inactive (dead) since Thu 2022-11-03 15:41:01 CST; 11s ago
+     Active: active (running) since Thu 2022-11-03 15:41:13 CST; 10s ago
+find: ‘/etc/systemd/system/multi-user.target.wants/atd.service’: No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/atd.service → /usr/lib/systemd/system/atd.service.
+/etc/systemd/system/multi-user.target.wants/atd.service
+Failed to reload atd.service: Job type reload is not applicable for unit atd.service.
+     Active: active (running) since Thu 2022-11-03 15:41:13 CST; 58s ago
+Thu Nov  3 15:42:17 2022 - INFO  - Finish test!
+Thu Nov  3 15:42:21 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 15:42:26 2022 - INFO  - start environment cleanup.
+Thu Nov  3 15:42:30 2022 - WARN  - no thing to do.
+Thu Nov  3 15:42:35 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,19 @@
+Fri Nov  4 00:30:43 2022 - INFO  - Start environmental preparation.
+Fri Nov  4 00:37:58 2022 - INFO  - End of environmental preparation!
+Fri Nov  4 00:38:04 2022 - INFO  - Start testing...
+     Active: active (running) since Fri 2022-11-04 00:38:07 CST; 13s ago
+Fri Nov  4 00:38:55 2022 - ERROR - gmond.service stop failed
+Fri Nov  4 00:39:03 2022 - ERROR - ../common/common_lib.sh line 42
+     Active: active (running) since Fri 2022-11-04 00:39:07 CST; 16s ago
+/etc/systemd/system/multi-user.target.wants/gmond.service
+Removed /etc/systemd/system/multi-user.target.wants/gmond.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/gmond.service’: No such file or directory
+11月 04 00:38:32 eulaceura systemd[1]: gmond.service: Failed with result 'timeout'.
+Fri Nov  4 00:40:46 2022 - ERROR - There is an error message for the log of gmond.service
+Fri Nov  4 00:40:51 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload gmond.service: Job type reload is not applicable for unit gmond.service.
+     Active: active (running) since Fri 2022-11-04 00:39:07 CST; 1min 48s ago
+Fri Nov  4 00:41:00 2022 - INFO  - Finish test!
+Fri Nov  4 00:41:07 2022 - ERROR - failed to execute the case.
+Fri Nov  4 00:41:16 2022 - INFO  - start environment cleanup.
+Fri Nov  4 00:44:43 2022 - INFO  - Finish environment cleanup!

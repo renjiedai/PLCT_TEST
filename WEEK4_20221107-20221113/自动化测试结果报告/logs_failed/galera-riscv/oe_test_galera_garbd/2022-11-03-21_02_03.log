@@ -1,0 +1,127 @@
+Thu Nov  3 21:02:36 2022 - INFO  - Start to prepare the test environment!
+Removed /etc/systemd/system/multi-user.target.wants/firewalld.service.
+Removed /etc/systemd/system/dbus-org.fedoraproject.FirewallD1.service.
+setenforce: SELinux is disabled
+Generating RSA private key, 2048 bit long modulus (2 primes)
+............+++++
+.........................+++++
+e is 65537 (0x010001)
+spawn openssl req -new -x509 -nodes -days 3600 -key galera_zl/ca-key.pem -out galera_zl/ca.pem
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [AU]:
+State or Province Name (full name) [Some-State]:
+Locality Name (eg, city) []:
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:
+Organizational Unit Name (eg, section) []:
+Common Name (e.g. server FQDN or YOUR name) []:
+Email Address []:
+spawn openssl req -newkey rsa:2048 -days 3600 -nodes -keyout galera_zl/server-key.pem -out galera_zl/server-req.pem
+Ignoring -days; not generating a certificate
+Generating a RSA private key
+.......................................................+++++
+...................+++++
+writing new private key to 'galera_zl/server-key.pem'
+-----
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [AU]:
+State or Province Name (full name) [Some-State]:
+Locality Name (eg, city) []:
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:
+Organizational Unit Name (eg, section) []:
+Common Name (e.g. server FQDN or YOUR name) []:
+Email Address []:
+
+Please enter the following 'extra' attributes
+to be sent with your certificate request
+A challenge password []:
+An optional company name []:
+expect: spawn id exp6 not open
+    while executing
+"expect eof"
+writing RSA key
+Signature ok
+subject=C = AU, ST = Some-State, O = Internet Widgits Pty Ltd
+Getting CA Private Key
+spawn openssl req -newkey rsa:2048 -days 3600 -nodes -keyout galera_zl/client-key.pem -out galera_zl/client-req.pem
+Ignoring -days; not generating a certificate
+Generating a RSA private key
+.................+++++
+..........................................................................+++++
+writing new private key to 'galera_zl/client-key.pem'
+-----
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [AU]:
+State or Province Name (full name) [Some-State]:
+Locality Name (eg, city) []:
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:
+Organizational Unit Name (eg, section) []:
+Common Name (e.g. server FQDN or YOUR name) []:
+Email Address []:
+
+Please enter the following 'extra' attributes
+to be sent with your certificate request
+A challenge password []:
+An optional company name []:
+expect: spawn id exp3 not open
+    while executing
+"expect eof"
+writing RSA key
+Signature ok
+subject=C = AU, ST = Some-State, O = Internet Widgits Pty Ltd
+Getting CA Private Key
+Thu Nov  3 21:06:10 2022 - INFO  - End to prepare the test environment!
+Thu Nov  3 21:06:14 2022 - INFO  - Start executing testcase!
+oe_test_galera_garbd.sh:行31: garbd：未找到命令
+kill：用法：kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+Thu Nov  3 21:06:21 2022 - ERROR - The help message is printed incorrectly
+Thu Nov  3 21:06:25 2022 - ERROR - oe_test_galera_garbd.sh line 36
+oe_test_galera_garbd.sh:行37: garbd：未找到命令
+kill：用法：kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+oe_test_galera_garbd.sh:行42: garbd：未找到命令
+kill：用法：kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+oe_test_galera_garbd.sh:行46: garbd：未找到命令
+kill：用法：kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+oe_test_galera_garbd.sh:行51: garbd：未找到命令
+kill：用法：kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+oe_test_galera_garbd.sh:行56: garbd：未找到命令
+kill：用法：kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+Thu Nov  3 21:06:57 2022 - ERROR - The node_name does not exist
+Thu Nov  3 21:07:01 2022 - ERROR - oe_test_galera_garbd.sh line 60
+oe_test_galera_garbd.sh:行61: garbd：未找到命令
+kill：用法：kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+Thu Nov  3 21:07:06 2022 - ERROR - The options was not found
+Thu Nov  3 21:07:10 2022 - ERROR - oe_test_galera_garbd.sh line 65
+oe_test_galera_garbd.sh:行66: garbd：未找到命令
+Thu Nov  3 21:07:14 2022 - ERROR - The node_name was not found
+Thu Nov  3 21:07:18 2022 - ERROR - oe_test_galera_garbd.sh line 69
+kill：用法：kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+Thu Nov  3 21:07:23 2022 - ERROR - The version number is printed incorrectly
+Thu Nov  3 21:07:27 2022 - ERROR - oe_test_galera_garbd.sh line 72
+Thu Nov  3 21:07:31 2022 - INFO  - End of testcase execution!
+Thu Nov  3 21:07:35 2022 - ERROR - failed to execute the case.
+Thu Nov  3 21:07:38 2022 - INFO  - Start environment cleanup.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:01:40 ago on 2022年11月03日 星期四 21时03分53秒.\nNo match for argument: galera\nPackage openssl-1:1.1.1m-22H1.2.0.riscv64 is already installed.\nError: Unable to find a match: galera'
+Thu Nov  3 21:07:58 2022 - INFO  - Finish environment cleanup.

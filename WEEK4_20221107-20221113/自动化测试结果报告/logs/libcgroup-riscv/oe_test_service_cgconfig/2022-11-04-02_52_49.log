@@ -1,0 +1,17 @@
+Fri Nov  4 02:53:21 2022 - INFO  - Start environmental preparation.
+Fri Nov  4 02:54:15 2022 - INFO  - pkgs:(libcgroup) is already installed
+Fri Nov  4 02:54:20 2022 - INFO  - End of environmental preparation!
+Fri Nov  4 02:54:24 2022 - INFO  - Start testing...
+     Active: active (exited) since Fri 2022-11-04 02:54:25 CST; 11s ago
+     Active: inactive (dead)
+     Active: active (exited) since Fri 2022-11-04 02:54:50 CST; 10s ago
+/etc/systemd/system/sysinit.target.wants/cgconfig.service
+Removed /etc/systemd/system/sysinit.target.wants/cgconfig.service.
+find: ‘/etc/systemd/system/sysinit.target.wants/cgconfig.service’: No such file or directory
+Failed to reload cgconfig.service: Job type reload is not applicable for unit cgconfig.service.
+     Active: active (exited) since Fri 2022-11-04 02:54:50 CST; 50s ago
+Fri Nov  4 02:55:44 2022 - INFO  - Finish test!
+Fri Nov  4 02:55:48 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 02:55:52 2022 - INFO  - start environment cleanup.
+Fri Nov  4 02:55:55 2022 - WARN  - no thing to do.
+Fri Nov  4 02:55:59 2022 - INFO  - Finish environment cleanup!

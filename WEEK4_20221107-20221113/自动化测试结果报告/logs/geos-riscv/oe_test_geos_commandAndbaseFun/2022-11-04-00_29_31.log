@@ -1,0 +1,33 @@
+Fri Nov  4 00:30:35 2022 - INFO  - Start to prepare the test environment.
+Fri Nov  4 00:38:52 2022 - INFO  - End to prepare the test environment.
+Fri Nov  4 00:39:01 2022 - INFO  - Start to run test.
+/usr
+3.9.0
+-L/usr/lib64 -lgeos-3.9.0
+-L/usr/lib64 -lgeos_c
+-L/usr/lib64 -lgeos
+-L/usr/lib64 -lgeos_c -lgeos -lm
+-L/usr/lib64 -lgeos -lm
+-I/usr/include
+-L/usr/lib64
+/usr/include
+In file included from /usr/include/geos/geom.h:126,
+                 from /usr/include/geos.h:26,
+                 from geos_test.cpp:3:
+/usr/include/geos/geom/Geometry.h:26:3: 警告：#warning "The GEOS C++ API is unstable, please use the C API instead" [-Wcpp]
+   26 | # warning "The GEOS C++ API is unstable, please use the C API instead"
+      |   ^~~~~~~
+/usr/include/geos/geom/Geometry.h:27:3: 警告：#warning "HINT: #include geos_c.h" [-Wcpp]
+   27 | # warning "HINT: #include geos_c.h"
+      |   ^~~~~~~
+In file included from /usr/include/geos.h:26,
+                 from geos_test.cpp:3:
+/usr/include/geos/geom.h:145:2: 警告：#warning *** DEPRECATED: You are using deprecated header geom.h. Please, update your sources according to new layout of GEOS headers and namespaces [-Wcpp]
+  145 | #warning *** DEPRECATED: You are using deprecated header geom.h. Please, update your sources according to new layout of GEOS headers and namespaces
+      |  ^~~~~~~
+geos's version is 3.9.0
+geos's jts_port is 1.17.0
+Fri Nov  4 00:42:03 2022 - INFO  - End to run test.
+Fri Nov  4 00:42:08 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 00:42:15 2022 - INFO  - Start to restore the test environment.
+Fri Nov  4 00:45:09 2022 - INFO  - End to restore the test environment.

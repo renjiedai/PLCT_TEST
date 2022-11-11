@@ -1,0 +1,21 @@
+Fri Nov  4 02:43:00 2022 - INFO  - Start environmental preparation.
+Fri Nov  4 02:43:42 2022 - INFO  - pkgs:(libcanberra) is already installed
+Fri Nov  4 02:43:47 2022 - INFO  - End of environmental preparation!
+Fri Nov  4 02:43:50 2022 - INFO  - Start testing...
+/etc/systemd/system/reboot.target.wants/canberra-system-shutdown-reboot.service
+/etc/systemd/system/kexec.target.wants/canberra-system-shutdown-reboot.service
+/etc/systemd/system/halt.target.wants/canberra-system-shutdown.service
+/etc/systemd/system/poweroff.target.wants/canberra-system-shutdown.service
+Removed /etc/systemd/system/kexec.target.wants/canberra-system-shutdown-reboot.service.
+Removed /etc/systemd/system/poweroff.target.wants/canberra-system-shutdown.service.
+Removed /etc/systemd/system/halt.target.wants/canberra-system-shutdown.service.
+Removed /etc/systemd/system/reboot.target.wants/canberra-system-shutdown-reboot.service.
+find: ‘/etc/systemd/system/reboot.target.wants/canberra-system-shutdown-reboot.service’: No such file or directory
+find: ‘/etc/systemd/system/kexec.target.wants/canberra-system-shutdown-reboot.service’: No such file or directory
+find: ‘/etc/systemd/system/halt.target.wants/canberra-system-shutdown.service’: No such file or directory
+find: ‘/etc/systemd/system/poweroff.target.wants/canberra-system-shutdown.service’: No such file or directory
+Fri Nov  4 02:44:30 2022 - INFO  - Finish test!
+Fri Nov  4 02:44:33 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 02:44:36 2022 - INFO  - start environment cleanup.
+Fri Nov  4 02:44:40 2022 - WARN  - no thing to do.
+Fri Nov  4 02:44:44 2022 - INFO  - Finish environment cleanup!

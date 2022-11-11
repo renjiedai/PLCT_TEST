@@ -1,0 +1,5 @@
+Sun Nov  6 12:00:54 2022 - INFO  - Start testing...
+Sun Nov  6 12:01:04 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Sun Nov  6 12:01:09 2022 - INFO  - Finish test!
+Sun Nov  6 12:01:14 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 12:01:19 2022 - INFO  - oe_test_service_selinux-autorelabel.sh post_test

@@ -1,0 +1,40 @@
+Sun Oct 30 22:30:18 2022 - INFO  - Start to prepare the test environment.
+Sun Oct 30 23:00:00 2022 - ERROR - Timeout : Command 'bash oe_test_freeradius_freeradius_radiusd.sh' timed out after 1799.9923099999996 seconds
+Sun Oct 30 23:01:54 2022 - INFO  - Start to restore the test environment.
+Sun Oct 30 23:01:56 2022 - WARN  - no thing to do.
+Sun Oct 30 23:02:00 2022 - INFO  - End to restore the test environment.
+Sun Oct 30 23:02:03 2022 - INFO  - End to prepare the test environment.
+Sun Oct 30 23:02:06 2022 - INFO  - Start to run test.
+root        5821       1 11 23:01 ?        00:00:02 /usr/sbin/radiusd -d /etc/raddb
+Sun Oct 30 23:02:12 2022 - ERROR - radiusd -D execution failed.
+Sun Oct 30 23:02:15 2022 - ERROR - oe_test_freeradius_freeradius_radiusd.sh line 35
+kill：用法：kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+Sun Oct 30 23:02:19 2022 - ERROR - radiusd -f execution failed.
+Sun Oct 30 23:02:21 2022 - ERROR - oe_test_freeradius_freeradius_radiusd.sh line 39
+kill：用法：kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+  -d <raddb>    Set configuration directory (defaults to /etc/raddb).
+  -D <dictdir>  Set main dictionary directory (defaults to /usr/share/freeradius).
+Usage: radiusd [options]
+Sun Oct 30 23:02:30 2022 - ERROR - radiusd -i -p execution failed.
+Sun Oct 30 23:02:33 2022 - ERROR - oe_test_freeradius_freeradius_radiusd.sh line 46
+kill：用法：kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+Sun Oct 30 23:02:37 2022 - ERROR - radiusd -l execution failed.
+Sun Oct 30 23:02:39 2022 - ERROR - oe_test_freeradius_freeradius_radiusd.sh line 50
+kill：用法：kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+cp: 无法获取'/etc/raddb/radiusd.conf' 的文件状态(stat): No such file or directory
+Sun Oct 30 23:02:51 2022 - ERROR - radiusd -n execution failed.
+Sun Oct 30 23:02:53 2022 - ERROR - oe_test_freeradius_freeradius_radiusd.sh line 56
+kill：用法：kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+cat: /var/run/radiusd/radiusd.pid: No such file or directory
+oe_test_freeradius_freeradius_radiusd.sh: 第 61 行：[: ：需要整数表达式
+Sun Oct 30 23:02:57 2022 - ERROR - radiusd -P execution failed.
+Sun Oct 30 23:02:59 2022 - ERROR - oe_test_freeradius_freeradius_radiusd.sh line 62
+oe_test_freeradius_freeradius_radiusd.sh: 第 63 行：kill: “”: 不是有效的进程号或者任务声明
+oe_test_freeradius_freeradius_radiusd.sh: 第 65 行：[: ：需要整数表达式
+Sun Oct 30 23:03:03 2022 - ERROR - radiusd -s execution failed.
+Sun Oct 30 23:03:06 2022 - ERROR - oe_test_freeradius_freeradius_radiusd.sh line 66
+kill：用法：kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+Sun Oct 30 23:03:08 2022 - INFO  - End to run test.
+Sun Oct 30 23:03:11 2022 - ERROR - failed to execute the case.
+Sun Oct 30 23:03:13 2022 - INFO  - Start to restore the test environment.
+Sun Oct 30 23:04:36 2022 - INFO  - End to restore the test environment.

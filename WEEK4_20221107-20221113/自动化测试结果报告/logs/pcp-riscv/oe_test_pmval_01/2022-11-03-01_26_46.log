@@ -1,0 +1,35 @@
+Thu Nov  3 01:27:13 2022 - INFO  - Start to prepare the test environment.
+Failed to enable unit: Unit file pmcd.service does not exist.
+Failed to start pmcd.service: Unit pmcd.service not found.
+Failed to enable unit: Unit file pmlogger.service does not exist.
+Failed to start pmlogger.service: Unit pmlogger.service not found.
+oe_test_pmval_01.sh:行24: pcp：未找到命令
+Thu Nov  3 01:29:46 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 01:29:49 2022 - INFO  - Start to run test.
+oe_test_pmval_01.sh:行31: pmval：未找到命令
+oe_test_pmval_01.sh:行33: pmval：未找到命令
+Thu Nov  3 01:29:52 2022 - ERROR - oe_test_pmval_01.sh line 34
+oe_test_pmval_01.sh:行35: pmval：未找到命令
+Thu Nov  3 01:29:56 2022 - ERROR - oe_test_pmval_01.sh line 36
+oe_test_pmval_01.sh:行37: pmval：未找到命令
+Thu Nov  3 01:29:59 2022 - ERROR - oe_test_pmval_01.sh line 38
+oe_test_pmval_01.sh:行39: pmval：未找到命令
+Thu Nov  3 01:30:02 2022 - ERROR - oe_test_pmval_01.sh line 40
+oe_test_pmval_01.sh:行41: pmval：未找到命令
+Thu Nov  3 01:30:05 2022 - ERROR - oe_test_pmval_01.sh line 42
+oe_test_pmval_01.sh:行43: pmval：未找到命令
+Thu Nov  3 01:30:08 2022 - ERROR - oe_test_pmval_01.sh line 44
+oe_test_pmval_01.sh:行45: pmval：未找到命令
+Thu Nov  3 01:30:10 2022 - ERROR - oe_test_pmval_01.sh line 46
+oe_test_pmval_01.sh:行47: pmval：未找到命令
+Thu Nov  3 01:30:13 2022 - ERROR - oe_test_pmval_01.sh line 48
+Thu Nov  3 01:30:16 2022 - INFO  - End to run test.
+Thu Nov  3 01:30:19 2022 - ERROR - failed to execute the case.
+Thu Nov  3 01:30:21 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:25:34 ago on 2022年11月03日 星期四 01时03分34秒.\nNo match for argument: pcp\nError: Unable to find a match: pcp'
+Thu Nov  3 01:30:35 2022 - INFO  - End to restore the test environment.

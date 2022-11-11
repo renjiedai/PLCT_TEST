@@ -1,0 +1,21 @@
+Thu Nov  3 20:33:59 2022 - INFO  - Start to prepare the test environment.
+Thu Nov  3 20:37:32 2022 - INFO  - Finish preparing the test environment.
+Thu Nov  3 20:37:35 2022 - INFO  - Start to run test.
+oe_test_build-jar-repository.sh:行30: build-jar-repository：未找到命令
+Thu Nov  3 20:37:38 2022 - ERROR - oe_test_build-jar-repository.sh line 31
+oe_test_build-jar-repository.sh:行32: build-jar-repository：未找到命令
+Thu Nov  3 20:37:40 2022 - ERROR - oe_test_build-jar-repository.sh line 33
+oe_test_build-jar-repository.sh:行34: build-jar-repository：未找到命令
+Thu Nov  3 20:37:43 2022 - ERROR - oe_test_build-jar-repository.sh line 35
+oe_test_build-jar-repository.sh:行36: build-jar-repository：未找到命令
+Thu Nov  3 20:37:46 2022 - ERROR - oe_test_build-jar-repository.sh line 37
+oe_test_build-jar-repository.sh:行38: rebuild-jar-repository：未找到命令
+Thu Nov  3 20:37:49 2022 - ERROR - oe_test_build-jar-repository.sh line 39
+oe_test_build-jar-repository.sh:行40: rebuild-jar-repository：未找到命令
+Thu Nov  3 20:37:52 2022 - ERROR - oe_test_build-jar-repository.sh line 41
+oe_test_build-jar-repository.sh:行42: rebuild-jar-repository：未找到命令
+Thu Nov  3 20:37:54 2022 - ERROR - oe_test_build-jar-repository.sh line 43
+Thu Nov  3 20:37:57 2022 - INFO  - End of the test.
+Thu Nov  3 20:37:59 2022 - ERROR - failed to execute the case.
+Thu Nov  3 20:38:02 2022 - INFO  - Start to restore the test environment.
+Thu Nov  3 20:38:38 2022 - INFO  - Finish restoring the test environment.

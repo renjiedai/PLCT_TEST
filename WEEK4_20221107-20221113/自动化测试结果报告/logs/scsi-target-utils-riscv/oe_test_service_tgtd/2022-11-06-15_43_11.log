@@ -1,0 +1,41 @@
+Sun Nov  6 15:43:50 2022 - INFO  - Start environmental preparation.
+Sun Nov  6 15:46:36 2022 - INFO  - End of environmental preparation!
+Sun Nov  6 15:46:40 2022 - INFO  - Start testing...
+Failed to restart tgtd.service: Unit tgtd.service not found.
+Sun Nov  6 15:46:45 2022 - ERROR - tgtd.service restart failed
+Sun Nov  6 15:46:49 2022 - ERROR - oe_test_service_tgtd.sh line 33
+Failed to stop tgtd.service: Unit tgtd.service not loaded.
+Sun Nov  6 15:46:53 2022 - ERROR - tgtd.service stop failed
+Sun Nov  6 15:46:57 2022 - ERROR - oe_test_service_tgtd.sh line 35
+Failed to start tgtd.service: Unit tgtd.service not found.
+Sun Nov  6 15:47:02 2022 - ERROR - tgtd.service start failed
+Sun Nov  6 15:47:07 2022 - ERROR - oe_test_service_tgtd.sh line 37
+Unit tgtd.service could not be found.
+Sun Nov  6 15:47:12 2022 - ERROR - tgtd.service start failed
+Sun Nov  6 15:47:16 2022 - ERROR - oe_test_service_tgtd.sh line 39
+find: ‘enable’: No such file or directory
+Sun Nov  6 15:47:22 2022 - ERROR - tgtd.service enable failed
+Sun Nov  6 15:47:26 2022 - ERROR - oe_test_service_tgtd.sh line 42
+Failed to disable unit: Unit file tgtd.service does not exist.
+find: ‘enable’: No such file or directory
+Failed to start tgtd.service: Unit tgtd.service not found.
+sed：无法读取 /usr/lib/systemd/system/tgtd.service：No such file or directory
+Failed to reload tgtd.service: Unit tgtd.service not found.
+Sun Nov  6 15:47:50 2022 - ERROR - tgtd.service reload failed
+Sun Nov  6 15:47:55 2022 - ERROR - oe_test_service_tgtd.sh line 52
+Unit tgtd.service could not be found.
+Sun Nov  6 15:48:00 2022 - ERROR - tgtd.service reload causes the service status to change
+Sun Nov  6 15:48:05 2022 - ERROR - oe_test_service_tgtd.sh line 54
+Sun Nov  6 15:48:08 2022 - INFO  - Finish test!
+Sun Nov  6 15:48:13 2022 - ERROR - failed to execute the case.
+Sun Nov  6 15:48:17 2022 - INFO  - start environment cleanup.
+sed：无法读取 /usr/lib/systemd/system/tgtd.service：No such file or directory
+Failed to reload tgtd.service: Unit tgtd.service not found.
+Failed to stop tgtd.service: Unit tgtd.service not loaded.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:01:39 ago on 2022年11月06日 星期日 15时44分49秒.\nNo match for argument: scsi-target-utils\nError: Unable to find a match: scsi-target-utils'
+Sun Nov  6 15:49:00 2022 - INFO  - Finish environment cleanup!

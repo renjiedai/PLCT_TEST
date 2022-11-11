@@ -1,0 +1,14 @@
+Sun Nov  6 12:34:17 2022 - INFO  - Start environmental preparation.
+Sun Nov  6 12:38:27 2022 - INFO  - End of environmental preparation!
+Sun Nov  6 12:38:31 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-11-06 12:38:33 CST; 11s ago
+     Active: inactive (dead)
+     Active: active (running) since Sun 2022-11-06 12:38:57 CST; 11s ago
+/etc/systemd/system/multi-user.target.wants/varnishncsa.service
+Removed /etc/systemd/system/multi-user.target.wants/varnishncsa.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/varnishncsa.service’: No such file or directory
+     Active: active (running) since Sun 2022-11-06 12:38:57 CST; 1min 12s ago
+Sun Nov  6 12:40:14 2022 - INFO  - Finish test!
+Sun Nov  6 12:40:18 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 12:40:22 2022 - INFO  - start environment cleanup.
+Sun Nov  6 12:42:37 2022 - INFO  - Finish environment cleanup!

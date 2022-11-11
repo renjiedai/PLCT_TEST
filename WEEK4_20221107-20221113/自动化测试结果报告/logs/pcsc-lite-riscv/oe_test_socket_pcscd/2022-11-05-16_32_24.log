@@ -1,0 +1,15 @@
+Sat Nov  5 16:32:55 2022 - INFO  - Start environmental preparation.
+Sat Nov  5 16:35:27 2022 - INFO  - End of environmental preparation!
+Sat Nov  5 16:35:29 2022 - INFO  - Start to run test.
+     Active: active (listening) since Sat 2022-11-05 16:35:30 CST; 9s ago
+     Active: inactive (dead) since Sat 2022-11-05 16:35:40 CST; 8s ago
+     Active: active (listening) since Sat 2022-11-05 16:35:49 CST; 9s ago
+find: ‘/etc/systemd/system/sockets.target.wants/pcscd.socket’: No such file or directory
+Created symlink /etc/systemd/system/sockets.target.wants/pcscd.socket → /usr/lib/systemd/system/pcscd.socket.
+/etc/systemd/system/sockets.target.wants/pcscd.socket
+Failed to reload pcscd.socket: Job type reload is not applicable for unit pcscd.socket.
+     Active: active (listening) since Sat 2022-11-05 16:35:49 CST; 35s ago
+Sat Nov  5 16:36:27 2022 - INFO  - End of the test.
+Sat Nov  5 16:36:30 2022 - INFO  - succeed to execute the case.
+Sat Nov  5 16:36:32 2022 - INFO  - start environment cleanup.
+Sat Nov  5 16:37:45 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,15 @@
+Fri Nov  4 02:01:22 2022 - INFO  - Start to prepare the test environment.
+Fri Nov  4 02:04:36 2022 - INFO  - End to prepare the test environment.
+Fri Nov  4 02:04:40 2022 - INFO  - Start to run test.
+Usage:
+2
+--build=riscv64-openeuler-linux-gnu --host=riscv64-openeuler-linux-gnu --program-prefix= --disable-dependency-tracking --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib64 --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/var/lib --mandir=/usr/share/man --infodir=/usr/share/info build_alias=riscv64-openeuler-linux-gnu host_alias=riscv64-openeuler-linux-gnu 'CFLAGS=-O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/generic-hardened-cc1 -fasynchronous-unwind-tables -fstack-clash-protection' 'LDFLAGS=-Wl,-z,relro -Wl,-z,now -specs=/usr/lib/rpm/generic-hardened-ld -lrt' 'CXXFLAGS=-O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/generic-hardened-cc1 -fasynchronous-unwind-tables -fstack-clash-protection -fexceptions'
+/usr
+/usr/bin
+/usr/share
+/usr/include
+/usr/lib64
+Fri Nov  4 02:05:12 2022 - INFO  - End to run test.
+Fri Nov  4 02:05:16 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 02:05:20 2022 - INFO  - Start to restore the test environment.
+Fri Nov  4 02:07:02 2022 - INFO  - End to restore the test environment.

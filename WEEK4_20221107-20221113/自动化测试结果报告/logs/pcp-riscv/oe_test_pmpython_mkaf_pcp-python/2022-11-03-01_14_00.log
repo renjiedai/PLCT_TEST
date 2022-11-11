@@ -1,0 +1,30 @@
+Thu Nov  3 01:14:25 2022 - INFO  - Start to prepare the test environment.
+Failed to enable unit: Unit file pmcd.service does not exist.
+Failed to start pmcd.service: Unit pmcd.service not found.
+Failed to enable unit: Unit file pmlogger.service does not exist.
+Failed to start pmlogger.service: Unit pmlogger.service not found.
+oe_test_pmpython_mkaf_pcp-python.sh:行24: pcp：未找到命令
+Thu Nov  3 01:16:46 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 01:16:49 2022 - INFO  - Start to run test.
+Thu Nov  3 01:16:51 2022 - ERROR - oe_test_pmpython_mkaf_pcp-python.sh line 40
+Thu Nov  3 01:16:54 2022 - ERROR - oe_test_pmpython_mkaf_pcp-python.sh line 42
+oe_test_pmpython_mkaf_pcp-python.sh:行43: pmpython：未找到命令
+Thu Nov  3 01:16:57 2022 - ERROR - oe_test_pmpython_mkaf_pcp-python.sh line 44
+oe_test_pmpython_mkaf_pcp-python.sh:行45: /usr/libexec/pcp/bin/mkaf: No such file or directory
+Thu Nov  3 01:17:00 2022 - ERROR - oe_test_pmpython_mkaf_pcp-python.sh line 46
+oe_test_pmpython_mkaf_pcp-python.sh:行47: /usr/libexec/pcp/bin/mkaf: No such file or directory
+Thu Nov  3 01:17:03 2022 - ERROR - oe_test_pmpython_mkaf_pcp-python.sh line 48
+Thu Nov  3 01:17:06 2022 - ERROR - oe_test_pmpython_mkaf_pcp-python.sh line 50
+Thu Nov  3 01:17:09 2022 - ERROR - oe_test_pmpython_mkaf_pcp-python.sh line 52
+oe_test_pmpython_mkaf_pcp-python.sh:行53: /usr/libexec/pcp/bin/pcp-python: No such file or directory
+Thu Nov  3 01:17:12 2022 - ERROR - oe_test_pmpython_mkaf_pcp-python.sh line 54
+Thu Nov  3 01:17:14 2022 - INFO  - End to run test.
+Thu Nov  3 01:17:16 2022 - ERROR - failed to execute the case.
+Thu Nov  3 01:17:20 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:12:40 ago on 2022年11月03日 星期四 01时03分34秒.\nNo match for argument: pcp\nError: Unable to find a match: pcp'
+Thu Nov  3 01:17:32 2022 - INFO  - End to restore the test environment.

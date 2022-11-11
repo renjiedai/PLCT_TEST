@@ -1,0 +1,8 @@
+Sat Nov  5 17:11:54 2022 - INFO  - Start to prepare the test environment.
+Sat Nov  5 17:16:06 2022 - INFO  - Finish preparing the test environment.
+Sat Nov  5 17:16:10 2022 - INFO  - Start to run test.
+Usage: ospcat [OPTION] SYSID...
+Sat Nov  5 17:16:43 2022 - INFO  - End of the test.
+Sat Nov  5 17:16:47 2022 - INFO  - succeed to execute the case.
+Sat Nov  5 17:16:50 2022 - INFO  - Start to restore the test environment.
+Sat Nov  5 17:18:42 2022 - INFO  - Finish restoring the test environment.

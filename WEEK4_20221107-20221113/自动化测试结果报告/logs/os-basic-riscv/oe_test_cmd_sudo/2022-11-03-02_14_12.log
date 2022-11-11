@@ -1,0 +1,16 @@
+Thu Nov  3 02:14:25 2022 - INFO  - Start to prepare the test environment.
+更改用户 test 的密码 。
+passwd：所有的身份验证令牌已经成功更新。
+Thu Nov  3 02:14:29 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 02:14:31 2022 - INFO  - Start to run test.
+Thu Nov  3 02:14:33 2022 - ERROR - oe_test_cmd_sudo.sh line 34
+Thu Nov  3 02:14:39 2022 - ERROR - oe_test_cmd_sudo.sh line 36
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-ABknS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-ABknS] [-g group] [-h host] [-p prompt] [-U user] [-u user]
+usage: sudo [-ABbEHknPS] [-r role] [-t type] [-C num] [-D directory] [-g group]
+usage: sudo -e [-ABknS] [-r role] [-t type] [-C num] [-D directory] [-g group]
+Thu Nov  3 02:14:41 2022 - INFO  - End to run test.
+Thu Nov  3 02:14:42 2022 - ERROR - failed to execute the case.
+Thu Nov  3 02:14:44 2022 - INFO  - Start to restore the test environment.
+Thu Nov  3 02:14:47 2022 - INFO  - End to restore the test environment.

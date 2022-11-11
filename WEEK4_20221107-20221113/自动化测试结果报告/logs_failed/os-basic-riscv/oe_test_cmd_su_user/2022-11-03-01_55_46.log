@@ -1,0 +1,22 @@
+Thu Nov  3 01:56:07 2022 - INFO  - Start to prepare the test environment.
+groupdel：“testuser”组不存在
+Thu Nov  3 01:56:10 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 01:56:12 2022 - INFO  - Start to run test.
+更改用户 testuser 的密码 。
+passwd：所有的身份验证令牌已经成功更新。
+testuser
+root
+公共
+模板
+视频
+图片
+文档
+下载
+音乐
+桌面
+mugen
+Thu Nov  3 01:56:36 2022 - ERROR - oe_test_cmd_su_user.sh line 41
+Thu Nov  3 01:56:39 2022 - INFO  - End to run test.
+Thu Nov  3 01:56:41 2022 - ERROR - failed to execute the case.
+Thu Nov  3 01:56:44 2022 - INFO  - Start to restore the test environment.
+Thu Nov  3 01:56:49 2022 - INFO  - End to restore the test environment.

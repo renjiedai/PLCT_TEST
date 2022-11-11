@@ -1,0 +1,14 @@
+Sat Nov  5 19:03:52 2022 - INFO  - Start environmental preparation.
+Sat Nov  5 19:04:11 2022 - INFO  - pkgs:(openscap scap-security-guide) is already installed
+Sat Nov  5 19:04:12 2022 - INFO  - End of environmental preparation!
+Sat Nov  5 19:04:14 2022 - INFO  - Start executing testcase.
+WARNING: This content points out to the remote resources. Use `--fetch-remote-resources' option to download them.
+WARNING: Skipping https://linux.oracle.com/security/oval/com.oracle.elsa-all.xml.bz2 file which is referenced from XCCDF content
+Rule	audit_create_success
+# $ ansible-playbook -i "localhost," -c local playbook.yml
+- hosts: all
+Sat Nov  5 19:04:51 2022 - INFO  - Finish testcase execution.
+Sat Nov  5 19:04:53 2022 - INFO  - succeed to execute the case.
+Sat Nov  5 19:04:54 2022 - INFO  - start environment cleanup.
+Sat Nov  5 19:04:56 2022 - WARN  - no thing to do.
+Sat Nov  5 19:04:57 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,37 @@
+Thu Nov  3 18:49:21 2022 - INFO  - Start environmental preparation.
+Thu Nov  3 18:51:01 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 18:51:04 2022 - INFO  - Start to run test.
+Failed to restart ceph.target: Unit ceph.target not found.
+Thu Nov  3 18:51:08 2022 - ERROR - ceph.target restart failed
+Thu Nov  3 18:51:10 2022 - ERROR - ../common/common_lib.sh line 34
+Unit ceph.target could not be found.
+Thu Nov  3 18:51:21 2022 - ERROR - ceph.target restart failed
+Thu Nov  3 18:51:24 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop ceph.target: Unit ceph.target not loaded.
+Thu Nov  3 18:51:28 2022 - ERROR - ceph.target stop failed
+Thu Nov  3 18:51:30 2022 - ERROR - ../common/common_lib.sh line 39
+Unit ceph.target could not be found.
+Thu Nov  3 18:51:41 2022 - ERROR - ceph.target stop failed
+Thu Nov  3 18:51:44 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start ceph.target: Unit ceph.target not found.
+Thu Nov  3 18:51:47 2022 - ERROR - ceph.target start failed
+Thu Nov  3 18:51:49 2022 - ERROR - ../common/common_lib.sh line 44
+Unit ceph.target could not be found.
+Thu Nov  3 18:52:01 2022 - ERROR - ceph.target start failed
+Thu Nov  3 18:52:03 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for ceph.target: No such file or directory
+Thu Nov  3 18:52:07 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start ceph.target: Unit ceph.target not found.
+Thu Nov  3 18:52:11 2022 - ERROR - oe_test_target_ceph.sh line 33
+Unit ceph.target could not be found.
+Thu Nov  3 18:52:14 2022 - ERROR - oe_test_target_ceph.sh line 35
+Thu Nov  3 18:52:17 2022 - INFO  - End of the test.
+Thu Nov  3 18:52:19 2022 - ERROR - failed to execute the case.
+Thu Nov  3 18:52:22 2022 - INFO  - start environment cleanup.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:32:38 ago on 2022年11月03日 星期四 18时18分18秒.\nNo match for argument: ceph-base\nError: Unable to find a match: ceph-base'
+Thu Nov  3 18:52:36 2022 - INFO  - Finish environment cleanup!

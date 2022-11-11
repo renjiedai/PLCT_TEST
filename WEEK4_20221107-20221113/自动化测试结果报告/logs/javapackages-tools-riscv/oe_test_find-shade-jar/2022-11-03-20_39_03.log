@@ -1,0 +1,14 @@
+Thu Nov  3 20:39:23 2022 - INFO  - Start to prepare the test environment.
+Thu Nov  3 20:42:47 2022 - INFO  - Finish preparing the test environment.
+Thu Nov  3 20:42:50 2022 - INFO  - Start to run test.
+oe_test_find-shade-jar.sh:行30: find-jar：未找到命令
+Thu Nov  3 20:42:53 2022 - ERROR - oe_test_find-shade-jar.sh line 31
+oe_test_find-shade-jar.sh:行32: find-jar：未找到命令
+Thu Nov  3 20:42:56 2022 - ERROR - oe_test_find-shade-jar.sh line 33
+oe_test_find-shade-jar.sh:行35: shade-jar：未找到命令
+Thu Nov  3 20:42:59 2022 - ERROR - oe_test_find-shade-jar.sh line 36
+Thu Nov  3 20:43:02 2022 - ERROR - oe_test_find-shade-jar.sh line 38
+Thu Nov  3 20:43:04 2022 - INFO  - End of the test.
+Thu Nov  3 20:43:07 2022 - ERROR - failed to execute the case.
+Thu Nov  3 20:43:10 2022 - INFO  - Start to restore the test environment.
+Thu Nov  3 20:43:45 2022 - INFO  - Finish restoring the test environment.

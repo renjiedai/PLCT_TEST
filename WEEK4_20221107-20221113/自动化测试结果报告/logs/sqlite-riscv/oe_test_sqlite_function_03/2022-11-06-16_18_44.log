@@ -1,0 +1,31 @@
+Sun Nov  6 16:19:08 2022 - INFO  - Start to prepare the test environment.
+Sun Nov  6 16:19:11 2022 - INFO  - End to prepare the test environment.
+Sun Nov  6 16:19:14 2022 - INFO  - Start to run test.
+spawn sqlite3 ./test.db
+CREATE TABLE COMPANY(
+        ID INT PRIMARY KEY     NOT NULL,
+        NAME    TEXT    NOT NULL,
+        AGE     INT     NOT NULL,
+        ADDRESS CHAR(50),
+        SALARY  REAL    CHECK(SALARY > 0)
+        );
+SQLite version 3.36.0 2021-06-18 18:36:39
+Enter ".help" for usage hints.
+sqlite> CREATE TABLE COMPANY(
+   ...>         ID INT PRIMARY KEY     NOT NULL,
+   ...>         NAME    TEXT    NOT NULL,
+   ...>         AGE     INT     NOT NULL,
+   ...>         ADDRESS CHAR(50),
+   ...>         SALARY  REAL    CHECK(SALARY > 0)
+   ...>         );
+sqlite> .read ../common/insert.txt
+sqlite> .output ./output.txt
+sqlite> SELECT upper(name) FROM COMPANY WHERE ID = 6;
+sqlite> SELECT lower(name) FROM COMPANY WHERE ID = 6;
+sqlite> SELECT length(name) FROM COMPANY WHERE ID = 6;
+sqlite> SELECT sqlite_version() AS 'SQLite Version';
+sqlite> .quit
+Sun Nov  6 16:19:21 2022 - INFO  - End to run test.
+Sun Nov  6 16:19:23 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 16:19:26 2022 - INFO  - Start to restore the test environment.
+Sun Nov  6 16:19:29 2022 - INFO  - End to restore the test environment.

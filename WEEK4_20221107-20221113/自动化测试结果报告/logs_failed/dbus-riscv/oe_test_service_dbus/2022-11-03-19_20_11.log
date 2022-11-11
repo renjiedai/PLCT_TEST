@@ -1,0 +1,15 @@
+Thu Nov  3 19:20:44 2022 - INFO  - Start environmental preparation.
+Thu Nov  3 19:20:48 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 19:20:52 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-11-03 19:20:58 CST; 10s ago
+Warning: Stopping dbus.service, but it can still be activated by:
+  dbus.socket
+Thu Nov  3 19:21:35 2022 - ERROR - dbus.service stop failed
+Thu Nov  3 19:21:39 2022 - ERROR - ../common/common_lib.sh line 42
+     Active: active (running) since Thu 2022-11-03 19:21:27 CST; 22s ago
+Thu Nov  3 19:21:54 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+     Active: active (running) since Thu 2022-11-03 19:21:27 CST; 49s ago
+Thu Nov  3 19:22:21 2022 - INFO  - Finish test!
+Thu Nov  3 19:22:26 2022 - ERROR - failed to execute the case.
+Thu Nov  3 19:22:30 2022 - INFO  - start environment cleanup.
+Thu Nov  3 19:22:53 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,2 @@
+Sun Oct 30 22:30:18 2022 - INFO  - Start to prepare the test environment.
+Sun Oct 30 23:00:00 2022 - ERROR - Timeout : Command 'bash oe_test_freeradius_freeradius_radiusd.sh' timed out after 1799.9923099999996 seconds

@@ -1,0 +1,16 @@
+Fri Nov  4 01:04:57 2022 - INFO  - Start environmental preparation.
+Fri Nov  4 01:06:00 2022 - INFO  - pkgs:(gssproxy) is already installed
+Fri Nov  4 01:06:05 2022 - INFO  - End of environmental preparation!
+Fri Nov  4 01:06:10 2022 - INFO  - Start testing...
+     Active: active (running) since Fri 2022-11-04 01:06:13 CST; 11s ago
+     Active: inactive (dead) since Fri 2022-11-04 01:06:26 CST; 10s ago
+     Active: active (running) since Fri 2022-11-04 01:06:40 CST; 10s ago
+/etc/systemd/system/multi-user.target.wants/gssproxy.service
+Removed /etc/systemd/system/multi-user.target.wants/gssproxy.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/gssproxy.service’: No such file or directory
+     Active: active (running) since Fri 2022-11-04 01:06:40 CST; 1min 16s ago
+Fri Nov  4 01:08:00 2022 - INFO  - Finish test!
+Fri Nov  4 01:08:05 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 01:08:09 2022 - INFO  - start environment cleanup.
+Fri Nov  4 01:08:32 2022 - WARN  - no thing to do.
+Fri Nov  4 01:08:36 2022 - INFO  - Finish environment cleanup!

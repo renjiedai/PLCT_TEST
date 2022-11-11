@@ -1,0 +1,41 @@
+Sun Nov  6 18:48:18 2022 - INFO  - Start environmental preparation.
+sed：无法读取 /etc/tomcat/server.xml：No such file or directory
+Sun Nov  6 18:50:55 2022 - INFO  - End of environmental preparation!
+Sun Nov  6 18:50:59 2022 - INFO  - Start testing...
+Failed to restart tomcat.service: Unit tomcat.service not found.
+Sun Nov  6 18:51:04 2022 - ERROR - tomcat.service restart failed
+Sun Nov  6 18:51:08 2022 - ERROR - ../common/common_lib.sh line 34
+Unit tomcat.service could not be found.
+Sun Nov  6 18:51:23 2022 - ERROR - tomcat.service restart failed
+Sun Nov  6 18:51:26 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop tomcat.service: Unit tomcat.service not loaded.
+Sun Nov  6 18:51:31 2022 - ERROR - tomcat.service stop failed
+Sun Nov  6 18:51:35 2022 - ERROR - ../common/common_lib.sh line 39
+Unit tomcat.service could not be found.
+Sun Nov  6 18:51:49 2022 - ERROR - tomcat.service stop failed
+Sun Nov  6 18:51:53 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start tomcat.service: Unit tomcat.service not found.
+Sun Nov  6 18:51:58 2022 - ERROR - tomcat.service start failed
+Sun Nov  6 18:52:02 2022 - ERROR - ../common/common_lib.sh line 44
+Unit tomcat.service could not be found.
+Sun Nov  6 18:52:17 2022 - ERROR - tomcat.service start failed
+Sun Nov  6 18:52:21 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for tomcat.service: No such file or directory
+Sun Nov  6 18:52:26 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start tomcat.service: Unit tomcat.service not found.
+Sun Nov  6 18:52:32 2022 - ERROR - Job type reload is not applicable for unit tomcat.service
+Sun Nov  6 18:52:36 2022 - ERROR - ../common/common_lib.sh line 91
+Unit tomcat.service could not be found.
+Unit tomcat.service could not be found.
+Sun Nov  6 18:52:42 2022 - INFO  - Finish test!
+Sun Nov  6 18:52:47 2022 - ERROR - failed to execute the case.
+Sun Nov  6 18:52:51 2022 - INFO  - start environment cleanup.
+Failed to stop tomcat.service: Unit tomcat.service not loaded.
+sed：无法读取 /etc/tomcat/server.xml：No such file or directory
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:01:35 ago on 2022年11月06日 星期日 18时49分11秒.\nNo match for argument: tomcat\nError: Unable to find a match: tomcat'
+Sun Nov  6 18:53:13 2022 - INFO  - Finish environment cleanup!

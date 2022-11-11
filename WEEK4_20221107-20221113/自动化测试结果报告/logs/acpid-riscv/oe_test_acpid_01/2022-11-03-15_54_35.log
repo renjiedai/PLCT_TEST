@@ -1,0 +1,54 @@
+Thu Nov  3 15:55:03 2022 - INFO  - Start to prepare the test environment.
+Thu Nov  3 15:57:39 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 15:57:42 2022 - INFO  - Start to run test.
+acpid-2.0.33
+Usage: acpid [OPTIONS]
+spawn acpid -f
+cannot open input layer
+RTNETLINK1 answers: No such file or directory
+acpid: error talking to the kernel via netlink
+starting up with netlink and the input layer
+^Cexiting
+spawn acpid -lf
+cannot open input layer
+RTNETLINK1 answers: No such file or directory
+acpid: error talking to the kernel via netlink
+starting up with netlink and the input layer
+1 rule loaded
+waiting for events: event logging is on
+^Cexiting
+spawn acpid -df
+Deprecated /proc/acpi/event was not found.  Trying netlink and the input layer...
+inotify fd: 3
+inotify wd: 1
+cannot open input layer
+^Cspawn acpid -ndf
+inotify fd: 3
+inotify wd: 1
+cannot open input layer
+RTNETLINK1 answers: No such file or directory
+acpid: error talking to the kernel via netlink
+netlink opened successfully
+starting up with netlink and the input layer
+^Cexiting
+srw-rw-rw-  1 root           root              0 11月  3 15:57 acpid.socket
+RTNETLINK1 answers: No such file or directory
+acpid: error talking to the kernel via netlink
+srw-rw-rw-  1 root           test              0 11月  3 15:57 acpid.socket
+RTNETLINK1 answers: No such file or directory
+acpid: error talking to the kernel via netlink
+srw-rw-rw-  1 root           root              0 11月  3 15:57 acpid.socket
+RTNETLINK1 answers: No such file or directory
+acpid: error talking to the kernel via netlink
+srwxrwxrwx  1 root           root              0 11月  3 15:58 acpid.socket
+RTNETLINK1 answers: No such file or directory
+acpid: error talking to the kernel via netlink
+RTNETLINK1 answers: No such file or directory
+acpid: error talking to the kernel via netlink
+-rw-r--r--  1 root           root              5 11月  3 15:58 acpid.test.pid
+RTNETLINK1 answers: No such file or directory
+acpid: error talking to the kernel via netlink
+Thu Nov  3 15:58:29 2022 - INFO  - End to run test.
+Thu Nov  3 15:58:32 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 15:58:35 2022 - INFO  - Start to restore the test environment.
+Thu Nov  3 15:59:59 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,13 @@
+Thu Nov  3 22:03:22 2022 - INFO  - Start environmental preparation.
+Thu Nov  3 22:08:01 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 22:08:06 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-11-03 22:08:17 CST; 12s ago
+     Active: inactive (dead)
+     Active: active (running) since Thu 2022-11-03 22:08:57 CST; 12s ago
+Thu Nov  3 22:09:16 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload fprintd.service: Job type reload is not applicable for unit fprintd.service.
+     Active: active (running) since Thu 2022-11-03 22:08:57 CST; 22s ago
+Thu Nov  3 22:09:24 2022 - INFO  - Finish test!
+Thu Nov  3 22:09:29 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 22:09:35 2022 - INFO  - start environment cleanup.
+Thu Nov  3 22:12:21 2022 - INFO  - Finish environment cleanup!

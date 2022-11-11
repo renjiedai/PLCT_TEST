@@ -1,0 +1,24 @@
+Fri Nov  4 02:23:02 2022 - INFO  - Start to prepare the test environment.
+Fri Nov  4 02:25:23 2022 - INFO  - End to prepare the test environment.
+Fri Nov  4 02:25:27 2022 - INFO  - Start to run test.
+oe_test_kernel_cmd_03.sh:行28: perf：未找到命令
+Fri Nov  4 02:25:31 2022 - ERROR - oe_test_kernel_cmd_03.sh line 29
+oe_test_kernel_cmd_03.sh:行30: perf：未找到命令
+Fri Nov  4 02:25:35 2022 - ERROR - oe_test_kernel_cmd_03.sh line 31
+oe_test_kernel_cmd_03.sh:行32: perf：未找到命令
+oe_test_kernel_cmd_03.sh:行40: perf：未找到命令
+Fri Nov  4 02:25:46 2022 - ERROR - oe_test_kernel_cmd_03.sh line 41
+oe_test_kernel_cmd_03.sh:行42: perf：未找到命令
+Fri Nov  4 02:25:49 2022 - ERROR - oe_test_kernel_cmd_03.sh line 43
+oe_test_kernel_cmd_03.sh:行44: perf：未找到命令
+Fri Nov  4 02:25:54 2022 - ERROR - oe_test_kernel_cmd_03.sh line 45
+Fri Nov  4 02:25:57 2022 - INFO  - End of the test.
+Fri Nov  4 02:26:01 2022 - ERROR - failed to execute the case.
+Fri Nov  4 02:26:05 2022 - INFO  - Start to restore the tet environment.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: 'Last metadata expiration check: 0:05:58 ago on 2022年11月04日 星期五 02时19分17秒.\nPackage kernel-tools-5.10.0-22H1.60.50.0.0.riscv64 is already installed.\nNo match for argument: perf\nNo match for argument: bpftool\nError: Unable to find a match: perf bpftool'
+Fri Nov  4 02:26:23 2022 - INFO  - Finish to restore the tet environment.

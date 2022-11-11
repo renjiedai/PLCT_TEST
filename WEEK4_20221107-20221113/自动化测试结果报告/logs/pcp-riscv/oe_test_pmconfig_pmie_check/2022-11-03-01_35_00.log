@@ -1,0 +1,37 @@
+Thu Nov  3 01:35:20 2022 - INFO  - Start to prepare the test environment.
+Failed to enable unit: Unit file pmcd.service does not exist.
+Failed to start pmcd.service: Unit pmcd.service not found.
+Failed to enable unit: Unit file pmlogger.service does not exist.
+Failed to start pmlogger.service: Unit pmlogger.service not found.
+Thu Nov  3 01:37:17 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 01:37:19 2022 - INFO  - Start to run test.
+oe_test_pmconfig_pmie_check.sh:行29: /usr/libexec/pcp/bin/pmconfig: No such file or directory
+Thu Nov  3 01:37:22 2022 - ERROR - oe_test_pmconfig_pmie_check.sh line 30
+oe_test_pmconfig_pmie_check.sh:行31: /usr/libexec/pcp/bin/pmconfig: No such file or directory
+Thu Nov  3 01:37:24 2022 - ERROR - oe_test_pmconfig_pmie_check.sh line 32
+oe_test_pmconfig_pmie_check.sh:行33: /usr/libexec/pcp/bin/pmconfig: No such file or directory
+Thu Nov  3 01:37:27 2022 - ERROR - oe_test_pmconfig_pmie_check.sh line 34
+oe_test_pmconfig_pmie_check.sh:行35: /usr/libexec/pcp/bin/pmconfig: No such file or directory
+Thu Nov  3 01:37:30 2022 - ERROR - oe_test_pmconfig_pmie_check.sh line 36
+oe_test_pmconfig_pmie_check.sh:行37: /usr/libexec/pcp/bin/pmie_check: No such file or directory
+Thu Nov  3 01:37:33 2022 - ERROR - oe_test_pmconfig_pmie_check.sh line 38
+oe_test_pmconfig_pmie_check.sh:行41: /usr/libexec/pcp/bin/pmie_check: No such file or directory
+Thu Nov  3 01:37:36 2022 - ERROR - oe_test_pmconfig_pmie_check.sh line 42
+oe_test_pmconfig_pmie_check.sh:行43: /usr/libexec/pcp/bin/pmie_check: No such file or directory
+Thu Nov  3 01:37:39 2022 - ERROR - oe_test_pmconfig_pmie_check.sh line 44
+oe_test_pmconfig_pmie_check.sh:行45: /usr/libexec/pcp/bin/pmie_check: No such file or directory
+Thu Nov  3 01:37:41 2022 - ERROR - oe_test_pmconfig_pmie_check.sh line 46
+oe_test_pmconfig_pmie_check.sh:行47: /usr/libexec/pcp/bin/pmie_check: No such file or directory
+Thu Nov  3 01:37:44 2022 - ERROR - oe_test_pmconfig_pmie_check.sh line 48
+oe_test_pmconfig_pmie_check.sh:行49: /usr/libexec/pcp/bin/pmie_check: No such file or directory
+Thu Nov  3 01:37:47 2022 - ERROR - oe_test_pmconfig_pmie_check.sh line 50
+Thu Nov  3 01:37:50 2022 - INFO  - End to run test.
+Thu Nov  3 01:37:53 2022 - ERROR - failed to execute the case.
+Thu Nov  3 01:37:55 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:33:11 ago on 2022年11月03日 星期四 01时03分34秒.\nNo match for argument: pcp\nError: Unable to find a match: pcp'
+Thu Nov  3 01:38:08 2022 - INFO  - End to restore the test environment.

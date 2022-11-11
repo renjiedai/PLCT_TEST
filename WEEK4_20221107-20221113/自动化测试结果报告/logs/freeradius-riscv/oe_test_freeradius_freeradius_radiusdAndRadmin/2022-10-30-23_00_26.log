@@ -1,0 +1,49 @@
+Sun Oct 30 23:00:46 2022 - INFO  - Start to prepare the test environment.
+Sun Oct 30 23:01:21 2022 - INFO  - pkgs:(freeradius) is already installed
+Sun Oct 30 23:01:25 2022 - INFO  - End to prepare the test environment.
+Sun Oct 30 23:01:28 2022 - INFO  - Start to run test.
+radiusd: FreeRADIUS Version 3.0.25, for host riscv64-openeuler-linux-gnu, built on Sep 28 2022 at 20:08:46
+FreeRADIUS Version 3.0.25
+radmin version 3.0.25, built on Sep 28 2022 at 20:09:08 - FreeRADIUS Server administration tool.
+FreeRADIUS Version 3.0.25, for host riscv64-openeuler-linux-gnu, built on Sep 28 2022 at 20:08:46
+radmin version 3.0.25, built on Sep 28 2022 at 20:09:08 - FreeRADIUS Server administration tool.
+FreeRADIUS Version 3.0.25, for host riscv64-openeuler-linux-gnu, built on Sep 28 2022 at 20:08:46
+FreeRADIUS Version 3.0.25, for host riscv64-openeuler-linux-gnu, built on Sep 28 2022 at 20:08:46
+radmin version 3.0.25, built on Sep 28 2022 at 20:09:08 - FreeRADIUS Server administration tool.
+FreeRADIUS Version 3.0.25, for host riscv64-openeuler-linux-gnu, built on Sep 28 2022 at 20:08:46
+Usage: radmin [ args ]
+radmin: Errors reading or parsing /etc/raddb/radiusd.conf
+Usage: radmin [ args ]
+  -d raddb_dir    Configuration files are in "raddbdir/*".
+  -D <dictdir>    Set main dictionary directory (defaults to /usr/share/freeradius).
+  -e command      Execute 'command' and then exit.
+  -E              Echo commands as they are being executed.
+  -f socket_file  Open socket_file directly, without reading radius.conf
+  -h              Print usage help information.
+  -i input_file   Read commands from 'input_file'.
+  -n name         Read raddb/name.conf instead of raddb/radiusd.conf
+  -q              Quiet mode.
+  -v              Show program version information.
+Sun Oct 30 23:02:01 2022 - ERROR - radmin -i execution failed.
+Sun Oct 30 23:02:04 2022 - ERROR - oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 55
+cp: 无法获取'/etc/raddb/radiusd.conf' 的文件状态(stat): No such file or directory
+radmin: Errors reading or parsing /etc/raddb/test.conf
+Usage: radmin [ args ]
+  -d raddb_dir    Configuration files are in "raddbdir/*".
+  -D <dictdir>    Set main dictionary directory (defaults to /usr/share/freeradius).
+  -e command      Execute 'command' and then exit.
+  -E              Echo commands as they are being executed.
+  -f socket_file  Open socket_file directly, without reading radius.conf
+  -h              Print usage help information.
+  -i input_file   Read commands from 'input_file'.
+  -n name         Read raddb/name.conf instead of raddb/radiusd.conf
+  -q              Quiet mode.
+  -v              Show program version information.
+Sun Oct 30 23:02:08 2022 - ERROR - radmin -n execution failed.
+Sun Oct 30 23:02:10 2022 - ERROR - oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 58
+Sun Oct 30 23:02:15 2022 - INFO  - End to run test.
+/root/mugen/mugen-riscv/libs/locallibs/common_lib_python.sh：行 19:  5908 Killed                  radmin -q > /tmp/test
+Sun Oct 30 23:02:17 2022 - ERROR - failed to execute the case.
+Sun Oct 30 23:02:20 2022 - INFO  - Start to restore the test environment.
+Sun Oct 30 23:02:23 2022 - WARN  - no thing to do.
+Sun Oct 30 23:02:26 2022 - INFO  - End to restore the test environment.

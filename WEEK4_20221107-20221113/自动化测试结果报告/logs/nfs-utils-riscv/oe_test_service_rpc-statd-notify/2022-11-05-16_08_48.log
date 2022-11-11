@@ -1,0 +1,15 @@
+Sat Nov  5 16:09:12 2022 - INFO  - Start environmental preparation.
+Sat Nov  5 16:09:50 2022 - INFO  - pkgs:(nfs-utils) is already installed
+Sat Nov  5 16:09:54 2022 - INFO  - End of environmental preparation!
+Sat Nov  5 16:09:57 2022 - INFO  - Start testing...
+     Active: active (exited) since Sat 2022-11-05 16:09:58 CST; 9s ago
+     Active: inactive (dead) since Sat 2022-11-05 16:10:08 CST; 8s ago
+     Active: active (exited) since Sat 2022-11-05 16:10:18 CST; 9s ago
+Sat Nov  5 16:10:31 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload rpc-statd-notify.service: Job type reload is not applicable for unit rpc-statd-notify.service.
+     Active: active (exited) since Sat 2022-11-05 16:10:18 CST; 15s ago
+Sat Nov  5 16:10:36 2022 - INFO  - Finish test!
+Sat Nov  5 16:10:39 2022 - INFO  - succeed to execute the case.
+Sat Nov  5 16:10:42 2022 - INFO  - start environment cleanup.
+Sat Nov  5 16:10:45 2022 - WARN  - no thing to do.
+Sat Nov  5 16:10:48 2022 - INFO  - Finish environment cleanup!

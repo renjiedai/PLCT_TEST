@@ -1,0 +1,15 @@
+Wed Nov  2 21:51:50 2022 - INFO  - Start environmental preparation.
+Wed Nov  2 21:54:08 2022 - INFO  - End of environmental preparation!
+Wed Nov  2 21:54:11 2022 - INFO  - Start testing...
+     Active: active (running) since Wed 2022-11-02 21:54:11 CST; 8s ago
+     Active: inactive (dead)
+     Active: active (running) since Wed 2022-11-02 21:54:30 CST; 8s ago
+/etc/systemd/system/multi-user.target.wants/portreserve.service
+Removed /etc/systemd/system/multi-user.target.wants/portreserve.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/portreserve.service’: No such file or directory
+Failed to reload portreserve.service: Job type reload is not applicable for unit portreserve.service.
+     Active: active (running) since Wed 2022-11-02 21:54:30 CST; 33s ago
+Wed Nov  2 21:55:06 2022 - INFO  - Finish test!
+Wed Nov  2 21:55:08 2022 - INFO  - succeed to execute the case.
+Wed Nov  2 21:55:11 2022 - INFO  - start environment cleanup.
+Wed Nov  2 21:56:15 2022 - INFO  - Finish environment cleanup!

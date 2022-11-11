@@ -1,0 +1,40 @@
+Thu Nov  3 00:19:38 2022 - INFO  - Start to prepare the test environment.
+Failed to enable unit: Unit file pmcd.service does not exist.
+Failed to start pmcd.service: Unit pmcd.service not found.
+Failed to enable unit: Unit file pmlogger.service does not exist.
+Failed to start pmlogger.service: Unit pmlogger.service not found.
+oe_test_pcp.sh:行24: pcp：未找到命令
+Thu Nov  3 00:23:22 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 00:23:26 2022 - INFO  - Start to run test.
+oe_test_pcp.sh:行30: pcp：未找到命令
+Thu Nov  3 00:23:31 2022 - ERROR - oe_test_pcp.sh line 31
+oe_test_pcp.sh:行32: pcp：未找到命令
+Thu Nov  3 00:23:36 2022 - ERROR - oe_test_pcp.sh line 33
+oe_test_pcp.sh:行34: pcp：未找到命令
+Thu Nov  3 00:23:42 2022 - ERROR - oe_test_pcp.sh line 35
+oe_test_pcp.sh:行36: pcp：未找到命令
+Thu Nov  3 00:23:46 2022 - ERROR - oe_test_pcp.sh line 37
+oe_test_pcp.sh:行38: pcp：未找到命令
+Thu Nov  3 00:23:53 2022 - ERROR - oe_test_pcp.sh line 39
+oe_test_pcp.sh:行40: pcp：未找到命令
+Thu Nov  3 00:23:58 2022 - ERROR - oe_test_pcp.sh line 41
+oe_test_pcp.sh:行42: pcp：未找到命令
+Thu Nov  3 00:24:03 2022 - ERROR - oe_test_pcp.sh line 43
+oe_test_pcp.sh:行44: pcp：未找到命令
+Thu Nov  3 00:24:07 2022 - ERROR - oe_test_pcp.sh line 45
+oe_test_pcp.sh:行46: pcp：未找到命令
+Thu Nov  3 00:24:12 2022 - ERROR - oe_test_pcp.sh line 47
+oe_test_pcp.sh:行48: pcp：未找到命令
+Thu Nov  3 00:24:16 2022 - ERROR - oe_test_pcp.sh line 49
+oe_test_pcp.sh:行50: pcp：未找到命令
+Thu Nov  3 00:24:21 2022 - ERROR - oe_test_pcp.sh line 51
+Thu Nov  3 00:24:24 2022 - INFO  - End to run test.
+Thu Nov  3 00:24:29 2022 - ERROR - failed to execute the case.
+Thu Nov  3 00:24:33 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:09:21 ago on 2022年11月03日 星期四 00时13分08秒.\nNo match for argument: pcp\nError: Unable to find a match: pcp'
+Thu Nov  3 00:24:49 2022 - INFO  - End to restore the test environment.

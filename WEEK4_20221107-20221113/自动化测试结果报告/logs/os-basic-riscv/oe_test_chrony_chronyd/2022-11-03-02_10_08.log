@@ -1,0 +1,13 @@
+Thu Nov  3 02:10:21 2022 - INFO  - Start to prepare the test environment.
+Thu Nov  3 02:10:42 2022 - INFO  - pkgs:(chrony) is already installed
+Thu Nov  3 02:10:44 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 02:10:45 2022 - INFO  - Start to run test.
+     Active: active (running) since Thu 2022-11-03 02:10:46 CST; 759ms ago
+Thu Nov  3 02:10:49 2022 - ERROR - oe_test_chrony_chronyd.sh line 33
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+     Active: inactive (dead)
+Thu Nov  3 02:10:52 2022 - INFO  - End to run test.
+Thu Nov  3 02:10:54 2022 - ERROR - failed to execute the case.
+Thu Nov  3 02:10:56 2022 - INFO  - Start to restore the test environment.
+Thu Nov  3 02:10:57 2022 - WARN  - no thing to do.
+Thu Nov  3 02:10:59 2022 - INFO  - End to restore the test environment.

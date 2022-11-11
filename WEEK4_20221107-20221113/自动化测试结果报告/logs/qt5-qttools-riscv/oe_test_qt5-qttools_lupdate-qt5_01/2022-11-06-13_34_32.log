@@ -1,0 +1,49 @@
+Sun Nov  6 13:34:54 2022 - INFO  - Start to prepare the test environment.
+Sun Nov  6 13:40:05 2022 - INFO  - End to prepare the test environment.
+Sun Nov  6 13:40:09 2022 - INFO  - Start to run test.
+    lupdate [options] [project-file]...
+    lupdate [options] [source-file|path|@lst-file]... -ts ts-files|@lst-file
+lupdate is part of Qt's Linguist tool chain. It extracts translatable
+Passing .pro files to lupdate is deprecated.
+Please use the lupdate-pro tool instead.
+    -help  Display this information and exit.
+           This option is deprecated. Use the lupdate-pro tool instead.
+           Display the version of lupdate and exit.
+Info: creating stash file /root/mugen/mugen-riscv/testcases/cli-test/qt5-qttools/oe_test_qt5-qttools_lupdate-qt5_01/.qmake.stash
+/root/mugen/mugen-riscv/testcases/cli-test/qt5-qttools/hello.cpp:9: Qualifying with unknown namespace/class ::Widget
+/root/mugen/mugen-riscv/testcases/cli-test/qt5-qttools/hello.cpp:20: Qualifying with unknown namespace/class ::Widget
+Updating 'hello.ts'...
+    Found 3 source text(s) (3 new and 0 already existing)
+/root/mugen/mugen-riscv/testcases/cli-test/qt5-qttools/hello.cpp:9: Qualifying with unknown namespace/class ::Widget
+/root/mugen/mugen-riscv/testcases/cli-test/qt5-qttools/hello.cpp:20: Qualifying with unknown namespace/class ::Widget
+Updating 'hello.ts'...
+/root/mugen/mugen-riscv/testcases/cli-test/qt5-qttools/hello.cpp:9: Qualifying with unknown namespace/class ::Widget
+/root/mugen/mugen-riscv/testcases/cli-test/qt5-qttools/hello.cpp:20: Qualifying with unknown namespace/class ::Widget
+Stripping non plural forms in 'hello.ts'...
+/root/mugen/mugen-riscv/testcases/cli-test/qt5-qttools/hello.cpp:9: Qualifying with unknown namespace/class ::Widget
+/root/mugen/mugen-riscv/testcases/cli-test/qt5-qttools/hello.cpp:20: Qualifying with unknown namespace/class ::Widget
+Info: creating stash file /root/mugen/mugen-riscv/testcases/cli-test/qt5-qttools/oe_test_qt5-qttools_lupdate-qt5_01/.qmake.stash
+/root/mugen/mugen-riscv/testcases/cli-test/qt5-qttools/hello.cpp:9: Qualifying with unknown namespace/class ::Widget
+/root/mugen/mugen-riscv/testcases/cli-test/qt5-qttools/hello.cpp:20: Qualifying with unknown namespace/class ::Widget
+Updating 'hello.ts'...
+    Found 3 source text(s) (0 new and 3 already existing)
+        <source>click me</source>
+        <source>click button</source>
+    Found 0 source text(s) (0 new and 0 already existing)
+/root/mugen/mugen-riscv/testcases/cli-test/qt5-qttools/oe_test_qt5-qttools_lupdate-qt5_01/dir/dir/hello.cpp:9: Qualifying with unknown namespace/class ::Widget
+/root/mugen/mugen-riscv/testcases/cli-test/qt5-qttools/oe_test_qt5-qttools_lupdate-qt5_01/dir/dir/hello.cpp:20: Qualifying with unknown namespace/class ::Widget
+    Found 3 source text(s) (3 new and 0 already existing)
+<context>
+    <name>Widget</name>
+        <source>click me</source>
+        <source>click button</source>
+</context>
+/root/mugen/mugen-riscv/testcases/cli-test/qt5-qttools/hello.cpp:9: Qualifying with unknown namespace/class ::Widget
+/root/mugen/mugen-riscv/testcases/cli-test/qt5-qttools/hello.cpp:20: Qualifying with unknown namespace/class ::Widget
+/root/mugen/mugen-riscv/testcases/cli-test/qt5-qttools/oe_test_qt5-qttools_lupdate-qt5_01/dir/dir/hello.cpp:9: Qualifying with unknown namespace/class ::Widget
+/root/mugen/mugen-riscv/testcases/cli-test/qt5-qttools/oe_test_qt5-qttools_lupdate-qt5_01/dir/dir/hello.cpp:20: Qualifying with unknown namespace/class ::Widget
+Scanning directory '../'...
+Sun Nov  6 13:40:55 2022 - INFO  - End to run test.
+Sun Nov  6 13:40:58 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 13:41:02 2022 - INFO  - Start to restore the test environment.
+Sun Nov  6 13:43:04 2022 - INFO  - End to restore the test environment.

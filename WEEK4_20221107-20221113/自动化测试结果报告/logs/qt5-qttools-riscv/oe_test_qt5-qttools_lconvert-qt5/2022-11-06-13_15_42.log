@@ -1,0 +1,301 @@
+Sun Nov  6 13:16:23 2022 - INFO  - Start to prepare the test environment.
+Sun Nov  6 13:24:00 2022 - INFO  - End to prepare the test environment.
+Sun Nov  6 13:24:05 2022 - INFO  - Start to run test.
+    lconvert [options] <infile> [<infile>...]
+lconvert is part of Qt's Linguist tool chain. It can be used as a
+    -help  Display this information and exit.
+Warning: dropping duplicate messages in 'swedish.qph'
+(try -verbose for more info).
+<context>
+        <source>context-sensitive Help</source>
+        <source>contextual</source>
+</context>
+Warning: dropping duplicate messages in 'swedish.qph'
+(try -verbose for more info).
+<!DOCTYPE TS>
+<TS version="2.1" language="sv">
+        <translation type="unfinished">Utskriftsformat</translation>
+        <translation type="unfinished">Fortsätt</translation>
+        <translation type="unfinished">Aktivitetsfältet</translation>
+        <translation type="unfinished">aktivitetsberoende hjälp</translation>
+        <translation type="unfinished">arbetsbok</translation>
+        <translation type="unfinished">arbetsgrupp</translation>
+        <translation type="unfinished">arbetsyta</translation>
+</TS>
+Warning: dropping duplicate messages in 'swedish.qph'
+(try -verbose for more info).
+<?xml version="1.0" encoding="utf-8"?>
+Warning: dropping duplicate messages in 'swedish.qph'
+(try -verbose for more info).
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+        <translation type="unfinished"></translation>
+Warning: dropping duplicate messages in 'swedish.qph'
+(try -verbose for more info).
+<TS version="2.1" language="sv" sourcelanguage="POSIX">
+Warning: dropping duplicate messages in 'swedish.qph'
+(try -verbose for more info).
+<TS version="2.1" language="POSIX">
+Warning: dropping duplicate messages in 'swedish.qph'
+(try -verbose for more info).
+Warning: dropping duplicate messages in 'swedish.qph'
+(try -verbose for more info).
+Warning: dropping duplicate messages in 'swedish.qph'
+(try -verbose for more info).
+Warning: dropping duplicate messages in 'swedish.qph'
+(try -verbose for more info).
+        <source>context-sensitive Help</source>
+Warning: dropping duplicate messages in 'swedish.qph'
+(try -verbose for more info).
+<!DOCTYPE TS>
+Warning: dropping duplicate messages in 'swedish.qph'
+(try -verbose for more info).
+* Source: New
+* Source: Size
+* Source: Setup
+Sun Nov  6 13:24:27 2022 - INFO  - End to run test.
+Sun Nov  6 13:24:31 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 13:24:36 2022 - INFO  - Start to restore the test environment.
+Sun Nov  6 13:27:19 2022 - INFO  - End to restore the test environment.

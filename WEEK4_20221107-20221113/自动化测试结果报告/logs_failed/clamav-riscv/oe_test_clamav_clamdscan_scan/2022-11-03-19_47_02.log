@@ -1,0 +1,39 @@
+Thu Nov  3 19:47:28 2022 - INFO  - Start to prepare the database config.
+Job for clamd@scan.service failed because a timeout was exceeded.
+See "systemctl status clamd@scan.service" and "journalctl -xeu clamd@scan.service" for details.
+Thu Nov  3 20:01:59 2022 - INFO  - End to prepare the database config.
+Thu Nov  3 20:02:02 2022 - INFO  - Start to run test.
+ERROR: Could not connect to clamd on 0.0.0.0: Connection refused
+Thu Nov  3 20:02:06 2022 - ERROR - Check clamdscan  -v -l clamdscan_log /var/lib/clamav failed.
+Thu Nov  3 20:02:10 2022 - ERROR - oe_test_clamav_clamdscan_scan.sh line 45
+ERROR: Could not connect to clamd on 0.0.0.0: Connection refused
+Thu Nov  3 20:02:13 2022 - ERROR - Check clamdscan --quiet failed.
+Thu Nov  3 20:02:17 2022 - ERROR - oe_test_clamav_clamdscan_scan.sh line 47
+ERROR: Could not connect to clamd on 0.0.0.0: Connection refused
+Thu Nov  3 20:02:21 2022 - ERROR - Check clamdscan --remove failed.
+Thu Nov  3 20:02:25 2022 - ERROR - oe_test_clamav_clamdscan_scan.sh line 49
+ERROR: Could not connect to clamd on 0.0.0.0: Connection refused
+Thu Nov  3 20:02:28 2022 - ERROR - Check clamdscan --move failed.
+Thu Nov  3 20:02:32 2022 - ERROR - oe_test_clamav_clamdscan_scan.sh line 51
+ERROR: Could not connect to clamd on 0.0.0.0: Connection refused
+Thu Nov  3 20:02:36 2022 - ERROR - Check clamdscan --copy failed.
+Thu Nov  3 20:02:39 2022 - ERROR - oe_test_clamav_clamdscan_scan.sh line 53
+ERROR: Could not connect to clamd on 0.0.0.0: Connection refused
+Thu Nov  3 20:02:43 2022 - ERROR - Check clamdscan --config-file failed.
+Thu Nov  3 20:02:47 2022 - ERROR - oe_test_clamav_clamdscan_scan.sh line 55
+ERROR: Could not connect to clamd on 0.0.0.0: Connection refused
+Thu Nov  3 20:02:51 2022 - ERROR - Check clamdscan -i failed.
+Thu Nov  3 20:02:54 2022 - ERROR - oe_test_clamav_clamdscan_scan.sh line 57
+ERROR: Could not connect to clamd on 0.0.0.0: Connection refused
+Thu Nov  3 20:02:58 2022 - ERROR - Check clamdscan --no-summary failed.
+Thu Nov  3 20:03:01 2022 - ERROR - oe_test_clamav_clamdscan_scan.sh line 59
+ERROR: Could not connect to clamd on 0.0.0.0: Connection refused
+ERROR: Could not connect to clamd on 0.0.0.0: Connection refused
+Thu Nov  3 20:03:05 2022 - ERROR - Check clamdscan --file-list failed.
+Thu Nov  3 20:03:08 2022 - ERROR - oe_test_clamav_clamdscan_scan.sh line 61
+Thu Nov  3 20:03:12 2022 - INFO  - End to run test.
+Thu Nov  3 20:03:16 2022 - ERROR - failed to execute the case.
+Thu Nov  3 20:03:19 2022 - INFO  - Start to restore the test environment.
+Job for clamd@scan.service failed because the control process exited with error code.
+See "systemctl status clamd@scan.service" and "journalctl -xeu clamd@scan.service" for details.
+Thu Nov  3 20:05:33 2022 - INFO  - End to restore the test environment.

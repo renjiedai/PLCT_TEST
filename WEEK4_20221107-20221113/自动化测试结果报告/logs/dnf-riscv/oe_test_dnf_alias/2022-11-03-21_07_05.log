@@ -1,0 +1,13 @@
+Thu Nov  3 21:07:39 2022 - INFO  - Start to prepare the test environment.
+Thu Nov  3 21:08:37 2022 - INFO  - pkgs:(tree) is already installed
+Thu Nov  3 21:08:42 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 21:08:46 2022 - INFO  - Start to run test.
+Aliases added: rm
+Alias rm='remove'
+Removing:
+package tree is not installed
+Aliases deleted: rm
+Thu Nov  3 21:11:07 2022 - INFO  - End of the test.
+Thu Nov  3 21:11:10 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 21:11:14 2022 - INFO  - Start to restore the test environment.
+Thu Nov  3 21:11:18 2022 - INFO  - End to restore the test environment.

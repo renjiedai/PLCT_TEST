@@ -1,0 +1,15 @@
+Thu Nov  3 22:01:30 2022 - INFO  - Start environmental preparation.
+Thu Nov  3 22:07:08 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 22:07:13 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-11-03 22:07:24 CST; 11s ago
+     Active: inactive (dead)
+     Active: active (running) since Thu 2022-11-03 22:07:58 CST; 11s ago
+Thu Nov  3 22:08:17 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload geoclue.service: Job type reload is not applicable for unit geoclue.service.
+     Active: active (running) since Thu 2022-11-03 22:07:58 CST; 22s ago
+Thu Nov  3 22:08:25 2022 - INFO  - Finish test!
+Thu Nov  3 22:08:30 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 22:08:34 2022 - INFO  - start environment cleanup.
+Warning: Stopping avahi-daemon.service, but it can still be activated by:
+  avahi-daemon.socket
+Thu Nov  3 22:11:10 2022 - INFO  - Finish environment cleanup!

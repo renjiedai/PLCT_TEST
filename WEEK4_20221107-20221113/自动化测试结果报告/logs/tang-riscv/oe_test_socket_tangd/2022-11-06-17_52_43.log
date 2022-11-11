@@ -1,0 +1,15 @@
+Sun Nov  6 17:53:02 2022 - INFO  - Start environmental preparation.
+Sun Nov  6 17:55:10 2022 - INFO  - End of environmental preparation!
+Sun Nov  6 17:55:12 2022 - INFO  - Start testing...
+     Active: active (listening) since Sun 2022-11-06 17:55:27 CST; 9s ago
+     Active: inactive (dead)
+     Active: active (listening) since Sun 2022-11-06 17:56:00 CST; 9s ago
+/etc/systemd/system/multi-user.target.wants/tangd.socket
+Removed /etc/systemd/system/multi-user.target.wants/tangd.socket.
+find: ‘/etc/systemd/system/multi-user.target.wants/tangd.socket’: No such file or directory
+Failed to reload tangd.socket: Job type reload is not applicable for unit tangd.socket.
+     Active: active (listening) since Sun 2022-11-06 17:56:00 CST; 47s ago
+Sun Nov  6 17:56:50 2022 - INFO  - Finish test!
+Sun Nov  6 17:56:52 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 17:56:54 2022 - INFO  - start environment cleanup.
+Sun Nov  6 17:58:02 2022 - INFO  - Finish environment cleanup!

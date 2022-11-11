@@ -1,0 +1,245 @@
+Thu Nov  3 17:13:37 2022 - INFO  - Start environmental preparation.
+Thu Nov  3 17:18:01 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 17:18:06 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-11-03 17:18:08 CST; 11s ago
+     Active: inactive (dead)
+     Active: active (running) since Thu 2022-11-03 17:18:36 CST; 11s ago
+/etc/systemd/system/default.target.wants/brltty.service
+/etc/systemd/system/emergency.target.wants/brltty.service
+/etc/systemd/system/rescue.target.wants/brltty.service
+Removed /etc/systemd/system/emergency.target.wants/brltty.service.
+Removed /etc/systemd/system/default.target.wants/brltty.service.
+Removed /etc/systemd/system/rescue.target.wants/brltty.service.
+find: ‘/etc/systemd/system/default.target.wants/brltty.service’: No such file or directory
+find: ‘/etc/systemd/system/emergency.target.wants/brltty.service’: No such file or directory
+find: ‘/etc/systemd/system/rescue.target.wants/brltty.service’: No such file or directory
+11月 03 17:18:10 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:10 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:10 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:10 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:11 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:11 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:11 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:12 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:12 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:12 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:13 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:13 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:13 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:13 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:14 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:14 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:15 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:15 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:15 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:15 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:15 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:16 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:16 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:16 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:17 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:17 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:17 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:17 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:18 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:18 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:18 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:18 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:19 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:20 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:20 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:20 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:20 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:21 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:21 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:21 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:21 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:21 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:22 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:22 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:22 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:22 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:22 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:23 eulaceura brltty[913]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:37 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:37 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:37 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:37 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:38 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:38 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:38 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:38 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:39 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:39 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:39 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:39 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:39 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:40 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:40 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:40 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:41 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:41 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:41 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:42 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:42 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:42 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:42 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:42 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:43 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:43 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:43 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:43 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:44 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:44 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:44 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:44 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:46 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:47 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:47 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:47 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:47 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:48 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:48 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:48 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:48 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:48 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:49 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:49 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:49 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:50 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:50 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:50 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:51 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:51 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:52 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:52 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:52 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:52 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:52 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:53 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:53 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:53 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:53 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:54 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:54 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:54 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:54 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:55 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:56 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:56 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:57 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:57 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:57 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:57 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:58 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:58 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:58 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:58 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:59 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:59 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:59 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:18:59 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:00 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:00 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:01 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:01 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:02 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:02 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:02 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:02 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:03 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:03 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:03 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:03 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:04 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:04 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:04 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:04 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:04 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:05 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:06 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:06 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:07 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:07 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:07 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:07 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:08 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:08 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:08 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:08 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:08 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:09 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:09 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:09 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:09 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:10 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:11 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:11 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:11 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:12 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:12 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:12 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:12 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:13 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:13 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:13 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:13 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:13 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:14 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:14 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:14 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:14 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:16 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:16 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:17 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:17 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:17 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:17 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:17 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:18 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:19 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:19 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:19 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:19 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:19 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:20 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:20 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:20 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:21 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:21 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:21 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:22 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:22 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:22 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:22 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:22 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:23 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:23 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:23 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:23 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:23 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:24 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:24 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:24 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:26 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:26 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:26 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:26 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:26 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:27 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:27 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:27 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:27 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:27 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:27 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:28 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:28 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+11月 03 17:19:28 eulaceura brltty[1000]: file system mount error: usbfs[brltty-usbfs] -> /var/run/brltty/usbfs: No such device
+Thu Nov  3 17:19:30 2022 - ERROR - There is an error message for the log of brltty.service
+Thu Nov  3 17:19:33 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload brltty.service: Job type reload is not applicable for unit brltty.service.
+     Active: active (running) since Thu 2022-11-03 17:18:36 CST; 59s ago
+Thu Nov  3 17:19:38 2022 - INFO  - Finish test!
+Thu Nov  3 17:19:41 2022 - ERROR - failed to execute the case.
+Thu Nov  3 17:19:45 2022 - INFO  - start environment cleanup.
+Thu Nov  3 17:21:41 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,35 @@
+Thu Nov  3 00:36:59 2022 - INFO  - Start to prepare the test environment.
+Failed to enable unit: Unit file pmcd.service does not exist.
+Failed to start pmcd.service: Unit pmcd.service not found.
+Failed to enable unit: Unit file pmlogger.service does not exist.
+Failed to start pmlogger.service: Unit pmlogger.service not found.
+oe_test_pmevent_01.sh:行24: pcp：未找到命令
+Thu Nov  3 00:39:02 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 00:39:04 2022 - INFO  - Start to run test.
+oe_test_pmevent_01.sh:行31: pmevent：未找到命令
+oe_test_pmevent_01.sh:行33: pmevent：未找到命令
+Thu Nov  3 00:39:08 2022 - ERROR - oe_test_pmevent_01.sh line 34
+oe_test_pmevent_01.sh:行35: pmevent：未找到命令
+Thu Nov  3 00:39:11 2022 - ERROR - oe_test_pmevent_01.sh line 36
+oe_test_pmevent_01.sh:行37: pmevent：未找到命令
+Thu Nov  3 00:39:14 2022 - ERROR - oe_test_pmevent_01.sh line 38
+oe_test_pmevent_01.sh:行39: pmevent：未找到命令
+Thu Nov  3 00:39:17 2022 - ERROR - oe_test_pmevent_01.sh line 40
+oe_test_pmevent_01.sh:行41: pmevent：未找到命令
+Thu Nov  3 00:39:20 2022 - ERROR - oe_test_pmevent_01.sh line 42
+oe_test_pmevent_01.sh:行43: pmevent：未找到命令
+Thu Nov  3 00:39:22 2022 - ERROR - oe_test_pmevent_01.sh line 44
+oe_test_pmevent_01.sh:行45: pmevent：未找到命令
+Thu Nov  3 00:39:26 2022 - ERROR - oe_test_pmevent_01.sh line 46
+oe_test_pmevent_01.sh:行47: pmevent：未找到命令
+Thu Nov  3 00:39:30 2022 - ERROR - oe_test_pmevent_01.sh line 48
+Thu Nov  3 00:39:33 2022 - INFO  - End to run test.
+Thu Nov  3 00:39:35 2022 - ERROR - failed to execute the case.
+Thu Nov  3 00:39:38 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:25:19 ago on 2022年11月03日 星期四 00时13分08秒.\nNo match for argument: pcp\nError: Unable to find a match: pcp'
+Thu Nov  3 00:39:50 2022 - INFO  - End to restore the test environment.

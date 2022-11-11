@@ -1,0 +1,12 @@
+Fri Nov  4 02:08:08 2022 - INFO  - Start to prepare the test environment.
+cp: 无法获取'' 的文件状态(stat): No such file or directory
+cp: 无法获取'' 的文件状态(stat): No such file or directory
+cp: 无法获取'' 的文件状态(stat): No such file or directory
+Fri Nov  4 02:15:50 2022 - INFO  - End to prepare the test environment.
+Fri Nov  4 02:15:54 2022 - INFO  - Start to run test.
+oe_test_easymock_junit4.sh:行31: mvn：未找到命令
+Fri Nov  4 02:15:58 2022 - ERROR - oe_test_easymock_junit4.sh line 32
+Fri Nov  4 02:16:02 2022 - INFO  - End to run test.
+Fri Nov  4 02:16:06 2022 - ERROR - failed to execute the case.
+Fri Nov  4 02:16:10 2022 - INFO  - Start to restore the test environment.
+Fri Nov  4 02:17:03 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,15 @@
+Sun Nov  6 16:57:12 2022 - INFO  - Start environmental preparation.
+Sun Nov  6 16:58:11 2022 - INFO  - pkgs:(usbmuxd) is already installed
+Sun Nov  6 16:58:16 2022 - INFO  - End of environmental preparation!
+Sun Nov  6 16:58:20 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-11-06 16:58:21 CST; 11s ago
+     Active: inactive (dead)
+     Active: active (running) since Sun 2022-11-06 16:58:47 CST; 12s ago
+Sun Nov  6 16:59:07 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload usbmuxd.service: Job type reload is not applicable for unit usbmuxd.service.
+     Active: active (running) since Sun 2022-11-06 16:58:47 CST; 21s ago
+Sun Nov  6 16:59:13 2022 - INFO  - Finish test!
+Sun Nov  6 16:59:17 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 16:59:22 2022 - INFO  - start environment cleanup.
+Sun Nov  6 16:59:26 2022 - WARN  - no thing to do.
+Sun Nov  6 16:59:30 2022 - INFO  - Finish environment cleanup!

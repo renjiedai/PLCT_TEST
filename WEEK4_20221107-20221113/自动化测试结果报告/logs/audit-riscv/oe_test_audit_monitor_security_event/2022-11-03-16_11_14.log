@@ -1,0 +1,22 @@
+Thu Nov  3 16:11:55 2022 - INFO  - Start to prepare the test environment.
+更改用户 Jevons 的密码 。
+passwd：所有的身份验证令牌已经成功更新。
+Thu Nov  3 16:12:05 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 16:12:10 2022 - INFO  - Start to run test.
+Stopping logging: [  OK  ]
+Redirecting start to /bin/systemctl start auditd.service
+No rules
+spawn ssh Jevons@localhost
+invalid command name "expect{"
+    while executing
+"expect{"
+Thu Nov  3 16:41:19 2022 - ERROR - Timeout : Command 'bash oe_test_audit_monitor_security_event.sh' timed out after 1799.9856493000002 seconds
+<no matches>
+Thu Nov  3 16:41:41 2022 - INFO  - Start to restore the test environment.
+Thu Nov  3 16:41:49 2022 - INFO  - End to restore the test environment.
+oe_test_audit_monitor_security_event.sh:行49: /tmp/log.log: No such file or directory
+Thu Nov  3 16:42:02 2022 - INFO  - End to run test.
+Thu Nov  3 16:42:05 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 16:42:09 2022 - INFO  - Start to restore the test environment.
+userdel：用户“Jevons”不存在
+Thu Nov  3 16:42:13 2022 - INFO  - End to restore the test environment.

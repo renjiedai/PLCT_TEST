@@ -1,0 +1,12 @@
+Fri Nov  4 05:03:58 2022 - INFO  - Start testing...
+     Active: active (exited) since Fri 2022-11-04 05:04:02 CST; 10s ago
+     Active: inactive (dead) since Fri 2022-11-04 05:04:14 CST; 9s ago
+     Active: active (exited) since Fri 2022-11-04 05:04:25 CST; 7s ago
+find: ‘/etc/systemd/system/sysinit.target.wants/lvm2-monitor.service’: No such file or directory
+Created symlink /etc/systemd/system/sysinit.target.wants/lvm2-monitor.service → /usr/lib/systemd/system/lvm2-monitor.service.
+/etc/systemd/system/sysinit.target.wants/lvm2-monitor.service
+Failed to reload lvm2-monitor.service: Job type reload is not applicable for unit lvm2-monitor.service.
+     Active: active (exited) since Fri 2022-11-04 05:04:25 CST; 35s ago
+Fri Nov  4 05:05:03 2022 - INFO  - Finish test!
+Fri Nov  4 05:05:06 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 05:05:09 2022 - INFO  - oe_test_service_lvm2-monitor.sh post_test

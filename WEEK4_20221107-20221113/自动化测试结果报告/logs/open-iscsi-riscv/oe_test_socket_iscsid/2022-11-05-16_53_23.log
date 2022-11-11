@@ -1,0 +1,15 @@
+Sat Nov  5 16:54:04 2022 - INFO  - Start environmental preparation.
+Sat Nov  5 16:57:47 2022 - INFO  - End of environmental preparation!
+Sat Nov  5 16:57:50 2022 - INFO  - Start to run test.
+     Active: active (listening) since Sat 2022-11-05 16:57:50 CST; 9s ago
+     Active: inactive (dead) since Sat 2022-11-05 16:58:00 CST; 9s ago
+     Active: active (listening) since Sat 2022-11-05 16:58:10 CST; 9s ago
+find: ‘/etc/systemd/system/sockets.target.wants/iscsid.socket’: No such file or directory
+Created symlink /etc/systemd/system/sockets.target.wants/iscsid.socket → /usr/lib/systemd/system/iscsid.socket.
+/etc/systemd/system/sockets.target.wants/iscsid.socket
+Failed to reload iscsid.socket: Job type reload is not applicable for unit iscsid.socket.
+     Active: active (listening) since Sat 2022-11-05 16:58:10 CST; 40s ago
+Sat Nov  5 16:58:53 2022 - INFO  - End of the test.
+Sat Nov  5 16:58:56 2022 - INFO  - succeed to execute the case.
+Sat Nov  5 16:59:00 2022 - INFO  - start environment cleanup.
+Sat Nov  5 17:00:35 2022 - INFO  - Finish environment cleanup!

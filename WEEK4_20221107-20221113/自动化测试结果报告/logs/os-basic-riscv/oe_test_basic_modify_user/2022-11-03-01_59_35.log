@@ -1,0 +1,14 @@
+Thu Nov  3 01:59:52 2022 - INFO  - Start environment preparation.
+useradd warning: testuser's uid 555 outside of the UID_MIN 1000 and UID_MAX 60000 range.
+groupadd：GID “72”已经存在
+Thu Nov  3 01:59:57 2022 - INFO  - Environmental preparation is over.
+Thu Nov  3 01:59:59 2022 - INFO  - Start executing testcase!
+666
+72
+Thu Nov  3 02:00:05 2022 - ERROR - oe_test_basic_modify_user.sh line 41
+Thu Nov  3 02:00:08 2022 - INFO  - End of testcase execution!
+Thu Nov  3 02:00:10 2022 - ERROR - failed to execute the case.
+Thu Nov  3 02:00:12 2022 - INFO  - start environment cleanup.
+userdel：组“testuser”没有移除，因为它不是用户 testuser 的主组
+groupdel：“testgroup1”组不存在
+Thu Nov  3 02:00:17 2022 - INFO  - Finish environment cleanup.

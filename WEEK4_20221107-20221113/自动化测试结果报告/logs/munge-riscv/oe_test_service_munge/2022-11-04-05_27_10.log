@@ -1,0 +1,16 @@
+Fri Nov  4 05:27:25 2022 - INFO  - Start environmental preparation.
+Generating a pseudo-random key using /dev/urandom completed.
+Fri Nov  4 05:28:58 2022 - INFO  - End of environmental preparation!
+Fri Nov  4 05:29:00 2022 - INFO  - Start testing...
+     Active: active (running) since Fri 2022-11-04 05:29:01 CST; 7s ago
+     Active: inactive (dead)
+     Active: active (running) since Fri 2022-11-04 05:29:17 CST; 7s ago
+/etc/systemd/system/multi-user.target.wants/munge.service
+Removed /etc/systemd/system/multi-user.target.wants/munge.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/munge.service’: No such file or directory
+Failed to reload munge.service: Job type reload is not applicable for unit munge.service.
+     Active: active (running) since Fri 2022-11-04 05:29:17 CST; 24s ago
+Fri Nov  4 05:29:43 2022 - INFO  - Finish test!
+Fri Nov  4 05:29:45 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 05:29:47 2022 - INFO  - start environment cleanup.
+Fri Nov  4 05:30:33 2022 - INFO  - Finish environment cleanup!

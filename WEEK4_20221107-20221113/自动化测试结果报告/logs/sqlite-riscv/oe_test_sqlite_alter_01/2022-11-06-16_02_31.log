@@ -1,0 +1,26 @@
+Sun Nov  6 16:03:08 2022 - INFO  - Start to run test.
+spawn sqlite3 ./test.db
+CREATE TABLE COMPANY１(
+        ID INT PRIMARY KEY     NOT NULL,
+        NAME           TEXT    NOT NULL,
+        AGE            INT     DEFAULT 28
+        );
+SQLite version 3.36.0 2021-06-18 18:36:39
+Enter ".help" for usage hints.
+sqlite> CREATE TABLE COMPANY１(
+   ...>         ID INT PRIMARY KEY     NOT NULL,
+   ...>         NAME           TEXT    NOT NULL,
+   ...>         AGE            INT     DEFAULT 28
+   ...>         );
+sqlite> ALTER TABLE COMPANY１ RENAME TO OLD_COMPANY;
+sqlite> .output ./output.txt
+sqlite> .table
+sqlite> .headers on
+sqlite> ALTER TABLE OLD_COMPANY ADD COLUMN SEX char(1);
+sqlite> INSERT INTO OLD_COMPANY VALUES (1, 'Paul', 32, 'female');
+sqlite> select * from OLD_COMPANY;
+sqlite> .quit
+Sun Nov  6 16:03:17 2022 - INFO  - End to run test.
+Sun Nov  6 16:03:21 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 16:03:25 2022 - INFO  - Start to restore the test environment.
+Sun Nov  6 16:03:29 2022 - INFO  - End to restore the test environment.

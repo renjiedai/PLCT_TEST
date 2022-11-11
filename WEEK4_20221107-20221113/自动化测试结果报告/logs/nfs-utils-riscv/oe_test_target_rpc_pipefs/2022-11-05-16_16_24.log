@@ -1,0 +1,15 @@
+Sat Nov  5 16:16:48 2022 - INFO  - Start environmental preparation.
+Sat Nov  5 16:17:26 2022 - INFO  - pkgs:(nfs-utils) is already installed
+Sat Nov  5 16:17:29 2022 - INFO  - End of environmental preparation!
+Sat Nov  5 16:17:32 2022 - INFO  - Start to run test.
+     Active: active since Sat 2022-11-05 16:17:33 CST; 9s ago
+     Active: inactive (dead) since Sat 2022-11-05 16:17:43 CST; 9s ago
+     Active: active since Sat 2022-11-05 16:17:52 CST; 9s ago
+Sat Nov  5 16:18:06 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload rpc_pipefs.target: Job type reload is not applicable for unit rpc_pipefs.target.
+     Active: active since Sat 2022-11-05 16:17:52 CST; 14s ago
+Sat Nov  5 16:18:10 2022 - INFO  - End of the test.
+Sat Nov  5 16:18:12 2022 - INFO  - succeed to execute the case.
+Sat Nov  5 16:18:16 2022 - INFO  - start environment cleanup.
+Sat Nov  5 16:18:21 2022 - WARN  - no thing to do.
+Sat Nov  5 16:18:24 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,22 @@
+Thu Nov  3 01:44:50 2022 - INFO  - Start to prepare the test environment.
+Thu Nov  3 01:47:13 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 01:47:15 2022 - INFO  - Start to run test.
+Linux 5.10.0-60.50.0-default (eulaceura) 	2022年11月03日 	_riscv64_	(4 CPU)
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          34.09    6.02   25.60    0.05    0.00   34.23
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+vda               4.64        56.90        69.45         0.00     343095     418776          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+Thu Nov  3 01:47:19 2022 - ERROR - oe_test_ProcMgmt_iostat.sh line 40
+Thu Nov  3 01:47:22 2022 - INFO  - End to run test.
+Thu Nov  3 01:47:25 2022 - ERROR - failed to execute the case.
+Thu Nov  3 01:47:27 2022 - INFO  - Start to restore the test environment.
+Thu Nov  3 01:48:34 2022 - INFO  - End to restore the test environment.

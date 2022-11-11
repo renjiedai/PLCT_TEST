@@ -1,0 +1,36 @@
+Thu Nov  3 00:33:09 2022 - INFO  - Start to prepare the test environment.
+Failed to enable unit: Unit file pmcd.service does not exist.
+Failed to start pmcd.service: Unit pmcd.service not found.
+Failed to enable unit: Unit file pmlogger.service does not exist.
+Failed to start pmlogger.service: Unit pmlogger.service not found.
+oe_test_pmdumplog_02.sh:行24: pcp：未找到命令
+Thu Nov  3 00:35:20 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 00:35:22 2022 - INFO  - Start to run test.
+oe_test_pmdumplog_02.sh:行30: pmdumplog：未找到命令
+Thu Nov  3 00:35:25 2022 - ERROR - oe_test_pmdumplog_02.sh line 31
+oe_test_pmdumplog_02.sh:行32: pmdumplog：未找到命令
+Thu Nov  3 00:35:28 2022 - ERROR - oe_test_pmdumplog_02.sh line 33
+oe_test_pmdumplog_02.sh:行34: pmdumplog：未找到命令
+Thu Nov  3 00:35:31 2022 - ERROR - oe_test_pmdumplog_02.sh line 35
+oe_test_pmdumplog_02.sh:行36: pmdumplog：未找到命令
+Thu Nov  3 00:35:34 2022 - ERROR - oe_test_pmdumplog_02.sh line 37
+oe_test_pmdumplog_02.sh:行38: pmdumplog：未找到命令
+Thu Nov  3 00:35:37 2022 - ERROR - oe_test_pmdumplog_02.sh line 39
+oe_test_pmdumplog_02.sh:行40: pmdumplog：未找到命令
+Thu Nov  3 00:35:39 2022 - ERROR - oe_test_pmdumplog_02.sh line 41
+oe_test_pmdumplog_02.sh:行42: pmdumplog：未找到命令
+Thu Nov  3 00:35:42 2022 - ERROR - oe_test_pmdumplog_02.sh line 43
+oe_test_pmdumplog_02.sh:行44: pmdumplog：未找到命令
+Thu Nov  3 00:35:45 2022 - ERROR - oe_test_pmdumplog_02.sh line 45
+oe_test_pmdumplog_02.sh:行46: pmdumplog：未找到命令
+Thu Nov  3 00:35:47 2022 - ERROR - oe_test_pmdumplog_02.sh line 47
+Thu Nov  3 00:35:50 2022 - INFO  - End to run test.
+Thu Nov  3 00:35:53 2022 - ERROR - failed to execute the case.
+Thu Nov  3 00:35:56 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:21:35 ago on 2022年11月03日 星期四 00时13分08秒.\nNo match for argument: pcp\nError: Unable to find a match: pcp'
+Thu Nov  3 00:36:08 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,10 @@
+Thu Nov  3 00:11:49 2022 - INFO  - Start to run test.
+用法: grep [选项]... 模式 [文件]...
+尝试使用 'grep --help' 来获得更多信息。
+Thu Nov  3 00:11:56 2022 - ERROR - oe_test_who.sh line 24
+Thu Nov  3 00:12:03 2022 - ERROR - oe_test_who.sh line 27
+Thu Nov  3 00:12:09 2022 - ERROR - oe_test_who.sh line 30
+Thu Nov  3 00:12:16 2022 - ERROR - oe_test_who.sh line 33
+Thu Nov  3 00:12:22 2022 - INFO  - End to run test.
+Thu Nov  3 00:12:27 2022 - ERROR - failed to execute the case.
+Thu Nov  3 00:12:33 2022 - INFO  - oe_test_who.sh post_test

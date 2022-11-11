@@ -1,0 +1,10 @@
+Thu Nov  3 02:13:45 2022 - INFO  - Start to pre test.
+Thu Nov  3 02:13:47 2022 - INFO  - Start to pre test.
+Thu Nov  3 02:13:49 2022 - INFO  - Start to run test.
+Thu Nov  3 02:13:51 2022 - ERROR - oe_test_cmd_id.sh line 29
+0
+0
+Thu Nov  3 02:13:53 2022 - ERROR - oe_test_cmd_id.sh line 35
+Thu Nov  3 02:13:54 2022 - INFO  - End to run test.
+Thu Nov  3 02:13:56 2022 - ERROR - failed to execute the case.
+Thu Nov  3 02:13:58 2022 - INFO  - oe_test_cmd_id.sh post_test

@@ -1,0 +1,49 @@
+Sat Nov  5 17:41:53 2022 - INFO  - Start environmental preparation.
+spawn /etc/openwsman/owsmangencert.sh --force
+
+creating selfsigned certificate
+replace it with one signed by a certification authority (CA)
+
+enter your ServerName at the Common Name prompt
+
+Generating a RSA private key
+........................................+++++
+.....+++++
+writing new private key to '/etc/openwsman/serverkey.pem'
+-----
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [GB]:CN
+State or Province Name (full name) [Some-State]:jiangsu
+Locality Name (eg, city) []:nanjing
+Organization Name (eg, company; recommended) []:company
+Organizational Unit Name (eg, section) []:section
+server name (eg. ssl.domain.tld; required!!!) []:ssl.oe.tld
+Email Address []:test@test.com
+Cannot write random bytes:
+274719761440:error:2407007A:random number generator:RAND_write_file:Not a regular file:crypto/rand/randfile.c:183:Filename=/dev/random
+expect: spawn id exp3 not open
+    while executing
+"expect eof"
+Sat Nov  5 17:47:10 2022 - INFO  - End of environmental preparation!
+Sat Nov  5 17:47:15 2022 - INFO  - Start testing...
+     Active: active (running) since Sat 2022-11-05 17:47:17 CST; 13s ago
+     Active: inactive (dead)
+     Active: active (running) since Sat 2022-11-05 17:47:46 CST; 12s ago
+/etc/systemd/system/multi-user.target.wants/openwsmand.service
+Removed /etc/systemd/system/multi-user.target.wants/openwsmand.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/openwsmand.service’: No such file or directory
+11月 05 17:47:17 eulaceura systemd[1]: openwsmand.service: Failed to parse PID from file /run/wsmand.pid: Invalid argument
+Sat Nov  5 17:48:49 2022 - ERROR - There is an error message for the log of openwsmand.service
+Sat Nov  5 17:48:54 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload openwsmand.service: Job type reload is not applicable for unit openwsmand.service.
+     Active: active (running) since Sat 2022-11-05 17:47:46 CST; 1min 10s ago
+Sat Nov  5 17:49:02 2022 - INFO  - Finish test!
+Sat Nov  5 17:49:06 2022 - ERROR - failed to execute the case.
+Sat Nov  5 17:49:11 2022 - INFO  - start environment cleanup.
+Sat Nov  5 17:51:37 2022 - INFO  - Finish environment cleanup!

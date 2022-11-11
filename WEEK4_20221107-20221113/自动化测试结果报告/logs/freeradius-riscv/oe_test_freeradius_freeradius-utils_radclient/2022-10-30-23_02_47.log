@@ -1,0 +1,16 @@
+Sun Oct 30 23:03:08 2022 - INFO  - Start to prepare the test environment.
+Sun Oct 30 23:07:48 2022 - INFO  - End to prepare the test environment.
+Sun Oct 30 23:07:51 2022 - INFO  - Start to run test.
+Received Access-Accept Id 58 from 127.0.0.1:1812 to 127.0.0.1:38408 length 20
+Received Access-Accept Id 186 from [::1]:1812 to [::1]:45988 length 20
+Received Access-Accept Id 36 from 127.0.0.1:1812 to 127.0.0.1:39156 length 20
+Received Access-Accept Id 15 from 127.0.0.1:1812 to 127.0.0.1:56318 length 20
+Received Access-Accept Id 97 from 127.0.0.1:1812 to 127.0.0.1:39712 length 20
+Received Access-Accept Id 149 from 127.0.0.1:1812 to 127.0.0.1:58016 length 20
+Usage: radclient [options] server[:port] <command> [<secret>]
+  -h                     Print usage help information.
+Received Access-Accept Id 238 from 127.0.0.1:1812 to 127.0.0.1:48937 length 20
+Sun Oct 30 23:08:04 2022 - INFO  - End to run test.
+Sun Oct 30 23:08:07 2022 - INFO  - succeed to execute the case.
+Sun Oct 30 23:08:09 2022 - INFO  - Start to restore the test environment.
+Sun Oct 30 23:09:06 2022 - INFO  - End to restore the test environment.

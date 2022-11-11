@@ -1,0 +1,40 @@
+Thu Nov  3 01:42:50 2022 - INFO  - Start to prepare the test environment.
+Failed to enable unit: Unit file pmcd.service does not exist.
+Failed to start pmcd.service: Unit pmcd.service not found.
+Failed to enable unit: Unit file pmlogger.service does not exist.
+Failed to start pmlogger.service: Unit pmlogger.service not found.
+oe_test_pmlogreduce_pmpause_pmpost_pmsleep.sh:行24: pcp：未找到命令
+Thu Nov  3 01:44:59 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 01:45:02 2022 - INFO  - Start to run test.
+oe_test_pmlogreduce_pmpause_pmpost_pmsleep.sh:行30: /usr/libexec/pcp/bin/pmlogreduce: No such file or directory
+Thu Nov  3 01:45:05 2022 - ERROR - oe_test_pmlogreduce_pmpause_pmpost_pmsleep.sh line 31
+oe_test_pmlogreduce_pmpause_pmpost_pmsleep.sh:行32: /usr/libexec/pcp/bin/pmlogreduce: No such file or directory
+Thu Nov  3 01:45:08 2022 - ERROR - oe_test_pmlogreduce_pmpause_pmpost_pmsleep.sh line 33
+oe_test_pmlogreduce_pmpause_pmpost_pmsleep.sh:行34: /usr/libexec/pcp/bin/pmlogreduce: No such file or directory
+Thu Nov  3 01:45:11 2022 - ERROR - oe_test_pmlogreduce_pmpause_pmpost_pmsleep.sh line 35
+oe_test_pmlogreduce_pmpause_pmpost_pmsleep.sh:行36: /usr/libexec/pcp/bin/pmlogreduce: No such file or directory
+Thu Nov  3 01:45:14 2022 - ERROR - oe_test_pmlogreduce_pmpause_pmpost_pmsleep.sh line 37
+nohup: 无法运行命令 '/usr/libexec/pcp/bin/pmpause': No such file or directory
+S
+S
+S
+S
+S
+kill：用法：kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+Thu Nov  3 01:45:19 2022 - ERROR - oe_test_pmlogreduce_pmpause_pmpost_pmsleep.sh line 42
+oe_test_pmlogreduce_pmpause_pmpost_pmsleep.sh:行43: /usr/libexec/pcp/bin/pmpost: No such file or directory
+Thu Nov  3 01:45:21 2022 - ERROR - oe_test_pmlogreduce_pmpause_pmpost_pmsleep.sh line 44
+grep: /var/log/pcp/NOTICES: No such file or directory
+Thu Nov  3 01:45:24 2022 - ERROR - oe_test_pmlogreduce_pmpause_pmpost_pmsleep.sh line 46
+oe_test_pmlogreduce_pmpause_pmpost_pmsleep.sh:行47: /usr/libexec/pcp/bin/pmsleep: No such file or directory
+Thu Nov  3 01:45:27 2022 - ERROR - oe_test_pmlogreduce_pmpause_pmpost_pmsleep.sh line 48
+Thu Nov  3 01:45:30 2022 - INFO  - End to run test.
+Thu Nov  3 01:45:32 2022 - ERROR - failed to execute the case.
+Thu Nov  3 01:45:35 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:40:51 ago on 2022年11月03日 星期四 01时03分34秒.\nNo match for argument: pcp\nError: Unable to find a match: pcp'
+Thu Nov  3 01:45:48 2022 - INFO  - End to restore the test environment.

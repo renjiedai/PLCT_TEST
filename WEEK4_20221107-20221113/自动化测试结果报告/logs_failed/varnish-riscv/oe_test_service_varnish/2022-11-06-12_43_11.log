@@ -1,0 +1,20 @@
+Sun Nov  6 12:43:39 2022 - INFO  - Start environmental preparation.
+Sun Nov  6 12:46:10 2022 - INFO  - End of environmental preparation!
+Sun Nov  6 12:46:12 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-11-06 12:46:35 CST; 9s ago
+     Active: inactive (dead)
+     Active: active (running) since Sun 2022-11-06 12:47:20 CST; 9s ago
+/etc/systemd/system/multi-user.target.wants/varnish.service
+Removed /etc/systemd/system/multi-user.target.wants/varnish.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/varnish.service’: No such file or directory
+Job for varnish.service failed.
+See "systemctl status varnish.service" and "journalctl -xeu varnish.service" for details.
+Sun Nov  6 12:48:14 2022 - ERROR - varnish.service reload failed
+Sun Nov  6 12:48:17 2022 - ERROR - oe_test_service_varnish.sh line 36
+     Active: active (running) since Sun 2022-11-06 12:47:20 CST; 58s ago
+Sun Nov  6 12:48:21 2022 - INFO  - Finish test!
+Sun Nov  6 12:48:24 2022 - ERROR - failed to execute the case.
+Sun Nov  6 12:48:27 2022 - INFO  - start environment cleanup.
+Job for varnish.service failed.
+See "systemctl status varnish.service" and "journalctl -xeu varnish.service" for details.
+Sun Nov  6 12:49:54 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,29 @@
+Fri Nov  4 04:37:35 2022 - INFO  - Start to prepare the test environment.
+  adding: testdir5/ (stored 0%)
+Fri Nov  4 04:39:43 2022 - INFO  - Finish preparing the test environment.
+Fri Nov  4 04:39:47 2022 - INFO  - Start to run test.
+\"This is a test.\n\"
+   creating: tmp1/test5/
+can't open zip archive 'testdir5.zip': File already exists
+Archive comment: 
+Archive comment: testabc
+ extracting: tmp3/abc.txt            
+name: 'abc.txt'
+index: '1'
+size: '21'
+compressed size: '21'
+mtime: 'Fri Nov 04 2022 04:39:46'
+crc: 'd7413b9b'
+compression method: '0'
+encryption method: '0'
+
+mtime: 'Tue Oct 01 2019 12:00:00'
+mtime: 'Thu Oct 01 2015 12:00:00'
+mtime: 'Thu Oct 01 2015 12:00:00'
+mtime: 'Thu Oct 01 2015 12:00:00'
+usage: ziptool [-ceghnrst] [-l len] [-o offset] archive command1 [args] [command2 [args] ...]
+	-h		display this usage
+Fri Nov  4 04:39:55 2022 - INFO  - End of the test.
+Fri Nov  4 04:39:58 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 04:40:01 2022 - INFO  - Start to restore the test environment.
+Fri Nov  4 04:41:10 2022 - INFO  - Finish restoring the test environment.

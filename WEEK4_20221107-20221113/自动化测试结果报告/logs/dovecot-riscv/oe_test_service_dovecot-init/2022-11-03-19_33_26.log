@@ -1,0 +1,8 @@
+Thu Nov  3 19:34:00 2022 - INFO  - Start environmental preparation.
+Thu Nov  3 19:38:29 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 19:38:33 2022 - INFO  - Start testing...
+Thu Nov  3 19:38:41 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Thu Nov  3 19:38:46 2022 - INFO  - Finish test!
+Thu Nov  3 19:38:50 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 19:38:55 2022 - INFO  - start environment cleanup.
+Thu Nov  3 19:41:38 2022 - INFO  - Finish environment cleanup!

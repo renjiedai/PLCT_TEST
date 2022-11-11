@@ -1,0 +1,21 @@
+Thu Nov  3 01:52:15 2022 - INFO  - Start to prepare the test environment.
+Thu Nov  3 01:53:49 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 01:53:52 2022 - INFO  - Start to run test.
+oe_test_pcp_pcp-import-sar2pcp.sh:行30: 1：未找到命令
+Thu Nov  3 01:53:55 2022 - ERROR - oe_test_pcp_pcp-import-sar2pcp.sh line 31
+Thu Nov  3 01:53:58 2022 - ERROR - oe_test_pcp_pcp-import-sar2pcp.sh line 33
+oe_test_pcp_pcp-import-sar2pcp.sh:行34: sar2pcp：未找到命令
+Thu Nov  3 01:54:01 2022 - ERROR - oe_test_pcp_pcp-import-sar2pcp.sh line 35
+grep: datapcp.index: No such file or directory
+Thu Nov  3 01:54:04 2022 - ERROR - oe_test_pcp_pcp-import-sar2pcp.sh line 37
+Thu Nov  3 01:54:07 2022 - ERROR - oe_test_pcp_pcp-import-sar2pcp.sh line 39
+Thu Nov  3 01:54:09 2022 - INFO  - End to run test.
+Thu Nov  3 01:54:12 2022 - ERROR - failed to execute the case.
+Thu Nov  3 01:54:15 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:50:10 ago on 2022年11月03日 星期四 01时03分34秒.\nNo match for argument: pcp-import-sar2pcp\nError: Unable to find a match: pcp-import-sar2pcp'
+Thu Nov  3 01:54:28 2022 - INFO  - End to restore the test environment.

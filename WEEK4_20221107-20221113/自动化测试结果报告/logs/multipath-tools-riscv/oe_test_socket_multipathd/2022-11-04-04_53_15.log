@@ -1,0 +1,17 @@
+Fri Nov  4 04:53:52 2022 - INFO  - Start environmental preparation.
+Fri Nov  4 04:54:54 2022 - INFO  - pkgs:(multipath-tools) is already installed
+Fri Nov  4 04:54:59 2022 - INFO  - End of environmental preparation!
+Fri Nov  4 04:55:04 2022 - INFO  - Start to run test.
+     Active: active (listening) since Fri 2022-11-04 04:55:05 CST; 11s ago
+     Active: inactive (dead)
+     Active: active (listening) since Fri 2022-11-04 04:55:30 CST; 11s ago
+/etc/systemd/system/sockets.target.wants/multipathd.socket
+Removed /etc/systemd/system/sockets.target.wants/multipathd.socket.
+find: ‘/etc/systemd/system/sockets.target.wants/multipathd.socket’: No such file or directory
+Failed to reload multipathd.socket: Job type reload is not applicable for unit multipathd.socket.
+     Active: active (listening) since Fri 2022-11-04 04:55:30 CST; 56s ago
+Fri Nov  4 04:56:31 2022 - INFO  - End of the test.
+Fri Nov  4 04:56:35 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 04:56:40 2022 - INFO  - start environment cleanup.
+Fri Nov  4 04:56:46 2022 - WARN  - no thing to do.
+Fri Nov  4 04:56:50 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,8 @@
+Sat Nov  5 17:28:53 2022 - INFO  - Start environmental preparation.
+Sat Nov  5 17:28:59 2022 - INFO  - End of environmental preparation!
+Sat Nov  5 17:29:04 2022 - INFO  - Start to run test.
+oe_test_socket_sshd.sh:行30: test_execution：未找到命令
+oe_test_socket_sshd.sh:行31: test_reload：未找到命令
+Sat Nov  5 17:29:08 2022 - INFO  - End of the test.
+Sat Nov  5 17:29:13 2022 - INFO  - succeed to execute the case.
+Sat Nov  5 17:29:18 2022 - INFO  - oe_test_socket_sshd.sh post_test

@@ -1,0 +1,265 @@
+Thu Nov  3 20:24:37 2022 - INFO  - Start to prepare the database config.
+LibClamAV Warning: **************************************************
+LibClamAV Warning: ***  The virus database is older than 7 days!  ***
+LibClamAV Warning: ***   Please update it as soon as possible.    ***
+LibClamAV Warning: **************************************************
+/root/mugen/mugen-riscv/testcases/cli-test/clamav
+Thu Nov  3 20:33:34 2022 - INFO  - End to prepare the database config.
+Thu Nov  3 20:33:37 2022 - INFO  - Start to run test.
+ClamAV 0.103.6/25550/Fri Aug 23 16:25:33 2019
+
+                       Clam AntiVirus: Scanner 0.103.6
+           By The ClamAV Team: https://www.clamav.net/about.html#credits
+           (C) 2022 Cisco Systems, Inc.
+
+    clamscan [options] [file/directory/-]
+
+    --help                -h             Show this help
+    --version             -V             Print version number
+    --verbose             -v             Be verbose
+    --archive-verbose     -a             Show filenames inside scanned archives
+    --debug                              Enable libclamav's debug messages
+    --quiet                              Only output error messages
+    --stdout                             Write to stdout instead of stderr. Does not affect 'debug' messages.
+    --no-summary                         Disable summary at end of scanning
+    --infected            -i             Only print infected files
+    --suppress-ok-results -o             Skip printing OK files
+    --bell                               Sound bell on virus detection
+
+    --tempdir=DIRECTORY                  Create temporary files in DIRECTORY
+    --leave-temps[=yes/no(*)]            Do not remove temporary files
+    --gen-json[=yes/no(*)]               Generate JSON description of scanned file(s). JSON will be printed and also-
+                                         dropped to the temp directory if --leave-temps is enabled.
+    --database=FILE/DIR   -d FILE/DIR    Load virus database from FILE or load all supported db files from DIR
+    --official-db-only[=yes/no(*)]       Only load official signatures
+    --log=FILE            -l FILE        Save scan report to FILE
+    --recursive[=yes/no(*)]  -r          Scan subdirectories recursively
+    --allmatch[=yes/no(*)]   -z          Continue scanning within file after finding a match
+    --cross-fs[=yes(*)/no]               Scan files and directories on other filesystems
+    --follow-dir-symlinks[=0/1(*)/2]     Follow directory symlinks (0 = never, 1 = direct, 2 = always)
+    --follow-file-symlinks[=0/1(*)/2]    Follow file symlinks (0 = never, 1 = direct, 2 = always)
+    --file-list=FILE      -f FILE        Scan files from FILE
+    --remove[=yes/no(*)]                 Remove infected files. Be careful!
+    --move=DIRECTORY                     Move infected files into DIRECTORY
+    --copy=DIRECTORY                     Copy infected files into DIRECTORY
+    --exclude=REGEX                      Don't scan file names matching REGEX
+    --exclude-dir=REGEX                  Don't scan directories matching REGEX
+    --include=REGEX                      Only scan file names matching REGEX
+    --include-dir=REGEX                  Only scan directories matching REGEX
+
+    --bytecode[=yes(*)/no]               Load bytecode from the database
+    --bytecode-unsigned[=yes/no(*)]      Load unsigned bytecode
+                                         **Caution**: You should NEVER run bytecode signatures from untrusted sources.
+                                         Doing so may result in arbitrary code execution.
+    --bytecode-timeout=N                 Set bytecode timeout (in milliseconds)
+    --statistics[=none(*)/bytecode/pcre] Collect and print execution statistics
+    --detect-pua[=yes/no(*)]             Detect Possibly Unwanted Applications
+    --exclude-pua=CAT                    Skip PUA sigs of category CAT
+    --include-pua=CAT                    Load PUA sigs of category CAT
+    --detect-structured[=yes/no(*)]      Detect structured data (SSN, Credit Card)
+    --structured-ssn-format=X            SSN format (0=normal,1=stripped,2=both)
+    --structured-ssn-count=N             Min SSN count to generate a detect
+    --structured-cc-count=N              Min CC count to generate a detect
+    --structured-cc-mode=X               CC mode (0=credit debit and private label, 1=credit cards only
+    --scan-mail[=yes(*)/no]              Scan mail files
+    --phishing-sigs[=yes(*)/no]          Enable email signature-based phishing detection
+    --phishing-scan-urls[=yes(*)/no]     Enable URL signature-based phishing detection
+    --heuristic-alerts[=yes(*)/no]       Heuristic alerts
+    --heuristic-scan-precedence[=yes/no(*)] Stop scanning as soon as a heuristic match is found
+    --normalize[=yes(*)/no]              Normalize html, script, and text files. Use normalize=no for yara compatibility
+    --scan-pe[=yes(*)/no]                Scan PE files
+    --scan-elf[=yes(*)/no]               Scan ELF files
+    --scan-ole2[=yes(*)/no]              Scan OLE2 containers
+    --scan-pdf[=yes(*)/no]               Scan PDF files
+    --scan-swf[=yes(*)/no]               Scan SWF files
+    --scan-html[=yes(*)/no]              Scan HTML files
+    --scan-xmldocs[=yes(*)/no]           Scan xml-based document files
+    --scan-hwp3[=yes(*)/no]              Scan HWP3 files
+    --scan-archive[=yes(*)/no]           Scan archive files (supported by libclamav)
+    --alert-broken[=yes/no(*)]           Alert on broken executable files (PE & ELF)
+    --alert-broken-media[=yes/no(*)]     Alert on broken graphics files (JPEG, TIFF, PNG, GIF)
+    --alert-encrypted[=yes/no(*)]        Alert on encrypted archives and documents
+    --alert-encrypted-archive[=yes/no(*)] Alert on encrypted archives
+    --alert-encrypted-doc[=yes/no(*)]    Alert on encrypted documents
+    --alert-macros[=yes/no(*)]           Alert on OLE2 files containing VBA macros
+    --alert-exceeds-max[=yes/no(*)]      Alert on files that exceed max file size, max scan size, or max recursion limit
+    --alert-phishing-ssl[=yes/no(*)]     Alert on emails containing SSL mismatches in URLs
+    --alert-phishing-cloak[=yes/no(*)]   Alert on emails containing cloaked URLs
+    --alert-partition-intersection[=yes/no(*)] Alert on raw DMG image files containing partition intersections
+    --nocerts                            Disable authenticode certificate chain verification in PE files
+    --dumpcerts                          Dump authenticode certificate chain in PE files
+
+    --max-scantime=#n                    Scan time longer than this will be skipped and assumed clean (milliseconds)
+    --max-filesize=#n                    Files larger than this will be skipped and assumed clean
+    --max-scansize=#n                    The maximum amount of data to scan for each container file (**)
+    --max-files=#n                       The maximum number of files to scan for each container file (**)
+    --max-recursion=#n                   Maximum archive recursion level for container file (**)
+    --max-dir-recursion=#n               Maximum directory recursion level
+    --max-embeddedpe=#n                  Maximum size file to check for embedded PE
+    --max-htmlnormalize=#n               Maximum size of HTML file to normalize
+    --max-htmlnotags=#n                  Maximum size of normalized HTML file to scan
+    --max-scriptnormalize=#n             Maximum size of script file to normalize
+    --max-ziptypercg=#n                  Maximum size zip to type reanalyze
+    --max-partitions=#n                  Maximum number of partitions in disk image to be scanned
+    --max-iconspe=#n                     Maximum number of icons in PE file to be scanned
+    --max-rechwp3=#n                     Maximum recursive calls to HWP3 parsing function
+    --pcre-match-limit=#n                Maximum calls to the PCRE match function.
+    --pcre-recmatch-limit=#n             Maximum recursive calls to the PCRE match function.
+    --pcre-max-filesize=#n               Maximum size file to perform PCRE subsig matching.
+    --disable-cache                      Disable caching and cache checks for hash sums of scanned files.
+
+Pass in - as the filename for stdin.
+
+(*) Default scan settings
+(**) Certain files (e.g. documents, archives, etc.) may in turn contain other
+   files inside. The above options ensure safe processing of this kind of data.
+
+LibClamAV Warning: **************************************************
+LibClamAV Warning: ***  The virus database is older than 7 days!  ***
+LibClamAV Warning: ***   Please update it as soon as possible.    ***
+LibClamAV Warning: **************************************************
+LibClamAV Warning: **************************************************
+LibClamAV Warning: ***  The virus database is older than 7 days!  ***
+LibClamAV Warning: ***   Please update it as soon as possible.    ***
+LibClamAV Warning: **************************************************
+LibClamAV debug: searching for unrar, user-searchpath: /usr/lib64
+LibClamAV debug: searching for unrar: libclamunrar_iface.so.9.0.5 not found
+LibClamAV debug: searching for unrar: libclamunrar_iface.so.9 not found
+LibClamAV debug: searching for unrar: libclamunrar_iface.so not found
+LibClamAV debug: searching for unrar: libclamunrar_iface.a not found
+LibClamAV debug: Cannot dlopen libclamunrar_iface: file not found - unrar support unavailable
+LibClamAV debug: Initialized 0.103.6 engine
+LibClamAV debug: Initializing phishcheck module
+LibClamAV debug: Phishcheck: Compiling regex: ^ *(http|https|ftp:(//)?)?[0-9]{1,3}(\.[0-9]{1,3}){3}[/?:]? *$
+LibClamAV debug: Phishcheck module initialized
+LibClamAV debug: Bytecode initialized in interpreter mode
+LibClamAV debug: Loading databases from /var/lib/clamav
+LibClamAV debug: in cli_cvdload()
+LibClamAV debug: MD5(.tar.gz) = bae28c9cc41450379bda0289346a3182
+LibClamAV debug: cli_versig: Decoded signature: bae28c9cc41450379bda0289346a3182
+LibClamAV debug: cli_versig: Digital signature is correct.
+LibClamAV Warning: **************************************************
+LibClamAV Warning: ***  The virus database is older than 7 days!  ***
+LibClamAV Warning: ***   Please update it as soon as possible.    ***
+LibClamAV Warning: **************************************************
+LibClamAV debug: in cli_tgzload()
+LibClamAV debug: daily.info loaded
+LibClamAV debug: in cli_tgzload_cleanup()
+LibClamAV debug: in cli_tgzload()
+LibClamAV debug: daily.cfg loaded
+LibClamAV debug: daily.ign loaded
+LibClamAV debug: daily.ign2 loaded
+LibClamAV debug: Initializing engine->root[0]
+LibClamAV debug: Initializing AC pattern matcher of root[0]
+LibClamAV debug: cli_initroots: Initializing BM tables of root[0]
+LibClamAV debug: Initializing engine->root[1]
+LibClamAV debug: Initializing AC pattern matcher of root[1]
+LibClamAV debug: cli_initroots: Initializing BM tables of root[1]
+LibClamAV debug: Initializing engine->root[2]
+LibClamAV debug: Initializing AC pattern matcher of root[2]
+LibClamAV debug: Initializing engine->root[3]
+LibClamAV debug: Initializing AC pattern matcher of root[3]
+LibClamAV debug: Initializing engine->root[4]
+LibClamAV debug: Initializing AC pattern matcher of root[4]
+LibClamAV debug: Initializing engine->root[5]
+LibClamAV debug: Initializing AC pattern matcher of root[5]
+LibClamAV debug: Initializing engine->root[6]
+LibClamAV debug: Initializing AC pattern matcher of root[6]
+LibClamAV debug: Initializing engine->root[7]
+LibClamAV debug: Initializing AC pattern matcher of root[7]
+LibClamAV debug: Initializing engine->root[8]
+LibClamAV debug: Initializing AC pattern matcher of root[8]
+LibClamAV debug: Initializing engine->root[9]
+LibClamAV debug: Initializing AC pattern matcher of root[9]
+LibClamAV debug: Initializing engine->root[10]
+LibClamAV debug: Initializing AC pattern matcher of root[10]
+LibClamAV debug: Initializing engine->root[11]
+LibClamAV debug: Initializing AC pattern matcher of root[11]
+LibClamAV debug: Initializing engine->root[12]
+LibClamAV debug: Initializing AC pattern matcher of root[12]
+LibClamAV debug: Initializing engine->root[13]
+LibClamAV debug: Initializing AC pattern matcher of root[13]
+LibClamAV debug: Initializing engine->root[14]
+LibClamAV debug: Initializing AC pattern matcher of root[14]
+LibClamAV debug: Loaded 150 filetype definitions
+LibClamAV debug: daily.ftm loaded
+LibClamAV debug: hashtab.c:Growing hashtable 0x3fe603d1e8, because it has exceeded maxfill, old size:64
+LibClamAV debug: hashtab.c: new capacity: 128
+LibClamAV debug: Table 0x3fe603d1e8 size after grow:128
+LibClamAV debug: hashtab.c:Growing hashtable 0x3fe603d1e8, because it has exceeded maxfill, old size:128
+LibClamAV debug: hashtab.c: new capacity: 256
+LibClamAV debug: Table 0x3fe603d1e8 size after grow:256
+LibClamAV debug: hashtab.c:Growing hashtable 0x3fe603d1e8, because it has exceeded maxfill, old size:256
+LibClamAV debug: hashtab.c: new capacity: 512
+LibClamAV debug: Table 0x3fe603d1e8 size after grow:512
+LibClamAV debug: hashtab.c:Growing hashtable 0x3fe603d1e8, because it has exceeded maxfill, old size:512
+LibClamAV debug: hashtab.c: new capacity: 1024
+LibClamAV debug: Table 0x3fe603d1e8 size after grow:1024
+LibClamAV debug: hashtab.c:Growing hashtable 0x3fe603d1e8, because it has exceeded maxfill, old size:1024
+LibClamAV debug: hashtab.c: new capacity: 2048
+LibClamAV debug: Table 0x3fe603d1e8 size after grow:2048
+LibClamAV debug: hashtab.c:Growing hashtable 0x3fe603d1e8, because it has exceeded maxfill, old size:2048
+LibClamAV debug: hashtab.c: new capacity: 4096
+LibClamAV debug: Table 0x3fe603d1e8 size after grow:4096
+LibClamAV debug: hashtab.c:Growing hashtable 0x3fe603d1e8, because it has exceeded maxfill, old size:4096
+LibClamAV debug: hashtab.c: new capacity: 8192
+LibClamAV debug: Table 0x3fe603d1e8 size after grow:8192
+LibClamAV debug: hashtab.c:Growing hashtable 0x3fe603d1e8, because it has exceeded maxfill, old size:8192
+LibClamAV debug: hashtab.c: new capacity: 16384
+LibClamAV debug: Table 0x3fe603d1e8 size after grow:16384
+LibClamAV debug: hashtab.c:Growing hashtable 0x3fe603d1e8, because it has exceeded maxfill, old size:16384
+LibClamAV debug: hashtab.c: new capacity: 32768
+LibClamAV debug: Table 0x3fe603d1e8 size after grow:32768
+LibClamAV debug: hashtab.c:Growing hashtable 0x3fe603d1e8, because it has exceeded maxfill, old size:32768
+LibClamAV debug: hashtab.c: new capacity: 65536
+LibClamAV debug: Table 0x3fe603d1e8 size after grow:65536
+LibClamAV debug: hashtab.c:Growing hashtable 0x3fe603d1e8, because it has exceeded maxfill, old size:65536
+LibClamAV debug: hashtab.c: new capacity: 131072
+LibClamAV debug: Table 0x3fe603d1e8 size after grow:131072
+LibClamAV debug: hashtab.c:Growing hashtable 0x3fe603d1e8, because it has exceeded maxfill, old size:131072
+LibClamAV debug: hashtab.c: new capacity: 262144
+LibClamAV debug: Table 0x3fe603d1e8 size after grow:262144
+LibClamAV debug: daily.hdb loaded
+LibClamAV debug: daily.hdu skipped
+LibClamAV debug: hashtab.c:Growing hashtable 0x3fe603d1e8, because it has exceeded maxfill, old size:262144
+LibClamAV debug: hashtab.c: new capacity: 524288
+LibClamAV debug: Table 0x3fe603d1e8 size after grow:524288
+LibClamAV debug: hashtab.c:Growing hashtable 0x3fe603d228, because it has exceeded maxfill, old size:64
+LibClamAV debug: hashtab.c: new capacity: 128
+LibClamAV debug: Table 0x3fe603d228 size after grow:128
+LibClamAV debug: hashtab.c:Growing hashtable 0x3fe603d228, because it has exceeded maxfill, old size:128
+LibClamAV debug: hashtab.c: new capacity: 256
+LibClamAV debug: Table 0x3fe603d228 size after grow:256
+LibClamAV debug: hashtab.c:Growing hashtable 0x3fe603d1e8, because it has exceeded maxfill, old size:524288
+LibClamAV debug: hashtab.c: new capacity: 1048576
+LibClamAV debug: Table 0x3fe603d1e8 size after grow:1048576
+LibClamAV debug: daily.hsb loaded
+LibClamAV debug: daily.hsu skipped
+LibClamAV debug: hashtab.c:Growing hashtable 0x3fdae24998, because it has exceeded maxfill, old size:64
+LibClamAV debug: hashtab.c: new capacity: 128
+LibClamAV debug: Table 0x3fdae24998 size after grow:128
+LibClamAV debug: hashtab.c:Growing hashtable 0x3fdae24998, because it has exceeded maxfill, old size:128
+LibClamAV debug: hashtab.c: new capacity: 256
+LibClamAV debug: Table 0x3fdae24998 size after grow:256
+LibClamAV debug: hashtab.c:Growing hashtable 0x3fdae24998, because it has exceeded maxfill, old size:256
+LibClamAV debug: hashtab.c: new capacity: 512
+LibClamAV debug: Table 0x3fdae24998 size after grow:512
+LibClamAV debug: hashtab.c:Growing hashtable 0x3fdae24998, because it has exceeded maxfill, old size:512
+LibClamAV debug: hashtab.c: new capacity: 1024
+LibClamAV debug: Table 0x3fdae24998 size after grow:1024
+LibClamAV debug: hashtab.c:Growing hashtable 0x3fdae24998, because it has exceeded maxfill, old size:1024
+LibClamAV debug: hashtab.c: new capacity: 2048
+LibClamAV debug: Table 0x3fdae24998 size after grow:2048
+LibClamAV debug: hashtab.c:Growing hashtable 0x3fdae24998, because it has exceeded maxfill, old size:2048
+LibClamAV debug: hashtab.c: new capacity: 4096
+LibClamAV debug: Table 0x3fdae24998 size after grow:4096
+LibClamAV debug: hashtab.c:Growing hashtable 0x3fdae24998, because it has exceeded maxfill, old size:4096
+LibClamAV debug: hashtab.c: new capacity: 8192
+LibClamAV debug: Table 0x3fdae24998 size after grow:8192
+LibClamAV debug: daily.mdb loaded
+LibClamAV debug: daily.mdu skipped
+LibClamAV debug: daily.msb loaded
+LibClamAV debug: daily.msu skipped
+LibClamAV debug: daily.ndb loaded
+LibClamAV debug: daily.ndu skipped
+Thu Nov  3 20:54:13 2022 - ERROR - Timeout : Command 'bash oe_test_clamav_clamscan_1.sh' timed out after 1799.9916817000003 seconds

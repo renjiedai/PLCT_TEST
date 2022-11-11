@@ -1,0 +1,37 @@
+Thu Nov  3 18:34:42 2022 - INFO  - Start environmental preparation.
+Thu Nov  3 18:36:09 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 18:36:11 2022 - INFO  - Start to run test.
+Failed to restart ceph-mon.target: Unit ceph-mon.target not found.
+Thu Nov  3 18:36:14 2022 - ERROR - ceph-mon.target restart failed
+Thu Nov  3 18:36:16 2022 - ERROR - ../common/common_lib.sh line 34
+Unit ceph-mon.target could not be found.
+Thu Nov  3 18:36:27 2022 - ERROR - ceph-mon.target restart failed
+Thu Nov  3 18:36:29 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop ceph-mon.target: Unit ceph-mon.target not loaded.
+Thu Nov  3 18:36:32 2022 - ERROR - ceph-mon.target stop failed
+Thu Nov  3 18:36:34 2022 - ERROR - ../common/common_lib.sh line 39
+Unit ceph-mon.target could not be found.
+Thu Nov  3 18:36:44 2022 - ERROR - ceph-mon.target stop failed
+Thu Nov  3 18:36:46 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start ceph-mon.target: Unit ceph-mon.target not found.
+Thu Nov  3 18:36:49 2022 - ERROR - ceph-mon.target start failed
+Thu Nov  3 18:36:51 2022 - ERROR - ../common/common_lib.sh line 44
+Unit ceph-mon.target could not be found.
+Thu Nov  3 18:37:02 2022 - ERROR - ceph-mon.target start failed
+Thu Nov  3 18:37:04 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for ceph-mon.target: No such file or directory
+Thu Nov  3 18:37:07 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start ceph-mon.target: Unit ceph-mon.target not found.
+Thu Nov  3 18:37:10 2022 - ERROR - oe_test_target_ceph-mon.sh line 33
+Unit ceph-mon.target could not be found.
+Thu Nov  3 18:37:13 2022 - ERROR - oe_test_target_ceph-mon.sh line 35
+Thu Nov  3 18:37:16 2022 - INFO  - End of the test.
+Thu Nov  3 18:37:18 2022 - ERROR - failed to execute the case.
+Thu Nov  3 18:37:21 2022 - INFO  - start environment cleanup.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:17:46 ago on 2022年11月03日 星期四 18时18分18秒.\nNo match for argument: ceph-mon\nError: Unable to find a match: ceph-mon'
+Thu Nov  3 18:37:31 2022 - INFO  - Finish environment cleanup!

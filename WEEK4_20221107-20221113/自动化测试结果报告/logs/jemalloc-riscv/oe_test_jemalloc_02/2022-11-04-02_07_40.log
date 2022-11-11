@@ -1,0 +1,16 @@
+Fri Nov  4 02:08:15 2022 - INFO  - Start to prepare the test environment.
+Fri Nov  4 02:11:28 2022 - INFO  - End to prepare the test environment.
+Fri Nov  4 02:11:31 2022 - INFO  - Start to run test.
+/usr/share/man
+gcc
+-std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -pipe -g3 -fvisibility=hidden -O3 -funroll-loops -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/generic-hardened-cc1 -fasynchronous-unwind-tables -fstack-clash-protection
+-D_GNU_SOURCE -D_REENTRANT
+-O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/generic-hardened-cc1 -fasynchronous-unwind-tables -fstack-clash-protection -fexceptions
+-Wl,-z,relro   -Wl,-z,now -specs=/usr/lib/rpm/generic-hardened-ld -lrt 
+-lm  -pthread
+/usr/lib64/libjemalloc.so.2
+Fri Nov  4 02:11:38 2022 - INFO  - End to run test.
+Fri Nov  4 02:11:41 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 02:11:45 2022 - INFO  - Start to restore the test environment.
+ERROR: ld.so: object '/usr/lib64/libjemalloc.so.2' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Fri Nov  4 02:12:55 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,10 @@
+Sat Nov  5 15:32:46 2022 - INFO  - Start environment preparation.
+Sat Nov  5 15:38:21 2022 - INFO  - End of environmental preparation!
+Sat Nov  5 15:38:25 2022 - INFO  - Start testing...
+oe_test_junit5_annotation_timeout.sh:行30: javac：未找到命令
+Sat Nov  5 15:38:30 2022 - ERROR - oe_test_junit5_annotation_timeout.sh line 31
+Sat Nov  5 15:39:19 2022 - ERROR - oe_test_junit5_annotation_timeout.sh line 33
+Sat Nov  5 15:39:24 2022 - INFO  - Finish test!
+Sat Nov  5 15:39:28 2022 - ERROR - failed to execute the case.
+Sat Nov  5 15:39:33 2022 - INFO  - start environment cleanup.
+Sat Nov  5 15:40:31 2022 - INFO  - Finish environment cleanup!

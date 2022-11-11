@@ -1,0 +1,37 @@
+Thu Nov  3 18:45:20 2022 - INFO  - Start environmental preparation.
+Thu Nov  3 18:46:55 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 18:46:58 2022 - INFO  - Start to run test.
+Failed to restart ceph-rbd-mirror.target: Unit ceph-rbd-mirror.target not found.
+Thu Nov  3 18:47:02 2022 - ERROR - ceph-rbd-mirror.target restart failed
+Thu Nov  3 18:47:04 2022 - ERROR - ../common/common_lib.sh line 34
+Unit ceph-rbd-mirror.target could not be found.
+Thu Nov  3 18:47:16 2022 - ERROR - ceph-rbd-mirror.target restart failed
+Thu Nov  3 18:47:19 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop ceph-rbd-mirror.target: Unit ceph-rbd-mirror.target not loaded.
+Thu Nov  3 18:47:23 2022 - ERROR - ceph-rbd-mirror.target stop failed
+Thu Nov  3 18:47:26 2022 - ERROR - ../common/common_lib.sh line 39
+Unit ceph-rbd-mirror.target could not be found.
+Thu Nov  3 18:47:38 2022 - ERROR - ceph-rbd-mirror.target stop failed
+Thu Nov  3 18:47:41 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start ceph-rbd-mirror.target: Unit ceph-rbd-mirror.target not found.
+Thu Nov  3 18:47:44 2022 - ERROR - ceph-rbd-mirror.target start failed
+Thu Nov  3 18:47:47 2022 - ERROR - ../common/common_lib.sh line 44
+Unit ceph-rbd-mirror.target could not be found.
+Thu Nov  3 18:47:59 2022 - ERROR - ceph-rbd-mirror.target start failed
+Thu Nov  3 18:48:01 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for ceph-rbd-mirror.target: No such file or directory
+Thu Nov  3 18:48:04 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start ceph-rbd-mirror.target: Unit ceph-rbd-mirror.target not found.
+Thu Nov  3 18:48:08 2022 - ERROR - oe_test_target_ceph-rbd-mirror.sh line 33
+Unit ceph-rbd-mirror.target could not be found.
+Thu Nov  3 18:48:12 2022 - ERROR - oe_test_target_ceph-rbd-mirror.sh line 35
+Thu Nov  3 18:48:14 2022 - INFO  - End of the test.
+Thu Nov  3 18:48:17 2022 - ERROR - failed to execute the case.
+Thu Nov  3 18:48:20 2022 - INFO  - start environment cleanup.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:28:32 ago on 2022年11月03日 星期四 18时18分18秒.\nNo match for argument: rbd-mirror\nError: Unable to find a match: rbd-mirror'
+Thu Nov  3 18:48:33 2022 - INFO  - Finish environment cleanup!

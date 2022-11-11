@@ -1,0 +1,44 @@
+Thu Nov  3 18:17:30 2022 - INFO  - Start environmental preparation.
+Thu Nov  3 18:19:47 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 18:19:51 2022 - INFO  - Start testing...
+Failed to restart rbdmap.service: Unit rbdmap.service not found.
+Thu Nov  3 18:19:55 2022 - ERROR - rbdmap.service restart failed
+Thu Nov  3 18:19:58 2022 - ERROR - ../common/common_lib.sh line 34
+Unit rbdmap.service could not be found.
+Thu Nov  3 18:20:11 2022 - ERROR - rbdmap.service restart failed
+Thu Nov  3 18:20:15 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop rbdmap.service: Unit rbdmap.service not loaded.
+Thu Nov  3 18:20:18 2022 - ERROR - rbdmap.service stop failed
+Thu Nov  3 18:20:22 2022 - ERROR - ../common/common_lib.sh line 39
+Unit rbdmap.service could not be found.
+Thu Nov  3 18:20:35 2022 - ERROR - rbdmap.service stop failed
+Thu Nov  3 18:20:39 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start rbdmap.service: Unit rbdmap.service not found.
+Thu Nov  3 18:20:43 2022 - ERROR - rbdmap.service start failed
+Thu Nov  3 18:20:46 2022 - ERROR - ../common/common_lib.sh line 44
+Unit rbdmap.service could not be found.
+Thu Nov  3 18:21:00 2022 - ERROR - rbdmap.service start failed
+Thu Nov  3 18:21:04 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for rbdmap.service: No such file or directory
+Thu Nov  3 18:21:08 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start rbdmap.service: Unit rbdmap.service not found.
+sed：无法读取 /usr/lib/systemd/system/rbdmap.service：No such file or directory
+Failed to reload rbdmap.service: Unit rbdmap.service not found.
+Thu Nov  3 18:21:30 2022 - ERROR - rbdmap.service reload failed
+Thu Nov  3 18:21:33 2022 - ERROR - oe_test_service_rbdmap.sh line 35
+Unit rbdmap.service could not be found.
+Thu Nov  3 18:21:38 2022 - ERROR - rbdmap.service reload causes the service status to change
+Thu Nov  3 18:21:41 2022 - ERROR - oe_test_service_rbdmap.sh line 37
+Thu Nov  3 18:21:44 2022 - INFO  - Finish test!
+Thu Nov  3 18:21:48 2022 - ERROR - failed to execute the case.
+Thu Nov  3 18:21:51 2022 - INFO  - start environment cleanup.
+sed：无法读取 /usr/lib/systemd/system/rbdmap.service：No such file or directory
+Failed to reload rbdmap.service: Unit rbdmap.service not found.
+Failed to stop rbdmap.service: Unit rbdmap.service not loaded.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:01:22 ago on 2022年11月03日 星期四 18时18分18秒.\nNo match for argument: ceph-common\nError: Unable to find a match: ceph-common'
+Thu Nov  3 18:22:25 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,94 @@
+Sat Nov  5 17:52:15 2022 - INFO  - Start to config params of the case.
+Sat Nov  5 17:52:22 2022 - INFO  - End to config params of the case.
+Sat Nov  5 17:52:26 2022 - INFO  - Start to prepare the test environment.
+Sat Nov  5 17:56:56 2022 - INFO  - End to prepare the test environment.
+Sat Nov  5 17:57:01 2022 - INFO  - Start to run test.
+Generating RSA private key, 2048 bit long modulus (2 primes)
+.....................................+++++
+........................+++++
+e is 65537 (0x010001)
+-----BEGIN RSA PRIVATE KEY-----
+spawn openssl req -x509 -key /etc/pki/CA/private/cakey.pem -days 365 -out /etc/pki/CA/cacert.pem -new
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [AU]:CN
+State or Province Name (full name) [Some-State]:shanxi
+Locality Name (eg, city) []:xian
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:openEuler
+Organizational Unit Name (eg, section) []:develop
+Common Name (e.g. server FQDN or YOUR name) []:www.openeuler.org
+Email Address []:public@openeuler.io
+into your certificate request.
+-----BEGIN CERTIFICATE-----
+Generating RSA private key, 2048 bit long modulus (2 primes)
+.......................................................................................................................................................+++++
+.+++++
+e is 65537 (0x010001)
+-----BEGIN RSA PRIVATE KEY-----
+spawn openssl req -key /etc/nginx/ssl/nginx.key -out /etc/nginx/ssl/nginx.csr -new
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [AU]:CN
+State or Province Name (full name) [Some-State]:shanxi
+Locality Name (eg, city) []:xian
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:openEuler
+Organizational Unit Name (eg, section) []:develop
+Common Name (e.g. server FQDN or YOUR name) []:www.openeuler.org
+Email Address []:public@openeuler.io
+
+Please enter the following 'extra' attributes
+to be sent with your certificate request
+A challenge password []:openeuler12#$
+An optional company name []:jiangfengjituan
+into your certificate request.
+to be sent with your certificate request
+-----BEGIN CERTIFICATE REQUEST-----
+spawn openssl ca -in /etc/nginx/ssl/nginx.csr -out /etc/nginx/ssl/nginx.crt -days 365
+Using configuration from /etc/pki/tls/openssl.cnf
+Check that the request matches the signature
+Signature ok
+Certificate Details:
+        Serial Number: 1 (0x1)
+        Validity
+            Not Before: Nov  5 09:57:22 2022 GMT
+            Not After : Nov  5 09:57:22 2023 GMT
+        Subject:
+            countryName               = CN
+            stateOrProvinceName       = shanxi
+            organizationName          = openEuler
+            organizationalUnitName    = develop
+            commonName                = www.openeuler.org
+            emailAddress              = public@openeuler.io
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                OpenSSL Generated Certificate
+            X509v3 Subject Key Identifier: 
+                E0:A0:B5:9C:DC:5A:E8:12:2E:AE:8C:08:72:E9:6D:6F:FD:08:2C:A5
+            X509v3 Authority Key Identifier: 
+                keyid:6E:9A:B5:DD:C2:22:A9:80:0A:50:CF:9D:C5:47:A3:B4:E5:99:E5:F2
+
+Certificate is to be certified until Nov  5 09:57:22 2023 GMT (365 days)
+Sign the certificate? [y/n]:y
+
+
+1 out of 1 certificate requests certified, commit? [y/n]y
+Write out database with 1 new entries
+Data Base Updated
+Certificate Details:
+-----BEGIN CERTIFICATE-----
+Sat Nov  5 17:57:28 2022 - INFO  - End to run test.
+Sat Nov  5 17:57:33 2022 - INFO  - succeed to execute the case.
+Sat Nov  5 17:57:38 2022 - INFO  - Start to restore the test environment.
+Sat Nov  5 17:59:58 2022 - INFO  - End to restore the test environment.

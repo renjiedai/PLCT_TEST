@@ -1,0 +1,14 @@
+Sat Nov  5 16:20:22 2022 - INFO  - Start environment preparation.
+Sat Nov  5 16:26:38 2022 - INFO  - End of environmental preparation!
+Sat Nov  5 16:26:41 2022 - INFO  - Start testing...
+oe_test_junit5_maven.sh:行36: mvn：未找到命令
+Sat Nov  5 16:26:43 2022 - ERROR - oe_test_junit5_maven.sh line 37
+oe_test_junit5_maven.sh:行38: mvn：未找到命令
+Sat Nov  5 16:26:47 2022 - ERROR - oe_test_junit5_maven.sh line 39
+Sat Nov  5 16:26:50 2022 - ERROR - oe_test_junit5_maven.sh line 41
+Sat Nov  5 16:26:53 2022 - ERROR - oe_test_junit5_maven.sh line 43
+/root/mugen/mugen-riscv/testcases/cli-test/junit5/oe_test_junit5_maven
+Sat Nov  5 16:26:56 2022 - INFO  - Finish test!
+Sat Nov  5 16:26:59 2022 - ERROR - failed to execute the case.
+Sat Nov  5 16:27:02 2022 - INFO  - start environment cleanup.
+Sat Nov  5 16:28:29 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,44 @@
+Wed Nov  2 23:04:51 2022 - INFO  - Start to prepare the test environment.
+Wed Nov  2 23:14:00 2022 - INFO  - End to prepare the test environment.
+Wed Nov  2 23:14:01 2022 - INFO  - Start to run test.
+spawn servertool
+
+
+欢迎使用 Java IDL 服务器工具 
+请在提示处输入命令 
+
+servertool > help
+
+
+	可用命令: 
+	------------------- 
+
+	register     - 注册一个可激活的服务器
+	unregister   - 注销已注册的服务器
+	getserverid  - 返回 applicationName 的服务器 ID
+	list         - 列出所有已注册服务器
+	listappnames - 列出当前定义的 applicationName
+	listactive   - 列出当前活动的服务器
+	locate       - 为已注册服务器定位特定类型的端口
+	locateperorb - 为已注册服务器的特定对象请求代理程序定位端口。
+	orblist      - 对象请求代理程序 (orb) 名称及其映射列表
+	shutdown     - 关闭一个已注册服务器
+	startup      - 启动一个已注册服务器
+	help         - 获取帮助
+	quit         - 退出此工具
+
+servertool > quit
+
+Wed Nov  2 23:14:07 2022 - ERROR - oe_test_openjdk_servertool_unpack200.sh line 42
+Usage:  unpack200 [-opt... | --option=value]... x.pack[.gz] y.jar
+unpack200 version 1.30, 07/05/05
+Wed Nov  2 23:14:11 2022 - ERROR - oe_test_openjdk_servertool_unpack200.sh line 50
+Wed Nov  2 23:15:04 2022 - ERROR - oe_test_openjdk_servertool_unpack200.sh line 57
+wsimport version "2.2.9"
+Wed Nov  2 23:15:12 2022 - ERROR - oe_test_openjdk_servertool_unpack200.sh line 62
+xjc 2.2.8-b130911.1802
+Wed Nov  2 23:15:19 2022 - ERROR - oe_test_openjdk_servertool_unpack200.sh line 66
+Wed Nov  2 23:15:20 2022 - INFO  - End to run test.
+Wed Nov  2 23:15:21 2022 - ERROR - failed to execute the case.
+Wed Nov  2 23:15:22 2022 - INFO  - Need't to restore the tet environment.
+Wed Nov  2 23:16:45 2022 - INFO  - End to restore the test environment.

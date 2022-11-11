@@ -1,0 +1,34 @@
+Sat Nov  5 15:13:04 2022 - INFO  - Start environment preparation.
+Sat Nov  5 15:19:41 2022 - INFO  - End of environmental preparation!
+Sat Nov  5 15:19:46 2022 - INFO  - Start testing...
+oe_test_junit5_abnormal_removejar.sh:行30: javac：未找到命令
+Sat Nov  5 15:19:52 2022 - ERROR - oe_test_junit5_abnormal_removejar.sh line 31
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+[36m╷[0m
+[36m├─[0m [36mJUnit Jupiter[0m [32m✔[0m
+[36m└─[0m [36mJUnit Vintage[0m [32m✔[0m
+
+Test run finished after 5495 ms
+[         2 containers found      ]
+[         0 containers skipped    ]
+[         2 containers started    ]
+[         0 containers aborted    ]
+[         2 containers successful ]
+[         0 containers failed     ]
+[         0 tests found           ]
+[         0 tests skipped         ]
+[         0 tests started         ]
+[         0 tests aborted         ]
+[         0 tests successful      ]
+[         0 tests failed          ]
+
+oe_test_junit5_abnormal_removejar.sh:行35: javac：未找到命令
+Unrecognized option: --scan-class-path
+Error: Could not create the Java Virtual Machine.
+Error: A fatal exception has occurred. Program will exit.
+Sat Nov  5 15:20:57 2022 - INFO  - Finish test!
+Sat Nov  5 15:21:02 2022 - ERROR - failed to execute the case.
+Sat Nov  5 15:21:08 2022 - INFO  - start environment cleanup.
+Sat Nov  5 15:22:18 2022 - INFO  - Finish environment cleanup!

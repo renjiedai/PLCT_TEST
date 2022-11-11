@@ -1,0 +1,37 @@
+Sun Nov  6 17:13:10 2022 - INFO  - Start to prepare the test environment.
+Sun Nov  6 17:16:47 2022 - INFO  - End to prepare the test environment.
+Sun Nov  6 17:16:50 2022 - INFO  - Start to run test.
+Language subdirectory: csharp
+   ./swig_lib/csharp/
+   /usr/share/swig/4.0.2/csharp/
+Language subdirectory: d
+   ./swig_lib/d/
+   /usr/share/swig/4.0.2/d/
+Processing unnamed structs...
+Language subdirectory: go
+   ./swig_lib/go/
+   /usr/share/swig/4.0.2/go/
+Language subdirectory: guile
+   ./swig_lib/guile/
+   /usr/share/swig/4.0.2/guile/
+Language subdirectory: java
+   ./swig_lib/java/
+   /usr/share/swig/4.0.2/java/
+Language subdirectory: javascript/v8
+   ./swig_lib/javascript/v8/
+   /usr/share/swig/4.0.2/javascript/v8/
+Language subdirectory: lua
+   ./swig_lib/lua/
+   /usr/share/swig/4.0.2/lua/
+SWIG:1: Warning 524: Experimental target language. Target language MzScheme/Racket specified by -mzscheme is an experimental language. Please read about SWIG experimental languages, http://swig.org/Doc4.0/Introduction.html#Introduction_experimental_status.
+Language subdirectory: mzscheme
+   ./swig_lib/mzscheme/
+   /usr/share/swig/4.0.2/mzscheme/
+SWIG:1: Warning 524: Experimental target language. Target language OCaml specified by -ocaml is an experimental language. Please read about SWIG experimental languages, http://swig.org/Doc4.0/Introduction.html#Introduction_experimental_status.
+Language subdirectory: ocaml
+   ./swig_lib/ocaml/
+   /usr/share/swig/4.0.2/ocaml/
+Sun Nov  6 17:17:16 2022 - INFO  - End to run test.
+Sun Nov  6 17:17:19 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 17:17:22 2022 - INFO  - Start to restore the test environment.
+Sun Nov  6 17:18:40 2022 - INFO  - End to restore the test environment.

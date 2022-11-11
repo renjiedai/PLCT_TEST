@@ -1,0 +1,118 @@
+Fri Nov  4 03:00:43 2022 - INFO  - Start environmental preparation.
+Fri Nov  4 03:00:46 2022 - INFO  - End of environmental preparation!
+Fri Nov  4 03:00:49 2022 - INFO  - Start executing testcase.
+新的密码： 重新输入新的密码： 更改用户 example 的密码 。
+passwd：所有的身份验证令牌已经成功更新。
+==> ./oe_test_acl_allow_change_nochange.sh <==
+
+function post_test() {
+    LOG_INFO "start environment cleanup."
+    su - example -c 'chattr -i /home/example/test'
+    setcap -r /usr/bin/chattr
+    rm -rf /home/example/test
+    userdel -rf example
+    LOG_INFO "Finish environment cleanup!"
+}
+main "$@"
+
+==> ./oe_test_acl_allow_change_ownership.sh <==
+}
+
+function post_test() {
+    LOG_INFO "start environment cleanup."
+    rm -rf /tmp/test
+    setcap -r /bin/chown
+    userdel -rf example
+    LOG_INFO "Finish environment cleanup!"
+}
+main "$@"
+
+==> ./oe_test_acl_bind_port.sh <==
+}
+
+function post_test() {
+    LOG_INFO "start environment cleanup."
+    setcap -r /bin/ncat
+    userdel -rf example
+    DNF_REMOVE nc
+    LOG_INFO "Finish environment cleanup!"
+}
+main "$@"
+
+==> ./oe_test_acl_ignore_dal_across.sh <==
+    LOG_INFO "Finish testcase execution."
+}
+
+function post_test() {
+    LOG_INFO "start environment cleanup."
+    setcap -r /usr/bin/less
+    userdel -rf example
+    LOG_INFO "Finish environment cleanup!"
+}
+main "$@"
+
+==> ./oe_test_acl_manage_net.sh <==
+}
+
+function post_test() {
+    LOG_INFO "start environment cleanup."
+    ifconfig $net_card:1 down
+    setcap -r /sbin/ifconfig
+    userdel -rf example
+    LOG_INFO "Finish environment cleanup!"
+}
+main "$@"
+
+==> ./oe_test_acl_ordinary_users_setgid.sh <==
+}
+
+function post_test() {
+    LOG_INFO "start environment cleanup."
+    su - example -c 'chattr -i /home/example/test'
+    setcap -r /usr/bin/chattr
+    userdel -rf example
+    LOG_INFO "Finish environment cleanup!"
+}
+main "$@"
+
+==> ./oe_test_acl_send_kill_notbelong.sh <==
+    LOG_INFO "Finish testcase execution."
+}
+
+function post_test() {
+    LOG_INFO "start environment cleanup."
+    setcap -r /bin/kill
+    userdel -rf example
+    LOG_INFO "Finish environment cleanup!"
+}
+main "$@"
+
+==> ./oe_test_acl_verwrite_previous_rules.sh <==
+    CHECK_RESULT $? 0 0 "Failed to get cap"
+    LOG_INFO "Finish testcase execution."
+}
+
+function post_test() {
+    LOG_INFO "start environment cleanup."
+    setcap -r /usr/bin/less
+    LOG_INFO "Finish environment cleanup!"
+}
+main "$@"
+
+==> ./oe_test_libcap.sh <==
+function post_test() {
+    LOG_INFO "Start to restore the test environment."
+
+    userdel $user
+    rm -r ./ping
+
+    LOG_INFO "End to restore the test environment."
+}
+
+main "$@"
+kill: 向 1671 发送信号失败: Operation not permitted
+oe_test_acl_send_kill_notbelong.sh：行 28:  1671 Killed                  nohup tail -f ./*
+Fri Nov  4 03:01:17 2022 - INFO  - Finish testcase execution.
+Fri Nov  4 03:01:19 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 03:01:22 2022 - INFO  - start environment cleanup.
+Fri Nov  4 03:01:26 2022 - INFO  - Finish environment cleanup!

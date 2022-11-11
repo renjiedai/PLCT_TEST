@@ -1,0 +1,46 @@
+Sat Nov  5 18:39:48 2022 - INFO  - Start to config params of the case.
+Sat Nov  5 18:39:51 2022 - INFO  - End to config params of the case.
+Sat Nov  5 18:39:54 2022 - INFO  - Start to prepare the test environment.
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+At revision 4757.
+Sat Nov  5 18:42:53 2022 - INFO  - End to prepare the test environment.
+Sat Nov  5 18:42:55 2022 - INFO  - Start to run test.
+A    1.txt
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+Committed revision 4758.
+D    1.txt
+A    2.txt
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+Committed revision 4759.
+A    4.txt
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+Committed revision 4760.
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+Sending meta data...
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+Sending    3.txt
+Server returned an error: HTTP Error 403: Forbidden
+no permission to modify package zjl in project home:test666:branches:openEuler:Mainline
+Transmitting file data WARNING: SSL certificate checks disabled. Connection is insecure!
+
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+Committed revision 4761.
+D    3.txt
+D    4.txt
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+Deleting    3.txt
+Deleting    4.txt
+Transmitting file data 
+Committed revision 4762.
+Sat Nov  5 18:46:45 2022 - INFO  - End to run test.
+Sat Nov  5 18:46:48 2022 - INFO  - succeed to execute the case.
+Sat Nov  5 18:46:51 2022 - INFO  - Start to restore the test environment.
+Sat Nov  5 18:48:08 2022 - INFO  - End to restore the test environment.

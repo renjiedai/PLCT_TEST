@@ -1,0 +1,7 @@
+Thu Nov  3 20:53:08 2022 - INFO  - Start environmental preparation.
+Thu Nov  3 20:53:13 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 20:53:17 2022 - INFO  - Start testing...
+Thu Nov  3 20:53:24 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Thu Nov  3 20:53:28 2022 - INFO  - Finish test!
+Thu Nov  3 20:53:33 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 20:53:37 2022 - INFO  - oe_test_service_dracut-initqueue.sh post_test

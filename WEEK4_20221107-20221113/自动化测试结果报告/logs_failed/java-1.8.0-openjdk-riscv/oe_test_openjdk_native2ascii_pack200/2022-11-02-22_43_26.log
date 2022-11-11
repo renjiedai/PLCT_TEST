@@ -1,0 +1,18 @@
+Wed Nov  2 22:43:37 2022 - INFO  - Start to prepare the test environment.
+Wed Nov  2 22:51:57 2022 - INFO  - End to prepare the test environment.
+Wed Nov  2 22:51:58 2022 - INFO  - Start to run test.
+\u5bb9\u989c
+容颜
+\u00e5\u00ae\u00b9\u00e9\u00a2\u009c
+Wed Nov  2 22:52:33 2022 - ERROR - oe_test_openjdk_native2ascii_pack200.sh line 43
+Wed Nov  2 22:52:36 2022 - ERROR - oe_test_openjdk_native2ascii_pack200.sh line 45
+已添加清单
+正在添加: Hello.class(输入 = 416) (输出 = 286)(压缩了 31%)
+Hello.jar
+Hello.jar.pack.gz
+Hello.jar
+Hello.jar.pack.gz
+Wed Nov  2 22:52:48 2022 - INFO  - End to run test.
+Wed Nov  2 22:52:49 2022 - ERROR - failed to execute the case.
+Wed Nov  2 22:52:51 2022 - INFO  - Need't to restore the tet environment.
+Wed Nov  2 22:54:10 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,84 @@
+Sun Nov  6 12:25:54 2022 - INFO  - Start to prepare the test environment.
+WARNING: Running pip install with root privileges is generally not a good idea. Try `pip3 install --user` instead.
+Collecting keyrings.alt
+  Downloading keyrings.alt-4.2.0-py3-none-any.whl (20 kB)
+Collecting jaraco.classes
+  Downloading jaraco.classes-3.2.3-py3-none-any.whl (6.0 kB)
+Collecting more-itertools
+  Downloading more_itertools-9.0.0-py3-none-any.whl (52 kB)
+Installing collected packages: more-itertools, jaraco.classes, keyrings.alt
+Successfully installed jaraco.classes-3.2.3 keyrings.alt-4.2.0 more-itertools-9.0.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+Sun Nov  6 12:30:24 2022 - INFO  - Finish preparing the test environment.
+Sun Nov  6 12:30:27 2022 - INFO  - Start to run test.
+usage: keyring [-h] [-p KEYRING_PATH] [-b KEYRING_BACKEND] [--list-backends]
+               [--disable]
+  -h, --help            show this help message and exit
+  -p KEYRING_PATH, --keyring-path KEYRING_PATH
+  -b KEYRING_BACKEND, --keyring-backend KEYRING_BACKEND
+  --list-backends       List keyring backends and exit
+  --disable             Disable keyring and exit
+keyring.backends.libsecret.Keyring (priority: 4.8)
+keyrings.alt.file.PlaintextKeyring (priority: 0.5)
+keyring.backends.fail.Keyring (priority: 0)
+keyring.backends.chainer.ChainerBackend (priority: 10)
+spawn keyring set system username -b keyrings.alt.file.PlaintextKeyring
+Password for 'username' in 'system': Sun Nov  6 12:31:58 2022 - ERROR - oe_test_keyring.sh line 44
+spawn keyring del system username -b keyrings.alt.file.PlaintextKeyring
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/keyrings/alt/file_base.py", line 179, in delete_password
+    if not config.remove_option(service, username):
+  File "/usr/lib64/python3.9/configparser.py", line 946, in remove_option
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'system'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/bin/keyring", line 33, in <module>
+    sys.exit(load_entry_point('keyring==23.4.0', 'console_scripts', 'keyring')())
+  File "/usr/lib/python3.9/site-packages/keyring/cli.py", line 132, in main
+    return cli.run(argv)
+  File "/usr/lib/python3.9/site-packages/keyring/cli.py", line 68, in run
+    return method()
+  File "/usr/lib/python3.9/site-packages/keyring/cli.py", line 88, in do_del
+    delete_password(self.service, self.username)
+  File "/usr/lib/python3.9/site-packages/keyring/core.py", line 65, in delete_password
+    get_keyring().delete_password(service_name, username)
+  File "/usr/local/lib/python3.9/site-packages/keyrings/alt/file_base.py", line 182, in delete_password
+    raise PasswordDeleteError("Password not found")
+keyring.errors.PasswordDeleteError: Password not found
+spawn keyring set system username -b keyrings.alt.file.PlaintextKeyring -p demo
+Password for 'username' in 'system': Sun Nov  6 12:32:58 2022 - ERROR - oe_test_keyring.sh line 58
+spawn keyring del system username -b keyrings.alt.file.PlaintextKeyring -p demo
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/keyrings/alt/file_base.py", line 179, in delete_password
+    if not config.remove_option(service, username):
+  File "/usr/lib64/python3.9/configparser.py", line 946, in remove_option
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'system'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/bin/keyring", line 33, in <module>
+    sys.exit(load_entry_point('keyring==23.4.0', 'console_scripts', 'keyring')())
+  File "/usr/lib/python3.9/site-packages/keyring/cli.py", line 132, in main
+    return cli.run(argv)
+  File "/usr/lib/python3.9/site-packages/keyring/cli.py", line 68, in run
+    return method()
+  File "/usr/lib/python3.9/site-packages/keyring/cli.py", line 88, in do_del
+    delete_password(self.service, self.username)
+  File "/usr/lib/python3.9/site-packages/keyring/core.py", line 65, in delete_password
+    get_keyring().delete_password(service_name, username)
+  File "/usr/local/lib/python3.9/site-packages/keyrings/alt/file_base.py", line 182, in delete_password
+    raise PasswordDeleteError("Password not found")
+keyring.errors.PasswordDeleteError: Password not found
+Sun Nov  6 12:33:25 2022 - INFO  - End of the test.
+Sun Nov  6 12:33:29 2022 - ERROR - failed to execute the case.
+Sun Nov  6 12:33:33 2022 - INFO  - Start to restore the test environment.
+Found existing installation: keyrings.alt 4.2.0
+Uninstalling keyrings.alt-4.2.0:
+  Successfully uninstalled keyrings.alt-4.2.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+Sun Nov  6 12:35:24 2022 - INFO  - Finish restoring the test environment.

@@ -1,0 +1,21 @@
+Thu Nov  3 20:28:21 2022 - INFO  - Start to prepare the test environment.
+Thu Nov  3 20:32:02 2022 - INFO  - Finish preparing the test environment.
+Thu Nov  3 20:32:05 2022 - INFO  - Start to run test.
+oe_test_build-classpath.sh:行30: build-classpath：未找到命令
+Thu Nov  3 20:32:08 2022 - ERROR - oe_test_build-classpath.sh line 31
+oe_test_build-classpath.sh:行32: build-classpath：未找到命令
+Thu Nov  3 20:32:11 2022 - ERROR - oe_test_build-classpath.sh line 33
+oe_test_build-classpath.sh:行34: build-classpath：未找到命令
+Thu Nov  3 20:32:14 2022 - ERROR - oe_test_build-classpath.sh line 35
+oe_test_build-classpath.sh:行36: build-classpath-directory：未找到命令
+Thu Nov  3 20:32:18 2022 - ERROR - oe_test_build-classpath.sh line 37
+oe_test_build-classpath.sh:行38: build-classpath-directory：未找到命令
+Thu Nov  3 20:32:21 2022 - ERROR - oe_test_build-classpath.sh line 39
+oe_test_build-classpath.sh:行40: build-classpath-directory：未找到命令
+Thu Nov  3 20:32:24 2022 - ERROR - oe_test_build-classpath.sh line 41
+oe_test_build-classpath.sh:行42: build-classpath-directory：未找到命令
+Thu Nov  3 20:32:28 2022 - ERROR - oe_test_build-classpath.sh line 43
+Thu Nov  3 20:32:30 2022 - INFO  - End of the test.
+Thu Nov  3 20:32:33 2022 - ERROR - failed to execute the case.
+Thu Nov  3 20:32:36 2022 - INFO  - Start to restore the test environment.
+Thu Nov  3 20:33:10 2022 - INFO  - Finish restoring the test environment.

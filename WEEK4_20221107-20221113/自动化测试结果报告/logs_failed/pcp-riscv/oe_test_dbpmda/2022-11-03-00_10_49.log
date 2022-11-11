@@ -1,0 +1,42 @@
+Thu Nov  3 00:11:44 2022 - INFO  - Start to prepare the test environment.
+Failed to enable unit: Unit file pmcd.service does not exist.
+Failed to start pmcd.service: Unit pmcd.service not found.
+Failed to enable unit: Unit file pmlogger.service does not exist.
+Failed to start pmlogger.service: Unit pmlogger.service not found.
+Thu Nov  3 00:16:45 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 00:16:52 2022 - INFO  - Start to run test.
+spawn dbpmda -n /var/lib/pcp/pmns/root
+couldn't execute "dbpmda": no such file or directory
+    while executing
+"spawn dbpmda -n /var/lib/pcp/pmns/root"
+spawn dbpmda -f
+couldn't execute "dbpmda": no such file or directory
+    while executing
+"spawn dbpmda -f"
+spawn dbpmda -q 3
+couldn't execute "dbpmda": no such file or directory
+    while executing
+"spawn dbpmda -q 3"
+spawn dbpmda -U root
+couldn't execute "dbpmda": no such file or directory
+    while executing
+"spawn dbpmda -U root"
+spawn dbpmda -e
+couldn't execute "dbpmda": no such file or directory
+    while executing
+"spawn dbpmda -e"
+spawn dbpmda -i
+couldn't execute "dbpmda": no such file or directory
+    while executing
+"spawn dbpmda -i"
+Thu Nov  3 00:17:15 2022 - ERROR - oe_test_dbpmda.sh line 104
+Thu Nov  3 00:17:22 2022 - INFO  - End to run test.
+Thu Nov  3 00:17:30 2022 - ERROR - failed to execute the case.
+Thu Nov  3 00:17:37 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:02:33 ago on 2022年11月03日 星期四 00时13分08秒.\nNo match for argument: pcp\nError: Unable to find a match: pcp'
+Thu Nov  3 00:18:08 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,15 @@
+Fri Nov  4 04:26:24 2022 - INFO  - Start environmental preparation.
+chmod: 无法访问 '/var/lib/lxc/myhost/rootfs/bin/passwd': No such file or directory
+Fri Nov  4 04:32:09 2022 - INFO  - End of environmental preparation!
+Fri Nov  4 04:32:14 2022 - INFO  - Start testing...
+     Active: active (exited) since Fri 2022-11-04 04:32:30 CST; 11s ago
+     Active: inactive (dead) since Fri 2022-11-04 04:32:44 CST; 10s ago
+     Active: active (exited) since Fri 2022-11-04 04:33:10 CST; 11s ago
+/etc/systemd/system/multi-user.target.wants/lxc.service
+Removed /etc/systemd/system/multi-user.target.wants/lxc.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/lxc.service’: No such file or directory
+     Active: active (exited) since Fri 2022-11-04 04:33:10 CST; 1min 28s ago
+Fri Nov  4 04:34:43 2022 - INFO  - Finish test!
+Fri Nov  4 04:34:47 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 04:34:51 2022 - INFO  - start environment cleanup.
+Fri Nov  4 04:37:08 2022 - INFO  - Finish environment cleanup!

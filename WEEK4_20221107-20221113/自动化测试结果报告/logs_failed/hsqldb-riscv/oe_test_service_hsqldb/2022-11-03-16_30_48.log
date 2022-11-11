@@ -1,0 +1,38 @@
+Thu Nov  3 16:31:19 2022 - INFO  - Start environmental preparation.
+Thu Nov  3 16:33:42 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 16:33:45 2022 - INFO  - Start testing...
+Failed to restart hsqldb.service: Unit hsqldb.service not found.
+Thu Nov  3 16:33:50 2022 - ERROR - hsqldb.service restart failed
+Thu Nov  3 16:33:53 2022 - ERROR - ../common/common_lib.sh line 34
+Unit hsqldb.service could not be found.
+Thu Nov  3 16:34:06 2022 - ERROR - hsqldb.service restart failed
+Thu Nov  3 16:34:10 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop hsqldb.service: Unit hsqldb.service not loaded.
+Thu Nov  3 16:34:14 2022 - ERROR - hsqldb.service stop failed
+Thu Nov  3 16:34:18 2022 - ERROR - ../common/common_lib.sh line 39
+Unit hsqldb.service could not be found.
+Thu Nov  3 16:34:31 2022 - ERROR - hsqldb.service stop failed
+Thu Nov  3 16:34:35 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start hsqldb.service: Unit hsqldb.service not found.
+Thu Nov  3 16:34:39 2022 - ERROR - hsqldb.service start failed
+Thu Nov  3 16:34:42 2022 - ERROR - ../common/common_lib.sh line 44
+Unit hsqldb.service could not be found.
+Thu Nov  3 16:34:56 2022 - ERROR - hsqldb.service start failed
+Thu Nov  3 16:35:00 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for hsqldb.service: No such file or directory
+Thu Nov  3 16:35:04 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start hsqldb.service: Unit hsqldb.service not found.
+Thu Nov  3 16:35:09 2022 - ERROR - Job type reload is not applicable for unit hsqldb.service
+Thu Nov  3 16:35:12 2022 - ERROR - ../common/common_lib.sh line 91
+Unit hsqldb.service could not be found.
+Unit hsqldb.service could not be found.
+Thu Nov  3 16:35:16 2022 - INFO  - Finish test!
+Thu Nov  3 16:35:19 2022 - ERROR - failed to execute the case.
+Thu Nov  3 16:35:22 2022 - INFO  - start environment cleanup.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:01:28 ago on 2022年11月03日 星期四 16时32分07秒.\nNo match for argument: hsqldb\nError: Unable to find a match: hsqldb'
+Thu Nov  3 16:35:38 2022 - INFO  - Finish environment cleanup!

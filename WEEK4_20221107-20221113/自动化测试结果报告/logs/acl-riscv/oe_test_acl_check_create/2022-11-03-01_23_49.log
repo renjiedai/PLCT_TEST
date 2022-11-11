@@ -1,0 +1,10 @@
+Thu Nov  3 01:24:23 2022 - INFO  - Start environmental preparation.
+0022
+Thu Nov  3 01:24:29 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 01:24:35 2022 - INFO  - Start executing testcase.
+-rw-r--r-- 1 root root 0 11月  3 01:24 /tmp/my_pwd
+getfacl: Removing leading '/' from absolute path names
+Thu Nov  3 01:24:40 2022 - INFO  - Finish testcase execution.
+Thu Nov  3 01:24:45 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 01:24:49 2022 - INFO  - start environment cleanup.
+Thu Nov  3 01:24:53 2022 - INFO  - Finish environment cleanup!

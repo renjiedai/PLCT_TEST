@@ -1,0 +1,29 @@
+Fri Nov  4 03:14:47 2022 - INFO  - Start to prepare the test environment.
+Fri Nov  4 03:18:04 2022 - INFO  - Finish preparing the test environment.
+Fri Nov  4 03:18:08 2022 - INFO  - Start to run test.
+Usage:
+  osinfo-install-script [OPTION…] - Generate an OS install script
+
+** (osinfo-install-script:879): WARNING **: 03:18:09.892: When setting user or admin password, use --config-file instead.
+
+
+** (osinfo-install-script:879): WARNING **: 03:18:09.912: When setting user or admin password, use --config-file instead.
+
+fedora.ks
+
+** (osinfo-install-script:914): WARNING **: 03:18:55.159: When setting user or admin password, use --config-file instead.
+
+
+** (osinfo-install-script:914): WARNING **: 03:18:55.178: When setting user or admin password, use --config-file instead.
+
+fedora.ks
+
+** (osinfo-install-script:933): WARNING **: 03:19:39.168: When setting user or admin password, use --config-file instead.
+
+
+** (osinfo-install-script:933): WARNING **: 03:19:39.186: When setting user or admin password, use --config-file instead.
+
+Fri Nov  4 03:20:26 2022 - INFO  - End of the test.
+Fri Nov  4 03:20:30 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 03:20:34 2022 - INFO  - Start to restore the test environment.
+Fri Nov  4 03:22:07 2022 - INFO  - Finish restoring the test environment.

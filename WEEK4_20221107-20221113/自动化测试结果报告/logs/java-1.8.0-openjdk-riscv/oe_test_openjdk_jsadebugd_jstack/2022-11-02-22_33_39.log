@@ -1,0 +1,8 @@
+Wed Nov  2 22:33:50 2022 - INFO  - Start to prepare the test environment.
+Wed Nov  2 22:41:41 2022 - INFO  - End to prepare the test environment.
+Wed Nov  2 22:41:42 2022 - INFO  - Start to run test.
+错误: 找不到或无法加载主类 sun.jvm.hotspot.jdi.SADebugServer
+Wed Nov  2 22:41:45 2022 - ERROR - oe_test_openjdk_jsadebugd_jstack.sh line 30
+Usage:
+Wed Nov  2 22:41:48 2022 - INFO  - Need't to restore the tet environment.
+nashorn> Wed Nov  2 22:43:14 2022 - INFO  - End to restore the test environment.

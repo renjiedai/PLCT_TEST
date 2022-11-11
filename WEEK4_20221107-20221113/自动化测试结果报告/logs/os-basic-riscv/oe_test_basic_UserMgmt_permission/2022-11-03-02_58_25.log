@@ -1,0 +1,29 @@
+Thu Nov  3 02:58:34 2022 - INFO  - Start to prepare the test environment.
+id: “testuser1”：无此用户
+Thu Nov  3 02:58:37 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 02:58:38 2022 - INFO  - Start to run test.
+useradd: Permission denied.
+useradd：无法锁定 /etc/passwd，请稍后再试。
+
+我们信任您已经从系统管理员那里了解了日常注意事项。
+总结起来无外乎这三点：
+
+    #1) 尊重别人的隐私。
+    #2) 输入前要先考虑(后果和风险)。
+    #3) 权力越大，责任越大。
+
+sudo: 读取密码需要一个终端；请使用 -S 选项以从标准输入进行读取，或者配置一个 askpass 助手程序
+sudo: 需要密码
+id: “test”：无此用户
+usermod: Permission denied.
+usermod：无法锁定 /etc/passwd，请稍后再试。
+test:x:666:1002::/home/test:/bin/bash
+groupadd：“testgroup”组已存在
+groupmod: Permission denied.
+groupmod：无法锁定 /etc/group，请稍后再试。
+testgroup:x:1002:
+testgroup:x:555:
+Thu Nov  3 02:58:57 2022 - INFO  - End to run test.
+Thu Nov  3 02:58:58 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 02:58:59 2022 - INFO  - End to clean the test environment.
+Thu Nov  3 02:59:01 2022 - INFO  - End to clean the test environment.

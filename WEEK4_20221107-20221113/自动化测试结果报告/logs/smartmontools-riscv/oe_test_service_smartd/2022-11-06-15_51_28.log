@@ -1,0 +1,16 @@
+Sun Nov  6 15:52:06 2022 - INFO  - Start environmental preparation.
+Sun Nov  6 15:53:06 2022 - INFO  - pkgs:(smartmontools) is already installed
+Sun Nov  6 15:53:11 2022 - INFO  - End of environmental preparation!
+Sun Nov  6 15:53:16 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-11-06 15:53:19 CST; 11s ago
+     Active: inactive (dead) since Sun 2022-11-06 15:53:31 CST; 10s ago
+     Active: active (running) since Sun 2022-11-06 15:53:45 CST; 10s ago
+find: ‘/etc/systemd/system/multi-user.target.wants/smartd.service’: No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/smartd.service → /usr/lib/systemd/system/smartd.service.
+/etc/systemd/system/multi-user.target.wants/smartd.service
+     Active: active (running) since Sun 2022-11-06 15:53:45 CST; 1min 19s ago
+Sun Nov  6 15:55:10 2022 - INFO  - Finish test!
+Sun Nov  6 15:55:14 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 15:55:18 2022 - INFO  - start environment cleanup.
+Sun Nov  6 15:55:44 2022 - WARN  - no thing to do.
+Sun Nov  6 15:55:48 2022 - INFO  - Finish environment cleanup!

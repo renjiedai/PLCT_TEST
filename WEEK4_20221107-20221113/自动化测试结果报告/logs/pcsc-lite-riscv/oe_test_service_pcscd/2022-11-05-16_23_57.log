@@ -1,0 +1,16 @@
+Sat Nov  5 16:24:33 2022 - INFO  - Start environmental preparation.
+Sat Nov  5 16:28:13 2022 - INFO  - End of environmental preparation!
+Sat Nov  5 16:28:17 2022 - INFO  - Start testing...
+     Active: active (running) since Sat 2022-11-05 16:28:19 CST; 12s ago
+Warning: Stopping pcscd.service, but it can still be activated by:
+  pcscd.socket
+     Active: inactive (dead) since Sat 2022-11-05 16:28:32 CST; 12s ago
+     Active: active (running) since Sat 2022-11-05 16:28:45 CST; 10s ago
+Sat Nov  5 16:29:03 2022 - INFO  - Unit is indirect, ignoring.
+     Active: active (running) since Sat 2022-11-05 16:28:45 CST; 41s ago
+Sat Nov  5 16:29:30 2022 - INFO  - Finish test!
+Sat Nov  5 16:29:36 2022 - INFO  - succeed to execute the case.
+Sat Nov  5 16:29:41 2022 - INFO  - start environment cleanup.
+Warning: Stopping pcscd.service, but it can still be activated by:
+  pcscd.socket
+Sat Nov  5 16:31:51 2022 - INFO  - Finish environment cleanup!

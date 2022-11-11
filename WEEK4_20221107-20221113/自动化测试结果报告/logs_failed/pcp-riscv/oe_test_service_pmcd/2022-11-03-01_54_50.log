@@ -1,0 +1,39 @@
+Thu Nov  3 01:55:11 2022 - INFO  - Start environmental preparation.
+Thu Nov  3 01:56:47 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 01:56:49 2022 - INFO  - Start testing...
+Failed to restart pmcd.service: Unit pmcd.service not found.
+Thu Nov  3 01:56:52 2022 - ERROR - pmcd.service restart failed
+Thu Nov  3 01:56:55 2022 - ERROR - ../common/common_lib.sh line 34
+Unit pmcd.service could not be found.
+Thu Nov  3 01:57:06 2022 - ERROR - pmcd.service restart failed
+Thu Nov  3 01:57:08 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop pmcd.service: Unit pmcd.service not loaded.
+Thu Nov  3 01:57:11 2022 - ERROR - pmcd.service stop failed
+Thu Nov  3 01:57:14 2022 - ERROR - ../common/common_lib.sh line 39
+Unit pmcd.service could not be found.
+Thu Nov  3 01:57:26 2022 - ERROR - pmcd.service stop failed
+Thu Nov  3 01:57:28 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start pmcd.service: Unit pmcd.service not found.
+Thu Nov  3 01:57:31 2022 - ERROR - pmcd.service start failed
+Thu Nov  3 01:57:34 2022 - ERROR - ../common/common_lib.sh line 44
+Unit pmcd.service could not be found.
+Thu Nov  3 01:57:45 2022 - ERROR - pmcd.service start failed
+Thu Nov  3 01:57:48 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for pmcd.service: No such file or directory
+Thu Nov  3 01:57:51 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start pmcd.service: Unit pmcd.service not found.
+Thu Nov  3 01:57:55 2022 - ERROR - Job type reload is not applicable for unit pmcd.service
+Thu Nov  3 01:57:57 2022 - ERROR - ../common/common_lib.sh line 91
+Unit pmcd.service could not be found.
+Unit pmcd.service could not be found.
+Thu Nov  3 01:58:02 2022 - INFO  - Finish test!
+Thu Nov  3 01:58:04 2022 - ERROR - failed to execute the case.
+Thu Nov  3 01:58:07 2022 - INFO  - start environment cleanup.
+Failed to stop pmcd.service: Unit pmcd.service not loaded.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:53:07 ago on 2022年11月03日 星期四 01时03分34秒.\nNo match for argument: pcp\nError: Unable to find a match: pcp'
+Thu Nov  3 01:58:20 2022 - INFO  - Finish environment cleanup!

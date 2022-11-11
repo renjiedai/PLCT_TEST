@@ -1,0 +1,15 @@
+Sun Nov  6 17:01:04 2022 - INFO  - Start environmental preparation.
+Sun Nov  6 17:02:01 2022 - INFO  - pkgs:(sysprof-cli) is already installed
+Sun Nov  6 17:02:07 2022 - INFO  - End of environmental preparation!
+Sun Nov  6 17:02:11 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-11-06 17:02:13 CST; 10s ago
+     Active: inactive (dead)
+     Active: active (running) since Sun 2022-11-06 17:02:36 CST; 10s ago
+Sun Nov  6 17:02:53 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload sysprof2.service: Job type reload is not applicable for unit sysprof2.service.
+     Active: active (running) since Sun 2022-11-06 17:02:36 CST; 19s ago
+Sun Nov  6 17:03:00 2022 - INFO  - Finish test!
+Sun Nov  6 17:03:04 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 17:03:08 2022 - INFO  - start environment cleanup.
+Sun Nov  6 17:03:13 2022 - WARN  - no thing to do.
+Sun Nov  6 17:03:17 2022 - INFO  - Finish environment cleanup!

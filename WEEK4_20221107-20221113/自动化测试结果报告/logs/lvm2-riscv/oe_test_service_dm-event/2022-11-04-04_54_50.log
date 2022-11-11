@@ -1,0 +1,15 @@
+Fri Nov  4 04:55:26 2022 - INFO  - Start testing...
+     Active: active (running) since Fri 2022-11-04 04:55:27 CST; 11s ago
+Warning: Stopping dm-event.service, but it can still be activated by:
+  dm-event.socket
+     Active: inactive (dead) since Fri 2022-11-04 04:55:40 CST; 10s ago
+     Active: active (running) since Fri 2022-11-04 04:55:51 CST; 10s ago
+Fri Nov  4 04:56:08 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload dm-event.service: Job type reload is not applicable for unit dm-event.service.
+     Active: active (running) since Fri 2022-11-04 04:55:51 CST; 20s ago
+Fri Nov  4 04:56:16 2022 - INFO  - Finish test!
+Fri Nov  4 04:56:20 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 04:56:24 2022 - INFO  - start environment cleanup.
+Warning: Stopping dm-event.service, but it can still be activated by:
+  dm-event.socket
+Fri Nov  4 04:56:29 2022 - INFO  - Finish environment cleanup!

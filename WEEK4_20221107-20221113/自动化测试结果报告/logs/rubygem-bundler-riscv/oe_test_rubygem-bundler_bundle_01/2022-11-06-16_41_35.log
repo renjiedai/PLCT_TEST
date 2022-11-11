@@ -1,0 +1,111 @@
+Sun Nov  6 16:42:08 2022 - INFO  - Start to prepare the test environment.
+Sun Nov  6 16:46:19 2022 - INFO  - End to prepare the test environment.
+Sun Nov  6 16:46:23 2022 - INFO  - Start to run test.
+Writing new Gemfile to /root/mugen/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile
+Writing new Gemfile to /root/mugen/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile
+Running `bundle init --verbose` with bundler 2.2.33
+spawn bundle gem testgem01
+Y
+[32mCreating gem 'testgem01'...[0m
+[32mDo you want to generate tests with your gem?[0m
+Future `bundle gem` calls will use your choice. This setting can be changed anytime with `bundle config gem.test`.
+Enter a test framework. rspec/minitest/test-unit/(none): Y
+[32mDo you want to set up continuous integration for your gem? Supported services:
+* CircleCI:       https://circleci.com/
+* GitHub Actions: https://github.com/features/actions
+* GitLab CI:      https://docs.gitlab.com/ee/ci/
+* Travis CI:      https://travis-ci.org/
+
+[0mFuture `bundle gem` calls will use your choice. This setting can be changed anytime with `bundle config gem.ci`.
+Enter a CI service. github/travis/gitlab/circle/(none): Y
+[32mDo you want to license your code permissively under the MIT license?[0m
+<at https://choosealicense.com/licenses/mit. y/(n): Y
+MIT License enabled in config
+[32mDo you want to include a code of conduct in gems you generate?[0m
+<onduct, see https://bit.ly/coc-enforcement. y/(n): Y
+Code of conduct enabled in config
+[32mDo you want to include a changelog?[0m
+<why and how. see https://keepachangelog.com y/(n): spawn bundle gem testgem02 -t
+Y
+[32mCreating gem 'testgem02'...[0m
+[32mDo you want to generate tests with your gem?[0m
+Your choice will only be applied to this gem.
+Enter a test framework. rspec/minitest/test-unit/(none): Y
+MIT License enabled in config
+Code of conduct enabled in config
+[32mDo you want to include a changelog?[0m
+<why and how. see https://keepachangelog.com y/(n): spawn bundle gem testgem03 -e
+Y
+[32mCreating gem 'testgem03'...[0m
+MIT License enabled in config
+Code of conduct enabled in config
+[32mDo you want to include a changelog?[0m
+<why and how. see https://keepachangelog.com y/(n): Y
+Changelog enabled in config
+[32mDo you want to add a code linter and formatter to your gem? Supported Linters:
+* RuboCop:       https://rubocop.org
+* Standard:      https://github.com/testdouble/standard
+
+[0mFuture `bundle gem` calls will use your choice. This setting can be changed anytime with `bundle config gem.linter`.
+Enter a linter. rubocop/standard/(none): Y
+Initializing git repo in /root/mugen/mugen-riscv/testcases/cli-test/rubygem-bundler/testgem03
+[33m提示：使用 'master' 作为初始分支的名称。这个默认分支名称可能会更改。要在新仓库中[m
+[33m提示：配置使用初始分支名，并消除这条警告，请执行：[m
+[33m提示：[m
+[33m提示：	git config --global init.defaultBranch <名称>[m
+[33m提示：[m
+[33m提示：除了 'master' 之外，通常选定的名字有 'main'、'trunk' 和 'development'。[m
+[33m提示：可以通过以下命令重命名刚创建的分支：[m
+[33m提示：[m
+[33m提示：	git branch -m <name>[m
+[1m[32m      create[0m  testgem03/Gemfile
+[1m[32m      create[0m  testgem03/lib/testgem03.rb
+[1m[32m      create[0m  testgem03/lib/testgem03/version.rb
+[1m[32m      create[0m  testgem03/sig/testgem03.rbs
+[1m[32m      create[0m  testgem03/testgem03.gemspec
+[1m[32m      create[0m  testgem03/Rakefile
+[1m[32m      create[0m  testgem03/README.md
+[1m[32m      create[0m  testgem03/bin/console
+[1m[32m      create[0m  testgem03/bin/setup
+[1m[32m      create[0m  testgem03/.gitignore
+[1m[32m      create[0m  testgem03/LICENSE.txt
+[1m[32m      create[0m  testgem03/CODE_OF_CONDUCT.md
+[1m[32m      create[0m  testgem03/CHANGELOG.md
+[1m[32m         run[0m  edit "/root/mugen/mugen-riscv/testcases/cli-test/rubygem-bundler/testgem03/testgem03.gemspec" from "."
+sh:行1: edit：未找到命令
+Deprecation warning: Bundler::Thor exit with status 0 on errors. To keep this behavior, you must define `exit_on_failure?` in `Bundler::CLI`
+You can silence deprecations warning by setting the environment variable THOR_SILENCE_DEPRECATION.
+Gem 'testgem03' was successfully created. For more information on making a RubyGem visit https://bundler.io/guides/creating_gem.html
+Creating gem 'testgem03'...
+提示：使用 'master' 作为初始分支的名称。这个默认分支名称可能会更改。要在新仓库中
+提示：配置使用初始分支名，并消除这条警告，请执行：
+提示：
+提示：	git config --global init.defaultBranch <名称>
+提示：
+提示：除了 'master' 之外，通常选定的名字有 'main'、'trunk' 和 'development'。
+提示：可以通过以下命令重命名刚创建的分支：
+提示：
+提示：	git branch -m <name>
+      create  testgem04/exe/testgem04
+提示：使用 'master' 作为初始分支的名称。这个默认分支名称可能会更改。要在新仓库中
+提示：配置使用初始分支名，并消除这条警告，请执行：
+提示：
+提示：	git config --global init.defaultBranch <名称>
+提示：
+提示：除了 'master' 之外，通常选定的名字有 'main'、'trunk' 和 'development'。
+提示：可以通过以下命令重命名刚创建的分支：
+提示：
+提示：	git branch -m <name>
+提示：使用 'master' 作为初始分支的名称。这个默认分支名称可能会更改。要在新仓库中
+提示：配置使用初始分支名，并消除这条警告，请执行：
+提示：
+提示：	git config --global init.defaultBranch <名称>
+提示：
+提示：除了 'master' 之外，通常选定的名字有 'main'、'trunk' 和 'development'。
+提示：可以通过以下命令重命名刚创建的分支：
+提示：
+提示：	git branch -m <name>
+Sun Nov  6 16:50:13 2022 - INFO  - End to run test.
+Sun Nov  6 16:50:17 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 16:50:21 2022 - INFO  - Start to restore the test environment.
+Sun Nov  6 16:52:01 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,183 @@
+Thu Nov  3 02:15:44 2022 - INFO  - Start to pre test.
+Thu Nov  3 02:15:46 2022 - INFO  - Start to pre test.
+Thu Nov  3 02:15:48 2022 - INFO  - Start to run test.
+记录了500+0 的读入
+记录了500+0 的写出
+524288000字节（524 MB，500 MiB）已复制，176.506 s，3.0 MB/s
+524288000
+记录了500+0 的读入
+记录了500+0 的写出
+524288000字节（524 MB，500 MiB）已复制，30.6323 s，17.1 MB/s
+524288000
+记录了500+0 的读入
+记录了500+0 的写出
+524288000字节（524 MB，500 MiB）已复制，175.964 s，3.0 MB/s
+524288000
+记录了500+0 的读入
+记录了500+0 的写出
+524288000字节（524 MB，500 MiB）已复制，23.4362 s，22.4 MB/s
+524288000
+记录了500+0 的读入
+记录了500+0 的写出
+524288000字节（524 MB，500 MiB）已复制，151.31 s，3.5 MB/s
+524288000
+记录了500+0 的读入
+记录了500+0 的写出
+524288000字节（524 MB，500 MiB）已复制，23.7293 s，22.1 MB/s
+524288000
+记录了500+0 的读入
+记录了500+0 的写出
+524288000字节（524 MB，500 MiB）已复制，131.761 s，4.0 MB/s
+524288000
+记录了500+0 的读入
+记录了500+0 的写出
+524288000字节（524 MB，500 MiB）已复制，23.5542 s，22.3 MB/s
+524288000
+记录了500+0 的读入
+记录了500+0 的写出
+524288000字节（524 MB，500 MiB）已复制，130.265 s，4.0 MB/s
+524288000
+记录了500+0 的读入
+记录了500+0 的写出
+524288000字节（524 MB，500 MiB）已复制，23.0137 s，22.8 MB/s
+524288000
+记录了500+0 的读入
+记录了500+0 的写出
+524288000字节（524 MB，500 MiB）已复制，130.626 s，4.0 MB/s
+524288000
+记录了500+0 的读入
+记录了500+0 的写出
+524288000字节（524 MB，500 MiB）已复制，22.1106 s，23.7 MB/s
+524288000
+记录了500+0 的读入
+记录了500+0 的写出
+524288000字节（524 MB，500 MiB）已复制，130.172 s，4.0 MB/s
+524288000
+记录了500+0 的读入
+记录了500+0 的写出
+524288000字节（524 MB，500 MiB）已复制，22.7505 s，23.0 MB/s
+524288000
+记录了500+0 的读入
+记录了500+0 的写出
+524288000字节（524 MB，500 MiB）已复制，128.504 s，4.1 MB/s
+524288000
+记录了500+0 的读入
+记录了500+0 的写出
+524288000字节（524 MB，500 MiB）已复制，22.3479 s，23.5 MB/s
+524288000
+记录了500+0 的读入
+记录了500+0 的写出
+524288000字节（524 MB，500 MiB）已复制，132.902 s，3.9 MB/s
+524288000
+记录了500+0 的读入
+记录了500+0 的写出
+524288000字节（524 MB，500 MiB）已复制，22.404 s，23.4 MB/s
+524288000
+记录了500+0 的读入
+记录了500+0 的写出
+524288000字节（524 MB，500 MiB）已复制，129.77 s，4.0 MB/s
+524288000
+记录了500+0 的读入
+记录了500+0 的写出
+524288000字节（524 MB，500 MiB）已复制，22.4454 s，23.4 MB/s
+524288000
+-rw-r--r-- 1 root root 524288000 11月  3 02:43 mycpfile20221103
+-rw-r--r-- 1 root root 524288000 11月  3 02:43 mycpfile20221103
+-rw-r--r-- 1 root root 524288000 11月  3 02:44 mycpfile20221103
+-rw-r--r-- 1 root root 524288000 11月  3 02:44 mycpfile20221103
+-rw-r--r-- 1 root root 524288000 11月  3 02:44 mycpfile20221103
+-rw-r--r-- 1 root root 524288000 11月  3 02:44 mycpfile20221103
+-rw-r--r-- 1 root root 524288000 11月  3 02:44 mycpfile20221103
+-rw-r--r-- 1 root root 524288000 11月  3 02:44 mycpfile20221103
+-rw-r--r-- 1 root root 524288000 11月  3 02:44 mycpfile20221103
+-rw-r--r-- 1 root root 524288000 11月  3 02:44 mycpfile20221103
+  adding: myfile20221103 (deflated 100%)
+  adding: myfile20221103Thu Nov  3 02:45:33 2022 - ERROR - Timeout : Command 'bash oe_test_IOaccess_500Mfile.sh' timed out after 1799.9959371980012 seconds
+ (deflated 100%)
+Thu Nov  3 02:46:06 2022 - INFO  - Start to restore the test environment.
+Thu Nov  3 02:46:09 2022 - INFO  - End to restore the test environment.
+Thu Nov  3 02:46:10 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 56
+	zip warning: name not matched: myfile20221103
+
+zip error: Nothing to do! (myfile20221103.zip)
+Thu Nov  3 02:46:12 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 54
+Thu Nov  3 02:46:13 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 56
+	zip warning: name not matched: myfile20221103
+
+zip error: Nothing to do! (myfile20221103.zip)
+Thu Nov  3 02:46:15 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 54
+Thu Nov  3 02:46:16 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 56
+	zip warning: name not matched: myfile20221103
+
+zip error: Nothing to do! (myfile20221103.zip)
+Thu Nov  3 02:46:17 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 54
+Thu Nov  3 02:46:18 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 56
+	zip warning: name not matched: myfile20221103
+
+zip error: Nothing to do! (myfile20221103.zip)
+Thu Nov  3 02:46:20 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 54
+Thu Nov  3 02:46:21 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 56
+	zip warning: name not matched: myfile20221103
+
+zip error: Nothing to do! (myfile20221103.zip)
+Thu Nov  3 02:46:23 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 54
+Thu Nov  3 02:46:24 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 56
+	zip warning: name not matched: myfile20221103
+
+zip error: Nothing to do! (myfile20221103.zip)
+Thu Nov  3 02:46:25 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 54
+Thu Nov  3 02:46:27 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 56
+	zip warning: name not matched: myfile20221103
+
+zip error: Nothing to do! (myfile20221103.zip)
+Thu Nov  3 02:46:28 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 54
+Thu Nov  3 02:46:29 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 56
+	zip warning: name not matched: myfile20221103
+
+zip error: Nothing to do! (myfile20221103.zip)
+Thu Nov  3 02:46:31 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 54
+Thu Nov  3 02:46:32 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 56
+unzip:  cannot find or open myfile20221103.zip, myfile20221103.zip.zip or myfile20221103.zip.ZIP.
+Thu Nov  3 02:46:34 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 62
+ls: 无法访问 'myfile20221103': No such file or directory
+Thu Nov  3 02:46:35 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 64
+unzip:  cannot find or open myfile20221103.zip, myfile20221103.zip.zip or myfile20221103.zip.ZIP.
+Thu Nov  3 02:46:37 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 62
+ls: 无法访问 'myfile20221103': No such file or directory
+Thu Nov  3 02:46:39 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 64
+unzip:  cannot find or open myfile20221103.zip, myfile20221103.zip.zip or myfile20221103.zip.ZIP.
+Thu Nov  3 02:46:40 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 62
+ls: 无法访问 'myfile20221103': No such file or directory
+Thu Nov  3 02:46:41 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 64
+unzip:  cannot find or open myfile20221103.zip, myfile20221103.zip.zip or myfile20221103.zip.ZIP.
+Thu Nov  3 02:46:43 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 62
+ls: 无法访问 'myfile20221103': No such file or directory
+Thu Nov  3 02:46:44 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 64
+unzip:  cannot find or open myfile20221103.zip, myfile20221103.zip.zip or myfile20221103.zip.ZIP.
+Thu Nov  3 02:46:46 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 62
+ls: 无法访问 'myfile20221103': No such file or directory
+Thu Nov  3 02:46:47 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 64
+unzip:  cannot find or open myfile20221103.zip, myfile20221103.zip.zip or myfile20221103.zip.ZIP.
+Thu Nov  3 02:46:48 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 62
+ls: 无法访问 'myfile20221103': No such file or directory
+Thu Nov  3 02:46:50 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 64
+unzip:  cannot find or open myfile20221103.zip, myfile20221103.zip.zip or myfile20221103.zip.ZIP.
+Thu Nov  3 02:46:51 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 62
+ls: 无法访问 'myfile20221103': No such file or directory
+Thu Nov  3 02:46:53 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 64
+unzip:  cannot find or open myfile20221103.zip, myfile20221103.zip.zip or myfile20221103.zip.ZIP.
+Thu Nov  3 02:46:54 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 62
+ls: 无法访问 'myfile20221103': No such file or directory
+Thu Nov  3 02:46:56 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 64
+unzip:  cannot find or open myfile20221103.zip, myfile20221103.zip.zip or myfile20221103.zip.ZIP.
+Thu Nov  3 02:46:57 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 62
+ls: 无法访问 'myfile20221103': No such file or directory
+Thu Nov  3 02:46:58 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 64
+unzip:  cannot find or open myfile20221103.zip, myfile20221103.zip.zip or myfile20221103.zip.ZIP.
+Thu Nov  3 02:47:00 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 62
+ls: 无法访问 'myfile20221103': No such file or directory
+Thu Nov  3 02:47:01 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 64
+Thu Nov  3 02:47:02 2022 - INFO  - End to run test.
+Thu Nov  3 02:47:04 2022 - ERROR - failed to execute the case.
+Thu Nov  3 02:47:05 2022 - INFO  - Start to restore the test environment.
+Thu Nov  3 02:47:07 2022 - INFO  - End to restore the test environment.

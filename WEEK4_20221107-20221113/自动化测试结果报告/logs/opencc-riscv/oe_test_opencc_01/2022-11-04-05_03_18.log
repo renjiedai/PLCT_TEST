@@ -1,0 +1,13 @@
+Fri Nov  4 05:03:47 2022 - INFO  - Start to prepare the test environment.
+Fri Nov  4 05:06:53 2022 - INFO  - End to prepare the test environment.
+Fri Nov  4 05:06:58 2022 - INFO  - Start to run test.
+.sim_chinese.txt not found or not accessible.
+sim_chinese55.txt not found or not accessible.
+Fri Nov  4 05:07:15 2022 - ERROR - Missing actual error code.
+123456　
+abcd　
+$%^　
+Fri Nov  4 05:07:27 2022 - INFO  - End to run test.
+Fri Nov  4 05:07:31 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 05:07:35 2022 - INFO  - Start to restore the test environment.
+Fri Nov  4 05:09:02 2022 - INFO  - End to restore the test environment.

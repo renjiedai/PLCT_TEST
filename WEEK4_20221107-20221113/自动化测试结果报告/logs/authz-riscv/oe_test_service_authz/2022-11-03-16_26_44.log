@@ -1,0 +1,18 @@
+Thu Nov  3 16:27:22 2022 - INFO  - Start environmental preparation.
+Thu Nov  3 16:30:49 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 16:30:52 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-11-03 16:30:53 CST; 10s ago
+     Active: inactive (dead)
+     Active: active (running) since Thu 2022-11-03 16:31:17 CST; 10s ago
+/etc/systemd/system/multi-user.target.wants/authz.service
+/etc/systemd/system/isulad.service.wants/authz.service
+Removed /etc/systemd/system/multi-user.target.wants/authz.service.
+Removed /etc/systemd/system/isulad.service.wants/authz.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/authz.service’: No such file or directory
+find: ‘/etc/systemd/system/isulad.service.wants/authz.service’: No such file or directory
+Failed to reload authz.service: Job type reload is not applicable for unit authz.service.
+     Active: active (running) since Thu 2022-11-03 16:31:17 CST; 49s ago
+Thu Nov  3 16:32:11 2022 - INFO  - Finish test!
+Thu Nov  3 16:32:14 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 16:32:18 2022 - INFO  - start environment cleanup.
+Thu Nov  3 16:33:36 2022 - INFO  - Finish environment cleanup!

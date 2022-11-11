@@ -1,0 +1,30 @@
+Sat Nov  5 18:02:18 2022 - INFO  - Start to run test.
+Generating DSA parameters, 2048 bit long prime
+This could take some time
+.............................................................................................++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*
+...+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*
+-----BEGIN DSA PRIVATE KEY-----
+read DSA key
+writing DSA key
+-----BEGIN PUBLIC KEY-----
+spawn openssl req -x509 -key dsakey.pem -days 365 -out mycert-dsa.pem -new
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [AU]:CH
+State or Province Name (full name) [Some-State]:shanxi
+Locality Name (eg, city) []:xian
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:openEuler
+Organizational Unit Name (eg, section) []:develop
+Common Name (e.g. server FQDN or YOUR name) []:www.openeuler.org
+Email Address []:public@openeuler.io
+into your certificate request.
+-----BEGIN CERTIFICATE-----
+Sat Nov  5 18:02:35 2022 - INFO  - End to run test.
+Sat Nov  5 18:02:38 2022 - INFO  - succeed to execute the case.
+Sat Nov  5 18:02:41 2022 - INFO  - Start to restore the test environment.
+Sat Nov  5 18:02:45 2022 - INFO  - End to restore the test environment.

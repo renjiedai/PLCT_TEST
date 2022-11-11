@@ -1,0 +1,44 @@
+Fri Nov  4 03:47:24 2022 - INFO  - Start to prepare the test environment.
+tcp        0      0 0.0.0.0:11211           0.0.0.0:*               LISTEN     
+tcp6       0      0 :::11211                :::*                    LISTEN     
+6467
+Fri Nov  4 03:50:11 2022 - INFO  - Finish preparing the test environment.
+Fri Nov  4 03:50:14 2022 - INFO  - Start to run test.
+	 --version 
+	 --help 
+	 --quiet 
+	 --verbose 
+	 --debug 
+	 --servers=
+	 --expire=
+	 --hash=
+	 --binary 
+	 --username=
+	 --password=
+memrm v1.0
+spawn telnet 127.0.0.1 11211
+set age 2 0 2
+23
+set name 1 0 4
+Demo
+quit
+Trying 127.0.0.1...
+Connected to 127.0.0.1.
+Escape character is '^]'.
+STORED
+STORED
+Connection closed by foreign host.
+key: age
+value: 23
+key: name
+value: Demo
+Deleted key age
+Deleted key name
+error on age(NOT FOUND)
+error on name(NOT FOUND)
+Could not find key "age"
+Could not find key "name"
+Fri Nov  4 03:50:20 2022 - INFO  - End of the test.
+Fri Nov  4 03:50:24 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 03:50:27 2022 - INFO  - Start to restore the test environment.
+Fri Nov  4 03:52:01 2022 - INFO  - Finish restoring the test environment.

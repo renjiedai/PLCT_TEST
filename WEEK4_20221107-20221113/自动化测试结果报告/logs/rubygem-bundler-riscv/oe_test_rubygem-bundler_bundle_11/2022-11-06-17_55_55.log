@@ -1,0 +1,33 @@
+Sun Nov  6 17:56:14 2022 - INFO  - Start to prepare the test environment.
+Writing new Gemfile to /root/mugen/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile
+Sun Nov  6 17:58:41 2022 - INFO  - End to prepare the test environment.
+Sun Nov  6 17:58:43 2022 - INFO  - Start to run test.
+Ignoring --local
+Writing lockfile to /root/mugen/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile.lock
+Resolving dependencies...
+Writing lockfile to /root/mugen/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile.lock
+Writing lockfile to /root/mugen/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile.lock
+Resolving dependencies...
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  riscv64-linux
+
+DEPENDENCIES
+
+BUNDLED WITH
+   2.2.33
+Resolving dependencies...
+Writing lockfile to /root/mugen/mugen-riscv/testcases/cli-test/rubygem-bundler/lockfile
+Resolving dependencies...
+Writing lockfile to /root/mugen/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile.lock
+Resolving dependencies...
+Writing lockfile to /root/mugen/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile.lock
+Resolving dependencies...
+Writing lockfile to /root/mugen/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile.lock
+Sun Nov  6 18:01:14 2022 - INFO  - End to run test.
+Sun Nov  6 18:01:17 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 18:01:20 2022 - INFO  - Start to restore the test environment.
+Sun Nov  6 18:02:45 2022 - INFO  - End to restore the test environment.

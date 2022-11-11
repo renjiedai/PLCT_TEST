@@ -1,0 +1,29 @@
+Thu Nov  3 01:46:34 2022 - INFO  - Start to prepare the test environment.
+Thu Nov  3 01:48:09 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 01:48:11 2022 - INFO  - Start to run test.
+oe_test_pcp_pcp-import-iostat2pcp.sh: line 30: iostat: command not found
+Thu Nov  3 01:48:13 2022 - ERROR - oe_test_pcp_pcp-import-iostat2pcp.sh line 31
+oe_test_pcp_pcp-import-iostat2pcp.sh: line 34: iostat2pcp: command not found
+Thu Nov  3 01:48:16 2022 - ERROR - oe_test_pcp_pcp-import-iostat2pcp.sh line 35
+Thu Nov  3 01:48:18 2022 - ERROR - oe_test_pcp_pcp-import-iostat2pcp.sh line 37
+oe_test_pcp_pcp-import-iostat2pcp.sh: line 38: iostat2pcp: command not found
+Thu Nov  3 01:48:21 2022 - ERROR - oe_test_pcp_pcp-import-iostat2pcp.sh line 41
+oe_test_pcp_pcp-import-iostat2pcp.sh: line 42: iostat2pcp: command not found
+Thu Nov  3 01:48:24 2022 - ERROR - oe_test_pcp_pcp-import-iostat2pcp.sh line 43
+Thu Nov  3 01:48:26 2022 - ERROR - oe_test_pcp_pcp-import-iostat2pcp.sh line 45
+oe_test_pcp_pcp-import-iostat2pcp.sh: line 46: iostat2pcp: command not found
+Thu Nov  3 01:48:29 2022 - ERROR - oe_test_pcp_pcp-import-iostat2pcp.sh line 47
+Thu Nov  3 01:48:31 2022 - ERROR - oe_test_pcp_pcp-import-iostat2pcp.sh line 49
+oe_test_pcp_pcp-import-iostat2pcp.sh: line 50: iostat2pcp: command not found
+Thu Nov  3 01:48:33 2022 - ERROR - oe_test_pcp_pcp-import-iostat2pcp.sh line 51
+Thu Nov  3 01:48:36 2022 - ERROR - oe_test_pcp_pcp-import-iostat2pcp.sh line 53
+Thu Nov  3 01:48:38 2022 - INFO  - End to run test.
+Thu Nov  3 01:48:40 2022 - ERROR - failed to execute the case.
+Thu Nov  3 01:48:42 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:44:30 ago on 2022年11月03日 星期四 01时03分34秒.\nNo match for argument: pcp-import-iostat2pcp\nError: Unable to find a match: pcp-import-iostat2pcp'
+Thu Nov  3 01:48:54 2022 - INFO  - End to restore the test environment.

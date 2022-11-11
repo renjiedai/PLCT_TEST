@@ -1,0 +1,14 @@
+Fri Nov  4 00:52:21 2022 - INFO  - Start environmental preparation.
+Fri Nov  4 00:56:21 2022 - INFO  - End of environmental preparation!
+Fri Nov  4 00:56:25 2022 - INFO  - Start testing...
+     Active: active (running) since Fri 2022-11-04 00:56:28 CST; 10s ago
+     Active: inactive (dead)
+     Active: active (running) since Fri 2022-11-04 00:56:53 CST; 11s ago
+/etc/systemd/system/multi-user.target.wants/haproxy.service
+Removed /etc/systemd/system/multi-user.target.wants/haproxy.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/haproxy.service’: No such file or directory
+     Active: active (running) since Fri 2022-11-04 00:56:53 CST; 1min 9s ago
+Fri Nov  4 00:58:07 2022 - INFO  - Finish test!
+Fri Nov  4 00:58:11 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 00:58:15 2022 - INFO  - start environment cleanup.
+Fri Nov  4 01:00:26 2022 - INFO  - Finish environment cleanup!

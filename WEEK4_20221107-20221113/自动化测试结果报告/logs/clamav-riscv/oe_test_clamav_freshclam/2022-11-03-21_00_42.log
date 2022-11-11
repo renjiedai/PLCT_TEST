@@ -1,0 +1,83 @@
+Thu Nov  3 21:01:12 2022 - INFO  - Start to prepare the database config.
+cp: 无法获取'/etc/clamd.conf' 的文件状态(stat): No such file or directory
+Thu Nov  3 21:03:41 2022 - INFO  - End to prepare the database config.
+Thu Nov  3 21:03:44 2022 - INFO  - Start to run test.
+ClamAV update process started at Thu Nov  3 21:03:45 2022
+WARNING: Your ClamAV installation is OUTDATED!
+WARNING: Local version: 0.103.6 Recommended version: 0.103.7
+DON'T PANIC! Read https://docs.clamav.net/manual/Installing.html
+daily database available for update (local version: 25550, remote version: 26709)
+WARNING: downloadFile: file not found: https://database.clamav.net/daily-25551.cdiff
+WARNING: downloadPatch: Can't download daily-25551.cdiff from https://database.clamav.net/daily-25551.cdiff
+WARNING: downloadFile: file not found: https://database.clamav.net/daily-25551.cdiff
+WARNING: downloadPatch: Can't download daily-25551.cdiff from https://database.clamav.net/daily-25551.cdiff
+WARNING: downloadFile: file not found: https://database.clamav.net/daily-25551.cdiff
+WARNING: downloadPatch: Can't download daily-25551.cdiff from https://database.clamav.net/daily-25551.cdiff
+WARNING: Incremental update failed, trying to download daily.cvd
+Testing database: '/var/lib/clamav/tmp.aa8ce7b2f8/clamav-0feabc52892d3034e3e4154a4c5d897b.tmp-daily.cvd' ...
+Database test passed.
+daily.cvd updated (version: 26709, sigs: 2009874, f-level: 90, builder: raynman)
+main database available for download (remote version: 62)
+Testing database: '/var/lib/clamav/tmp.aa8ce7b2f8/clamav-da1d1ad14857ee0b4ca5130402fff378.tmp-main.cvd' ...
+Database test passed.
+main.cvd updated (version: 62, sigs: 6647427, f-level: 90, builder: sigmgr)
+bytecode database available for download (remote version: 333)
+Testing database: '/var/lib/clamav/tmp.aa8ce7b2f8/clamav-314d3bf1ec2eed4b94e64be45bdc60c8.tmp-bytecode.cvd' ...
+Database test passed.
+bytecode.cvd updated (version: 333, sigs: 92, f-level: 63, builder: awillia2)
+oe_test_clamav_freshclam.sh:行35: /usr/bin/freshclam: No such file or directory
+Thu Nov  3 21:19:25 2022 - ERROR - Execute freshclam --debug failed.
+Thu Nov  3 21:19:28 2022 - ERROR - oe_test_clamav_freshclam.sh line 36
+oe_test_clamav_freshclam.sh:行37: /usr/bin/freshclam: No such file or directory
+Thu Nov  3 21:19:30 2022 - ERROR - Execute freshclam --quiet failed.
+Thu Nov  3 21:19:33 2022 - ERROR - oe_test_clamav_freshclam.sh line 38
+oe_test_clamav_freshclam.sh:行39: /usr/bin/freshclam: No such file or directory
+Thu Nov  3 21:19:36 2022 - ERROR - Execute freshclam --no-warnings failed.
+Thu Nov  3 21:19:38 2022 - ERROR - oe_test_clamav_freshclam.sh line 40
+oe_test_clamav_freshclam.sh:行41: /usr/bin/freshclam: No such file or directory
+Thu Nov  3 21:19:41 2022 - ERROR - Execute freshclam --show-progress failed.
+Thu Nov  3 21:19:44 2022 - ERROR - oe_test_clamav_freshclam.sh line 42
+oe_test_clamav_freshclam.sh:行43: /usr/bin/freshclam: No such file or directory
+Thu Nov  3 21:19:47 2022 - ERROR - Execute freshclam -d -p pid_log failed.
+Thu Nov  3 21:19:50 2022 - ERROR - oe_test_clamav_freshclam.sh line 44
+oe_test_clamav_freshclam.sh:行45: /usr/bin/freshclam: No such file or directory
+Thu Nov  3 21:19:53 2022 - ERROR - Execute freshclam -u root failed.
+Thu Nov  3 21:19:56 2022 - ERROR - oe_test_clamav_freshclam.sh line 46
+oe_test_clamav_freshclam.sh:行47: /usr/bin/freshclam: No such file or directory
+Thu Nov  3 21:19:58 2022 - ERROR - Execute freshclam --no-dns failed.
+Thu Nov  3 21:20:01 2022 - ERROR - oe_test_clamav_freshclam.sh line 48
+oe_test_clamav_freshclam.sh:行49: /usr/bin/freshclam: No such file or directory
+Thu Nov  3 21:20:04 2022 - ERROR - Execute freshclam -c 3 failed.
+Thu Nov  3 21:20:07 2022 - ERROR - oe_test_clamav_freshclam.sh line 50
+oe_test_clamav_freshclam.sh:行51: /usr/bin/freshclam: No such file or directory
+Thu Nov  3 21:20:09 2022 - ERROR - Execute freshclam --datadir /opt failed.
+Thu Nov  3 21:20:12 2022 - ERROR - oe_test_clamav_freshclam.sh line 52
+oe_test_clamav_freshclam.sh:行53: /usr/bin/freshclam: No such file or directory
+Thu Nov  3 21:20:15 2022 - ERROR - Execute freshclam --daemon-notify failed.
+Thu Nov  3 21:20:18 2022 - ERROR - oe_test_clamav_freshclam.sh line 54
+oe_test_clamav_freshclam.sh:行55: /usr/bin/freshclam: No such file or directory
+Thu Nov  3 21:20:21 2022 - ERROR - Execute freshclam --update-db main -a localhost failed.
+Thu Nov  3 21:20:23 2022 - ERROR - oe_test_clamav_freshclam.sh line 56
+oe_test_clamav_freshclam.sh:行59: /usr/bin/freshclam: No such file or directory
+Thu Nov  3 21:20:26 2022 - ERROR - Check freshclam --on-update-execute failed.
+Thu Nov  3 21:20:29 2022 - ERROR - oe_test_clamav_freshclam.sh line 60
+oe_test_clamav_freshclam.sh:行61: /usr/bin/freshclam: No such file or directory
+Thu Nov  3 21:20:32 2022 - ERROR - Check freshclam --on-error-execute failed.
+Thu Nov  3 21:20:34 2022 - ERROR - oe_test_clamav_freshclam.sh line 62
+oe_test_clamav_freshclam.sh:行63: /usr/bin/freshclam: No such file or directory
+Thu Nov  3 21:20:37 2022 - ERROR - Check freshclam --on-outdated-execute failed.
+Thu Nov  3 21:20:40 2022 - ERROR - oe_test_clamav_freshclam.sh line 64
+oe_test_clamav_freshclam.sh:行66: /usr/bin/freshclam: No such file or directory
+Thu Nov  3 21:20:43 2022 - ERROR - Check freshclam version failed.
+Thu Nov  3 21:20:45 2022 - ERROR - oe_test_clamav_freshclam.sh line 67
+oe_test_clamav_freshclam.sh:行68: /usr/bin/freshclam: No such file or directory
+Thu Nov  3 21:20:48 2022 - ERROR - Check freshclam help message failed.
+Thu Nov  3 21:20:51 2022 - ERROR - oe_test_clamav_freshclam.sh line 69
+oe_test_clamav_freshclam.sh:行70: /usr/bin/freshclam: No such file or directory
+Thu Nov  3 21:20:54 2022 - ERROR - Check freshclam list mirrors failed.
+Thu Nov  3 21:20:57 2022 - ERROR - oe_test_clamav_freshclam.sh line 71
+Thu Nov  3 21:21:00 2022 - INFO  - End to run test.
+Thu Nov  3 21:21:02 2022 - ERROR - failed to execute the case.
+Thu Nov  3 21:21:05 2022 - INFO  - Start to restore the test environment.
+mv: 无法获取'/etc/clamd.conf.bak' 的文件状态(stat): No such file or directory
+Thu Nov  3 21:21:41 2022 - INFO  - End to restore the test environment.

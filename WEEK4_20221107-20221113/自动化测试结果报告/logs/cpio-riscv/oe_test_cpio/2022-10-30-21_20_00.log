@@ -1,0 +1,18 @@
+Sun Oct 30 21:20:52 2022 - INFO  - Start to prepare the test environment.
+Sun Oct 30 21:22:25 2022 - INFO  - pkgs:(cpio) is already installed
+Sun Oct 30 21:22:34 2022 - INFO  - Finish preparing the test environment.
+Sun Oct 30 21:22:40 2022 - INFO  - Start to run test.
+Sun Oct 30 21:22:47 2022 - INFO  - test cpio -o option
+3 块
+Sun Oct 30 21:22:54 2022 - INFO  - test cpio -t option
+3 块
+Sun Oct 30 21:23:01 2022 - INFO  - test cpio -I option
+3 块
+Sun Oct 30 21:23:08 2022 - INFO  - test cpio -i option
+3 块
+Sun Oct 30 21:23:14 2022 - INFO  - test cpio -u option
+3 块
+Sun Oct 30 21:23:21 2022 - INFO  - End of the test.
+Sun Oct 30 21:23:26 2022 - INFO  - succeed to execute the case.
+Sun Oct 30 21:23:31 2022 - INFO  - Start to restore the test environment.
+Sun Oct 30 21:23:36 2022 - INFO  - Finish restoring the test environment.

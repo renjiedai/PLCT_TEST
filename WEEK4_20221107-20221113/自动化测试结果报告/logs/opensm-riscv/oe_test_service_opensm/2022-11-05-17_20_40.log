@@ -1,0 +1,15 @@
+Sat Nov  5 17:21:15 2022 - INFO  - Start environmental preparation.
+Sat Nov  5 17:25:40 2022 - INFO  - End of environmental preparation!
+Sat Nov  5 17:25:44 2022 - INFO  - Start testing...
+     Active: active (running) since Sat 2022-11-05 17:25:46 CST; 11s ago
+     Active: inactive (dead)
+     Active: active (running) since Sat 2022-11-05 17:26:12 CST; 12s ago
+/etc/systemd/system/network.target.wants/opensm.service
+Removed /etc/systemd/system/network.target.wants/opensm.service.
+find: ‘/etc/systemd/system/network.target.wants/opensm.service’: No such file or directory
+Failed to reload opensm.service: Job type reload is not applicable for unit opensm.service.
+     Active: active (running) since Sat 2022-11-05 17:26:12 CST; 58s ago
+Sat Nov  5 17:27:14 2022 - INFO  - Finish test!
+Sat Nov  5 17:27:19 2022 - INFO  - succeed to execute the case.
+Sat Nov  5 17:27:23 2022 - INFO  - start environment cleanup.
+Sat Nov  5 17:29:43 2022 - INFO  - Finish environment cleanup!

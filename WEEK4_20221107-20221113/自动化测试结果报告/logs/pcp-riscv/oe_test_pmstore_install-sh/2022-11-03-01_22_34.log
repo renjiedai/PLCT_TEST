@@ -1,0 +1,36 @@
+Thu Nov  3 01:22:58 2022 - INFO  - Start to prepare the test environment.
+Failed to enable unit: Unit file pmcd.service does not exist.
+Failed to start pmcd.service: Unit pmcd.service not found.
+Failed to enable unit: Unit file pmlogger.service does not exist.
+Failed to start pmlogger.service: Unit pmlogger.service not found.
+Thu Nov  3 01:25:22 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 01:25:25 2022 - INFO  - Start to run test.
+oe_test_pmstore_install-sh.sh:行31: pmstore：未找到命令
+oe_test_pmstore_install-sh.sh:行33: pmstore：未找到命令
+Thu Nov  3 01:25:28 2022 - ERROR - oe_test_pmstore_install-sh.sh line 34
+oe_test_pmstore_install-sh.sh:行35: pmstore：未找到命令
+Thu Nov  3 01:25:31 2022 - ERROR - oe_test_pmstore_install-sh.sh line 36
+oe_test_pmstore_install-sh.sh:行37: pmstore：未找到命令
+Thu Nov  3 01:25:34 2022 - ERROR - oe_test_pmstore_install-sh.sh line 38
+oe_test_pmstore_install-sh.sh:行39: pmstore：未找到命令
+Thu Nov  3 01:25:37 2022 - ERROR - oe_test_pmstore_install-sh.sh line 40
+oe_test_pmstore_install-sh.sh:行41: pmstore：未找到命令
+Thu Nov  3 01:25:40 2022 - ERROR - oe_test_pmstore_install-sh.sh line 42
+oe_test_pmstore_install-sh.sh:行43: pmstore：未找到命令
+Thu Nov  3 01:25:42 2022 - ERROR - oe_test_pmstore_install-sh.sh line 44
+oe_test_pmstore_install-sh.sh:行45: /usr/libexec/pcp/bin/install-sh: No such file or directory
+Thu Nov  3 01:25:46 2022 - ERROR - oe_test_pmstore_install-sh.sh line 46
+Thu Nov  3 01:25:49 2022 - ERROR - oe_test_pmstore_install-sh.sh line 48
+oe_test_pmstore_install-sh.sh:行49: /usr/libexec/pcp/bin/install-sh: No such file or directory
+Thu Nov  3 01:25:51 2022 - ERROR - oe_test_pmstore_install-sh.sh line 50
+Thu Nov  3 01:25:53 2022 - ERROR - oe_test_pmstore_install-sh.sh line 52
+Thu Nov  3 01:25:56 2022 - INFO  - End to run test.
+Thu Nov  3 01:25:58 2022 - ERROR - failed to execute the case.
+Thu Nov  3 01:26:01 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:21:11 ago on 2022年11月03日 星期四 01时03分34秒.\nNo match for argument: pcp\nError: Unable to find a match: pcp'
+Thu Nov  3 01:26:16 2022 - INFO  - End to restore the test environment.

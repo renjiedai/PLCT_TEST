@@ -1,0 +1,19 @@
+Sun Nov  6 15:56:34 2022 - INFO  - Start environmental preparation.
+Sun Nov  6 15:57:40 2022 - INFO  - pkgs:(spice-vdagent) is already installed
+Sun Nov  6 15:57:46 2022 - INFO  - End of environmental preparation!
+Sun Nov  6 15:57:50 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-11-06 15:57:52 CST; 11s ago
+Warning: Stopping spice-vdagentd.service, but it can still be activated by:
+  spice-vdagentd.socket
+     Active: inactive (dead) since Sun 2022-11-06 15:58:05 CST; 10s ago
+     Active: active (running) since Sun 2022-11-06 15:58:17 CST; 10s ago
+Sun Nov  6 15:58:34 2022 - INFO  - Unit is indirect, ignoring.
+Failed to reload spice-vdagentd.service: Job type reload is not applicable for unit spice-vdagentd.service.
+     Active: active (running) since Sun 2022-11-06 15:58:17 CST; 19s ago
+Sun Nov  6 15:58:42 2022 - INFO  - Finish test!
+Sun Nov  6 15:58:46 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 15:58:50 2022 - INFO  - start environment cleanup.
+Warning: Stopping spice-vdagentd.service, but it can still be activated by:
+  spice-vdagentd.socket
+Sun Nov  6 15:58:56 2022 - WARN  - no thing to do.
+Sun Nov  6 15:58:59 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,37 @@
+Thu Nov  3 18:23:27 2022 - INFO  - Start environmental preparation.
+Thu Nov  3 18:25:30 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 18:25:32 2022 - INFO  - Start to run test.
+Failed to restart ceph-fuse.target: Unit ceph-fuse.target not found.
+Thu Nov  3 18:25:36 2022 - ERROR - ceph-fuse.target restart failed
+Thu Nov  3 18:25:38 2022 - ERROR - ../common/common_lib.sh line 34
+Unit ceph-fuse.target could not be found.
+Thu Nov  3 18:25:49 2022 - ERROR - ceph-fuse.target restart failed
+Thu Nov  3 18:25:52 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop ceph-fuse.target: Unit ceph-fuse.target not loaded.
+Thu Nov  3 18:25:55 2022 - ERROR - ceph-fuse.target stop failed
+Thu Nov  3 18:25:57 2022 - ERROR - ../common/common_lib.sh line 39
+Unit ceph-fuse.target could not be found.
+Thu Nov  3 18:26:09 2022 - ERROR - ceph-fuse.target stop failed
+Thu Nov  3 18:26:12 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start ceph-fuse.target: Unit ceph-fuse.target not found.
+Thu Nov  3 18:26:14 2022 - ERROR - ceph-fuse.target start failed
+Thu Nov  3 18:26:17 2022 - ERROR - ../common/common_lib.sh line 44
+Unit ceph-fuse.target could not be found.
+Thu Nov  3 18:26:26 2022 - ERROR - ceph-fuse.target start failed
+Thu Nov  3 18:26:28 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for ceph-fuse.target: No such file or directory
+Thu Nov  3 18:26:31 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start ceph-fuse.target: Unit ceph-fuse.target not found.
+Thu Nov  3 18:26:35 2022 - ERROR - oe_test_target_ceph-fuse.sh line 33
+Unit ceph-fuse.target could not be found.
+Thu Nov  3 18:26:38 2022 - ERROR - oe_test_target_ceph-fuse.sh line 35
+Thu Nov  3 18:26:40 2022 - INFO  - End of the test.
+Thu Nov  3 18:26:43 2022 - ERROR - failed to execute the case.
+Thu Nov  3 18:26:45 2022 - INFO  - start environment cleanup.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:07:07 ago on 2022年11月03日 星期四 18时18分18秒.\nNo match for argument: ceph-fuse\nError: Unable to find a match: ceph-fuse'
+Thu Nov  3 18:26:57 2022 - INFO  - Finish environment cleanup!

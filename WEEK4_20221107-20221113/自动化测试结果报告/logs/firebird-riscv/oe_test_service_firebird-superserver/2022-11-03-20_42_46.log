@@ -1,0 +1,17 @@
+Thu Nov  3 20:43:16 2022 - INFO  - Start environmental preparation.
+Thu Nov  3 20:44:06 2022 - INFO  - pkgs:(firebird) is already installed
+Thu Nov  3 20:44:10 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 20:44:14 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-11-03 20:44:16 CST; 10s ago
+     Active: inactive (dead)
+     Active: active (running) since Thu 2022-11-03 20:44:40 CST; 10s ago
+/etc/systemd/system/multi-user.target.wants/firebird-superserver.service
+Removed /etc/systemd/system/multi-user.target.wants/firebird-superserver.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/firebird-superserver.service’: No such file or directory
+Failed to reload firebird-superserver.service: Job type reload is not applicable for unit firebird-superserver.service.
+     Active: active (running) since Thu 2022-11-03 20:44:40 CST; 48s ago
+Thu Nov  3 20:45:32 2022 - INFO  - Finish test!
+Thu Nov  3 20:45:35 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 20:45:39 2022 - INFO  - start environment cleanup.
+Thu Nov  3 20:45:42 2022 - WARN  - no thing to do.
+Thu Nov  3 20:45:45 2022 - INFO  - Finish environment cleanup!

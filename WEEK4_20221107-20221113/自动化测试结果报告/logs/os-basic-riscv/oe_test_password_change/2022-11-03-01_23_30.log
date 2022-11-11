@@ -1,0 +1,13 @@
+Thu Nov  3 01:23:55 2022 - INFO  - Start to prepare the test environment.
+groupdel：“testuser”组不存在
+Thu Nov  3 01:24:03 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 01:24:06 2022 - INFO  - Start to run test.
+Thu Nov  3 01:24:12 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r /home/testfile testuser@127.0.0.1:/home/testuser/testfile
+testuser@127.0.0.1's password: 
+testfile                                        0%    0     0.0KB/s   --:-- ETAtestfile                                      100%    5     0.2KB/s   00:00    
+test
+Thu Nov  3 01:24:36 2022 - INFO  - End to run test.
+Thu Nov  3 01:24:39 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 01:24:43 2022 - INFO  - Start to restore the test environment.
+Thu Nov  3 01:24:50 2022 - INFO  - End to restore the test environment.

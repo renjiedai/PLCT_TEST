@@ -1,0 +1,38 @@
+Thu Nov  3 01:05:18 2022 - INFO  - Start to prepare the test environment.
+Failed to enable unit: Unit file pmcd.service does not exist.
+Failed to start pmcd.service: Unit pmcd.service not found.
+Failed to enable unit: Unit file pmlogger.service does not exist.
+Failed to start pmlogger.service: Unit pmlogger.service not found.
+oe_test_pmlogsummary_02.sh:行24: pcp：未找到命令
+Thu Nov  3 01:08:33 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 01:08:36 2022 - INFO  - Start to run test.
+oe_test_pmlogsummary_02.sh:行32: pmlogsummary：未找到命令
+Thu Nov  3 01:08:40 2022 - ERROR - oe_test_pmlogsummary_02.sh line 33
+oe_test_pmlogsummary_02.sh:行34: pmlogsummary：未找到命令
+Thu Nov  3 01:08:43 2022 - ERROR - oe_test_pmlogsummary_02.sh line 35
+oe_test_pmlogsummary_02.sh:行36: pmlogsummary：未找到命令
+Thu Nov  3 01:08:46 2022 - ERROR - oe_test_pmlogsummary_02.sh line 37
+oe_test_pmlogsummary_02.sh:行38: pmlogsummary：未找到命令
+Thu Nov  3 01:08:49 2022 - ERROR - oe_test_pmlogsummary_02.sh line 39
+oe_test_pmlogsummary_02.sh:行40: pmlogsummary：未找到命令
+Thu Nov  3 01:08:52 2022 - ERROR - oe_test_pmlogsummary_02.sh line 41
+oe_test_pmlogsummary_02.sh:行42: pmlogsummary：未找到命令
+Thu Nov  3 01:08:55 2022 - ERROR - oe_test_pmlogsummary_02.sh line 43
+oe_test_pmlogsummary_02.sh:行44: pmlogsummary：未找到命令
+Thu Nov  3 01:08:58 2022 - ERROR - oe_test_pmlogsummary_02.sh line 45
+oe_test_pmlogsummary_02.sh:行46: pmlogsummary：未找到命令
+Thu Nov  3 01:09:01 2022 - ERROR - oe_test_pmlogsummary_02.sh line 47
+oe_test_pmlogsummary_02.sh:行48: pmlogsummary：未找到命令
+Thu Nov  3 01:09:04 2022 - ERROR - oe_test_pmlogsummary_02.sh line 49
+oe_test_pmlogsummary_02.sh:行50: pmlogsummary：未找到命令
+Thu Nov  3 01:09:07 2022 - ERROR - oe_test_pmlogsummary_02.sh line 51
+Thu Nov  3 01:09:09 2022 - INFO  - End to run test.
+Thu Nov  3 01:09:12 2022 - ERROR - failed to execute the case.
+Thu Nov  3 01:09:14 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:03:21 ago on 2022年11月03日 星期四 01时03分34秒.\nNo match for argument: pcp\nError: Unable to find a match: pcp'
+Thu Nov  3 01:09:28 2022 - INFO  - End to restore the test environment.

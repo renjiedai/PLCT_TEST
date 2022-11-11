@@ -1,0 +1,36 @@
+Sun Nov  6 17:49:07 2022 - INFO  - Start to prepare the test environment.
+Writing new Gemfile to /root/mugen/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile
+Sun Nov  6 17:51:39 2022 - INFO  - End to prepare the test environment.
+Sun Nov  6 17:51:42 2022 - INFO  - Start to run test.
+[DEPRECATED] The `--system` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set --local system 'true'`, and stop using this flag
+Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+The Gemfile specifies no dependencies
+Bundle complete! 0 Gemfile dependencies, 1 gem now installed.
+[DEPRECATED] The `--shebang` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set --local shebang 'jruby'`, and stop using this flag
+Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+The Gemfile specifies no dependencies
+Bundle complete! 0 Gemfile dependencies, 1 gem now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+The Gemfile specifies no dependencies
+Bundle complete! 0 Gemfile dependencies, 1 gem now installed.
+Settings are listed in order of priority. The top value will be used.
+Settings for `path` in order of priority. The top value will be used
+Your application has set shebang to "jruby". This will override the global value you are currently setting
+Set for your local app (/root/mugen/mugen-riscv/testcases/cli-test/rubygem-bundler/.bundle/config): "jruby"
+Set for the current user (/root/.bundle/config): "test"
+Set for your local app (/root/mugen/mugen-riscv/testcases/cli-test/rubygem-bundler/.bundle/config): "HighSecurity"
+shebang
+Ignoring --local
+shebang
+Ignoring --local
+Sun Nov  6 17:54:27 2022 - INFO  - End to run test.
+Sun Nov  6 17:54:29 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 17:54:31 2022 - INFO  - Start to restore the test environment.
+Sun Nov  6 17:55:35 2022 - INFO  - End to restore the test environment.

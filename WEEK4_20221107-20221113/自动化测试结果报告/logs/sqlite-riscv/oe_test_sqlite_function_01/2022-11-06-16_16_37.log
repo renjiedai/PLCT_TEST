@@ -1,0 +1,28 @@
+Sun Nov  6 16:17:01 2022 - INFO  - Start to run test.
+spawn sqlite3 ./test.db
+CREATE TABLE COMPANY(
+        ID INT PRIMARY KEY     NOT NULL,
+        NAME    TEXT    NOT NULL,
+        AGE     INT     NOT NULL,
+        ADDRESS CHAR(50),
+        SALARY  REAL    CHECK(SALARY > 0)
+        );
+SQLite version 3.36.0 2021-06-18 18:36:39
+Enter ".help" for usage hints.
+sqlite> CREATE TABLE COMPANY(
+   ...>         ID INT PRIMARY KEY     NOT NULL,
+   ...>         NAME    TEXT    NOT NULL,
+   ...>         AGE     INT     NOT NULL,
+   ...>         ADDRESS CHAR(50),
+   ...>         SALARY  REAL    CHECK(SALARY > 0)
+   ...>         );
+sqlite> .read ../common/insert.txt
+sqlite> .output ./output.txt
+sqlite> SELECT count(*) FROM COMPANY;
+sqlite> SELECT max(salary) FROM COMPANY;
+sqlite> SELECT min(salary) FROM COMPANY;
+sqlite> .quit
+Sun Nov  6 16:17:08 2022 - INFO  - End to run test.
+Sun Nov  6 16:17:10 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 16:17:13 2022 - INFO  - Start to restore the test environment.
+Sun Nov  6 16:17:16 2022 - INFO  - End to restore the test environment.

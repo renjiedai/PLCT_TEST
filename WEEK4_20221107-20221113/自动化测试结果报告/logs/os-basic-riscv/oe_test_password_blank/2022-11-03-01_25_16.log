@@ -1,0 +1,16 @@
+Thu Nov  3 01:25:38 2022 - INFO  - Start to prepare the test environment.
+groupdel：“testuser”组不存在
+Thu Nov  3 01:25:40 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 01:25:44 2022 - INFO  - Start to run test.
+spawn passwd testuser
+更改用户 testuser 的密码 。
+新的密码： 
+无效的密码： 密码未提供
+重新输入新的密码： 
+未提供密码。
+passwd: 鉴定令牌操作错误
+Thu Nov  3 01:26:13 2022 - ERROR - oe_test_password_blank.sh line 41
+Thu Nov  3 01:26:17 2022 - INFO  - End to run test.
+Thu Nov  3 01:26:20 2022 - ERROR - failed to execute the case.
+Thu Nov  3 01:26:23 2022 - INFO  - Start to restore the test environment.
+Thu Nov  3 01:26:30 2022 - INFO  - End to restore the test environment.

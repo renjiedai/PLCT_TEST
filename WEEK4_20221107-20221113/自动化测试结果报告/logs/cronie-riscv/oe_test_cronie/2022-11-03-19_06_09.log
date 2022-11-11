@@ -1,0 +1,61 @@
+Thu Nov  3 19:06:46 2022 - INFO  - Start to prepare the test environment.
+Thu Nov  3 19:07:54 2022 - INFO  - pkgs:(cronie) is already installed
+no crontab for root
+no crontab for test_user
+Thu Nov  3 19:08:01 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 19:08:05 2022 - INFO  - Start to run test.
+cronie 1.5.7
+* * * * * /root/mugen/mugen-riscv/testcases/cli-test/cronie/test.sh
+2
+no crontab for root
+* * * * * /home/test_user/test.sh
+3
+crontab: really delete test_user's crontab? cronie 1.5.7
+Find the time of the next scheduled cron job.
+Usage:
+ cronnext [options] [file ...]
+
+Options:
+ -i users  include only the crontab of these users
+ -e users  exclude the crontab of these users
+ -s        do not include the system crontab
+ -a        examine installed crontabs even if files are given
+ -t time   start from this time (seconds since epoch)
+ -q time   end check at this time (seconds since epoch)
+ -j cmd    only check jobs that contain cmd as a substring
+ -l        print next jobs to be executed
+ -c        print next execution of each job
+ -f        print all jobs executed in the given interval
+ -h        this help
+ -V        print version and exit
+cronie 1.5.7
+Usage:
+ anacron [options] [job] ...
+ anacron -T [-t anacrontab-file]
+
+Options:
+ -s         Serialize execution of jobs
+ -f         Force execution of jobs, even before their time
+ -n         Run jobs with no delay, implies -s
+ -d         Don't fork to the background
+ -q         Suppress stderr messages, only applicable with -d
+ -u         Update the timestamps without actually running anything
+ -V         Print version information
+ -h         Print this message
+ -t <file>  Use alternative anacrontab
+ -T         Test an anacrontab
+ -S <dir>   Select a different spool directory
+
+See the anacron(8) manpage for more details.
+Anacron from project cronie 1.5.7
+Copyright (C) 1998  Itai Tzur <itzur@actcom.co.il>
+Copyright (C) 1999  Sean 'Shaleh' Perry <shaleh@debian.org>
+Copyright (C) 2004  Pascal Hakim <pasc@redellipse.net>
+
+Mail comments, suggestions and bug reports to <pasc@redellipse.net>.
+
+Thu Nov  3 19:13:23 2022 - INFO  - End to run test.
+Thu Nov  3 19:13:26 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 19:13:29 2022 - INFO  - Start to restore the test environment.
+Thu Nov  3 19:13:32 2022 - WARN  - no thing to do.
+Thu Nov  3 19:13:38 2022 - INFO  - End to restore the test environment.

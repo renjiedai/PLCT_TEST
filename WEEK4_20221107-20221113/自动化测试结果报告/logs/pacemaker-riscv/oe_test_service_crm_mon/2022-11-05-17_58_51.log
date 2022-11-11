@@ -1,0 +1,15 @@
+Sat Nov  5 17:59:34 2022 - INFO  - Start environmental preparation.
+Sat Nov  5 18:04:28 2022 - INFO  - End of environmental preparation!
+Sat Nov  5 18:04:32 2022 - INFO  - Start to run test.
+     Active: active (running) since Sat 2022-11-05 18:04:35 CST; 11s ago
+     Active: inactive (dead)
+     Active: active (running) since Sat 2022-11-05 18:05:02 CST; 11s ago
+/etc/systemd/system/multi-user.target.wants/crm_mon.service
+Removed /etc/systemd/system/multi-user.target.wants/crm_mon.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/crm_mon.service’: No such file or directory
+Failed to reload crm_mon.service: Job type reload is not applicable for unit crm_mon.service.
+     Active: active (running) since Sat 2022-11-05 18:05:02 CST; 56s ago
+Sat Nov  5 18:06:02 2022 - INFO  - End of the test.
+Sat Nov  5 18:06:07 2022 - INFO  - succeed to execute the case.
+Sat Nov  5 18:06:11 2022 - INFO  - start environment cleanup.
+Sat Nov  5 18:08:43 2022 - INFO  - Finish environment cleanup!

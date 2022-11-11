@@ -1,0 +1,37 @@
+Thu Nov  3 18:41:44 2022 - INFO  - Start environmental preparation.
+Thu Nov  3 18:43:10 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 18:43:12 2022 - INFO  - Start to run test.
+Failed to restart ceph-radosgw.target: Unit ceph-radosgw.target not found.
+Thu Nov  3 18:43:16 2022 - ERROR - ceph-radosgw.target restart failed
+Thu Nov  3 18:43:18 2022 - ERROR - ../common/common_lib.sh line 34
+Unit ceph-radosgw.target could not be found.
+Thu Nov  3 18:43:28 2022 - ERROR - ceph-radosgw.target restart failed
+Thu Nov  3 18:43:31 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop ceph-radosgw.target: Unit ceph-radosgw.target not loaded.
+Thu Nov  3 18:43:34 2022 - ERROR - ceph-radosgw.target stop failed
+Thu Nov  3 18:43:36 2022 - ERROR - ../common/common_lib.sh line 39
+Unit ceph-radosgw.target could not be found.
+Thu Nov  3 18:43:46 2022 - ERROR - ceph-radosgw.target stop failed
+Thu Nov  3 18:43:49 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start ceph-radosgw.target: Unit ceph-radosgw.target not found.
+Thu Nov  3 18:43:52 2022 - ERROR - ceph-radosgw.target start failed
+Thu Nov  3 18:43:54 2022 - ERROR - ../common/common_lib.sh line 44
+Unit ceph-radosgw.target could not be found.
+Thu Nov  3 18:44:05 2022 - ERROR - ceph-radosgw.target start failed
+Thu Nov  3 18:44:07 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for ceph-radosgw.target: No such file or directory
+Thu Nov  3 18:44:10 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start ceph-radosgw.target: Unit ceph-radosgw.target not found.
+Thu Nov  3 18:44:13 2022 - ERROR - oe_test_target_ceph-radosgw.sh line 33
+Unit ceph-radosgw.target could not be found.
+Thu Nov  3 18:44:16 2022 - ERROR - oe_test_target_ceph-radosgw.sh line 35
+Thu Nov  3 18:44:18 2022 - INFO  - End of the test.
+Thu Nov  3 18:44:21 2022 - ERROR - failed to execute the case.
+Thu Nov  3 18:44:24 2022 - INFO  - start environment cleanup.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:24:47 ago on 2022年11月03日 星期四 18时18分18秒.\nNo match for argument: ceph-radosgw\nError: Unable to find a match: ceph-radosgw'
+Thu Nov  3 18:44:35 2022 - INFO  - Finish environment cleanup!

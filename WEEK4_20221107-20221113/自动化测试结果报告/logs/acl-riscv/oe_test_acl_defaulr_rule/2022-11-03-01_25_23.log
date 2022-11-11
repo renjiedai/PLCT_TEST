@@ -1,0 +1,12 @@
+Thu Nov  3 01:25:51 2022 - INFO  - Start environmental preparation.
+0022
+Thu Nov  3 01:25:55 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 01:25:58 2022 - INFO  - Start executing testcase.
+新的密码： 重新输入新的密码： 更改用户 example 的密码 。
+passwd：所有的身份验证令牌已经成功更新。
+getfacl: Removing leading '/' from absolute path names
+getfacl: Removing leading '/' from absolute path names
+Thu Nov  3 01:26:08 2022 - INFO  - Finish testcase execution.
+Thu Nov  3 01:26:12 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 01:26:16 2022 - INFO  - start environment cleanup.
+Thu Nov  3 01:26:24 2022 - INFO  - Finish environment cleanup!

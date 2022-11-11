@@ -1,0 +1,32 @@
+Sun Nov  6 18:30:42 2022 - INFO  - Start to prepare the test environment.
+Sun Nov  6 18:34:15 2022 - INFO  - End to prepare the test environment.
+Sun Nov  6 18:34:18 2022 - INFO  - Start to run test.
+[Sun Nov 06 18:34:23 CST 2022] [nns] [info] 'Binding with name service at localhost @9: NAME = DATA'
+/usr/bin/nnsd 1.0.1, listening on 9 (local only)
+[Sun Nov 06 18:34:48 CST 2022] [nns] [info] 'Reconnected2 name service at localhost @9'
+[Sun Nov 06 18:35:11 CST 2022] [nns] [info] 'Searching at name service at localhost @9'
+Server localhost @9
+  Protocol: 1
+  Features: Core, and Search/Continuous
+[H[J[Sun Nov 06 18:36:23 CST 2022] [nnslog] [info] 'Logging      name service at localhost @9'
+[Sun Nov 06 18:36:24 CST 2022] [nnslog] [info] '+++ : NAME = DATA'
+[Sun Nov 06 18:36:23 CST 2022] [nns] [info] 'Searching at name service at localhost @9'
+[Sun Nov 06 18:36:24 CST 2022] [nns] [info] 'Nothing found...'
+/usr/bin/nns 1.2 (Client Protocol 1)
+oe_test_tcllib_nns.sh：行 29:  1353 Killed                  nns bind -host localhost -port 9 NAME DATA
+oe_test_tcllib_nns.sh：行 29:  1393 Killed                  nnsd -localonly true -port 9
+oe_test_tcllib_nns.sh：行 29:  1552 Killed                  nnslog -host localhost -port 9
+oe_test_tcllib_nns.sh：行 29:  1553 Killed                  nns search -host localhost -port 9 -continuous PATTERN
+%% generated with the tcldocstrip utility.
+%% [manpage_begin NAME SECTION VERSION]
+[manpage_end]
+OK
+## -*- tcl -*-
+## Snit-based Tcl/PARAM implementation of the parsing
+## Generated from file	calculator.peg
+package require Tcl 8.5
+			  # Tcl/PARAM code used below.
+Sun Nov  6 18:37:03 2022 - INFO  - End to run test.
+Sun Nov  6 18:37:07 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 18:37:11 2022 - INFO  - Start to restore the test environment.
+Sun Nov  6 18:38:44 2022 - INFO  - End to restore the test environment.

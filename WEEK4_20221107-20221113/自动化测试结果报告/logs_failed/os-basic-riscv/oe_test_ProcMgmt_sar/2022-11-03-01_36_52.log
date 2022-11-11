@@ -1,0 +1,14 @@
+Thu Nov  3 01:37:11 2022 - INFO  - Start to prepare the test environment.
+Thu Nov  3 01:39:34 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 01:39:38 2022 - INFO  - Start to run test.
+     Active: active (exited) since Thu 2022-11-03 01:39:39 CST; 895ms ago
+Linux 5.10.0-60.50.0-default (eulaceura) 	2022年11月03日 	_riscv64_	(4 CPU)
+01时39分39秒  LINUX RESTART	(4 CPU)
+01时39分41秒     CPU     %user     %nice   %system   %iowait    %steal     %idle
+01时39分57秒 kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+01时40分12秒       tps      rtps      wtps      dtps   bread/s   bwrtn/s   bdscd/s
+Thu Nov  3 01:40:30 2022 - ERROR - oe_test_ProcMgmt_sar.sh line 47
+Thu Nov  3 01:40:33 2022 - INFO  - End to run test.
+Thu Nov  3 01:40:35 2022 - ERROR - failed to execute the case.
+Thu Nov  3 01:40:38 2022 - INFO  - Start to restore the test environment.
+Thu Nov  3 01:42:01 2022 - INFO  - End to restore the test environment.

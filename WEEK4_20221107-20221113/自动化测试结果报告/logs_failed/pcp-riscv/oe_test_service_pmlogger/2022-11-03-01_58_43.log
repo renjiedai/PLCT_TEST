@@ -1,0 +1,39 @@
+Thu Nov  3 01:59:05 2022 - INFO  - Start environmental preparation.
+Thu Nov  3 02:00:39 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 02:00:42 2022 - INFO  - Start testing...
+Failed to restart pmlogger.service: Unit pmlogger.service not found.
+Thu Nov  3 02:00:44 2022 - ERROR - pmlogger.service restart failed
+Thu Nov  3 02:00:46 2022 - ERROR - ../common/common_lib.sh line 34
+Unit pmlogger.service could not be found.
+Thu Nov  3 02:00:56 2022 - ERROR - pmlogger.service restart failed
+Thu Nov  3 02:00:58 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop pmlogger.service: Unit pmlogger.service not loaded.
+Thu Nov  3 02:01:01 2022 - ERROR - pmlogger.service stop failed
+Thu Nov  3 02:01:04 2022 - ERROR - ../common/common_lib.sh line 39
+Unit pmlogger.service could not be found.
+Thu Nov  3 02:01:14 2022 - ERROR - pmlogger.service stop failed
+Thu Nov  3 02:01:16 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start pmlogger.service: Unit pmlogger.service not found.
+Thu Nov  3 02:01:19 2022 - ERROR - pmlogger.service start failed
+Thu Nov  3 02:01:21 2022 - ERROR - ../common/common_lib.sh line 44
+Unit pmlogger.service could not be found.
+Thu Nov  3 02:01:31 2022 - ERROR - pmlogger.service start failed
+Thu Nov  3 02:01:33 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for pmlogger.service: No such file or directory
+Thu Nov  3 02:01:36 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start pmlogger.service: Unit pmlogger.service not found.
+Thu Nov  3 02:01:40 2022 - ERROR - Job type reload is not applicable for unit pmlogger.service
+Thu Nov  3 02:01:42 2022 - ERROR - ../common/common_lib.sh line 91
+Unit pmlogger.service could not be found.
+Unit pmlogger.service could not be found.
+Thu Nov  3 02:01:45 2022 - INFO  - Finish test!
+Thu Nov  3 02:01:47 2022 - ERROR - failed to execute the case.
+Thu Nov  3 02:01:50 2022 - INFO  - start environment cleanup.
+Failed to stop pmlogger.service: Unit pmlogger.service not loaded.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:57:01 ago on 2022年11月03日 星期四 01时03分34秒.\nNo match for argument: pcp\nError: Unable to find a match: pcp'
+Thu Nov  3 02:02:00 2022 - INFO  - Finish environment cleanup!

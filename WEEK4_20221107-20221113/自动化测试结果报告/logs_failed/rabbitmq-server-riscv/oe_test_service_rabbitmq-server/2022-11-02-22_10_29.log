@@ -1,0 +1,19 @@
+Wed Nov  2 22:10:42 2022 - INFO  - Start environmental preparation.
+Wed Nov  2 22:13:30 2022 - INFO  - End of environmental preparation!
+Wed Nov  2 22:13:31 2022 - INFO  - Start testing...
+     Active: active (running) since Wed 2022-11-02 22:16:33 CST; 8s ago
+Wed Nov  2 22:17:17 2022 - ERROR - rabbitmq-server.service stop failed
+Wed Nov  2 22:17:18 2022 - ERROR - ../common/common_lib.sh line 42
+     Active: active (running) since Wed 2022-11-02 22:20:03 CST; 7s ago
+/etc/systemd/system/multi-user.target.wants/rabbitmq-server.service
+Removed /etc/systemd/system/multi-user.target.wants/rabbitmq-server.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/rabbitmq-server.service’: No such file or directory
+11月 02 22:17:08 eulaceura systemd[1]: rabbitmq-server.service: Failed with result 'timeout'.
+Wed Nov  2 22:20:29 2022 - ERROR - There is an error message for the log of rabbitmq-server.service
+Wed Nov  2 22:20:31 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload rabbitmq-server.service: Job type reload is not applicable for unit rabbitmq-server.service.
+     Active: active (running) since Wed 2022-11-02 22:20:03 CST; 29s ago
+Wed Nov  2 22:20:34 2022 - INFO  - Finish test!
+Wed Nov  2 22:20:36 2022 - ERROR - failed to execute the case.
+Wed Nov  2 22:20:37 2022 - INFO  - start environment cleanup.
+Wed Nov  2 22:22:11 2022 - INFO  - Finish environment cleanup!

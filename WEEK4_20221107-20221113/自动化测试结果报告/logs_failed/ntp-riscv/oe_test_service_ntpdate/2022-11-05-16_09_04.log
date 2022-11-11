@@ -1,0 +1,38 @@
+Sat Nov  5 16:09:35 2022 - INFO  - Start environmental preparation.
+Sat Nov  5 16:13:38 2022 - INFO  - End of environmental preparation!
+Sat Nov  5 16:13:42 2022 - INFO  - Start testing...
+Job for ntpdate.service failed because the control process exited with error code.
+See "systemctl status ntpdate.service" and "journalctl -xeu ntpdate.service" for details.
+Sat Nov  5 16:13:49 2022 - ERROR - ntpdate.service restart failed
+Sat Nov  5 16:13:53 2022 - ERROR - ../common/common_lib.sh line 34
+Sat Nov  5 16:14:07 2022 - ERROR - ntpdate.service restart failed
+Sat Nov  5 16:14:11 2022 - ERROR - ../common/common_lib.sh line 37
+Sat Nov  5 16:14:25 2022 - ERROR - ntpdate.service stop failed
+Sat Nov  5 16:14:29 2022 - ERROR - ../common/common_lib.sh line 42
+Job for ntpdate.service failed because the control process exited with error code.
+See "systemctl status ntpdate.service" and "journalctl -xeu ntpdate.service" for details.
+Sat Nov  5 16:14:36 2022 - ERROR - ntpdate.service start failed
+Sat Nov  5 16:14:40 2022 - ERROR - ../common/common_lib.sh line 44
+Sat Nov  5 16:14:54 2022 - ERROR - ntpdate.service start failed
+Sat Nov  5 16:14:58 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/ntpdate.service
+Removed /etc/systemd/system/multi-user.target.wants/ntpdate.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/ntpdate.service’: No such file or directory
+11月 05 16:13:45 eulaceura systemd[1]: ntpdate.service: Main process exited, code=exited, status=1/FAILURE
+11月 05 16:13:45 eulaceura systemd[1]: ntpdate.service: Failed with result 'exit-code'.
+11月 05 16:13:45 eulaceura systemd[1]: Failed to start Set time via NTP.
+11月 05 16:14:32 eulaceura systemd[1]: ntpdate.service: Main process exited, code=exited, status=1/FAILURE
+11月 05 16:14:32 eulaceura systemd[1]: ntpdate.service: Failed with result 'exit-code'.
+11月 05 16:14:32 eulaceura systemd[1]: Failed to start Set time via NTP.
+Sat Nov  5 16:15:37 2022 - ERROR - There is an error message for the log of ntpdate.service
+Sat Nov  5 16:15:41 2022 - ERROR - ../common/common_lib.sh line 28
+Job for ntpdate.service failed because the control process exited with error code.
+See "systemctl status ntpdate.service" and "journalctl -xeu ntpdate.service" for details.
+Failed to reload ntpdate.service: Job type reload is not applicable for unit ntpdate.service.
+Sat Nov  5 16:15:52 2022 - INFO  - Finish test!
+Sat Nov  5 16:15:56 2022 - ERROR - failed to execute the case.
+Sat Nov  5 16:15:59 2022 - INFO  - start environment cleanup.
+sed：无法读取 sed：No such file or directory
+sed：无法读取 s/localhost/0.openEuler.pool.ntp.org/：No such file or directory
+oe_test_service_ntpdate.sh:行49: /etc/ntp.conf: Permission denied
+Sat Nov  5 16:17:48 2022 - INFO  - Finish environment cleanup!

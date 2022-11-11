@@ -1,0 +1,14 @@
+Sun Nov  6 16:04:35 2022 - INFO  - Start to run test.
+spawn sqlite3 ./test.db
+.quitSQLite version 3.36.0 2021-06-18 18:36:39
+Enter ".help" for usage hints.
+sqlite> .quit/root/mugen/mugen-riscv/testcases/cli-test/sqlite/oe_test_sqlite_command_01
+spawn sqlite3 ./test.db
+.exitSQLite version 3.36.0 2021-06-18 18:36:39
+Enter ".help" for usage hints.
+sqlite> .exit/root/mugen/mugen-riscv/testcases/cli-test/sqlite/oe_test_sqlite_command_01
+Sun Nov  6 16:05:08 2022 - INFO  - End to run test.
+Sun Nov  6 16:05:12 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 16:05:15 2022 - INFO  - Start to restore the test environment.
+rm: 无法删除 './test.db': No such file or directory
+Sun Nov  6 16:05:19 2022 - INFO  - End to restore the test environment.

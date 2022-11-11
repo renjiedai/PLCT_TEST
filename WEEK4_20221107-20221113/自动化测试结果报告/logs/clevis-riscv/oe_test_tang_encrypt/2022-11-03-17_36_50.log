@@ -1,0 +1,8 @@
+Thu Nov  3 17:37:28 2022 - INFO  - Start environmental preparation.
+ls: 无法访问 '/etc/systemd/system/tangd.socket.d': No such file or directory
+Thu Nov  3 17:41:27 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 17:41:31 2022 - INFO  - Start executing testcase.
+uljCe4TOWwf0DiyLj7OtwvAz_cra1Jf1jr9vjpFTTh8kghZPaM7Xv0thySCotPTDlczEk96AZ3HcwRQYWcqP4EThu Nov  3 17:43:25 2022 - INFO  - Finish testcase execution.
+Thu Nov  3 17:43:28 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 17:43:32 2022 - INFO  - start environment cleanup.
+Thu Nov  3 17:45:15 2022 - INFO  - Finish environment cleanup!

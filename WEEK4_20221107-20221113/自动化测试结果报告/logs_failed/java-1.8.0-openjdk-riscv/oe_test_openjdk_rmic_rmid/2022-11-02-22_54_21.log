@@ -1,0 +1,28 @@
+Wed Nov  2 22:54:31 2022 - INFO  - Start to prepare the test environment.
+Wed Nov  2 23:02:36 2022 - INFO  - End to prepare the test environment.
+Wed Nov  2 23:02:37 2022 - INFO  - Start to run test.
+Wed Nov  2 23:02:41 2022 - ERROR - oe_test_openjdk_rmic_rmid.sh line 31
+Wed Nov  2 23:02:44 2022 - ERROR - oe_test_openjdk_rmic_rmid.sh line 33
+Activation.main: 警告: sun.rmi.activation.execPolicy 系统
+属性未被指定且 ExecPermissions/ExecOptionPermissions
+均未被授权。随后的激活尝试失败, 原因是对
+ExecPermission/ExecOptionPermission 的权限检查失败。有关如何
+配置 rmid 安全性的文档说明, 请参阅: 
+
+http://java.sun.com/j2se/1.4/docs/tooldocs/solaris/rmid.html
+http://java.sun.com/j2se/1.4/docs/tooldocs/win32/rmid.html
+
+激活守护程序已关闭
+portlog
+portlog/Snapshot.1
+portlog/Logfile.1
+portlog/Version_Number
+Wed Nov  2 23:03:02 2022 - ERROR - oe_test_openjdk_rmic_rmid.sh line 42
+Wed Nov  2 23:03:05 2022 - ERROR - oe_test_openjdk_rmic_rmid.sh line 45
+schemagen 2.2.8-b130911.1802
+Wed Nov  2 23:03:10 2022 - ERROR - oe_test_openjdk_rmic_rmid.sh line 49
+Wed Nov  2 23:03:15 2022 - ERROR - oe_test_openjdk_rmic_rmid.sh line 52
+Wed Nov  2 23:03:16 2022 - INFO  - End to run test.
+Wed Nov  2 23:03:17 2022 - ERROR - failed to execute the case.
+Wed Nov  2 23:03:19 2022 - INFO  - Need't to restore the tet environment.
+Wed Nov  2 23:04:31 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,38 @@
+Thu Nov  3 01:38:55 2022 - INFO  - Start to prepare the test environment.
+Failed to enable unit: Unit file pmcd.service does not exist.
+Failed to start pmcd.service: Unit pmcd.service not found.
+Failed to enable unit: Unit file pmlogger.service does not exist.
+Failed to start pmlogger.service: Unit pmlogger.service not found.
+oe_test_pmlogger_merge_pmlogger_rewrite.sh:行24: pcp：未找到命令
+Thu Nov  3 01:41:03 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 01:41:06 2022 - INFO  - Start to run test.
+oe_test_pmlogger_merge_pmlogger_rewrite.sh:行30: /usr/libexec/pcp/bin/pmlogger_merge: No such file or directory
+Thu Nov  3 01:41:09 2022 - ERROR - oe_test_pmlogger_merge_pmlogger_rewrite.sh line 31
+oe_test_pmlogger_merge_pmlogger_rewrite.sh:行32: /usr/libexec/pcp/bin/pmlogger_merge: No such file or directory
+Thu Nov  3 01:41:12 2022 - ERROR - oe_test_pmlogger_merge_pmlogger_rewrite.sh line 33
+oe_test_pmlogger_merge_pmlogger_rewrite.sh:行34: /usr/libexec/pcp/bin/pmlogger_merge: No such file or directory
+Thu Nov  3 01:41:15 2022 - ERROR - oe_test_pmlogger_merge_pmlogger_rewrite.sh line 35
+oe_test_pmlogger_merge_pmlogger_rewrite.sh:行36: /usr/libexec/pcp/bin/pmlogger_rewrite: No such file or directory
+Thu Nov  3 01:41:18 2022 - ERROR - oe_test_pmlogger_merge_pmlogger_rewrite.sh line 37
+oe_test_pmlogger_merge_pmlogger_rewrite.sh:行38: /usr/libexec/pcp/bin/pmlogger_rewrite: No such file or directory
+Thu Nov  3 01:41:21 2022 - ERROR - oe_test_pmlogger_merge_pmlogger_rewrite.sh line 39
+oe_test_pmlogger_merge_pmlogger_rewrite.sh:行40: /usr/libexec/pcp/bin/pmlogger_rewrite: No such file or directory
+Thu Nov  3 01:41:25 2022 - ERROR - oe_test_pmlogger_merge_pmlogger_rewrite.sh line 41
+oe_test_pmlogger_merge_pmlogger_rewrite.sh:行42: /usr/libexec/pcp/bin/pmlogger_rewrite: No such file or directory
+Thu Nov  3 01:41:28 2022 - ERROR - oe_test_pmlogger_merge_pmlogger_rewrite.sh line 43
+oe_test_pmlogger_merge_pmlogger_rewrite.sh:行44: /usr/libexec/pcp/bin/pmlogger_rewrite: No such file or directory
+Thu Nov  3 01:41:31 2022 - ERROR - oe_test_pmlogger_merge_pmlogger_rewrite.sh line 45
+oe_test_pmlogger_merge_pmlogger_rewrite.sh:行46: /usr/libexec/pcp/bin/pmlogger_rewrite: No such file or directory
+Thu Nov  3 01:41:35 2022 - ERROR - oe_test_pmlogger_merge_pmlogger_rewrite.sh line 47
+oe_test_pmlogger_merge_pmlogger_rewrite.sh:行48: /usr/libexec/pcp/bin/pmlogger_rewrite: No such file or directory
+Thu Nov  3 01:41:39 2022 - ERROR - oe_test_pmlogger_merge_pmlogger_rewrite.sh line 49
+Thu Nov  3 01:41:42 2022 - INFO  - End to run test.
+Thu Nov  3 01:41:45 2022 - ERROR - failed to execute the case.
+Thu Nov  3 01:41:49 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:36:54 ago on 2022年11月03日 星期四 01时03分34秒.\nNo match for argument: pcp\nError: Unable to find a match: pcp'
+Thu Nov  3 01:42:03 2022 - INFO  - End to restore the test environment.

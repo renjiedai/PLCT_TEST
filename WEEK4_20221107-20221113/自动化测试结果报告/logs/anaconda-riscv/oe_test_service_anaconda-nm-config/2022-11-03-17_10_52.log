@@ -1,0 +1,10 @@
+Thu Nov  3 17:11:30 2022 - INFO  - Start environmental preparation.
+Thu Nov  3 17:12:29 2022 - INFO  - pkgs:(anaconda-core) is already installed
+Thu Nov  3 17:12:35 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 17:12:39 2022 - INFO  - Start testing...
+Thu Nov  3 17:12:48 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Thu Nov  3 17:12:54 2022 - INFO  - Finish test!
+Thu Nov  3 17:12:58 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 17:13:02 2022 - INFO  - start environment cleanup.
+Thu Nov  3 17:13:07 2022 - WARN  - no thing to do.
+Thu Nov  3 17:13:11 2022 - INFO  - Finish environment cleanup!

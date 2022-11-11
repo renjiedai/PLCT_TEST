@@ -1,0 +1,33 @@
+Sun Nov  6 16:15:02 2022 - INFO  - Start to run test.
+spawn sqlite3 ./test.db
+CREATE TABLE COMPANY(
+          ID INT PRIMARY KEY     NOT NULL,
+          NAME           TEXT    NOT NULL,
+          AGE            INT     NOT NULL,
+          ADDRESS        CHAR(50),
+          SALARY         REAL
+          );
+SQLite version 3.36.0 2021-06-18 18:36:39
+Enter ".help" for usage hints.
+sqlite> CREATE TABLE COMPANY(
+   ...>           ID INT PRIMARY KEY     NOT NULL,
+   ...>           NAME           TEXT    NOT NULL,
+   ...>           AGE            INT     NOT NULL,
+   ...>           ADDRESS        CHAR(50),
+   ...>           SALARY         REAL
+   ...>           );
+sqlite> .read ../common/insert.txt
+sqlite> .echo on
+sqlite> .output ./output.txt
+.output ./output.txt
+sqlite> select *from COMPANY;
+sqlite> .echo off
+.echo off
+sqlite> .output ./output1.txt
+sqlite> select *from COMPANY;
+sqlite> .quit
+Sun Nov  6 16:15:09 2022 - ERROR - Missing actual error code.
+Sun Nov  6 16:15:11 2022 - INFO  - End to run test.
+Sun Nov  6 16:15:14 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 16:15:17 2022 - INFO  - Start to restore the test environment.
+Sun Nov  6 16:15:19 2022 - INFO  - End to restore the test environment.

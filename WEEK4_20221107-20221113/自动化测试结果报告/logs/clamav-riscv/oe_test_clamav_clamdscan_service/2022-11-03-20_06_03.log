@@ -1,0 +1,47 @@
+Thu Nov  3 20:06:29 2022 - INFO  - Start to prepare the database config.
+Thu Nov  3 20:13:54 2022 - INFO  - End to prepare the database config.
+Thu Nov  3 20:13:57 2022 - INFO  - Start to run test.
+Job for clamd@scan.service failed because a timeout was exceeded.
+See "systemctl status clamd@scan.service" and "journalctl -xeu clamd@scan.service" for details.
+Thu Nov  3 20:21:02 2022 - ERROR - Start clamd@scan.service failed.
+Thu Nov  3 20:21:06 2022 - ERROR - oe_test_clamav_clamdscan_service.sh line 41
+Thu Nov  3 20:21:11 2022 - ERROR - Check clamd@scan.service status failed.
+Thu Nov  3 20:21:14 2022 - ERROR - oe_test_clamav_clamdscan_service.sh line 43
+     Active: inactive (dead)
+ERROR: Could not connect to clamd on 0.0.0.0: Connection refused
+ClamAV 0.103.6
+
+                      Clam AntiVirus: Daemon Client 0.103.6
+           By The ClamAV Team: https://www.clamav.net/about.html#credits
+           (C) 2022 Cisco Systems, Inc.
+
+    clamdscan [options] [file/directory/-]
+
+    --help              -h             Show this help
+    --version           -V             Print version number and exit
+    --verbose           -v             Be verbose
+    --quiet                            Be quiet, only output error messages
+    --stdout                           Write to stdout instead of stderr. Does not affect 'debug' messages.
+                                       (this help is always written to stdout)
+    --log=FILE          -l FILE        Save scan report in FILE
+    --file-list=FILE    -f FILE        Scan files from FILE
+    --ping              -p A[:I]       Ping clamd up to [A] times at optional interval [I] until it responds.
+    --wait              -w             Wait up to 30 seconds for clamd to start. Optionally use alongside --ping to set attempts [A] and interval [I] to check clamd.
+    --remove                           Remove infected files. Be careful!
+    --move=DIRECTORY                   Move infected files into DIRECTORY
+    --copy=DIRECTORY                   Copy infected files into DIRECTORY
+    --config-file=FILE                 Read configuration from FILE.
+    --allmatch            -z           Continue scanning within file after finding a match.
+    --multiscan           -m           Force MULTISCAN mode
+    --infected            -i           Only print infected files
+    --no-summary                       Disable summary at end of scanning
+    --reload                           Request clamd to reload virus database
+    --fdpass                           Pass filedescriptor to clamd (useful if clamd is running as a different user)
+    --stream                           Force streaming files to clamd (for debugging and unit testing)
+
+Thu Nov  3 20:21:21 2022 - INFO  - End to run test.
+Thu Nov  3 20:21:24 2022 - ERROR - failed to execute the case.
+Thu Nov  3 20:21:27 2022 - INFO  - Start to restore the test environment.
+Job for clamd@scan.service failed because the control process exited with error code.
+See "systemctl status clamd@scan.service" and "journalctl -xeu clamd@scan.service" for details.
+Thu Nov  3 20:23:41 2022 - INFO  - End to restore the test environment.

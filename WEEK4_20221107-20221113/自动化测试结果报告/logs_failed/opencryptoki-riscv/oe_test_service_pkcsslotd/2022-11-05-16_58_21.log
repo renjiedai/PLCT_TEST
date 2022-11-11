@@ -1,0 +1,39 @@
+Sat Nov  5 16:58:54 2022 - INFO  - Start environmental preparation.
+Sat Nov  5 17:01:27 2022 - INFO  - End of environmental preparation!
+Sat Nov  5 17:01:32 2022 - INFO  - Start testing...
+Failed to restart pkcsslotd.service: Unit pkcsslotd.service not found.
+Sat Nov  5 17:01:37 2022 - ERROR - pkcsslotd.service restart failed
+Sat Nov  5 17:01:41 2022 - ERROR - ../common/common_lib.sh line 34
+Unit pkcsslotd.service could not be found.
+Sat Nov  5 17:01:56 2022 - ERROR - pkcsslotd.service restart failed
+Sat Nov  5 17:02:00 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop pkcsslotd.service: Unit pkcsslotd.service not loaded.
+Sat Nov  5 17:02:05 2022 - ERROR - pkcsslotd.service stop failed
+Sat Nov  5 17:02:10 2022 - ERROR - ../common/common_lib.sh line 39
+Unit pkcsslotd.service could not be found.
+Sat Nov  5 17:02:25 2022 - ERROR - pkcsslotd.service stop failed
+Sat Nov  5 17:02:30 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start pkcsslotd.service: Unit pkcsslotd.service not found.
+Sat Nov  5 17:02:38 2022 - ERROR - pkcsslotd.service start failed
+Sat Nov  5 17:02:43 2022 - ERROR - ../common/common_lib.sh line 44
+Unit pkcsslotd.service could not be found.
+Sat Nov  5 17:02:59 2022 - ERROR - pkcsslotd.service start failed
+Sat Nov  5 17:03:03 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for pkcsslotd.service: No such file or directory
+Sat Nov  5 17:03:08 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start pkcsslotd.service: Unit pkcsslotd.service not found.
+Sat Nov  5 17:03:14 2022 - ERROR - Job type reload is not applicable for unit pkcsslotd.service
+Sat Nov  5 17:03:18 2022 - ERROR - ../common/common_lib.sh line 91
+Unit pkcsslotd.service could not be found.
+Unit pkcsslotd.service could not be found.
+Sat Nov  5 17:03:24 2022 - INFO  - Finish test!
+Sat Nov  5 17:03:28 2022 - ERROR - failed to execute the case.
+Sat Nov  5 17:03:32 2022 - INFO  - start environment cleanup.
+Failed to stop pkcsslotd.service: Unit pkcsslotd.service not loaded.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:01:32 ago on 2022年11月05日 星期六 16时59分47秒.\nNo match for argument: opencryptoki\nError: Unable to find a match: opencryptoki'
+Sat Nov  5 17:03:54 2022 - INFO  - Finish environment cleanup!

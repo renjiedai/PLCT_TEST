@@ -1,0 +1,15 @@
+Sun Nov  6 12:22:05 2022 - INFO  - Start environmental preparation.
+Sun Nov  6 12:25:28 2022 - INFO  - End of environmental preparation!
+Sun Nov  6 12:25:32 2022 - INFO  - Start to run test.
+     Active: active (listening) since Sun 2022-11-06 12:25:33 CST; 9s ago
+     Active: inactive (dead)
+     Active: active (listening) since Sun 2022-11-06 12:25:53 CST; 9s ago
+/etc/systemd/system/sockets.target.wants/proftpd.socket
+Removed /etc/systemd/system/sockets.target.wants/proftpd.socket.
+find: ‘/etc/systemd/system/sockets.target.wants/proftpd.socket’: No such file or directory
+Failed to reload proftpd.socket: Job type reload is not applicable for unit proftpd.socket.
+     Active: active (listening) since Sun 2022-11-06 12:25:53 CST; 37s ago
+Sun Nov  6 12:26:34 2022 - INFO  - End of the test.
+Sun Nov  6 12:26:37 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 12:26:40 2022 - INFO  - start environment cleanup.
+Sun Nov  6 12:28:18 2022 - INFO  - Finish environment cleanup!

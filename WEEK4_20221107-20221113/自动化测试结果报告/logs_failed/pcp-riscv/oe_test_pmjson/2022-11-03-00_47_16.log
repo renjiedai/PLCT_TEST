@@ -1,0 +1,32 @@
+Thu Nov  3 00:47:41 2022 - INFO  - Start to prepare the test environment.
+Failed to enable unit: Unit file pmcd.service does not exist.
+Failed to start pmcd.service: Unit pmcd.service not found.
+Failed to enable unit: Unit file pmlogger.service does not exist.
+Failed to start pmlogger.service: Unit pmlogger.service not found.
+Thu Nov  3 00:50:04 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 00:50:07 2022 - INFO  - Start to run test.
+oe_test_pmjson.sh:行38: pmjson：未找到命令
+oe_test_pmjson.sh:行40: pmjson：未找到命令
+Thu Nov  3 00:50:11 2022 - ERROR - oe_test_pmjson.sh line 41
+oe_test_pmjson.sh:行42: pmjson：未找到命令
+Thu Nov  3 00:50:14 2022 - ERROR - oe_test_pmjson.sh line 43
+grep: t.txt: No such file or directory
+Thu Nov  3 00:50:17 2022 - ERROR - oe_test_pmjson.sh line 45
+oe_test_pmjson.sh:行46: pmjson：未找到命令
+Thu Nov  3 00:50:20 2022 - ERROR - oe_test_pmjson.sh line 47
+oe_test_pmjson.sh:行48: pmjson：未找到命令
+Thu Nov  3 00:50:23 2022 - ERROR - oe_test_pmjson.sh line 49
+oe_test_pmjson.sh:行50: pmjson：未找到命令
+Thu Nov  3 00:50:26 2022 - ERROR - oe_test_pmjson.sh line 51
+oe_test_pmjson.sh:行52: pmjson：未找到命令
+Thu Nov  3 00:50:30 2022 - ERROR - oe_test_pmjson.sh line 53
+Thu Nov  3 00:50:33 2022 - INFO  - End to run test.
+Thu Nov  3 00:50:35 2022 - ERROR - failed to execute the case.
+Thu Nov  3 00:50:38 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:36:20 ago on 2022年11月03日 星期四 00时13分08秒.\nNo match for argument: pcp\nError: Unable to find a match: pcp'
+Thu Nov  3 00:50:56 2022 - INFO  - End to restore the test environment.

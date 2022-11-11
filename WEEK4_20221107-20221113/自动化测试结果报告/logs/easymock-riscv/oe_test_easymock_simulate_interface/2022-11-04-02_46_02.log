@@ -1,0 +1,20 @@
+Fri Nov  4 02:46:23 2022 - INFO  - Start to prepare the test environment.
+Fri Nov  4 02:49:52 2022 - INFO  - End to prepare the test environment.
+Fri Nov  4 02:49:54 2022 - INFO  - Start to run test.
+../common/common_easymock.sh:行33: javac：未找到命令
+Fri Nov  4 02:49:57 2022 - ERROR - oe_test_easymock_simulate_interface.sh line 29
+错误: 找不到或无法加载主类 org.junit.runner.JUnitCore
+原因: java.lang.ClassNotFoundException: org.junit.runner.JUnitCore
+0a1,7
+> .result=abin
+> result1=abin
+> result2=tom
+> result3=candy
+> result4=candy
+> result5=marry
+> OK (1 test)
+Fri Nov  4 02:50:06 2022 - ERROR - oe_test_easymock_simulate_interface.sh line 32
+Fri Nov  4 02:50:09 2022 - INFO  - End to run test.
+Fri Nov  4 02:50:12 2022 - ERROR - failed to execute the case.
+Fri Nov  4 02:50:15 2022 - INFO  - Start to restore the test environment.
+Fri Nov  4 02:50:57 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,87 @@
+Fri Nov  4 02:51:55 2022 - INFO  - Start to prepare the database config.
+Fri Nov  4 02:52:03 2022 - INFO  - End to prepare the database config.
+Fri Nov  4 02:52:07 2022 - INFO  - Start to run test.
+usage: capsh [args ...]
+  --addamb=xxx   add xxx,... capabilities to ambient set
+  --cap-uid=<n>  use libcap cap_setuid() to change uid
+  --caps=xxx     set caps as per cap_from_text()
+  --chroot=path  chroot(2) to this path
+  --current      show current caps and IAB vectors
+  --decode=xxx   decode a hex string to a list of caps
+  --delamb=xxx   remove xxx,... capabilities from ambient
+  --drop=xxx     drop xxx,... caps from bounding set
+  --explain=xxx  explain what capability xxx permits
+  --forkfor=<n>  fork and make child sleep for <n> sec
+  --gid=<n>      set gid to <n> (hint: id <username>)
+  --groups=g,... set the supplemental groups
+  --has-a=xxx    exit 1 if capability xxx not ambient
+  --has-b=xxx    exit 1 if capability xxx not dropped
+  --has-ambient  exit 1 unless ambient vector supported
+  --has-i=xxx    exit 1 if capability xxx not inheritable
+  --has-p=xxx    exit 1 if capability xxx not permitted
+  --has-no-new-privs  exit 1 if privs not limited
+  --help, -h     this message (or try 'man capsh')
+  --iab=...      use cap_iab_from_text() to set iab
+  --inh=xxx      set xxx,.. inheritable set
+  --inmode=<xxx> exit 1 if current mode is not <xxx>
+  --is-uid=<n>   exit 1 if uid != <n>
+  --is-gid=<n>   exit 1 if gid != <n>
+  --keep=<n>     set keep-capability bit to <n>
+  --killit=<n>   send signal(n) to child
+  --license      display license info
+  --mode         display current libcap mode
+  --mode=<xxx>   set libcap mode to <xxx>
+  --modes        list libcap named modes
+  --no-new-privs set sticky process privilege limiter
+  --noamb        reset (drop) all ambient capabilities
+  --print        display capability relevant state
+  --quiet        if first argument skip max cap check
+  --secbits=<n>  write a new value for securebits
+  --shell=/xx/yy use /xx/yy instead of /bin/bash for --
+  --strict       toggle --caps, --drop and --inh fixups
+  --suggest=text search cap descriptions for text
+  --supports=xxx exit 1 if capability xxx unsupported
+  --uid=<n>      set uid to <n> (hint: id <username>)
+  --user=<name>  set uid,gid and groups to that of user
+  ==             re-exec(capsh) with args as for --
+  =+             cap_launch capsh with args as for -+
+  --             remaining arguments are for /bin/bash
+  -+             cap_launch /bin/bash with remaining args
+                 (without -- [capsh] will simply exit(0))
+PING 127.0.0.1 (127.0.0.1) 56(84) 字节的数据。
+64 字节，来自 127.0.0.1: icmp_seq=1 ttl=64 时间=5.39 毫秒
+
+--- 127.0.0.1 ping 统计 ---
+已发送 1 个包， 已接收 1 个包, 0% packet loss, time 1ms
+rtt min/avg/max/mdev = 5.394/5.394/5.394/0.000 ms
+test20221104025155
+test20221104025155
+root
+root
+./ping cap_net_admin,cap_net_raw=eip
+usage: getcaps <pid> [<pid> ...]
+
+  This program displays the capabilities on the queried process(es).
+  The capabilities are displayed in the cap_from_text(3) format.
+
+  Optional arguments:
+     --help, -h or --usage display this message.
+     --verbose             use a more verbose output format.
+     --ugly or --legacy    use the archaic legacy output format.
+     --iab                 show IAB of process too.
+     --license             display license info
+usage: getcaps <pid> [<pid> ...]
+
+  This program displays the capabilities on the queried process(es).
+  The capabilities are displayed in the cap_from_text(3) format.
+
+  Optional arguments:
+     --help, -h or --usage display this message.
+     --verbose             use a more verbose output format.
+     --ugly or --legacy    use the archaic legacy output format.
+     --iab                 show IAB of process too.
+     --license             display license info
+Fri Nov  4 02:52:16 2022 - INFO  - End to run test.
+Fri Nov  4 02:52:19 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 02:52:23 2022 - INFO  - Start to restore the test environment.
+Fri Nov  4 02:52:31 2022 - INFO  - End to restore the test environment.

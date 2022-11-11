@@ -1,0 +1,16 @@
+Wed Nov  2 22:05:23 2022 - INFO  - Start to prepare the test environment.
+Wed Nov  2 22:15:48 2022 - INFO  - End to prepare the test environment.
+Wed Nov  2 22:15:50 2022 - INFO  - Start to run test.
+Wed Nov  2 22:16:28 2022 - ERROR - oe_test_openjdk_javap_jcmd.sh line 32
+1.8.0_342
+class Hello {
+class Hello {
+class Hello {
+class Hello {
+Classfile /root/mugen/mugen-riscv/testcases/cli-test/java-1.8.0-openjdk/oe_test_openjdk_javap_jcmd/Hello.class
+Usage: jcmd <pid | main class> <command ...|PerfCounter.print|-f file>
+8016 sun.tools.jcmd.JCmd -l
+Wed Nov  2 22:18:37 2022 - INFO  - End to run test.
+Wed Nov  2 22:18:39 2022 - ERROR - failed to execute the case.
+Wed Nov  2 22:18:41 2022 - INFO  - Need't to restore the tet environment.
+Wed Nov  2 22:20:37 2022 - INFO  - End to restore the test environment.

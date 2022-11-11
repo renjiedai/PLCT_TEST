@@ -1,0 +1,17 @@
+Sat Nov  5 18:47:16 2022 - INFO  - Start environmental preparation.
+Sat Nov  5 18:48:10 2022 - INFO  - pkgs:(upower) is already installed
+Sat Nov  5 18:48:14 2022 - INFO  - End of environmental preparation!
+Sat Nov  5 18:48:18 2022 - INFO  - Start testing...
+     Active: active (running) since Sat 2022-11-05 18:48:27 CST; 11s ago
+     Active: inactive (dead)
+     Active: active (running) since Sat 2022-11-05 18:48:59 CST; 11s ago
+/etc/systemd/system/graphical.target.wants/upower.service
+Removed /etc/systemd/system/graphical.target.wants/upower.service.
+find: ‘/etc/systemd/system/graphical.target.wants/upower.service’: No such file or directory
+Failed to reload upower.service: Job type reload is not applicable for unit upower.service.
+     Active: active (running) since Sat 2022-11-05 18:48:59 CST; 51s ago
+Sat Nov  5 18:49:54 2022 - INFO  - Finish test!
+Sat Nov  5 18:49:57 2022 - INFO  - succeed to execute the case.
+Sat Nov  5 18:50:01 2022 - INFO  - start environment cleanup.
+Sat Nov  5 18:50:04 2022 - WARN  - no thing to do.
+Sat Nov  5 18:50:08 2022 - INFO  - Finish environment cleanup!

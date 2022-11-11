@@ -1,0 +1,29 @@
+Sun Oct 30 23:19:18 2022 - INFO  - Start to prepare the test environment.
+cp: 无法创建普通文件'/var/log/radius/radwtmp': No such file or directory
+Sun Oct 30 23:22:57 2022 - INFO  - End to prepare the test environment.
+Sun Oct 30 23:23:03 2022 - INFO  - Start to run test.
+last: 打不开 /var/log/radius/radwtmp: No such file or directory
+last: 打不开 /var/log/radius/radwtmp: No such file or directory
+Sun Oct 30 23:23:08 2022 - ERROR - radlast -t execution failed.
+Sun Oct 30 23:23:13 2022 - ERROR - oe_test_freeradius_freeradius-utils_radlastAndRadsniff.sh line 35
+last: 打不开 /var/log/radius/radwtmp: No such file or directory
+Sun Oct 30 23:23:20 2022 - ERROR - radlast -x execution failed.
+Sun Oct 30 23:23:24 2022 - ERROR - oe_test_freeradius_freeradius-utils_radlastAndRadsniff.sh line 37
+ -a, --hostlast       最后一列显示主机名
+last，来自 util-linux 2.37.2
+1.eth0
+Job for radiusd.service failed because the control process exited with error code.
+See "systemctl status radiusd.service" and "journalctl -xeu radiusd.service" for details.
+Captured 2 packets, exiting...
+2021-03-11 15:49:10.323778 (1) UDP checksum invalid, packet: 0xfe41 calculated: 0x982f
+2021-03-11 15:49:10.323778 (1) Status-Server Id 147 ../common/test.pcap:127.0.0.1:37868 -> 127.0.0.1:1812 +0.000
+2021-03-11 15:49:10.324640 (2) UDP checksum invalid, packet: 0xfe2f calculated: 0x3819
+2021-03-11 15:49:10.324640 (2) Access-Accept Id 147 ../common/test.pcap:127.0.0.1:37868 <- 127.0.0.1:1812 +0.000 +0.000
+2021-03-11 15:49:10.323778 (1) UDP checksum invalid, packet: 0xfe41 calculated: 0x982f
+2021-03-11 15:49:10.324640 (2) UDP checksum invalid, packet: 0xfe2f calculated: 0x3819
+2021-03-11 15:49:10.324640 (2) Access-Accept Id 147 ../common/test.pcap:127.0.0.1:37868 <- 127.0.0.1:1812 +0.000 +0.000
+2021-03-11 15:49:10.324640 (2) Access-Accept Id 147 ../common/test.pcap:127.0.0.1:37868 <- 127.0.0.1:1812 +0.000 +0.000
+Sun Oct 30 23:23:49 2022 - INFO  - End to run test.
+Sun Oct 30 23:23:53 2022 - ERROR - failed to execute the case.
+Sun Oct 30 23:23:59 2022 - INFO  - Start to restore the test environment.
+Sun Oct 30 23:25:50 2022 - INFO  - End to restore the test environment.

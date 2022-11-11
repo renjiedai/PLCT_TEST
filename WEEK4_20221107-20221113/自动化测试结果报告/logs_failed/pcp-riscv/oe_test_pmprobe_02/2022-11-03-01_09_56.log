@@ -1,0 +1,36 @@
+Thu Nov  3 01:10:20 2022 - INFO  - Start to prepare the test environment.
+Failed to enable unit: Unit file pmcd.service does not exist.
+Failed to start pmcd.service: Unit pmcd.service not found.
+Failed to enable unit: Unit file pmlogger.service does not exist.
+Failed to start pmlogger.service: Unit pmlogger.service not found.
+oe_test_pmprobe_02.sh:行24: pcp：未找到命令
+Thu Nov  3 01:12:27 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 01:12:29 2022 - INFO  - Start to run test.
+oe_test_pmprobe_02.sh:行31: pmprobe：未找到命令
+Thu Nov  3 01:12:32 2022 - ERROR - oe_test_pmprobe_02.sh line 32
+oe_test_pmprobe_02.sh:行33: pmprobe：未找到命令
+Thu Nov  3 01:12:34 2022 - ERROR - oe_test_pmprobe_02.sh line 34
+oe_test_pmprobe_02.sh:行35: pmprobe：未找到命令
+Thu Nov  3 01:12:37 2022 - ERROR - oe_test_pmprobe_02.sh line 36
+oe_test_pmprobe_02.sh:行37: pmprobe：未找到命令
+Thu Nov  3 01:12:40 2022 - ERROR - oe_test_pmprobe_02.sh line 38
+oe_test_pmprobe_02.sh:行39: pmprobe：未找到命令
+Thu Nov  3 01:12:42 2022 - ERROR - oe_test_pmprobe_02.sh line 40
+oe_test_pmprobe_02.sh:行41: pmprobe：未找到命令
+Thu Nov  3 01:12:45 2022 - ERROR - oe_test_pmprobe_02.sh line 42
+oe_test_pmprobe_02.sh:行43: pmprobe：未找到命令
+Thu Nov  3 01:12:48 2022 - ERROR - oe_test_pmprobe_02.sh line 44
+oe_test_pmprobe_02.sh:行45: pmprobe：未找到命令
+Thu Nov  3 01:12:52 2022 - ERROR - oe_test_pmprobe_02.sh line 46
+oe_test_pmprobe_02.sh:行47: pmprobe：未找到命令
+Thu Nov  3 01:12:57 2022 - ERROR - oe_test_pmprobe_02.sh line 48
+Thu Nov  3 01:13:01 2022 - INFO  - End to run test.
+Thu Nov  3 01:13:05 2022 - ERROR - failed to execute the case.
+Thu Nov  3 01:13:09 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:08:19 ago on 2022年11月03日 星期四 01时03分34秒.\nNo match for argument: pcp\nError: Unable to find a match: pcp'
+Thu Nov  3 01:13:28 2022 - INFO  - End to restore the test environment.

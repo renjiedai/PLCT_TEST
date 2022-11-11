@@ -1,0 +1,37 @@
+Thu Nov  3 18:38:13 2022 - INFO  - Start environmental preparation.
+Thu Nov  3 18:39:40 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 18:39:42 2022 - INFO  - Start to run test.
+Failed to restart ceph-osd.target: Unit ceph-osd.target not found.
+Thu Nov  3 18:39:45 2022 - ERROR - ceph-osd.target restart failed
+Thu Nov  3 18:39:47 2022 - ERROR - ../common/common_lib.sh line 34
+Unit ceph-osd.target could not be found.
+Thu Nov  3 18:39:58 2022 - ERROR - ceph-osd.target restart failed
+Thu Nov  3 18:40:00 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop ceph-osd.target: Unit ceph-osd.target not loaded.
+Thu Nov  3 18:40:03 2022 - ERROR - ceph-osd.target stop failed
+Thu Nov  3 18:40:05 2022 - ERROR - ../common/common_lib.sh line 39
+Unit ceph-osd.target could not be found.
+Thu Nov  3 18:40:16 2022 - ERROR - ceph-osd.target stop failed
+Thu Nov  3 18:40:18 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start ceph-osd.target: Unit ceph-osd.target not found.
+Thu Nov  3 18:40:21 2022 - ERROR - ceph-osd.target start failed
+Thu Nov  3 18:40:23 2022 - ERROR - ../common/common_lib.sh line 44
+Unit ceph-osd.target could not be found.
+Thu Nov  3 18:40:34 2022 - ERROR - ceph-osd.target start failed
+Thu Nov  3 18:40:36 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for ceph-osd.target: No such file or directory
+Thu Nov  3 18:40:39 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start ceph-osd.target: Unit ceph-osd.target not found.
+Thu Nov  3 18:40:42 2022 - ERROR - oe_test_target_ceph-osd.sh line 33
+Unit ceph-osd.target could not be found.
+Thu Nov  3 18:40:45 2022 - ERROR - oe_test_target_ceph-osd.sh line 35
+Thu Nov  3 18:40:48 2022 - INFO  - End of the test.
+Thu Nov  3 18:40:50 2022 - ERROR - failed to execute the case.
+Thu Nov  3 18:40:52 2022 - INFO  - start environment cleanup.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:21:17 ago on 2022年11月03日 星期四 18时18分18秒.\nNo match for argument: ceph-osd\nError: Unable to find a match: ceph-osd'
+Thu Nov  3 18:41:03 2022 - INFO  - Finish environment cleanup!

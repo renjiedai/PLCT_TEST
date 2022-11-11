@@ -1,0 +1,18 @@
+Thu Nov  3 01:49:35 2022 - INFO  - Start to prepare the test environment.
+Thu Nov  3 01:51:01 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 01:51:04 2022 - INFO  - Start to run test.
+oe_test_pcp_pcp-import-mrtg2pcp.sh:行30: mrtg2pcp：未找到命令
+Thu Nov  3 01:51:07 2022 - ERROR - oe_test_pcp_pcp-import-mrtg2pcp.sh line 31
+grep: mrtgpcp.index: No such file or directory
+Thu Nov  3 01:51:10 2022 - ERROR - oe_test_pcp_pcp-import-mrtg2pcp.sh line 33
+Thu Nov  3 01:51:12 2022 - ERROR - oe_test_pcp_pcp-import-mrtg2pcp.sh line 35
+Thu Nov  3 01:51:15 2022 - INFO  - End to run test.
+Thu Nov  3 01:51:17 2022 - ERROR - failed to execute the case.
+Thu Nov  3 01:51:20 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:47:22 ago on 2022年11月03日 星期四 01时03分34秒.\nNo match for argument: pcp-import-mrtg2pcp\nError: Unable to find a match: pcp-import-mrtg2pcp'
+Thu Nov  3 01:51:32 2022 - INFO  - End to restore the test environment.

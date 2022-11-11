@@ -1,0 +1,15 @@
+Sat Nov  5 16:01:06 2022 - INFO  - Start environmental preparation.
+Sat Nov  5 16:01:54 2022 - INFO  - pkgs:(nfs-utils) is already installed
+Sat Nov  5 16:01:58 2022 - INFO  - End of environmental preparation!
+Sat Nov  5 16:02:02 2022 - INFO  - Start testing...
+     Active: active (running) since Sat 2022-11-05 16:02:04 CST; 10s ago
+     Active: inactive (dead) since Sat 2022-11-05 16:02:15 CST; 10s ago
+     Active: active (running) since Sat 2022-11-05 16:02:27 CST; 10s ago
+Sat Nov  5 16:02:42 2022 - INFO  - Unit is indirect, ignoring.
+Failed to reload nfs-secure.service: Job type reload is not applicable for unit rpc-gssd.service.
+     Active: active (running) since Sat 2022-11-05 16:02:27 CST; 17s ago
+Sat Nov  5 16:02:48 2022 - INFO  - Finish test!
+Sat Nov  5 16:02:52 2022 - INFO  - succeed to execute the case.
+Sat Nov  5 16:02:55 2022 - INFO  - start environment cleanup.
+Sat Nov  5 16:03:00 2022 - WARN  - no thing to do.
+Sat Nov  5 16:03:04 2022 - INFO  - Finish environment cleanup!

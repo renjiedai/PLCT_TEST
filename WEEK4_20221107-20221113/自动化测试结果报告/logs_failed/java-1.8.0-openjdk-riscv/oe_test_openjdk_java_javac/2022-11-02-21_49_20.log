@@ -1,0 +1,15 @@
+Wed Nov  2 21:49:33 2022 - INFO  - Start to prepare the test environment.
+Wed Nov  2 22:00:41 2022 - INFO  - End to prepare the test environment.
+Wed Nov  2 22:00:43 2022 - INFO  - Start to run test.
+Wed Nov  2 22:00:49 2022 - ERROR - oe_test_openjdk_java_javac.sh line 31
+Hello,world!
+openjdk version "1.8.0_342"
+openjdk version "1.8.0_342"
+testjava/Hello.class
+Wed Nov  2 22:02:20 2022 - ERROR - oe_test_openjdk_java_javac.sh line 46
+javac 1.8.0_342
+javac 1.8.0_342
+Wed Nov  2 22:02:35 2022 - INFO  - End to run test.
+Wed Nov  2 22:02:37 2022 - ERROR - failed to execute the case.
+Wed Nov  2 22:02:39 2022 - INFO  - Need't to restore the tet environment.
+Wed Nov  2 22:04:48 2022 - INFO  - End to restore the test environment.

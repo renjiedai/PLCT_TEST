@@ -1,0 +1,22 @@
+Thu Nov  3 21:14:30 2022 - INFO  - Start environmental preparation.
+Thu Nov  3 21:18:44 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 21:18:47 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-11-03 21:18:49 CST; 11s ago
+Warning: Stopping epmd.service, but it can still be activated by:
+  epmd.socket
+     Active: inactive (dead) since Thu 2022-11-03 21:19:01 CST; 10s ago
+     Active: active (running) since Thu 2022-11-03 21:19:13 CST; 9s ago
+/etc/systemd/system/multi-user.target.wants/epmd.service
+/etc/systemd/system/sockets.target.wants/epmd.socket
+Removed /etc/systemd/system/multi-user.target.wants/epmd.service.
+Removed /etc/systemd/system/sockets.target.wants/epmd.socket.
+find: ‘/etc/systemd/system/multi-user.target.wants/epmd.service’: No such file or directory
+find: ‘/etc/systemd/system/sockets.target.wants/epmd.socket’: No such file or directory
+Failed to reload epmd.service: Job type reload is not applicable for unit epmd.service.
+     Active: active (running) since Thu 2022-11-03 21:19:13 CST; 44s ago
+Thu Nov  3 21:20:01 2022 - INFO  - Finish test!
+Thu Nov  3 21:20:04 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 21:20:08 2022 - INFO  - start environment cleanup.
+Warning: Stopping epmd.service, but it can still be activated by:
+  epmd.socket
+Thu Nov  3 21:21:47 2022 - INFO  - Finish environment cleanup!

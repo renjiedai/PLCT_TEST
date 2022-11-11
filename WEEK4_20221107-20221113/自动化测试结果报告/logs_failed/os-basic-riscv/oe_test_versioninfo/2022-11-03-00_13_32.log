@@ -1,0 +1,11 @@
+Thu Nov  3 00:14:26 2022 - INFO  - Start to run test.
+awk: fatal: cannot open file `/etc/openEuler-release' for reading: No such file or directory
+Thu Nov  3 00:14:33 2022 - ERROR - oe_test_versioninfo.sh line 25
+2.0 (22H1)
+Thu Nov  3 00:14:40 2022 - ERROR - oe_test_versioninfo.sh line 29
+VERSION_ID="2.0"
+Thu Nov  3 00:14:47 2022 - ERROR - oe_test_versioninfo.sh line 33
+ANSI_COLOR="0;31"
+Thu Nov  3 00:14:53 2022 - INFO  - End to run test.
+Thu Nov  3 00:14:59 2022 - ERROR - failed to execute the case.
+Thu Nov  3 00:15:05 2022 - INFO  - oe_test_versioninfo.sh post_test

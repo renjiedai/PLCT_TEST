@@ -1,0 +1,38 @@
+Thu Nov  3 19:48:14 2022 - INFO  - Start environmental preparation.
+Thu Nov  3 19:50:48 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 19:50:52 2022 - INFO  - Start testing...
+Failed to restart setup-ima-digest-lists.service: Unit setup-ima-digest-lists.service not found.
+Thu Nov  3 19:50:56 2022 - ERROR - setup-ima-digest-lists.service restart failed
+Thu Nov  3 19:51:00 2022 - ERROR - ../common/common_lib.sh line 34
+Unit setup-ima-digest-lists.service could not be found.
+Thu Nov  3 19:51:12 2022 - ERROR - setup-ima-digest-lists.service restart failed
+Thu Nov  3 19:51:16 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop setup-ima-digest-lists.service: Unit setup-ima-digest-lists.service not loaded.
+Thu Nov  3 19:51:20 2022 - ERROR - setup-ima-digest-lists.service stop failed
+Thu Nov  3 19:51:23 2022 - ERROR - ../common/common_lib.sh line 39
+Unit setup-ima-digest-lists.service could not be found.
+Thu Nov  3 19:51:36 2022 - ERROR - setup-ima-digest-lists.service stop failed
+Thu Nov  3 19:51:39 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start setup-ima-digest-lists.service: Unit setup-ima-digest-lists.service not found.
+Thu Nov  3 19:51:43 2022 - ERROR - setup-ima-digest-lists.service start failed
+Thu Nov  3 19:51:47 2022 - ERROR - ../common/common_lib.sh line 44
+Unit setup-ima-digest-lists.service could not be found.
+Thu Nov  3 19:52:00 2022 - ERROR - setup-ima-digest-lists.service start failed
+Thu Nov  3 19:52:03 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for setup-ima-digest-lists.service: No such file or directory
+Thu Nov  3 19:52:06 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start setup-ima-digest-lists.service: Unit setup-ima-digest-lists.service not found.
+Thu Nov  3 19:52:12 2022 - ERROR - Job type reload is not applicable for unit setup-ima-digest-lists.service
+Thu Nov  3 19:52:15 2022 - ERROR - ../common/common_lib.sh line 91
+Unit setup-ima-digest-lists.service could not be found.
+Unit setup-ima-digest-lists.service could not be found.
+Thu Nov  3 19:52:20 2022 - INFO  - Finish test!
+Thu Nov  3 19:52:23 2022 - ERROR - failed to execute the case.
+Thu Nov  3 19:52:27 2022 - INFO  - start environment cleanup.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:01:34 ago on 2022年11月03日 星期四 19时49分07秒.\nNo match for argument: digest-list-tools\nError: Unable to find a match: digest-list-tools'
+Thu Nov  3 19:52:43 2022 - INFO  - Finish environment cleanup!

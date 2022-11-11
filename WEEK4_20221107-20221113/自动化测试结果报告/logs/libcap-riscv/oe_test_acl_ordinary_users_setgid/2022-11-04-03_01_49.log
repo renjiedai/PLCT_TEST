@@ -1,0 +1,12 @@
+Fri Nov  4 03:02:10 2022 - INFO  - This test case has no config params to load!
+Fri Nov  4 03:02:12 2022 - INFO  - Start environmental preparation.
+Fri Nov  4 03:02:15 2022 - INFO  - End of environmental preparation!
+Fri Nov  4 03:02:18 2022 - INFO  - Start executing testcase.
+新的密码： 重新输入新的密码： 更改用户 example 的密码 。
+passwd：所有的身份验证令牌已经成功更新。
+chattr: Operation not permitted 设置 /home/example/test 的标志时
+----i---------e------- /home/example/test
+Fri Nov  4 03:02:42 2022 - INFO  - Finish testcase execution.
+Fri Nov  4 03:02:45 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 03:02:48 2022 - INFO  - start environment cleanup.
+Fri Nov  4 03:02:56 2022 - INFO  - Finish environment cleanup!

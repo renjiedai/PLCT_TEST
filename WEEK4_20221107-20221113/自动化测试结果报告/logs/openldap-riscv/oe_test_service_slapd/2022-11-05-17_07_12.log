@@ -1,0 +1,18 @@
+Sat Nov  5 17:07:47 2022 - INFO  - Start environmental preparation.
+Sat Nov  5 17:13:12 2022 - INFO  - End of environmental preparation!
+Sat Nov  5 17:13:17 2022 - INFO  - Start testing...
+     Active: active (running) since Sat 2022-11-05 17:13:26 CST; 12s ago
+     Active: inactive (dead)
+     Active: active (running) since Sat 2022-11-05 17:14:03 CST; 12s ago
+/etc/systemd/system/openldap.service
+/etc/systemd/system/multi-user.target.wants/slapd.service
+Removed /etc/systemd/system/multi-user.target.wants/slapd.service.
+Removed /etc/systemd/system/openldap.service.
+find: ‘/etc/systemd/system/openldap.service’: No such file or directory
+find: ‘/etc/systemd/system/multi-user.target.wants/slapd.service’: No such file or directory
+Failed to reload slapd.service: Job type reload is not applicable for unit slapd.service.
+     Active: active (running) since Sat 2022-11-05 17:14:03 CST; 1min 7s ago
+Sat Nov  5 17:15:16 2022 - INFO  - Finish test!
+Sat Nov  5 17:15:21 2022 - INFO  - succeed to execute the case.
+Sat Nov  5 17:15:26 2022 - INFO  - start environment cleanup.
+Sat Nov  5 17:17:24 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,17 @@
+Sun Nov  6 15:13:00 2022 - INFO  - Start environmental preparation.
+Sun Nov  6 15:14:08 2022 - INFO  - pkgs:(rsync) is already installed
+Sun Nov  6 15:14:14 2022 - INFO  - End of environmental preparation!
+Sun Nov  6 15:14:19 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-11-06 15:14:20 CST; 12s ago
+     Active: inactive (dead)
+     Active: active (running) since Sun 2022-11-06 15:14:47 CST; 12s ago
+/etc/systemd/system/multi-user.target.wants/rsyncd.service
+Removed /etc/systemd/system/multi-user.target.wants/rsyncd.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/rsyncd.service’: No such file or directory
+Failed to reload rsyncd.service: Job type reload is not applicable for unit rsyncd.service.
+     Active: active (running) since Sun 2022-11-06 15:14:47 CST; 58s ago
+Sun Nov  6 15:15:50 2022 - INFO  - Finish test!
+Sun Nov  6 15:15:54 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 15:15:58 2022 - INFO  - start environment cleanup.
+Sun Nov  6 15:16:03 2022 - WARN  - no thing to do.
+Sun Nov  6 15:16:08 2022 - INFO  - Finish environment cleanup!

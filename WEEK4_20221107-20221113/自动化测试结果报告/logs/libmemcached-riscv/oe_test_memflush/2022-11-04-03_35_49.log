@@ -1,0 +1,37 @@
+Fri Nov  4 03:36:16 2022 - INFO  - Start to prepare the test environment.
+tcp        0      0 0.0.0.0:11211           0.0.0.0:*               LISTEN     
+tcp6       0      0 :::11211                :::*                    LISTEN     
+5124
+Fri Nov  4 03:39:13 2022 - INFO  - Finish preparing the test environment.
+Fri Nov  4 03:39:16 2022 - INFO  - Start to run test.
+spawn telnet 127.0.0.1 11211
+set user_id 1 0 3
+001
+set user_name 2 0 4
+Lily
+quit
+Trying 127.0.0.1...
+Connected to 127.0.0.1.
+Escape character is '^]'.
+STORED
+STORED
+Connection closed by foreign host.
+Found key user_id
+Found key user_name
+	 --version 
+	 --help 
+	 --quiet 
+	 --verbose 
+	 --debug 
+	 --servers=
+	 --expire=
+	 --binary 
+	 --username=
+	 --password=
+memflush v1.0
+error on user_id(NOT FOUND)
+error on user_name(NOT FOUND)
+Fri Nov  4 03:39:22 2022 - INFO  - End of the test.
+Fri Nov  4 03:39:25 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 03:39:28 2022 - INFO  - Start to restore the test environment.
+Fri Nov  4 03:40:50 2022 - INFO  - Finish restoring the test environment.

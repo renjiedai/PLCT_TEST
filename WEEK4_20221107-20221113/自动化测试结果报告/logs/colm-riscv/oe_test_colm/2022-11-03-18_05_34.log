@@ -1,0 +1,25 @@
+Thu Nov  3 18:06:00 2022 - INFO  - Start to prepare the test environment.
+Thu Nov  3 18:08:55 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 18:08:59 2022 - INFO  - Start to run test.
+usage: colm [options] file
+   -h, -H, -?, --help   print this usage and exit
+Colm version 0.13.0.7 May 2019
+compiling with: 'gcc -Wall -Wwrite-strings -g -o mu mu.c -I/usr/include -L/usr/lib -Wl,-rpath,/usr/lib -lcolm'
+mu: ELF 64-bit LSB executable, UCB RISC-V, double-float ABI, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-riscv64-lp64d.so.1, BuildID[sha1]=f110a7339bc942ad586e4d07305dc1915c2422d4, for GNU/Linux 4.15.0, with debug_info, not stripped
+void zhu_read_reduce( program_t *prg, int reducer, input_t *stream );
+	&zhu_read_reduce,
+void zhu_read_reduce( program_t *prg, int reducer, input_t *stream ) {}
+void colm_object_read_reduce( program_t *prg, int reducer, input_t *stream );
+	&colm_object_read_reduce,
+void colm_object_read_reduce( program_t *prg, int reducer, input_t *stream ) {}
+mu: ELF 64-bit LSB executable, UCB RISC-V, double-float ABI, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-riscv64-lp64d.so.1, BuildID[sha1]=71e118df9f4c7af8d390fe4182f7140fd492a232, for GNU/Linux 4.15.0, with debug_info, not stripped
+void colm_object_read_reduce( program_t *prg, int reducer, input_t *stream );
+	&colm_object_read_reduce,
+void colm_object_read_reduce( program_t *prg, int reducer, input_t *stream ) {}
+zhu: ASCII text
+mu: ELF 64-bit LSB executable, UCB RISC-V, double-float ABI, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-riscv64-lp64d.so.1, BuildID[sha1]=468fd9885850687172b8079e6b75fc376b0c4587, for GNU/Linux 4.15.0, with debug_info, not stripped
+digraph  {
+Thu Nov  3 18:10:14 2022 - INFO  - End to run test.
+Thu Nov  3 18:10:17 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 18:10:21 2022 - INFO  - Start to restore the test environment.
+Thu Nov  3 18:11:42 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,147 @@
+Thu Nov  3 02:47:09 2022 - INFO  - Start to pre test.
+Thu Nov  3 02:47:10 2022 - INFO  - Start to pre test.
+Thu Nov  3 02:47:11 2022 - INFO  - Start to run test.
+记录了100+0 的读入
+记录了100+0 的写出
+104857600字节（105 MB，100 MiB）已复制，26.1226 s，4.0 MB/s
+104857600
+记录了100+0 的读入
+记录了100+0 的写出
+104857600字节（105 MB，100 MiB）已复制，4.64046 s，22.6 MB/s
+104857600
+记录了100+0 的读入
+记录了100+0 的写出
+104857600字节（105 MB，100 MiB）已复制，26.3135 s，4.0 MB/s
+104857600
+记录了100+0 的读入
+记录了100+0 的写出
+104857600字节（105 MB，100 MiB）已复制，4.7241 s，22.2 MB/s
+104857600
+记录了100+0 的读入
+记录了100+0 的写出
+104857600字节（105 MB，100 MiB）已复制，26.0695 s，4.0 MB/s
+104857600
+记录了100+0 的读入
+记录了100+0 的写出
+104857600字节（105 MB，100 MiB）已复制，4.67339 s，22.4 MB/s
+104857600
+记录了100+0 的读入
+记录了100+0 的写出
+104857600字节（105 MB，100 MiB）已复制，26.3097 s，4.0 MB/s
+104857600
+记录了100+0 的读入
+记录了100+0 的写出
+104857600字节（105 MB，100 MiB）已复制，4.49318 s，23.3 MB/s
+104857600
+记录了100+0 的读入
+记录了100+0 的写出
+104857600字节（105 MB，100 MiB）已复制，25.7458 s，4.1 MB/s
+104857600
+记录了100+0 的读入
+记录了100+0 的写出
+104857600字节（105 MB，100 MiB）已复制，4.63808 s，22.6 MB/s
+104857600
+记录了100+0 的读入
+记录了100+0 的写出
+104857600字节（105 MB，100 MiB）已复制，25.7459 s，4.1 MB/s
+104857600
+记录了100+0 的读入
+记录了100+0 的写出
+104857600字节（105 MB，100 MiB）已复制，4.62733 s，22.7 MB/s
+104857600
+记录了100+0 的读入
+记录了100+0 的写出
+104857600字节（105 MB，100 MiB）已复制，25.6991 s，4.1 MB/s
+104857600
+记录了100+0 的读入
+记录了100+0 的写出
+104857600字节（105 MB，100 MiB）已复制，4.60721 s，22.8 MB/s
+104857600
+记录了100+0 的读入
+记录了100+0 的写出
+104857600字节（105 MB，100 MiB）已复制，26.5067 s，4.0 MB/s
+104857600
+记录了100+0 的读入
+记录了100+0 的写出
+104857600字节（105 MB，100 MiB）已复制，4.8544 s，21.6 MB/s
+104857600
+记录了100+0 的读入
+记录了100+0 的写出
+104857600字节（105 MB，100 MiB）已复制，26.6368 s，3.9 MB/s
+104857600
+记录了100+0 的读入
+记录了100+0 的写出
+104857600字节（105 MB，100 MiB）已复制，4.82316 s，21.7 MB/s
+104857600
+记录了100+0 的读入
+记录了100+0 的写出
+104857600字节（105 MB，100 MiB）已复制，26.8243 s，3.9 MB/s
+104857600
+记录了100+0 的读入
+记录了100+0 的写出
+104857600字节（105 MB，100 MiB）已复制，4.76642 s，22.0 MB/s
+104857600
+-rw-r--r-- 1 root root 104857600 11月  3 02:52 mycpfile20221103
+-rw-r--r-- 1 root root 104857600 11月  3 02:52 mycpfile20221103
+-rw-r--r-- 1 root root 104857600 11月  3 02:52 mycpfile20221103
+-rw-r--r-- 1 root root 104857600 11月  3 02:52 mycpfile20221103
+-rw-r--r-- 1 root root 104857600 11月  3 02:52 mycpfile20221103
+-rw-r--r-- 1 root root 104857600 11月  3 02:52 mycpfile20221103
+-rw-r--r-- 1 root root 104857600 11月  3 02:52 mycpfile20221103
+-rw-r--r-- 1 root root 104857600 11月  3 02:52 mycpfile20221103
+-rw-r--r-- 1 root root 104857600 11月  3 02:52 mycpfile20221103
+-rw-r--r-- 1 root root 104857600 11月  3 02:52 mycpfile20221103
+  adding: myfile20221103 (deflated 100%)
+myfile20221103.zip
+  adding: myfile20221103 (deflated 100%)
+myfile20221103.zip
+  adding: myfile20221103 (deflated 100%)
+myfile20221103.zip
+  adding: myfile20221103 (deflated 100%)
+myfile20221103.zip
+  adding: myfile20221103 (deflated 100%)
+myfile20221103.zip
+  adding: myfile20221103 (deflated 100%)
+myfile20221103.zip
+  adding: myfile20221103 (deflated 100%)
+myfile20221103.zip
+  adding: myfile20221103 (deflated 100%)
+myfile20221103.zip
+  adding: myfile20221103 (deflated 100%)
+myfile20221103.zip
+  adding: myfile20221103 (deflated 100%)
+myfile20221103.zip
+Archive:  myfile20221103.zip
+  inflating: myfile20221103          
+-rw-r--r-- 1 root root 104857600 11月  3 02:52 myfile20221103
+Archive:  myfile20221103.zip
+  inflating: myfile20221103          
+-rw-r--r-- 1 root root 104857600 11月  3 02:52 myfile20221103
+Archive:  myfile20221103.zip
+  inflating: myfile20221103          
+-rw-r--r-- 1 root root 104857600 11月  3 02:52 myfile20221103
+Archive:  myfile20221103.zip
+  inflating: myfile20221103          
+-rw-r--r-- 1 root root 104857600 11月  3 02:52 myfile20221103
+Archive:  myfile20221103.zip
+  inflating: myfile20221103          
+-rw-r--r-- 1 root root 104857600 11月  3 02:52 myfile20221103
+Archive:  myfile20221103.zip
+  inflating: myfile20221103          
+-rw-r--r-- 1 root root 104857600 11月  3 02:52 myfile20221103
+Archive:  myfile20221103.zip
+  inflating: myfile20221103          
+-rw-r--r-- 1 root root 104857600 11月  3 02:52 myfile20221103
+Archive:  myfile20221103.zip
+  inflating: myfile20221103          
+-rw-r--r-- 1 root root 104857600 11月  3 02:52 myfile20221103
+Archive:  myfile20221103.zip
+  inflating: myfile20221103          
+-rw-r--r-- 1 root root 104857600 11月  3 02:52 myfile20221103
+Archive:  myfile20221103.zip
+  inflating: myfile20221103          
+-rw-r--r-- 1 root root 104857600 11月  3 02:52 myfile20221103
+Thu Nov  3 02:55:01 2022 - INFO  - End to run test.
+Thu Nov  3 02:55:02 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 02:55:03 2022 - INFO  - Start to restore the test environment.
+Thu Nov  3 02:55:05 2022 - INFO  - End to restore the test environment.

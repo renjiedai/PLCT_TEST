@@ -1,0 +1,6 @@
+Thu Nov  3 00:25:54 2022 - INFO  - Start executing testcase.
+#Storage=auto
+Thu Nov  3 00:26:01 2022 - INFO  - End of testcase execution.
+Thu Nov  3 00:26:03 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 00:26:06 2022 - INFO  - start environment cleanup.
+Thu Nov  3 00:26:09 2022 - INFO  - Finish environment cleanup.

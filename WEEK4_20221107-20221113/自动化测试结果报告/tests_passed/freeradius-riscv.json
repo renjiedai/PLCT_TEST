@@ -1,0 +1,11 @@
+{
+    "path": "$OET_PATH/testcases/cli-test/freeradius",
+    "cases": [
+        {
+            "name": "oe_test_freeradius_freeradius-utils_radclient"
+        },
+        {
+            "name": "oe_test_freeradius_freeradius-utils_radcryptAndRadeapclient"
+        }
+    ]
+}

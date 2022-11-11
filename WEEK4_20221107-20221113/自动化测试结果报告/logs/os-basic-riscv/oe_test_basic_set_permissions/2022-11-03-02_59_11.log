@@ -1,0 +1,9 @@
+Thu Nov  3 02:59:21 2022 - INFO  - Start to prepare the test environment.
+id: “testuser”：无此用户
+Thu Nov  3 02:59:24 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 02:59:25 2022 - INFO  - Start to run test.
+drwxrwsr-x 2 root myproject 4096 11月  3 02:59 /opt/myproject
+Thu Nov  3 02:59:27 2022 - INFO  - End to run test.
+Thu Nov  3 02:59:28 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 02:59:29 2022 - INFO  - Start to clean the test environment.
+Thu Nov  3 02:59:31 2022 - INFO  - Start to clean the test environment.

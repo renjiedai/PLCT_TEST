@@ -1,0 +1,44 @@
+Sun Oct 30 21:56:08 2022 - INFO  - Start environmental preparation.
+sed：无法读取 /etc/atuned/atuned.cnf：No such file or directory
+sed：无法读取 /etc/atuned/atuned.cnf：No such file or directory
+Failed to start atuned.service: Unit atuned.service not found.
+Sun Oct 30 21:58:57 2022 - INFO  - End of environmental preparation!
+Sun Oct 30 21:59:02 2022 - INFO  - Start testing...
+Failed to restart atune-engine.service: Unit atune-engine.service not found.
+Sun Oct 30 21:59:07 2022 - ERROR - atune-engine.service restart failed
+Sun Oct 30 21:59:11 2022 - ERROR - ../common/common_lib.sh line 34
+Unit atune-engine.service could not be found.
+Sun Oct 30 21:59:26 2022 - ERROR - atune-engine.service restart failed
+Sun Oct 30 21:59:30 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop atune-engine.service: Unit atune-engine.service not loaded.
+Sun Oct 30 21:59:35 2022 - ERROR - atune-engine.service stop failed
+Sun Oct 30 21:59:40 2022 - ERROR - ../common/common_lib.sh line 39
+Unit atune-engine.service could not be found.
+Sun Oct 30 21:59:55 2022 - ERROR - atune-engine.service stop failed
+Sun Oct 30 22:00:00 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start atune-engine.service: Unit atune-engine.service not found.
+Sun Oct 30 22:00:04 2022 - ERROR - atune-engine.service start failed
+Sun Oct 30 22:00:10 2022 - ERROR - ../common/common_lib.sh line 44
+Unit atune-engine.service could not be found.
+Sun Oct 30 22:00:25 2022 - ERROR - atune-engine.service start failed
+Sun Oct 30 22:00:30 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for atune-engine.service: No such file or directory
+Sun Oct 30 22:00:35 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start atune-engine.service: Unit atune-engine.service not found.
+Sun Oct 30 22:00:40 2022 - ERROR - Job type reload is not applicable for unit atune-engine.service
+Sun Oct 30 22:00:45 2022 - ERROR - ../common/common_lib.sh line 91
+Unit atune-engine.service could not be found.
+Unit atune-engine.service could not be found.
+Sun Oct 30 22:00:51 2022 - INFO  - Finish test!
+Sun Oct 30 22:00:56 2022 - ERROR - failed to execute the case.
+Sun Oct 30 22:01:00 2022 - INFO  - start environment cleanup.
+Failed to stop atuned.service: Unit atuned.service not loaded.
+sed：无法读取 /etc/atuned/atuned.cnf：No such file or directory
+sed：无法读取 /etc/atuned/atuned.cnf：No such file or directory
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:01:42 ago on 2022年10月30日 星期日 21时57分04秒.\nNo match for argument: atune-engine\nNo match for argument: atune\nError: Unable to find a match: atune-engine atune'
+Sun Oct 30 22:01:24 2022 - INFO  - Finish environment cleanup!

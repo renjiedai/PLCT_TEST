@@ -1,0 +1,60 @@
+Thu Nov  3 18:48:35 2022 - INFO  - Start to prepare the test environment.
+Thu Nov  3 18:51:54 2022 - INFO  - Finish preparing the test environment.
+Thu Nov  3 18:51:57 2022 - INFO  - Start to run test.
+Checking file.c ...
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.6.3"/>
+    <errors>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;a[10]&apos; accessed at index 10, which is out of bounds." verbose="Array &apos;a[10]&apos; accessed at index 10, which is out of bounds." cwe="788" file0="file.c">
+            <location file="file.c" line="5" column="6" info="Array index out of bounds"/>
+        </error>
+    </errors>
+</results>
+Checking file.c ...
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.6.3"/>
+    <errors>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;a[10]&apos; accessed at index 10, which is out of bounds." verbose="Array &apos;a[10]&apos; accessed at index 10, which is out of bounds." cwe="788" file0="file.c">
+            <location file="file.c" line="5" column="6" info="Array index out of bounds"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;a[10]&apos; is assigned a value that is never used." verbose="Variable &apos;a[10]&apos; is assigned a value that is never used." cwe="563" file0="file.c">
+            <location file="file.c" line="5" column="11"/>
+            <symbol>a[10]</symbol>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Cppcheck cannot find all the include files (use --check-config for details)" verbose="Cppcheck cannot find all the include files. Cppcheck can check the code without the include files found. But the results will probably be more accurate if all the include files are found. Please check your project&apos;s include directories and add all of them as include directories for Cppcheck. To see what files Cppcheck cannot find use --check-config."/>
+    </errors>
+</results>
+Usage: cppcheck-htmlreport [options]
+Parsing xml report.
+Creating testErr1 directory
+Processing errors
+  file.c
+Creating index.html
+Creating style.css file
+Creating stats.html (statistics)
+    <title>Cppcheck - HTML report - fileReport</title>
+      <h1>Cppcheck report - fileReport: </h1>
+Parsing xml report.
+Creating testErr2 directory
+Processing errors
+  file.c
+Creating index.html
+Creating style.css file
+Creating stats.html (statistics)
+    <title>Cppcheck - HTML report - fileReport2</title>
+      <h1>Cppcheck report - fileReport2: </h1>
+Parsing xml report.
+Creating testErr3 directory
+Processing errors
+  file.c
+Creating index.html
+Creating style.css file
+Creating stats.html (statistics)
+    <title>Cppcheck - HTML report - fileReport3</title>
+      <h1>Cppcheck report - fileReport3: </h1>
+Thu Nov  3 18:54:02 2022 - INFO  - End of the test.
+Thu Nov  3 18:54:05 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 18:54:09 2022 - INFO  - Start to restore the test environment.
+Thu Nov  3 18:55:45 2022 - INFO  - Finish restoring the test environment.

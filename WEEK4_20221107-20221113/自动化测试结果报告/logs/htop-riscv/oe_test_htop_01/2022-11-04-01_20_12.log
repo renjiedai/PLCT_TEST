@@ -1,0 +1,59 @@
+Fri Nov  4 01:20:50 2022 - INFO  - Start to prepare the test environment.
+Fri Nov  4 01:24:20 2022 - INFO  - End to prepare the test environment.
+Fri Nov  4 01:24:24 2022 - INFO  - Start to run test.
+spawn htop
+h
+qError opening terminal: unknown.
+spawn htop
+S qError opening terminal: unknown.
+spawn htop
+/htop
+qError opening terminal: unknown.
+spawn htop
+'92'htop
+qError opening terminal: unknown.
+spawn htop
+tqError opening terminal: unknown.
+spawn htop
+< qError opening terminal: unknown.
+spawn htop
+/htop
+93qError opening terminal: unknown.
+spawn htop
+/htop
+91qError opening terminal: unknown.
+spawn htop
+/htop
+k qError opening terminal: unknown.
+spawn htop
+cqError opening terminal: unknown.
+spawn htop
+UqError opening terminal: unknown.
+spawn htop
+sqqError opening terminal: unknown.
+spawn htop
+lqqError opening terminal: unknown.
+spawn htop
+IqError opening terminal: unknown.
+spawn htop
+tqError opening terminal: unknown.
+spawn htop
+t+qError opening terminal: unknown.
+spawn htop
+u qError opening terminal: unknown.
+spawn htop
+MqError opening terminal: unknown.
+spawn htop
+PqError opening terminal: unknown.
+spawn htop
+TqError opening terminal: unknown.
+spawn htop
+KqError opening terminal: unknown.
+spawn htop
+HqError opening terminal: unknown.
+spawn htop
+pqError opening terminal: unknown.
+Fri Nov  4 01:25:05 2022 - INFO  - End to run test.
+Fri Nov  4 01:25:09 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 01:25:13 2022 - INFO  - Start to restore the test environment.
+Fri Nov  4 01:26:37 2022 - INFO  - End to restore the test environment.

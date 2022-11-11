@@ -1,0 +1,17 @@
+Sun Nov  6 18:38:58 2022 - INFO  - Start environmental preparation.
+Sun Nov  6 18:39:56 2022 - INFO  - pkgs:(udisks2) is already installed
+Sun Nov  6 18:40:01 2022 - INFO  - End of environmental preparation!
+Sun Nov  6 18:40:05 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-11-06 18:40:11 CST; 10s ago
+     Active: inactive (dead) since Sun 2022-11-06 18:40:22 CST; 9s ago
+     Active: active (running) since Sun 2022-11-06 18:40:37 CST; 10s ago
+find: ‘/etc/systemd/system/graphical.target.wants/udisks2.service’: No such file or directory
+Created symlink /etc/systemd/system/graphical.target.wants/udisks2.service → /usr/lib/systemd/system/udisks2.service.
+/etc/systemd/system/graphical.target.wants/udisks2.service
+Failed to reload udisks2.service: Job type reload is not applicable for unit udisks2.service.
+     Active: active (running) since Sun 2022-11-06 18:40:37 CST; 46s ago
+Sun Nov  6 18:41:26 2022 - INFO  - Finish test!
+Sun Nov  6 18:41:29 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 18:41:33 2022 - INFO  - start environment cleanup.
+Sun Nov  6 18:41:37 2022 - WARN  - no thing to do.
+Sun Nov  6 18:41:41 2022 - INFO  - Finish environment cleanup!

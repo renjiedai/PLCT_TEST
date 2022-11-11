@@ -1,0 +1,45 @@
+Thu Nov  3 01:51:05 2022 - INFO  - Start to prepare the test environment.
+Thu Nov  3 01:51:08 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 01:51:11 2022 - INFO  - Start to run test.
+no crontab for root
+no crontab for root - using an empty one
+Vim: Warning: Output is not to a terminal
+Vim: Warning: Input is not from a terminal
+
+E558: Terminal entry not found in terminfo
+'unknown' not known. Available builtin terminals are:
+    builtin_ansi
+    builtin_xterm
+    builtin_iris-ansi
+    builtin_dumb
+defaulting to 'ansi'
+[0m[H[2J[24;1H"/tmp/crontab.Ozr4Ag" 0L, 0C[2;1H~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~[1;1H[24;1H-- INSERT --[0m[24;13H[K[24;1H[K[1;1H0 0 * * * echo 'hello world' >> /root/test.txt[24;1H:wq"/tmp/crontab.Ozr4Ag" 1L, 47C written
+crontab: installing new crontab
+2022年 11月 03日 星期四 23:59:50 CST
+hello world
+Fri Nov  4 00:00:56 2022 - INFO  - End to run test.
+Fri Nov  4 00:00:58 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 00:01:01 2022 - INFO  - Start to restore the test environment.
+2022年 11月 03日 星期四 01:52:05 CST
+Thu Nov  3 01:52:07 2022 - INFO  - End to restore the test environment.

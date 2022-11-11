@@ -1,0 +1,55 @@
+Sun Nov  6 16:46:43 2022 - INFO  - Start to prepare the test environment.
+Successfully installed webrick-1.7.0
+Parsing documentation for webrick-1.7.0
+Installing ri documentation for webrick-1.7.0
+Done installing documentation for webrick after 46 seconds
+1 gem installed
+Sun Nov  6 16:51:08 2022 - INFO  - Finish preparing the test environment.
+Sun Nov  6 16:51:12 2022 - INFO  - Start to run test.
+Usage: ri [options] [name ...]
+ri 6.3.3
+spawn ri --server
+[2022-11-06 16:51:59] INFO  WEBrick 1.7.0
+[2022-11-06 16:51:59] INFO  ruby 3.0.3 (2021-11-24) [riscv64-linux]
+[2022-11-06 16:52:00] INFO  WEBrick::HTTPServer#start: pid=10536 port=8214
+[2022-11-06 16:51:59] INFO  WEBrick 1.7.0
+[2022-11-06 16:51:59] INFO  ruby 3.0.3 (2021-11-24) [riscv64-linux]
+[2022-11-06 16:52:00] INFO  WEBrick::HTTPServer#start: pid=10536 port=8214
+/usr/share/ri/system
+/usr/share/ri/site
+spawn ri --profile
+<internal:/usr/share/rubygems/rubygems/core_ext/kernel_require.rb>:85:in `require': [1mcannot load such file -- profile ([1;4mLoadError[m[1m)[m
+	from <internal:/usr/share/rubygems/rubygems/core_ext/kernel_require.rb>:85:in `require'
+	from /usr/share/gems/gems/rdoc-6.3.3/lib/rdoc/ri/driver.rb:404:in `initialize'
+	from /usr/share/gems/gems/rdoc-6.3.3/lib/rdoc/ri/driver.rb:389:in `new'
+	from /usr/share/gems/gems/rdoc-6.3.3/lib/rdoc/ri/driver.rb:389:in `run'
+	from /usr/share/gems/gems/rdoc-6.3.3/exe/ri:12:in `<top (required)>'
+	from /usr/bin/ri:23:in `load'
+	from /usr/bin/ri:23:in `<main>'
+<internal:/usr/share/rubygems/rubygems/core_ext/kernel_require.rb>:85:in `require': [1mcannot load such file -- profile ([1;4mLoadError[m[1m)[m
+	from <internal:/usr/share/rubygems/rubygems/core_ext/kernel_require.rb>:85:in `require'
+	from /usr/share/gems/gems/rdoc-6.3.3/lib/rdoc/ri/driver.rb:404:in `initialize'
+	from /usr/share/gems/gems/rdoc-6.3.3/lib/rdoc/ri/driver.rb:389:in `new'
+	from /usr/share/gems/gems/rdoc-6.3.3/lib/rdoc/ri/driver.rb:389:in `run'
+	from /usr/share/gems/gems/rdoc-6.3.3/exe/ri:12:in `<top (required)>'
+	from /usr/bin/ri:23:in `load'
+	from /usr/bin/ri:23:in `<main>'
+
+Generating RI format into /root/mugen/mugen-riscv/testcases/cli-test/ruby/oe_test_ri/doc...
+Parsing sources...
+{:ancestors=>{"Customer"=>["Object"]},
+ :attributes=>{},
+ :class_methods=>{"Customer"=>["new"]},
+ :c_class_variables=>{},
+ :c_singleton_class_variables=>{},
+ :encoding=>#<Encoding:UTF-8>,
+ :instance_methods=>{"Customer"=>["display_details", "total_no_of_customers"]},
+ :main=>nil,
+ :modules=>["Customer"],
+ :pages=>[],
+ :title=>nil}
+Sun Nov  6 16:53:00 2022 - INFO  - End of the test.
+Sun Nov  6 16:53:03 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 16:53:06 2022 - INFO  - Start to restore the test environment.
+Successfully uninstalled webrick-1.7.0
+Sun Nov  6 16:54:31 2022 - INFO  - Finish restoring the test environment.

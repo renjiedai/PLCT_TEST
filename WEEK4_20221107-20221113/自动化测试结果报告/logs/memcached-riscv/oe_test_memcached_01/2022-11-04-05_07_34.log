@@ -1,0 +1,16 @@
+Fri Nov  4 05:08:07 2022 - INFO  - Start to prepare the test environment.
+Fri Nov  4 05:11:44 2022 - INFO  - End to prepare the test environment.
+Fri Nov  4 05:11:47 2022 - INFO  - Start to run test.
+root         661     632  0 05:07 ?        00:00:00 sh -c sudo bash mugen.sh -f memcached-riscv -r oe_test_memcached_01 2>&1 | tee -a exec.log
+root         662     661  0 05:07 ?        00:00:01 sudo bash mugen.sh -f memcached-riscv -r oe_test_memcached_01
+root         665     662  0 05:07 ?        00:00:00 bash mugen.sh -f memcached-riscv -r oe_test_memcached_01
+root         710     665  4 05:07 ?        00:00:10 python3 /root/mugen/mugen-riscv/libs/locallibs/sleep_wait.py --time 30m --cmd bash oe_test_memcached_01.sh --mode 1
+root         711     710  0 05:07 ?        00:00:00 bash oe_test_memcached_01.sh
+memcach+     940       1 28 05:11 ?        00:00:01 /usr/bin/memcached -p 11211 -u memcached -m 64 -c 1024 -l 127.0.0.1,::1
+root         957     711  0 05:11 ?        00:00:00 grep memcached
+#127.0.0.1:11211   Field       Value
+                maxconns        1024
+Fri Nov  4 05:11:57 2022 - INFO  - End to run test.
+Fri Nov  4 05:12:00 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 05:12:04 2022 - INFO  - Start to restore the test environment.
+Fri Nov  4 05:14:06 2022 - INFO  - End to restore the test environment.

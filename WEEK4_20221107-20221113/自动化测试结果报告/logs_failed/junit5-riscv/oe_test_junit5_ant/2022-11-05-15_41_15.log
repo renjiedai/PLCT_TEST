@@ -1,0 +1,14 @@
+Sat Nov  5 15:41:51 2022 - INFO  - Start environment preparation.
+cp: 无法创建普通文件'/usr/share/ant/lib/': No such file or directory
+Sat Nov  5 15:49:50 2022 - INFO  - End of environmental preparation!
+Sat Nov  5 15:49:53 2022 - INFO  - Start testing...
+oe_test_junit5_ant.sh:行43: ant：未找到命令
+Sat Nov  5 15:49:57 2022 - ERROR - oe_test_junit5_ant.sh line 44
+oe_test_junit5_ant.sh:行45: ant：未找到命令
+Sat Nov  5 15:50:01 2022 - ERROR - oe_test_junit5_ant.sh line 48
+Sat Nov  5 15:50:05 2022 - ERROR - oe_test_junit5_ant.sh line 50
+/root/mugen/mugen-riscv/testcases/cli-test/junit5/oe_test_junit5_ant
+Sat Nov  5 15:50:09 2022 - INFO  - Finish test!
+Sat Nov  5 15:50:14 2022 - ERROR - failed to execute the case.
+Sat Nov  5 15:50:18 2022 - INFO  - start environment cleanup.
+Sat Nov  5 15:51:26 2022 - INFO  - Finish environment cleanup!

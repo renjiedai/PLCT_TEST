@@ -1,0 +1,31 @@
+Thu Nov  3 00:29:12 2022 - INFO  - Start to prepare the test environment.
+Thu Nov  3 00:29:16 2022 - INFO  - Finish preparing the test environment.
+Thu Nov  3 00:29:20 2022 - INFO  - Start to run test.
+Thu Nov  3 00:29:24 2022 - INFO  - Test: cracklib-check
+Thu Nov  3 00:29:28 2022 - INFO  - cracklib: Test a very simple password
+Thu Nov  3 00:29:32 2022 - ERROR - cracklib-check failed...
+Thu Nov  3 00:29:35 2022 - ERROR - oe_test_cracklib.sh line 58
+Thu Nov  3 00:29:39 2022 - INFO  - cracklib: Test a simple/dictionary password
+Thu Nov  3 00:29:43 2022 - ERROR - cracklib-check failed...
+Thu Nov  3 00:29:47 2022 - ERROR - oe_test_cracklib.sh line 62
+Thu Nov  3 00:29:50 2022 - INFO  - cracklib: Testing simplistic password
+Thu Nov  3 00:29:54 2022 - ERROR - cracklib-check failed...
+Thu Nov  3 00:29:57 2022 - ERROR - oe_test_cracklib.sh line 66
+Thu Nov  3 00:30:00 2022 - INFO  - cracklib: Testing a complicated password
+Thu Nov  3 00:30:04 2022 - INFO  - Test: cracklib-format
+Thu Nov  3 00:30:09 2022 - INFO  - Test: mkdict
+Thu Nov  3 00:30:13 2022 - INFO  - Test: cracklib-packer
+7 7
+Thu Nov  3 00:30:17 2022 - INFO  - Test: packer
+7 7
+Thu Nov  3 00:30:22 2022 - INFO  - Test: cracklib-unpacker
+Thu Nov  3 00:30:25 2022 - INFO  - Test: create-cracklib-dict
+1 1
+Thu Nov  3 00:43:32 2022 - ERROR - create-cracklib-dict error...
+Thu Nov  3 00:43:34 2022 - ERROR - oe_test_cracklib.sh line 115
+1916949 1916949
+7 7
+Thu Nov  3 00:44:18 2022 - INFO  - End of the test.
+Thu Nov  3 00:44:21 2022 - ERROR - failed to execute the case.
+Thu Nov  3 00:44:24 2022 - INFO  - Start to restore the test environment.
+Thu Nov  3 00:44:26 2022 - INFO  - Finish restoring the test environment.

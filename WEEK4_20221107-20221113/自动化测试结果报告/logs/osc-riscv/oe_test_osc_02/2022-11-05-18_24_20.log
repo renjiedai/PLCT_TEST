@@ -1,0 +1,37 @@
+Sat Nov  5 18:24:44 2022 - INFO  - Start to config params of the case.
+Sat Nov  5 18:24:47 2022 - INFO  - End to config params of the case.
+Sat Nov  5 18:24:49 2022 - INFO  - Start to prepare the test environment.
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+At revision 4757.
+Sat Nov  5 18:27:19 2022 - INFO  - End to prepare the test environment.
+Sat Nov  5 18:27:22 2022 - INFO  - Start to run test.
+A    xzz
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+Sending meta data...
+Sending    xzz
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+Updating zjl
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+Updating zjl
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+<project name="home:test666:branches:openEuler:Mainline">
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+home:test666:branches:openEuler:Mainline
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+Sat Nov  5 18:30:11 2022 - INFO  - End to run test.
+Sat Nov  5 18:30:14 2022 - INFO  - succeed to execute the case.
+Sat Nov  5 18:30:16 2022 - INFO  - Start to restore the test environment.
+Sat Nov  5 18:31:23 2022 - INFO  - End to restore the test environment.

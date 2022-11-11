@@ -1,0 +1,7 @@
+Fri Nov  4 02:55:28 2022 - INFO  - Start executing testcase.
+/usr/bin/less cap_dac_override=eip
+/usr/bin/less cap_dac_read_search=eip
+Fri Nov  4 02:55:33 2022 - INFO  - Finish testcase execution.
+Fri Nov  4 02:55:37 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 02:55:40 2022 - INFO  - start environment cleanup.
+Fri Nov  4 02:55:44 2022 - INFO  - Finish environment cleanup!

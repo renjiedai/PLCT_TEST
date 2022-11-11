@@ -1,0 +1,34 @@
+Sat Nov  5 18:48:58 2022 - INFO  - Start to config params of the case.
+Sat Nov  5 18:49:02 2022 - INFO  - End to config params of the case.
+Sat Nov  5 18:49:05 2022 - INFO  - Start to prepare the test environment.
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+At revision 4762.
+Sat Nov  5 18:51:59 2022 - INFO  - End to prepare the test environment.
+Sat Nov  5 18:52:01 2022 - INFO  - Start to run test.
+Project name: home:test666:branches:openEuler:Mainline
+passx = None
+plaintext_passwd = 0
+Removing: osc.log
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+A    4.txt
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+Committed revision 4763.
+A    osc_diff.log
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+Committed revision 4764.
+spawn osc rremove home:test666:branches:openEuler:Mainline zjl 4.txt
+rm: remove source file `4.txt' from `home:test666:branches:openEuler:Mainline/zjl'? (yY|nN) y
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+spawn osc rremove home:test666:branches:openEuler:Mainline zjl osc_diff.log
+rm: remove source file `osc_diff.log' from `home:test666:branches:openEuler:Mainline/zjl'? (yY|nN) y
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+Sat Nov  5 18:54:25 2022 - INFO  - End to run test.
+Sat Nov  5 18:54:27 2022 - INFO  - succeed to execute the case.
+Sat Nov  5 18:54:28 2022 - INFO  - Start to restore the test environment.
+Sat Nov  5 18:55:12 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,15 @@
+Sat Nov  5 15:22:49 2022 - INFO  - Start environmental preparation.
+Sat Nov  5 15:28:35 2022 - INFO  - End of environmental preparation!
+Sat Nov  5 15:28:40 2022 - INFO  - Start testing...
+     Active: active (running) since Sat 2022-11-05 15:28:41 CST; 12s ago
+     Active: inactive (dead)
+     Active: active (running) since Sat 2022-11-05 15:29:08 CST; 12s ago
+/etc/systemd/system/sysinit.target.wants/isnsd.service
+Removed /etc/systemd/system/sysinit.target.wants/isnsd.service.
+find: ‘/etc/systemd/system/sysinit.target.wants/isnsd.service’: No such file or directory
+Failed to reload isnsd.service: Job type reload is not applicable for unit isnsd.service.
+     Active: active (running) since Sat 2022-11-05 15:29:08 CST; 1min 5s ago
+Sat Nov  5 15:30:18 2022 - INFO  - Finish test!
+Sat Nov  5 15:30:23 2022 - INFO  - succeed to execute the case.
+Sat Nov  5 15:30:28 2022 - INFO  - start environment cleanup.
+Sat Nov  5 15:33:11 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,9 @@
+Thu Nov  3 02:07:03 2022 - INFO  - Start to prepare the test environment.
+Thu Nov  3 02:08:49 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 02:08:51 2022 - INFO  - Start to run test.
+     Active: active (running) since Thu 2022-11-03 02:08:48 CST; 3s ago
+   polling server every 8 s
+Thu Nov  3 02:09:02 2022 - INFO  - End to run test.
+Thu Nov  3 02:09:03 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 02:09:05 2022 - INFO  - Start to restore the test environment.
+Thu Nov  3 02:09:54 2022 - INFO  - End to restore the test environment.

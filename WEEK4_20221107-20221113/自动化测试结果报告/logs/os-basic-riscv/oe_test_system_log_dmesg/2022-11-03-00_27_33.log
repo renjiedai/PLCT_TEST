@@ -1,0 +1,7 @@
+Thu Nov  3 00:27:57 2022 - INFO  - Start executing testcase.
+[    0.000000] Linux version 5.10.0-60.50.0-default (abuild@eulaceura-build) (gcc (GCC) 10.3.1, GNU ld (GNU Binutils) 2.37) #1 SMP Thu Sep 29 11:42:05 UTC 2022
+[    0.293190] smp: Bringing up secondary CPUs ...
+[    0.346848] smp: Brought up 1 node, 4 CPUs
+Thu Nov  3 00:28:00 2022 - INFO  - End of testcase execution.
+Thu Nov  3 00:28:03 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 00:28:06 2022 - INFO  - oe_test_system_log_dmesg.sh post_test

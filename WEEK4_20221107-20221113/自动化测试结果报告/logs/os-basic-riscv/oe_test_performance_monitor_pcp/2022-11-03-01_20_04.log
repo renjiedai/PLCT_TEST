@@ -1,0 +1,19 @@
+Thu Nov  3 01:20:30 2022 - INFO  - Start to prepare the test environment.
+Thu Nov  3 01:22:28 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 01:22:31 2022 - INFO  - Start to run test.
+Failed to start pmcd.service: Unit pmcd.service not found.
+Thu Nov  3 01:22:34 2022 - ERROR - oe_test_performance_monitor_pcp.sh line 30
+Unit pmcd.service could not be found.
+Thu Nov  3 01:22:38 2022 - ERROR - oe_test_performance_monitor_pcp.sh line 32
+oe_test_performance_monitor_pcp.sh:行33: pcp：未找到命令
+Thu Nov  3 01:22:41 2022 - ERROR - oe_test_performance_monitor_pcp.sh line 34
+Thu Nov  3 01:22:44 2022 - INFO  - End to run test.
+Thu Nov  3 01:22:47 2022 - ERROR - failed to execute the case.
+Thu Nov  3 01:22:50 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 1:00:20 ago on 2022年11月03日 星期四 00时22分03秒.\nNo match for argument: pcp\nError: Unable to find a match: pcp'
+Thu Nov  3 01:23:04 2022 - INFO  - End to restore the test environment.

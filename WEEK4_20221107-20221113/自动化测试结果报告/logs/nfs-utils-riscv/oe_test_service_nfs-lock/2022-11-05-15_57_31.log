@@ -1,0 +1,15 @@
+Sat Nov  5 15:58:02 2022 - INFO  - Start environmental preparation.
+Sat Nov  5 15:58:53 2022 - INFO  - pkgs:(nfs-utils) is already installed
+Sat Nov  5 15:58:57 2022 - INFO  - End of environmental preparation!
+Sat Nov  5 15:59:01 2022 - INFO  - Start testing...
+     Active: active (running) since Sat 2022-11-05 15:59:04 CST; 10s ago
+     Active: inactive (dead) since Sat 2022-11-05 15:59:15 CST; 9s ago
+     Active: active (running) since Sat 2022-11-05 15:59:27 CST; 9s ago
+Sat Nov  5 15:59:41 2022 - INFO  - Unit is indirect, ignoring.
+Failed to reload nfs-lock.service: Job type reload is not applicable for unit rpc-statd.service.
+     Active: active (running) since Sat 2022-11-05 15:59:27 CST; 16s ago
+Sat Nov  5 15:59:47 2022 - INFO  - Finish test!
+Sat Nov  5 15:59:50 2022 - INFO  - succeed to execute the case.
+Sat Nov  5 15:59:54 2022 - INFO  - start environment cleanup.
+Sat Nov  5 15:59:58 2022 - WARN  - no thing to do.
+Sat Nov  5 16:00:02 2022 - INFO  - Finish environment cleanup!

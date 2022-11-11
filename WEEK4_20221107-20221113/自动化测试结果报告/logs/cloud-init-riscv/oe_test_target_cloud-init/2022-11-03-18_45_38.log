@@ -1,0 +1,9 @@
+Thu Nov  3 18:45:59 2022 - INFO  - Start environmental preparation.
+Thu Nov  3 18:50:15 2022 - INFO  - End of environmental preparation!
+Thu Nov  3 18:50:18 2022 - INFO  - Start to run test.
+oe_test_target_cloud-init.sh:行30: test_execution：未找到命令
+oe_test_target_cloud-init.sh:行31: test_reload：未找到命令
+Thu Nov  3 18:50:21 2022 - INFO  - End of the test.
+Thu Nov  3 18:50:23 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 18:50:26 2022 - INFO  - start environment cleanup.
+Thu Nov  3 18:52:05 2022 - INFO  - Finish environment cleanup!

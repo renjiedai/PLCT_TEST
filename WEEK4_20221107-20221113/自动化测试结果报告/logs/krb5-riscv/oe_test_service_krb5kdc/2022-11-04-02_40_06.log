@@ -1,0 +1,23 @@
+Fri Nov  4 02:40:37 2022 - INFO  - Start environmental preparation.
+spawn kdb5_util create -s
+Loading random data
+Initializing database '/var/kerberos/krb5kdc/principal' for realm 'EXAMPLE.COM',
+master key name 'K/M@EXAMPLE.COM'
+You will be prompted for the database Master Password.
+It is important that you NOT FORGET this password.
+Enter KDC database master key: 
+Re-enter KDC database master key to verify: 
+kadmin.local: No KCM server found while opening default credentials cache
+Fri Nov  4 02:43:23 2022 - INFO  - End of environmental preparation!
+Fri Nov  4 02:43:26 2022 - INFO  - Start testing...
+     Active: active (running) since Fri 2022-11-04 02:43:28 CST; 8s ago
+     Active: inactive (dead)
+     Active: active (running) since Fri 2022-11-04 02:43:48 CST; 9s ago
+/etc/systemd/system/multi-user.target.wants/krb5kdc.service
+Removed /etc/systemd/system/multi-user.target.wants/krb5kdc.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/krb5kdc.service’: No such file or directory
+     Active: active (running) since Fri 2022-11-04 02:43:48 CST; 53s ago
+Fri Nov  4 02:44:45 2022 - INFO  - Finish test!
+Fri Nov  4 02:44:48 2022 - INFO  - succeed to execute the case.
+Fri Nov  4 02:44:51 2022 - INFO  - start environment cleanup.
+Fri Nov  4 02:46:14 2022 - INFO  - Finish environment cleanup!

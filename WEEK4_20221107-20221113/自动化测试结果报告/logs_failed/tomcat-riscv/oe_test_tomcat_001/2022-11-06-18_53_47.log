@@ -1,0 +1,31 @@
+Sun Nov  6 18:54:25 2022 - INFO  - Start to prepare the test environment!
+Failed to start tomcat.service: Unit tomcat.service not found.
+Sun Nov  6 18:56:59 2022 - INFO  - End to prepare the test environment!
+Sun Nov  6 18:57:03 2022 - INFO  - Start executing testcase!
+Unit tomcat.service could not be found.
+Sun Nov  6 18:57:08 2022 - ERROR - oe_test_tomcat_001.sh line 30
+oe_test_tomcat_001.sh:行31: tomcat-tool-wrapper：未找到命令
+Sun Nov  6 18:57:11 2022 - ERROR - oe_test_tomcat_001.sh line 32
+oe_test_tomcat_001.sh:行33: tomcat-digest：未找到命令
+Sun Nov  6 18:57:15 2022 - ERROR - oe_test_tomcat_001.sh line 34
+oe_test_tomcat_001.sh:行35: tomcat-digest：未找到命令
+Sun Nov  6 18:57:19 2022 - ERROR - oe_test_tomcat_001.sh line 36
+oe_test_tomcat_001.sh:行37: tomcat-digest：未找到命令
+Sun Nov  6 18:57:23 2022 - ERROR - oe_test_tomcat_001.sh line 38
+oe_test_tomcat_001.sh:行39: tomcat-digest：未找到命令
+Sun Nov  6 18:57:27 2022 - ERROR - oe_test_tomcat_001.sh line 40
+oe_test_tomcat_001.sh:行41: tomcat-digest：未找到命令
+Sun Nov  6 18:57:31 2022 - ERROR - oe_test_tomcat_001.sh line 42
+oe_test_tomcat_001.sh:行43: tomcat-digest：未找到命令
+Sun Nov  6 18:57:35 2022 - ERROR - oe_test_tomcat_001.sh line 44
+Sun Nov  6 18:57:39 2022 - INFO  - End of testcase execution!
+Sun Nov  6 18:57:43 2022 - ERROR - failed to execute the case.
+Sun Nov  6 18:57:47 2022 - INFO  - Start environment cleanup.
+Failed to stop tomcat.service: Unit tomcat.service not loaded.
+Traceback (most recent call last):
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:07:39 ago on 2022年11月06日 星期日 18时49分11秒.\nNo match for argument: tomcat\nError: Unable to find a match: tomcat'
+Sun Nov  6 18:58:06 2022 - INFO  - Finish environment cleanup.

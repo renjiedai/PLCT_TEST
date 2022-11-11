@@ -1,0 +1,42 @@
+Sun Nov  6 14:44:43 2022 - INFO  - Start to prepare the test environment.
+--2022-11-06 14:47:27--  https://repo.openeuler.org/openEuler-20.03-LTS/everything/aarch64/Packages/LibRaw-0.19.0-9.oe1.aarch64.rpm
+正在解析主机 repo.openeuler.org (repo.openeuler.org)... 49.0.230.196
+正在连接 repo.openeuler.org (repo.openeuler.org)|49.0.230.196|:443... 已连接。
+已发出 HTTP 请求，正在等待回应... 200 OK
+长度：298520 (292K) [application/x-redhat-package-manager]
+正在保存至: “LibRaw-0.19.0-9.oe1.aarch64.rpm”
+
+     0K .......... .......... .......... .......... .......... 17%  478K 1s
+    50K .......... .......... .......... .......... .......... 34%  733K 0s
+   100K .......... .......... .......... .......... .......... 51%  708K 0s
+   150K .......... .......... .......... .......... .......... 68%  617K 0s
+   200K .......... .......... .......... .......... .......... 85%  615K 0s
+   250K .......... .......... .......... .......... .         100%  404K=0.5s
+
+2022-11-06 14:47:31 (573 KB/s) - 已保存 “LibRaw-0.19.0-9.oe1.aarch64.rpm” [298520/298520])
+
+Sun Nov  6 14:47:33 2022 - INFO  - End to prepare the test environment.
+Sun Nov  6 14:47:36 2022 - INFO  - Start to run test1.
+sh:行1: /usr/bin/python: No such file or directory
+sh:行1: /usr/bin/python2: No such file or directory
+Error checking signature of LibRaw-0.19.0-9.oe1.aarch64.rpm: LibRaw-0.19.0-9.oe1.aarch64.rpm: digests SIGNATURES NOT OK
+1 packages and 0 specfiles checked; 3 errors, 2 warnings.
+Sun Nov  6 14:48:24 2022 - INFO  - End to run test1.
+Sun Nov  6 14:48:26 2022 - INFO  - Start to run test2.
+rpmlint version 1.10 Copyright (C) 1999-2007 Frederic Lepied, Mandriva
+Sun Nov  6 14:48:38 2022 - INFO  - End to run test2.
+Sun Nov  6 14:48:42 2022 - INFO  - Start to run test3.
+sh:行1: /usr/bin/python: No such file or directory
+sh:行1: /usr/bin/python2: No such file or directory
+0 packages and 0 specfiles checked; 0 errors, 0 warnings.
+Sun Nov  6 14:49:15 2022 - INFO  - End to run test3.
+Sun Nov  6 14:49:18 2022 - INFO  - Start to run test4.
+正克隆到 'unzip'...
+sh:行1: /usr/bin/python: No such file or directory
+sh:行1: /usr/bin/python2: No such file or directory
+error: bad date in %changelog: Tues May 12 2021 openEuler hanzhelii <18221254@bjtu.edu.cn> - 6.0-46
+0 packages and 1 specfiles checked; 0 errors, 0 warnings.
+Sun Nov  6 14:50:03 2022 - INFO  - End to run test4.
+Sun Nov  6 14:50:07 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 14:50:10 2022 - INFO  - Start to restore the test environment.
+Sun Nov  6 14:51:22 2022 - INFO  - End to restore the test environment.

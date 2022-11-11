@@ -1,0 +1,165 @@
+Sun Nov  6 12:15:23 2022 - INFO  - Start to prepare the test environment.
+Sun Nov  6 12:19:32 2022 - INFO  - Finish preparing the test environment.
+Sun Nov  6 12:19:36 2022 - INFO  - Start to run test.
+/usr/bin/phar <command> [options]
+add compress delete extract help help-list info list meta-del meta-get meta-set pack sign stub-get stub-set tree version
+PHP Version:               8.0.0
+phar.phar version:         $Id: 1fb41dbb6a75a1e713adb31d692758175b35b1a3 $
+Phar EXT version:          8.0.0
+Phar API version:          1.1.1
+lib/lib_a.php
+Lib.php
+index.php
+file/test.js
+file/test.css
+template/msg.html
+lib/lib_a.php
+Lib.php
+index.php
+file/test.js
+file/test.css
+template/msg.html
+Uncompressed-files: 6
+lib/lib_a.php
+Lib.php
+index.php
+file/test.js
+file/test.css
+template/msg.html
+Compressed-gz:      6
+lib/lib_a.php
+Lib.php
+index.php
+lib_a.php
+Lib.php
+index.php
+test.js
+test.css
+msg.html
+Uncompressed-files: 10
+Compressed-bz2:     10
+Lib.php ...ok
+file/test.css ...ok
+file/test.js ...ok
+index.php ...ok
+lib/lib_a.php ...ok
+msg.html ...ok
+template/msg.html ...ok
+test.css ...ok
+test.js ...ok
+file/test.css ...ok
+test.css ...ok
+Lib.php ...ok
+file/test.js ...ok
+index.php ...ok
+lib/lib_a.php ...ok
+msg.html ...ok
+template/msg.html ...ok
+test.js ...ok
+Alias:              test.phar
+Hash-type:          SHA-1
+Hash:               8EE0C519F833EAC05237941B203F66552D107190
+Entries:            9
+Uncompressed-files: 0
+Compressed-files:   9
+Compressed-gz:      0
+Compressed-bz2:     9
+Uncompressed-size:  546
+Compressed-size:    676
+Compression-ratio:  124%
+Metadata-global:    0
+Metadata-files:     0
+Stub-size:          6643
+Requested value does not exist.
+|-phar:///root/mugen/mugen-riscv/testcases/cli-test/php/oe_test_phar/test.phar/Lib.php
+|-phar:///root/mugen/mugen-riscv/testcases/cli-test/php/oe_test_phar/test.phar/file
+| |-phar:///root/mugen/mugen-riscv/testcases/cli-test/php/oe_test_phar/test.phar/file/test.css
+| \-phar:///root/mugen/mugen-riscv/testcases/cli-test/php/oe_test_phar/test.phar/file/test.js
+|-phar:///root/mugen/mugen-riscv/testcases/cli-test/php/oe_test_phar/test.phar/index.php
+|-phar:///root/mugen/mugen-riscv/testcases/cli-test/php/oe_test_phar/test.phar/lib
+| \-phar:///root/mugen/mugen-riscv/testcases/cli-test/php/oe_test_phar/test.phar/lib/lib_a.php
+|-phar:///root/mugen/mugen-riscv/testcases/cli-test/php/oe_test_phar/test.phar/msg.html
+|-phar:///root/mugen/mugen-riscv/testcases/cli-test/php/oe_test_phar/test.phar/template
+| \-phar:///root/mugen/mugen-riscv/testcases/cli-test/php/oe_test_phar/test.phar/template/msg.html
+|-phar:///root/mugen/mugen-riscv/testcases/cli-test/php/oe_test_phar/test.phar/test.css
+\-phar:///root/mugen/mugen-riscv/testcases/cli-test/php/oe_test_phar/test.phar/test.js
+|-phar:///root/mugen/mugen-riscv/testcases/cli-test/php/oe_test_phar/test.phar/lib
+| \-phar:///root/mugen/mugen-riscv/testcases/cli-test/php/oe_test_phar/test.phar/lib/lib_a.php
+No Metadata
+No Metadata
+No Metadata
+test.js
+lib/lib_a.php
+Lib.php
+index.php
+file/test.js
+file/test.css
+test.css
+msg.html
+template/msg.html
+test.js
+lib/lib_a.php
+Lib.php
+index.php
+file/test.js
+file/test.css
+test.css
+msg.html
+template/msg.html
+Uncompressed-files: 9
+test.js
+lib/lib_a.php
+Lib.php
+index.php
+file/test.js
+file/test.css
+test.css
+msg.html
+template/msg.html
+Compressed-gz:      9
+test.js
+lib/lib_a.php
+Lib.php
+index.php
+file/test.js
+file/test.css
+test.css
+msg.html
+template/msg.html
+Hash-type:          MD5
+lib/lib_a.php
+Lib.php
+index.php
+test.js
+lib_a.php
+Lib.php
+index.php
+test.js
+test.css
+test.css
+msg.html
+msg.html
+PHP Warning:  Undefined array key "PATH" in phar:///usr/bin/phar.phar/pharcommand.inc on line 216
+PEAR package PHP_Archive not installed: generated phar will require PHP's phar extension be enabled.
+test.js
+lib/lib_a.php
+Lib.php
+index.php
+file/test.js
+file/test.css
+test.css
+msg.html
+template/msg.html
+|-phar:///root/mugen/mugen-riscv/testcases/cli-test/php/oe_test_phar/test.phar/file
+|-phar:///root/mugen/mugen-riscv/testcases/cli-test/php/oe_test_phar/test.phar/lib
+\-phar:///root/mugen/mugen-riscv/testcases/cli-test/php/oe_test_phar/test.phar/template
+|-phar:///root/mugen/mugen-riscv/testcases/cli-test/php/oe_test_phar/test.phar/lib
+Hash-type:          SHA-512
+Generating RSA private key, 1024 bit long modulus (2 primes)
+......................................................+++++
+...........+++++
+e is 65537 (0x010001)
+Sun Nov  6 12:21:37 2022 - INFO  - End of the test.
+Sun Nov  6 12:21:41 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 12:21:45 2022 - INFO  - Start to restore the test environment.
+Sun Nov  6 12:23:08 2022 - INFO  - Finish restoring the test environment.

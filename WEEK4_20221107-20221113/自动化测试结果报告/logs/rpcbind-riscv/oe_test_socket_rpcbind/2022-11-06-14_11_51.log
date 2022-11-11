@@ -1,0 +1,17 @@
+Sun Nov  6 14:12:29 2022 - INFO  - Start environmental preparation.
+Sun Nov  6 14:13:28 2022 - INFO  - pkgs:(rpcbind) is already installed
+Sun Nov  6 14:13:35 2022 - INFO  - End of environmental preparation!
+Sun Nov  6 14:13:40 2022 - INFO  - Start to run test.
+     Active: active (listening) since Sun 2022-11-06 14:13:41 CST; 12s ago
+     Active: inactive (dead) since Sun 2022-11-06 14:13:54 CST; 12s ago
+     Active: active (listening) since Sun 2022-11-06 14:14:08 CST; 12s ago
+find: ‘/etc/systemd/system/sockets.target.wants/rpcbind.socket’: No such file or directory
+Created symlink /etc/systemd/system/sockets.target.wants/rpcbind.socket → /usr/lib/systemd/system/rpcbind.socket.
+/etc/systemd/system/sockets.target.wants/rpcbind.socket
+Failed to reload rpcbind.socket: Job type reload is not applicable for unit rpcbind.socket.
+     Active: active (listening) since Sun 2022-11-06 14:14:08 CST; 1min 1s ago
+Sun Nov  6 14:15:14 2022 - INFO  - End of the test.
+Sun Nov  6 14:15:19 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 14:15:23 2022 - INFO  - start environment cleanup.
+Sun Nov  6 14:15:29 2022 - WARN  - no thing to do.
+Sun Nov  6 14:15:33 2022 - INFO  - Finish environment cleanup!

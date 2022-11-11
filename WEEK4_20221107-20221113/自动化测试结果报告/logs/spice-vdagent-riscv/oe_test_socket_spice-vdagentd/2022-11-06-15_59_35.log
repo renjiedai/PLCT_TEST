@@ -1,0 +1,15 @@
+Sun Nov  6 16:00:13 2022 - INFO  - Start environmental preparation.
+Sun Nov  6 16:01:13 2022 - INFO  - pkgs:(spice-vdagent) is already installed
+Sun Nov  6 16:01:18 2022 - INFO  - End of environmental preparation!
+Sun Nov  6 16:01:23 2022 - INFO  - Start to run test.
+     Active: active (listening) since Sun 2022-11-06 16:01:24 CST; 11s ago
+     Active: inactive (dead)
+     Active: active (listening) since Sun 2022-11-06 16:01:48 CST; 11s ago
+Sun Nov  6 16:02:06 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload spice-vdagentd.socket: Job type reload is not applicable for unit spice-vdagentd.socket.
+     Active: active (listening) since Sun 2022-11-06 16:01:48 CST; 20s ago
+Sun Nov  6 16:02:12 2022 - INFO  - End of the test.
+Sun Nov  6 16:02:17 2022 - INFO  - succeed to execute the case.
+Sun Nov  6 16:02:21 2022 - INFO  - start environment cleanup.
+Sun Nov  6 16:02:25 2022 - WARN  - no thing to do.
+Sun Nov  6 16:02:29 2022 - INFO  - Finish environment cleanup!

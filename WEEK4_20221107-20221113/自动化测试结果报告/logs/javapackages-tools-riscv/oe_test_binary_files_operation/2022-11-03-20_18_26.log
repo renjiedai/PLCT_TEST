@@ -1,0 +1,50 @@
+Thu Nov  3 20:18:57 2022 - INFO  - Start to prepare the test environment.
+Thu Nov  3 20:19:48 2022 - INFO  - pkgs:(tar) is already installed
+Thu Nov  3 20:25:06 2022 - INFO  - Finish preparing the test environment.
+Thu Nov  3 20:25:10 2022 - INFO  - Start to run test.
+hello/
+hello/Hello.java
+hello/db.jar
+oe_test_binary_files_operation.sh:行43: clean-binary-files：未找到命令
+Thu Nov  3 20:25:16 2022 - ERROR - oe_test_binary_files_operation.sh line 44
+Thu Nov  3 20:25:20 2022 - ERROR - oe_test_binary_files_operation.sh line 46
+Thu Nov  3 20:25:24 2022 - ERROR - oe_test_binary_files_operation.sh line 48
+oe_test_binary_files_operation.sh:行49: check-binary-files：未找到命令
+Thu Nov  3 20:25:28 2022 - ERROR - oe_test_binary_files_operation.sh line 50
+oe_test_binary_files_operation.sh:行52: clean-binary-files：未找到命令
+Thu Nov  3 20:25:33 2022 - ERROR - oe_test_binary_files_operation.sh line 53
+Thu Nov  3 20:25:37 2022 - ERROR - oe_test_binary_files_operation.sh line 55
+oe_test_binary_files_operation.sh:行56: check-binary-files：未找到命令
+Thu Nov  3 20:25:41 2022 - ERROR - oe_test_binary_files_operation.sh line 59
+tar (child): hello-clean-clean.tar.gz：无法 open: No such file or directory
+tar (child): Error is not recoverable: exiting now
+tar: Child returned status 2
+tar: Error is not recoverable: exiting now
+Thu Nov  3 20:25:46 2022 - ERROR - oe_test_binary_files_operation.sh line 63
+oe_test_binary_files_operation.sh:行64: create-jar-links：未找到命令
+Thu Nov  3 20:25:50 2022 - ERROR - oe_test_binary_files_operation.sh line 65
+ls: 无法访问 'hello': No such file or directory
+Thu Nov  3 20:25:54 2022 - ERROR - oe_test_binary_files_operation.sh line 67
+oe_test_binary_files_operation.sh:行68: create-jar-links：未找到命令
+Thu Nov  3 20:25:58 2022 - ERROR - oe_test_binary_files_operation.sh line 69
+Thu Nov  3 20:26:02 2022 - ERROR - oe_test_binary_files_operation.sh line 71
+mv: 无法获取'hello' 的文件状态(stat): No such file or directory
+tar (child): hello-clean-clean-clean.tar.gz：无法 open: No such file or directory
+tar (child): Error is not recoverable: exiting now
+tar: Child returned status 2
+tar: Error is not recoverable: exiting now
+ls: 无法访问 'hello': No such file or directory
+Thu Nov  3 20:26:08 2022 - ERROR - oe_test_binary_files_operation.sh line 75
+oe_test_binary_files_operation.sh:行76: create-jar-links：未找到命令
+Thu Nov  3 20:26:12 2022 - ERROR - oe_test_binary_files_operation.sh line 77
+ls: 无法访问 'hello': No such file or directory
+Thu Nov  3 20:26:16 2022 - ERROR - oe_test_binary_files_operation.sh line 79
+oe_test_binary_files_operation.sh:行81: create-jar-links：未找到命令
+Thu Nov  3 20:26:20 2022 - ERROR - oe_test_binary_files_operation.sh line 82
+Thu Nov  3 20:26:24 2022 - ERROR - oe_test_binary_files_operation.sh line 84
+oe_test_binary_files_operation.sh:行85: diff-jars：未找到命令
+Thu Nov  3 20:26:28 2022 - ERROR - oe_test_binary_files_operation.sh line 86
+Thu Nov  3 20:26:32 2022 - INFO  - End of the test.
+Thu Nov  3 20:26:36 2022 - ERROR - failed to execute the case.
+Thu Nov  3 20:26:40 2022 - INFO  - Start to restore the test environment.
+Thu Nov  3 20:27:28 2022 - INFO  - Finish restoring the test environment.

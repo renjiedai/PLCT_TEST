@@ -1,0 +1,5 @@
+Thu Nov  3 21:00:51 2022 - INFO  - Start testing...
+Thu Nov  3 21:00:58 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Thu Nov  3 21:01:02 2022 - INFO  - Finish test!
+Thu Nov  3 21:01:06 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 21:01:09 2022 - INFO  - oe_test_service_dracut-pre-udev.sh post_test

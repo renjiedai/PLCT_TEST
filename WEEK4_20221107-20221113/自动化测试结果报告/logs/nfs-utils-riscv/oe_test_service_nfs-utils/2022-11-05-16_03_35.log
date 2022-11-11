@@ -1,0 +1,15 @@
+Sat Nov  5 16:04:06 2022 - INFO  - Start environmental preparation.
+Sat Nov  5 16:04:53 2022 - INFO  - pkgs:(nfs-utils) is already installed
+Sat Nov  5 16:04:58 2022 - INFO  - End of environmental preparation!
+Sat Nov  5 16:05:02 2022 - INFO  - Start testing...
+     Active: active (exited) since Sat 2022-11-05 16:05:03 CST; 10s ago
+     Active: inactive (dead) since Sat 2022-11-05 16:05:14 CST; 10s ago
+     Active: active (exited) since Sat 2022-11-05 16:05:26 CST; 10s ago
+Sat Nov  5 16:05:41 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload nfs-utils.service: Job type reload is not applicable for unit nfs-utils.service.
+     Active: active (exited) since Sat 2022-11-05 16:05:26 CST; 17s ago
+Sat Nov  5 16:05:47 2022 - INFO  - Finish test!
+Sat Nov  5 16:05:50 2022 - INFO  - succeed to execute the case.
+Sat Nov  5 16:05:54 2022 - INFO  - start environment cleanup.
+Sat Nov  5 16:05:58 2022 - WARN  - no thing to do.
+Sat Nov  5 16:06:01 2022 - INFO  - Finish environment cleanup!

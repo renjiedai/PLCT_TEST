@@ -1,0 +1,10 @@
+Thu Nov  3 01:42:48 2022 - INFO  - Start to prepare the test environment.
+Thu Nov  3 01:42:51 2022 - INFO  - End to prepare the test environment.
+Thu Nov  3 01:42:54 2022 - INFO  - Start to run test.
+oe_test_ProcMgmt_ps.sh：行 32: 12431 Killed                  ./mypstest
+UID          PID    PPID  C STIME TTY          TIME CMD
+Usage:
+Thu Nov  3 01:43:00 2022 - INFO  - End to run test.
+Thu Nov  3 01:43:02 2022 - INFO  - succeed to execute the case.
+Thu Nov  3 01:43:05 2022 - INFO  - Start to restore the test environment.
+Thu Nov  3 01:43:08 2022 - INFO  - End to restore the test environment.
