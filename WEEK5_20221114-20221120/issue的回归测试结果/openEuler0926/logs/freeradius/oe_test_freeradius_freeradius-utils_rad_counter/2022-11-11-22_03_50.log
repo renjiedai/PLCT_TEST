@@ -1,0 +1,253 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Fri Nov 11 22:03:57 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL 'freeradius freeradius-utils'
++ pkgs='freeradius freeradius-utils'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'freeradius freeradius-utils' --node 1 --tempfile ''
++ tmpfile2='Last metadata expiration check: 0:33:51 ago on Fri 11 Nov 2022 09:30:56 PM CST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides perl(Net::IP) needed by freeradius-utils-3.0.25-1.oe2203.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages or '\''--nobest'\'' to use not only best candidate packages)'
++ '[' -z '' ']'
++ tmpfile='Last metadata expiration check: 0:33:51 ago on Fri 11 Nov 2022 09:30:56 PM CST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides perl(Net::IP) needed by freeradius-utils-3.0.25-1.oe2203.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages or '\''--nobest'\'' to use not only best candidate packages)'
++ ln -s /etc/raddb/mods-available/counter /etc/raddb/mods-enabled/counter
+ln: failed to create symbolic link '/etc/raddb/mods-enabled/counter': No such file or directory
++ systemctl start radiusd
+Failed to start radiusd.service: Unit radiusd.service not found.
++ SLEEP_WAIT 2
++ wait_time=2
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 2 --cmd '' --mode 1
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Fri Nov 11 22:04:55 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Fri Nov 11 22:04:57 2022 - INFO  - Start to run test.
++ rad_counter --file /etc/raddb/db.daily --user test
+oe_test_freeradius_freeradius-utils_rad_counter.sh: line 35: rad_counter: command not found
++ CHECK_RESULT 127 0 0 'rad_counter --user execution failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='rad_counter --user execution failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'rad_counter --user execution failed.'
++ LOG_ERROR 'rad_counter --user execution failed.'
++ message='rad_counter --user execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'rad_counter --user execution failed.'
+Fri Nov 11 22:04:59 2022 - ERROR - rad_counter --user execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_rad_counter.sh line 36'
++ message='oe_test_freeradius_freeradius-utils_rad_counter.sh line 36'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_rad_counter.sh line 36'
+Fri Nov 11 22:05:01 2022 - ERROR - oe_test_freeradius_freeradius-utils_rad_counter.sh line 36
++ return 0
++ rad_counter --file /etc/raddb/db.daily --match '^te'
+oe_test_freeradius_freeradius-utils_rad_counter.sh: line 37: rad_counter: command not found
++ CHECK_RESULT 127 0 0 'rad_counter --match execution failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='rad_counter --match execution failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'rad_counter --match execution failed.'
++ LOG_ERROR 'rad_counter --match execution failed.'
++ message='rad_counter --match execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'rad_counter --match execution failed.'
+Fri Nov 11 22:05:02 2022 - ERROR - rad_counter --match execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_rad_counter.sh line 38'
++ message='oe_test_freeradius_freeradius-utils_rad_counter.sh line 38'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_rad_counter.sh line 38'
+Fri Nov 11 22:05:03 2022 - ERROR - oe_test_freeradius_freeradius-utils_rad_counter.sh line 38
++ return 0
++ rad_counter --file /etc/raddb/db.daily --reset 1
+oe_test_freeradius_freeradius-utils_rad_counter.sh: line 39: rad_counter: command not found
++ CHECK_RESULT 127 0 0 'rad_counter --reset execution failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='rad_counter --reset execution failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'rad_counter --reset execution failed.'
++ LOG_ERROR 'rad_counter --reset execution failed.'
++ message='rad_counter --reset execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'rad_counter --reset execution failed.'
+Fri Nov 11 22:05:04 2022 - ERROR - rad_counter --reset execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_rad_counter.sh line 40'
++ message='oe_test_freeradius_freeradius-utils_rad_counter.sh line 40'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_rad_counter.sh line 40'
+Fri Nov 11 22:05:05 2022 - ERROR - oe_test_freeradius_freeradius-utils_rad_counter.sh line 40
++ return 0
++ rad_counter --help
++ grep -i usage
+oe_test_freeradius_freeradius-utils_rad_counter.sh: line 41: rad_counter: command not found
++ CHECK_RESULT 1 0 0 'rad_counter --help execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='rad_counter --help execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'rad_counter --help execution failed.'
++ LOG_ERROR 'rad_counter --help execution failed.'
++ message='rad_counter --help execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'rad_counter --help execution failed.'
+Fri Nov 11 22:05:07 2022 - ERROR - rad_counter --help execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_rad_counter.sh line 42'
++ message='oe_test_freeradius_freeradius-utils_rad_counter.sh line 42'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_rad_counter.sh line 42'
+Fri Nov 11 22:05:08 2022 - ERROR - oe_test_freeradius_freeradius-utils_rad_counter.sh line 42
++ return 0
++ rad_counter --file /etc/raddb/db.daily --hours 1
+oe_test_freeradius_freeradius-utils_rad_counter.sh: line 43: rad_counter: command not found
++ CHECK_RESULT 127 0 0 'rad_counter --hours execution failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='rad_counter --hours execution failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'rad_counter --hours execution failed.'
++ LOG_ERROR 'rad_counter --hours execution failed.'
++ message='rad_counter --hours execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'rad_counter --hours execution failed.'
+Fri Nov 11 22:05:09 2022 - ERROR - rad_counter --hours execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_rad_counter.sh line 44'
++ message='oe_test_freeradius_freeradius-utils_rad_counter.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_rad_counter.sh line 44'
+Fri Nov 11 22:05:10 2022 - ERROR - oe_test_freeradius_freeradius-utils_rad_counter.sh line 44
++ return 0
++ rad_counter --file /etc/raddb/db.daily --minutes 1
+oe_test_freeradius_freeradius-utils_rad_counter.sh: line 45: rad_counter: command not found
++ CHECK_RESULT 127 0 0 'rad_counter --minutes execution failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='rad_counter --minutes execution failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'rad_counter --minutes execution failed.'
++ LOG_ERROR 'rad_counter --minutes execution failed.'
++ message='rad_counter --minutes execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'rad_counter --minutes execution failed.'
+Fri Nov 11 22:05:11 2022 - ERROR - rad_counter --minutes execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_rad_counter.sh line 46'
++ message='oe_test_freeradius_freeradius-utils_rad_counter.sh line 46'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_rad_counter.sh line 46'
+Fri Nov 11 22:05:12 2022 - ERROR - oe_test_freeradius_freeradius-utils_rad_counter.sh line 46
++ return 0
++ rad_counter --file /etc/raddb/db.daily --seconds 1
+oe_test_freeradius_freeradius-utils_rad_counter.sh: line 47: rad_counter: command not found
++ CHECK_RESULT 127 0 0 'rad_counter --seconds execution failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='rad_counter --seconds execution failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'rad_counter --seconds execution failed.'
++ LOG_ERROR 'rad_counter --seconds execution failed.'
++ message='rad_counter --seconds execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'rad_counter --seconds execution failed.'
+Fri Nov 11 22:05:13 2022 - ERROR - rad_counter --seconds execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_rad_counter.sh line 48'
++ message='oe_test_freeradius_freeradius-utils_rad_counter.sh line 48'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_rad_counter.sh line 48'
+Fri Nov 11 22:05:14 2022 - ERROR - oe_test_freeradius_freeradius-utils_rad_counter.sh line 48
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Fri Nov 11 22:05:15 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 7
++ test 7 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Fri Nov 11 22:05:16 2022 - ERROR - failed to execute the case.
++ exit 7
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Fri Nov 11 22:05:17 2022 - INFO  - Start to restore the test environment.
++ systemctl stop radiusd
+Failed to stop radiusd.service: Unit radiusd.service not loaded.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z Last metadata expiration check: 0:33:51 ago on Fri 11 Nov 2022 09:30:56 PM CST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides perl(Net::IP) needed by freeradius-utils-3.0.25-1.oe2203.riscv64
+(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages) ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile 'Last metadata expiration check: 0:33:51 ago on Fri 11 Nov 2022 09:30:56 PM CST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides perl(Net::IP) needed by freeradius-utils-3.0.25-1.oe2203.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages or '\''--nobest'\'' to use not only best candidate packages)'
+Traceback (most recent call last):
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:33:51 ago on Fri 11 Nov 2022 09:30:56 PM CST.\nError: \n Problem: conflicting requests\n  - nothing provides perl(Net::IP) needed by freeradius-utils-3.0.25-1.oe2203.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
++ '[' 0 -ne 0 ']'
++ rm -rf /etc/raddb
++ rm -rf /var/log/radius
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Fri Nov 11 22:05:23 2022 - INFO  - End to restore the test environment.

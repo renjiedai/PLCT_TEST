@@ -1,0 +1,317 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Fri Nov 11 21:47:29 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL 'freeradius freeradius-utils'
++ pkgs='freeradius freeradius-utils'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'freeradius freeradius-utils' --node 1 --tempfile ''
++ tmpfile2='Last metadata expiration check: 0:17:05 ago on Fri 11 Nov 2022 09:30:56 PM CST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides perl(Net::IP) needed by freeradius-utils-3.0.25-1.oe2203.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages or '\''--nobest'\'' to use not only best candidate packages)'
++ '[' -z '' ']'
++ tmpfile='Last metadata expiration check: 0:17:05 ago on Fri 11 Nov 2022 09:30:56 PM CST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides perl(Net::IP) needed by freeradius-utils-3.0.25-1.oe2203.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages or '\''--nobest'\'' to use not only best candidate packages)'
++ cp /var/log/wtmp /var/log/radius/radwtmp
+cp: cannot create regular file '/var/log/radius/radwtmp': No such file or directory
++ test -e /var/log/radius/radwtmp
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Fri Nov 11 21:48:04 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Fri Nov 11 21:48:05 2022 - INFO  - Start to run test.
++ radtimes=3
+++ radlast -3
+++ grep -c oot
+oe_test_freeradius_freeradius-utils_radlast.sh: line 35: radlast: command not found
++ a=0
++ '[' 3 -eq 0 ']'
++ CHECK_RESULT 1 0 0 'radlast -num execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radlast -num execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radlast -num execution failed.'
++ LOG_ERROR 'radlast -num execution failed.'
++ message='radlast -num execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radlast -num execution failed.'
+Fri Nov 11 21:48:06 2022 - ERROR - radlast -num execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_radlast.sh line 37'
++ message='oe_test_freeradius_freeradius-utils_radlast.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_radlast.sh line 37'
+Fri Nov 11 21:48:06 2022 - ERROR - oe_test_freeradius_freeradius-utils_radlast.sh line 37
++ return 0
++ radlast -a
++ awk '{print $NF}'
+oe_test_freeradius_freeradius-utils_radlast.sh: line 38: radlast: command not found
++ grep -E '([0-9]{1,3}.){3}[0-9]'
++ CHECK_RESULT 1 0 0 'radlast -a execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radlast -a execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radlast -a execution failed.'
++ LOG_ERROR 'radlast -a execution failed.'
++ message='radlast -a execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radlast -a execution failed.'
+Fri Nov 11 21:48:07 2022 - ERROR - radlast -a execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_radlast.sh line 39'
++ message='oe_test_freeradius_freeradius-utils_radlast.sh line 39'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_radlast.sh line 39'
+Fri Nov 11 21:48:08 2022 - ERROR - oe_test_freeradius_freeradius-utils_radlast.sh line 39
++ return 0
++ radlast -3 -d
+oe_test_freeradius_freeradius-utils_radlast.sh: line 40: radlast: command not found
++ CHECK_RESULT 127 0 0 'radlast -d execution failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='radlast -d execution failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'radlast -d execution failed.'
++ LOG_ERROR 'radlast -d execution failed.'
++ message='radlast -d execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radlast -d execution failed.'
+Fri Nov 11 21:48:09 2022 - ERROR - radlast -d execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_radlast.sh line 41'
++ message='oe_test_freeradius_freeradius-utils_radlast.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_radlast.sh line 41'
+Fri Nov 11 21:48:10 2022 - ERROR - oe_test_freeradius_freeradius-utils_radlast.sh line 41
++ return 0
++ radlast --file /var/log/radius/radwtmp
++ grep 'radwtmp begins'
+oe_test_freeradius_freeradius-utils_radlast.sh: line 42: radlast: command not found
++ CHECK_RESULT 1 0 0 'radlast --file execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radlast --file execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radlast --file execution failed.'
++ LOG_ERROR 'radlast --file execution failed.'
++ message='radlast --file execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radlast --file execution failed.'
+Fri Nov 11 21:48:11 2022 - ERROR - radlast --file execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_radlast.sh line 43'
++ message='oe_test_freeradius_freeradius-utils_radlast.sh line 43'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_radlast.sh line 43'
+Fri Nov 11 21:48:12 2022 - ERROR - oe_test_freeradius_freeradius-utils_radlast.sh line 43
++ return 0
++ radlast --fulltimes
++ grep -E '([0-9]{1,2}:){2}[0-9]{1,2}'
+oe_test_freeradius_freeradius-utils_radlast.sh: line 44: radlast: command not found
++ CHECK_RESULT 1 0 0 'radlast --fulltimes execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radlast --fulltimes execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radlast --fulltimes execution failed.'
++ LOG_ERROR 'radlast --fulltimes execution failed.'
++ message='radlast --fulltimes execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radlast --fulltimes execution failed.'
+Fri Nov 11 21:48:13 2022 - ERROR - radlast --fulltimes execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_radlast.sh line 45'
++ message='oe_test_freeradius_freeradius-utils_radlast.sh line 45'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_radlast.sh line 45'
+Fri Nov 11 21:48:14 2022 - ERROR - oe_test_freeradius_freeradius-utils_radlast.sh line 45
++ return 0
++ radlast -i
++ grep -E '([0-9]{1,3}.){3}[0-9]'
+oe_test_freeradius_freeradius-utils_radlast.sh: line 46: radlast: command not found
++ CHECK_RESULT 1 0 0 'radlast -i execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radlast -i execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radlast -i execution failed.'
++ LOG_ERROR 'radlast -i execution failed.'
++ message='radlast -i execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radlast -i execution failed.'
+Fri Nov 11 21:48:15 2022 - ERROR - radlast -i execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_radlast.sh line 47'
++ message='oe_test_freeradius_freeradius-utils_radlast.sh line 47'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_radlast.sh line 47'
+Fri Nov 11 21:48:16 2022 - ERROR - oe_test_freeradius_freeradius-utils_radlast.sh line 47
++ return 0
+++ radlast -n 3
+++ grep -c oot
+oe_test_freeradius_freeradius-utils_radlast.sh: line 48: radlast: command not found
++ a=0
++ '[' 3 -eq 0 ']'
++ CHECK_RESULT 1 0 0 'radlast -n execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radlast -n execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radlast -n execution failed.'
++ LOG_ERROR 'radlast -n execution failed.'
++ message='radlast -n execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radlast -n execution failed.'
+Fri Nov 11 21:48:17 2022 - ERROR - radlast -n execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_radlast.sh line 50'
++ message='oe_test_freeradius_freeradius-utils_radlast.sh line 50'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_radlast.sh line 50'
+Fri Nov 11 21:48:18 2022 - ERROR - oe_test_freeradius_freeradius-utils_radlast.sh line 50
++ return 0
++ radlast -R
++ awk '{print $3}'
+oe_test_freeradius_freeradius-utils_radlast.sh: line 51: radlast: command not found
++ grep -e Mon -e Tue -e Wed -e Sat -e Sun -e Thu -e Sat -e Fri
++ CHECK_RESULT 1 0 0 'radlast -R execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radlast -R execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radlast -R execution failed.'
++ LOG_ERROR 'radlast -R execution failed.'
++ message='radlast -R execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radlast -R execution failed.'
+Fri Nov 11 21:48:20 2022 - ERROR - radlast -R execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_radlast.sh line 52'
++ message='oe_test_freeradius_freeradius-utils_radlast.sh line 52'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_radlast.sh line 52'
+Fri Nov 11 21:48:20 2022 - ERROR - oe_test_freeradius_freeradius-utils_radlast.sh line 52
++ return 0
+++ radlast -s 00:00
+++ grep 'logged in'
+oe_test_freeradius_freeradius-utils_radlast.sh: line 53: radlast: command not found
+++ sed -n '$p'
+++ awk '{print $(NF-3)}'
++ a=
+++ radlast -s 00:00
+++ grep 'logged in'
+oe_test_freeradius_freeradius-utils_radlast.sh: line 54: radlast: command not found
+++ sed -n '$p'
+++ awk '{print $(NF-3)}'
+++ awk -F : '{print $1":"$2+1}'
++ b=
+++ radlast -s ''
+++ grep 'logged in'
+oe_test_freeradius_freeradius-utils_radlast.sh: line 55: radlast: command not found
+++ sed -n '$p'
+++ awk '{print $(NF-3)}'
++ '[' '' '!=' '' ']'
++ CHECK_RESULT 1 0 0 'radlast -s execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radlast -s execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radlast -s execution failed.'
++ LOG_ERROR 'radlast -s execution failed.'
++ message='radlast -s execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radlast -s execution failed.'
+Fri Nov 11 21:48:22 2022 - ERROR - radlast -s execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_radlast.sh line 56'
++ message='oe_test_freeradius_freeradius-utils_radlast.sh line 56'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_radlast.sh line 56'
+Fri Nov 11 21:48:23 2022 - ERROR - oe_test_freeradius_freeradius-utils_radlast.sh line 56
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Fri Nov 11 21:48:24 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 9
++ test 9 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Fri Nov 11 21:48:25 2022 - ERROR - failed to execute the case.
++ exit 9
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Fri Nov 11 21:48:26 2022 - INFO  - Start to restore the test environment.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z Last metadata expiration check: 0:17:05 ago on Fri 11 Nov 2022 09:30:56 PM CST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides perl(Net::IP) needed by freeradius-utils-3.0.25-1.oe2203.riscv64
+(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages) ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile 'Last metadata expiration check: 0:17:05 ago on Fri 11 Nov 2022 09:30:56 PM CST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides perl(Net::IP) needed by freeradius-utils-3.0.25-1.oe2203.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages or '\''--nobest'\'' to use not only best candidate packages)'
+Traceback (most recent call last):
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:17:05 ago on Fri 11 Nov 2022 09:30:56 PM CST.\nError: \n Problem: conflicting requests\n  - nothing provides perl(Net::IP) needed by freeradius-utils-3.0.25-1.oe2203.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
++ '[' 0 -ne 0 ']'
++ rm -rf /etc/raddb
++ rm -rf /var/log/radius
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Fri Nov 11 21:48:30 2022 - INFO  - End to restore the test environment.

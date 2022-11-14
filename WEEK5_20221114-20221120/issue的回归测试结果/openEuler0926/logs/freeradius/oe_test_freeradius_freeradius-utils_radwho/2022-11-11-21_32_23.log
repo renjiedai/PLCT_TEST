@@ -1,0 +1,321 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Fri Nov 11 21:32:28 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL 'freeradius freeradius-utils'
++ pkgs='freeradius freeradius-utils'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'freeradius freeradius-utils' --node 1 --tempfile ''
++ tmpfile2='Last metadata expiration check: 0:02:06 ago on Fri 11 Nov 2022 09:30:56 PM CST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides perl(Net::IP) needed by freeradius-utils-3.0.25-1.oe2203.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages or '\''--nobest'\'' to use not only best candidate packages)'
++ '[' -z '' ']'
++ tmpfile='Last metadata expiration check: 0:02:06 ago on Fri 11 Nov 2022 09:30:56 PM CST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides perl(Net::IP) needed by freeradius-utils-3.0.25-1.oe2203.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages or '\''--nobest'\'' to use not only best candidate packages)'
++ touch /var/log/radius/radutmp
+touch: cannot touch '/var/log/radius/radutmp': No such file or directory
++ test -e /var/log/radius/radutmp
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Fri Nov 11 21:33:05 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Fri Nov 11 21:33:06 2022 - INFO  - Start to run test.
++ radwho -i
++ grep Name
+oe_test_freeradius_freeradius-utils_radwho.sh: line 34: radwho: command not found
++ CHECK_RESULT 1 0 0 'radwho -i execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radwho -i execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radwho -i execution failed.'
++ LOG_ERROR 'radwho -i execution failed.'
++ message='radwho -i execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radwho -i execution failed.'
+Fri Nov 11 21:33:07 2022 - ERROR - radwho -i execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_radwho.sh line 35'
++ message='oe_test_freeradius_freeradius-utils_radwho.sh line 35'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_radwho.sh line 35'
+Fri Nov 11 21:33:08 2022 - ERROR - oe_test_freeradius_freeradius-utils_radwho.sh line 35
++ return 0
+++ radwho -n
+++ grep Name
+oe_test_freeradius_freeradius-utils_radwho.sh: line 36: radwho: command not found
++ '[' -z '' ']'
++ CHECK_RESULT 0 0 0 'radwho -n execution failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='radwho -n execution failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ radwho -N 127.0.0.1
++ grep Name
+oe_test_freeradius_freeradius-utils_radwho.sh: line 38: radwho: command not found
++ CHECK_RESULT 1 0 0 'radwho -N execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radwho -N execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radwho -N execution failed.'
++ LOG_ERROR 'radwho -N execution failed.'
++ message='radwho -N execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radwho -N execution failed.'
+Fri Nov 11 21:33:09 2022 - ERROR - radwho -N execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_radwho.sh line 39'
++ message='oe_test_freeradius_freeradius-utils_radwho.sh line 39'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_radwho.sh line 39'
+Fri Nov 11 21:33:10 2022 - ERROR - oe_test_freeradius_freeradius-utils_radwho.sh line 39
++ return 0
++ radwho -p
++ grep Name
+oe_test_freeradius_freeradius-utils_radwho.sh: line 40: radwho: command not found
++ CHECK_RESULT 1 0 0 'radwho -p execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radwho -p execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radwho -p execution failed.'
++ LOG_ERROR 'radwho -p execution failed.'
++ message='radwho -p execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radwho -p execution failed.'
+Fri Nov 11 21:33:12 2022 - ERROR - radwho -p execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_radwho.sh line 41'
++ message='oe_test_freeradius_freeradius-utils_radwho.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_radwho.sh line 41'
+Fri Nov 11 21:33:13 2022 - ERROR - oe_test_freeradius_freeradius-utils_radwho.sh line 41
++ return 0
++ radwho -P 0
++ grep Name
+oe_test_freeradius_freeradius-utils_radwho.sh: line 42: radwho: command not found
++ CHECK_RESULT 1 0 0 'radwho -P execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radwho -P execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radwho -P execution failed.'
++ LOG_ERROR 'radwho -P execution failed.'
++ message='radwho -P execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radwho -P execution failed.'
+Fri Nov 11 21:33:14 2022 - ERROR - radwho -P execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_radwho.sh line 43'
++ message='oe_test_freeradius_freeradius-utils_radwho.sh line 43'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_radwho.sh line 43'
+Fri Nov 11 21:33:15 2022 - ERROR - oe_test_freeradius_freeradius-utils_radwho.sh line 43
++ return 0
+++ radwho -r
+++ grep Login
+oe_test_freeradius_freeradius-utils_radwho.sh: line 44: radwho: command not found
++ '[' -z '' ']'
++ CHECK_RESULT 0 0 0 'radwho -r execution failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='radwho -r execution failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ radwho -RZN 127.0.0.1
++ grep NAS-IP-Address
+oe_test_freeradius_freeradius-utils_radwho.sh: line 46: radwho: command not found
++ CHECK_RESULT 1 0 0 'radwho -RZ execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radwho -RZ execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radwho -RZ execution failed.'
++ LOG_ERROR 'radwho -RZ execution failed.'
++ message='radwho -RZ execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radwho -RZ execution failed.'
+Fri Nov 11 21:33:16 2022 - ERROR - radwho -RZ execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_radwho.sh line 47'
++ message='oe_test_freeradius_freeradius-utils_radwho.sh line 47'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_radwho.sh line 47'
+Fri Nov 11 21:33:17 2022 - ERROR - oe_test_freeradius_freeradius-utils_radwho.sh line 47
++ return 0
++ radwho -s
++ grep Name
+oe_test_freeradius_freeradius-utils_radwho.sh: line 48: radwho: command not found
++ CHECK_RESULT 1 0 0 'radwho -s execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radwho -s execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radwho -s execution failed.'
++ LOG_ERROR 'radwho -s execution failed.'
++ message='radwho -s execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radwho -s execution failed.'
+Fri Nov 11 21:33:18 2022 - ERROR - radwho -s execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_radwho.sh line 49'
++ message='oe_test_freeradius_freeradius-utils_radwho.sh line 49'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_radwho.sh line 49'
+Fri Nov 11 21:33:19 2022 - ERROR - oe_test_freeradius_freeradius-utils_radwho.sh line 49
++ return 0
++ radwho -S
++ grep Name
+oe_test_freeradius_freeradius-utils_radwho.sh: line 50: radwho: command not found
++ CHECK_RESULT 1 0 0 'radwho -S execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radwho -S execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radwho -S execution failed.'
++ LOG_ERROR 'radwho -S execution failed.'
++ message='radwho -S execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radwho -S execution failed.'
+Fri Nov 11 21:33:20 2022 - ERROR - radwho -S execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_radwho.sh line 51'
++ message='oe_test_freeradius_freeradius-utils_radwho.sh line 51'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_radwho.sh line 51'
+Fri Nov 11 21:33:21 2022 - ERROR - oe_test_freeradius_freeradius-utils_radwho.sh line 51
++ return 0
++ radwho -u steve
++ grep Name
+oe_test_freeradius_freeradius-utils_radwho.sh: line 52: radwho: command not found
++ CHECK_RESULT 1 0 0 'radwho -u execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radwho -u execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radwho -u execution failed.'
++ LOG_ERROR 'radwho -u execution failed.'
++ message='radwho -u execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radwho -u execution failed.'
+Fri Nov 11 21:33:22 2022 - ERROR - radwho -u execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_radwho.sh line 53'
++ message='oe_test_freeradius_freeradius-utils_radwho.sh line 53'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_radwho.sh line 53'
+Fri Nov 11 21:33:24 2022 - ERROR - oe_test_freeradius_freeradius-utils_radwho.sh line 53
++ return 0
++ radwho -U steve
++ grep Name
+oe_test_freeradius_freeradius-utils_radwho.sh: line 54: radwho: command not found
++ CHECK_RESULT 1 0 0 'radwho -U execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radwho -U execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radwho -U execution failed.'
++ LOG_ERROR 'radwho -U execution failed.'
++ message='radwho -U execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radwho -U execution failed.'
+Fri Nov 11 21:33:25 2022 - ERROR - radwho -U execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_radwho.sh line 55'
++ message='oe_test_freeradius_freeradius-utils_radwho.sh line 55'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_radwho.sh line 55'
+Fri Nov 11 21:33:26 2022 - ERROR - oe_test_freeradius_freeradius-utils_radwho.sh line 55
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Fri Nov 11 21:33:27 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 9
++ test 9 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Fri Nov 11 21:33:28 2022 - ERROR - failed to execute the case.
++ exit 9
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Fri Nov 11 21:33:29 2022 - INFO  - Start to restore the test environment.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z Last metadata expiration check: 0:02:06 ago on Fri 11 Nov 2022 09:30:56 PM CST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides perl(Net::IP) needed by freeradius-utils-3.0.25-1.oe2203.riscv64
+(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages) ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile 'Last metadata expiration check: 0:02:06 ago on Fri 11 Nov 2022 09:30:56 PM CST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides perl(Net::IP) needed by freeradius-utils-3.0.25-1.oe2203.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages or '\''--nobest'\'' to use not only best candidate packages)'
+Traceback (most recent call last):
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:02:06 ago on Fri 11 Nov 2022 09:30:56 PM CST.\nError: \n Problem: conflicting requests\n  - nothing provides perl(Net::IP) needed by freeradius-utils-3.0.25-1.oe2203.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
++ '[' 0 -ne 0 ']'
++ rm -rf /etc/raddb
++ rm -rf /var/log/radius
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Fri Nov 11 21:33:34 2022 - INFO  - End to restore the test environment.
