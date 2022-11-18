@@ -22,4 +22,27 @@
 | freeradius         | 3            | 15             |
 | java-1.8.0-openjdk | 8            | 2              |
 
-[注]：详细的测试结果在对应文件夹的logs文件中
+#### ERROR部分节选
+
+该部分节选了输出的log中报ERROR的部分，其中freeradius未通过数目较多，不排除是测试用计算机的性能问题。
+
+| clamav测试套失败案例名           | 失败原因节选                                                 |
+| -------------------------------- | ------------------------------------------------------------ |
+| oe_test_clamav_clamonacc         | ERROR: Clamonacc: fanotify_init failed: Function not implemented |
+| oe_test_clamav_clamscan_1        | Sat Nov 12 02:45:38 2022 - ERROR - Timeout : Command 'bash -x |
+| oe_test_clamav_clamscan_2        | Sat Nov 12 01:56:33 2022 - ERROR - Timeout : Command 'bash -x oe_test_clamav_clamscan_2.sh' timed out after 1799.9976733180001 seconds |
+| oe_test_clamav_clamscan_3        | + LOG_ERROR 'Check clamscan --allmatch test_virus_collection --include=REGEX --include-dir=REGEX --max-htmlnotags 5 --max-scriptnormalize 5 failed.' |
+| oe_test_service_clamav-clamonacc | Sat Nov 12 02:03:40 2022 - ERROR - clamav-clamonacc.service restart failed |
+
+| easymock测试套失败案例名 | 失败原因节选                               |
+| ------------------------ | ------------------------------------------ |
+| oe_test_easymock_spring  | ERROR - oe_test_easymock_spring.sh line 32 |
+
+| java-1.8.0-openjdk测试套失败案例名  | 失败原因节选                                           |
+| ----------------------------------- | ------------------------------------------------------ |
+| oe_test_openjdk_appletviewer_clhsdb | ERROR - oe_test_openjdk_appletviewer_clhsdb.sh line 42 |
+| oe_test_openjdk_jdb_jdeps           | ERROR - oe_test_openjdk_jdb_jdeps.sh line 56           |
+
+#### 详细log的位置
+
+详细的logs在openEuler0922和openEuler0926文件夹内的logs的文件夹中
