@@ -1,0 +1,100 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Thu Nov 17 13:49:25 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL 'java-1.8.0-openjdk*'
++ pkgs='java-1.8.0-openjdk*'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'java-1.8.0-openjdk*' --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpmaftpkhn
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpmaftpkhn
++ cp ../common/Hello.java .
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Thu Nov 17 13:59:27 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Thu Nov 17 13:59:28 2022 - INFO  - Start to run test.
++ echo 容颜
++ native2ascii zh.txt u.txt
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 5bb9 u.txt
++ grep 989c
+\u5bb9\u989c
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ native2ascii -reverse u.txt
++ grep 容颜
+容颜
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ native2ascii -encoding ISO8859-1 zh.txt i.txt
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep e5 i.txt
++ grep ae
++ grep b9
+\u00e5\u00ae\u00b9\u00e9\u00a2\u009c
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ javac Hello.java
+Thu Nov 17 14:19:22 2022 - ERROR - Timeout : Command 'bash -x oe_test_openjdk_native2ascii_pack200.sh' timed out after 1799.9984774999994 seconds

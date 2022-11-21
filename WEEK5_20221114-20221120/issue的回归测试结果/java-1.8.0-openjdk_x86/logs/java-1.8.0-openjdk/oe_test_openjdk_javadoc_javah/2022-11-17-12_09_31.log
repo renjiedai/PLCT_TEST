@@ -1,0 +1,384 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Thu Nov 17 12:09:37 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL 'java-1.8.0-openjdk*'
++ pkgs='java-1.8.0-openjdk*'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'java-1.8.0-openjdk*' --node 1 --tempfile ''
+Thu Nov 17 12:09:52 2022 - INFO  - pkgs:(java-1.8.0-openjdk*) is already installed
++ tmpfile2=
++ '[' -z '' ']'
++ tmpfile=
++ cp ../common/Hello1.java ../common/Hello.java .
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Thu Nov 17 12:09:54 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Thu Nov 17 12:09:55 2022 - INFO  - Start to run test.
++ javadoc -help
++ grep -i usage
+Usage: javadoc [options] [packagenames] [sourcefiles] [@files]
+  -use                             Create class and package usage pages
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ javadoc -public Hello1.java -d public
+Loading source file Hello1.java...
+Constructing Javadoc information...
+Creating destination directory: "public/"
+Standard Doclet version 1.8.0_342
+Building tree for all the packages and classes...
+Generating public/hello/Hello1.html...
+Generating public/hello/package-frame.html...
+Generating public/hello/package-summary.html...
+Generating public/hello/package-tree.html...
+Generating public/constant-values.html...
+Building index for all the packages and classes...
+Generating public/overview-tree.html...
+Generating public/index-all.html...
+Generating public/deprecated-list.html...
+Building index for all classes...
+Generating public/allclasses-frame.html...
+Generating public/allclasses-noframe.html...
+Generating public/index.html...
+Generating public/help-doc.html...
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ find public
+public
+public/index-all.html
+public/help-doc.html
+public/overview-tree.html
+public/allclasses-noframe.html
+public/constant-values.html
+public/allclasses-frame.html
+public/script.js
+public/package-list
+public/index.html
+public/stylesheet.css
+public/deprecated-list.html
+public/hello
+public/hello/package-frame.html
+public/hello/package-tree.html
+public/hello/Hello1.html
+public/hello/package-summary.html
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ javadoc -protected Hello1.java -d protected
+Loading source file Hello1.java...
+Constructing Javadoc information...
+Creating destination directory: "protected/"
+Standard Doclet version 1.8.0_342
+Building tree for all the packages and classes...
+Generating protected/hello/Hello1.html...
+Generating protected/hello/package-frame.html...
+Generating protected/hello/package-summary.html...
+Generating protected/hello/package-tree.html...
+Generating protected/constant-values.html...
+Building index for all the packages and classes...
+Generating protected/overview-tree.html...
+Generating protected/index-all.html...
+Generating protected/deprecated-list.html...
+Building index for all classes...
+Generating protected/allclasses-frame.html...
+Generating protected/allclasses-noframe.html...
+Generating protected/index.html...
+Generating protected/help-doc.html...
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ find protected
+protected
+protected/index-all.html
+protected/help-doc.html
+protected/overview-tree.html
+protected/allclasses-noframe.html
+protected/constant-values.html
+protected/allclasses-frame.html
+protected/script.js
+protected/package-list
+protected/index.html
+protected/stylesheet.css
+protected/deprecated-list.html
+protected/hello
+protected/hello/package-frame.html
+protected/hello/package-tree.html
+protected/hello/Hello1.html
+protected/hello/package-summary.html
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ javadoc -private Hello1.java -d private
+Loading source file Hello1.java...
+Constructing Javadoc information...
+Creating destination directory: "private/"
+Standard Doclet version 1.8.0_342
+Building tree for all the packages and classes...
+Generating private/hello/Hello1.html...
+Generating private/hello/package-frame.html...
+Generating private/hello/package-summary.html...
+Generating private/hello/package-tree.html...
+Generating private/constant-values.html...
+Building index for all the packages and classes...
+Generating private/overview-tree.html...
+Generating private/index-all.html...
+Generating private/deprecated-list.html...
+Building index for all classes...
+Generating private/allclasses-frame.html...
+Generating private/allclasses-noframe.html...
+Generating private/index.html...
+Generating private/help-doc.html...
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ find private
+private
+private/index-all.html
+private/help-doc.html
+private/overview-tree.html
+private/allclasses-noframe.html
+private/constant-values.html
+private/allclasses-frame.html
+private/script.js
+private/package-list
+private/index.html
+private/stylesheet.css
+private/deprecated-list.html
+private/hello
+private/hello/package-frame.html
+private/hello/package-tree.html
+private/hello/Hello1.html
+private/hello/package-summary.html
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ javadoc -package Hello1.java -d package
+Loading source file Hello1.java...
+Constructing Javadoc information...
+Creating destination directory: "package/"
+Standard Doclet version 1.8.0_342
+Building tree for all the packages and classes...
+Generating package/hello/Hello1.html...
+java.lang.IllegalArgumentException: InputStream cannot be null
+	at javax.xml.parsers.SAXParser.parse(SAXParser.java:191)
+	at com.sun.tools.doclets.internal.toolkit.builders.LayoutParser.parseXML(LayoutParser.java:92)
+	at com.sun.tools.doclets.internal.toolkit.builders.ClassBuilder.build(ClassBuilder.java:120)
+	at com.sun.tools.doclets.formats.html.HtmlDoclet.generateClassFiles(HtmlDoclet.java:189)
+	at com.sun.tools.doclets.internal.toolkit.AbstractDoclet.generateClassFiles(AbstractDoclet.java:207)
+	at com.sun.tools.doclets.internal.toolkit.AbstractDoclet.generateClassFiles(AbstractDoclet.java:191)
+	at com.sun.tools.doclets.internal.toolkit.AbstractDoclet.startGeneration(AbstractDoclet.java:139)
+	at com.sun.tools.doclets.internal.toolkit.AbstractDoclet.start(AbstractDoclet.java:82)
+	at com.sun.tools.doclets.formats.html.HtmlDoclet.start(HtmlDoclet.java:80)
+	at com.sun.tools.doclets.standard.Standard.start(Standard.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.tools.javadoc.DocletInvoker.invoke(DocletInvoker.java:310)
+	at com.sun.tools.javadoc.DocletInvoker.start(DocletInvoker.java:189)
+	at com.sun.tools.javadoc.Start.parseAndExecute(Start.java:366)
+	at com.sun.tools.javadoc.Start.begin(Start.java:219)
+	at com.sun.tools.javadoc.Start.begin(Start.java:205)
+	at com.sun.tools.javadoc.Main.execute(Main.java:64)
+	at com.sun.tools.javadoc.Main.main(Main.java:54)
+javadoc: error - InputStream cannot be null
+1 error
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openjdk_javadoc_javah.sh line 45'
++ message='oe_test_openjdk_javadoc_javah.sh line 45'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openjdk_javadoc_javah.sh line 45'
+Thu Nov 17 12:11:08 2022 - ERROR - oe_test_openjdk_javadoc_javah.sh line 45
++ return 0
++ find package
+package
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ javah -h
++ grep -i Usage
+oe_test_openjdk_javadoc_javah.sh: line 49: javah: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openjdk_javadoc_javah.sh line 50'
++ message='oe_test_openjdk_javadoc_javah.sh line 50'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openjdk_javadoc_javah.sh line 50'
+Thu Nov 17 12:11:09 2022 - ERROR - oe_test_openjdk_javadoc_javah.sh line 50
++ return 0
++ javah -version
+oe_test_openjdk_javadoc_javah.sh: line 51: javah: command not found
++ grep 'javah version'
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openjdk_javadoc_javah.sh line 52'
++ message='oe_test_openjdk_javadoc_javah.sh line 52'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openjdk_javadoc_javah.sh line 52'
+Thu Nov 17 12:11:10 2022 - ERROR - oe_test_openjdk_javadoc_javah.sh line 52
++ return 0
++ javah -v Hello
+oe_test_openjdk_javadoc_javah.sh: line 53: javah: command not found
++ grep Hello.h
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openjdk_javadoc_javah.sh line 54'
++ message='oe_test_openjdk_javadoc_javah.sh line 54'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openjdk_javadoc_javah.sh line 54'
+Thu Nov 17 12:11:12 2022 - ERROR - oe_test_openjdk_javadoc_javah.sh line 54
++ return 0
++ find Hello.h
+find: ‘Hello.h’: No such file or directory
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openjdk_javadoc_javah.sh line 56'
++ message='oe_test_openjdk_javadoc_javah.sh line 56'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openjdk_javadoc_javah.sh line 56'
+Thu Nov 17 12:11:13 2022 - ERROR - oe_test_openjdk_javadoc_javah.sh line 56
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Thu Nov 17 12:11:14 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 5
++ test 5 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Thu Nov 17 12:11:15 2022 - ERROR - failed to execute the case.
++ exit 5
++ post_test
++ LOG_INFO 'Need'\''t to restore the tet environment.'
++ message='Need'\''t to restore the tet environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Need'\''t to restore the tet environment.'
+Thu Nov 17 12:11:16 2022 - INFO  - Need't to restore the tet environment.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z '' ]]
++ [[ -z '' ]]
++ LOG_WARN 'no thing to do.'
++ message='no thing to do.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level warn --message 'no thing to do.'
+Thu Nov 17 12:11:18 2022 - WARN  - no thing to do.
++ return 0
++ rm -rf Hello1.java Hello.java public protected private package
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Thu Nov 17 12:11:19 2022 - INFO  - End to restore the test environment.

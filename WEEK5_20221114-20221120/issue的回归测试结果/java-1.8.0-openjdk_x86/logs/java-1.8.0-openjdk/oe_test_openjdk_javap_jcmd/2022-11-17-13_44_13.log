@@ -1,0 +1,682 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Thu Nov 17 13:44:19 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL 'java-1.8.0-openjdk*'
++ pkgs='java-1.8.0-openjdk*'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'java-1.8.0-openjdk*' --node 1 --tempfile ''
++ tmpfile2='Last metadata expiration check: 2:08:26 ago on Thu 17 Nov 2022 11:36:40 AM UTC.
+Dependencies resolved.
+================================================================================================
+ Package                                      Arch    Version                  Repository   Size
+================================================================================================
+Installing:
+ java-1.8.0-openjdk                           x86_64  1:1.8.0.342.b07-0.oe2203 update      368 k
+ java-1.8.0-openjdk-accessibility             x86_64  1:1.8.0.342.b07-0.oe2203 update       13 k
+ java-1.8.0-openjdk-accessibility-slowdebug   x86_64  1:1.8.0.342.b07-0.oe2203 update       13 k
+ java-1.8.0-openjdk-debuginfo                 x86_64  1:1.8.0.342.b07-0.oe2203 update      128 M
+ java-1.8.0-openjdk-debugsource               x86_64  1:1.8.0.342.b07-0.oe2203 update      7.9 M
+ java-1.8.0-openjdk-demo                      x86_64  1:1.8.0.342.b07-0.oe2203 update      1.9 M
+ java-1.8.0-openjdk-demo-slowdebug            x86_64  1:1.8.0.342.b07-0.oe2203 update      2.0 M
+ java-1.8.0-openjdk-devel                     x86_64  1:1.8.0.342.b07-0.oe2203 update      9.7 M
+ java-1.8.0-openjdk-devel-slowdebug           x86_64  1:1.8.0.342.b07-0.oe2203 update      9.7 M
+ java-1.8.0-openjdk-headless                  x86_64  1:1.8.0.342.b07-0.oe2203 update       33 M
+ java-1.8.0-openjdk-headless-slowdebug        x86_64  1:1.8.0.342.b07-0.oe2203 update       36 M
+ java-1.8.0-openjdk-javadoc                   noarch  1:1.8.0.342.b07-0.oe2203 update       15 M
+ java-1.8.0-openjdk-javadoc-zip               noarch  1:1.8.0.342.b07-0.oe2203 update       42 M
+ java-1.8.0-openjdk-openjfx                   x86_64  1:1.8.0.342.b07-0.oe2203 update       13 k
+ java-1.8.0-openjdk-openjfx-devel             x86_64  1:1.8.0.342.b07-0.oe2203 update       12 k
+ java-1.8.0-openjdk-openjfx-devel-slowdebug   x86_64  1:1.8.0.342.b07-0.oe2203 update       12 k
+ java-1.8.0-openjdk-openjfx-slowdebug         x86_64  1:1.8.0.342.b07-0.oe2203 update       14 k
+ java-1.8.0-openjdk-slowdebug                 x86_64  1:1.8.0.342.b07-0.oe2203 update      350 k
+ java-1.8.0-openjdk-src                       x86_64  1:1.8.0.342.b07-0.oe2203 update       45 M
+ java-1.8.0-openjdk-src-slowdebug             x86_64  1:1.8.0.342.b07-0.oe2203 update       45 M
+Installing dependencies:
+ java-atk-wrapper                             x86_64  0.33.2-9.oe2203          everything   80 k
+ libglvnd-glx                                 x86_64  1:1.3.4-2.oe2203         OS          112 k
+ mesa-libGL                                   x86_64  21.3.1-1.oe2203          OS          139 k
+ openjfx8                                     x86_64  8.0.202-27.b07.oe2203    everything  8.8 M
+ openjfx8-devel                               x86_64  8.0.202-27.b07.oe2203    everything  1.0 M
+ xorg-x11-fonts-others                        noarch  7.5-24.oe2203            OS          7.4 M
+ xorg-x11-utils                               x86_64  7.5-31.oe2203            OS          100 k
+
+Transaction Summary
+================================================================================================
+Install  27 Packages
+
+Total download size: 394 M
+Installed size: 1.3 G
+Downloading Packages:
+(1/27): mesa-libGL-21.3.1-1.oe2203.x86_64.rpm   356 kB/s | 139 kB     00:00    
+(2/27): libglvnd-glx-1.3.4-2.oe2203.x86_64.rpm  252 kB/s | 112 kB     00:00    
+(3/27): xorg-x11-utils-7.5-31.oe2203.x86_64.rpm 684 kB/s | 100 kB     00:00    
+(4/27): java-atk-wrapper-0.33.2-9.oe2203.x86_64 517 kB/s |  80 kB     00:00    
+(5/27): openjfx8-devel-8.0.202-27.b07.oe2203.x8 1.5 MB/s | 1.0 MB     00:00    
+(6/27): java-1.8.0-openjdk-1.8.0.342.b07-0.oe22 453 kB/s | 368 kB     00:00    
+(7/27): java-1.8.0-openjdk-accessibility-1.8.0. 226 kB/s |  13 kB     00:00    
+(8/27): java-1.8.0-openjdk-accessibility-slowde 218 kB/s |  13 kB     00:00    
+(9/27): xorg-x11-fonts-others-7.5-24.oe2203.noa 753 kB/s | 7.4 MB     00:10    
+(10/27): openjfx8-8.0.202-27.b07.oe2203.x86_64. 829 kB/s | 8.8 MB     00:10    
+(11/27): java-1.8.0-openjdk-demo-1.8.0.342.b07- 696 kB/s | 1.9 MB     00:02    
+(12/27): java-1.8.0-openjdk-demo-slowdebug-1.8. 845 kB/s | 2.0 MB     00:02    
+(13/27): java-1.8.0-openjdk-debugsource-1.8.0.3 606 kB/s | 7.9 MB     00:13    
+(14/27): java-1.8.0-openjdk-devel-1.8.0.342.b07 942 kB/s | 9.7 MB     00:10    
+(15/27): java-1.8.0-openjdk-devel-slowdebug-1.8 568 kB/s | 9.7 MB     00:17    
+(16/27): java-1.8.0-openjdk-headless-1.8.0.342. 926 kB/s |  33 MB     00:36    
+(17/27): java-1.8.0-openjdk-javadoc-1.8.0.342.b 1.0 MB/s |  15 MB     00:15    
+(18/27): java-1.8.0-openjdk-headless-slowdebug- 619 kB/s |  36 MB     00:58    
+(19/27): java-1.8.0-openjdk-openjfx-1.8.0.342.b 131 kB/s |  13 kB     00:00    
+(20/27): java-1.8.0-openjdk-openjfx-devel-1.8.0 179 kB/s |  12 kB     00:00    
+(21/27): java-1.8.0-openjdk-openjfx-devel-slowd 123 kB/s |  12 kB     00:00    
+(22/27): java-1.8.0-openjdk-openjfx-slowdebug-1 228 kB/s |  14 kB     00:00    
+(23/27): java-1.8.0-openjdk-slowdebug-1.8.0.342 512 kB/s | 350 kB     00:00    
+(24/27): java-1.8.0-openjdk-javadoc-zip-1.8.0.3 932 kB/s |  42 MB     00:45    
+(25/27): java-1.8.0-openjdk-src-slowdebug-1.8.0 1.0 MB/s |  45 MB     00:43    
+(26/27): java-1.8.0-openjdk-debuginfo-1.8.0.342 718 kB/s | 128 MB     03:02    
+(27/27): java-1.8.0-openjdk-src-1.8.0.342.b07-0 544 kB/s |  45 MB     01:25    
+--------------------------------------------------------------------------------
+Total                                           2.1 MB/s | 394 MB     03:06     
+Running transaction check
+Error: transaction check vs depsolve:
+libGLdispatch.so.0()(64bit) is needed by libglvnd-glx-1:1.3.4-2.oe2203.x86_64
+libglvnd(x86-64) = 1:1.3.4-2.oe2203 is needed by libglvnd-glx-1:1.3.4-2.oe2203.x86_64
+libXxf86vm.so.1()(64bit) is needed by mesa-libGL-21.3.1-1.oe2203.x86_64
+libdrm.so.2()(64bit) is needed by mesa-libGL-21.3.1-1.oe2203.x86_64
+libglapi.so.0()(64bit) is needed by mesa-libGL-21.3.1-1.oe2203.x86_64
+libxshmfence.so.1()(64bit) is needed by mesa-libGL-21.3.1-1.oe2203.x86_64
+mesa-libglapi(x86-64) = 21.3.1-1.oe2203 is needed by mesa-libGL-21.3.1-1.oe2203.x86_64
+mkfontdir is needed by xorg-x11-fonts-others-7.5-24.oe2203.noarch
+mkfontscale is needed by xorg-x11-fonts-others-7.5-24.oe2203.noarch
+libXv.so.1()(64bit) is needed by xorg-x11-utils-7.5-31.oe2203.x86_64
+libXxf86dga.so.1()(64bit) is needed by xorg-x11-utils-7.5-31.oe2203.x86_64
+libXxf86vm.so.1()(64bit) is needed by xorg-x11-utils-7.5-31.oe2203.x86_64
+libdmx.so.1()(64bit) is needed by xorg-x11-utils-7.5-31.oe2203.x86_64
+libXxf86vm.so.1()(64bit) is needed by openjfx8-8.0.202-27.b07.oe2203.x86_64
+libasound.so.2()(64bit) is needed by java-1.8.0-openjdk-1:1.8.0.342.b07-0.oe2203.x86_64
+libasound.so.2(ALSA_0.9)(64bit) is needed by java-1.8.0-openjdk-1:1.8.0.342.b07-0.oe2203.x86_64
+libasound.so.2(ALSA_0.9.0rc4)(64bit) is needed by java-1.8.0-openjdk-1:1.8.0.342.b07-0.oe2203.x86_64
+copy-jdk-configs >= 3.9 is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64
+javapackages-filesystem is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64
+lksctp-tools(x86-64) is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64
+nss(x86-64) >= 3.54 is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64
+nss-softokn(x86-64) >= 3.54 is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64
+tzdata-java >= 2020a is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64
+copy-jdk-configs >= 3.9 is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+javapackages-filesystem is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+lksctp-tools(x86-64) is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+nss(x86-64) >= 3.54 is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+nss-softokn(x86-64) >= 3.54 is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+tzdata-java >= 2020a is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+javapackages-filesystem is needed by java-1.8.0-openjdk-javadoc-1:1.8.0.342.b07-0.oe2203.noarch
+javapackages-filesystem is needed by java-1.8.0-openjdk-javadoc-zip-1:1.8.0.342.b07-0.oe2203.noarch
+libasound.so.2()(64bit) is needed by java-1.8.0-openjdk-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+libasound.so.2(ALSA_0.9)(64bit) is needed by java-1.8.0-openjdk-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+libasound.so.2(ALSA_0.9.0rc4)(64bit) is needed by java-1.8.0-openjdk-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+To diagnose the problem, try running: '\''rpm -Va --nofiles --nodigest'\''.
+You probably have corrupted RPMDB, running '\''rpm --rebuilddb'\'' might fix the issue.
+The downloaded packages were saved in cache until the next successful transaction.
+You can remove cached packages by executing '\''dnf clean packages'\''.'
++ '[' -z '' ']'
++ tmpfile='Last metadata expiration check: 2:08:26 ago on Thu 17 Nov 2022 11:36:40 AM UTC.
+Dependencies resolved.
+================================================================================================
+ Package                                      Arch    Version                  Repository   Size
+================================================================================================
+Installing:
+ java-1.8.0-openjdk                           x86_64  1:1.8.0.342.b07-0.oe2203 update      368 k
+ java-1.8.0-openjdk-accessibility             x86_64  1:1.8.0.342.b07-0.oe2203 update       13 k
+ java-1.8.0-openjdk-accessibility-slowdebug   x86_64  1:1.8.0.342.b07-0.oe2203 update       13 k
+ java-1.8.0-openjdk-debuginfo                 x86_64  1:1.8.0.342.b07-0.oe2203 update      128 M
+ java-1.8.0-openjdk-debugsource               x86_64  1:1.8.0.342.b07-0.oe2203 update      7.9 M
+ java-1.8.0-openjdk-demo                      x86_64  1:1.8.0.342.b07-0.oe2203 update      1.9 M
+ java-1.8.0-openjdk-demo-slowdebug            x86_64  1:1.8.0.342.b07-0.oe2203 update      2.0 M
+ java-1.8.0-openjdk-devel                     x86_64  1:1.8.0.342.b07-0.oe2203 update      9.7 M
+ java-1.8.0-openjdk-devel-slowdebug           x86_64  1:1.8.0.342.b07-0.oe2203 update      9.7 M
+ java-1.8.0-openjdk-headless                  x86_64  1:1.8.0.342.b07-0.oe2203 update       33 M
+ java-1.8.0-openjdk-headless-slowdebug        x86_64  1:1.8.0.342.b07-0.oe2203 update       36 M
+ java-1.8.0-openjdk-javadoc                   noarch  1:1.8.0.342.b07-0.oe2203 update       15 M
+ java-1.8.0-openjdk-javadoc-zip               noarch  1:1.8.0.342.b07-0.oe2203 update       42 M
+ java-1.8.0-openjdk-openjfx                   x86_64  1:1.8.0.342.b07-0.oe2203 update       13 k
+ java-1.8.0-openjdk-openjfx-devel             x86_64  1:1.8.0.342.b07-0.oe2203 update       12 k
+ java-1.8.0-openjdk-openjfx-devel-slowdebug   x86_64  1:1.8.0.342.b07-0.oe2203 update       12 k
+ java-1.8.0-openjdk-openjfx-slowdebug         x86_64  1:1.8.0.342.b07-0.oe2203 update       14 k
+ java-1.8.0-openjdk-slowdebug                 x86_64  1:1.8.0.342.b07-0.oe2203 update      350 k
+ java-1.8.0-openjdk-src                       x86_64  1:1.8.0.342.b07-0.oe2203 update       45 M
+ java-1.8.0-openjdk-src-slowdebug             x86_64  1:1.8.0.342.b07-0.oe2203 update       45 M
+Installing dependencies:
+ java-atk-wrapper                             x86_64  0.33.2-9.oe2203          everything   80 k
+ libglvnd-glx                                 x86_64  1:1.3.4-2.oe2203         OS          112 k
+ mesa-libGL                                   x86_64  21.3.1-1.oe2203          OS          139 k
+ openjfx8                                     x86_64  8.0.202-27.b07.oe2203    everything  8.8 M
+ openjfx8-devel                               x86_64  8.0.202-27.b07.oe2203    everything  1.0 M
+ xorg-x11-fonts-others                        noarch  7.5-24.oe2203            OS          7.4 M
+ xorg-x11-utils                               x86_64  7.5-31.oe2203            OS          100 k
+
+Transaction Summary
+================================================================================================
+Install  27 Packages
+
+Total download size: 394 M
+Installed size: 1.3 G
+Downloading Packages:
+(1/27): mesa-libGL-21.3.1-1.oe2203.x86_64.rpm   356 kB/s | 139 kB     00:00    
+(2/27): libglvnd-glx-1.3.4-2.oe2203.x86_64.rpm  252 kB/s | 112 kB     00:00    
+(3/27): xorg-x11-utils-7.5-31.oe2203.x86_64.rpm 684 kB/s | 100 kB     00:00    
+(4/27): java-atk-wrapper-0.33.2-9.oe2203.x86_64 517 kB/s |  80 kB     00:00    
+(5/27): openjfx8-devel-8.0.202-27.b07.oe2203.x8 1.5 MB/s | 1.0 MB     00:00    
+(6/27): java-1.8.0-openjdk-1.8.0.342.b07-0.oe22 453 kB/s | 368 kB     00:00    
+(7/27): java-1.8.0-openjdk-accessibility-1.8.0. 226 kB/s |  13 kB     00:00    
+(8/27): java-1.8.0-openjdk-accessibility-slowde 218 kB/s |  13 kB     00:00    
+(9/27): xorg-x11-fonts-others-7.5-24.oe2203.noa 753 kB/s | 7.4 MB     00:10    
+(10/27): openjfx8-8.0.202-27.b07.oe2203.x86_64. 829 kB/s | 8.8 MB     00:10    
+(11/27): java-1.8.0-openjdk-demo-1.8.0.342.b07- 696 kB/s | 1.9 MB     00:02    
+(12/27): java-1.8.0-openjdk-demo-slowdebug-1.8. 845 kB/s | 2.0 MB     00:02    
+(13/27): java-1.8.0-openjdk-debugsource-1.8.0.3 606 kB/s | 7.9 MB     00:13    
+(14/27): java-1.8.0-openjdk-devel-1.8.0.342.b07 942 kB/s | 9.7 MB     00:10    
+(15/27): java-1.8.0-openjdk-devel-slowdebug-1.8 568 kB/s | 9.7 MB     00:17    
+(16/27): java-1.8.0-openjdk-headless-1.8.0.342. 926 kB/s |  33 MB     00:36    
+(17/27): java-1.8.0-openjdk-javadoc-1.8.0.342.b 1.0 MB/s |  15 MB     00:15    
+(18/27): java-1.8.0-openjdk-headless-slowdebug- 619 kB/s |  36 MB     00:58    
+(19/27): java-1.8.0-openjdk-openjfx-1.8.0.342.b 131 kB/s |  13 kB     00:00    
+(20/27): java-1.8.0-openjdk-openjfx-devel-1.8.0 179 kB/s |  12 kB     00:00    
+(21/27): java-1.8.0-openjdk-openjfx-devel-slowd 123 kB/s |  12 kB     00:00    
+(22/27): java-1.8.0-openjdk-openjfx-slowdebug-1 228 kB/s |  14 kB     00:00    
+(23/27): java-1.8.0-openjdk-slowdebug-1.8.0.342 512 kB/s | 350 kB     00:00    
+(24/27): java-1.8.0-openjdk-javadoc-zip-1.8.0.3 932 kB/s |  42 MB     00:45    
+(25/27): java-1.8.0-openjdk-src-slowdebug-1.8.0 1.0 MB/s |  45 MB     00:43    
+(26/27): java-1.8.0-openjdk-debuginfo-1.8.0.342 718 kB/s | 128 MB     03:02    
+(27/27): java-1.8.0-openjdk-src-1.8.0.342.b07-0 544 kB/s |  45 MB     01:25    
+--------------------------------------------------------------------------------
+Total                                           2.1 MB/s | 394 MB     03:06     
+Running transaction check
+Error: transaction check vs depsolve:
+libGLdispatch.so.0()(64bit) is needed by libglvnd-glx-1:1.3.4-2.oe2203.x86_64
+libglvnd(x86-64) = 1:1.3.4-2.oe2203 is needed by libglvnd-glx-1:1.3.4-2.oe2203.x86_64
+libXxf86vm.so.1()(64bit) is needed by mesa-libGL-21.3.1-1.oe2203.x86_64
+libdrm.so.2()(64bit) is needed by mesa-libGL-21.3.1-1.oe2203.x86_64
+libglapi.so.0()(64bit) is needed by mesa-libGL-21.3.1-1.oe2203.x86_64
+libxshmfence.so.1()(64bit) is needed by mesa-libGL-21.3.1-1.oe2203.x86_64
+mesa-libglapi(x86-64) = 21.3.1-1.oe2203 is needed by mesa-libGL-21.3.1-1.oe2203.x86_64
+mkfontdir is needed by xorg-x11-fonts-others-7.5-24.oe2203.noarch
+mkfontscale is needed by xorg-x11-fonts-others-7.5-24.oe2203.noarch
+libXv.so.1()(64bit) is needed by xorg-x11-utils-7.5-31.oe2203.x86_64
+libXxf86dga.so.1()(64bit) is needed by xorg-x11-utils-7.5-31.oe2203.x86_64
+libXxf86vm.so.1()(64bit) is needed by xorg-x11-utils-7.5-31.oe2203.x86_64
+libdmx.so.1()(64bit) is needed by xorg-x11-utils-7.5-31.oe2203.x86_64
+libXxf86vm.so.1()(64bit) is needed by openjfx8-8.0.202-27.b07.oe2203.x86_64
+libasound.so.2()(64bit) is needed by java-1.8.0-openjdk-1:1.8.0.342.b07-0.oe2203.x86_64
+libasound.so.2(ALSA_0.9)(64bit) is needed by java-1.8.0-openjdk-1:1.8.0.342.b07-0.oe2203.x86_64
+libasound.so.2(ALSA_0.9.0rc4)(64bit) is needed by java-1.8.0-openjdk-1:1.8.0.342.b07-0.oe2203.x86_64
+copy-jdk-configs >= 3.9 is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64
+javapackages-filesystem is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64
+lksctp-tools(x86-64) is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64
+nss(x86-64) >= 3.54 is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64
+nss-softokn(x86-64) >= 3.54 is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64
+tzdata-java >= 2020a is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64
+copy-jdk-configs >= 3.9 is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+javapackages-filesystem is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+lksctp-tools(x86-64) is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+nss(x86-64) >= 3.54 is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+nss-softokn(x86-64) >= 3.54 is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+tzdata-java >= 2020a is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+javapackages-filesystem is needed by java-1.8.0-openjdk-javadoc-1:1.8.0.342.b07-0.oe2203.noarch
+javapackages-filesystem is needed by java-1.8.0-openjdk-javadoc-zip-1:1.8.0.342.b07-0.oe2203.noarch
+libasound.so.2()(64bit) is needed by java-1.8.0-openjdk-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+libasound.so.2(ALSA_0.9)(64bit) is needed by java-1.8.0-openjdk-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+libasound.so.2(ALSA_0.9.0rc4)(64bit) is needed by java-1.8.0-openjdk-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+To diagnose the problem, try running: '\''rpm -Va --nofiles --nodigest'\''.
+You probably have corrupted RPMDB, running '\''rpm --rebuilddb'\'' might fix the issue.
+The downloaded packages were saved in cache until the next successful transaction.
+You can remove cached packages by executing '\''dnf clean packages'\''.'
++ cp ../common/Hello.java .
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Thu Nov 17 13:48:55 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Thu Nov 17 13:48:56 2022 - INFO  - Start to run test.
++ javac Hello.java
+oe_test_openjdk_javap_jcmd.sh: line 30: javac: command not found
++ javap -help
++ grep Usage
+oe_test_openjdk_javap_jcmd.sh: line 31: javap: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openjdk_javap_jcmd.sh line 32'
++ message='oe_test_openjdk_javap_jcmd.sh line 32'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openjdk_javap_jcmd.sh line 32'
+Thu Nov 17 13:48:57 2022 - ERROR - oe_test_openjdk_javap_jcmd.sh line 32
++ return 0
++ javap -version
+oe_test_openjdk_javap_jcmd.sh: line 33: javap: command not found
++ grep '[0-9]'
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openjdk_javap_jcmd.sh line 34'
++ message='oe_test_openjdk_javap_jcmd.sh line 34'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openjdk_javap_jcmd.sh line 34'
+Thu Nov 17 13:48:58 2022 - ERROR - oe_test_openjdk_javap_jcmd.sh line 34
++ return 0
++ javap -public Hello
+oe_test_openjdk_javap_jcmd.sh: line 35: javap: command not found
++ grep 'class Hello'
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openjdk_javap_jcmd.sh line 36'
++ message='oe_test_openjdk_javap_jcmd.sh line 36'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openjdk_javap_jcmd.sh line 36'
+Thu Nov 17 13:49:00 2022 - ERROR - oe_test_openjdk_javap_jcmd.sh line 36
++ return 0
++ javap -protected Hello
+oe_test_openjdk_javap_jcmd.sh: line 37: javap: command not found
++ grep 'class Hello'
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openjdk_javap_jcmd.sh line 38'
++ message='oe_test_openjdk_javap_jcmd.sh line 38'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openjdk_javap_jcmd.sh line 38'
+Thu Nov 17 13:49:01 2022 - ERROR - oe_test_openjdk_javap_jcmd.sh line 38
++ return 0
++ javap -package Hello
++ grep 'class Hello'
+oe_test_openjdk_javap_jcmd.sh: line 39: javap: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openjdk_javap_jcmd.sh line 40'
++ message='oe_test_openjdk_javap_jcmd.sh line 40'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openjdk_javap_jcmd.sh line 40'
+Thu Nov 17 13:49:02 2022 - ERROR - oe_test_openjdk_javap_jcmd.sh line 40
++ return 0
++ javap -private Hello
+oe_test_openjdk_javap_jcmd.sh: line 41: javap: command not found
++ grep 'class Hello'
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openjdk_javap_jcmd.sh line 42'
++ message='oe_test_openjdk_javap_jcmd.sh line 42'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openjdk_javap_jcmd.sh line 42'
+Thu Nov 17 13:49:03 2022 - ERROR - oe_test_openjdk_javap_jcmd.sh line 42
++ return 0
++ javap -p -v Hello
+oe_test_openjdk_javap_jcmd.sh: line 43: javap: command not found
++ grep Classfile
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openjdk_javap_jcmd.sh line 44'
++ message='oe_test_openjdk_javap_jcmd.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openjdk_javap_jcmd.sh line 44'
+Thu Nov 17 13:49:04 2022 - ERROR - oe_test_openjdk_javap_jcmd.sh line 44
++ return 0
++ jcmd -h
+oe_test_openjdk_javap_jcmd.sh: line 46: jcmd: command not found
++ grep Usage
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openjdk_javap_jcmd.sh line 47'
++ message='oe_test_openjdk_javap_jcmd.sh line 47'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openjdk_javap_jcmd.sh line 47'
+Thu Nov 17 13:49:05 2022 - ERROR - oe_test_openjdk_javap_jcmd.sh line 47
++ return 0
++ jcmd -l
+oe_test_openjdk_javap_jcmd.sh: line 48: jcmd: command not found
++ grep jcmd
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openjdk_javap_jcmd.sh line 49'
++ message='oe_test_openjdk_javap_jcmd.sh line 49'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openjdk_javap_jcmd.sh line 49'
+Thu Nov 17 13:49:06 2022 - ERROR - oe_test_openjdk_javap_jcmd.sh line 49
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Thu Nov 17 13:49:07 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 9
++ test 9 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Thu Nov 17 13:49:09 2022 - ERROR - failed to execute the case.
++ exit 9
++ post_test
++ LOG_INFO 'Need'\''t to restore the tet environment.'
++ message='Need'\''t to restore the tet environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Need'\''t to restore the tet environment.'
+Thu Nov 17 13:49:10 2022 - INFO  - Need't to restore the tet environment.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z Last metadata expiration check: 2:08:26 ago on Thu 17 Nov 2022 11:36:40 AM UTC.
+Dependencies resolved.
+================================================================================================
+ Package                                      Arch    Version                  Repository   Size
+================================================================================================
+Installing:
+ java-1.8.0-openjdk                           x86_64  1:1.8.0.342.b07-0.oe2203 update      368 k
+ java-1.8.0-openjdk-accessibility             x86_64  1:1.8.0.342.b07-0.oe2203 update       13 k
+ java-1.8.0-openjdk-accessibility-slowdebug   x86_64  1:1.8.0.342.b07-0.oe2203 update       13 k
+ java-1.8.0-openjdk-debuginfo                 x86_64  1:1.8.0.342.b07-0.oe2203 update      128 M
+ java-1.8.0-openjdk-debugsource               x86_64  1:1.8.0.342.b07-0.oe2203 update      7.9 M
+ java-1.8.0-openjdk-demo                      x86_64  1:1.8.0.342.b07-0.oe2203 update      1.9 M
+ java-1.8.0-openjdk-demo-slowdebug            x86_64  1:1.8.0.342.b07-0.oe2203 update      2.0 M
+ java-1.8.0-openjdk-devel                     x86_64  1:1.8.0.342.b07-0.oe2203 update      9.7 M
+ java-1.8.0-openjdk-devel-slowdebug           x86_64  1:1.8.0.342.b07-0.oe2203 update      9.7 M
+ java-1.8.0-openjdk-headless                  x86_64  1:1.8.0.342.b07-0.oe2203 update       33 M
+ java-1.8.0-openjdk-headless-slowdebug        x86_64  1:1.8.0.342.b07-0.oe2203 update       36 M
+ java-1.8.0-openjdk-javadoc                   noarch  1:1.8.0.342.b07-0.oe2203 update       15 M
+ java-1.8.0-openjdk-javadoc-zip               noarch  1:1.8.0.342.b07-0.oe2203 update       42 M
+ java-1.8.0-openjdk-openjfx                   x86_64  1:1.8.0.342.b07-0.oe2203 update       13 k
+ java-1.8.0-openjdk-openjfx-devel             x86_64  1:1.8.0.342.b07-0.oe2203 update       12 k
+ java-1.8.0-openjdk-openjfx-devel-slowdebug   x86_64  1:1.8.0.342.b07-0.oe2203 update       12 k
+ java-1.8.0-openjdk-openjfx-slowdebug         x86_64  1:1.8.0.342.b07-0.oe2203 update       14 k
+ java-1.8.0-openjdk-slowdebug                 x86_64  1:1.8.0.342.b07-0.oe2203 update      350 k
+ java-1.8.0-openjdk-src                       x86_64  1:1.8.0.342.b07-0.oe2203 update       45 M
+ java-1.8.0-openjdk-src-slowdebug             x86_64  1:1.8.0.342.b07-0.oe2203 update       45 M
+Installing dependencies:
+ java-atk-wrapper                             x86_64  0.33.2-9.oe2203          everything   80 k
+ libglvnd-glx                                 x86_64  1:1.3.4-2.oe2203         OS          112 k
+ mesa-libGL                                   x86_64  21.3.1-1.oe2203          OS          139 k
+ openjfx8                                     x86_64  8.0.202-27.b07.oe2203    everything  8.8 M
+ openjfx8-devel                               x86_64  8.0.202-27.b07.oe2203    everything  1.0 M
+ xorg-x11-fonts-others                        noarch  7.5-24.oe2203            OS          7.4 M
+ xorg-x11-utils                               x86_64  7.5-31.oe2203            OS          100 k
+
+Transaction Summary
+================================================================================================
+Install  27 Packages
+
+Total download size: 394 M
+Installed size: 1.3 G
+Downloading Packages:
+(1/27): mesa-libGL-21.3.1-1.oe2203.x86_64.rpm   356 kB/s | 139 kB     00:00    
+(2/27): libglvnd-glx-1.3.4-2.oe2203.x86_64.rpm  252 kB/s | 112 kB     00:00    
+(3/27): xorg-x11-utils-7.5-31.oe2203.x86_64.rpm 684 kB/s | 100 kB     00:00    
+(4/27): java-atk-wrapper-0.33.2-9.oe2203.x86_64 517 kB/s |  80 kB     00:00    
+(5/27): openjfx8-devel-8.0.202-27.b07.oe2203.x8 1.5 MB/s | 1.0 MB     00:00    
+(6/27): java-1.8.0-openjdk-1.8.0.342.b07-0.oe22 453 kB/s | 368 kB     00:00    
+(7/27): java-1.8.0-openjdk-accessibility-1.8.0. 226 kB/s |  13 kB     00:00    
+(8/27): java-1.8.0-openjdk-accessibility-slowde 218 kB/s |  13 kB     00:00    
+(9/27): xorg-x11-fonts-others-7.5-24.oe2203.noa 753 kB/s | 7.4 MB     00:10    
+(10/27): openjfx8-8.0.202-27.b07.oe2203.x86_64. 829 kB/s | 8.8 MB     00:10    
+(11/27): java-1.8.0-openjdk-demo-1.8.0.342.b07- 696 kB/s | 1.9 MB     00:02    
+(12/27): java-1.8.0-openjdk-demo-slowdebug-1.8. 845 kB/s | 2.0 MB     00:02    
+(13/27): java-1.8.0-openjdk-debugsource-1.8.0.3 606 kB/s | 7.9 MB     00:13    
+(14/27): java-1.8.0-openjdk-devel-1.8.0.342.b07 942 kB/s | 9.7 MB     00:10    
+(15/27): java-1.8.0-openjdk-devel-slowdebug-1.8 568 kB/s | 9.7 MB     00:17    
+(16/27): java-1.8.0-openjdk-headless-1.8.0.342. 926 kB/s |  33 MB     00:36    
+(17/27): java-1.8.0-openjdk-javadoc-1.8.0.342.b 1.0 MB/s |  15 MB     00:15    
+(18/27): java-1.8.0-openjdk-headless-slowdebug- 619 kB/s |  36 MB     00:58    
+(19/27): java-1.8.0-openjdk-openjfx-1.8.0.342.b 131 kB/s |  13 kB     00:00    
+(20/27): java-1.8.0-openjdk-openjfx-devel-1.8.0 179 kB/s |  12 kB     00:00    
+(21/27): java-1.8.0-openjdk-openjfx-devel-slowd 123 kB/s |  12 kB     00:00    
+(22/27): java-1.8.0-openjdk-openjfx-slowdebug-1 228 kB/s |  14 kB     00:00    
+(23/27): java-1.8.0-openjdk-slowdebug-1.8.0.342 512 kB/s | 350 kB     00:00    
+(24/27): java-1.8.0-openjdk-javadoc-zip-1.8.0.3 932 kB/s |  42 MB     00:45    
+(25/27): java-1.8.0-openjdk-src-slowdebug-1.8.0 1.0 MB/s |  45 MB     00:43    
+(26/27): java-1.8.0-openjdk-debuginfo-1.8.0.342 718 kB/s | 128 MB     03:02    
+(27/27): java-1.8.0-openjdk-src-1.8.0.342.b07-0 544 kB/s |  45 MB     01:25    
+--------------------------------------------------------------------------------
+Total                                           2.1 MB/s | 394 MB     03:06     
+Running transaction check
+Error: transaction check vs depsolve:
+libGLdispatch.so.0()(64bit) is needed by libglvnd-glx-1:1.3.4-2.oe2203.x86_64
+libglvnd(x86-64) = 1:1.3.4-2.oe2203 is needed by libglvnd-glx-1:1.3.4-2.oe2203.x86_64
+libXxf86vm.so.1()(64bit) is needed by mesa-libGL-21.3.1-1.oe2203.x86_64
+libdrm.so.2()(64bit) is needed by mesa-libGL-21.3.1-1.oe2203.x86_64
+libglapi.so.0()(64bit) is needed by mesa-libGL-21.3.1-1.oe2203.x86_64
+libxshmfence.so.1()(64bit) is needed by mesa-libGL-21.3.1-1.oe2203.x86_64
+mesa-libglapi(x86-64) = 21.3.1-1.oe2203 is needed by mesa-libGL-21.3.1-1.oe2203.x86_64
+mkfontdir is needed by xorg-x11-fonts-others-7.5-24.oe2203.noarch
+mkfontscale is needed by xorg-x11-fonts-others-7.5-24.oe2203.noarch
+libXv.so.1()(64bit) is needed by xorg-x11-utils-7.5-31.oe2203.x86_64
+libXxf86dga.so.1()(64bit) is needed by xorg-x11-utils-7.5-31.oe2203.x86_64
+libXxf86vm.so.1()(64bit) is needed by xorg-x11-utils-7.5-31.oe2203.x86_64
+libdmx.so.1()(64bit) is needed by xorg-x11-utils-7.5-31.oe2203.x86_64
+libXxf86vm.so.1()(64bit) is needed by openjfx8-8.0.202-27.b07.oe2203.x86_64
+libasound.so.2()(64bit) is needed by java-1.8.0-openjdk-1:1.8.0.342.b07-0.oe2203.x86_64
+libasound.so.2(ALSA_0.9)(64bit) is needed by java-1.8.0-openjdk-1:1.8.0.342.b07-0.oe2203.x86_64
+libasound.so.2(ALSA_0.9.0rc4)(64bit) is needed by java-1.8.0-openjdk-1:1.8.0.342.b07-0.oe2203.x86_64
+copy-jdk-configs >= 3.9 is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64
+javapackages-filesystem is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64
+lksctp-tools(x86-64) is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64
+nss(x86-64) >= 3.54 is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64
+nss-softokn(x86-64) >= 3.54 is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64
+tzdata-java >= 2020a is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64
+copy-jdk-configs >= 3.9 is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+javapackages-filesystem is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+lksctp-tools(x86-64) is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+nss(x86-64) >= 3.54 is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+nss-softokn(x86-64) >= 3.54 is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+tzdata-java >= 2020a is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+javapackages-filesystem is needed by java-1.8.0-openjdk-javadoc-1:1.8.0.342.b07-0.oe2203.noarch
+javapackages-filesystem is needed by java-1.8.0-openjdk-javadoc-zip-1:1.8.0.342.b07-0.oe2203.noarch
+libasound.so.2()(64bit) is needed by java-1.8.0-openjdk-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+libasound.so.2(ALSA_0.9)(64bit) is needed by java-1.8.0-openjdk-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+libasound.so.2(ALSA_0.9.0rc4)(64bit) is needed by java-1.8.0-openjdk-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+To diagnose the problem, try running: 'rpm -Va --nofiles --nodigest'.
+You probably have corrupted RPMDB, running 'rpm --rebuilddb' might fix the issue.
+The downloaded packages were saved in cache until the next successful transaction.
+You can remove cached packages by executing 'dnf clean packages'. ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile 'Last metadata expiration check: 2:08:26 ago on Thu 17 Nov 2022 11:36:40 AM UTC.
+Dependencies resolved.
+================================================================================================
+ Package                                      Arch    Version                  Repository   Size
+================================================================================================
+Installing:
+ java-1.8.0-openjdk                           x86_64  1:1.8.0.342.b07-0.oe2203 update      368 k
+ java-1.8.0-openjdk-accessibility             x86_64  1:1.8.0.342.b07-0.oe2203 update       13 k
+ java-1.8.0-openjdk-accessibility-slowdebug   x86_64  1:1.8.0.342.b07-0.oe2203 update       13 k
+ java-1.8.0-openjdk-debuginfo                 x86_64  1:1.8.0.342.b07-0.oe2203 update      128 M
+ java-1.8.0-openjdk-debugsource               x86_64  1:1.8.0.342.b07-0.oe2203 update      7.9 M
+ java-1.8.0-openjdk-demo                      x86_64  1:1.8.0.342.b07-0.oe2203 update      1.9 M
+ java-1.8.0-openjdk-demo-slowdebug            x86_64  1:1.8.0.342.b07-0.oe2203 update      2.0 M
+ java-1.8.0-openjdk-devel                     x86_64  1:1.8.0.342.b07-0.oe2203 update      9.7 M
+ java-1.8.0-openjdk-devel-slowdebug           x86_64  1:1.8.0.342.b07-0.oe2203 update      9.7 M
+ java-1.8.0-openjdk-headless                  x86_64  1:1.8.0.342.b07-0.oe2203 update       33 M
+ java-1.8.0-openjdk-headless-slowdebug        x86_64  1:1.8.0.342.b07-0.oe2203 update       36 M
+ java-1.8.0-openjdk-javadoc                   noarch  1:1.8.0.342.b07-0.oe2203 update       15 M
+ java-1.8.0-openjdk-javadoc-zip               noarch  1:1.8.0.342.b07-0.oe2203 update       42 M
+ java-1.8.0-openjdk-openjfx                   x86_64  1:1.8.0.342.b07-0.oe2203 update       13 k
+ java-1.8.0-openjdk-openjfx-devel             x86_64  1:1.8.0.342.b07-0.oe2203 update       12 k
+ java-1.8.0-openjdk-openjfx-devel-slowdebug   x86_64  1:1.8.0.342.b07-0.oe2203 update       12 k
+ java-1.8.0-openjdk-openjfx-slowdebug         x86_64  1:1.8.0.342.b07-0.oe2203 update       14 k
+ java-1.8.0-openjdk-slowdebug                 x86_64  1:1.8.0.342.b07-0.oe2203 update      350 k
+ java-1.8.0-openjdk-src                       x86_64  1:1.8.0.342.b07-0.oe2203 update       45 M
+ java-1.8.0-openjdk-src-slowdebug             x86_64  1:1.8.0.342.b07-0.oe2203 update       45 M
+Installing dependencies:
+ java-atk-wrapper                             x86_64  0.33.2-9.oe2203          everything   80 k
+ libglvnd-glx                                 x86_64  1:1.3.4-2.oe2203         OS          112 k
+ mesa-libGL                                   x86_64  21.3.1-1.oe2203          OS          139 k
+ openjfx8                                     x86_64  8.0.202-27.b07.oe2203    everything  8.8 M
+ openjfx8-devel                               x86_64  8.0.202-27.b07.oe2203    everything  1.0 M
+ xorg-x11-fonts-others                        noarch  7.5-24.oe2203            OS          7.4 M
+ xorg-x11-utils                               x86_64  7.5-31.oe2203            OS          100 k
+
+Transaction Summary
+================================================================================================
+Install  27 Packages
+
+Total download size: 394 M
+Installed size: 1.3 G
+Downloading Packages:
+(1/27): mesa-libGL-21.3.1-1.oe2203.x86_64.rpm   356 kB/s | 139 kB     00:00    
+(2/27): libglvnd-glx-1.3.4-2.oe2203.x86_64.rpm  252 kB/s | 112 kB     00:00    
+(3/27): xorg-x11-utils-7.5-31.oe2203.x86_64.rpm 684 kB/s | 100 kB     00:00    
+(4/27): java-atk-wrapper-0.33.2-9.oe2203.x86_64 517 kB/s |  80 kB     00:00    
+(5/27): openjfx8-devel-8.0.202-27.b07.oe2203.x8 1.5 MB/s | 1.0 MB     00:00    
+(6/27): java-1.8.0-openjdk-1.8.0.342.b07-0.oe22 453 kB/s | 368 kB     00:00    
+(7/27): java-1.8.0-openjdk-accessibility-1.8.0. 226 kB/s |  13 kB     00:00    
+(8/27): java-1.8.0-openjdk-accessibility-slowde 218 kB/s |  13 kB     00:00    
+(9/27): xorg-x11-fonts-others-7.5-24.oe2203.noa 753 kB/s | 7.4 MB     00:10    
+(10/27): openjfx8-8.0.202-27.b07.oe2203.x86_64. 829 kB/s | 8.8 MB     00:10    
+(11/27): java-1.8.0-openjdk-demo-1.8.0.342.b07- 696 kB/s | 1.9 MB     00:02    
+(12/27): java-1.8.0-openjdk-demo-slowdebug-1.8. 845 kB/s | 2.0 MB     00:02    
+(13/27): java-1.8.0-openjdk-debugsource-1.8.0.3 606 kB/s | 7.9 MB     00:13    
+(14/27): java-1.8.0-openjdk-devel-1.8.0.342.b07 942 kB/s | 9.7 MB     00:10    
+(15/27): java-1.8.0-openjdk-devel-slowdebug-1.8 568 kB/s | 9.7 MB     00:17    
+(16/27): java-1.8.0-openjdk-headless-1.8.0.342. 926 kB/s |  33 MB     00:36    
+(17/27): java-1.8.0-openjdk-javadoc-1.8.0.342.b 1.0 MB/s |  15 MB     00:15    
+(18/27): java-1.8.0-openjdk-headless-slowdebug- 619 kB/s |  36 MB     00:58    
+(19/27): java-1.8.0-openjdk-openjfx-1.8.0.342.b 131 kB/s |  13 kB     00:00    
+(20/27): java-1.8.0-openjdk-openjfx-devel-1.8.0 179 kB/s |  12 kB     00:00    
+(21/27): java-1.8.0-openjdk-openjfx-devel-slowd 123 kB/s |  12 kB     00:00    
+(22/27): java-1.8.0-openjdk-openjfx-slowdebug-1 228 kB/s |  14 kB     00:00    
+(23/27): java-1.8.0-openjdk-slowdebug-1.8.0.342 512 kB/s | 350 kB     00:00    
+(24/27): java-1.8.0-openjdk-javadoc-zip-1.8.0.3 932 kB/s |  42 MB     00:45    
+(25/27): java-1.8.0-openjdk-src-slowdebug-1.8.0 1.0 MB/s |  45 MB     00:43    
+(26/27): java-1.8.0-openjdk-debuginfo-1.8.0.342 718 kB/s | 128 MB     03:02    
+(27/27): java-1.8.0-openjdk-src-1.8.0.342.b07-0 544 kB/s |  45 MB     01:25    
+--------------------------------------------------------------------------------
+Total                                           2.1 MB/s | 394 MB     03:06     
+Running transaction check
+Error: transaction check vs depsolve:
+libGLdispatch.so.0()(64bit) is needed by libglvnd-glx-1:1.3.4-2.oe2203.x86_64
+libglvnd(x86-64) = 1:1.3.4-2.oe2203 is needed by libglvnd-glx-1:1.3.4-2.oe2203.x86_64
+libXxf86vm.so.1()(64bit) is needed by mesa-libGL-21.3.1-1.oe2203.x86_64
+libdrm.so.2()(64bit) is needed by mesa-libGL-21.3.1-1.oe2203.x86_64
+libglapi.so.0()(64bit) is needed by mesa-libGL-21.3.1-1.oe2203.x86_64
+libxshmfence.so.1()(64bit) is needed by mesa-libGL-21.3.1-1.oe2203.x86_64
+mesa-libglapi(x86-64) = 21.3.1-1.oe2203 is needed by mesa-libGL-21.3.1-1.oe2203.x86_64
+mkfontdir is needed by xorg-x11-fonts-others-7.5-24.oe2203.noarch
+mkfontscale is needed by xorg-x11-fonts-others-7.5-24.oe2203.noarch
+libXv.so.1()(64bit) is needed by xorg-x11-utils-7.5-31.oe2203.x86_64
+libXxf86dga.so.1()(64bit) is needed by xorg-x11-utils-7.5-31.oe2203.x86_64
+libXxf86vm.so.1()(64bit) is needed by xorg-x11-utils-7.5-31.oe2203.x86_64
+libdmx.so.1()(64bit) is needed by xorg-x11-utils-7.5-31.oe2203.x86_64
+libXxf86vm.so.1()(64bit) is needed by openjfx8-8.0.202-27.b07.oe2203.x86_64
+libasound.so.2()(64bit) is needed by java-1.8.0-openjdk-1:1.8.0.342.b07-0.oe2203.x86_64
+libasound.so.2(ALSA_0.9)(64bit) is needed by java-1.8.0-openjdk-1:1.8.0.342.b07-0.oe2203.x86_64
+libasound.so.2(ALSA_0.9.0rc4)(64bit) is needed by java-1.8.0-openjdk-1:1.8.0.342.b07-0.oe2203.x86_64
+copy-jdk-configs >= 3.9 is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64
+javapackages-filesystem is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64
+lksctp-tools(x86-64) is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64
+nss(x86-64) >= 3.54 is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64
+nss-softokn(x86-64) >= 3.54 is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64
+tzdata-java >= 2020a is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64
+copy-jdk-configs >= 3.9 is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+javapackages-filesystem is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+lksctp-tools(x86-64) is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+nss(x86-64) >= 3.54 is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+nss-softokn(x86-64) >= 3.54 is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+tzdata-java >= 2020a is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+javapackages-filesystem is needed by java-1.8.0-openjdk-javadoc-1:1.8.0.342.b07-0.oe2203.noarch
+javapackages-filesystem is needed by java-1.8.0-openjdk-javadoc-zip-1:1.8.0.342.b07-0.oe2203.noarch
+libasound.so.2()(64bit) is needed by java-1.8.0-openjdk-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+libasound.so.2(ALSA_0.9)(64bit) is needed by java-1.8.0-openjdk-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+libasound.so.2(ALSA_0.9.0rc4)(64bit) is needed by java-1.8.0-openjdk-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64
+To diagnose the problem, try running: '\''rpm -Va --nofiles --nodigest'\''.
+You probably have corrupted RPMDB, running '\''rpm --rebuilddb'\'' might fix the issue.
+The downloaded packages were saved in cache until the next successful transaction.
+You can remove cached packages by executing '\''dnf clean packages'\''.'
+Traceback (most recent call last):
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 2:08:26 ago on Thu 17 Nov 2022 11:36:40 AM UTC.\nDependencies resolved.\n================================================================================================\n Package                                      Arch    Version                  Repository   Size\n================================================================================================\nInstalling:\n java-1.8.0-openjdk                           x86_64  1:1.8.0.342.b07-0.oe2203 update      368 k\n java-1.8.0-openjdk-accessibility             x86_64  1:1.8.0.342.b07-0.oe2203 update       13 k\n java-1.8.0-openjdk-accessibility-slowdebug   x86_64  1:1.8.0.342.b07-0.oe2203 update       13 k\n java-1.8.0-openjdk-debuginfo                 x86_64  1:1.8.0.342.b07-0.oe2203 update      128 M\n java-1.8.0-openjdk-debugsource               x86_64  1:1.8.0.342.b07-0.oe2203 update      7.9 M\n java-1.8.0-openjdk-demo                      x86_64  1:1.8.0.342.b07-0.oe2203 update      1.9 M\n java-1.8.0-openjdk-demo-slowdebug            x86_64  1:1.8.0.342.b07-0.oe2203 update      2.0 M\n java-1.8.0-openjdk-devel                     x86_64  1:1.8.0.342.b07-0.oe2203 update      9.7 M\n java-1.8.0-openjdk-devel-slowdebug           x86_64  1:1.8.0.342.b07-0.oe2203 update      9.7 M\n java-1.8.0-openjdk-headless                  x86_64  1:1.8.0.342.b07-0.oe2203 update       33 M\n java-1.8.0-openjdk-headless-slowdebug        x86_64  1:1.8.0.342.b07-0.oe2203 update       36 M\n java-1.8.0-openjdk-javadoc                   noarch  1:1.8.0.342.b07-0.oe2203 update       15 M\n java-1.8.0-openjdk-javadoc-zip               noarch  1:1.8.0.342.b07-0.oe2203 update       42 M\n java-1.8.0-openjdk-openjfx                   x86_64  1:1.8.0.342.b07-0.oe2203 update       13 k\n java-1.8.0-openjdk-openjfx-devel             x86_64  1:1.8.0.342.b07-0.oe2203 update       12 k\n java-1.8.0-openjdk-openjfx-devel-slowdebug   x86_64  1:1.8.0.342.b07-0.oe2203 update       12 k\n java-1.8.0-openjdk-openjfx-slowdebug         x86_64  1:1.8.0.342.b07-0.oe2203 update       14 k\n java-1.8.0-openjdk-slowdebug                 x86_64  1:1.8.0.342.b07-0.oe2203 update      350 k\n java-1.8.0-openjdk-src                       x86_64  1:1.8.0.342.b07-0.oe2203 update       45 M\n java-1.8.0-openjdk-src-slowdebug             x86_64  1:1.8.0.342.b07-0.oe2203 update       45 M\nInstalling dependencies:\n java-atk-wrapper                             x86_64  0.33.2-9.oe2203          everything   80 k\n libglvnd-glx                                 x86_64  1:1.3.4-2.oe2203         OS          112 k\n mesa-libGL                                   x86_64  21.3.1-1.oe2203          OS          139 k\n openjfx8                                     x86_64  8.0.202-27.b07.oe2203    everything  8.8 M\n openjfx8-devel                               x86_64  8.0.202-27.b07.oe2203    everything  1.0 M\n xorg-x11-fonts-others                        noarch  7.5-24.oe2203            OS          7.4 M\n xorg-x11-utils                               x86_64  7.5-31.oe2203            OS          100 k\n\nTransaction Summary\n================================================================================================\nInstall  27 Packages\n\nTotal download size: 394 M\nInstalled size: 1.3 G\nDownloading Packages:\n(1/27): mesa-libGL-21.3.1-1.oe2203.x86_64.rpm   356 kB/s | 139 kB     00:00    \n(2/27): libglvnd-glx-1.3.4-2.oe2203.x86_64.rpm  252 kB/s | 112 kB     00:00    \n(3/27): xorg-x11-utils-7.5-31.oe2203.x86_64.rpm 684 kB/s | 100 kB     00:00    \n(4/27): java-atk-wrapper-0.33.2-9.oe2203.x86_64 517 kB/s |  80 kB     00:00    \n(5/27): openjfx8-devel-8.0.202-27.b07.oe2203.x8 1.5 MB/s | 1.0 MB     00:00    \n(6/27): java-1.8.0-openjdk-1.8.0.342.b07-0.oe22 453 kB/s | 368 kB     00:00    \n(7/27): java-1.8.0-openjdk-accessibility-1.8.0. 226 kB/s |  13 kB     00:00    \n(8/27): java-1.8.0-openjdk-accessibility-slowde 218 kB/s |  13 kB     00:00    \n(9/27): xorg-x11-fonts-others-7.5-24.oe2203.noa 753 kB/s | 7.4 MB     00:10    \n(10/27): openjfx8-8.0.202-27.b07.oe2203.x86_64. 829 kB/s | 8.8 MB     00:10    \n(11/27): java-1.8.0-openjdk-demo-1.8.0.342.b07- 696 kB/s | 1.9 MB     00:02    \n(12/27): java-1.8.0-openjdk-demo-slowdebug-1.8. 845 kB/s | 2.0 MB     00:02    \n(13/27): java-1.8.0-openjdk-debugsource-1.8.0.3 606 kB/s | 7.9 MB     00:13    \n(14/27): java-1.8.0-openjdk-devel-1.8.0.342.b07 942 kB/s | 9.7 MB     00:10    \n(15/27): java-1.8.0-openjdk-devel-slowdebug-1.8 568 kB/s | 9.7 MB     00:17    \n(16/27): java-1.8.0-openjdk-headless-1.8.0.342. 926 kB/s |  33 MB     00:36    \n(17/27): java-1.8.0-openjdk-javadoc-1.8.0.342.b 1.0 MB/s |  15 MB     00:15    \n(18/27): java-1.8.0-openjdk-headless-slowdebug- 619 kB/s |  36 MB     00:58    \n(19/27): java-1.8.0-openjdk-openjfx-1.8.0.342.b 131 kB/s |  13 kB     00:00    \n(20/27): java-1.8.0-openjdk-openjfx-devel-1.8.0 179 kB/s |  12 kB     00:00    \n(21/27): java-1.8.0-openjdk-openjfx-devel-slowd 123 kB/s |  12 kB     00:00    \n(22/27): java-1.8.0-openjdk-openjfx-slowdebug-1 228 kB/s |  14 kB     00:00    \n(23/27): java-1.8.0-openjdk-slowdebug-1.8.0.342 512 kB/s | 350 kB     00:00    \n(24/27): java-1.8.0-openjdk-javadoc-zip-1.8.0.3 932 kB/s |  42 MB     00:45    \n(25/27): java-1.8.0-openjdk-src-slowdebug-1.8.0 1.0 MB/s |  45 MB     00:43    \n(26/27): java-1.8.0-openjdk-debuginfo-1.8.0.342 718 kB/s | 128 MB     03:02    \n(27/27): java-1.8.0-openjdk-src-1.8.0.342.b07-0 544 kB/s |  45 MB     01:25    \n--------------------------------------------------------------------------------\nTotal                                           2.1 MB/s | 394 MB     03:06     \nRunning transaction check\nError: transaction check vs depsolve:\nlibGLdispatch.so.0()(64bit) is needed by libglvnd-glx-1:1.3.4-2.oe2203.x86_64\nlibglvnd(x86-64) = 1:1.3.4-2.oe2203 is needed by libglvnd-glx-1:1.3.4-2.oe2203.x86_64\nlibXxf86vm.so.1()(64bit) is needed by mesa-libGL-21.3.1-1.oe2203.x86_64\nlibdrm.so.2()(64bit) is needed by mesa-libGL-21.3.1-1.oe2203.x86_64\nlibglapi.so.0()(64bit) is needed by mesa-libGL-21.3.1-1.oe2203.x86_64\nlibxshmfence.so.1()(64bit) is needed by mesa-libGL-21.3.1-1.oe2203.x86_64\nmesa-libglapi(x86-64) = 21.3.1-1.oe2203 is needed by mesa-libGL-21.3.1-1.oe2203.x86_64\nmkfontdir is needed by xorg-x11-fonts-others-7.5-24.oe2203.noarch\nmkfontscale is needed by xorg-x11-fonts-others-7.5-24.oe2203.noarch\nlibXv.so.1()(64bit) is needed by xorg-x11-utils-7.5-31.oe2203.x86_64\nlibXxf86dga.so.1()(64bit) is needed by xorg-x11-utils-7.5-31.oe2203.x86_64\nlibXxf86vm.so.1()(64bit) is needed by xorg-x11-utils-7.5-31.oe2203.x86_64\nlibdmx.so.1()(64bit) is needed by xorg-x11-utils-7.5-31.oe2203.x86_64\nlibXxf86vm.so.1()(64bit) is needed by openjfx8-8.0.202-27.b07.oe2203.x86_64\nlibasound.so.2()(64bit) is needed by java-1.8.0-openjdk-1:1.8.0.342.b07-0.oe2203.x86_64\nlibasound.so.2(ALSA_0.9)(64bit) is needed by java-1.8.0-openjdk-1:1.8.0.342.b07-0.oe2203.x86_64\nlibasound.so.2(ALSA_0.9.0rc4)(64bit) is needed by java-1.8.0-openjdk-1:1.8.0.342.b07-0.oe2203.x86_64\ncopy-jdk-configs >= 3.9 is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64\njavapackages-filesystem is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64\nlksctp-tools(x86-64) is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64\nnss(x86-64) >= 3.54 is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64\nnss-softokn(x86-64) >= 3.54 is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64\ntzdata-java >= 2020a is needed by java-1.8.0-openjdk-headless-1:1.8.0.342.b07-0.oe2203.x86_64\ncopy-jdk-configs >= 3.9 is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64\njavapackages-filesystem is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64\nlksctp-tools(x86-64) is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64\nnss(x86-64) >= 3.54 is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64\nnss-softokn(x86-64) >= 3.54 is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64\ntzdata-java >= 2020a is needed by java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64\njavapackages-filesystem is needed by java-1.8.0-openjdk-javadoc-1:1.8.0.342.b07-0.oe2203.noarch\njavapackages-filesystem is needed by java-1.8.0-openjdk-javadoc-zip-1:1.8.0.342.b07-0.oe2203.noarch\nlibasound.so.2()(64bit) is needed by java-1.8.0-openjdk-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64\nlibasound.so.2(ALSA_0.9)(64bit) is needed by java-1.8.0-openjdk-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64\nlibasound.so.2(ALSA_0.9.0rc4)(64bit) is needed by java-1.8.0-openjdk-slowdebug-1:1.8.0.342.b07-0.oe2203.x86_64\nTo diagnose the problem, try running: 'rpm -Va --nofiles --nodigest'.\nYou probably have corrupted RPMDB, running 'rpm --rebuilddb' might fix the issue.\nThe downloaded packages were saved in cache until the next successful transaction.\nYou can remove cached packages by executing 'dnf clean packages'."
++ '[' 0 -ne 0 ']'
++ rm -rf Hello.java
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Thu Nov 17 13:49:15 2022 - INFO  - End to restore the test environment.

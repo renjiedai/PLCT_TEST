@@ -1,0 +1,76 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Thu Nov 17 12:11:30 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL 'java-1.8.0-openjdk*'
++ pkgs='java-1.8.0-openjdk*'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'java-1.8.0-openjdk*' --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpnto4gq9x
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpnto4gq9x
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Thu Nov 17 12:22:51 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Thu Nov 17 12:22:52 2022 - INFO  - Start to run test.
++ jsadebugd -help
++ grep Usage
+Usage: jsadebugd [options] <pid> [server-id]
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ jstack -h
++ grep Usage
+Usage:
++ jstack_pid=9080
++ jrunscript
++ exit
++ post_test
++ LOG_INFO 'Need'\''t to restore the tet environment.'
++ message='Need'\''t to restore the tet environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Need'\''t to restore the tet environment.'
+Thu Nov 17 12:22:57 2022 - INFO  - Need't to restore the tet environment.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpnto4gq9x ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpnto4gq9x
+nashorn> + '[' 0 -ne 0 ']'
++ rm -rf jstatd.all.policy testuser.keystore
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Thu Nov 17 12:23:56 2022 - INFO  - End to restore the test environment.
