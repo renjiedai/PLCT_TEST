@@ -1,0 +1,412 @@
++ source ../common/common_lib.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start environmental preparation.'
++ message='Start environmental preparation.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start environmental preparation.'
+Sun Dec  4 03:05:09 2022 - INFO  - Start environmental preparation.
++ DNF_INSTALL perl-Net-Server
++ pkgs=perl-Net-Server
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs perl-Net-Server --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpwos_7jwf
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpwos_7jwf
+++ GET_FREE_PORT 127.0.0.1
+++ ip=127.0.0.1
+++ start_port=1000
+++ end_port=10000
+++ python3 /root/mugen-riscv/libs/locallibs/free_port.py get --ip 127.0.0.1 --start 1000 --end 10000
++ port=4813
++ cat
++ chmod u+x app.cgi
++ LOG_INFO 'End of environmental preparation!'
++ message='End of environmental preparation!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of environmental preparation!'
+Sun Dec  4 03:05:56 2022 - INFO  - End of environmental preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start testing...'
++ message='Start testing...'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start testing...'
+Sun Dec  4 03:05:57 2022 - INFO  - Start testing...
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ net-server Fork port 4813
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
+2022/12/04-03:05:58 net_server (type Net::Server::Fork) starting! pid(740)
+Resolved [*]:4813 to [::]:4813, IPv6
+Not including resolved host [0.0.0.0] IPv4 because it will be handled by [::] IPv6
+Binding to TCP port 4813 on host :: with IPv6
+Group Not Defined.  Defaulting to EGID '0 0'
+User Not Defined.  Defaulting to EUID '0'
++ IS_FREE_PORT 4813 127.0.0.1
++ port=4813
++ ip=127.0.0.1
++ python3 /root/mugen-riscv/libs/locallibs/free_port.py check --port 4813 --ip 127.0.0.1
++ CHECK_RESULT 1 1 0 'L42: Fork No Pass '
++ actual_result=1
++ expect_result=1
++ mode=0
++ error_log='L42: Fork No Pass '
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 1x
++ return 0
++ killall perl
+perl: no process found
++ echo helloTest
++ net-server INET
++ grep 'net_server:.*You said "helloTest"'
+net_server:747: You said "helloTest"
++ CHECK_RESULT 0 0 0 'L46: INET No Pass. Output Error.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='L46: INET No Pass. Output Error.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ IS_FREE_PORT 4813 127.0.0.1
++ port=4813
++ ip=127.0.0.1
++ python3 /root/mugen-riscv/libs/locallibs/free_port.py check --port 4813 --ip 127.0.0.1
++ CHECK_RESULT 1 0 0 'L48: INET No Pass. Port 4813 still in use.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='L48: INET No Pass. Port 4813 still in use.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'L48: INET No Pass. Port 4813 still in use.'
++ LOG_ERROR 'L48: INET No Pass. Port 4813 still in use.'
++ message='L48: INET No Pass. Port 4813 still in use.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'L48: INET No Pass. Port 4813 still in use.'
+Sun Dec  4 03:06:04 2022 - ERROR - L48: INET No Pass. Port 4813 still in use.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_perl-Net-Server.sh line 48'
++ message='oe_test_perl-Net-Server.sh line 48'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_perl-Net-Server.sh line 48'
+Sun Dec  4 03:06:04 2022 - ERROR - oe_test_perl-Net-Server.sh line 48
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ net-server MultiType port 4813
+2022/12/04-03:06:06 net_server (type Net::Server::Fork -> MultiType -> Net::Server::Fork) starting! pid(754)
+Resolved [*]:4813 to [::]:4813, IPv6
+Not including resolved host [0.0.0.0] IPv4 because it will be handled by [::] IPv6
+Binding to TCP port 4813 on host :: with IPv6
+2022/12/04-03:06:06 Can't connect to TCP port 4813 on :: [Address already in use]
+  at line 64 in file /usr/share/perl5/vendor_perl/Net/Server/Proto/TCP.pm
+2022/12/04-03:06:06 Server closing!
++ IS_FREE_PORT 4813 127.0.0.1
++ port=4813
++ ip=127.0.0.1
++ python3 /root/mugen-riscv/libs/locallibs/free_port.py check --port 4813 --ip 127.0.0.1
++ CHECK_RESULT 1 1 0 'L53: MultiType No Pass'
++ actual_result=1
++ expect_result=1
++ mode=0
++ error_log='L53: MultiType No Pass'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 1x
++ return 0
++ killall perl
+perl: no process found
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ net-server Multiplex port 4813
+2022/12/04-03:06:09 net_server (type Net::Server::Multiplex) starting! pid(760)
+Resolved [*]:4813 to [::]:4813, IPv6
+Not including resolved host [0.0.0.0] IPv4 because it will be handled by [::] IPv6
+Binding to TCP port 4813 on host :: with IPv6
+2022/12/04-03:06:09 Can't connect to TCP port 4813 on :: [Address already in use]
+  at line 64 in file /usr/share/perl5/vendor_perl/Net/Server/Proto/TCP.pm
+2022/12/04-03:06:09 Server closing!
++ IS_FREE_PORT 4813 127.0.0.1
++ port=4813
++ ip=127.0.0.1
++ python3 /root/mugen-riscv/libs/locallibs/free_port.py check --port 4813 --ip 127.0.0.1
++ CHECK_RESULT 1 1 0 'L59: Multiplex No Pass'
++ actual_result=1
++ expect_result=1
++ mode=0
++ error_log='L59: Multiplex No Pass'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 1x
++ return 0
++ killall perl
+perl: no process found
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ net-server PreForkSimple port 4813
+2022/12/04-03:06:13 net_server (type Net::Server::PreForkSimple) starting! pid(766)
+Resolved [*]:4813 to [::]:4813, IPv6
+Not including resolved host [0.0.0.0] IPv4 because it will be handled by [::] IPv6
+Binding to TCP port 4813 on host :: with IPv6
+2022/12/04-03:06:13 Can't connect to TCP port 4813 on :: [Address already in use]
+  at line 64 in file /usr/share/perl5/vendor_perl/Net/Server/Proto/TCP.pm
+2022/12/04-03:06:13 Server closing!
++ IS_FREE_PORT 4813 127.0.0.1
++ port=4813
++ ip=127.0.0.1
++ python3 /root/mugen-riscv/libs/locallibs/free_port.py check --port 4813 --ip 127.0.0.1
++ CHECK_RESULT 1 1 0 'L65: PreForkSimple No Pass'
++ actual_result=1
++ expect_result=1
++ mode=0
++ error_log='L65: PreForkSimple No Pass'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 1x
++ return 0
++ killall perl
+perl: no process found
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ net-server PreFork port 4813
+2022/12/04-03:06:16 net_server (type Net::Server::PreFork) starting! pid(772)
+Resolved [*]:4813 to [::]:4813, IPv6
+Not including resolved host [0.0.0.0] IPv4 because it will be handled by [::] IPv6
+Binding to TCP port 4813 on host :: with IPv6
+2022/12/04-03:06:16 Can't connect to TCP port 4813 on :: [Address already in use]
+  at line 64 in file /usr/share/perl5/vendor_perl/Net/Server/Proto/TCP.pm
+2022/12/04-03:06:16 Server closing!
++ IS_FREE_PORT 4813 127.0.0.1
++ port=4813
++ ip=127.0.0.1
++ python3 /root/mugen-riscv/libs/locallibs/free_port.py check --port 4813 --ip 127.0.0.1
++ CHECK_RESULT 1 1 0 'L71: PreFork No Pass'
++ actual_result=1
++ expect_result=1
++ mode=0
++ error_log='L71: PreFork No Pass'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 1x
++ return 0
++ killall perl
+perl: no process found
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ net-server Single port 4813
+2022/12/04-03:06:20 net_server (type Net::Server::Single) starting! pid(778)
+Resolved [*]:4813 to [::]:4813, IPv6
+Not including resolved host [0.0.0.0] IPv4 because it will be handled by [::] IPv6
+Binding to TCP port 4813 on host :: with IPv6
+2022/12/04-03:06:20 Can't connect to TCP port 4813 on :: [Address already in use]
+  at line 64 in file /usr/share/perl5/vendor_perl/Net/Server/Proto/TCP.pm
+2022/12/04-03:06:20 Server closing!
++ IS_FREE_PORT 4813 127.0.0.1
++ port=4813
++ ip=127.0.0.1
++ python3 /root/mugen-riscv/libs/locallibs/free_port.py check --port 4813 --ip 127.0.0.1
++ CHECK_RESULT 1 1 0 'L77: Single No Pass'
++ actual_result=1
++ expect_result=1
++ mode=0
++ error_log='L77: Single No Pass'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 1x
++ return 0
++ killall perl
+perl: no process found
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ net-server HTTP port 4813
+2022/12/04-03:06:24 net_server (type Net::Server::HTTP -> MultiType -> Net::Server::PreFork) starting! pid(784)
+Resolved [*]:4813 to [::]:4813, IPv6
+Not including resolved host [0.0.0.0] IPv4 because it will be handled by [::] IPv6
+Binding to TCP port 4813 on host :: with IPv6
+2022/12/04-03:06:24 Can't connect to TCP port 4813 on :: [Address already in use]
+  at line 64 in file /usr/share/perl5/vendor_perl/Net/Server/Proto/TCP.pm
+2022/12/04-03:06:24 Server closing!
++ IS_FREE_PORT 4813 127.0.0.1
++ port=4813
++ ip=127.0.0.1
++ python3 /root/mugen-riscv/libs/locallibs/free_port.py check --port 4813 --ip 127.0.0.1
++ CHECK_RESULT 1 1 0 'L83: Http No Pass'
++ actual_result=1
++ expect_result=1
++ mode=0
++ error_log='L83: Http No Pass'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 1x
++ return 0
++ killall perl
+perl: no process found
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ net-server HTTP port 4813 app /root/mugen-riscv/testcases/cli-test/perl-Net-Server/app.cgi
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
+2022/12/04-03:06:27 net_server (type Net::Server::HTTP -> MultiType -> Net::Server::PreFork) starting! pid(790)
+Resolved [*]:4813 to [::]:4813, IPv6
+Not including resolved host [0.0.0.0] IPv4 because it will be handled by [::] IPv6
+Binding to TCP port 4813 on host :: with IPv6
+2022/12/04-03:06:28 Can't connect to TCP port 4813 on :: [Address already in use]
+  at line 64 in file /usr/share/perl5/vendor_perl/Net/Server/Proto/TCP.pm
+2022/12/04-03:06:28 Server closing!
++ IS_FREE_PORT 4813 127.0.0.1
++ port=4813
++ ip=127.0.0.1
++ python3 /root/mugen-riscv/libs/locallibs/free_port.py check --port 4813 --ip 127.0.0.1
++ CHECK_RESULT 1 1 0 'L89: app No Pass'
++ actual_result=1
++ expect_result=1
++ mode=0
++ error_log='L89: app No Pass'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 1x
++ return 0
++ curl 127.0.0.1:4813
++ grep 'Test success'
++ CHECK_RESULT 1 0 0 'L91: app No Pass. Failed to get data from net-server'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='L91: app No Pass. Failed to get data from net-server'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'L91: app No Pass. Failed to get data from net-server'
++ LOG_ERROR 'L91: app No Pass. Failed to get data from net-server'
++ message='L91: app No Pass. Failed to get data from net-server'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'L91: app No Pass. Failed to get data from net-server'
+Sun Dec  4 03:06:30 2022 - ERROR - L91: app No Pass. Failed to get data from net-server
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_perl-Net-Server.sh line 91'
++ message='oe_test_perl-Net-Server.sh line 91'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_perl-Net-Server.sh line 91'
+Sun Dec  4 03:06:32 2022 - ERROR - oe_test_perl-Net-Server.sh line 91
++ return 0
++ killall perl
+perl: no process found
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ net-server host localhost/IPv4 port 4813 app app.cgi
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
+2022/12/04-03:06:35 net_server (type Net::Server::Fork -> MultiType -> Net::Server::Fork) starting! pid(801)
+Binding to TCP port 4813 on host localhost with IPv4
+2022/12/04-03:06:35 Can't connect to TCP port 4813 on localhost [Address already in use]
+  at line 64 in file /usr/share/perl5/vendor_perl/Net/Server/Proto/TCP.pm
+2022/12/04-03:06:35 Server closing!
++ IS_FREE_PORT 4813 127.0.0.1
++ port=4813
++ ip=127.0.0.1
++ python3 /root/mugen-riscv/libs/locallibs/free_port.py check --port 4813 --ip 127.0.0.1
++ CHECK_RESULT 1 1 0 'L97: IPv4 No Pass'
++ actual_result=1
++ expect_result=1
++ mode=0
++ error_log='L97: IPv4 No Pass'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 1x
++ return 0
++ killall perl
+perl: no process found
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ net-server host localhost/IPv6 port 4813
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
+2022/12/04-03:06:43 net_server (type Net::Server::Fork -> MultiType -> Net::Server::Fork) starting! pid(807)
+Binding to TCP port 4813 on host localhost with IPv6
+2022/12/04-03:06:44 Can't connect to TCP port 4813 on localhost [Address already in use]
+  at line 64 in file /usr/share/perl5/vendor_perl/Net/Server/Proto/TCP.pm
+2022/12/04-03:06:44 Server closing!
++ IS_FREE_PORT 4813 ::1
++ port=4813
++ ip=::1
++ python3 /root/mugen-riscv/libs/locallibs/free_port.py check --port 4813 --ip ::1
++ CHECK_RESULT 1 1 0 'L103: IPv6 No Pass'
++ actual_result=1
++ expect_result=1
++ mode=0
++ error_log='L103: IPv6 No Pass'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 1x
++ return 0
++ LOG_INFO 'Finish test!'
++ message='Finish test!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish test!'
+Sun Dec  4 03:06:53 2022 - INFO  - Finish test!
++ CASE_RESULT 0
++ case_re=0
++ test -z 2
++ test 2 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Sun Dec  4 03:06:55 2022 - ERROR - failed to execute the case.
++ exit 2
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Sun Dec  4 03:06:57 2022 - INFO  - start environment cleanup.
++ killall perl
+perl: no process found
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpwos_7jwf ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpwos_7jwf
++ '[' 0 -ne 0 ']'
++ rm -rf app.cgi
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Sun Dec  4 03:07:20 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,379 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment!'
++ message='Start to prepare the test environment!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment!'
+Mon Dec  5 02:04:30 2022 - INFO  - Start to prepare the test environment!
++ DNF_INSTALL cargo
++ pkgs=cargo
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs cargo --node 1 --tempfile ''
++ tmpfile2='Last metadata expiration check: 0:07:53 ago on Mon 05 Dec 2022 01:57:11 AM EST.
+Error: 
+ Problem: conflicting requests
+  - package cargo-1.58.1-1.an8.riscv64 requires rust, but none of the providers can be installed
+  - nothing provides libLLVM-13.so.2()(64bit) needed by rust-1.58.1-1.an8.riscv64
+  - nothing provides libLLVM-13.so.2(LLVM_13)(64bit) needed by rust-1.58.1-1.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ '[' -z '' ']'
++ tmpfile='Last metadata expiration check: 0:07:53 ago on Mon 05 Dec 2022 01:57:11 AM EST.
+Error: 
+ Problem: conflicting requests
+  - package cargo-1.58.1-1.an8.riscv64 requires rust, but none of the providers can be installed
+  - nothing provides libLLVM-13.so.2()(64bit) needed by rust-1.58.1-1.an8.riscv64
+  - nothing provides libLLVM-13.so.2(LLVM_13)(64bit) needed by rust-1.58.1-1.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ LOG_INFO 'End to prepare the test environment!'
++ message='End to prepare the test environment!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment!'
+Mon Dec  5 02:05:07 2022 - INFO  - End to prepare the test environment!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start executing testcase!'
++ message='Start executing testcase!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start executing testcase!'
+Mon Dec  5 02:05:08 2022 - INFO  - Start executing testcase!
++ cargo new hello_world
+oe_test_cargo_02.sh: line 30: cargo: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_cargo_02.sh line 31'
++ message='oe_test_cargo_02.sh line 31'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_cargo_02.sh line 31'
+Mon Dec  5 02:05:09 2022 - ERROR - oe_test_cargo_02.sh line 31
++ return 0
++ test -d hello_world
++ CHECK_RESULT 1 0 0 'Failed to create a new package'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed to create a new package'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed to create a new package'
++ LOG_ERROR 'Failed to create a new package'
++ message='Failed to create a new package'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to create a new package'
+Mon Dec  5 02:05:10 2022 - ERROR - Failed to create a new package
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_cargo_02.sh line 33'
++ message='oe_test_cargo_02.sh line 33'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_cargo_02.sh line 33'
+Mon Dec  5 02:05:10 2022 - ERROR - oe_test_cargo_02.sh line 33
++ return 0
++ cd hello_world
+oe_test_cargo_02.sh: line 34: cd: hello_world: No such file or directory
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_cargo_02.sh line 35'
++ message='oe_test_cargo_02.sh line 35'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_cargo_02.sh line 35'
+Mon Dec  5 02:05:11 2022 - ERROR - oe_test_cargo_02.sh line 35
++ return 0
++ ./target/debug/hello_world
++ grep 'Hello, world!'
+oe_test_cargo_02.sh: line 36: ./target/debug/hello_world: No such file or directory
++ CHECK_RESULT 1 0 0 'Failed to compile package'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed to compile package'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed to compile package'
++ LOG_ERROR 'Failed to compile package'
++ message='Failed to compile package'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to compile package'
+Mon Dec  5 02:05:12 2022 - ERROR - Failed to compile package
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_cargo_02.sh line 37'
++ message='oe_test_cargo_02.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_cargo_02.sh line 37'
+Mon Dec  5 02:05:13 2022 - ERROR - oe_test_cargo_02.sh line 37
++ return 0
++ cargo run
++ grep 'Hello, world!'
+oe_test_cargo_02.sh: line 38: cargo: command not found
++ CHECK_RESULT 1 0 0 'Failed to run package'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed to run package'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed to run package'
++ LOG_ERROR 'Failed to run package'
++ message='Failed to run package'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to run package'
+Mon Dec  5 02:05:14 2022 - ERROR - Failed to run package
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_cargo_02.sh line 39'
++ message='oe_test_cargo_02.sh line 39'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_cargo_02.sh line 39'
+Mon Dec  5 02:05:15 2022 - ERROR - oe_test_cargo_02.sh line 39
++ return 0
++ cargo test
+oe_test_cargo_02.sh: line 40: cargo: command not found
++ grep -E 'running|test result'
++ CHECK_RESULT 1 0 0 'Failed to execute tests'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed to execute tests'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed to execute tests'
++ LOG_ERROR 'Failed to execute tests'
++ message='Failed to execute tests'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to execute tests'
+Mon Dec  5 02:05:16 2022 - ERROR - Failed to execute tests
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_cargo_02.sh line 41'
++ message='oe_test_cargo_02.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_cargo_02.sh line 41'
+Mon Dec  5 02:05:17 2022 - ERROR - oe_test_cargo_02.sh line 41
++ return 0
++ cargo bench
+oe_test_cargo_02.sh: line 42: cargo: command not found
++ grep -E 'running|test result'
++ CHECK_RESULT 1 0 0 'Failed to execute the benchmark'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed to execute the benchmark'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed to execute the benchmark'
++ LOG_ERROR 'Failed to execute the benchmark'
++ message='Failed to execute the benchmark'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to execute the benchmark'
+Mon Dec  5 02:05:18 2022 - ERROR - Failed to execute the benchmark
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_cargo_02.sh line 43'
++ message='oe_test_cargo_02.sh line 43'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_cargo_02.sh line 43'
+Mon Dec  5 02:05:19 2022 - ERROR - oe_test_cargo_02.sh line 43
++ return 0
++ cargo check
+oe_test_cargo_02.sh: line 44: cargo: command not found
++ CHECK_RESULT 127 0 0 'Failure check kit'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Failure check kit'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Failure check kit'
++ LOG_ERROR 'Failure check kit'
++ message='Failure check kit'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failure check kit'
+Mon Dec  5 02:05:20 2022 - ERROR - Failure check kit
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_cargo_02.sh line 45'
++ message='oe_test_cargo_02.sh line 45'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_cargo_02.sh line 45'
+Mon Dec  5 02:05:21 2022 - ERROR - oe_test_cargo_02.sh line 45
++ return 0
++ cargo doc
+oe_test_cargo_02.sh: line 46: cargo: command not found
++ CHECK_RESULT 127 0 0 'Failed to build the package document'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Failed to build the package document'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Failed to build the package document'
++ LOG_ERROR 'Failed to build the package document'
++ message='Failed to build the package document'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to build the package document'
+Mon Dec  5 02:05:21 2022 - ERROR - Failed to build the package document
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_cargo_02.sh line 47'
++ message='oe_test_cargo_02.sh line 47'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_cargo_02.sh line 47'
+Mon Dec  5 02:05:22 2022 - ERROR - oe_test_cargo_02.sh line 47
++ return 0
++ cargo clean
+oe_test_cargo_02.sh: line 48: cargo: command not found
++ CHECK_RESULT 127 1 0 'Failed to delete a file'
++ actual_result=127
++ expect_result=1
++ mode=0
++ error_log='Failed to delete a file'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 1x
++ test -n 'Failed to delete a file'
++ LOG_ERROR 'Failed to delete a file'
++ message='Failed to delete a file'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to delete a file'
+Mon Dec  5 02:05:23 2022 - ERROR - Failed to delete a file
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_cargo_02.sh line 49'
++ message='oe_test_cargo_02.sh line 49'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_cargo_02.sh line 49'
+Mon Dec  5 02:05:24 2022 - ERROR - oe_test_cargo_02.sh line 49
++ return 0
++ mkdir INI
++ cd INI
++ cargo init
+oe_test_cargo_02.sh: line 51: cargo: command not found
++ CHECK_RESULT 127 0 0 'Failed to create a new package'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Failed to create a new package'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Failed to create a new package'
++ LOG_ERROR 'Failed to create a new package'
++ message='Failed to create a new package'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to create a new package'
+Mon Dec  5 02:05:25 2022 - ERROR - Failed to create a new package
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_cargo_02.sh line 52'
++ message='oe_test_cargo_02.sh line 52'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_cargo_02.sh line 52'
+Mon Dec  5 02:05:26 2022 - ERROR - oe_test_cargo_02.sh line 52
++ return 0
++ cargo update
+oe_test_cargo_02.sh: line 53: cargo: command not found
++ CHECK_RESULT 127 0 0 'Failed to update file'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Failed to update file'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Failed to update file'
++ LOG_ERROR 'Failed to update file'
++ message='Failed to update file'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to update file'
+Mon Dec  5 02:05:27 2022 - ERROR - Failed to update file
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_cargo_02.sh line 54'
++ message='oe_test_cargo_02.sh line 54'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_cargo_02.sh line 54'
+Mon Dec  5 02:05:28 2022 - ERROR - oe_test_cargo_02.sh line 54
++ return 0
+++ curl -s -w '%{http_code}' https://github.com/rust-lang/crates.io-index -o /dev/null
++ https_code=200
++ SLEEP_WAIT 3
++ wait_time=3
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 3 --cmd '' --mode 1
++ '[' 200 == 200 ']'
++ cargo search
+oe_test_cargo_02.sh: line 58: cargo: command not found
++ CHECK_RESULT 127 0 0 'Failed to search for serde package'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Failed to search for serde package'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Failed to search for serde package'
++ LOG_ERROR 'Failed to search for serde package'
++ message='Failed to search for serde package'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to search for serde package'
+Mon Dec  5 02:06:12 2022 - ERROR - Failed to search for serde package
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_cargo_02.sh line 59'
++ message='oe_test_cargo_02.sh line 59'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_cargo_02.sh line 59'
+Mon Dec  5 02:06:13 2022 - ERROR - oe_test_cargo_02.sh line 59
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Mon Dec  5 02:06:13 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 13
++ test 13 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Mon Dec  5 02:06:14 2022 - ERROR - failed to execute the case.
++ exit 13
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Mon Dec  5 02:06:15 2022 - INFO  - start environment cleanup.
++ rm -rf '../../hello_world*'
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z Last metadata expiration check: 0:07:53 ago on Mon 05 Dec 2022 01:57:11 AM EST.
+Error: 
+ Problem: conflicting requests
+  - package cargo-1.58.1-1.an8.riscv64 requires rust, but none of the providers can be installed
+  - nothing provides libLLVM-13.so.2()(64bit) needed by rust-1.58.1-1.an8.riscv64
+  - nothing provides libLLVM-13.so.2(LLVM_13)(64bit) needed by rust-1.58.1-1.an8.riscv64
+(try to add '--skip-broken' to skip uninstallable packages) ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile 'Last metadata expiration check: 0:07:53 ago on Mon 05 Dec 2022 01:57:11 AM EST.
+Error: 
+ Problem: conflicting requests
+  - package cargo-1.58.1-1.an8.riscv64 requires rust, but none of the providers can be installed
+  - nothing provides libLLVM-13.so.2()(64bit) needed by rust-1.58.1-1.an8.riscv64
+  - nothing provides libLLVM-13.so.2(LLVM_13)(64bit) needed by rust-1.58.1-1.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
+Traceback (most recent call last):
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 181, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 152, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:07:53 ago on Mon 05 Dec 2022 01:57:11 AM EST.\nError: \n Problem: conflicting requests\n  - package cargo-1.58.1-1.an8.riscv64 requires rust, but none of the providers can be installed\n  - nothing provides libLLVM-13.so.2()(64bit) needed by rust-1.58.1-1.an8.riscv64\n  - nothing provides libLLVM-13.so.2(LLVM_13)(64bit) needed by rust-1.58.1-1.an8.riscv64\n(try to add '--skip-broken' to skip uninstallable packages)"
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Mon Dec  5 02:06:19 2022 - INFO  - Finish environment cleanup!

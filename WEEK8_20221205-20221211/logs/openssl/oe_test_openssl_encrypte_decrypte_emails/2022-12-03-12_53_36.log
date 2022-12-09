@@ -1,0 +1,187 @@
++ source common/common_openssl.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n '' ']'
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Sat Dec  3 12:53:40 2022 - INFO  - Start to run test.
++ cat
++ openssl genrsa -out rsakey.pem
+oe_test_openssl_encrypte_decrypte_emails.sh: line 28: openssl: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_encrypte_decrypte_emails.sh line 29'
++ message='oe_test_openssl_encrypte_decrypte_emails.sh line 29'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_encrypte_decrypte_emails.sh line 29'
+Sat Dec  3 12:53:41 2022 - ERROR - oe_test_openssl_encrypte_decrypte_emails.sh line 29
++ return 0
++ grep 'BEGIN RSA PRIVATE KEY' rsakey.pem
+grep: rsakey.pem: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_encrypte_decrypte_emails.sh line 31'
++ message='oe_test_openssl_encrypte_decrypte_emails.sh line 31'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_encrypte_decrypte_emails.sh line 31'
+Sat Dec  3 12:53:42 2022 - ERROR - oe_test_openssl_encrypte_decrypte_emails.sh line 31
++ return 0
++ generate_PublicKey
++ expect
+spawn openssl req -x509 -key rsakey.pem -days 365 -out mycert-rsa.pem -new
+couldn't execute "openssl": no such file or directory
+    while executing
+"spawn openssl req -x509 -key rsakey.pem -days 365 -out mycert-rsa.pem -new"
++ grep 'certificate request' testlog
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'common/common_openssl.sh line 164'
++ message='common/common_openssl.sh line 164'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'common/common_openssl.sh line 164'
+Sat Dec  3 12:53:43 2022 - ERROR - common/common_openssl.sh line 164
++ return 0
++ grep 'BEGIN CERTIFICATE' mycert-rsa.pem
+grep: mycert-rsa.pem: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'common/common_openssl.sh line 166'
++ message='common/common_openssl.sh line 166'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'common/common_openssl.sh line 166'
+Sat Dec  3 12:53:44 2022 - ERROR - common/common_openssl.sh line 166
++ return 0
++ openssl smime -encrypt -in test.txt -out etest.txt mycert-rsa.pem
+oe_test_openssl_encrypte_decrypte_emails.sh: line 33: openssl: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_encrypte_decrypte_emails.sh line 34'
++ message='oe_test_openssl_encrypte_decrypte_emails.sh line 34'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_encrypte_decrypte_emails.sh line 34'
+Sat Dec  3 12:53:44 2022 - ERROR - oe_test_openssl_encrypte_decrypte_emails.sh line 34
++ return 0
++ test -f etest.txt
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_encrypte_decrypte_emails.sh line 36'
++ message='oe_test_openssl_encrypte_decrypte_emails.sh line 36'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_encrypte_decrypte_emails.sh line 36'
+Sat Dec  3 12:53:45 2022 - ERROR - oe_test_openssl_encrypte_decrypte_emails.sh line 36
++ return 0
++ openssl smime -decrypt -in etest.txt -inkey rsakey.pem -out dtest.txt
+oe_test_openssl_encrypte_decrypte_emails.sh: line 37: openssl: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_encrypte_decrypte_emails.sh line 38'
++ message='oe_test_openssl_encrypte_decrypte_emails.sh line 38'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_encrypte_decrypte_emails.sh line 38'
+Sat Dec  3 12:53:46 2022 - ERROR - oe_test_openssl_encrypte_decrypte_emails.sh line 38
++ return 0
++ test -f dtest.txt
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_encrypte_decrypte_emails.sh line 40'
++ message='oe_test_openssl_encrypte_decrypte_emails.sh line 40'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_encrypte_decrypte_emails.sh line 40'
+Sat Dec  3 12:53:47 2022 - ERROR - oe_test_openssl_encrypte_decrypte_emails.sh line 40
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Sat Dec  3 12:53:47 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 8
++ test 8 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Sat Dec  3 12:53:48 2022 - ERROR - failed to execute the case.
++ exit 8
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Sat Dec  3 12:53:49 2022 - INFO  - Start to restore the test environment.
+++ ls
+++ grep -v '\.sh\|common'
++ rm -f testlog test.txt
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Sat Dec  3 12:53:50 2022 - INFO  - End to restore the test environment.

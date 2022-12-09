@@ -1,0 +1,106 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n '' ']'
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Sat Dec  3 12:52:57 2022 - INFO  - Start to run test.
++ echo 'Hello, world!'
++ openssl genrsa -out rsakey.pem -passout pass:123123 2048
+oe_test_openssl_empty_public_key.sh: line 24: openssl: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_empty_public_key.sh line 25'
++ message='oe_test_openssl_empty_public_key.sh line 25'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_empty_public_key.sh line 25'
+Sat Dec  3 12:52:58 2022 - ERROR - oe_test_openssl_empty_public_key.sh line 25
++ return 0
++ grep 'BEGIN RSA PRIVATE KEY' rsakey.pem
+grep: rsakey.pem: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_empty_public_key.sh line 27'
++ message='oe_test_openssl_empty_public_key.sh line 27'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_empty_public_key.sh line 27'
+Sat Dec  3 12:52:59 2022 - ERROR - oe_test_openssl_empty_public_key.sh line 27
++ return 0
++ touch rsakey1-pub.pem
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ openssl rsautl -encrypt -pubin -inkey rsakey1-pub.pem -in word -out wordencp1
++ grep 'unable to load Public Key'
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_empty_public_key.sh line 31'
++ message='oe_test_openssl_empty_public_key.sh line 31'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_empty_public_key.sh line 31'
+Sat Dec  3 12:53:00 2022 - ERROR - oe_test_openssl_empty_public_key.sh line 31
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Sat Dec  3 12:53:01 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 3
++ test 3 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Sat Dec  3 12:53:01 2022 - ERROR - failed to execute the case.
++ exit 3
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Sat Dec  3 12:53:02 2022 - INFO  - Start to restore the test environment.
++ rm -f word rsakey.pem rsakey1-pub.pem
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Sat Dec  3 12:53:03 2022 - INFO  - End to restore the test environment.

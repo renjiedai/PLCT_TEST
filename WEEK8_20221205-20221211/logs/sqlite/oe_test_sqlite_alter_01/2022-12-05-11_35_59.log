@@ -1,0 +1,76 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n '' ']'
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Mon Dec  5 11:36:03 2022 - INFO  - Start to run test.
++ expect
+spawn sqlite3 ./test.db
+couldn't execute "sqlite3": no such file or directory
+    while executing
+"spawn sqlite3 ./test.db"
+++ grep -cE OLD_COMPANY ./output.txt
+grep: ./output.txt: No such file or directory
++ CHECK_RESULT '' 1
++ actual_result=
++ expect_result=1
++ mode=0
++ error_log=
++ '[' -z '' ']'
++ LOG_ERROR 'Missing actual error code.'
++ message='Missing actual error code.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Missing actual error code.'
+Mon Dec  5 11:36:04 2022 - ERROR - Missing actual error code.
++ return 1
+++ grep -cE 'SEX|female' ./output.txt
+grep: ./output.txt: No such file or directory
++ CHECK_RESULT '' 2
++ actual_result=
++ expect_result=2
++ mode=0
++ error_log=
++ '[' -z '' ']'
++ LOG_ERROR 'Missing actual error code.'
++ message='Missing actual error code.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Missing actual error code.'
+Mon Dec  5 11:36:05 2022 - ERROR - Missing actual error code.
++ return 1
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Mon Dec  5 11:36:06 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z ''
++ test 0 -eq 0
++ LOG_INFO 'succeed to execute the case.'
++ message='succeed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'succeed to execute the case.'
+Mon Dec  5 11:36:07 2022 - INFO  - succeed to execute the case.
++ exec_result=
++ exit 0
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Mon Dec  5 11:36:08 2022 - INFO  - Start to restore the test environment.
++ rm -rf ./test.db ./output.txt
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Mon Dec  5 11:36:08 2022 - INFO  - End to restore the test environment.

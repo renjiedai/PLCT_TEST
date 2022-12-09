@@ -1,0 +1,334 @@
++ source ../common/common_lib.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start environmental preparation.'
++ message='Start environmental preparation.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start environmental preparation.'
+Mon Dec  5 11:16:40 2022 - INFO  - Start environmental preparation.
++ DNF_INSTALL 'spawn-fcgi php-cgi nginx'
++ pkgs='spawn-fcgi php-cgi nginx'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'spawn-fcgi php-cgi nginx' --node 1 --tempfile ''
+Mon Dec  5 11:17:21 2022 - ERROR - pkgs:(nginx) not found
++ tmpfile2=
++ '[' -z '' ']'
++ tmpfile=
++ echo 'SOCKET=/var/run/fcgiwrap.sock
+FCGI_SOCKET=/var/run/fcgiwrap.sock
+FCGI_PROGRAM=/usr/bin/php-cgi
+FCGI_USER=nginx
+FCGI_GROUP=nginx
+FCGI_EXTRA_OPTIONS="-M 0777"
+OPTIONS="-u $FCGI_USER -g $FCGI_GROUP -s $FCGI_SOCKET -S $FCGI_EXTRA_OPTIONS -F 1 -P /var/run/spawn-fcgi.pid -- $FCGI_PROGRAM"'
++ service=spawn-fcgi.service
+++ date '+%Y-%m-%d %T'
++ log_time='2022-12-05 11:17:21'
++ LOG_INFO 'End of environmental preparation!'
++ message='End of environmental preparation!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of environmental preparation!'
+Mon Dec  5 11:17:22 2022 - INFO  - End of environmental preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start testing...'
++ message='Start testing...'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start testing...'
+Mon Dec  5 11:17:23 2022 - INFO  - Start testing...
++ test_restart spawn-fcgi.service
++ service=spawn-fcgi.service
++ systemctl restart spawn-fcgi.service
+Failed to restart spawn-fcgi.service: Unit spawn-fcgi.service not found.
++ CHECK_RESULT 5 0 0 'spawn-fcgi.service restart failed'
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log='spawn-fcgi.service restart failed'
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n 'spawn-fcgi.service restart failed'
++ LOG_ERROR 'spawn-fcgi.service restart failed'
++ message='spawn-fcgi.service restart failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'spawn-fcgi.service restart failed'
+Mon Dec  5 11:17:24 2022 - ERROR - spawn-fcgi.service restart failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 34'
++ message='../common/common_lib.sh line 34'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 34'
+Mon Dec  5 11:17:25 2022 - ERROR - ../common/common_lib.sh line 34
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status spawn-fcgi.service
++ grep 'Active: active'
+Unit spawn-fcgi.service could not be found.
++ CHECK_RESULT 1 0 0 'spawn-fcgi.service restart failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='spawn-fcgi.service restart failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'spawn-fcgi.service restart failed'
++ LOG_ERROR 'spawn-fcgi.service restart failed'
++ message='spawn-fcgi.service restart failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'spawn-fcgi.service restart failed'
+Mon Dec  5 11:17:32 2022 - ERROR - spawn-fcgi.service restart failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 37'
++ message='../common/common_lib.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 37'
+Mon Dec  5 11:17:32 2022 - ERROR - ../common/common_lib.sh line 37
++ return 0
++ systemctl stop spawn-fcgi.service
+Failed to stop spawn-fcgi.service: Unit spawn-fcgi.service not loaded.
++ CHECK_RESULT 5 0 0 'spawn-fcgi.service stop failed'
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log='spawn-fcgi.service stop failed'
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n 'spawn-fcgi.service stop failed'
++ LOG_ERROR 'spawn-fcgi.service stop failed'
++ message='spawn-fcgi.service stop failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'spawn-fcgi.service stop failed'
+Mon Dec  5 11:17:33 2022 - ERROR - spawn-fcgi.service stop failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 39'
++ message='../common/common_lib.sh line 39'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 39'
+Mon Dec  5 11:17:34 2022 - ERROR - ../common/common_lib.sh line 39
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status spawn-fcgi.service
++ grep 'Active: inactive'
+Unit spawn-fcgi.service could not be found.
++ CHECK_RESULT 1 0 0 'spawn-fcgi.service stop failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='spawn-fcgi.service stop failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'spawn-fcgi.service stop failed'
++ LOG_ERROR 'spawn-fcgi.service stop failed'
++ message='spawn-fcgi.service stop failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'spawn-fcgi.service stop failed'
+Mon Dec  5 11:17:41 2022 - ERROR - spawn-fcgi.service stop failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 42'
++ message='../common/common_lib.sh line 42'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 42'
+Mon Dec  5 11:17:41 2022 - ERROR - ../common/common_lib.sh line 42
++ return 0
++ systemctl start spawn-fcgi.service
+Failed to start spawn-fcgi.service: Unit spawn-fcgi.service not found.
++ CHECK_RESULT 5 0 0 'spawn-fcgi.service start failed'
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log='spawn-fcgi.service start failed'
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n 'spawn-fcgi.service start failed'
++ LOG_ERROR 'spawn-fcgi.service start failed'
++ message='spawn-fcgi.service start failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'spawn-fcgi.service start failed'
+Mon Dec  5 11:17:42 2022 - ERROR - spawn-fcgi.service start failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 44'
++ message='../common/common_lib.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 44'
+Mon Dec  5 11:17:43 2022 - ERROR - ../common/common_lib.sh line 44
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status spawn-fcgi.service
++ grep 'Active: active'
+Unit spawn-fcgi.service could not be found.
++ CHECK_RESULT 1 0 0 'spawn-fcgi.service start failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='spawn-fcgi.service start failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'spawn-fcgi.service start failed'
++ LOG_ERROR 'spawn-fcgi.service start failed'
++ message='spawn-fcgi.service start failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'spawn-fcgi.service start failed'
+Mon Dec  5 11:17:50 2022 - ERROR - spawn-fcgi.service start failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 47'
++ message='../common/common_lib.sh line 47'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 47'
+Mon Dec  5 11:17:51 2022 - ERROR - ../common/common_lib.sh line 47
++ return 0
++ systemctl enable spawn-fcgi.service
++ grep 'spawn-fcgi.service is not a native service'
++ CHECK_RESULT 1 0 0 'spawn-fcgi.service enable failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='spawn-fcgi.service enable failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'spawn-fcgi.service enable failed'
++ LOG_ERROR 'spawn-fcgi.service enable failed'
++ message='spawn-fcgi.service enable failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'spawn-fcgi.service enable failed'
+Mon Dec  5 11:17:51 2022 - ERROR - spawn-fcgi.service enable failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_service_spawn-fcgi.sh line 41'
++ message='oe_test_service_spawn-fcgi.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_service_spawn-fcgi.sh line 41'
+Mon Dec  5 11:17:52 2022 - ERROR - oe_test_service_spawn-fcgi.sh line 41
++ return 0
++ systemctl disable spawn-fcgi.service
++ grep 'spawn-fcgi.service is not a native service'
++ CHECK_RESULT 1 0 0 'spawn-fcgi.service disable failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='spawn-fcgi.service disable failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'spawn-fcgi.service disable failed'
++ LOG_ERROR 'spawn-fcgi.service disable failed'
++ message='spawn-fcgi.service disable failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'spawn-fcgi.service disable failed'
+Mon Dec  5 11:17:53 2022 - ERROR - spawn-fcgi.service disable failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_service_spawn-fcgi.sh line 43'
++ message='oe_test_service_spawn-fcgi.sh line 43'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_service_spawn-fcgi.sh line 43'
+Mon Dec  5 11:17:54 2022 - ERROR - oe_test_service_spawn-fcgi.sh line 43
++ return 0
++ journalctl --since '2022-12-05 11:17:21' -u spawn-fcgi.service
++ grep -i 'fail\|error'
++ grep -v -i 'DEBUG\|INFO\|WARNING'
++ CHECK_RESULT 1 0 1 'There is an error message for the log of spawn-fcgi.service'
++ actual_result=1
++ expect_result=0
++ mode=1
++ error_log='There is an error message for the log of spawn-fcgi.service'
++ '[' -z 1 ']'
++ '[' 1 -eq 0 ']'
++ test 1x == 0x
++ return 0
+++ pgrep -f php-cgi
++ first_pid=
++ systemctl reload spawn-fcgi.service
+Failed to reload spawn-fcgi.service: Unit spawn-fcgi.service not found.
+++ pgrep -f php-cgi
++ test -ne ''
+oe_test_service_spawn-fcgi.sh: line 48: test: -ne: unary operator expected
++ CHECK_RESULT 2 0 0 'spawn-fcgi.service reload failed'
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log='spawn-fcgi.service reload failed'
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n 'spawn-fcgi.service reload failed'
++ LOG_ERROR 'spawn-fcgi.service reload failed'
++ message='spawn-fcgi.service reload failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'spawn-fcgi.service reload failed'
+Mon Dec  5 11:17:55 2022 - ERROR - spawn-fcgi.service reload failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_service_spawn-fcgi.sh line 49'
++ message='oe_test_service_spawn-fcgi.sh line 49'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_service_spawn-fcgi.sh line 49'
+Mon Dec  5 11:17:56 2022 - ERROR - oe_test_service_spawn-fcgi.sh line 49
++ return 0
++ systemctl status spawn-fcgi.service
++ grep 'Active: active'
+Unit spawn-fcgi.service could not be found.
++ CHECK_RESULT 1 0 0 'spawn-fcgi.service reload causes the service status to change'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='spawn-fcgi.service reload causes the service status to change'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'spawn-fcgi.service reload causes the service status to change'
++ LOG_ERROR 'spawn-fcgi.service reload causes the service status to change'
++ message='spawn-fcgi.service reload causes the service status to change'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'spawn-fcgi.service reload causes the service status to change'
+Mon Dec  5 11:17:57 2022 - ERROR - spawn-fcgi.service reload causes the service status to change
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_service_spawn-fcgi.sh line 51'
++ message='oe_test_service_spawn-fcgi.sh line 51'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_service_spawn-fcgi.sh line 51'
+Mon Dec  5 11:17:58 2022 - ERROR - oe_test_service_spawn-fcgi.sh line 51
++ return 0
++ LOG_INFO 'Finish test!'
++ message='Finish test!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish test!'
+Mon Dec  5 11:17:58 2022 - INFO  - Finish test!
++ CASE_RESULT 0
++ case_re=0
++ test -z 10
++ test 10 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Mon Dec  5 11:17:59 2022 - ERROR - failed to execute the case.
++ exit 10
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Mon Dec  5 11:18:00 2022 - INFO  - start environment cleanup.
++ systemctl stop spawn-fcgi.service
+Failed to stop spawn-fcgi.service: Unit spawn-fcgi.service not loaded.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z '' ]]
++ [[ -z '' ]]
++ LOG_WARN 'no thing to do.'
++ message='no thing to do.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level warn --message 'no thing to do.'
+Mon Dec  5 11:18:01 2022 - WARN  - no thing to do.
++ return 0
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Mon Dec  5 11:18:02 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,217 @@
++ source ../common/common_lib.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start environmental preparation.'
++ message='Start environmental preparation.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start environmental preparation.'
+Mon Dec  5 11:25:00 2022 - INFO  - Start environmental preparation.
++ DNF_INSTALL spice-vdagent
++ pkgs=spice-vdagent
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs spice-vdagent --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpv3m89xyz
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpv3m89xyz
++ LOG_INFO 'End of environmental preparation!'
++ message='End of environmental preparation!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of environmental preparation!'
+Mon Dec  5 11:27:29 2022 - INFO  - End of environmental preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start testing...'
++ message='Start testing...'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start testing...'
+Mon Dec  5 11:27:30 2022 - INFO  - Start testing...
++ test_execution spice-vdagentd.service
++ service=spice-vdagentd.service
+++ date '+%Y-%m-%d %T'
++ log_time='2022-12-05 11:27:30'
++ test_restart spice-vdagentd.service
++ service=spice-vdagentd.service
++ systemctl restart spice-vdagentd.service
++ CHECK_RESULT 0 0 0 'spice-vdagentd.service restart failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='spice-vdagentd.service restart failed'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status spice-vdagentd.service
++ grep 'Active: active'
+     Active: active (running) since Mon 2022-12-05 11:27:30 EST; 6s ago
++ CHECK_RESULT 0 0 0 'spice-vdagentd.service restart failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='spice-vdagentd.service restart failed'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ systemctl stop spice-vdagentd.service
+Warning: Stopping spice-vdagentd.service, but it can still be activated by:
+  spice-vdagentd.socket
++ CHECK_RESULT 0 0 0 'spice-vdagentd.service stop failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='spice-vdagentd.service stop failed'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status spice-vdagentd.service
++ grep 'Active: inactive'
+     Active: inactive (dead) since Mon 2022-12-05 11:27:37 EST; 6s ago
++ CHECK_RESULT 0 0 0 'spice-vdagentd.service stop failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='spice-vdagentd.service stop failed'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ systemctl start spice-vdagentd.service
++ CHECK_RESULT 0 0 0 'spice-vdagentd.service start failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='spice-vdagentd.service start failed'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status spice-vdagentd.service
++ grep 'Active: active'
+     Active: active (running) since Mon 2022-12-05 11:27:43 EST; 6s ago
++ CHECK_RESULT 0 0 0 'spice-vdagentd.service start failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='spice-vdagentd.service start failed'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ test_enabled spice-vdagentd.service
++ service=spice-vdagentd.service
+++ systemctl is-enabled spice-vdagentd.service
++ state=indirect
++ '[' indirect == enabled ']'
++ '[' indirect == disabled ']'
++ '[' indirect == masked ']'
++ '[' indirect == static ']'
++ LOG_INFO 'Unit is indirect, ignoring.'
++ message='Unit is indirect, ignoring.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Unit is indirect, ignoring.'
+Mon Dec  5 11:27:50 2022 - INFO  - Unit is indirect, ignoring.
++ journalctl --since '2022-12-05 11:27:30' -u spice-vdagentd.service
++ grep -i 'fail\|error'
++ grep -v -i 'DEBUG\|INFO\|WARNING'
+Dec 05 11:27:30 anolis-riscv spice-vdagentd[818]: Unable to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+Dec 05 11:27:43 anolis-riscv spice-vdagentd[831]: Unable to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
++ CHECK_RESULT 0 0 1 'There is an error message for the log of spice-vdagentd.service'
++ actual_result=0
++ expect_result=0
++ mode=1
++ error_log='There is an error message for the log of spice-vdagentd.service'
++ '[' -z 0 ']'
++ '[' 1 -eq 0 ']'
++ test 0x == 0x
++ test -n 'There is an error message for the log of spice-vdagentd.service'
++ LOG_ERROR 'There is an error message for the log of spice-vdagentd.service'
++ message='There is an error message for the log of spice-vdagentd.service'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'There is an error message for the log of spice-vdagentd.service'
+Mon Dec  5 11:27:51 2022 - ERROR - There is an error message for the log of spice-vdagentd.service
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 28'
++ message='../common/common_lib.sh line 28'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 28'
+Mon Dec  5 11:27:52 2022 - ERROR - ../common/common_lib.sh line 28
++ return 0
++ test_reload spice-vdagentd.service
++ service=spice-vdagentd.service
++ systemctl start spice-vdagentd.service
++ systemctl reload spice-vdagentd.service
++ grep 'Job type reload is not applicable'
+Failed to reload spice-vdagentd.service: Job type reload is not applicable for unit spice-vdagentd.service.
++ CHECK_RESULT 0 0 0 'Job type reload is not applicable for unit spice-vdagentd.service'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Job type reload is not applicable for unit spice-vdagentd.service'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ systemctl status spice-vdagentd.service
++ grep 'Active: active'
+     Active: active (running) since Mon 2022-12-05 11:27:43 EST; 9s ago
++ LOG_INFO 'Finish test!'
++ message='Finish test!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish test!'
+Mon Dec  5 11:27:53 2022 - INFO  - Finish test!
++ CASE_RESULT 0
++ case_re=0
++ test -z 1
++ test 1 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Mon Dec  5 11:27:54 2022 - ERROR - failed to execute the case.
++ exit 1
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Mon Dec  5 11:27:55 2022 - INFO  - start environment cleanup.
++ systemctl stop spice-vdagentd.service
+Warning: Stopping spice-vdagentd.service, but it can still be activated by:
+  spice-vdagentd.socket
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpv3m89xyz ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpv3m89xyz
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Mon Dec  5 11:28:37 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,446 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Tue Dec  6 06:33:47 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL python3-uWSGI
++ pkgs=python3-uWSGI
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs python3-uWSGI --node 1 --tempfile ''
+Tue Dec  6 06:34:04 2022 - ERROR - pkgs:(python3-uWSGI) not found
++ tmpfile2=
++ '[' -z '' ']'
++ tmpfile=
++ pip3 install uwsgitop
+oe_test_uwsgi.sh: line 25: pip3: command not found
++ LOG_INFO 'Finish preparing the test environment.'
++ message='Finish preparing the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish preparing the test environment.'
+Tue Dec  6 06:34:05 2022 - INFO  - Finish preparing the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Tue Dec  6 06:34:05 2022 - INFO  - Start to run test.
++ uwsgi --help
++ grep 'Usage: /usr/bin/uwsgi \[options...\]'
+oe_test_uwsgi.sh: line 31: uwsgi: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_uwsgi.sh line 32'
++ message='oe_test_uwsgi.sh line 32'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_uwsgi.sh line 32'
+Tue Dec  6 06:34:06 2022 - ERROR - oe_test_uwsgi.sh line 32
++ return 0
++ pip3
++ grep -E 'Usage:|pip3 <command> \[options\]'
+oe_test_uwsgi.sh: line 33: pip3: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_uwsgi.sh line 34'
++ message='oe_test_uwsgi.sh line 34'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_uwsgi.sh line 34'
+Tue Dec  6 06:34:07 2022 - ERROR - oe_test_uwsgi.sh line 34
++ return 0
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ nohup uwsgi --http :9090 --wsgi-file test.py
++ test 0x '!=' 0x
++ return 0
++ curl http://127.0.0.1:9090 -w '\n'
++ grep 'Hello World'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (7) Failed to connect to 127.0.0.1 port 9090 after 39 ms: Connection refused
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_uwsgi.sh line 38'
++ message='oe_test_uwsgi.sh line 38'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_uwsgi.sh line 38'
+Tue Dec  6 06:34:08 2022 - ERROR - oe_test_uwsgi.sh line 38
++ return 0
++ curl http://127.0.0.1:9090 -w '\n'
++ grep 'Hello World'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (7) Failed to connect to 127.0.0.1 port 9090 after 34 ms: Connection refused
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_uwsgi.sh line 40'
++ message='oe_test_uwsgi.sh line 40'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_uwsgi.sh line 40'
+Tue Dec  6 06:34:09 2022 - ERROR - oe_test_uwsgi.sh line 40
++ return 0
++ curl http:/0.0.0.0:9090 -w '\n'
++ grep 'Hello World'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (7) Failed to connect to 0.0.0.0 port 9090 after 32 ms: Connection refused
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_uwsgi.sh line 42'
++ message='oe_test_uwsgi.sh line 42'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_uwsgi.sh line 42'
+Tue Dec  6 06:34:10 2022 - ERROR - oe_test_uwsgi.sh line 42
++ return 0
+++ pgrep -f 'uwsgi --http'
++ kill -9
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ nohup uwsgi --http :9090 --wsgi-file test.py --master --processes 4 --threads 2
++ test 0x '!=' 0x
++ return 0
++ curl http://127.0.0.1:9090 -w '\n'
++ grep 'Hello World'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (7) Failed to connect to 127.0.0.1 port 9090 after 31 ms: Connection refused
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_uwsgi.sh line 48'
++ message='oe_test_uwsgi.sh line 48'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_uwsgi.sh line 48'
+Tue Dec  6 06:34:18 2022 - ERROR - oe_test_uwsgi.sh line 48
++ return 0
++ curl http://127.0.0.1:9090 -w '\n'
++ grep 'Hello World'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (7) Failed to connect to 127.0.0.1 port 9090 after 30 ms: Connection refused
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_uwsgi.sh line 50'
++ message='oe_test_uwsgi.sh line 50'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_uwsgi.sh line 50'
+Tue Dec  6 06:34:19 2022 - ERROR - oe_test_uwsgi.sh line 50
++ return 0
++ curl http:/0.0.0.0:9090 -w '\n'
++ grep 'Hello World'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (7) Failed to connect to 0.0.0.0 port 9090 after 32 ms: Connection refused
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_uwsgi.sh line 52'
++ message='oe_test_uwsgi.sh line 52'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_uwsgi.sh line 52'
+Tue Dec  6 06:34:20 2022 - ERROR - oe_test_uwsgi.sh line 52
++ return 0
+++ pgrep -f 'uwsgi --http'
++ kill -9
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ nohup uwsgi --http :9090 --wsgi-file test.py --master --processes 4 --threads 2 --stats 127.0.0.1:9191
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ curl http://127.0.0.1:9090 -w '\n'
++ grep 'Hello World'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (7) Failed to connect to 127.0.0.1 port 9090 after 32 ms: Connection refused
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_uwsgi.sh line 58'
++ message='oe_test_uwsgi.sh line 58'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_uwsgi.sh line 58'
+Tue Dec  6 06:34:27 2022 - ERROR - oe_test_uwsgi.sh line 58
++ return 0
++ curl http://127.0.0.1:9090 -w '\n'
++ grep 'Hello World'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (7) Failed to connect to 127.0.0.1 port 9090 after 31 ms: Connection refused
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_uwsgi.sh line 60'
++ message='oe_test_uwsgi.sh line 60'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_uwsgi.sh line 60'
+Tue Dec  6 06:34:28 2022 - ERROR - oe_test_uwsgi.sh line 60
++ return 0
++ curl http:/0.0.0.0:9090 -w '\n'
++ grep 'Hello World'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (7) Failed to connect to 0.0.0.0 port 9090 after 31 ms: Connection refused
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_uwsgi.sh line 62'
++ message='oe_test_uwsgi.sh line 62'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_uwsgi.sh line 62'
+Tue Dec  6 06:34:29 2022 - ERROR - oe_test_uwsgi.sh line 62
++ return 0
++ expect
+spawn uwsgitop 127.0.0.1:9191
+couldn't execute "uwsgitop": no such file or directory
+    while executing
+"spawn uwsgitop 127.0.0.1:9191"
+++ pgrep -f 'uwsgi --http'
+++ head -n 1
++ pid=
++ grep log1
+Tue Dec  6 07:03:44 2022 - ERROR - Timeout : Command 'bash -x oe_test_uwsgi.sh' timed out after 1799.999300295 seconds
+++ post_test
+++ LOG_INFO 'Start to restore the test environment.'
+++ message='Start to restore the test environment.'
+++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Tue Dec  6 07:03:50 2022 - INFO  - Start to restore the test environment.
++++ ls
++++ grep -vE '.sh|.py'
+++ rm -rf log1
+++ pip3 uninstall uwsgitop -y
+oe_test_uwsgi.sh: line 90: pip3: command not found
+++ DNF_REMOVE
+++ node=1
+++ pkg_list=
+++ mode=0
+++ [[ -z '' ]]
+++ [[ -z '' ]]
+++ LOG_WARN 'no thing to do.'
+++ message='no thing to do.'
+++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level warn --message 'no thing to do.'
+Tue Dec  6 07:03:51 2022 - WARN  - no thing to do.
+++ return 0
+++ LOG_INFO 'Finish restoring the test environment.'
+++ message='Finish restoring the test environment.'
+++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish restoring the test environment.'
+Tue Dec  6 07:03:52 2022 - INFO  - Finish restoring the test environment.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_uwsgi.sh line 70'
++ message='oe_test_uwsgi.sh line 70'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_uwsgi.sh line 70'
+Tue Dec  6 07:03:53 2022 - ERROR - oe_test_uwsgi.sh line 70
++ return 0
+++ pgrep -f 'uwsgi --http'
++ kill -9
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ nohup uwsgi --socket 127.0.0.1:3031 --wsgi-file test.py --master --processes 4 --threads 2 --stats 127.0.0.1:9191
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
+++ pgrep -f 'uwsgi --socket'
+++ head -n 1
++ pid=
++ expect
+spawn uwsgitop 127.0.0.1:9191
+couldn't execute "uwsgitop": no such file or directory
+    while executing
+"spawn uwsgitop 127.0.0.1:9191"
++ grep log2
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_uwsgi.sh line 82'
++ message='oe_test_uwsgi.sh line 82'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_uwsgi.sh line 82'
+Tue Dec  6 07:04:01 2022 - ERROR - oe_test_uwsgi.sh line 82
++ return 0
+++ pgrep -f 'uwsgi --socket'
++ kill -9
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
++ LOG_INFO 'End of the test.'
++ message='End of the test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of the test.'
+Tue Dec  6 07:04:02 2022 - INFO  - End of the test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 13
++ test 13 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Tue Dec  6 07:04:03 2022 - ERROR - failed to execute the case.
++ exit 13
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Tue Dec  6 07:04:04 2022 - INFO  - Start to restore the test environment.
+++ ls
+++ grep -vE '.sh|.py'
++ rm -rf log2
++ pip3 uninstall uwsgitop -y
+oe_test_uwsgi.sh: line 90: pip3: command not found
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z '' ]]
++ [[ -z '' ]]
++ LOG_WARN 'no thing to do.'
++ message='no thing to do.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level warn --message 'no thing to do.'
+Tue Dec  6 07:04:05 2022 - WARN  - no thing to do.
++ return 0
++ LOG_INFO 'Finish restoring the test environment.'
++ message='Finish restoring the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish restoring the test environment.'
+Tue Dec  6 07:04:07 2022 - INFO  - Finish restoring the test environment.

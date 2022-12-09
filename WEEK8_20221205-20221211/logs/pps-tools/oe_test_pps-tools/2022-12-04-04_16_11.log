@@ -1,0 +1,322 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Sun Dec  4 04:16:17 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL 'pps-tools kernel-source'
++ pkgs='pps-tools kernel-source'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'pps-tools kernel-source' --node 1 --tempfile ''
+Sun Dec  4 04:16:32 2022 - ERROR - pkgs:(kernel-source) not found
++ tmpfile2=
++ '[' -z '' ']'
++ tmpfile=
++++ dirname oe_test_pps-tools.sh
+++ cd .
+++ pwd
++ CRTDIR=/root/mugen-riscv/testcases/cli-test/pps-tools
++ mkdir pps_client
++ cd ./pps_client
+++ find / -name pps-ktimer.c
++ cp pps-ktimer1.c
+cp: missing destination file operand after 'pps-ktimer1.c'
+Try 'cp --help' for more information.
++ cp pps-ktimer1.c pps-ktimer2.c
+cp: cannot stat 'pps-ktimer1.c': No such file or directory
++ sed -i s/PPS_CAPTUREASSERT/PPS_CAPTURECLEAR/g pps-ktimer2.c
+sed: can't read pps-ktimer2.c: No such file or directory
++ sed -i s/PPS_OFFSETASSERT/PPS_OFFSETCLEAR/g pps-ktimer2.c
+sed: can't read pps-ktimer2.c: No such file or directory
++ echo 'obj-m+=pps-ktimer1.o
+obj-m+=pps-ktimer2.o
+
+all:
+	make -C /lib/modules/$(shell uname -r)/build M=`pwd` modules'
++ make
+make -C /lib/modules/5.14.18-100.2.riscv64.an8.riscv64/build M=`pwd` modules
+make[1]: *** /lib/modules/5.14.18-100.2.riscv64.an8.riscv64/build: No such file or directory.  Stop.
+make: *** [Makefile:5: all] Error 2
++ insmod pps-ktimer1.ko
+insmod: ERROR: could not load module pps-ktimer1.ko: No such file or directory
++ insmod pps-ktimer2.ko
+insmod: ERROR: could not load module pps-ktimer2.ko: No such file or directory
++ cd /root/mugen-riscv/testcases/cli-test/pps-tools
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Sun Dec  4 04:16:57 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Sun Dec  4 04:16:58 2022 - INFO  - Start to run test.
++ ppsfind ktimer
++ grep 'pps[0-9]:.*name=ktimer path='
+oe_test_pps-tools.sh: line 67: ppsfind: command not found
++ CHECK_RESULT 1 0 0 'ppsfind command failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='ppsfind command failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'ppsfind command failed'
++ LOG_ERROR 'ppsfind command failed'
++ message='ppsfind command failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'ppsfind command failed'
+Sun Dec  4 04:16:59 2022 - ERROR - ppsfind command failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_pps-tools.sh line 68'
++ message='oe_test_pps-tools.sh line 68'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_pps-tools.sh line 68'
+Sun Dec  4 04:17:00 2022 - ERROR - oe_test_pps-tools.sh line 68
++ return 0
++ SLEEP_WAIT 3
++ wait_time=3
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 3 --cmd '' --mode 1
++ ppstest /dev/pps0
++ grep 'source.* - assert.*, sequence:.* - clear.*' ppstest_log.txt
++ CHECK_RESULT 1 0 0 'ppstest command failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='ppstest command failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'ppstest command failed'
++ LOG_ERROR 'ppstest command failed'
++ message='ppstest command failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'ppstest command failed'
+Sun Dec  4 04:17:05 2022 - ERROR - ppstest command failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_pps-tools.sh line 74'
++ message='oe_test_pps-tools.sh line 74'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_pps-tools.sh line 74'
+Sun Dec  4 04:17:05 2022 - ERROR - oe_test_pps-tools.sh line 74
++ return 0
++ pkill -9 ppstest
++ SLEEP_WAIT 3
++ wait_time=3
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 3 --cmd '' --mode 1
++ ppsldisc /dev/ttyS0
+oe_test_pps-tools.sh: line 78: ppsldisc: command not found
++ test -d /sys/devices/virtual/pps/pps2
++ CHECK_RESULT 1 0 0 'ppsldisc command failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='ppsldisc command failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'ppsldisc command failed'
++ LOG_ERROR 'ppsldisc command failed'
++ message='ppsldisc command failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'ppsldisc command failed'
+Sun Dec  4 04:17:10 2022 - ERROR - ppsldisc command failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_pps-tools.sh line 81'
++ message='oe_test_pps-tools.sh line 81'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_pps-tools.sh line 81'
+Sun Dec  4 04:17:11 2022 - ERROR - oe_test_pps-tools.sh line 81
++ return 0
++ pkill -9 ppsldisc
++ SLEEP_WAIT 3
++ wait_time=3
++ cmd=
++ mode=1
++ ppswatch -a /dev/pps0
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 3 --cmd '' --mode 1
++ grep 'timestamp:.*, sequence:.*, offset:.*' ppswatch_log1.txt
++ CHECK_RESULT 1 0 0 'ppswatch -a command failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='ppswatch -a command failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'ppswatch -a command failed'
++ LOG_ERROR 'ppswatch -a command failed'
++ message='ppswatch -a command failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'ppswatch -a command failed'
+Sun Dec  4 04:17:16 2022 - ERROR - ppswatch -a command failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_pps-tools.sh line 88'
++ message='oe_test_pps-tools.sh line 88'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_pps-tools.sh line 88'
+Sun Dec  4 04:17:17 2022 - ERROR - oe_test_pps-tools.sh line 88
++ return 0
++ pkill -9 ppswatch
++ SLEEP_WAIT 3
++ wait_time=3
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 3 --cmd '' --mode 1
++ ppswatch -c /dev/pps1
++ grep 'timestamp:.*, sequence:.*, offset:.*' ppswatch_log2.txt
++ CHECK_RESULT 1 0 0 'ppswatch -c command failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='ppswatch -c command failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'ppswatch -c command failed'
++ LOG_ERROR 'ppswatch -c command failed'
++ message='ppswatch -c command failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'ppswatch -c command failed'
+Sun Dec  4 04:17:22 2022 - ERROR - ppswatch -c command failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_pps-tools.sh line 94'
++ message='oe_test_pps-tools.sh line 94'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_pps-tools.sh line 94'
+Sun Dec  4 04:17:23 2022 - ERROR - oe_test_pps-tools.sh line 94
++ return 0
++ pkill -9 ppswatch
++ ppsctl -fa /dev/pps0
+oe_test_pps-tools.sh: line 98: ppsctl: command not found
++ CHECK_RESULT 127 0 0 'ppswatch -fa command failed'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='ppswatch -fa command failed'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'ppswatch -fa command failed'
++ LOG_ERROR 'ppswatch -fa command failed'
++ message='ppswatch -fa command failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'ppswatch -fa command failed'
+Sun Dec  4 04:17:24 2022 - ERROR - ppswatch -fa command failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_pps-tools.sh line 99'
++ message='oe_test_pps-tools.sh line 99'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_pps-tools.sh line 99'
+Sun Dec  4 04:17:25 2022 - ERROR - oe_test_pps-tools.sh line 99
++ return 0
++ ppsctl -Fa /dev/pps0
+oe_test_pps-tools.sh: line 101: ppsctl: command not found
++ CHECK_RESULT 127 0 0 'ppswatch -Fa command failed'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='ppswatch -Fa command failed'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'ppswatch -Fa command failed'
++ LOG_ERROR 'ppswatch -Fa command failed'
++ message='ppswatch -Fa command failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'ppswatch -Fa command failed'
+Sun Dec  4 04:17:25 2022 - ERROR - ppswatch -Fa command failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_pps-tools.sh line 102'
++ message='oe_test_pps-tools.sh line 102'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_pps-tools.sh line 102'
+Sun Dec  4 04:17:26 2022 - ERROR - oe_test_pps-tools.sh line 102
++ return 0
++ ppsctl -fc /dev/pps0
+oe_test_pps-tools.sh: line 104: ppsctl: command not found
++ CHECK_RESULT 127 0 0 'ppswatch -fc command failed'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='ppswatch -fc command failed'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'ppswatch -fc command failed'
++ LOG_ERROR 'ppswatch -fc command failed'
++ message='ppswatch -fc command failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'ppswatch -fc command failed'
+Sun Dec  4 04:17:27 2022 - ERROR - ppswatch -fc command failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_pps-tools.sh line 105'
++ message='oe_test_pps-tools.sh line 105'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_pps-tools.sh line 105'
+Sun Dec  4 04:17:28 2022 - ERROR - oe_test_pps-tools.sh line 105
++ return 0
++ ppsctl -Fc /dev/pps0
+oe_test_pps-tools.sh: line 107: ppsctl: command not found
++ CHECK_RESULT 127 0 0 'ppswatch -Fc command failed'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='ppswatch -Fc command failed'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'ppswatch -Fc command failed'
++ LOG_ERROR 'ppswatch -Fc command failed'
++ message='ppswatch -Fc command failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'ppswatch -Fc command failed'
+Sun Dec  4 04:17:29 2022 - ERROR - ppswatch -Fc command failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_pps-tools.sh line 108'
++ message='oe_test_pps-tools.sh line 108'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_pps-tools.sh line 108'
+Sun Dec  4 04:17:29 2022 - ERROR - oe_test_pps-tools.sh line 108
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Sun Dec  4 04:17:30 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 9
++ test 9 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Sun Dec  4 04:17:31 2022 - ERROR - failed to execute the case.
++ exit 9
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Sun Dec  4 04:17:32 2022 - INFO  - Start to restore the test environment.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z '' ]]
++ [[ -z '' ]]
++ LOG_WARN 'no thing to do.'
++ message='no thing to do.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level warn --message 'no thing to do.'
+Sun Dec  4 04:17:32 2022 - WARN  - no thing to do.
++ return 0
++ rmmod pps-ktimer1 pps-ktimer2
+rmmod: ERROR: Module pps_ktimer1 is not currently loaded
+rmmod: ERROR: Module pps_ktimer2 is not currently loaded
++ rm -rf pps_client ppstest_log.txt ppswatch_log1.txt ppswatch_log2.txt
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Sun Dec  4 04:17:33 2022 - INFO  - End to restore the test environment.

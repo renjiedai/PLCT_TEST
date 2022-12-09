@@ -1,0 +1,379 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start environmental preparation.'
++ message='Start environmental preparation.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start environmental preparation.'
+Sun Dec  4 08:58:51 2022 - INFO  - Start environmental preparation.
++ DNF_INSTALL rpmdevtools
++ pkgs=rpmdevtools
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs rpmdevtools --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpnhofak4p
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpnhofak4p
+++ dnf list
+++ head -n 3
+++ tail -n 1
+++ awk '{print $1}'
+++ awk 'BEGIN {FS="."} {print $1}'
++ pkg_name=NetworkManager
++ yumdownloader NetworkManager
+oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh: line 25: yumdownloader: command not found
++ test -d /root/rpmbuild
++ LOG_INFO 'End of environmental preparation.'
++ message='End of environmental preparation.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of environmental preparation.'
+Sun Dec  4 09:00:24 2022 - INFO  - End of environmental preparation.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Sun Dec  4 09:00:25 2022 - INFO  - Start to run test.
++ rpmdev-rmdevelrpms -h
++ grep -A 30 rpmdev-rmdevelrpms
++ grep Options:
+Options:
++ CHECK_RESULT 0 0 0 'Failed option: -h'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Failed option: -h'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rpmdev-rmdevelrpms -v
++ grep 'rpmdev-rmdevelrpms version'
+rpmdev-rmdevelrpms version 1.15
++ CHECK_RESULT 0 0 0 'Failed option: -v'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Failed option: -v'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rpmdev-rmdevelrpms -l
++ grep -E 'devel|debuginfo|sdk|static|perl'
+No devel packages found.
++ CHECK_RESULT 0 0 0 'Fail option: -l'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Fail option: -l'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rpmdev-rmdevelrpms --qf test
++ grep 'Not removed due to dependencies'
++ CHECK_RESULT 1 0 0 'Fail option: --qf'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Fail option: --qf'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Fail option: --qf'
++ LOG_ERROR 'Fail option: --qf'
++ message='Fail option: --qf'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Fail option: --qf'
+Sun Dec  4 09:00:32 2022 - ERROR - Fail option: --qf
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 40'
++ message='oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 40'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 40'
+Sun Dec  4 09:00:33 2022 - ERROR - oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 40
++ return 0
++ rpmdev-rmdevelrpms -y
++ grep 'Not removed due to dependencies'
++ CHECK_RESULT 1 0 0 'Fail option: -y'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Fail option: -y'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Fail option: -y'
++ LOG_ERROR 'Fail option: -y'
++ message='Fail option: -y'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Fail option: -y'
+Sun Dec  4 09:00:36 2022 - ERROR - Fail option: -y
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 42'
++ message='oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 42'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 42'
+Sun Dec  4 09:00:36 2022 - ERROR - oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 42
++ return 0
++ rpmdev-setuptree
++ test -d /root/rpmbuild
++ CHECK_RESULT 0 0 0 'Failed command: rpmdev-setuptree'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Failed command: rpmdev-setuptree'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
+++ head -n 1
+++ rpmdev-sha1 'NetworkManager*rpm'
+++ awk '{print $1}'
+sha1sum: 'NetworkManager*rpm': No such file or directory
+Error: file does not exist: '/root/mugen-riscv/testcases/cli-test/rpmdevtools/oe_test_rpmdevtools_rpmdev-rmdevelrpms/NetworkManager*rpm'
++ sha1=
+++ expr length
+expr: syntax error: missing argument after ‘length’
++ sha1_num=
++ test == 40
+oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh: line 50: test: ==: unary operator expected
++ CHECK_RESULT 2 0 0 'Failed command: rpmdev-sha1'
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log='Failed command: rpmdev-sha1'
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n 'Failed command: rpmdev-sha1'
++ LOG_ERROR 'Failed command: rpmdev-sha1'
++ message='Failed command: rpmdev-sha1'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed command: rpmdev-sha1'
+Sun Dec  4 09:00:41 2022 - ERROR - Failed command: rpmdev-sha1
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 51'
++ message='oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 51'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 51'
+Sun Dec  4 09:00:42 2022 - ERROR - oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 51
++ return 0
+++ rpmdev-sha224 'NetworkManager*rpm'
+++ head -n 1
+++ awk '{print $1}'
+sha224sum: 'NetworkManager*rpm': No such file or directory
+Error: file does not exist: '/root/mugen-riscv/testcases/cli-test/rpmdevtools/oe_test_rpmdevtools_rpmdev-rmdevelrpms/NetworkManager*rpm'
++ sha224=
+++ expr length
+expr: syntax error: missing argument after ‘length’
++ sha224_num=
++ test == 56
+oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh: line 55: test: ==: unary operator expected
++ CHECK_RESULT 2 0 0 'Failed command: rpmdev-sha224'
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log='Failed command: rpmdev-sha224'
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n 'Failed command: rpmdev-sha224'
++ LOG_ERROR 'Failed command: rpmdev-sha224'
++ message='Failed command: rpmdev-sha224'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed command: rpmdev-sha224'
+Sun Dec  4 09:00:45 2022 - ERROR - Failed command: rpmdev-sha224
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 56'
++ message='oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 56'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 56'
+Sun Dec  4 09:00:46 2022 - ERROR - oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 56
++ return 0
+++ head -n 1
+++ rpmdev-sha256 'NetworkManager*rpm'
+++ awk '{print $1}'
+sha256sum: 'NetworkManager*rpm': No such file or directory
+Error: file does not exist: '/root/mugen-riscv/testcases/cli-test/rpmdevtools/oe_test_rpmdevtools_rpmdev-rmdevelrpms/NetworkManager*rpm'
++ sha256=
+++ expr length
+expr: syntax error: missing argument after ‘length’
++ sha256_num=
++ test == 64
+oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh: line 60: test: ==: unary operator expected
++ CHECK_RESULT 2 0 0 'Failed command: rpmdev-sha256'
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log='Failed command: rpmdev-sha256'
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n 'Failed command: rpmdev-sha256'
++ LOG_ERROR 'Failed command: rpmdev-sha256'
++ message='Failed command: rpmdev-sha256'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed command: rpmdev-sha256'
+Sun Dec  4 09:00:48 2022 - ERROR - Failed command: rpmdev-sha256
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 61'
++ message='oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 61'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 61'
+Sun Dec  4 09:00:49 2022 - ERROR - oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 61
++ return 0
+++ rpmdev-sha384 'NetworkManager*rpm'
+++ head -n 1
+++ awk '{print $1}'
+sha384sum: 'NetworkManager*rpm': No such file or directory
+Error: file does not exist: '/root/mugen-riscv/testcases/cli-test/rpmdevtools/oe_test_rpmdevtools_rpmdev-rmdevelrpms/NetworkManager*rpm'
++ sha384=
+++ expr length
+expr: syntax error: missing argument after ‘length’
++ sha384_num=
++ test == 96
+oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh: line 65: test: ==: unary operator expected
++ CHECK_RESULT 2 0 0 'Failed command: rpmdev-sha384'
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log='Failed command: rpmdev-sha384'
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n 'Failed command: rpmdev-sha384'
++ LOG_ERROR 'Failed command: rpmdev-sha384'
++ message='Failed command: rpmdev-sha384'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed command: rpmdev-sha384'
+Sun Dec  4 09:00:51 2022 - ERROR - Failed command: rpmdev-sha384
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 66'
++ message='oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 66'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 66'
+Sun Dec  4 09:00:52 2022 - ERROR - oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 66
++ return 0
+++ rpmdev-sha512 'NetworkManager*rpm'
+++ head -n 1
+++ awk '{print $1}'
+sha512sum: 'NetworkManager*rpm': No such file or directory
+Error: file does not exist: '/root/mugen-riscv/testcases/cli-test/rpmdevtools/oe_test_rpmdevtools_rpmdev-rmdevelrpms/NetworkManager*rpm'
++ sha512=
+++ expr length
+expr: syntax error: missing argument after ‘length’
++ sha512_num=
++ test == 128
+oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh: line 70: test: ==: unary operator expected
++ CHECK_RESULT 2 0 0 'Failed command: rpmdev-sha512'
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log='Failed command: rpmdev-sha512'
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n 'Failed command: rpmdev-sha512'
++ LOG_ERROR 'Failed command: rpmdev-sha512'
++ message='Failed command: rpmdev-sha512'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed command: rpmdev-sha512'
+Sun Dec  4 09:00:53 2022 - ERROR - Failed command: rpmdev-sha512
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 71'
++ message='oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 71'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 71'
+Sun Dec  4 09:00:54 2022 - ERROR - oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 71
++ return 0
+++ ls '*rpm'
+++ rpmdev-sort
+++ wc -l
+ls: cannot access '*rpm': No such file or directory
++ CHECK_RESULT 0 1 0 'Failed command: rpmdev-sort'
++ actual_result=0
++ expect_result=1
++ mode=0
++ error_log='Failed command: rpmdev-sort'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 1x
++ test -n 'Failed command: rpmdev-sort'
++ LOG_ERROR 'Failed command: rpmdev-sort'
++ message='Failed command: rpmdev-sort'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed command: rpmdev-sort'
+Sun Dec  4 09:00:56 2022 - ERROR - Failed command: rpmdev-sort
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 73'
++ message='oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 73'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 73'
+Sun Dec  4 09:00:57 2022 - ERROR - oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 73
++ return 0
++ rpmdev-sort -h
++ grep -A 4 rpmdev-sort
++ grep 'Supported formats:'
+Supported formats:
++ CHECK_RESULT 0 0 0 'Failed option: rpmdev-sort -h'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Failed option: rpmdev-sort -h'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rpmdev-sum 'NetworkManager*rpm'
++ grep NetworkManager
+sum: 'NetworkManager*rpm': No such file or directory
+Error: file does not exist: '/root/mugen-riscv/testcases/cli-test/rpmdevtools/oe_test_rpmdevtools_rpmdev-rmdevelrpms/NetworkManager*rpm'
++ CHECK_RESULT 1 0 0 'Failed command: rpmdev-sum'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed command: rpmdev-sum'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed command: rpmdev-sum'
++ LOG_ERROR 'Failed command: rpmdev-sum'
++ message='Failed command: rpmdev-sum'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed command: rpmdev-sum'
+Sun Dec  4 09:00:59 2022 - ERROR - Failed command: rpmdev-sum
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 78'
++ message='oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 78'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 78'
+Sun Dec  4 09:01:00 2022 - ERROR - oe_test_rpmdevtools_rpmdev-rmdevelrpms.sh line 78
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Sun Dec  4 09:01:01 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 9
++ test 9 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Sun Dec  4 09:01:02 2022 - ERROR - failed to execute the case.
++ exit 9
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Sun Dec  4 09:01:03 2022 - INFO  - Start to restore the test environment.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpnhofak4p ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpnhofak4p
++ '[' 0 -ne 0 ']'
++ rm -rf /root/rpmbuild '*rpm'
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Sun Dec  4 09:01:27 2022 - INFO  - End to restore the test environment.

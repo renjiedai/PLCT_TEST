@@ -1,0 +1,371 @@
++ source common/common_openssl.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n function ']'
++ config_params
++ LOG_INFO 'Start to config params of the case.'
++ message='Start to config params of the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to config params of the case.'
+Sat Dec  3 12:56:16 2022 - INFO  - Start to config params of the case.
++ deploy_env
++ CA_Path=/etc/pki/CA
++ '[' '!' -d /etc/pki/CA ']'
++ cp /etc/pki/tls/openssl.cnf /etc/pki/tls/openssl.cnf.bak
++ sed -i '0,/^dir/s/\.\/demoCA/\/etc\/pki\/CA/' /etc/pki/tls/openssl.cnf
++ LOG_INFO 'End to config params of the case.'
++ message='End to config params of the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to config params of the case.'
+Sat Dec  3 12:56:17 2022 - INFO  - End to config params of the case.
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Sat Dec  3 12:56:18 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL 'httpd mod_ssl'
++ pkgs='httpd mod_ssl'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'httpd mod_ssl' --node 1 --tempfile ''
+Sat Dec  3 12:56:28 2022 - ERROR - pkgs:(httpd mod_ssl) not found
++ tmpfile2=
++ '[' -z '' ']'
++ tmpfile=
++ createCA_and_Self_signed_certificate
++ touch /etc/pki/CA/index.txt
++ echo 01
++ openssl genrsa -out /etc/pki/CA/private/cakey.pem 2048
+common/common_openssl.sh: line 33: openssl: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'common/common_openssl.sh line 34'
++ message='common/common_openssl.sh line 34'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'common/common_openssl.sh line 34'
+Sat Dec  3 12:56:29 2022 - ERROR - common/common_openssl.sh line 34
++ return 0
++ grep 'BEGIN RSA PRIVATE KEY' /etc/pki/CA/private/cakey.pem
+grep: /etc/pki/CA/private/cakey.pem: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'common/common_openssl.sh line 36'
++ message='common/common_openssl.sh line 36'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'common/common_openssl.sh line 36'
+Sat Dec  3 12:56:30 2022 - ERROR - common/common_openssl.sh line 36
++ return 0
++ expect
+spawn openssl req -x509 -key /etc/pki/CA/private/cakey.pem -days 365 -out /etc/pki/CA/cacert.pem -new
+couldn't execute "openssl": no such file or directory
+    while executing
+"spawn openssl req -x509 -key /etc/pki/CA/private/cakey.pem -days 365 -out /etc/pki/CA/cacert.pem -new"
++ grep 'certificate request' /etc/pki/CA/testlog1
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'common/common_openssl.sh line 58'
++ message='common/common_openssl.sh line 58'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'common/common_openssl.sh line 58'
+Sat Dec  3 12:56:31 2022 - ERROR - common/common_openssl.sh line 58
++ return 0
++ grep 'BEGIN CERTIFICATE' /etc/pki/CA/cacert.pem
+grep: /etc/pki/CA/cacert.pem: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'common/common_openssl.sh line 60'
++ message='common/common_openssl.sh line 60'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'common/common_openssl.sh line 60'
+Sat Dec  3 12:56:32 2022 - ERROR - common/common_openssl.sh line 60
++ return 0
++ generate_PrivateKey_and_Certificate_Signing_Request
++ applying=httpd
++ build_path=/etc/httpd/ssl
++ mkdir /etc/httpd/ssl
+mkdir: cannot create directory ‘/etc/httpd/ssl’: No such file or directory
++ openssl genrsa -out /etc/httpd/ssl/httpd.key 2048
+common/common_openssl.sh: line 67: openssl: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'common/common_openssl.sh line 68'
++ message='common/common_openssl.sh line 68'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'common/common_openssl.sh line 68'
+Sat Dec  3 12:56:33 2022 - ERROR - common/common_openssl.sh line 68
++ return 0
++ grep 'BEGIN RSA PRIVATE KEY' /etc/httpd/ssl/httpd.key
+grep: /etc/httpd/ssl/httpd.key: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'common/common_openssl.sh line 70'
++ message='common/common_openssl.sh line 70'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'common/common_openssl.sh line 70'
+Sat Dec  3 12:56:34 2022 - ERROR - common/common_openssl.sh line 70
++ return 0
++ expect
+couldn't open "/etc/httpd/ssl/testlog2": no such file or directory
+    while executing
+"log_file /etc/httpd/ssl/testlog2"
++ grep 'certificate request' /etc/httpd/ssl/testlog2
+grep: /etc/httpd/ssl/testlog2: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'common/common_openssl.sh line 96'
++ message='common/common_openssl.sh line 96'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'common/common_openssl.sh line 96'
+Sat Dec  3 12:56:35 2022 - ERROR - common/common_openssl.sh line 96
++ return 0
++ grep 'BEGIN CERTIFICATE REQUEST' /etc/httpd/ssl/httpd.csr
+grep: /etc/httpd/ssl/httpd.csr: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'common/common_openssl.sh line 98'
++ message='common/common_openssl.sh line 98'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'common/common_openssl.sh line 98'
+Sat Dec  3 12:56:36 2022 - ERROR - common/common_openssl.sh line 98
++ return 0
++ CA_Signature_Authentication
++ applying=httpd
++ build_path=/etc/httpd/ssl
++ expect
+couldn't open "/etc/httpd/ssl/testlog3": no such file or directory
+    while executing
+"log_file /etc/httpd/ssl/testlog3"
++ grep 'Certificate Details' /etc/httpd/ssl/testlog3
+grep: /etc/httpd/ssl/testlog3: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'common/common_openssl.sh line 115'
++ message='common/common_openssl.sh line 115'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'common/common_openssl.sh line 115'
+Sat Dec  3 12:56:37 2022 - ERROR - common/common_openssl.sh line 115
++ return 0
++ grep 'BEGIN CERTIFICATE' /etc/httpd/ssl/httpd.crt
+grep: /etc/httpd/ssl/httpd.crt: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'common/common_openssl.sh line 117'
++ message='common/common_openssl.sh line 117'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'common/common_openssl.sh line 117'
+Sat Dec  3 12:56:38 2022 - ERROR - common/common_openssl.sh line 117
++ return 0
++ Modify_application_configuration
++ file=/etc/httpd/conf.d/ssl.conf
++ sed -i '/DocumentRoot/s/^#//' /etc/httpd/conf.d/ssl.conf
+sed: can't read /etc/httpd/conf.d/ssl.conf: No such file or directory
++ sed -i 's/\#ServerName www.example.com:443/ServerName www.linuxpanda.com:443/' /etc/httpd/conf.d/ssl.conf
+sed: can't read /etc/httpd/conf.d/ssl.conf: No such file or directory
++ sed -i 's#SSLCertificateFile /etc/pki/tls/certs/localhost.crt#SSLCertificateFile /etc/httpd/ssl/httpd.crt#' /etc/httpd/conf.d/ssl.conf
+sed: can't read /etc/httpd/conf.d/ssl.conf: No such file or directory
++ sed -i 's#SSLCertificateKeyFile /etc/pki/tls/private/localhost.key#SSLCertificateKeyFile /etc/httpd/ssl/httpd.key#' /etc/httpd/conf.d/ssl.conf
+sed: can't read /etc/httpd/conf.d/ssl.conf: No such file or directory
++ file2=/etc/httpd/conf/httpd.conf
++ sed -i 's/\#ServerName www.example.com:80/ServerName www.openeuler.org:80/' /etc/httpd/conf/httpd.conf
+sed: can't read /etc/httpd/conf/httpd.conf: No such file or directory
++ sed -i 's/Require all denied/Require all granted/' /etc/httpd/conf/httpd.conf
+sed: can't read /etc/httpd/conf/httpd.conf: No such file or directory
++ cp /etc/hosts /etc/hosts.bak
++ echo '127.0.0.1   www.openeuler.org'
++ cp /usr/share/httpd/noindex/index.html /var/www/html/
+cp: cannot stat '/usr/share/httpd/noindex/index.html': No such file or directory
++ setenforce 0
+setenforce: SELinux is disabled
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Sat Dec  3 12:56:39 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Sat Dec  3 12:56:40 2022 - INFO  - Start to run test.
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5 0 0 'error:OPENSSL and HTTPD configuration failed.'
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log='error:OPENSSL and HTTPD configuration failed.'
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n 'error:OPENSSL and HTTPD configuration failed.'
++ LOG_ERROR 'error:OPENSSL and HTTPD configuration failed.'
++ message='error:OPENSSL and HTTPD configuration failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'error:OPENSSL and HTTPD configuration failed.'
+Sat Dec  3 12:56:41 2022 - ERROR - error:OPENSSL and HTTPD configuration failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_Implements_https.sh line 40'
++ message='oe_test_openssl_Implements_https.sh line 40'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_Implements_https.sh line 40'
+Sat Dec  3 12:56:42 2022 - ERROR - oe_test_openssl_Implements_https.sh line 40
++ return 0
++ systemctl status httpd
++ grep 'active (running)'
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_Implements_https.sh line 42'
++ message='oe_test_openssl_Implements_https.sh line 42'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_Implements_https.sh line 42'
+Sat Dec  3 12:56:43 2022 - ERROR - oe_test_openssl_Implements_https.sh line 42
++ return 0
++ curl --cacert /etc/pki/CA/cacert.pem https://www.openeuler.org/index.html -I
++ grep 200
++ CHECK_RESULT 1 0 0 'The HTTPS access on openEuler failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='The HTTPS access on openEuler failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'The HTTPS access on openEuler failed'
++ LOG_ERROR 'The HTTPS access on openEuler failed'
++ message='The HTTPS access on openEuler failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'The HTTPS access on openEuler failed'
+Sat Dec  3 12:56:44 2022 - ERROR - The HTTPS access on openEuler failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_Implements_https.sh line 44'
++ message='oe_test_openssl_Implements_https.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_Implements_https.sh line 44'
+Sat Dec  3 12:56:44 2022 - ERROR - oe_test_openssl_Implements_https.sh line 44
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Sat Dec  3 12:56:45 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 13
++ test 13 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Sat Dec  3 12:56:46 2022 - ERROR - failed to execute the case.
++ exit 13
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Sat Dec  3 12:56:47 2022 - INFO  - Start to restore the test environment.
++ mv -f /etc/pki/tls/openssl.cnf.bak /etc/pki/tls/openssl.cnf
++ clean_httpd_openssl
++ rm -f /etc/pki/CA/index.txt /etc/pki/CA/serial /etc/pki/CA/private/cakey.pem /etc/pki/CA/cacert.pem /etc/pki/CA/testlog1
++ rm -rf /etc/httpd/ssl
++ mv -f /etc/pki/tls/openssl.cnf.bak /etc/pki/tls/openssl.cnf
+mv: cannot stat '/etc/pki/tls/openssl.cnf.bak': No such file or directory
++ mv -f /etc/hosts.bak /etc/hosts
++ systemctl stop httpd
+Failed to stop httpd.service: Unit httpd.service not loaded.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z '' ]]
++ [[ -z '' ]]
++ LOG_WARN 'no thing to do.'
++ message='no thing to do.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level warn --message 'no thing to do.'
+Sat Dec  3 12:56:48 2022 - WARN  - no thing to do.
++ return 0
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Sat Dec  3 12:56:49 2022 - INFO  - End to restore the test environment.

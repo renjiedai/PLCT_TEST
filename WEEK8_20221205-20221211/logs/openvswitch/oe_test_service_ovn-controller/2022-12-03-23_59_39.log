@@ -1,0 +1,152 @@
++ source ../common/common_lib.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start environmental preparation.'
++ message='Start environmental preparation.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start environmental preparation.'
+Sat Dec  3 23:59:43 2022 - INFO  - Start environmental preparation.
++ DNF_INSTALL openvswitch-ovn-host
++ pkgs=openvswitch-ovn-host
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs openvswitch-ovn-host --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpnk751j6d
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpnk751j6d
++ service=ovn-controller.service
+++ date '+%Y-%m-%d %T'
++ log_time='2022-12-04 00:00:33'
++ flag=false
+++ getenforce
+++ grep Enforcing
++ '[' ']'
++ LOG_INFO 'End of environmental preparation!'
++ message='End of environmental preparation!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of environmental preparation!'
+Sun Dec  4 00:00:34 2022 - INFO  - End of environmental preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start testing...'
++ message='Start testing...'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start testing...'
+Sun Dec  4 00:00:35 2022 - INFO  - Start testing...
++ service ovn-controller.service restart
+Redirecting to /bin/systemctl restart ovn-controller.service
++ CHECK_RESULT 0 0 0 'ovn-controller.service restart failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='ovn-controller.service restart failed'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ service ovn-controller.service stop
+Redirecting to /bin/systemctl stop ovn-controller.service
++ CHECK_RESULT 0 0 0 'ovn-controller.service stop failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='ovn-controller.service stop failed'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ service ovn-controller.service start
+Redirecting to /bin/systemctl start ovn-controller.service
++ CHECK_RESULT 0 0 0 'ovn-controller.service start failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='ovn-controller.service start failed'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ service ovn-controller.service status
++ grep 'Active: active (running)'
+Redirecting to /bin/systemctl status ovn-controller.service
+     Active: active (running) since Sun 2022-12-04 00:00:47 EST; 752ms ago
++ CHECK_RESULT 0 0 0 'ovn-controller.service start failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='ovn-controller.service start failed'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ journalctl --since '2022-12-04 00:00:33' -u ovn-controller.service
++ grep -i 'fail\|error'
++ grep -v -i 'DEBUG\|INFO\|WARNING'
++ CHECK_RESULT 1 1 0 'There is an error message for the log of ovn-controller.service'
++ actual_result=1
++ expect_result=1
++ mode=0
++ error_log='There is an error message for the log of ovn-controller.service'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 1x
++ return 0
++ service ovn-controller.service reload
++ grep 'Job type reload is not applicable for unit ovn-controller.service'
+Failed to reload ovn-controller.service: Job type reload is not applicable for unit ovn-controller.service.
++ CHECK_RESULT 0 0 0 'ovn-controller.service reload failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='ovn-controller.service reload failed'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ LOG_INFO 'Finish test!'
++ message='Finish test!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish test!'
+Sun Dec  4 00:00:49 2022 - INFO  - Finish test!
++ CASE_RESULT 0
++ case_re=0
++ test -z ''
++ test 0 -eq 0
++ LOG_INFO 'succeed to execute the case.'
++ message='succeed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'succeed to execute the case.'
+Sun Dec  4 00:00:50 2022 - INFO  - succeed to execute the case.
++ exec_result=
++ exit 0
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Sun Dec  4 00:00:51 2022 - INFO  - start environment cleanup.
++ service ovn-controller.service stop
+Redirecting to /bin/systemctl stop ovn-controller.service
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpnk751j6d ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpnk751j6d
++ '[' 0 -ne 0 ']'
++ '[' false = true ']'
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Sun Dec  4 00:01:09 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,833 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Sun Dec  4 04:40:34 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL psacct
++ pkgs=psacct
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs psacct --node 1 --tempfile ''
++ tmpfile2=/tmp/tmp1nwf018z
++ '[' -z '' ']'
++ tmpfile=/tmp/tmp1nwf018z
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Sun Dec  4 04:41:26 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Sun Dec  4 04:41:26 2022 - INFO  - Start to run test.
++ systemctl status psacct.service --no-pager
++ grep inactive
+     Active: inactive (dead)
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: systemctl status psacct.service --no-pager'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: systemctl status psacct.service --no-pager'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ systemctl status psacct.service --no-pager
+○ psacct.service - Kernel process accounting
+     Loaded: loaded (/usr/lib/systemd/system/psacct.service; disabled; vendor preset: disabled)
+     Active: inactive (dead)
++ systemctl start psacct.service
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: systemctl start psacct.service'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: systemctl start psacct.service'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ac -V
+ac: GNU Accounting Utilities (release 6.6.4)
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: ac -V'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: ac -V'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ac
++ grep -E 'total[[:space:]]{1,}[0-9]{1,}\.[0-9]{1,}'
+	total        2.69
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: ac'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: ac'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ac -f /var/log/wtmp
++ grep -E 'total[[:space:]]{1,}[0-9]{1,}\.[0-9]{1,}'
+	total        2.69
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: ac -f /var/log/wtmp'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: ac -f /var/log/wtmp'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ac --complain
++ grep -E 'total[[:space:]]{1,}[0-9]{1,}\.[0-9]{1,}'
+	total        2.69
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: ac --complain'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: ac --complain'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ac --reboots
++ grep -E 'total[[:space:]]{1,}[0-9]{1,}\.[0-9]{1,}'
+	total        2.69
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: ac --reboots'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: ac --reboots'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ac --supplants
++ grep -E 'total[[:space:]]{1,}[0-9]{1,}\.[0-9]{1,}'
+	total        2.69
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: ac --supplants'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: ac --supplants'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ac --timewarps
++ grep -E 'total[[:space:]]{1,}[0-9]{1,}\.[0-9]{1,}'
+	total        2.69
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: ac --timewarps'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: ac --timewarps'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ac --compatibility
++ grep -E 'total[[:space:]]{1,}[0-9]{1,}\.[0-9]{1,}'
+	total        2.69
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: ac --compatibility'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: ac --compatibility'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ac -a
++ grep -E 'total[[:space:]]{1,}[0-9]{1,}\.[0-9]{1,}'
+	total        2.69
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: ac -a'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: ac -a'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ac -d
++ grep -E '(((Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[[:space:]]{1,}([[:space:]]|[0-9])[0-9])|Today)[[:space:]]{1,}total[[:space:]]{1,}[0-9]{1,}\.[0-9]{1,}'
+Dec  1	total        0.53
+Dec  2	total        2.16
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: ac -d'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: ac -d'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ac -d --print-year
++ grep -E '(((Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[[:space:]]{1,}([[:space:]]|[0-9])[0-9][[:space:]][0-9]{4,})|Today)[[:space:]]{1,}total[[:space:]]{1,}[0-9]{1,}\.[0-9]{1,}'
+Dec  1 2022	total        0.53
+Dec  2 2022	total        2.16
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: ac -d --print-year'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: ac -d --print-year'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ac -d --print-zeros
++ grep -E '(((Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[[:space:]]{1,}([[:space:]]|[0-9])[0-9])|Today)[[:space:]]{1,}total[[:space:]]{1,}[0-9]{1,}\.[0-9]{1,}'
+Dec  1	total        0.00
+Dec  1	total        0.53
+Dec  2	total        2.16
+Today	total        0.00
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: ac -d --print-zeros'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: ac -d --print-zeros'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ac -p
++ grep -E '(root|total)[[:space:]]{1,}[0-9]{1,}\.[0-9]{1,}'
+	root                                 2.69
+	total        2.69
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: ac -p'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: ac -p'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ac root
++ grep -E 'total[[:space:]]{1,}[0-9]{1,}\.[0-9]{1,}'
+	total        2.69
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: ac root'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: ac root'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ac --debug
+---------------------------------------------------------------------------
+CURRENT REC: reboot                          |~                               |2|~~  |    0|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Thu Dec  1 04:24:41 2022
+/var/log/wtmp:1: problem: time warp (Wed Dec 31 19:00:00 1969 -> Thu Dec  1 04:24:41 2022)
+---------------------------------------------------------------------------
+CURRENT REC: runlevel                        |~                               |1|~~  |   51|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Thu Dec  1 04:24:55 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |ttyS0                           |5|tyS0|  572|                                                                                                                                                                                                                                                                |Thu Dec  1 04:24:55 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |tty1                            |5|tty1|  571|                                                                                                                                                                                                                                                                |Thu Dec  1 04:24:55 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |tty1                            |6|tty1|  571|                                                                                                                                                                                                                                                                |Thu Dec  1 04:24:55 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |ttyS0                           |6|tyS0|  572|                                                                                                                                                                                                                                                                |Thu Dec  1 04:24:55 2022
+---------------------------------------------------------------------------
+CURRENT REC: root                            |ttyS0                           |7|tyS0|  572|                                                                                                                                                                                                                                                                |Thu Dec  1 04:25:30 2022
+**	ttyS0                            root                             Thu Dec  1 04:25:30 2022
+---------------------------------------------------------------------------
+CURRENT REC: shutdown                        |~                               |1|~~  |    0|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Thu Dec  1 04:28:13 2022
+					                            0.05 root                             (shutdown)
+---------------------------------------------------------------------------
+CURRENT REC: reboot                          |~                               |2|~~  |    0|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Thu Dec  1 04:44:45 2022
+---------------------------------------------------------------------------
+CURRENT REC: runlevel                        |~                               |1|~~  |   51|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Thu Dec  1 04:44:53 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |ttyS0                           |5|tyS0|  544|                                                                                                                                                                                                                                                                |Thu Dec  1 04:44:53 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |tty1                            |5|tty1|  543|                                                                                                                                                                                                                                                                |Thu Dec  1 04:44:53 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |tty1                            |6|tty1|  543|                                                                                                                                                                                                                                                                |Thu Dec  1 04:44:53 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |ttyS0                           |6|tyS0|  544|                                                                                                                                                                                                                                                                |Thu Dec  1 04:44:53 2022
+---------------------------------------------------------------------------
+CURRENT REC: root                            |ttyS0                           |7|tyS0|  544|                                                                                                                                                                                                                                                                |Thu Dec  1 04:47:00 2022
+**	ttyS0                            root                             Thu Dec  1 04:47:00 2022
+---------------------------------------------------------------------------
+CURRENT REC: shutdown                        |~                               |1|~~  |    0|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Thu Dec  1 05:04:52 2022
+					                            0.30 root                             (shutdown)
+---------------------------------------------------------------------------
+CURRENT REC: reboot                          |~                               |2|~~  |    0|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Thu Dec  1 09:08:04 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |tty1                            |5|tty1|  544|                                                                                                                                                                                                                                                                |Thu Dec  1 09:08:15 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |ttyS0                           |5|tyS0|  545|                                                                                                                                                                                                                                                                |Thu Dec  1 09:08:15 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |tty1                            |6|tty1|  544|                                                                                                                                                                                                                                                                |Thu Dec  1 09:08:15 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |ttyS0                           |6|tyS0|  545|                                                                                                                                                                                                                                                                |Thu Dec  1 09:08:15 2022
+---------------------------------------------------------------------------
+CURRENT REC: runlevel                        |~                               |1|~~  |   51|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Thu Dec  1 09:08:17 2022
+---------------------------------------------------------------------------
+CURRENT REC: root                            |ttyS0                           |7|tyS0|  545|                                                                                                                                                                                                                                                                |Thu Dec  1 09:09:03 2022
+**	ttyS0                            root                             Thu Dec  1 09:09:03 2022
+---------------------------------------------------------------------------
+CURRENT REC: shutdown                        |~                               |1|~~  |    0|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Thu Dec  1 09:20:29 2022
+					                            0.19 root                             (shutdown)
+---------------------------------------------------------------------------
+CURRENT REC: reboot                          |~                               |2|~~  |    0|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Fri Dec  2 00:20:57 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |ttyS0                           |5|tyS0|  568|                                                                                                                                                                                                                                                                |Fri Dec  2 00:21:08 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |tty1                            |5|tty1|  565|                                                                                                                                                                                                                                                                |Fri Dec  2 00:21:08 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |tty1                            |6|tty1|  565|                                                                                                                                                                                                                                                                |Fri Dec  2 00:21:08 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |ttyS0                           |6|tyS0|  568|                                                                                                                                                                                                                                                                |Fri Dec  2 00:21:08 2022
+---------------------------------------------------------------------------
+CURRENT REC: runlevel                        |~                               |1|~~  |   51|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Fri Dec  2 00:21:10 2022
+---------------------------------------------------------------------------
+CURRENT REC: root                            |ttyS0                           |7|tyS0|  568|                                                                                                                                                                                                                                                                |Fri Dec  2 00:23:46 2022
+**	ttyS0                            root                             Fri Dec  2 00:23:46 2022
+---------------------------------------------------------------------------
+CURRENT REC: shutdown                        |~                               |1|~~  |    0|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Fri Dec  2 00:35:24 2022
+					                            0.19 root                             (shutdown)
+---------------------------------------------------------------------------
+CURRENT REC: reboot                          |~                               |2|~~  |    0|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Fri Dec  2 02:42:04 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |ttyS0                           |5|tyS0|  560|                                                                                                                                                                                                                                                                |Fri Dec  2 02:42:15 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |tty1                            |5|tty1|  559|                                                                                                                                                                                                                                                                |Fri Dec  2 02:42:15 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |tty1                            |6|tty1|  559|                                                                                                                                                                                                                                                                |Fri Dec  2 02:42:15 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |ttyS0                           |6|tyS0|  560|                                                                                                                                                                                                                                                                |Fri Dec  2 02:42:15 2022
+---------------------------------------------------------------------------
+CURRENT REC: runlevel                        |~                               |1|~~  |   51|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Fri Dec  2 02:42:17 2022
+---------------------------------------------------------------------------
+CURRENT REC: root                            |ttyS0                           |7|tyS0|  560|                                                                                                                                                                                                                                                                |Fri Dec  2 02:42:31 2022
+**	ttyS0                            root                             Fri Dec  2 02:42:31 2022
+---------------------------------------------------------------------------
+CURRENT REC: shutdown                        |~                               |1|~~  |    0|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Fri Dec  2 02:47:11 2022
+					                            0.08 root                             (shutdown)
+---------------------------------------------------------------------------
+CURRENT REC: reboot                          |~                               |2|~~  |    0|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Fri Dec  2 02:47:30 2022
+---------------------------------------------------------------------------
+CURRENT REC: runlevel                        |~                               |1|~~  |   51|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Fri Dec  2 02:47:41 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |tty1                            |5|tty1|  563|                                                                                                                                                                                                                                                                |Fri Dec  2 02:47:41 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |ttyS0                           |5|tyS0|  564|                                                                                                                                                                                                                                                                |Fri Dec  2 02:47:41 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |tty1                            |6|tty1|  563|                                                                                                                                                                                                                                                                |Fri Dec  2 02:47:41 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |ttyS0                           |6|tyS0|  564|                                                                                                                                                                                                                                                                |Fri Dec  2 02:47:41 2022
+---------------------------------------------------------------------------
+CURRENT REC: root                            |ttyS0                           |7|tyS0|  564|                                                                                                                                                                                                                                                                |Fri Dec  2 02:48:04 2022
+**	ttyS0                            root                             Fri Dec  2 02:48:04 2022
+---------------------------------------------------------------------------
+CURRENT REC: shutdown                        |~                               |1|~~  |    0|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Fri Dec  2 02:48:51 2022
+					                            0.01 root                             (shutdown)
+---------------------------------------------------------------------------
+CURRENT REC: reboot                          |~                               |2|~~  |    0|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Fri Dec  2 02:50:30 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |tty1                            |5|tty1|  562|                                                                                                                                                                                                                                                                |Fri Dec  2 02:50:41 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |ttyS0                           |5|tyS0|  563|                                                                                                                                                                                                                                                                |Fri Dec  2 02:50:41 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |tty1                            |6|tty1|  562|                                                                                                                                                                                                                                                                |Fri Dec  2 02:50:41 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |ttyS0                           |6|tyS0|  563|                                                                                                                                                                                                                                                                |Fri Dec  2 02:50:41 2022
+---------------------------------------------------------------------------
+CURRENT REC: runlevel                        |~                               |1|~~  |   51|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Fri Dec  2 02:50:46 2022
+---------------------------------------------------------------------------
+CURRENT REC: root                            |ttyS0                           |7|tyS0|  563|                                                                                                                                                                                                                                                                |Fri Dec  2 02:50:47 2022
+**	ttyS0                            root                             Fri Dec  2 02:50:47 2022
+---------------------------------------------------------------------------
+CURRENT REC: shutdown                        |~                               |1|~~  |    0|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Fri Dec  2 03:09:30 2022
+					                            0.31 root                             (shutdown)
+---------------------------------------------------------------------------
+CURRENT REC: reboot                          |~                               |2|~~  |    0|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Fri Dec  2 03:29:00 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |tty1                            |5|tty1|  563|                                                                                                                                                                                                                                                                |Fri Dec  2 03:29:11 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |ttyS0                           |5|tyS0|  566|                                                                                                                                                                                                                                                                |Fri Dec  2 03:29:11 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |tty1                            |6|tty1|  563|                                                                                                                                                                                                                                                                |Fri Dec  2 03:29:11 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |ttyS0                           |6|tyS0|  566|                                                                                                                                                                                                                                                                |Fri Dec  2 03:29:11 2022
+---------------------------------------------------------------------------
+CURRENT REC: runlevel                        |~                               |1|~~  |   51|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Fri Dec  2 03:29:16 2022
+---------------------------------------------------------------------------
+CURRENT REC: root                            |ttyS0                           |7|tyS0|  566|                                                                                                                                                                                                                                                                |Fri Dec  2 03:30:28 2022
+**	ttyS0                            root                             Fri Dec  2 03:30:28 2022
+---------------------------------------------------------------------------
+CURRENT REC: shutdown                        |~                               |1|~~  |    0|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Fri Dec  2 05:04:21 2022
+					                            1.56 root                             (shutdown)
+---------------------------------------------------------------------------
+CURRENT REC: reboot                          |~                               |2|~~  |    0|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Sun Dec  4 04:39:37 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |ttyS0                           |5|tyS0|  549|                                                                                                                                                                                                                                                                |Sun Dec  4 04:39:56 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |tty1                            |5|tty1|  546|                                                                                                                                                                                                                                                                |Sun Dec  4 04:39:56 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |tty1                            |6|tty1|  546|                                                                                                                                                                                                                                                                |Sun Dec  4 04:39:56 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |ttyS0                           |6|tyS0|  549|                                                                                                                                                                                                                                                                |Sun Dec  4 04:39:56 2022
+---------------------------------------------------------------------------
+CURRENT REC: runlevel                        |~                               |1|~~  |   51|5.14.18-100.2.riscv64.an8.riscv64                                                                                                                                                                                                                               |Sun Dec  4 04:39:59 2022
+	total        2.69
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: ac --debug'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: ac --debug'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ sa -V
+sa: GNU Accounting Utilities (release 6.6.4)
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: sa -V'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: sa -V'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ sa /var/account/pacct
++ grep -E '[0-9]{1,}[[:space:]]{1,}[0-9]{1,}\.[0-9]{1,}re[[:space:]]{1,}[0-9]{1,}\.[0-9]{1,}cp[[:space:]]{1,}[0-9]{1,}avio[[:space:]]{1,}[0-9]{1,}k'
+      31       0.04re       0.03cp         0avio       929k
+      13       0.02re       0.02cp         0avio      1331k   grep
+      15       0.01re       0.01cp         0avio       448k   ac
+       3       0.01re       0.00cp         0avio      1593k   ***other
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: sa /var/account/pacct'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: sa /var/account/pacct'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ sa
++ grep -E '[0-9]{1,}[[:space:]]{1,}[0-9]{1,}\.[0-9]{1,}re[[:space:]]{1,}[0-9]{1,}\.[0-9]{1,}cp[[:space:]]{1,}[0-9]{1,}avio[[:space:]]{1,}[0-9]{1,}k'
+      33       0.04re       0.03cp         0avio       927k
+      14       0.02re       0.02cp         0avio      1332k   grep
+      15       0.01re       0.01cp         0avio       448k   ac
+       2       0.01re       0.00cp         0avio      2164k   ***other
+       2       0.00re       0.00cp         0avio       449k   sa
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: sa'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: sa'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ sa -u
++ grep -E '[0-9]{1,}\.[0-9]{1,}[[:space:]]{1,}cpu[[:space:]]{1,}[0-9]{1,}k[[:space:]]{1,}mem[[:space:]]{1,}0[[:space:]]{1,}io'
+root       0.03 cpu      445k mem      0 io accton          
+root       0.14 cpu     3884k mem      0 io systemctl       
+root       0.02 cpu      448k mem      0 io ac              
+root       0.03 cpu      448k mem      0 io ac              
+root       0.07 cpu     1325k mem      0 io grep            
+root       0.04 cpu      448k mem      0 io ac              
+root       0.08 cpu     1325k mem      0 io grep            
+root       0.03 cpu      448k mem      0 io ac              
+root       0.08 cpu     1325k mem      0 io grep            
+root       0.03 cpu      448k mem      0 io ac              
+root       0.08 cpu     1325k mem      0 io grep            
+root       0.04 cpu      448k mem      0 io ac              
+root       0.07 cpu     1325k mem      0 io grep            
+root       0.03 cpu      448k mem      0 io ac              
+root       0.07 cpu     1325k mem      0 io grep            
+root       0.03 cpu      448k mem      0 io ac              
+root       0.07 cpu     1325k mem      0 io grep            
+root       0.03 cpu      448k mem      0 io ac              
+root       0.07 cpu     1325k mem      0 io grep            
+root       0.04 cpu      448k mem      0 io ac              
+root       0.08 cpu     1340k mem      0 io grep            
+root       0.04 cpu      448k mem      0 io ac              
+root       0.08 cpu     1343k mem      0 io grep            
+root       0.04 cpu      448k mem      0 io ac              
+root       0.07 cpu     1373k mem      0 io grep            
+root       0.03 cpu      448k mem      0 io ac              
+root       0.07 cpu     1326k mem      0 io grep            
+root       0.03 cpu      448k mem      0 io ac              
+root       0.08 cpu     1325k mem      0 io grep            
+root       0.05 cpu      448k mem      0 io ac              
+root       0.02 cpu      449k mem      0 io sa              
+root       0.04 cpu      449k mem      0 io sa              
+root       0.07 cpu     1334k mem      0 io grep            
+root       0.03 cpu      449k mem      0 io sa              
+root       0.07 cpu     1334k mem      0 io grep            
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: sa -u'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: sa -u'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ sa -m
++ grep -E '[0-9]{1,}[[:space:]]{1,}[0-9]{1,}\.[0-9]{1,}re[[:space:]]{1,}[0-9]{1,}\.[0-9]{1,}cp[[:space:]]{1,}[0-9]{1,}avio[[:space:]]{1,}[0-9]{1,}k'
+                                       37       0.05re       0.03cp         0avio       923k
+root                                   37       0.05re       0.03cp         0avio       923k
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: sa -m'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: sa -m'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ sa -c
++ grep -E '[0-9]{1,}[[:space:]]{1,}[0-9]{1,}\.[0-9]{1,}%[[:space:]]{1,}[0-9]{1,}\.[0-9]{1,}re[[:space:]]{1,}[0-9]{1,}\.[0-9]{1,}%[[:space:]]{1,}[0-9]{1,}\.[0-9]{1,}cp[[:space:]]{1,}[0-9]{1,}\.[0-9]{1,}%[[:space:]]{1,}[0-9]{1,}avio[[:space:]]{1,}[0-9]{1,}k'
+      39  100.00%       0.05re  100.00%       0.04cp  100.00%         0avio       921k
+      17   43.59%       0.03re   53.58%       0.02cp   60.38%         0avio      1332k   grep
+      15   38.46%       0.01re   25.26%       0.01cp   24.06%         0avio       448k   ac
+       2    5.13%       0.01re   12.97%       0.00cp    8.02%         0avio      2164k   ***other
+       5   12.82%       0.00re    8.19%       0.00cp    7.55%         0avio       449k   sa
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: sa -c'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: sa -c'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ sa --debug
+hzval -> 100
+getpagesize() -> 4096
+system_page_size == 4.00
+             ----------------------------------------------------------------------
+             acct entries
+             ----------------------------------------------------------------------
+             +:accton                     1       0.03u       0.00s       0.04e       0.00io     445.00mem
++:systemctl                  1       0.09u       0.05s       0.34e       0.00io    3884.00mem
++:ac                         1       0.01u       0.01s       0.03e       0.00io     448.00mem
++:ac                         1       0.02u       0.01s       0.05e       0.00io     448.00mem
++:grep                       1       0.05u       0.02s       0.09e       0.00io    1325.00mem
++:ac                         1       0.02u       0.02s       0.05e       0.00io     448.00mem
++:grep                       1       0.04u       0.04s       0.09e       0.00io    1325.00mem
++:ac                         1       0.02u       0.01s       0.05e       0.00io     448.00mem
++:grep                       1       0.04u       0.04s       0.10e       0.00io    1325.00mem
++:ac                         1       0.02u       0.01s       0.05e       0.00io     448.00mem
++:grep                       1       0.05u       0.03s       0.09e       0.00io    1325.00mem
++:ac                         1       0.02u       0.02s       0.05e       0.00io     448.00mem
++:grep                       1       0.04u       0.03s       0.09e       0.00io    1325.00mem
++:ac                         1       0.02u       0.01s       0.05e       0.00io     448.00mem
++:grep                       1       0.05u       0.02s       0.09e       0.00io    1325.00mem
++:ac                         1       0.00u       0.03s       0.05e       0.00io     448.00mem
++:grep                       1       0.04u       0.03s       0.09e       0.00io    1325.00mem
++:ac                         1       0.02u       0.01s       0.05e       0.00io     448.00mem
++:grep                       1       0.07u       0.00s       0.09e       0.00io    1325.00mem
++:ac                         1       0.02u       0.02s       0.05e       0.00io     448.00mem
++:grep                       1       0.07u       0.01s       0.10e       0.00io    1340.00mem
++:ac                         1       0.03u       0.01s       0.05e       0.00io     448.00mem
++:grep                       1       0.07u       0.01s       0.09e       0.00io    1343.00mem
++:ac                         1       0.02u       0.02s       0.05e       0.00io     448.00mem
++:grep                       1       0.06u       0.01s       0.10e       0.00io    1373.00mem
++:ac                         1       0.02u       0.01s       0.05e       0.00io     448.00mem
++:grep                       1       0.06u       0.01s       0.09e       0.00io    1326.00mem
++:ac                         1       0.03u       0.00s       0.05e       0.00io     448.00mem
++:grep                       1       0.05u       0.03s       0.09e       0.00io    1325.00mem
++:ac                         1       0.04u       0.01s       0.06e       0.00io     448.00mem
++:sa                         1       0.00u       0.02s       0.03e       0.00io     449.00mem
++:sa                         1       0.02u       0.02s       0.05e       0.00io     449.00mem
++:grep                       1       0.05u       0.02s       0.09e       0.00io    1334.00mem
++:sa                         1       0.03u       0.00s       0.05e       0.00io     449.00mem
++:grep                       1       0.06u       0.01s       0.09e       0.00io    1334.00mem
++:sa                         1       0.04u       0.00s       0.06e       0.00io     449.00mem
++:grep                       1       0.08u       0.01s       0.10e       0.00io    1331.00mem
++:sa                         1       0.02u       0.01s       0.05e       0.00io     449.00mem
++:grep                       1       0.05u       0.03s       0.09e       0.00io    1334.00mem
++:sa                         1       0.02u       0.01s       0.05e       0.00io     449.00mem
++:grep                       1       0.08u       0.01s       0.10e       0.00io    1376.00mem
+raw:        41       1.57u       0.67s       3.08e       0.00io   37759.00mem
+      41       0.05re       0.04cp         0avio       921k
+raw:        18       1.01u       0.36s       1.67e       0.00io   24016.00mem
+      18       0.03re       0.02cp         0avio      1334k   grep
+raw:        15       0.31u       0.20s       0.74e       0.00io    6720.00mem
+      15       0.01re       0.01cp         0avio       448k   ac
+raw:         6       0.13u       0.06s       0.29e       0.00io    2694.00mem
+       6       0.00re       0.00cp         0avio       449k   sa
+raw:         2       0.12u       0.05s       0.38e       0.00io    4329.00mem
+       2       0.01re       0.00cp         0avio      2164k   ***other
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: sa --debug'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: sa --debug'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ accton -V
+accton: GNU Accounting Utilities (release 6.6.4)
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: accton -V'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: accton -V'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ accton /var/account/pacct
+Turning on process accounting, file set to '/var/account/pacct'.
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: accton /var/account/pacct'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: accton /var/account/pacct'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ accton on
+Turning on process accounting, file set to the default '/var/account/pacct'.
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: accton on'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: accton on'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ lastcomm -V
+lastcomm: GNU Accounting Utilities (release 6.6.4)
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: lastcomm -V'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: lastcomm -V'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ lastcomm
+lastcomm               root     __         0.02 secs Sun Dec  4 04:41
+accton           S     root     __         0.01 secs Sun Dec  4 04:41
+accton                 root     __         0.00 secs Sun Dec  4 04:41
+accton           S     root     __         0.02 secs Sun Dec  4 04:41
+accton                 root     __         0.00 secs Sun Dec  4 04:41
+accton                 root     __         0.02 secs Sun Dec  4 04:41
+sa                     root     __         0.03 secs Sun Dec  4 04:41
+grep                   root     __         0.09 secs Sun Dec  4 04:41
+sa                     root     __         0.03 secs Sun Dec  4 04:41
+grep                   root     __         0.08 secs Sun Dec  4 04:41
+sa                     root     __         0.03 secs Sun Dec  4 04:41
+grep                   root     __         0.09 secs Sun Dec  4 04:41
+sa                     root     __         0.04 secs Sun Dec  4 04:41
+grep                   root     __         0.07 secs Sun Dec  4 04:41
+sa                     root     __         0.03 secs Sun Dec  4 04:41
+grep                   root     __         0.07 secs Sun Dec  4 04:41
+sa                     root     __         0.04 secs Sun Dec  4 04:41
+sa                     root     __         0.02 secs Sun Dec  4 04:41
+ac                     root     __         0.05 secs Sun Dec  4 04:41
+grep                   root     __         0.08 secs Sun Dec  4 04:41
+ac                     root     __         0.03 secs Sun Dec  4 04:41
+grep                   root     __         0.07 secs Sun Dec  4 04:41
+ac                     root     __         0.03 secs Sun Dec  4 04:41
+grep                   root     __         0.07 secs Sun Dec  4 04:41
+ac                     root     __         0.04 secs Sun Dec  4 04:41
+grep                   root     __         0.08 secs Sun Dec  4 04:41
+ac                     root     __         0.04 secs Sun Dec  4 04:41
+grep                   root     __         0.08 secs Sun Dec  4 04:41
+ac                     root     __         0.04 secs Sun Dec  4 04:41
+grep                   root     __         0.07 secs Sun Dec  4 04:41
+ac                     root     __         0.03 secs Sun Dec  4 04:41
+grep                   root     __         0.07 secs Sun Dec  4 04:41
+ac                     root     __         0.03 secs Sun Dec  4 04:41
+grep                   root     __         0.07 secs Sun Dec  4 04:41
+ac                     root     __         0.03 secs Sun Dec  4 04:41
+grep                   root     __         0.07 secs Sun Dec  4 04:41
+ac                     root     __         0.04 secs Sun Dec  4 04:41
+grep                   root     __         0.08 secs Sun Dec  4 04:41
+ac                     root     __         0.03 secs Sun Dec  4 04:41
+grep                   root     __         0.08 secs Sun Dec  4 04:41
+ac                     root     __         0.03 secs Sun Dec  4 04:41
+grep                   root     __         0.08 secs Sun Dec  4 04:41
+ac                     root     __         0.04 secs Sun Dec  4 04:41
+grep                   root     __         0.07 secs Sun Dec  4 04:41
+ac                     root     __         0.03 secs Sun Dec  4 04:41
+ac                     root     __         0.02 secs Sun Dec  4 04:41
+systemctl        S     root     __         0.14 secs Sun Dec  4 04:41
+accton           S     root     __         0.03 secs Sun Dec  4 04:41
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: lastcomm'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: lastcomm'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ lastcomm -f /var/account/pacct
+lastcomm               root     __         0.05 secs Sun Dec  4 04:41
+lastcomm               root     __         0.02 secs Sun Dec  4 04:41
+accton           S     root     __         0.01 secs Sun Dec  4 04:41
+accton                 root     __         0.00 secs Sun Dec  4 04:41
+accton           S     root     __         0.02 secs Sun Dec  4 04:41
+accton                 root     __         0.00 secs Sun Dec  4 04:41
+accton                 root     __         0.02 secs Sun Dec  4 04:41
+sa                     root     __         0.03 secs Sun Dec  4 04:41
+grep                   root     __         0.09 secs Sun Dec  4 04:41
+sa                     root     __         0.03 secs Sun Dec  4 04:41
+grep                   root     __         0.08 secs Sun Dec  4 04:41
+sa                     root     __         0.03 secs Sun Dec  4 04:41
+grep                   root     __         0.09 secs Sun Dec  4 04:41
+sa                     root     __         0.04 secs Sun Dec  4 04:41
+grep                   root     __         0.07 secs Sun Dec  4 04:41
+sa                     root     __         0.03 secs Sun Dec  4 04:41
+grep                   root     __         0.07 secs Sun Dec  4 04:41
+sa                     root     __         0.04 secs Sun Dec  4 04:41
+sa                     root     __         0.02 secs Sun Dec  4 04:41
+ac                     root     __         0.05 secs Sun Dec  4 04:41
+grep                   root     __         0.08 secs Sun Dec  4 04:41
+ac                     root     __         0.03 secs Sun Dec  4 04:41
+grep                   root     __         0.07 secs Sun Dec  4 04:41
+ac                     root     __         0.03 secs Sun Dec  4 04:41
+grep                   root     __         0.07 secs Sun Dec  4 04:41
+ac                     root     __         0.04 secs Sun Dec  4 04:41
+grep                   root     __         0.08 secs Sun Dec  4 04:41
+ac                     root     __         0.04 secs Sun Dec  4 04:41
+grep                   root     __         0.08 secs Sun Dec  4 04:41
+ac                     root     __         0.04 secs Sun Dec  4 04:41
+grep                   root     __         0.07 secs Sun Dec  4 04:41
+ac                     root     __         0.03 secs Sun Dec  4 04:41
+grep                   root     __         0.07 secs Sun Dec  4 04:41
+ac                     root     __         0.03 secs Sun Dec  4 04:41
+grep                   root     __         0.07 secs Sun Dec  4 04:41
+ac                     root     __         0.03 secs Sun Dec  4 04:41
+grep                   root     __         0.07 secs Sun Dec  4 04:41
+ac                     root     __         0.04 secs Sun Dec  4 04:41
+grep                   root     __         0.08 secs Sun Dec  4 04:41
+ac                     root     __         0.03 secs Sun Dec  4 04:41
+grep                   root     __         0.08 secs Sun Dec  4 04:41
+ac                     root     __         0.03 secs Sun Dec  4 04:41
+grep                   root     __         0.08 secs Sun Dec  4 04:41
+ac                     root     __         0.04 secs Sun Dec  4 04:41
+grep                   root     __         0.07 secs Sun Dec  4 04:41
+ac                     root     __         0.03 secs Sun Dec  4 04:41
+ac                     root     __         0.02 secs Sun Dec  4 04:41
+systemctl        S     root     __         0.14 secs Sun Dec  4 04:41
+accton           S     root     __         0.03 secs Sun Dec  4 04:41
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: lastcomm -f /var/account/pacct'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: lastcomm -f /var/account/pacct'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ lastcomm sa
+sa                     root     __         0.03 secs Sun Dec  4 04:41
+sa                     root     __         0.03 secs Sun Dec  4 04:41
+sa                     root     __         0.03 secs Sun Dec  4 04:41
+sa                     root     __         0.04 secs Sun Dec  4 04:41
+sa                     root     __         0.03 secs Sun Dec  4 04:41
+sa                     root     __         0.04 secs Sun Dec  4 04:41
+sa                     root     __         0.02 secs Sun Dec  4 04:41
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: lastcomm sa'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: lastcomm sa'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ accton off
+Turning off process accounting.
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: accton off'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: accton off'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ systemctl restart psacct.service
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: systemctl restart psacct.service'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: systemctl restart psacct.service'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ systemctl stop psacct.service
++ CHECK_RESULT 0 0 0 'log message: Failed to run command: systemctl stop psacct.service'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='log message: Failed to run command: systemctl stop psacct.service'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Sun Dec  4 04:41:32 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z ''
++ test 0 -eq 0
++ LOG_INFO 'succeed to execute the case.'
++ message='succeed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'succeed to execute the case.'
+Sun Dec  4 04:41:33 2022 - INFO  - succeed to execute the case.
++ exec_result=
++ exit 0
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Sun Dec  4 04:41:33 2022 - INFO  - Start to restore the test environment.
++ '[' -eq 0 ']'
+oe_test_psacct.sh: line 108: [: -eq: unary operator expected
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmp1nwf018z ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmp1nwf018z
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Sun Dec  4 04:41:48 2022 - INFO  - End to restore the test environment.

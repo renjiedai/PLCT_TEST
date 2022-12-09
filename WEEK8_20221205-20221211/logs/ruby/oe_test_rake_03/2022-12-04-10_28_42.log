@@ -1,0 +1,242 @@
++ source ../common/common_ruby.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Sun Dec  4 10:28:45 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL rubygem-rake
++ pkgs=rubygem-rake
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs rubygem-rake --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpda9pizmg
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpda9pizmg
++ LOG_INFO 'Finish preparing the test environment.'
++ message='Finish preparing the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish preparing the test environment.'
+Sun Dec  4 10:30:07 2022 - INFO  - Finish preparing the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Sun Dec  4 10:30:08 2022 - INFO  - Start to run test.
++ rake -P
++ grep -E 'rake|*_*'
+rake default
+    morning:turn_off_alarm
+rake morning:groom_myself
+rake morning:make_coffee
+rake morning:ready_for_the_day
+    turn_off_alarm
+    groom_myself
+    make_coffee
+    walk_dog
+rake morning:turn_off_alarm
+rake morning:walk_dog
+rake root:clean_tmp
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rake -p 'puts '\''Hello world'\'''
++ grep 'Hello world'
+Hello world
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rake morning:walk_dog -q
+Dog walked.
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rake -r prime -E 'puts Prime.each(10).to_a.join(", ");'
++ grep -E '2, 3, 5, 7|Turned off alarm'
+rake aborted!
+LoadError: cannot load such file -- prime
+<internal:/usr/share/rubygems/rubygems/core_ext/kernel_require.rb>:85:in `require'
+<internal:/usr/share/rubygems/rubygems/core_ext/kernel_require.rb>:85:in `require'
+/usr/share/gems/gems/rake-13.0.6/exe/rake:27:in `<top (required)>'
+(See full trace by running task with --trace)
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rake_03.sh line 37'
++ message='oe_test_rake_03.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rake_03.sh line 37'
+Sun Dec  4 10:30:25 2022 - ERROR - oe_test_rake_03.sh line 37
++ return 0
++ rake morning:groom_myself -R ./
++ grep -E 'Brushed|Showered|Shaved'
+Brushed teeth.
+Showered.
+Shaved.
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rake -s
++ grep 'Turned off alarm'
+Turned off alarm. Would have liked 5 more minutes, though.
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rake -t morning:make_coffee
++ grep 'Made 2 cups of coffee'
+** Invoke morning:make_coffee (first_time)
+** Execute morning:make_coffee
+Made 2 cups of coffee. Shakes are gone.
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rake -T
++ grep 'rake morning'
+rake morning:groom_myself       # Groom myself
+rake morning:make_coffee        # Make coffee
+rake morning:ready_for_the_day  # Ready for the day
+rake morning:turn_off_alarm     # Turn off alarm
+rake morning:walk_dog           # Walk dog
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rake -v
++ grep 'Turned off alarm'
+Turned off alarm. Would have liked 5 more minutes, though.
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rake -W
++ grep -E 'rake|rakefile'
+rake default                        /root/mugen-riscv/testcases/cli-test/ruby/oe_test_rake_03/rakefile:50:in `<top (required)>'
+rake morning:groom_myself           /root/mugen-riscv/testcases/cli-test/ruby/oe_test_rake_03/rakefile:27:in `block in <top (required)>'
+rake morning:make_coffee            /root/mugen-riscv/testcases/cli-test/ruby/oe_test_rake_03/rakefile:34:in `block in <top (required)>'
+rake morning:ready_for_the_day      /root/mugen-riscv/testcases/cli-test/ruby/oe_test_rake_03/rakefile:45:in `block in <top (required)>'
+rake morning:turn_off_alarm         /root/mugen-riscv/testcases/cli-test/ruby/oe_test_rake_03/rakefile:22:in `block in <top (required)>'
+rake morning:walk_dog               /root/mugen-riscv/testcases/cli-test/ruby/oe_test_rake_03/rakefile:40:in `block in <top (required)>'
+rake root:clean_tmp                 /root/mugen-riscv/testcases/cli-test/ruby/oe_test_rake_03/rakefile:3:in `block in <top (required)>'
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rake -X
++ grep 'Turned off alarm'
+Turned off alarm. Would have liked 5 more minutes, though.
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ LOG_INFO 'End of the test.'
++ message='End of the test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of the test.'
+Sun Dec  4 10:30:51 2022 - INFO  - End of the test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 1
++ test 1 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Sun Dec  4 10:30:52 2022 - ERROR - failed to execute the case.
++ exit 1
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Sun Dec  4 10:30:52 2022 - INFO  - Start to restore the test environment.
++ delete_files
+++ ls
+++ grep -vE '.sh|.rb|.erb|rakefile|.gemspec'
++ rm -rf
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpda9pizmg ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpda9pizmg
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish restoring the test environment.'
++ message='Finish restoring the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish restoring the test environment.'
+Sun Dec  4 10:31:12 2022 - INFO  - Finish restoring the test environment.

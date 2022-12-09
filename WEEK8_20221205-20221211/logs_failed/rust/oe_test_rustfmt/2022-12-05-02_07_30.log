@@ -1,0 +1,338 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment!'
++ message='Start to prepare the test environment!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment!'
+Mon Dec  5 02:07:34 2022 - INFO  - Start to prepare the test environment!
++ DNF_INSTALL 'rustfmt rls'
++ pkgs='rustfmt rls'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'rustfmt rls' --node 1 --tempfile ''
++ tmpfile2='Last metadata expiration check: 0:10:58 ago on Mon 05 Dec 2022 01:57:11 AM EST.
+Error: 
+ Problem 1: conflicting requests
+  - package rls-1.58.1-1.an8.riscv64 requires rust(riscv-64) = 1.58.1-1.an8, but none of the providers can be installed
+  - nothing provides libLLVM-13.so.2()(64bit) needed by rust-1.58.1-1.an8.riscv64
+  - nothing provides libLLVM-13.so.2(LLVM_13)(64bit) needed by rust-1.58.1-1.an8.riscv64
+ Problem 2: conflicting requests
+  - package rustfmt-1.58.1-1.an8.riscv64 requires cargo, but none of the providers can be installed
+  - package cargo-1.58.1-1.an8.riscv64 requires rust, but none of the providers can be installed
+  - nothing provides libLLVM-13.so.2()(64bit) needed by rust-1.58.1-1.an8.riscv64
+  - nothing provides libLLVM-13.so.2(LLVM_13)(64bit) needed by rust-1.58.1-1.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ '[' -z '' ']'
++ tmpfile='Last metadata expiration check: 0:10:58 ago on Mon 05 Dec 2022 01:57:11 AM EST.
+Error: 
+ Problem 1: conflicting requests
+  - package rls-1.58.1-1.an8.riscv64 requires rust(riscv-64) = 1.58.1-1.an8, but none of the providers can be installed
+  - nothing provides libLLVM-13.so.2()(64bit) needed by rust-1.58.1-1.an8.riscv64
+  - nothing provides libLLVM-13.so.2(LLVM_13)(64bit) needed by rust-1.58.1-1.an8.riscv64
+ Problem 2: conflicting requests
+  - package rustfmt-1.58.1-1.an8.riscv64 requires cargo, but none of the providers can be installed
+  - package cargo-1.58.1-1.an8.riscv64 requires rust, but none of the providers can be installed
+  - nothing provides libLLVM-13.so.2()(64bit) needed by rust-1.58.1-1.an8.riscv64
+  - nothing provides libLLVM-13.so.2(LLVM_13)(64bit) needed by rust-1.58.1-1.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ cp ../common/hello.rs ../common/lib.rs ../common/main.rs ../common/myhello.rs ../common/pub.rs ../common/test.rs ../common/war.rs ./
++ LOG_INFO 'End to prepare the test environment!'
++ message='End to prepare the test environment!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment!'
+Mon Dec  5 02:08:12 2022 - INFO  - End to prepare the test environment!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start executing testcase!'
++ message='Start executing testcase!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start executing testcase!'
+Mon Dec  5 02:08:13 2022 - INFO  - Start executing testcase!
++ cargo-fmt -h
++ grep USAGE
+oe_test_rustfmt.sh: line 31: cargo-fmt: command not found
++ CHECK_RESULT 1 0 0 'cargo-fmt Help information printing failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='cargo-fmt Help information printing failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'cargo-fmt Help information printing failed'
++ LOG_ERROR 'cargo-fmt Help information printing failed'
++ message='cargo-fmt Help information printing failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'cargo-fmt Help information printing failed'
+Mon Dec  5 02:08:15 2022 - ERROR - cargo-fmt Help information printing failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rustfmt.sh line 32'
++ message='oe_test_rustfmt.sh line 32'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rustfmt.sh line 32'
+Mon Dec  5 02:08:15 2022 - ERROR - oe_test_rustfmt.sh line 32
++ return 0
++ rustfmt --check hello.rs
++ grep 'Diff in'
+oe_test_rustfmt.sh: line 33: rustfmt: command not found
++ CHECK_RESULT 1 0 0 'Check the failure'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check the failure'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check the failure'
++ LOG_ERROR 'Check the failure'
++ message='Check the failure'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check the failure'
+Mon Dec  5 02:08:17 2022 - ERROR - Check the failure
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rustfmt.sh line 34'
++ message='oe_test_rustfmt.sh line 34'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rustfmt.sh line 34'
+Mon Dec  5 02:08:18 2022 - ERROR - oe_test_rustfmt.sh line 34
++ return 0
++ rustfmt --backup test.rs
+oe_test_rustfmt.sh: line 35: rustfmt: command not found
++ CHECK_RESULT 127 0 0 'Check the failure'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check the failure'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check the failure'
++ LOG_ERROR 'Check the failure'
++ message='Check the failure'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check the failure'
+Mon Dec  5 02:08:18 2022 - ERROR - Check the failure
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rustfmt.sh line 36'
++ message='oe_test_rustfmt.sh line 36'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rustfmt.sh line 36'
+Mon Dec  5 02:08:19 2022 - ERROR - oe_test_rustfmt.sh line 36
++ return 0
++ rustfmt --edition 2018 hello.rs
+oe_test_rustfmt.sh: line 37: rustfmt: command not found
++ CHECK_RESULT 127 0 0 'Failed to set the 2018 version'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Failed to set the 2018 version'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Failed to set the 2018 version'
++ LOG_ERROR 'Failed to set the 2018 version'
++ message='Failed to set the 2018 version'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to set the 2018 version'
+Mon Dec  5 02:08:20 2022 - ERROR - Failed to set the 2018 version
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rustfmt.sh line 38'
++ message='oe_test_rustfmt.sh line 38'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rustfmt.sh line 38'
+Mon Dec  5 02:08:21 2022 - ERROR - oe_test_rustfmt.sh line 38
++ return 0
++ rustfmt -h
++ grep usage
+oe_test_rustfmt.sh: line 39: rustfmt: command not found
++ CHECK_RESULT 1 0 0 'rustfmt Help information printing failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='rustfmt Help information printing failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'rustfmt Help information printing failed'
++ LOG_ERROR 'rustfmt Help information printing failed'
++ message='rustfmt Help information printing failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'rustfmt Help information printing failed'
+Mon Dec  5 02:08:22 2022 - ERROR - rustfmt Help information printing failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rustfmt.sh line 40'
++ message='oe_test_rustfmt.sh line 40'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rustfmt.sh line 40'
+Mon Dec  5 02:08:23 2022 - ERROR - oe_test_rustfmt.sh line 40
++ return 0
++ rustfmt --print-config default testDir
+oe_test_rustfmt.sh: line 41: rustfmt: command not found
++ CHECK_RESULT 127 0 0 'Default configuration failed'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Default configuration failed'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Default configuration failed'
++ LOG_ERROR 'Default configuration failed'
++ message='Default configuration failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Default configuration failed'
+Mon Dec  5 02:08:24 2022 - ERROR - Default configuration failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rustfmt.sh line 42'
++ message='oe_test_rustfmt.sh line 42'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rustfmt.sh line 42'
+Mon Dec  5 02:08:24 2022 - ERROR - oe_test_rustfmt.sh line 42
++ return 0
++ rustfmt --color auto hello.rs
+oe_test_rustfmt.sh: line 43: rustfmt: command not found
++ CHECK_RESULT 127 0 0 'Color setting failed'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Color setting failed'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Color setting failed'
++ LOG_ERROR 'Color setting failed'
++ message='Color setting failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Color setting failed'
+Mon Dec  5 02:08:25 2022 - ERROR - Color setting failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rustfmt.sh line 44'
++ message='oe_test_rustfmt.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rustfmt.sh line 44'
+Mon Dec  5 02:08:26 2022 - ERROR - oe_test_rustfmt.sh line 44
++ return 0
++ rustfmt -V
++ grep -E '[0-9]'
+oe_test_rustfmt.sh: line 45: rustfmt: command not found
++ CHECK_RESULT 1 0 0 'Failed to output the version information of rustfmt'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed to output the version information of rustfmt'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed to output the version information of rustfmt'
++ LOG_ERROR 'Failed to output the version information of rustfmt'
++ message='Failed to output the version information of rustfmt'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to output the version information of rustfmt'
+Mon Dec  5 02:08:27 2022 - ERROR - Failed to output the version information of rustfmt
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rustfmt.sh line 46'
++ message='oe_test_rustfmt.sh line 46'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rustfmt.sh line 46'
+Mon Dec  5 02:08:28 2022 - ERROR - oe_test_rustfmt.sh line 46
++ return 0
++ rls -h
++ grep help
+oe_test_rustfmt.sh: line 48: rls: command not found
++ CHECK_RESULT 1 0 0 'Help information printing failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Help information printing failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Help information printing failed'
++ LOG_ERROR 'Help information printing failed'
++ message='Help information printing failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Help information printing failed'
+Mon Dec  5 02:08:29 2022 - ERROR - Help information printing failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rustfmt.sh line 49'
++ message='oe_test_rustfmt.sh line 49'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rustfmt.sh line 49'
+Mon Dec  5 02:08:30 2022 - ERROR - oe_test_rustfmt.sh line 49
++ return 0
++ rls -V
+oe_test_rustfmt.sh: line 50: rls: command not found
++ grep -E '[0-9]'
++ CHECK_RESULT 1 0 0 'Failed to output the version information'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed to output the version information'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed to output the version information'
++ LOG_ERROR 'Failed to output the version information'
++ message='Failed to output the version information'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to output the version information'
+Mon Dec  5 02:08:30 2022 - ERROR - Failed to output the version information
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rustfmt.sh line 51'
++ message='oe_test_rustfmt.sh line 51'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rustfmt.sh line 51'
+Mon Dec  5 02:08:31 2022 - ERROR - oe_test_rustfmt.sh line 51
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Mon Dec  5 02:08:32 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 10
++ test 10 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Mon Dec  5 02:08:33 2022 - ERROR - failed to execute the case.
++ exit 10
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Mon Dec  5 02:08:34 2022 - INFO  - start environment cleanup.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z Last metadata expiration check: 0:10:58 ago on Mon 05 Dec 2022 01:57:11 AM EST.
+Error: 
+ Problem 1: conflicting requests
+  - package rls-1.58.1-1.an8.riscv64 requires rust(riscv-64) = 1.58.1-1.an8, but none of the providers can be installed
+  - nothing provides libLLVM-13.so.2()(64bit) needed by rust-1.58.1-1.an8.riscv64
+  - nothing provides libLLVM-13.so.2(LLVM_13)(64bit) needed by rust-1.58.1-1.an8.riscv64
+ Problem 2: conflicting requests
+  - package rustfmt-1.58.1-1.an8.riscv64 requires cargo, but none of the providers can be installed
+  - package cargo-1.58.1-1.an8.riscv64 requires rust, but none of the providers can be installed
+  - nothing provides libLLVM-13.so.2()(64bit) needed by rust-1.58.1-1.an8.riscv64
+  - nothing provides libLLVM-13.so.2(LLVM_13)(64bit) needed by rust-1.58.1-1.an8.riscv64
+(try to add '--skip-broken' to skip uninstallable packages) ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile 'Last metadata expiration check: 0:10:58 ago on Mon 05 Dec 2022 01:57:11 AM EST.
+Error: 
+ Problem 1: conflicting requests
+  - package rls-1.58.1-1.an8.riscv64 requires rust(riscv-64) = 1.58.1-1.an8, but none of the providers can be installed
+  - nothing provides libLLVM-13.so.2()(64bit) needed by rust-1.58.1-1.an8.riscv64
+  - nothing provides libLLVM-13.so.2(LLVM_13)(64bit) needed by rust-1.58.1-1.an8.riscv64
+ Problem 2: conflicting requests
+  - package rustfmt-1.58.1-1.an8.riscv64 requires cargo, but none of the providers can be installed
+  - package cargo-1.58.1-1.an8.riscv64 requires rust, but none of the providers can be installed
+  - nothing provides libLLVM-13.so.2()(64bit) needed by rust-1.58.1-1.an8.riscv64
+  - nothing provides libLLVM-13.so.2(LLVM_13)(64bit) needed by rust-1.58.1-1.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
+Traceback (most recent call last):
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 181, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 152, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:10:58 ago on Mon 05 Dec 2022 01:57:11 AM EST.\nError: \n Problem 1: conflicting requests\n  - package rls-1.58.1-1.an8.riscv64 requires rust(riscv-64) = 1.58.1-1.an8, but none of the providers can be installed\n  - nothing provides libLLVM-13.so.2()(64bit) needed by rust-1.58.1-1.an8.riscv64\n  - nothing provides libLLVM-13.so.2(LLVM_13)(64bit) needed by rust-1.58.1-1.an8.riscv64\n Problem 2: conflicting requests\n  - package rustfmt-1.58.1-1.an8.riscv64 requires cargo, but none of the providers can be installed\n  - package cargo-1.58.1-1.an8.riscv64 requires rust, but none of the providers can be installed\n  - nothing provides libLLVM-13.so.2()(64bit) needed by rust-1.58.1-1.an8.riscv64\n  - nothing provides libLLVM-13.so.2(LLVM_13)(64bit) needed by rust-1.58.1-1.an8.riscv64\n(try to add '--skip-broken' to skip uninstallable packages)"
++ '[' 0 -ne 0 ']'
++ rm -rf ./hello.rs ./lib.rs ./main.rs ./myhello.rs ./pub.rs ./test.rs ./war.rs test.rs
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Mon Dec  5 02:08:37 2022 - INFO  - Finish environment cleanup!

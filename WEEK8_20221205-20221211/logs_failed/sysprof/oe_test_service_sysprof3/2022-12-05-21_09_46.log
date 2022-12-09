@@ -1,0 +1,280 @@
++ source ../common/common_lib.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start environmental preparation.'
++ message='Start environmental preparation.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start environmental preparation.'
+Mon Dec  5 21:09:50 2022 - INFO  - Start environmental preparation.
++ DNF_INSTALL sysprof-cli
++ pkgs=sysprof-cli
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs sysprof-cli --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpckxa38hi
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpckxa38hi
++ LOG_INFO 'End of environmental preparation!'
++ message='End of environmental preparation!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of environmental preparation!'
+Mon Dec  5 21:10:33 2022 - INFO  - End of environmental preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start testing...'
++ message='Start testing...'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start testing...'
+Mon Dec  5 21:10:34 2022 - INFO  - Start testing...
++ test_execution sysprof3.service
++ service=sysprof3.service
+++ date '+%Y-%m-%d %T'
++ log_time='2022-12-05 21:10:34'
++ test_restart sysprof3.service
++ service=sysprof3.service
++ systemctl restart sysprof3.service
+A dependency job for sysprof3.service failed. See 'journalctl -xe' for details.
++ CHECK_RESULT 1 0 0 'sysprof3.service restart failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='sysprof3.service restart failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'sysprof3.service restart failed'
++ LOG_ERROR 'sysprof3.service restart failed'
++ message='sysprof3.service restart failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'sysprof3.service restart failed'
+Mon Dec  5 21:10:35 2022 - ERROR - sysprof3.service restart failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 34'
++ message='../common/common_lib.sh line 34'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 34'
+Mon Dec  5 21:10:36 2022 - ERROR - ../common/common_lib.sh line 34
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status sysprof3.service
++ grep 'Active: active'
++ CHECK_RESULT 1 0 0 'sysprof3.service restart failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='sysprof3.service restart failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'sysprof3.service restart failed'
++ LOG_ERROR 'sysprof3.service restart failed'
++ message='sysprof3.service restart failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'sysprof3.service restart failed'
+Mon Dec  5 21:10:43 2022 - ERROR - sysprof3.service restart failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 37'
++ message='../common/common_lib.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 37'
+Mon Dec  5 21:10:44 2022 - ERROR - ../common/common_lib.sh line 37
++ return 0
++ systemctl stop sysprof3.service
++ CHECK_RESULT 0 0 0 'sysprof3.service stop failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='sysprof3.service stop failed'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status sysprof3.service
++ grep 'Active: inactive'
+     Active: inactive (dead)
++ CHECK_RESULT 0 0 0 'sysprof3.service stop failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='sysprof3.service stop failed'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ systemctl start sysprof3.service
+A dependency job for sysprof3.service failed. See 'journalctl -xe' for details.
++ CHECK_RESULT 1 0 0 'sysprof3.service start failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='sysprof3.service start failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'sysprof3.service start failed'
++ LOG_ERROR 'sysprof3.service start failed'
++ message='sysprof3.service start failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'sysprof3.service start failed'
+Mon Dec  5 21:10:51 2022 - ERROR - sysprof3.service start failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 44'
++ message='../common/common_lib.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 44'
+Mon Dec  5 21:10:52 2022 - ERROR - ../common/common_lib.sh line 44
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status sysprof3.service
++ grep 'Active: active'
++ CHECK_RESULT 1 0 0 'sysprof3.service start failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='sysprof3.service start failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'sysprof3.service start failed'
++ LOG_ERROR 'sysprof3.service start failed'
++ message='sysprof3.service start failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'sysprof3.service start failed'
+Mon Dec  5 21:10:59 2022 - ERROR - sysprof3.service start failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 47'
++ message='../common/common_lib.sh line 47'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 47'
+Mon Dec  5 21:11:00 2022 - ERROR - ../common/common_lib.sh line 47
++ return 0
++ test_enabled sysprof3.service
++ service=sysprof3.service
+++ systemctl is-enabled sysprof3.service
++ state=static
++ '[' static == enabled ']'
++ '[' static == disabled ']'
++ '[' static == masked ']'
++ '[' static == static ']'
++ LOG_INFO 'The unit files have no installation config,This means they are not meant to be enabled using systemctl.'
++ message='The unit files have no installation config,This means they are not meant to be enabled using systemctl.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'The unit files have no installation config,This means they are not meant to be enabled using systemctl.'
+Mon Dec  5 21:11:01 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
++ journalctl --since '2022-12-05 21:10:34' -u sysprof3.service
++ grep -i 'fail\|error'
++ grep -v -i 'DEBUG\|INFO\|WARNING'
+Dec 05 21:10:34 anolis-riscv systemd[1]: Dependency failed for sysprof3.service - Sysprof Daemon.
+Dec 05 21:10:34 anolis-riscv systemd[1]: sysprof3.service: Job sysprof3.service/start failed with result 'dependency'.
+Dec 05 21:10:50 anolis-riscv systemd[1]: Dependency failed for sysprof3.service - Sysprof Daemon.
+Dec 05 21:10:50 anolis-riscv systemd[1]: sysprof3.service: Job sysprof3.service/start failed with result 'dependency'.
++ CHECK_RESULT 0 0 1 'There is an error message for the log of sysprof3.service'
++ actual_result=0
++ expect_result=0
++ mode=1
++ error_log='There is an error message for the log of sysprof3.service'
++ '[' -z 0 ']'
++ '[' 1 -eq 0 ']'
++ test 0x == 0x
++ test -n 'There is an error message for the log of sysprof3.service'
++ LOG_ERROR 'There is an error message for the log of sysprof3.service'
++ message='There is an error message for the log of sysprof3.service'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'There is an error message for the log of sysprof3.service'
+Mon Dec  5 21:11:02 2022 - ERROR - There is an error message for the log of sysprof3.service
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 28'
++ message='../common/common_lib.sh line 28'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 28'
+Mon Dec  5 21:11:03 2022 - ERROR - ../common/common_lib.sh line 28
++ return 0
++ test_reload sysprof3.service
++ service=sysprof3.service
++ systemctl start sysprof3.service
+A dependency job for sysprof3.service failed. See 'journalctl -xe' for details.
++ systemctl reload sysprof3.service
++ grep 'Job type reload is not applicable'
+Failed to reload sysprof3.service: Job type reload is not applicable for unit sysprof3.service.
++ CHECK_RESULT 0 0 0 'Job type reload is not applicable for unit sysprof3.service'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Job type reload is not applicable for unit sysprof3.service'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ systemctl status sysprof3.service
++ grep 'Active: active'
++ systemctl status sysprof3.service
++ grep 'inactive (dead)'
+     Active: inactive (dead)
++ systemctl status sysprof3.service
++ grep 'Condition check'
++ grep skip
++ CHECK_RESULT 1 0 0 'sysprof3.service reload causes the service status to change'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='sysprof3.service reload causes the service status to change'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'sysprof3.service reload causes the service status to change'
++ LOG_ERROR 'sysprof3.service reload causes the service status to change'
++ message='sysprof3.service reload causes the service status to change'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'sysprof3.service reload causes the service status to change'
+Mon Dec  5 21:11:05 2022 - ERROR - sysprof3.service reload causes the service status to change
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 95'
++ message='../common/common_lib.sh line 95'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 95'
+Mon Dec  5 21:11:06 2022 - ERROR - ../common/common_lib.sh line 95
++ return 0
++ LOG_INFO 'Finish test!'
++ message='Finish test!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish test!'
+Mon Dec  5 21:11:06 2022 - INFO  - Finish test!
++ CASE_RESULT 0
++ case_re=0
++ test -z 6
++ test 6 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Mon Dec  5 21:11:07 2022 - ERROR - failed to execute the case.
++ exit 6
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Mon Dec  5 21:11:08 2022 - INFO  - start environment cleanup.
++ systemctl stop sysprof3.service
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpckxa38hi ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpckxa38hi
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Mon Dec  5 21:11:22 2022 - INFO  - Finish environment cleanup!

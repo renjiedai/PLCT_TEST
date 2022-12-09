@@ -1,0 +1,516 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start environmental preparation.'
++ message='Start environmental preparation.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start environmental preparation.'
+Sun Dec  4 05:20:02 2022 - INFO  - Start environmental preparation.
++ DNF_INSTALL rabbitmq-server
++ pkgs=rabbitmq-server
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs rabbitmq-server --node 1 --tempfile ''
++ tmpfile2='Last metadata expiration check: 0:10:04 ago on Sun 04 Dec 2022 05:10:31 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides erlang-eldap(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-erts(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-kernel(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-mnesia(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-os_mon(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-public_key(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-sasl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-ssl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-stdlib(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-syntax_tools(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-tools(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-xmerl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ '[' -z '' ']'
++ tmpfile='Last metadata expiration check: 0:10:04 ago on Sun 04 Dec 2022 05:10:31 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides erlang-eldap(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-erts(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-kernel(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-mnesia(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-os_mon(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-public_key(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-sasl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-ssl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-stdlib(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-syntax_tools(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-tools(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-xmerl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ setenforce 0
+setenforce: SELinux is disabled
++ which firewalld
+oe_test_rabbitmq-plugins.sh: line 26: which: command not found
++ systemctl restart rabbitmq-server
+Failed to restart rabbitmq-server.service: Unit rabbitmq-server.service not found.
++ LOG_INFO 'End of environmental preparation!'
++ message='End of environmental preparation!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of environmental preparation!'
+Sun Dec  4 05:20:38 2022 - INFO  - End of environmental preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start testing...'
++ message='Start testing...'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start testing...'
+Sun Dec  4 05:20:38 2022 - INFO  - Start testing...
++ rabbitmq-plugins enable rabbitmq_web_mqtt
+oe_test_rabbitmq-plugins.sh: line 33: rabbitmq-plugins: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmq-plugins.sh line 34'
++ message='oe_test_rabbitmq-plugins.sh line 34'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmq-plugins.sh line 34'
+Sun Dec  4 05:20:39 2022 - ERROR - oe_test_rabbitmq-plugins.sh line 34
++ return 0
++ systemctl restart rabbitmq-server
+Failed to restart rabbitmq-server.service: Unit rabbitmq-server.service not found.
++ ss -ntl
++ grep 1883
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmq-plugins.sh line 37'
++ message='oe_test_rabbitmq-plugins.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmq-plugins.sh line 37'
+Sun Dec  4 05:20:40 2022 - ERROR - oe_test_rabbitmq-plugins.sh line 37
++ return 0
++ rabbitmq-plugins disable rabbitmq_web_mqtt
+oe_test_rabbitmq-plugins.sh: line 38: rabbitmq-plugins: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmq-plugins.sh line 39'
++ message='oe_test_rabbitmq-plugins.sh line 39'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmq-plugins.sh line 39'
+Sun Dec  4 05:20:41 2022 - ERROR - oe_test_rabbitmq-plugins.sh line 39
++ return 0
++ systemctl restart rabbitmq-server
+Failed to restart rabbitmq-server.service: Unit rabbitmq-server.service not found.
++ ss -ntl
++ grep 1883
++ CHECK_RESULT 1 0 1
++ actual_result=1
++ expect_result=0
++ mode=1
++ error_log=
++ '[' -z 1 ']'
++ '[' 1 -eq 0 ']'
++ test 1x == 0x
++ return 0
++ rabbitmq-plugins enable --offline rabbitmq_web_dispatch
++ grep 'Offline change'
+oe_test_rabbitmq-plugins.sh: line 43: rabbitmq-plugins: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmq-plugins.sh line 44'
++ message='oe_test_rabbitmq-plugins.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmq-plugins.sh line 44'
+Sun Dec  4 05:20:42 2022 - ERROR - oe_test_rabbitmq-plugins.sh line 44
++ return 0
++ grep rabbitmq_web_dispatch /etc/rabbitmq/enabled_plugins
+grep: /etc/rabbitmq/enabled_plugins: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmq-plugins.sh line 46'
++ message='oe_test_rabbitmq-plugins.sh line 46'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmq-plugins.sh line 46'
+Sun Dec  4 05:20:43 2022 - ERROR - oe_test_rabbitmq-plugins.sh line 46
++ return 0
++ rabbitmq-plugins enable --online rabbitmq_web_mqtt
++ grep started
+oe_test_rabbitmq-plugins.sh: line 47: rabbitmq-plugins: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmq-plugins.sh line 48'
++ message='oe_test_rabbitmq-plugins.sh line 48'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmq-plugins.sh line 48'
+Sun Dec  4 05:20:44 2022 - ERROR - oe_test_rabbitmq-plugins.sh line 48
++ return 0
++ grep rabbitmq_web_mqtt /etc/rabbitmq/enabled_plugins
+grep: /etc/rabbitmq/enabled_plugins: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmq-plugins.sh line 50'
++ message='oe_test_rabbitmq-plugins.sh line 50'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmq-plugins.sh line 50'
+Sun Dec  4 05:20:45 2022 - ERROR - oe_test_rabbitmq-plugins.sh line 50
++ return 0
++ rabbitmq-plugins list web
+oe_test_rabbitmq-plugins.sh: line 51: rabbitmq-plugins: command not found
++ grep '\[E\*\] rabbitmq_web_mqtt'
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmq-plugins.sh line 52'
++ message='oe_test_rabbitmq-plugins.sh line 52'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmq-plugins.sh line 52'
+Sun Dec  4 05:20:46 2022 - ERROR - oe_test_rabbitmq-plugins.sh line 52
++ return 0
++ rabbitmq-plugins disable --offline rabbitmq_web_dispatch
++ grep 'Offline change'
+oe_test_rabbitmq-plugins.sh: line 53: rabbitmq-plugins: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmq-plugins.sh line 54'
++ message='oe_test_rabbitmq-plugins.sh line 54'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmq-plugins.sh line 54'
+Sun Dec  4 05:20:47 2022 - ERROR - oe_test_rabbitmq-plugins.sh line 54
++ return 0
++ grep rabbitmq_web_dispatch /etc/rabbitmq/enabled_plugins
+grep: /etc/rabbitmq/enabled_plugins: No such file or directory
++ CHECK_RESULT 2 1 0
++ actual_result=2
++ expect_result=1
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 1x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmq-plugins.sh line 56'
++ message='oe_test_rabbitmq-plugins.sh line 56'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmq-plugins.sh line 56'
+Sun Dec  4 05:20:48 2022 - ERROR - oe_test_rabbitmq-plugins.sh line 56
++ return 0
++ rabbitmq-plugins disable --online rabbitmq_web_mqtt
++ grep stopped
+oe_test_rabbitmq-plugins.sh: line 57: rabbitmq-plugins: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmq-plugins.sh line 58'
++ message='oe_test_rabbitmq-plugins.sh line 58'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmq-plugins.sh line 58'
+Sun Dec  4 05:20:49 2022 - ERROR - oe_test_rabbitmq-plugins.sh line 58
++ return 0
++ grep rabbitmq_web_mqtt /etc/rabbitmq/enabled_plugins
+grep: /etc/rabbitmq/enabled_plugins: No such file or directory
++ CHECK_RESULT 2 1 0
++ actual_result=2
++ expect_result=1
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 1x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmq-plugins.sh line 60'
++ message='oe_test_rabbitmq-plugins.sh line 60'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmq-plugins.sh line 60'
+Sun Dec  4 05:20:50 2022 - ERROR - oe_test_rabbitmq-plugins.sh line 60
++ return 0
++ rabbitmq-plugins set rabbitmq_web_mqtt
+oe_test_rabbitmq-plugins.sh: line 61: rabbitmq-plugins: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmq-plugins.sh line 62'
++ message='oe_test_rabbitmq-plugins.sh line 62'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmq-plugins.sh line 62'
+Sun Dec  4 05:20:51 2022 - ERROR - oe_test_rabbitmq-plugins.sh line 62
++ return 0
++ systemctl restart rabbitmq-server
+Failed to restart rabbitmq-server.service: Unit rabbitmq-server.service not found.
++ ss -ntl
++ grep 1883
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmq-plugins.sh line 65'
++ message='oe_test_rabbitmq-plugins.sh line 65'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmq-plugins.sh line 65'
+Sun Dec  4 05:20:52 2022 - ERROR - oe_test_rabbitmq-plugins.sh line 65
++ return 0
++ rabbitmq-plugins set --offline
+oe_test_rabbitmq-plugins.sh: line 66: rabbitmq-plugins: command not found
++ grep 'All plugins have been disabled'
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmq-plugins.sh line 67'
++ message='oe_test_rabbitmq-plugins.sh line 67'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmq-plugins.sh line 67'
+Sun Dec  4 05:20:53 2022 - ERROR - oe_test_rabbitmq-plugins.sh line 67
++ return 0
++ systemctl restart rabbitmq-server
+Failed to restart rabbitmq-server.service: Unit rabbitmq-server.service not found.
++ ss -ntl
++ grep 1883
++ CHECK_RESULT 1 0 1
++ actual_result=1
++ expect_result=0
++ mode=1
++ error_log=
++ '[' -z 1 ']'
++ '[' 1 -eq 0 ']'
++ test 1x == 0x
++ return 0
++ rabbitmq-plugins set --offline rabbitmq_web_dispatch
++ grep set
+oe_test_rabbitmq-plugins.sh: line 71: rabbitmq-plugins: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmq-plugins.sh line 72'
++ message='oe_test_rabbitmq-plugins.sh line 72'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmq-plugins.sh line 72'
+Sun Dec  4 05:20:55 2022 - ERROR - oe_test_rabbitmq-plugins.sh line 72
++ return 0
++ grep rabbitmq_web_dispatch /etc/rabbitmq/enabled_plugins
+grep: /etc/rabbitmq/enabled_plugins: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmq-plugins.sh line 74'
++ message='oe_test_rabbitmq-plugins.sh line 74'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmq-plugins.sh line 74'
+Sun Dec  4 05:20:56 2022 - ERROR - oe_test_rabbitmq-plugins.sh line 74
++ return 0
++ rabbitmq-plugins set --online rabbitmq_web_mqtt
++ grep started
+oe_test_rabbitmq-plugins.sh: line 75: rabbitmq-plugins: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmq-plugins.sh line 76'
++ message='oe_test_rabbitmq-plugins.sh line 76'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmq-plugins.sh line 76'
+Sun Dec  4 05:20:57 2022 - ERROR - oe_test_rabbitmq-plugins.sh line 76
++ return 0
++ grep rabbitmq_web_mqtt /etc/rabbitmq/enabled_plugins
+grep: /etc/rabbitmq/enabled_plugins: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmq-plugins.sh line 78'
++ message='oe_test_rabbitmq-plugins.sh line 78'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmq-plugins.sh line 78'
+Sun Dec  4 05:20:58 2022 - ERROR - oe_test_rabbitmq-plugins.sh line 78
++ return 0
++ LOG_INFO 'Finish test!'
++ message='Finish test!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish test!'
+Sun Dec  4 05:20:59 2022 - INFO  - Finish test!
++ CASE_RESULT 0
++ case_re=0
++ test -z 19
++ test 19 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Sun Dec  4 05:21:00 2022 - ERROR - failed to execute the case.
++ exit 19
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Sun Dec  4 05:21:00 2022 - INFO  - start environment cleanup.
++ rabbitmq-plugins set
+oe_test_rabbitmq-plugins.sh: line 84: rabbitmq-plugins: command not found
++ systemctl stop rabbitmq-server
+Failed to stop rabbitmq-server.service: Unit rabbitmq-server.service not loaded.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z Last metadata expiration check: 0:10:04 ago on Sun 04 Dec 2022 05:10:31 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides erlang-eldap(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-erts(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-kernel(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-mnesia(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-os_mon(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-public_key(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-sasl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-ssl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-stdlib(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-syntax_tools(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-tools(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-xmerl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+(try to add '--skip-broken' to skip uninstallable packages) ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile 'Last metadata expiration check: 0:10:04 ago on Sun 04 Dec 2022 05:10:31 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides erlang-eldap(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-erts(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-kernel(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-mnesia(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-os_mon(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-public_key(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-sasl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-ssl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-stdlib(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-syntax_tools(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-tools(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-xmerl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
+Traceback (most recent call last):
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 181, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 152, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:10:04 ago on Sun 04 Dec 2022 05:10:31 AM EST.\nError: \n Problem: conflicting requests\n  - nothing provides erlang-eldap(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64\n  - nothing provides erlang-erts(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64\n  - nothing provides erlang-kernel(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64\n  - nothing provides erlang-mnesia(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64\n  - nothing provides erlang-os_mon(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64\n  - nothing provides erlang-public_key(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64\n  - nothing provides erlang-sasl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64\n  - nothing provides erlang-ssl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64\n  - nothing provides erlang-stdlib(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64\n  - nothing provides erlang-syntax_tools(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64\n  - nothing provides erlang-tools(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64\n  - nothing provides erlang-xmerl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64\n(try to add '--skip-broken' to skip uninstallable packages)"
++ '[' 0 -ne 0 ']'
++ rm -rf /var/lib/rabbitmq/
+++ pgrep -u rabbitmq
+pgrep: invalid user name: rabbitmq
++ kill -9
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
++ which firewalld
+oe_test_rabbitmq-plugins.sh: line 89: which: command not found
++ setenforce 1
+setenforce: SELinux is disabled
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Sun Dec  4 05:21:05 2022 - INFO  - Finish environment cleanup!

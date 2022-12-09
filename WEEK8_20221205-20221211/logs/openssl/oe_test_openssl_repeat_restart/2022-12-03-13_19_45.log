@@ -1,0 +1,2429 @@
++ source common/common_openssl.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n function ']'
++ config_params
++ LOG_INFO 'Start to config params of the case.'
++ message='Start to config params of the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to config params of the case.'
+Sat Dec  3 13:19:49 2022 - INFO  - Start to config params of the case.
++ deploy_env
++ CA_Path=/etc/pki/CA
++ '[' '!' -d /etc/pki/CA ']'
++ cp /etc/pki/tls/openssl.cnf /etc/pki/tls/openssl.cnf.bak
++ sed -i '0,/^dir/s/\.\/demoCA/\/etc\/pki\/CA/' /etc/pki/tls/openssl.cnf
++ LOG_INFO 'End to config params of the case.'
++ message='End to config params of the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to config params of the case.'
+Sat Dec  3 13:19:50 2022 - INFO  - End to config params of the case.
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Sat Dec  3 13:19:51 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL 'httpd mod_ssl'
++ pkgs='httpd mod_ssl'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'httpd mod_ssl' --node 1 --tempfile ''
+Sat Dec  3 13:20:02 2022 - ERROR - pkgs:(httpd mod_ssl) not found
++ tmpfile2=
++ '[' -z '' ']'
++ tmpfile=
++ createCA_and_Self_signed_certificate
++ touch /etc/pki/CA/index.txt
++ echo 01
++ openssl genrsa -out /etc/pki/CA/private/cakey.pem 2048
+common/common_openssl.sh: line 33: openssl: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'common/common_openssl.sh line 34'
++ message='common/common_openssl.sh line 34'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'common/common_openssl.sh line 34'
+Sat Dec  3 13:20:03 2022 - ERROR - common/common_openssl.sh line 34
++ return 0
++ grep 'BEGIN RSA PRIVATE KEY' /etc/pki/CA/private/cakey.pem
+grep: /etc/pki/CA/private/cakey.pem: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'common/common_openssl.sh line 36'
++ message='common/common_openssl.sh line 36'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'common/common_openssl.sh line 36'
+Sat Dec  3 13:20:04 2022 - ERROR - common/common_openssl.sh line 36
++ return 0
++ expect
+spawn openssl req -x509 -key /etc/pki/CA/private/cakey.pem -days 365 -out /etc/pki/CA/cacert.pem -new
+couldn't execute "openssl": no such file or directory
+    while executing
+"spawn openssl req -x509 -key /etc/pki/CA/private/cakey.pem -days 365 -out /etc/pki/CA/cacert.pem -new"
++ grep 'certificate request' /etc/pki/CA/testlog1
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'common/common_openssl.sh line 58'
++ message='common/common_openssl.sh line 58'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'common/common_openssl.sh line 58'
+Sat Dec  3 13:20:06 2022 - ERROR - common/common_openssl.sh line 58
++ return 0
++ grep 'BEGIN CERTIFICATE' /etc/pki/CA/cacert.pem
+grep: /etc/pki/CA/cacert.pem: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'common/common_openssl.sh line 60'
++ message='common/common_openssl.sh line 60'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'common/common_openssl.sh line 60'
+Sat Dec  3 13:20:06 2022 - ERROR - common/common_openssl.sh line 60
++ return 0
++ generate_PrivateKey_and_Certificate_Signing_Request
++ applying=httpd
++ build_path=/etc/httpd/ssl
++ mkdir /etc/httpd/ssl
+mkdir: cannot create directory ‘/etc/httpd/ssl’: No such file or directory
++ openssl genrsa -out /etc/httpd/ssl/httpd.key 2048
+common/common_openssl.sh: line 67: openssl: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'common/common_openssl.sh line 68'
++ message='common/common_openssl.sh line 68'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'common/common_openssl.sh line 68'
+Sat Dec  3 13:20:07 2022 - ERROR - common/common_openssl.sh line 68
++ return 0
++ grep 'BEGIN RSA PRIVATE KEY' /etc/httpd/ssl/httpd.key
+grep: /etc/httpd/ssl/httpd.key: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'common/common_openssl.sh line 70'
++ message='common/common_openssl.sh line 70'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'common/common_openssl.sh line 70'
+Sat Dec  3 13:20:08 2022 - ERROR - common/common_openssl.sh line 70
++ return 0
++ expect
+couldn't open "/etc/httpd/ssl/testlog2": no such file or directory
+    while executing
+"log_file /etc/httpd/ssl/testlog2"
++ grep 'certificate request' /etc/httpd/ssl/testlog2
+grep: /etc/httpd/ssl/testlog2: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'common/common_openssl.sh line 96'
++ message='common/common_openssl.sh line 96'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'common/common_openssl.sh line 96'
+Sat Dec  3 13:20:09 2022 - ERROR - common/common_openssl.sh line 96
++ return 0
++ grep 'BEGIN CERTIFICATE REQUEST' /etc/httpd/ssl/httpd.csr
+grep: /etc/httpd/ssl/httpd.csr: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'common/common_openssl.sh line 98'
++ message='common/common_openssl.sh line 98'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'common/common_openssl.sh line 98'
+Sat Dec  3 13:20:10 2022 - ERROR - common/common_openssl.sh line 98
++ return 0
++ CA_Signature_Authentication
++ applying=httpd
++ build_path=/etc/httpd/ssl
++ expect
+couldn't open "/etc/httpd/ssl/testlog3": no such file or directory
+    while executing
+"log_file /etc/httpd/ssl/testlog3"
++ grep 'Certificate Details' /etc/httpd/ssl/testlog3
+grep: /etc/httpd/ssl/testlog3: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'common/common_openssl.sh line 115'
++ message='common/common_openssl.sh line 115'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'common/common_openssl.sh line 115'
+Sat Dec  3 13:20:11 2022 - ERROR - common/common_openssl.sh line 115
++ return 0
++ grep 'BEGIN CERTIFICATE' /etc/httpd/ssl/httpd.crt
+grep: /etc/httpd/ssl/httpd.crt: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'common/common_openssl.sh line 117'
++ message='common/common_openssl.sh line 117'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'common/common_openssl.sh line 117'
+Sat Dec  3 13:20:12 2022 - ERROR - common/common_openssl.sh line 117
++ return 0
++ Modify_application_configuration
++ file=/etc/httpd/conf.d/ssl.conf
++ sed -i '/DocumentRoot/s/^#//' /etc/httpd/conf.d/ssl.conf
+sed: can't read /etc/httpd/conf.d/ssl.conf: No such file or directory
++ sed -i 's/\#ServerName www.example.com:443/ServerName www.linuxpanda.com:443/' /etc/httpd/conf.d/ssl.conf
+sed: can't read /etc/httpd/conf.d/ssl.conf: No such file or directory
++ sed -i 's#SSLCertificateFile /etc/pki/tls/certs/localhost.crt#SSLCertificateFile /etc/httpd/ssl/httpd.crt#' /etc/httpd/conf.d/ssl.conf
+sed: can't read /etc/httpd/conf.d/ssl.conf: No such file or directory
++ sed -i 's#SSLCertificateKeyFile /etc/pki/tls/private/localhost.key#SSLCertificateKeyFile /etc/httpd/ssl/httpd.key#' /etc/httpd/conf.d/ssl.conf
+sed: can't read /etc/httpd/conf.d/ssl.conf: No such file or directory
++ file2=/etc/httpd/conf/httpd.conf
++ sed -i 's/\#ServerName www.example.com:80/ServerName www.openeuler.org:80/' /etc/httpd/conf/httpd.conf
+sed: can't read /etc/httpd/conf/httpd.conf: No such file or directory
++ sed -i 's/Require all denied/Require all granted/' /etc/httpd/conf/httpd.conf
+sed: can't read /etc/httpd/conf/httpd.conf: No such file or directory
++ cp /etc/hosts /etc/hosts.bak
++ echo '127.0.0.1   www.openeuler.org'
++ cp /usr/share/httpd/noindex/index.html /var/www/html/
+cp: cannot stat '/usr/share/httpd/noindex/index.html': No such file or directory
++ setenforce 0
+setenforce: SELinux is disabled
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Sat Dec  3 13:20:14 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Sat Dec  3 13:20:15 2022 - INFO  - Start to run test.
+++ seq 1 50
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:20:16 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:20:19 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 1
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:20:20 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:20:22 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 2
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:20:23 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:20:26 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 3
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:20:27 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:20:30 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 4
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:20:31 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:20:33 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 5
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:20:34 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:20:37 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 6
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:20:38 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:20:41 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 7
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:20:42 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:20:45 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 8
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:20:45 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:20:48 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 9
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:20:49 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:20:52 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 10
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:20:53 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:20:56 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 11
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:20:57 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:20:59 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 12
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:21:00 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:21:03 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 13
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:21:04 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:21:07 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 14
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:21:08 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:21:11 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 15
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:21:12 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:21:15 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 16
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:21:16 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:21:18 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 17
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:21:19 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:21:22 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 18
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:21:23 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:21:26 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 19
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:21:27 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:21:29 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 20
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:21:30 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:21:33 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 21
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:21:34 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:21:37 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 22
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:21:38 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:21:41 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 23
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:21:42 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:21:44 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 24
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:21:45 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:21:48 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 25
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:21:49 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:21:52 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 26
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:21:53 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:21:56 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 27
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:21:56 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:21:59 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 28
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:22:00 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:22:03 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 29
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:22:04 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:22:07 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 30
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:22:08 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:22:10 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 31
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:22:11 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:22:15 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 32
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:22:16 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:22:18 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 33
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:22:19 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:22:22 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 34
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:22:23 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:22:26 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 35
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:22:27 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:22:29 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 36
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:22:30 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:22:33 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 37
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:22:34 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:22:37 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 38
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:22:38 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:22:41 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 39
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:22:42 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:22:44 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 40
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:22:45 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:22:48 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 41
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:22:49 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:22:52 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 42
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:22:53 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:22:56 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 43
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:22:57 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:22:59 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 44
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:23:00 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:23:03 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 45
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:23:04 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:23:07 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 46
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:23:08 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:23:11 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 47
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:23:12 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:23:15 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 48
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:23:16 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:23:19 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 49
++ for i in $(seq 1 50)
++ systemctl restart httpd
+Failed to restart httpd.service: Unit httpd.service not found.
++ CHECK_RESULT 5
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 41'
++ message='oe_test_openssl_repeat_restart.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 41'
+Sat Dec  3 13:23:20 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 41
++ return 0
++ SLEEP_WAIT 1
++ wait_time=1
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 1 --cmd '' --mode 1
++ systemctl status httpd
++ grep active
+Unit httpd.service could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 44'
++ message='oe_test_openssl_repeat_restart.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 44'
+Sat Dec  3 13:23:22 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 44
++ return 0
++ echo 50
++ curl --cacert /etc/pki/CA/cacert.pem https://www.openeuler.org/index.html -I
++ grep 200
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openssl_repeat_restart.sh line 48'
++ message='oe_test_openssl_repeat_restart.sh line 48'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openssl_repeat_restart.sh line 48'
+Sat Dec  3 13:23:23 2022 - ERROR - oe_test_openssl_repeat_restart.sh line 48
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Sat Dec  3 13:23:24 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 111
++ test 111 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Sat Dec  3 13:23:25 2022 - ERROR - failed to execute the case.
++ exit 111
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Sat Dec  3 13:23:26 2022 - INFO  - Start to restore the test environment.
++ mv -f /etc/pki/tls/openssl.cnf.bak /etc/pki/tls/openssl.cnf
++ clean_httpd_openssl
++ rm -f /etc/pki/CA/index.txt /etc/pki/CA/serial /etc/pki/CA/private/cakey.pem /etc/pki/CA/cacert.pem /etc/pki/CA/testlog1
++ rm -rf /etc/httpd/ssl
++ mv -f /etc/pki/tls/openssl.cnf.bak /etc/pki/tls/openssl.cnf
+mv: cannot stat '/etc/pki/tls/openssl.cnf.bak': No such file or directory
++ mv -f /etc/hosts.bak /etc/hosts
++ systemctl stop httpd
+Failed to stop httpd.service: Unit httpd.service not loaded.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z '' ]]
++ [[ -z '' ]]
++ LOG_WARN 'no thing to do.'
++ message='no thing to do.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level warn --message 'no thing to do.'
+Sat Dec  3 13:23:27 2022 - WARN  - no thing to do.
++ return 0
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Sat Dec  3 13:23:28 2022 - INFO  - End to restore the test environment.

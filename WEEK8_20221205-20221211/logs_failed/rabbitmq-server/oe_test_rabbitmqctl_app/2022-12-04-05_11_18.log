@@ -1,0 +1,303 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start environmental preparation.'
++ message='Start environmental preparation.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start environmental preparation.'
+Sun Dec  4 05:11:22 2022 - INFO  - Start environmental preparation.
++ DNF_INSTALL rabbitmq-server
++ pkgs=rabbitmq-server
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs rabbitmq-server --node 1 --tempfile ''
++ tmpfile2='Last metadata expiration check: 0:01:21 ago on Sun 04 Dec 2022 05:10:31 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides erlang-eldap(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-erts(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-kernel(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-mnesia(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-os_mon(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-public_key(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-sasl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-ssl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-stdlib(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-syntax_tools(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-tools(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-xmerl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ '[' -z '' ']'
++ tmpfile='Last metadata expiration check: 0:01:21 ago on Sun 04 Dec 2022 05:10:31 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides erlang-eldap(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-erts(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-kernel(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-mnesia(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-os_mon(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-public_key(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-sasl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-ssl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-stdlib(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-syntax_tools(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-tools(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-xmerl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ which firewalld
+oe_test_rabbitmqctl_app.sh: line 25: which: command not found
++ systemctl restart rabbitmq-server
+Failed to restart rabbitmq-server.service: Unit rabbitmq-server.service not found.
+++ uname -i
++ platform=riscv64
++ LOG_INFO 'End of environmental preparation!'
++ message='End of environmental preparation!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of environmental preparation!'
+Sun Dec  4 05:11:55 2022 - INFO  - End of environmental preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start testing...'
++ message='Start testing...'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start testing...'
+Sun Dec  4 05:11:56 2022 - INFO  - Start testing...
++ rabbitmqctl stop
++ grep 'Stopping and halting'
+oe_test_rabbitmqctl_app.sh: line 33: rabbitmqctl: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmqctl_app.sh line 34'
++ message='oe_test_rabbitmqctl_app.sh line 34'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmqctl_app.sh line 34'
+Sun Dec  4 05:11:57 2022 - ERROR - oe_test_rabbitmqctl_app.sh line 34
++ return 0
++ systemctl restart rabbitmq-server
+Failed to restart rabbitmq-server.service: Unit rabbitmq-server.service not found.
++ rabbitmqctl shutdown
++ grep 'Shutting down RabbitMQ node'
+oe_test_rabbitmqctl_app.sh: line 36: rabbitmqctl: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmqctl_app.sh line 37'
++ message='oe_test_rabbitmqctl_app.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmqctl_app.sh line 37'
+Sun Dec  4 05:11:58 2022 - ERROR - oe_test_rabbitmqctl_app.sh line 37
++ return 0
++ systemctl restart rabbitmq-server
+Failed to restart rabbitmq-server.service: Unit rabbitmq-server.service not found.
++ rabbitmqctl stop_app
++ grep 'Stopping rabbit application '
+oe_test_rabbitmqctl_app.sh: line 39: rabbitmqctl: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmqctl_app.sh line 40'
++ message='oe_test_rabbitmqctl_app.sh line 40'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmqctl_app.sh line 40'
+Sun Dec  4 05:11:59 2022 - ERROR - oe_test_rabbitmqctl_app.sh line 40
++ return 0
++ rabbitmqctl start_app
++ grep 'Starting node'
+oe_test_rabbitmqctl_app.sh: line 41: rabbitmqctl: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmqctl_app.sh line 42'
++ message='oe_test_rabbitmqctl_app.sh line 42'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmqctl_app.sh line 42'
+Sun Dec  4 05:12:00 2022 - ERROR - oe_test_rabbitmqctl_app.sh line 42
++ return 0
+++ find /var/lib/rabbitmq/mnesia/ -name '*.pid'
+find: ‘/var/lib/rabbitmq/mnesia/’: No such file or directory
++ pid_file=
++ rabbitmqctl wait ''
++ grep 'Waiting for'
+oe_test_rabbitmqctl_app.sh: line 44: rabbitmqctl: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmqctl_app.sh line 45'
++ message='oe_test_rabbitmqctl_app.sh line 45'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmqctl_app.sh line 45'
+Sun Dec  4 05:12:01 2022 - ERROR - oe_test_rabbitmqctl_app.sh line 45
++ return 0
++ rabbitmqctl stop_app
+oe_test_rabbitmqctl_app.sh: line 46: rabbitmqctl: command not found
++ rabbitmqctl reset
++ grep 'Resetting node'
+oe_test_rabbitmqctl_app.sh: line 47: rabbitmqctl: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmqctl_app.sh line 48'
++ message='oe_test_rabbitmqctl_app.sh line 48'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmqctl_app.sh line 48'
+Sun Dec  4 05:12:02 2022 - ERROR - oe_test_rabbitmqctl_app.sh line 48
++ return 0
++ rabbitmqctl force_reset
++ grep 'Forcefully resetting node'
+oe_test_rabbitmqctl_app.sh: line 49: rabbitmqctl: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmqctl_app.sh line 50'
++ message='oe_test_rabbitmqctl_app.sh line 50'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmqctl_app.sh line 50'
+Sun Dec  4 05:12:03 2022 - ERROR - oe_test_rabbitmqctl_app.sh line 50
++ return 0
++ rabbitmqctl start_app
+oe_test_rabbitmqctl_app.sh: line 51: rabbitmqctl: command not found
++ rabbitmqctl rotate_logs
++ grep 'Rotating logs'
+oe_test_rabbitmqctl_app.sh: line 52: rabbitmqctl: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmqctl_app.sh line 53'
++ message='oe_test_rabbitmqctl_app.sh line 53'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmqctl_app.sh line 53'
+Sun Dec  4 05:12:04 2022 - ERROR - oe_test_rabbitmqctl_app.sh line 53
++ return 0
++ '[' riscv64 = x86_64 ']'
++ LOG_INFO 'Finish test!'
++ message='Finish test!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish test!'
+Sun Dec  4 05:12:04 2022 - INFO  - Finish test!
++ CASE_RESULT 0
++ case_re=0
++ test -z 8
++ test 8 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Sun Dec  4 05:12:05 2022 - ERROR - failed to execute the case.
++ exit 8
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Sun Dec  4 05:12:06 2022 - INFO  - start environment cleanup.
++ systemctl stop rabbitmq-server
+Failed to stop rabbitmq-server.service: Unit rabbitmq-server.service not loaded.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z Last metadata expiration check: 0:01:21 ago on Sun 04 Dec 2022 05:10:31 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides erlang-eldap(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-erts(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-kernel(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-mnesia(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-os_mon(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-public_key(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-sasl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-ssl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-stdlib(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-syntax_tools(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-tools(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-xmerl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+(try to add '--skip-broken' to skip uninstallable packages) ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile 'Last metadata expiration check: 0:01:21 ago on Sun 04 Dec 2022 05:10:31 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides erlang-eldap(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-erts(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-kernel(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-mnesia(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-os_mon(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-public_key(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-sasl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-ssl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-stdlib(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-syntax_tools(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-tools(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+  - nothing provides erlang-xmerl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
+Traceback (most recent call last):
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 181, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 152, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:01:21 ago on Sun 04 Dec 2022 05:10:31 AM EST.\nError: \n Problem: conflicting requests\n  - nothing provides erlang-eldap(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64\n  - nothing provides erlang-erts(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64\n  - nothing provides erlang-kernel(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64\n  - nothing provides erlang-mnesia(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64\n  - nothing provides erlang-os_mon(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64\n  - nothing provides erlang-public_key(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64\n  - nothing provides erlang-sasl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64\n  - nothing provides erlang-ssl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64\n  - nothing provides erlang-stdlib(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64\n  - nothing provides erlang-syntax_tools(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64\n  - nothing provides erlang-tools(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64\n  - nothing provides erlang-xmerl(riscv-64) >= 23 needed by rabbitmq-server-3.9.10-2.an8.riscv64\n(try to add '--skip-broken' to skip uninstallable packages)"
++ '[' 0 -ne 0 ']'
++ rm -rf /var/lib/rabbitmq/
++ which firewalld
+oe_test_rabbitmqctl_app.sh: line 68: which: command not found
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Sun Dec  4 05:12:10 2022 - INFO  - Finish environment cleanup!

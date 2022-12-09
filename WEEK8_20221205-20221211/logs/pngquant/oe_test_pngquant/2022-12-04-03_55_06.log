@@ -1,0 +1,408 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Sun Dec  4 03:55:10 2022 - INFO  - Start to prepare the test environment.
++ mkdir output_test
++ wget -P ./ https://pngquant.org/Ducati_side_shadow.png
+oe_test_pngquant.sh: line 26: wget: command not found
++ cp test.png test-copy.png
+cp: cannot stat 'test.png': No such file or directory
++ DNF_INSTALL 'pngquant libimagequant'
++ pkgs='pngquant libimagequant'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'pngquant libimagequant' --node 1 --tempfile ''
++ tmpfile2=/tmp/tmp6kqe2yst
++ '[' -z '' ']'
++ tmpfile=/tmp/tmp6kqe2yst
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Sun Dec  4 03:55:56 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Sun Dec  4 03:55:57 2022 - INFO  - Start to run test.
++ pngquant --help
++ grep usage
+usage:  pngquant [options] [ncolors] -- pngfile [pngfile ...]
++ CHECK_RESULT 0 0 0 'Failed to run command: pngquant --help'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Failed to run command: pngquant --help'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ pngquant test.png --verbose
+test.png:
+  error: cannot open test.png for reading
+There were errors quantizing 1 file out of a total of 1 file.
++ test -f test-fs8.png
++ CHECK_RESULT 1 0 0 'Failed to run command: pngquant --verbose'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed to run command: pngquant --verbose'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed to run command: pngquant --verbose'
++ LOG_ERROR 'Failed to run command: pngquant --verbose'
++ message='Failed to run command: pngquant --verbose'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to run command: pngquant --verbose'
+Sun Dec  4 03:55:58 2022 - ERROR - Failed to run command: pngquant --verbose
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_pngquant.sh line 42'
++ message='oe_test_pngquant.sh line 42'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_pngquant.sh line 42'
+Sun Dec  4 03:55:59 2022 - ERROR - oe_test_pngquant.sh line 42
++ return 0
++ rm -f ./test-fs8.png
++ pngquant test.png
+  error: cannot open test.png for reading
++ test -f test-fs8.png
++ CHECK_RESULT 1 0 0 'Failed to run command: pngquant test.png'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed to run command: pngquant test.png'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed to run command: pngquant test.png'
++ LOG_ERROR 'Failed to run command: pngquant test.png'
++ message='Failed to run command: pngquant test.png'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to run command: pngquant test.png'
+Sun Dec  4 03:55:59 2022 - ERROR - Failed to run command: pngquant test.png
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_pngquant.sh line 47'
++ message='oe_test_pngquant.sh line 47'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_pngquant.sh line 47'
+Sun Dec  4 03:56:00 2022 - ERROR - oe_test_pngquant.sh line 47
++ return 0
++ pngquant -
+oe_test_pngquant.sh: line 49: test.png: No such file or directory
++ test -f test-stdout.png
++ CHECK_RESULT 1 0 0 'Failed to test stdin and stdout'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed to test stdin and stdout'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed to test stdin and stdout'
++ LOG_ERROR 'Failed to test stdin and stdout'
++ message='Failed to test stdin and stdout'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to test stdin and stdout'
+Sun Dec  4 03:56:01 2022 - ERROR - Failed to test stdin and stdout
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_pngquant.sh line 51'
++ message='oe_test_pngquant.sh line 51'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_pngquant.sh line 51'
+Sun Dec  4 03:56:02 2022 - ERROR - oe_test_pngquant.sh line 51
++ return 0
++ rm -f ./test-fs8.png
++ pngquant test.png test-copy.png
+  error: cannot open test-copy.png for reading
+  error: cannot open test.png for reading
++ test -f test-fs8.png
++ CHECK_RESULT 1 0 0 'Failed to test more than one file'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed to test more than one file'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed to test more than one file'
++ LOG_ERROR 'Failed to test more than one file'
++ message='Failed to test more than one file'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to test more than one file'
+Sun Dec  4 03:56:03 2022 - ERROR - Failed to test more than one file
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_pngquant.sh line 56'
++ message='oe_test_pngquant.sh line 56'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_pngquant.sh line 56'
+Sun Dec  4 03:56:04 2022 - ERROR - oe_test_pngquant.sh line 56
++ return 0
++ rm -f ./test-fs8.png
++ pngquant --posterize 3 test.png
+  error: cannot open test.png for reading
+++ ls
+++ grep -cE test-fs8.png
++ CHECK_RESULT 0 1 0 'Failed to run command: pngquant --posterize'
++ actual_result=0
++ expect_result=1
++ mode=0
++ error_log='Failed to run command: pngquant --posterize'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 1x
++ test -n 'Failed to run command: pngquant --posterize'
++ LOG_ERROR 'Failed to run command: pngquant --posterize'
++ message='Failed to run command: pngquant --posterize'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to run command: pngquant --posterize'
+Sun Dec  4 03:56:05 2022 - ERROR - Failed to run command: pngquant --posterize
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_pngquant.sh line 60'
++ message='oe_test_pngquant.sh line 60'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_pngquant.sh line 60'
+Sun Dec  4 03:56:06 2022 - ERROR - oe_test_pngquant.sh line 60
++ return 0
++ rm -f ./test-fs8.png
++ pngquant --strip test.png
+  error: cannot open test.png for reading
++ test -f test-fs8.png
++ CHECK_RESULT 1 0 0 'Failed to run command: pngquant --strip'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed to run command: pngquant --strip'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed to run command: pngquant --strip'
++ LOG_ERROR 'Failed to run command: pngquant --strip'
++ message='Failed to run command: pngquant --strip'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to run command: pngquant --strip'
+Sun Dec  4 03:56:07 2022 - ERROR - Failed to run command: pngquant --strip
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_pngquant.sh line 65'
++ message='oe_test_pngquant.sh line 65'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_pngquant.sh line 65'
+Sun Dec  4 03:56:07 2022 - ERROR - oe_test_pngquant.sh line 65
++ return 0
++ pngquant test.png --ext .demo
+  error: cannot open test.png for reading
++ test -f test.demo
++ CHECK_RESULT 1 0 0 'Failed to run command: pngquant --ext'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed to run command: pngquant --ext'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed to run command: pngquant --ext'
++ LOG_ERROR 'Failed to run command: pngquant --ext'
++ message='Failed to run command: pngquant --ext'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to run command: pngquant --ext'
+Sun Dec  4 03:56:08 2022 - ERROR - Failed to run command: pngquant --ext
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_pngquant.sh line 69'
++ message='oe_test_pngquant.sh line 69'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_pngquant.sh line 69'
+Sun Dec  4 03:56:09 2022 - ERROR - oe_test_pngquant.sh line 69
++ return 0
++ pngquant test.png --output ./output_test/test_output.png
+  error: cannot open test.png for reading
++ test -f ./output_test/test_output.png
++ CHECK_RESULT 1 0 0 'Failed to run command: pngquant --output'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed to run command: pngquant --output'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed to run command: pngquant --output'
++ LOG_ERROR 'Failed to run command: pngquant --output'
++ message='Failed to run command: pngquant --output'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to run command: pngquant --output'
+Sun Dec  4 03:56:10 2022 - ERROR - Failed to run command: pngquant --output
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_pngquant.sh line 73'
++ message='oe_test_pngquant.sh line 73'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_pngquant.sh line 73'
+Sun Dec  4 03:56:11 2022 - ERROR - oe_test_pngquant.sh line 73
++ return 0
++ rm -f ./test-fs8.png
++ pngquant 64 test.png
+  error: cannot open test.png for reading
++ test -f test-fs8.png
++ CHECK_RESULT 1 0 0 'Failed to test option [ncolors]'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed to test option [ncolors]'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed to test option [ncolors]'
++ LOG_ERROR 'Failed to test option [ncolors]'
++ message='Failed to test option [ncolors]'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to test option [ncolors]'
+Sun Dec  4 03:56:12 2022 - ERROR - Failed to test option [ncolors]
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_pngquant.sh line 78'
++ message='oe_test_pngquant.sh line 78'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_pngquant.sh line 78'
+Sun Dec  4 03:56:13 2022 - ERROR - oe_test_pngquant.sh line 78
++ return 0
++ pngquant --force test.png
+  error: cannot open test.png for reading
++ test -f test-fs8.png
++ CHECK_RESULT 1 0 0 'Failed to run command: pngquant --force'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed to run command: pngquant --force'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed to run command: pngquant --force'
++ LOG_ERROR 'Failed to run command: pngquant --force'
++ message='Failed to run command: pngquant --force'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to run command: pngquant --force'
+Sun Dec  4 03:56:14 2022 - ERROR - Failed to run command: pngquant --force
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_pngquant.sh line 82'
++ message='oe_test_pngquant.sh line 82'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_pngquant.sh line 82'
+Sun Dec  4 03:56:14 2022 - ERROR - oe_test_pngquant.sh line 82
++ return 0
++ rm -f ./test-fs8.png
++ pngquant --skip-if-larger test.png
+  error: cannot open test.png for reading
++ test -f test-fs8.png
++ CHECK_RESULT 1 0 0 'Failed to run command: pngquant --skip-if-larger'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed to run command: pngquant --skip-if-larger'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed to run command: pngquant --skip-if-larger'
++ LOG_ERROR 'Failed to run command: pngquant --skip-if-larger'
++ message='Failed to run command: pngquant --skip-if-larger'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to run command: pngquant --skip-if-larger'
+Sun Dec  4 03:56:15 2022 - ERROR - Failed to run command: pngquant --skip-if-larger
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_pngquant.sh line 87'
++ message='oe_test_pngquant.sh line 87'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_pngquant.sh line 87'
+Sun Dec  4 03:56:16 2022 - ERROR - oe_test_pngquant.sh line 87
++ return 0
++ pngquant --nofs test.png
+  error: cannot open test.png for reading
++ test -f test-or8.png
++ CHECK_RESULT 1 0 0 'Failed to run command: pngquant --nofs'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed to run command: pngquant --nofs'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed to run command: pngquant --nofs'
++ LOG_ERROR 'Failed to run command: pngquant --nofs'
++ message='Failed to run command: pngquant --nofs'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to run command: pngquant --nofs'
+Sun Dec  4 03:56:17 2022 - ERROR - Failed to run command: pngquant --nofs
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_pngquant.sh line 91'
++ message='oe_test_pngquant.sh line 91'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_pngquant.sh line 91'
+Sun Dec  4 03:56:18 2022 - ERROR - oe_test_pngquant.sh line 91
++ return 0
++ rm -f ./test-fs8.png
++ pngquant test.png --quality 50
+  error: cannot open test.png for reading
++ test -f test-fs8.png
++ CHECK_RESULT 1 0 0 'Failed to run command: pngquant --quality'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed to run command: pngquant --quality'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed to run command: pngquant --quality'
++ LOG_ERROR 'Failed to run command: pngquant --quality'
++ message='Failed to run command: pngquant --quality'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to run command: pngquant --quality'
+Sun Dec  4 03:56:19 2022 - ERROR - Failed to run command: pngquant --quality
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_pngquant.sh line 96'
++ message='oe_test_pngquant.sh line 96'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_pngquant.sh line 96'
+Sun Dec  4 03:56:20 2022 - ERROR - oe_test_pngquant.sh line 96
++ return 0
++ rm -f ./test-fs8.png
++ pngquant test.png --speed 5
+  error: cannot open test.png for reading
++ test -f test-fs8.png
++ CHECK_RESULT 1 0 0 'Failed to run command: pngquant --speed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed to run command: pngquant --speed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed to run command: pngquant --speed'
++ LOG_ERROR 'Failed to run command: pngquant --speed'
++ message='Failed to run command: pngquant --speed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to run command: pngquant --speed'
+Sun Dec  4 03:56:21 2022 - ERROR - Failed to run command: pngquant --speed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_pngquant.sh line 101'
++ message='oe_test_pngquant.sh line 101'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_pngquant.sh line 101'
+Sun Dec  4 03:56:22 2022 - ERROR - oe_test_pngquant.sh line 101
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Sun Dec  4 03:56:22 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 14
++ test 14 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Sun Dec  4 03:56:23 2022 - ERROR - failed to execute the case.
++ exit 14
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Sun Dec  4 03:56:24 2022 - INFO  - Start to restore the test environment.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmp6kqe2yst ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmp6kqe2yst
++ '[' 0 -ne 0 ']'
++ rm -rf './test*' ./output_test/
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Sun Dec  4 03:56:38 2022 - INFO  - End to restore the test environment.

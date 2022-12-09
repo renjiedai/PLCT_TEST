@@ -1,0 +1,430 @@
++ source ../common/common_ruby.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Sun Dec  4 10:31:25 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL rubygem-rdoc
++ pkgs=rubygem-rdoc
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs rubygem-rdoc --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpggemivj6
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpggemivj6
+++ grep VERSION_ID /etc/os-release
+++ awk -F '\"' '{print$2}'
++ VERSION_ID=8.5
++ '[' 8.5 '!=' 22.03 ']'
++ path_rdoc=/root/.rdoc
++ LOG_INFO 'Finish preparing the test environment.'
++ message='Finish preparing the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish preparing the test environment.'
+Sun Dec  4 10:32:22 2022 - INFO  - Finish preparing the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Sun Dec  4 10:32:22 2022 - INFO  - Start to run test.
++ rdoc --version
++ grep '[0-9]'
+6.4.0
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rdoc --help
++ grep 'Usage: rdoc'
+Usage: rdoc [options] [names...]
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rdoc -V ../common/main.rb
++ grep 'Parsing sources'
+
+Generating Darkfish format into /root/mugen-riscv/testcases/cli-test/ruby/oe_test_rdoc_01/doc...
+Parsing sources...
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ test -d doc
++ rm -rf doc
++ rdoc -q ../common/main.rb
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ test -d doc
++ rm -rf doc
++ rdoc ../common/main.rb --write-options
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rdoc ../common/main.rb --dry-run
++ grep 'Parsing sources'
+uh-oh! RDoc had a problem:
+Tried to load unspecified class: Regexp
+
+run with --debug for full backtrace
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rdoc_01.sh line 49'
++ message='oe_test_rdoc_01.sh line 49'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rdoc_01.sh line 49'
+Sun Dec  4 10:32:59 2022 - ERROR - oe_test_rdoc_01.sh line 49
++ return 0
++ test -d doc
++ CHECK_RESULT 1 1
++ actual_result=1
++ expect_result=1
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 1x
++ return 0
++ rdoc ../common/main.rb -D
+uh-oh! RDoc had a problem:
+Tried to load unspecified class: Regexp
+
+run with --debug for full backtrace
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rdoc_01.sh line 53'
++ message='oe_test_rdoc_01.sh line 53'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rdoc_01.sh line 53'
+Sun Dec  4 10:33:05 2022 - ERROR - oe_test_rdoc_01.sh line 53
++ return 0
++ test -d doc
++ rdoc ../common/main.rb --ignore-invalid
++ grep 'Parsing sources'
+uh-oh! RDoc had a problem:
+Tried to load unspecified class: Regexp
+
+run with --debug for full backtrace
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rdoc_01.sh line 56'
++ message='oe_test_rdoc_01.sh line 56'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rdoc_01.sh line 56'
+Sun Dec  4 10:33:11 2022 - ERROR - oe_test_rdoc_01.sh line 56
++ return 0
++ rdoc ../common/main.rb -r
++ grep 'Parsing sources'
+uh-oh! RDoc had a problem:
+Tried to load unspecified class: Regexp
+
+run with --debug for full backtrace
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rdoc_01.sh line 58'
++ message='oe_test_rdoc_01.sh line 58'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rdoc_01.sh line 58'
+Sun Dec  4 10:33:17 2022 - ERROR - oe_test_rdoc_01.sh line 58
++ return 0
++ test -d /root/.rdoc/Customer
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rdoc_01.sh line 60'
++ message='oe_test_rdoc_01.sh line 60'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rdoc_01.sh line 60'
+Sun Dec  4 10:33:17 2022 - ERROR - oe_test_rdoc_01.sh line 60
++ return 0
++ test -f /root/.rdoc/cache.ri -a -f /root/.rdoc/created.rid
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rdoc_01.sh line 62'
++ message='oe_test_rdoc_01.sh line 62'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rdoc_01.sh line 62'
+Sun Dec  4 10:33:18 2022 - ERROR - oe_test_rdoc_01.sh line 62
++ return 0
++ rdoc ../common/main.rb -R
++ grep 'Parsing sources'
+uh-oh! RDoc had a problem:
+Tried to load unspecified class: Regexp
+
+run with --debug for full backtrace
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rdoc_01.sh line 64'
++ message='oe_test_rdoc_01.sh line 64'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rdoc_01.sh line 64'
+Sun Dec  4 10:33:24 2022 - ERROR - oe_test_rdoc_01.sh line 64
++ return 0
++ test -d /usr/share/ri/site/Customer
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rdoc_01.sh line 66'
++ message='oe_test_rdoc_01.sh line 66'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rdoc_01.sh line 66'
+Sun Dec  4 10:33:25 2022 - ERROR - oe_test_rdoc_01.sh line 66
++ return 0
++ test -f /usr/share/ri/site/cache.ri -a -f /usr/share/ri/site/created.rid
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rdoc_01.sh line 68'
++ message='oe_test_rdoc_01.sh line 68'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rdoc_01.sh line 68'
+Sun Dec  4 10:33:26 2022 - ERROR - oe_test_rdoc_01.sh line 68
++ return 0
++ rdoc ../common/main.rb -c UTF-8
+uh-oh! RDoc had a problem:
+Tried to load unspecified class: Regexp
+
+run with --debug for full backtrace
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rdoc_01.sh line 70'
++ message='oe_test_rdoc_01.sh line 70'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rdoc_01.sh line 70'
+Sun Dec  4 10:33:33 2022 - ERROR - oe_test_rdoc_01.sh line 70
++ return 0
++ grep UTF-8 doc/index.html
+grep: doc/index.html: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rdoc_01.sh line 72'
++ message='oe_test_rdoc_01.sh line 72'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rdoc_01.sh line 72'
+Sun Dec  4 10:33:34 2022 - ERROR - oe_test_rdoc_01.sh line 72
++ return 0
++ grep UTF-8 doc/Customer.html
+grep: doc/Customer.html: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rdoc_01.sh line 74'
++ message='oe_test_rdoc_01.sh line 74'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rdoc_01.sh line 74'
+Sun Dec  4 10:33:35 2022 - ERROR - oe_test_rdoc_01.sh line 74
++ return 0
++ grep UTF-8 doc/table_of_contents.html
+grep: doc/table_of_contents.html: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rdoc_01.sh line 76'
++ message='oe_test_rdoc_01.sh line 76'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rdoc_01.sh line 76'
+Sun Dec  4 10:33:36 2022 - ERROR - oe_test_rdoc_01.sh line 76
++ return 0
++ rm -rf doc
++ rdoc ../common/main.rb -A
+uh-oh! RDoc had a problem:
+Tried to load unspecified class: Regexp
+
+run with --debug for full backtrace
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rdoc_01.sh line 79'
++ message='oe_test_rdoc_01.sh line 79'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rdoc_01.sh line 79'
+Sun Dec  4 10:33:43 2022 - ERROR - oe_test_rdoc_01.sh line 79
++ return 0
++ test -d doc
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rdoc_01.sh line 81'
++ message='oe_test_rdoc_01.sh line 81'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rdoc_01.sh line 81'
+Sun Dec  4 10:33:44 2022 - ERROR - oe_test_rdoc_01.sh line 81
++ return 0
++ LOG_INFO 'End of the test.'
++ message='End of the test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of the test.'
+Sun Dec  4 10:33:45 2022 - INFO  - End of the test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 15
++ test 15 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Sun Dec  4 10:33:46 2022 - ERROR - failed to execute the case.
++ exit 15
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Sun Dec  4 10:33:46 2022 - INFO  - Start to restore the test environment.
++ delete_files
+++ ls
+++ grep -vE '.sh|.rb|.erb|rakefile|.gemspec'
++ rm -rf
++ rm -rf /root/.rdoc/ .rdoc_options /usr/share/ri/site /root/.local
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpggemivj6 ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpggemivj6
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish restoring the test environment.'
++ message='Finish restoring the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish restoring the test environment.'
+Sun Dec  4 10:34:07 2022 - INFO  - Finish restoring the test environment.
