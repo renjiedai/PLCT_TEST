@@ -1,0 +1,15 @@
+Thu Dec 29 23:48:02 2022 - INFO  - Start environmental preparation.
+Failed to start firewalld.service: Unit firewalld.service not found.
+oe_test_firewalld_lockdown.sh: line 26: firewall-cmd: command not found
+Thu Dec 29 23:48:04 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 23:48:06 2022 - INFO  - Start executing testcase.
+sudo: firewall-cmd: command not found
+Thu Dec 29 23:48:07 2022 - ERROR - oe_test_firewalld_lockdown.sh line 43
+oe_test_firewalld_lockdown.sh: line 44: firewall-cmd: command not found
+Thu Dec 29 23:48:09 2022 - ERROR - oe_test_firewalld_lockdown.sh line 45
+sudo: firewall-cmd: command not found
+Thu Dec 29 23:48:10 2022 - ERROR - oe_test_firewalld_lockdown.sh line 47
+oe_test_firewalld_lockdown.sh: line 48: firewall-cmd: command not found
+Thu Dec 29 23:48:12 2022 - INFO  - Finish testcase execution.
+Thu Dec 29 23:48:13 2022 - ERROR - failed to execute the case.
+Thu Dec 29 23:48:14 2022 - INFO  - oe_test_firewalld_lockdown.sh post_test

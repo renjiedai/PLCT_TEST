@@ -1,0 +1,10 @@
+Thu Dec 29 22:59:26 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 23:00:36 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 23:00:37 2022 - INFO  - Start testing...
+  test_header
+test_footer
+        href="./common/test.css" />
+Thu Dec 29 23:00:40 2022 - INFO  - Finish test!
+Thu Dec 29 23:00:41 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 23:00:42 2022 - INFO  - start environment cleanup.
+Thu Dec 29 23:01:07 2022 - INFO  - Finish environment cleanup!

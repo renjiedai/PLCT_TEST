@@ -1,0 +1,31 @@
+Thu Dec 29 22:16:55 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 22:20:11 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 22:20:13 2022 - INFO  - Start to run test.
+Failed to restart cups-lpd.socket: Unit cups-lpd.socket not found.
+Thu Dec 29 22:20:14 2022 - ERROR - cups-lpd.socket restart failed
+Thu Dec 29 22:20:16 2022 - ERROR - ../common/common_lib.sh line 34
+Unit cups-lpd.socket could not be found.
+Thu Dec 29 22:20:25 2022 - ERROR - cups-lpd.socket restart failed
+Thu Dec 29 22:20:26 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop cups-lpd.socket: Unit cups-lpd.socket not loaded.
+Thu Dec 29 22:20:28 2022 - ERROR - cups-lpd.socket stop failed
+Thu Dec 29 22:20:30 2022 - ERROR - ../common/common_lib.sh line 39
+Unit cups-lpd.socket could not be found.
+Thu Dec 29 22:20:38 2022 - ERROR - cups-lpd.socket stop failed
+Thu Dec 29 22:20:40 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start cups-lpd.socket: Unit cups-lpd.socket not found.
+Thu Dec 29 22:20:42 2022 - ERROR - cups-lpd.socket start failed
+Thu Dec 29 22:20:43 2022 - ERROR - ../common/common_lib.sh line 44
+Unit cups-lpd.socket could not be found.
+Thu Dec 29 22:20:52 2022 - ERROR - cups-lpd.socket start failed
+Thu Dec 29 22:20:54 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for cups-lpd.socket: No such file or directory
+Thu Dec 29 22:20:56 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start cups-lpd.socket: Unit cups-lpd.socket not found.
+Thu Dec 29 22:20:58 2022 - ERROR - oe_test_socket_cups-lpd.sh line 33
+Unit cups-lpd.socket could not be found.
+Thu Dec 29 22:21:00 2022 - ERROR - oe_test_socket_cups-lpd.sh line 35
+Thu Dec 29 22:21:02 2022 - INFO  - End of the test.
+Thu Dec 29 22:21:04 2022 - ERROR - failed to execute the case.
+Thu Dec 29 22:21:05 2022 - INFO  - start environment cleanup.
+Thu Dec 29 22:22:08 2022 - INFO  - Finish environment cleanup!

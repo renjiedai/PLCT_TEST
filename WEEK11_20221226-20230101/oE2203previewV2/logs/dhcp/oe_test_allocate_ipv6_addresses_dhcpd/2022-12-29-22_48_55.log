@@ -1,0 +1,51 @@
+Thu Dec 29 22:49:02 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 22:50:26 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 22:50:27 2022 - INFO  - Start testing...
+netns0
+netns1
+Error: Unknown device type.
+Cannot find device "vnet0"
+Cannot find device "vnet1"
+Cannot find device "vnet0"
+Cannot find device "vnet1"
+Cannot find device "vnet0"
+Thu Dec 29 22:50:31 2022 - ERROR - vnet0 add ip fail
+Thu Dec 29 22:50:33 2022 - ERROR - oe_test_allocate_ipv6_addresses_dhcpd.sh line 56
+Thu Dec 29 22:50:37 2022 - ERROR - vnet0 add ip fail
+Thu Dec 29 22:50:38 2022 - ERROR - oe_test_allocate_ipv6_addresses_dhcpd.sh line 59
+Internet Systems Consortium DHCP Server 4.4.2
+Copyright 2004-2020 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+ldap_gssapi_principal is not set,GSSAPI Authentication for LDAP will not be used
+Not searching LDAP since ldap-server, ldap-port and ldap-base-dn were not specified in the config file
+Config file: dhcpd6.conf
+Database file: /var/lib/dhcpd/dhcpd6.leases
+PID file: /var/run/dhcpd6.pid
+Wrote 0 NA, 0 TA, 0 PD leases to lease file.
+
+Not configured to listen on any interfaces!
+
+This version of ISC DHCP is based on the release available
+on ftp.isc.org. Features have been added and other changes
+have been made to the base software release in order to make
+it work better with this distribution.
+
+Please report issues with this software via: 
+https://gitee.com/src-openeuler/dhcp/issues
+
+exiting.
+Thu Dec 29 22:50:40 2022 - ERROR - start dhcpd fail
+Thu Dec 29 22:50:41 2022 - ERROR - oe_test_allocate_ipv6_addresses_dhcpd.sh line 61
+grep: /etc/sysconfig/network-scripts/ifcfg-*: No such file or directory
+grep: /etc/sysconfig/network-scripts/ifcfg-*: No such file or directory
+grep: /etc/sysconfig/network-scripts/ifcfg-*: No such file or directory
+Thu Dec 29 22:50:46 2022 - ERROR - allocate ipv6 addr fail
+Thu Dec 29 22:50:47 2022 - ERROR - oe_test_allocate_ipv6_addresses_dhcpd.sh line 65
+Thu Dec 29 22:50:48 2022 - INFO  - Finish testing!
+Thu Dec 29 22:50:49 2022 - ERROR - failed to execute the case.
+Thu Dec 29 22:50:51 2022 - INFO  - start environment cleanup.
+Cannot find device "vnet0"
+Cannot find device "vnet1"
+kill: not enough arguments
+Thu Dec 29 22:51:28 2022 - INFO  - Finish environment cleanup!

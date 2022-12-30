@@ -1,0 +1,15 @@
+Thu Dec 29 20:35:19 2022 - INFO  - Start executing testcase.
+Failed to start auditd.service: Unit auditd.service not found.
+Thu Dec 29 20:35:21 2022 - ERROR - Failed to start auditd service
+Thu Dec 29 20:35:22 2022 - ERROR - oe_test_start_audit.sh line 25
+Thu Dec 29 20:35:24 2022 - ERROR - Failed to chkconfig auditd service with status enable
+Thu Dec 29 20:35:26 2022 - ERROR - oe_test_start_audit.sh line 27
+Failed to disable unit: Unit file auditd.service does not exist.
+Thu Dec 29 20:35:28 2022 - ERROR - Failed to chkconfig auditd service with status disable
+Thu Dec 29 20:35:29 2022 - ERROR - oe_test_start_audit.sh line 30
+Failed to enable unit: Unit file auditd.service does not exist.
+Thu Dec 29 20:35:32 2022 - ERROR - Failed to chkconfig auditd service with status enable
+Thu Dec 29 20:35:34 2022 - ERROR - oe_test_start_audit.sh line 33
+Thu Dec 29 20:35:35 2022 - INFO  - Finish testcase execution.
+Thu Dec 29 20:35:37 2022 - ERROR - failed to execute the case.
+Thu Dec 29 20:35:39 2022 - INFO  - oe_test_start_audit.sh post_test

@@ -1,0 +1,10 @@
+Thu Dec 29 19:18:09 2022 - INFO  - Start to prepare the test environment.
+Thu Dec 29 19:19:06 2022 - INFO  - End to prepare the test environment.
+Thu Dec 29 19:19:07 2022 - INFO  - Start to run test.
+Usage: autoheader [-h] [--help] [-m dir] [--macrodir=dir]
+Usage: autoheader [-h] [--help] [-m dir] [--macrodir=dir]
+Autoconf version 2.13
+Thu Dec 29 19:19:15 2022 - INFO  - End to run test.
+Thu Dec 29 19:19:17 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 19:19:19 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 19:19:40 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,11 @@
+Thu Dec 29 18:20:43 2022 - INFO  - Start to prepare the test environment.
+Thu Dec 29 18:21:57 2022 - INFO  - End to prepare the test environment.
+Thu Dec 29 18:21:59 2022 - INFO  - Start to run test.
+acpid-2.0.33
+acpid-2.0.33
+Usage: acpi_listen [OPTIONS]
+Usage: acpi_listen [OPTIONS]
+Thu Dec 29 18:22:02 2022 - INFO  - End to run test.
+Thu Dec 29 18:22:03 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 18:22:05 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 18:22:37 2022 - INFO  - End to restore the test environment.

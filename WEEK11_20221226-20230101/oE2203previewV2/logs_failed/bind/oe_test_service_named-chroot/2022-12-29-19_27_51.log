@@ -1,0 +1,40 @@
+Thu Dec 29 19:27:58 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 19:30:10 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 19:30:12 2022 - INFO  - Start testing...
+Job for named-chroot.service failed because the control process exited with error code.
+See "systemctl status named-chroot.service" and "journalctl -xeu named-chroot.service" for details.
+Thu Dec 29 19:30:17 2022 - ERROR - named-chroot.service restart failed
+Thu Dec 29 19:30:19 2022 - ERROR - ../common/common_lib.sh line 34
+Thu Dec 29 19:30:28 2022 - ERROR - named-chroot.service restart failed
+Thu Dec 29 19:30:29 2022 - ERROR - ../common/common_lib.sh line 37
+Thu Dec 29 19:30:37 2022 - ERROR - named-chroot.service stop failed
+Thu Dec 29 19:30:38 2022 - ERROR - ../common/common_lib.sh line 42
+Job for named-chroot.service failed because the control process exited with error code.
+See "systemctl status named-chroot.service" and "journalctl -xeu named-chroot.service" for details.
+Thu Dec 29 19:30:44 2022 - ERROR - named-chroot.service start failed
+Thu Dec 29 19:30:46 2022 - ERROR - ../common/common_lib.sh line 44
+Thu Dec 29 19:30:55 2022 - ERROR - named-chroot.service start failed
+Thu Dec 29 19:30:56 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/named-chroot.service
+Removed /etc/systemd/system/multi-user.target.wants/named-chroot.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/named-chroot.service’: No such file or directory
+Dec 29 19:30:16 openEuler-riscv64 systemd[1]: named-chroot.service: Control process exited, code=exited, status=1/FAILURE
+Dec 29 19:30:16 openEuler-riscv64 systemd[1]: named-chroot.service: Failed with result 'exit-code'.
+Dec 29 19:30:16 openEuler-riscv64 systemd[1]: Failed to start Berkeley Internet Name Domain (DNS).
+Dec 29 19:30:42 openEuler-riscv64 systemd[1]: named-chroot.service: Control process exited, code=exited, status=1/FAILURE
+Dec 29 19:30:42 openEuler-riscv64 systemd[1]: named-chroot.service: Failed with result 'exit-code'.
+Dec 29 19:30:42 openEuler-riscv64 systemd[1]: Failed to start Berkeley Internet Name Domain (DNS).
+Thu Dec 29 19:31:23 2022 - ERROR - There is an error message for the log of named-chroot.service
+Thu Dec 29 19:31:24 2022 - ERROR - oe_test_service_named-chroot.sh line 36
+Job for named-chroot.service failed because the control process exited with error code.
+See "systemctl status named-chroot.service" and "journalctl -xeu named-chroot.service" for details.
+named-chroot.service is not active, cannot reload.
+Thu Dec 29 19:31:48 2022 - ERROR - named-chroot.service reload failed
+Thu Dec 29 19:31:50 2022 - ERROR - oe_test_service_named-chroot.sh line 41
+Thu Dec 29 19:31:53 2022 - ERROR - named-chroot.service reload causes the service status to change
+Thu Dec 29 19:31:56 2022 - ERROR - oe_test_service_named-chroot.sh line 43
+Thu Dec 29 19:31:58 2022 - INFO  - Finish test!
+Thu Dec 29 19:32:01 2022 - ERROR - failed to execute the case.
+Thu Dec 29 19:32:03 2022 - INFO  - start environment cleanup.
+named-chroot.service is not active, cannot reload.
+Thu Dec 29 19:33:15 2022 - INFO  - Finish environment cleanup!

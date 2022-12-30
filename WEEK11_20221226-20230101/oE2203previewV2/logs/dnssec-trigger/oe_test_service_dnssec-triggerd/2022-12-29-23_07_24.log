@@ -1,0 +1,26 @@
+Thu Dec 29 23:07:32 2022 - INFO  - Start environmental preparation.
+setenforce: SELinux is disabled
+Thu Dec 29 23:08:55 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 23:08:57 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-12-29 23:09:23 CST; 7s ago
+     Active: inactive (dead)
+     Active: active (running) since Thu 2022-12-29 23:09:47 CST; 7s ago
+/etc/systemd/system/multi-user.target.wants/dnssec-triggerd.service
+Removed /etc/systemd/system/multi-user.target.wants/dnssec-triggerd.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/dnssec-triggerd.service’: No such file or directory
+Dec 29 23:09:20 openEuler-riscv64 dnssec-trigger-script[686]: ModuleNotFoundError: No module named 'gi'
+Dec 29 23:09:23 openEuler-riscv64 dnssec-trigger-script[692]: ModuleNotFoundError: No module named 'gi'
+Dec 29 23:09:23 openEuler-riscv64 dnssec-triggerd[693]: ModuleNotFoundError: No module named 'gi'
+Dec 29 23:09:33 openEuler-riscv64 dnssec-trigger-script[701]: ModuleNotFoundError: No module named 'gi'
+Dec 29 23:09:44 openEuler-riscv64 dnssec-trigger-script[709]: ModuleNotFoundError: No module named 'gi'
+Dec 29 23:09:47 openEuler-riscv64 dnssec-trigger-script[712]: ModuleNotFoundError: No module named 'gi'
+Dec 29 23:09:47 openEuler-riscv64 dnssec-triggerd[713]: ModuleNotFoundError: No module named 'gi'
+Thu Dec 29 23:10:20 2022 - ERROR - There is an error message for the log of dnssec-triggerd.service
+Thu Dec 29 23:10:21 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload dnssec-triggerd.service: Job type reload is not applicable for unit dnssec-triggerd.service.
+     Active: active (running) since Thu 2022-12-29 23:09:47 CST; 35s ago
+Thu Dec 29 23:10:24 2022 - INFO  - Finish test!
+Thu Dec 29 23:10:26 2022 - ERROR - failed to execute the case.
+Thu Dec 29 23:10:28 2022 - INFO  - start environment cleanup.
+setenforce: SELinux is disabled
+Thu Dec 29 23:11:13 2022 - INFO  - Finish environment cleanup!

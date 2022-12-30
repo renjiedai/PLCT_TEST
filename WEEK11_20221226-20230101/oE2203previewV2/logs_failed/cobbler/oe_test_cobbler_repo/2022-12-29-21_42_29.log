@@ -1,0 +1,44 @@
+Thu Dec 29 21:42:35 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 21:46:41 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 21:46:43 2022 - INFO  - Start to run testcase.
+cobblerd does not appear to be running/accessible: ConnectionRefusedError(111, 'Connection refused')
+Traceback (most recent call last):
+  File "/usr/bin/cobbler", line 35, in <module>
+    sys.exit(app.main())
+  File "/usr/lib/python3.9/site-packages/cobbler/cli.py", line 852, in main
+    rc = cli.run(sys.argv)
+  File "/usr/lib/python3.9/site-packages/cobbler/cli.py", line 418, in run
+    self.token = self.remote.login("", self.shared_secret)
+  File "/usr/lib64/python3.9/xmlrpc/client.py", line 1122, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib64/python3.9/xmlrpc/client.py", line 1464, in __request
+    response = self.__transport.request(
+  File "/usr/lib64/python3.9/xmlrpc/client.py", line 1166, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib64/python3.9/xmlrpc/client.py", line 1196, in single_request
+    raise ProtocolError(
+xmlrpc.client.ProtocolError: <ProtocolError for 127.0.0.1:80/cobbler_api: 503 Service Unavailable>
+Thu Dec 29 21:46:59 2022 - ERROR - Failed option: repo add
+Thu Dec 29 21:47:01 2022 - ERROR - oe_test_cobbler_repo.sh line 34
+Thu Dec 29 21:47:18 2022 - ERROR - Failed option: repo add
+Thu Dec 29 21:47:21 2022 - ERROR - oe_test_cobbler_repo.sh line 36
+exception on server: 'internal error, unknown repo name OpenEuler1'
+Thu Dec 29 21:47:52 2022 - ERROR - Failed option: repo copy
+Thu Dec 29 21:47:54 2022 - ERROR - oe_test_cobbler_repo.sh line 40
+exception on server: 'internal error, unknown repo name openEuler1'
+Thu Dec 29 21:48:29 2022 - ERROR - Failed option: repo edit
+Thu Dec 29 21:48:31 2022 - ERROR - oe_test_cobbler_repo.sh line 44
+Thu Dec 29 21:48:47 2022 - ERROR - Failed option: repo list
+Thu Dec 29 21:48:49 2022 - ERROR - oe_test_cobbler_repo.sh line 46
+Thu Dec 29 21:49:04 2022 - ERROR - Failed option: repo find
+Thu Dec 29 21:49:06 2022 - ERROR - oe_test_cobbler_repo.sh line 48
+exception on server: 'internal error, unknown repo name OpenEuler1'
+exception on server: 'internal error, unknown repo name OpenEuler2'
+Thu Dec 29 21:50:05 2022 - ERROR - Failed option: repo rename
+Thu Dec 29 21:50:07 2022 - ERROR - oe_test_cobbler_repo.sh line 56
+Thu Dec 29 21:50:23 2022 - ERROR - Failed option: repo report
+Thu Dec 29 21:50:25 2022 - ERROR - oe_test_cobbler_repo.sh line 58
+Thu Dec 29 21:50:27 2022 - INFO  - End to run testcase.
+Thu Dec 29 21:50:29 2022 - ERROR - failed to execute the case.
+Thu Dec 29 21:50:31 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 21:52:50 2022 - INFO  - End to restore the test environment.

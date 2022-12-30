@@ -1,0 +1,8 @@
+Thu Dec 29 22:29:40 2022 - INFO  - start to run testcase:oe_test_socket_cvs.
+Thu Dec 29 22:33:08 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 22:33:10 2022 - INFO  - End to run testcase:oe_test_socket_cvs.
+Thu Dec 29 22:33:11 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Thu Dec 29 22:33:19 2022 - INFO  - start to run testcase:oe_test_target_cvs.
+Thu Dec 29 22:36:02 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 22:36:03 2022 - INFO  - End to run testcase:oe_test_target_cvs.
+Thu Dec 29 22:36:05 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.

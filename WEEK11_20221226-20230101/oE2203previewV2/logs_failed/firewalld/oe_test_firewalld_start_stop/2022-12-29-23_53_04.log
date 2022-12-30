@@ -1,0 +1,27 @@
+Thu Dec 29 23:53:08 2022 - INFO  - Start environmental preparation.
+Failed to start firewalld.service: Unit firewalld.service not found.
+sudo: firewall-cmd: command not found
+Thu Dec 29 23:53:10 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 23:53:11 2022 - INFO  - Start executing testcase.
+Unit firewalld.service does not exist, proceeding anyway.
+Unit firewalld.service could not be found.
+Failed to start firewalld.service: Unit firewalld.service not found.
+Failed to enable unit: Unit file firewalld.service does not exist.
+Unit firewalld.service could not be found.
+Thu Dec 29 23:53:21 2022 - ERROR - oe_test_firewalld_start_stop.sh line 56
+sudo: firewall-cmd: command not found
+Thu Dec 29 23:53:22 2022 - ERROR - oe_test_firewalld_start_stop.sh line 58
+Failed to stop firewalld.service: Unit firewalld.service not loaded.
+Failed to disable unit: Unit file firewalld.service does not exist.
+Unit firewalld.service could not be found.
+Thu Dec 29 23:53:25 2022 - ERROR - oe_test_firewalld_start_stop.sh line 62
+Unit firewalld.service does not exist, proceeding anyway.
+Created symlink /etc/systemd/system/firewalld.service → /dev/null.
+     Loaded: masked (Reason: Unit firewalld.service is masked.)
+sudo: firewall-cmd: command not found
+Thu Dec 29 23:53:34 2022 - INFO  - Finish testcase execution.
+Thu Dec 29 23:53:35 2022 - ERROR - failed to execute the case.
+Thu Dec 29 23:53:36 2022 - INFO  - start environment cleanup.
+Removed /etc/systemd/system/firewalld.service.
+Failed to restart firewalld.service: Unit firewalld.service not found.
+Thu Dec 29 23:53:44 2022 - INFO  - Finish environment cleanup!

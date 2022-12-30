@@ -1,0 +1,19 @@
+Thu Dec 29 18:51:32 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 18:54:37 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 18:54:39 2022 - INFO  - Start testing...
+     Active: active (exited) since Thu 2022-12-29 18:54:41 CST; 8s ago
+     Active: inactive (dead)
+     Active: active (exited) since Thu 2022-12-29 18:54:59 CST; 7s ago
+Thu Dec 29 18:55:09 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Dec 29 18:54:40 openEuler-riscv64 zramswapoff[7146]: swapoff: /dev/zram0: swapoff failed: No such file or directory
+Dec 29 18:54:40 openEuler-riscv64 zramswapoff[7147]: rmmod: ERROR: Module zram is not currently loaded
+Dec 29 18:54:50 openEuler-riscv64 zramswapoff[7161]: swapoff: /dev/zram0: swapoff failed: No such file or directory
+Dec 29 18:54:50 openEuler-riscv64 zramswapoff[7162]: rmmod: ERROR: Module zram is not currently loaded
+Thu Dec 29 18:55:11 2022 - ERROR - There is an error message for the log of zram.service
+Thu Dec 29 18:55:13 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload zram.service: Job type reload is not applicable for unit zram.service.
+     Active: active (exited) since Thu 2022-12-29 18:54:59 CST; 15s ago
+Thu Dec 29 18:55:16 2022 - INFO  - Finish test!
+Thu Dec 29 18:55:18 2022 - ERROR - failed to execute the case.
+Thu Dec 29 18:55:19 2022 - INFO  - start environment cleanup.
+Thu Dec 29 18:56:43 2022 - INFO  - Finish environment cleanup!

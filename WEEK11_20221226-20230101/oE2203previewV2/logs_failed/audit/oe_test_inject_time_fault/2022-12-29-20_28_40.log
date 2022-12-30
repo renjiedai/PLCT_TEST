@@ -1,0 +1,31 @@
+Thu Dec 29 20:28:48 2022 - INFO  - Start to prepare the test environment.
+sed: can't read : No such file or directory
+oe_test_inject_time_fault.sh: line 25: service: command not found
+Thu Dec 29 20:28:53 2022 - INFO  - End to prepare the test environment.
+Thu Dec 29 20:28:56 2022 - INFO  - Start to run test.
+../common/comlib.sh: line 35: auditctl: command not found
+Thu Dec 29 20:29:00 2022 - ERROR -  add rules failed
+Thu Dec 29 20:29:03 2022 - ERROR - ../common/comlib.sh line 36
+../common/comlib.sh: line 41: auditctl: command not found
+Thu Dec 29 20:29:06 2022 - ERROR - second failed
+Thu Dec 29 20:29:08 2022 - ERROR - ../common/comlib.sh line 42
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+du: cannot access '/var/log/audit/': No such file or directory
+find: ‘/var/log/audit’: No such file or directory
+../common/comlib.sh: line 24: auditctl: command not found
+../common/comlib.sh: line 30: auditctl: command not found
+du: cannot access '/var/log/audit/': No such file or directory
+oe_test_inject_time_fault.sh: line 39: - : syntax error: operand expected (error token is "- ")
+Thu Dec 29 20:31:47 2022 - INFO  - Start to restore the test environment.
+sed: can't read : No such file or directory
+oe_test_inject_time_fault.sh: line 74: service: command not found
+Thu Dec 29 20:31:52 2022 - INFO  - End to restore the test environment.

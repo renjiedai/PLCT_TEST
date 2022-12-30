@@ -1,0 +1,46 @@
+Thu Dec 29 23:48:29 2022 - INFO  - Start environmental preparation.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 176, in <module>
+    exitcode, output = rpm_install(args.pkgs, args.node, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 66, in rpm_install
+    conn = ssh_cmd.pssh_conn(
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 53, in pssh_conn
+    conn.connect(ip, port, user, password, timeout=timeout)
+  File "/usr/lib/python3.9/site-packages/paramiko/client.py", line 340, in connect
+    to_try = list(self._families_and_addresses(hostname, port))
+  File "/usr/lib/python3.9/site-packages/paramiko/client.py", line 203, in _families_and_addresses
+    addrinfos = socket.getaddrinfo(
+  File "/usr/lib64/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+Failed to start firewalld.service: Unit firewalld.service not found.
+Thu Dec 29 23:49:35 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 23:49:37 2022 - INFO  - Start executing testcase.
+sudo: firewall-cmd: command not found
+Thu Dec 29 23:49:41 2022 - ERROR - oe_test_firewalld_log_denied.sh line 35
+sudo: firewall-cmd: command not found
+sudo: firewall-cmd: command not found
+Thu Dec 29 23:49:43 2022 - ERROR - oe_test_firewalld_log_denied.sh line 38
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Dec 29 23:49:47 2022 - ERROR - Failed in remote CMD operation:1
+grep: /var/log/messages: No such file or directory
+Thu Dec 29 23:49:53 2022 - ERROR - oe_test_firewalld_log_denied.sh line 44
+Thu Dec 29 23:49:55 2022 - INFO  - Finish testcase execution.
+Thu Dec 29 23:49:56 2022 - ERROR - failed to execute the case.
+Thu Dec 29 23:49:57 2022 - INFO  - start environment cleanup.
+sudo: firewall-cmd: command not found
+/root/GitRepo/mugen-riscv/libs/locallibs/common_lib_python.sh: line 97:  2784 Killed                  nc -l -p 5060 2>&1
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 181, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 142, in rpm_remove
+    conn = ssh_cmd.pssh_conn(
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 53, in pssh_conn
+    conn.connect(ip, port, user, password, timeout=timeout)
+  File "/usr/lib/python3.9/site-packages/paramiko/client.py", line 340, in connect
+    to_try = list(self._families_and_addresses(hostname, port))
+  File "/usr/lib/python3.9/site-packages/paramiko/client.py", line 203, in _families_and_addresses
+    addrinfos = socket.getaddrinfo(
+  File "/usr/lib64/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+Thu Dec 29 23:50:20 2022 - INFO  - Finish environment cleanup!

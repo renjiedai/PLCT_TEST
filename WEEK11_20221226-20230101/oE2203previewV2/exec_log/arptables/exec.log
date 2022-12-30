@@ -1,0 +1,4 @@
+Thu Dec 29 18:26:19 2022 - INFO  - start to run testcase:oe_test_service_arptables.
+Thu Dec 29 18:29:28 2022 - ERROR - The case exit by code 6.
+Thu Dec 29 18:29:30 2022 - INFO  - End to run testcase:oe_test_service_arptables.
+Thu Dec 29 18:29:31 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.

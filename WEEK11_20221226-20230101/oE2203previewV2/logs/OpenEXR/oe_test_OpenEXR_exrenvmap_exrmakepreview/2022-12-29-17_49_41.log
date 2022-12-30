@@ -1,0 +1,10 @@
+Thu Dec 29 17:49:46 2022 - INFO  - Start to prepare the test environment.
+Thu Dec 29 17:55:42 2022 - INFO  - End to prepare the test environment.
+Thu Dec 29 17:55:44 2022 - INFO  - Start to run test.
+done.
+done.
+usage: exrmakepreview [options] infile outfile
+Thu Dec 29 17:59:27 2022 - INFO  - End to run test.
+Thu Dec 29 17:59:29 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 17:59:30 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 18:01:04 2022 - INFO  - End to restore the test environment.

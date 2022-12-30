@@ -1,0 +1,29 @@
+Thu Dec 29 23:15:32 2022 - INFO  - Start testing...
+Failed to restart ebtables.service: Unit ebtables.service not found.
+Thu Dec 29 23:15:34 2022 - ERROR - ebtables.service restart failed
+Thu Dec 29 23:15:36 2022 - ERROR - ../common/common_lib.sh line 34
+Unit ebtables.service could not be found.
+Thu Dec 29 23:15:44 2022 - ERROR - ebtables.service restart failed
+Thu Dec 29 23:15:46 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop ebtables.service: Unit ebtables.service not loaded.
+Thu Dec 29 23:15:48 2022 - ERROR - ebtables.service stop failed
+Thu Dec 29 23:15:50 2022 - ERROR - ../common/common_lib.sh line 39
+Unit ebtables.service could not be found.
+Thu Dec 29 23:15:59 2022 - ERROR - ebtables.service stop failed
+Thu Dec 29 23:16:01 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start ebtables.service: Unit ebtables.service not found.
+Thu Dec 29 23:16:03 2022 - ERROR - ebtables.service start failed
+Thu Dec 29 23:16:04 2022 - ERROR - ../common/common_lib.sh line 44
+Unit ebtables.service could not be found.
+Thu Dec 29 23:16:13 2022 - ERROR - ebtables.service start failed
+Thu Dec 29 23:16:16 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for ebtables.service: No such file or directory
+Thu Dec 29 23:16:18 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start ebtables.service: Unit ebtables.service not found.
+Thu Dec 29 23:16:21 2022 - ERROR - Job type reload is not applicable for unit ebtables.service
+Thu Dec 29 23:16:22 2022 - ERROR - ../common/common_lib.sh line 91
+Unit ebtables.service could not be found.
+Unit ebtables.service could not be found.
+Thu Dec 29 23:16:26 2022 - INFO  - Finish test!
+Thu Dec 29 23:16:28 2022 - ERROR - failed to execute the case.
+Thu Dec 29 23:16:29 2022 - INFO  - oe_test_service_ebtables.sh post_test

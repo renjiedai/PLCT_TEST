@@ -1,0 +1,44 @@
+Thu Dec 29 22:21:23 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 22:25:16 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 22:25:18 2022 - INFO  - Start to run testcase.
+cobblerd does not appear to be running/accessible: ConnectionRefusedError(111, 'Connection refused')
+Traceback (most recent call last):
+  File "/usr/bin/cobbler", line 35, in <module>
+    sys.exit(app.main())
+  File "/usr/lib/python3.9/site-packages/cobbler/cli.py", line 852, in main
+    rc = cli.run(sys.argv)
+  File "/usr/lib/python3.9/site-packages/cobbler/cli.py", line 418, in run
+    self.token = self.remote.login("", self.shared_secret)
+  File "/usr/lib64/python3.9/xmlrpc/client.py", line 1122, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib64/python3.9/xmlrpc/client.py", line 1464, in __request
+    response = self.__transport.request(
+  File "/usr/lib64/python3.9/xmlrpc/client.py", line 1166, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib64/python3.9/xmlrpc/client.py", line 1196, in single_request
+    raise ProtocolError(
+xmlrpc.client.ProtocolError: <ProtocolError for 127.0.0.1:80/cobbler_api: 503 Service Unavailable>
+Thu Dec 29 22:25:36 2022 - ERROR - Failed option: file add
+Thu Dec 29 22:25:37 2022 - ERROR - oe_test_cobbler_file.sh line 34
+Thu Dec 29 22:25:55 2022 - ERROR - Failed option: file add
+Thu Dec 29 22:25:57 2022 - ERROR - oe_test_cobbler_file.sh line 36
+exception on server: 'internal error, unknown file name OpenEuler1'
+Thu Dec 29 22:26:20 2022 - ERROR - Failed option: file copy
+Thu Dec 29 22:26:22 2022 - ERROR - oe_test_cobbler_file.sh line 40
+exception on server: 'internal error, unknown file name openEuler1'
+Thu Dec 29 22:26:45 2022 - ERROR - Failed option: file edit
+Thu Dec 29 22:26:47 2022 - ERROR - oe_test_cobbler_file.sh line 44
+Thu Dec 29 22:27:01 2022 - ERROR - Failed option: file list
+Thu Dec 29 22:27:03 2022 - ERROR - oe_test_cobbler_file.sh line 46
+Thu Dec 29 22:27:18 2022 - ERROR - Failed option: file find
+Thu Dec 29 22:27:20 2022 - ERROR - oe_test_cobbler_file.sh line 48
+exception on server: 'internal error, unknown file name OpenEuler1'
+exception on server: 'internal error, unknown file name OpenEuler2'
+Thu Dec 29 22:28:11 2022 - ERROR - Failed option: file rename
+Thu Dec 29 22:28:13 2022 - ERROR - oe_test_cobbler_file.sh line 56
+Thu Dec 29 22:28:28 2022 - ERROR - Failed option: distro report
+Thu Dec 29 22:28:30 2022 - ERROR - oe_test_cobbler_file.sh line 58
+Thu Dec 29 22:28:32 2022 - INFO  - End to run testcase.
+Thu Dec 29 22:28:34 2022 - ERROR - failed to execute the case.
+Thu Dec 29 22:28:35 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 22:30:43 2022 - INFO  - End to restore the test environment.

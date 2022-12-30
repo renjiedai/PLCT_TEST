@@ -1,0 +1,112 @@
+Thu Dec 29 21:53:07 2022 - INFO  - Start to prepare the test environment.
+Thu Dec 29 21:54:55 2022 - INFO  - Finish preparing the test environment.
+Thu Dec 29 21:54:57 2022 - INFO  - Start to run test.
+Syntax:
+    cppcheck [OPTIONS] [files or paths]
+Cppcheck 2.6.3
+cppcheck1/file1.c:5:6: error: Array 'a[10]' accessed at index 10, which is out of bounds. [arrayIndexOutOfBounds]
+    a[10] = 0;
+     ^
+Checking cppcheck1/file1.c ...
+Checking cppcheck1/main1.c ...
+Checking cppcheck1/test1.cpp ...
+cppcheck1/file1.c:5:6: error: Array 'a[10]' accessed at index 10, which is out of bounds. [arrayIndexOutOfBounds]
+    a[10] = 0;
+     ^
+Checking cppcheck1/file1.c ...
+Checking cppcheck1/main1.c ...
+Checking file.c ...
+file.c:5:6: error: Array 'a[10]' accessed at index 10, which is out of bounds. [arrayIndexOutOfBounds]
+Checking file.c ...
+file.c:5:6: error: Array 'a[10]' accessed at index 10, which is out of bounds. [arrayIndexOutOfBounds]
+file.c:5:11: style: Variable 'a[10]' is assigned a value that is never used. [unreadVariable]
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
+Checking cppcheck1/test1.cpp ...
+Checking cppcheck2/main2.c ...
+1/2 files checked 28% done
+Checking cppcheck2/test2.cpp ...
+2/2 files checked 100% done
+Checking cppcheck1/file1.c ...
+cppcheck1/file1.c:5:6: error: Array 'a[10]' accessed at index 10, which is out of bounds. [arrayIndexOutOfBounds]
+    a[10] = 0;
+     ^
+1/3 files checked 21% done
+Checking cppcheck1/main1.c ...
+2/3 files checked 43% done
+Checking cppcheck1/test1.cpp ...
+3/3 files checked 100% done
+cppcheck1/file1.c:5:6: error: Array 'a[10]' accessed at index 10, which is out of bounds. [arrayIndexOutOfBounds]
+    a[10] = 0;
+     ^
+Checking cppcheck1/file1.c ...
+Checking cppcheck1/main1.c ...
+Checking cppcheck1/test1.cpp ...
+1/3 files checked 21% done
+2/3 files checked 43% done
+3/3 files checked 100% done
+Checking cppcheck2/test2.cpp ...
+cppcheck: Option --std=posix is deprecated and will be removed in 2.05.
+Checking test.cpp ...
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.6.3"/>
+    <errors>
+Checking file.c ...
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;a[10]&apos; accessed at index 10, which is out of bounds." verbose="Array &apos;a[10]&apos; accessed at index 10, which is out of bounds." cwe="788" file0="file.c">
+            <location file="file.c" line="5" column="6" info="Array index out of bounds"/>
+        </error>
+    </errors>
+</results>
+Checking file.c ...
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.6.3"/>
+    <errors>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;a[10]&apos; accessed at index 10, which is out of bounds." verbose="Array &apos;a[10]&apos; accessed at index 10, which is out of bounds." cwe="788" file0="file.c">
+            <location file="file.c" line="5" column="6" info="Array index out of bounds"/>
+        </error>
+    </errors>
+</results>
+Checking file.c ...
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.6.3"/>
+    <errors>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;a[10]&apos; accessed at index 10, which is out of bounds." verbose="Array &apos;a[10]&apos; accessed at index 10, which is out of bounds." cwe="788" file0="file.c">
+            <location file="file.c" line="5" column="6" info="Array index out of bounds"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;a[10]&apos; is assigned a value that is never used." verbose="Variable &apos;a[10]&apos; is assigned a value that is never used." cwe="563" file0="file.c">
+            <location file="file.c" line="5" column="11"/>
+            <symbol>a[10]</symbol>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Cppcheck cannot find all the include files (use --check-config for details)" verbose="Cppcheck cannot find all the include files. Cppcheck can check the code without the include files found. But the results will probably be more accurate if all the include files are found. Please check your project&apos;s include directories and add all of them as include directories for Cppcheck. To see what files Cppcheck cannot find use --check-config."/>
+    </errors>
+</results>
+Checking main.c ...
+Defines:
+Includes:
+Platform:Native
+Checking file.c ...
+file.c:5,error,arrayIndexOutOfBounds,Array 'a[10]' accessed at index 10, which is out of bounds.
+Checking file.c ...
+file.c:5,error,arrayIndexOutOfBounds,Array 'a[10]' accessed at index 10, which is out of bounds.
+file.c:5,style,unreadVariable,Variable 'a[10]' is assigned a value that is never used.
+nofile:0,information,missingIncludeSystem,Cppcheck cannot find all the include files (use --check-config for details)
+file.c:5:6: error: Array 'a[10]' accessed at index 10, which is out of bounds. [arrayIndexOutOfBounds]
+    a[10] = 0;
+     ^
+Checking file.c: A=1...
+file.c:5:6: error: Array 'a[10]' accessed at index 10, which is out of bounds. [arrayIndexOutOfBounds]
+    a[10] = 0;
+     ^
+Checking file.c: A=1...
+Checking test.cpp: DEBUG=1-D_ucplusplus...
+Checking file.c ...
+file.c:5:6: error: Array 'a[10]' accessed at index 10, which is out of bounds. [arrayIndexOutOfBounds]
+    a[10] = 0;
+     ^
+Checking test.cpp ...
+Thu Dec 29 21:55:18 2022 - INFO  - End of the test.
+Thu Dec 29 21:55:20 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 21:55:22 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 21:55:52 2022 - INFO  - Finish restoring the test environment.

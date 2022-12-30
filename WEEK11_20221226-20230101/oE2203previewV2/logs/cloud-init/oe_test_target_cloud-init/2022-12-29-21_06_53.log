@@ -1,0 +1,9 @@
+Thu Dec 29 21:06:59 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 21:09:54 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 21:09:56 2022 - INFO  - Start to run test.
+oe_test_target_cloud-init.sh: line 30: test_execution: command not found
+oe_test_target_cloud-init.sh: line 31: test_reload: command not found
+Thu Dec 29 21:09:58 2022 - INFO  - End of the test.
+Thu Dec 29 21:09:59 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 21:10:01 2022 - INFO  - start environment cleanup.
+Thu Dec 29 21:11:04 2022 - INFO  - Finish environment cleanup!

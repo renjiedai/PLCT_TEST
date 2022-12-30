@@ -1,0 +1,23 @@
+Thu Dec 29 19:35:04 2022 - INFO  - Start to prepare the test environment.
+useradd: warning: the home directory /home/Jevons already exists.
+useradd: Not copying any file from skel directory into it.
+Creating mailbox file: File exists
+Changing password for user Jevons.
+passwd: all authentication tokens updated successfully.
+Thu Dec 29 19:35:07 2022 - INFO  - End to prepare the test environment.
+Thu Dec 29 19:35:08 2022 - INFO  - Start to run test.
+oe_test_audit_monitor_network_visit.sh: line 32: service: command not found
+oe_test_audit_monitor_network_visit.sh: line 33: auditctl: command not found
+Thu Dec 29 19:35:10 2022 - ERROR - delete failed
+Thu Dec 29 19:35:12 2022 - ERROR - oe_test_audit_monitor_network_visit.sh line 34
+spawn ssh Jevons@localhost
+invalid command name "expect{"
+    while executing
+"expect{"
+oe_test_audit_monitor_network_visit.sh: line 47: ausearch: command not found
+Thu Dec 29 19:35:15 2022 - ERROR - ausearch failed
+Thu Dec 29 19:35:16 2022 - ERROR - oe_test_audit_monitor_network_visit.sh line 48
+Thu Dec 29 19:35:18 2022 - INFO  - End to run test.
+Thu Dec 29 19:35:20 2022 - ERROR - failed to execute the case.
+Thu Dec 29 19:35:22 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 19:35:24 2022 - INFO  - End to restore the test environment.

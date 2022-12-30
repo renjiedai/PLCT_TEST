@@ -1,0 +1,225 @@
+Thu Dec 29 22:39:14 2022 - INFO  - Start to config params of the case.
+Thu Dec 29 22:39:16 2022 - INFO  - End to config params of the case.
+Thu Dec 29 22:39:18 2022 - INFO  - Start to prepare the test environment!
+oe_test_dejagnu_runtest_01.sh: line 34: firewall-cmd: command not found
+oe_test_dejagnu_runtest_01.sh: line 35: firewall-cmd: command not found
+Thu Dec 29 22:44:42 2022 - INFO  - End to prepare the test environment!
+Thu Dec 29 22:44:43 2022 - INFO  - Start to run test.
+DejaGnu version	1.6.1
+DejaGnu version	1.6.1
+USAGE: runtest [options...]
+Verbose level is 1
+Verbose level is 1
+WARNING: Couldn't find the global config file.
+WARNING: No tool specified
+Test run by root on Thu Dec 29 22:45:08 2022
+Native configuration is riscv64-unknown-linux-gnu
+
+		===  tests ===
+
+Schedule of variations:
+    unix
+
+Running target unix
+Using /usr/share/dejagnu/baseboards/unix.exp as board description file for target.
+Using /usr/share/dejagnu/config/unix.exp as generic interface file for target.
+Using common/config/unix.exp as tool-and-target-specific interface file.
+Running common/calc.test/calc.exp ...
+ERROR: tcl error sourcing common/calc.test/calc.exp.
+ERROR: expect: spawn id exp6 not open
+    while executing
+"expect_after {
+    -re "\[^\n\r\]*$prompt$" {
+	fail "$test (bad match)"
+	if { $verbose > 0 } {
+	    regexp ".*\r\n(\[^\r\n\]+)(\[\r\n\])+$prompt$" \
+	..."
+    (file "common/calc.test/calc.exp" line 28)
+    invoked from within
+"source common/calc.test/calc.exp"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 source common/calc.test/calc.exp"
+    invoked from within
+"catch "uplevel #0 source $test_file_name""
+
+		===  Summary ===
+
+Thu Dec 29 22:45:15 2022 - ERROR - Failed option : --all
+Thu Dec 29 22:45:17 2022 - ERROR - oe_test_dejagnu_runtest_01.sh line 59
+Thu Dec 29 22:45:24 2022 - ERROR - Failed option : -a
+Thu Dec 29 22:45:25 2022 - ERROR - oe_test_dejagnu_runtest_01.sh line 61
+WARNING: Couldn't find the global config file.
+WARNING: No tool specified
+Test run by root on Thu Dec 29 22:45:30 2022
+Native configuration is riscv64-unknown-linux-gnu
+
+		===  tests ===
+
+Schedule of variations:
+    unix
+
+Running target unix
+Using /usr/share/dejagnu/baseboards/unix.exp as board description file for target.
+Using /usr/share/dejagnu/config/unix.exp as generic interface file for target.
+Using common/config/unix.exp as tool-and-target-specific interface file.
+
+		===  Summary ===
+
+Ignoring test calc.exp
+Thu Dec 29 22:45:43 2022 - ERROR - Failed option : --log_dialog
+Thu Dec 29 22:45:45 2022 - ERROR - oe_test_dejagnu_runtest_01.sh line 69
+Expect binary is /usr/bin/expect
+Using /usr/share/dejagnu/runtest.exp as main test driver
+Verbose level is 1
+Login name is root
+Using test sources in common
+Using test binaries in /root/GitRepo/mugen-riscv/testcases/cli-test/dejagnu
+Tool root directory is /root/GitRepo/mugen-riscv/testcases/cli-test
+Using /usr/share/dejagnu to find libraries
+Found /usr/share/dejagnu/libexec/config.guess
+Assuming build host is riscv64-unknown-linux-gnu
+WARNING: Couldn't find the global config file.
+Loading /usr/share/dejagnu/utils.exp
+Loading /usr/share/dejagnu/framework.exp
+Loading /usr/share/dejagnu/debugger.exp
+Loading /usr/share/dejagnu/remote.exp
+Loading /usr/share/dejagnu/telnet.exp
+Loading /usr/share/dejagnu/rlogin.exp
+Loading /usr/share/dejagnu/kermit.exp
+Loading /usr/share/dejagnu/tip.exp
+Loading /usr/share/dejagnu/rsh.exp
+Loading /usr/share/dejagnu/ssh.exp
+Loading /usr/share/dejagnu/ftp.exp
+Loading /usr/share/dejagnu/target.exp
+Loading /usr/share/dejagnu/targetdb.exp
+Loading /usr/share/dejagnu/libgloss.exp
+Mail results to root@localhost
+Test output put in tmp
+WARNING: No tool specified
+Opening log files in tmp
+Test run by root on Thu Dec 29 22:45:51 2022
+Native configuration is riscv64-unknown-linux-gnu
+
+		===  tests ===
+
+setting trap for SIGINT to interrupted by user
+setting trap for SIGQUIT to interrupted by user
+setting trap for SIGTERM to terminated
+dirlist is /usr/share/dejagnu/baseboards
+pushing config for build, name is openEuler-riscv64
+dirlist is /usr/share/dejagnu/baseboards
+pushing config for host, name is openEuler-riscv64
+Schedule of variations:
+    unix
+
+target is unix
+Running target unix
+dirlist is /usr/share/dejagnu/baseboards/openEuler-riscv64 /usr/share/dejagnu/baseboards
+Using /usr/share/dejagnu/baseboards/unix.exp as board description file for target.
+Using /usr/share/dejagnu/config/unix.exp as generic interface file for target.
+Using common/config/unix.exp as tool-and-target-specific interface file.
+pushing config for target, name is unix
+Running common/calc.test/calc.exp ...
+ERROR: tcl error sourcing common/calc.test/calc.exp.
+ERROR: expect: spawn id exp5 not open
+    while executing
+"expect_after {
+    -re "\[^\n\r\]*$prompt$" {
+	fail "$test (bad match)"
+	if { $verbose > 0 } {
+	    regexp ".*\r\n(\[^\r\n\]+)(\[\r\n\])+$prompt$" \
+	..."
+    (file "common/calc.test/calc.exp" line 28)
+    invoked from within
+"source common/calc.test/calc.exp"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 source common/calc.test/calc.exp"
+    invoked from within
+"catch "uplevel #0 source $test_file_name""
+
+		===  Summary ===
+
+runtest completed at Thu Dec 29 22:45:51 2022
+To: root@openEuler-riscv64
+Expect binary is /usr/bin/expect
+Using /usr/share/dejagnu/runtest.exp as main test driver
+Verbose level is 1
+Login name is root
+Using test sources in common
+Using test binaries in /root/GitRepo/mugen-riscv/testcases/cli-test/dejagnu
+Tool root directory is /root/GitRepo/mugen-riscv/testcases/cli-test
+Using /usr/share/dejagnu to find libraries
+Found /usr/share/dejagnu/libexec/config.guess
+Assuming build host is riscv64-unknown-linux-gnu
+WARNING: Couldn't find the global config file.
+Loading /usr/share/dejagnu/utils.exp
+Loading /usr/share/dejagnu/framework.exp
+Loading /usr/share/dejagnu/debugger.exp
+Loading /usr/share/dejagnu/remote.exp
+Loading /usr/share/dejagnu/telnet.exp
+Loading /usr/share/dejagnu/rlogin.exp
+Loading /usr/share/dejagnu/kermit.exp
+Loading /usr/share/dejagnu/tip.exp
+Loading /usr/share/dejagnu/rsh.exp
+Loading /usr/share/dejagnu/ssh.exp
+Loading /usr/share/dejagnu/ftp.exp
+Loading /usr/share/dejagnu/target.exp
+Loading /usr/share/dejagnu/targetdb.exp
+Loading /usr/share/dejagnu/libgloss.exp
+Mail results to root@localhost,mufiyemailuser@localhost
+Test output put in tmp
+WARNING: No tool specified
+Opening log files in tmp
+Test run by root on Thu Dec 29 22:47:02 2022
+Native configuration is riscv64-unknown-linux-gnu
+
+		===  tests ===
+
+setting trap for SIGINT to interrupted by user
+setting trap for SIGQUIT to interrupted by user
+setting trap for SIGTERM to terminated
+dirlist is /usr/share/dejagnu/baseboards
+pushing config for build, name is openEuler-riscv64
+dirlist is /usr/share/dejagnu/baseboards
+pushing config for host, name is openEuler-riscv64
+Schedule of variations:
+    unix
+
+target is unix
+Running target unix
+dirlist is /usr/share/dejagnu/baseboards/openEuler-riscv64 /usr/share/dejagnu/baseboards
+Using /usr/share/dejagnu/baseboards/unix.exp as board description file for target.
+Using /usr/share/dejagnu/config/unix.exp as generic interface file for target.
+Using common/config/unix.exp as tool-and-target-specific interface file.
+pushing config for target, name is unix
+Running common/calc.test/calc.exp ...
+ERROR: tcl error sourcing common/calc.test/calc.exp.
+ERROR: expect: spawn id exp5 not open
+    while executing
+"expect_after {
+    -re "\[^\n\r\]*$prompt$" {
+	fail "$test (bad match)"
+	if { $verbose > 0 } {
+	    regexp ".*\r\n(\[^\r\n\]+)(\[\r\n\])+$prompt$" \
+	..."
+    (file "common/calc.test/calc.exp" line 28)
+    invoked from within
+"source common/calc.test/calc.exp"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 source common/calc.test/calc.exp"
+    invoked from within
+"catch "uplevel #0 source $test_file_name""
+
+		===  Summary ===
+
+runtest completed at Thu Dec 29 22:47:02 2022
+To: mufiyemailuser@openEuler-riscv64, root@openEuler-riscv64
+Thu Dec 29 22:48:10 2022 - ERROR - Failed option : --mail (to multihost)
+Thu Dec 29 22:48:12 2022 - ERROR - oe_test_dejagnu_runtest_01.sh line 77
+Thu Dec 29 22:48:14 2022 - INFO  - End to run test.
+Thu Dec 29 22:48:16 2022 - ERROR - failed to execute the case.
+Thu Dec 29 22:48:18 2022 - INFO  - start environment cleanup.
+Thu Dec 29 22:49:04 2022 - INFO  - Finish environment cleanup!

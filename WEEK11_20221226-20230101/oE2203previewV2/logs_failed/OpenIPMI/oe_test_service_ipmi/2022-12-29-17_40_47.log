@@ -1,0 +1,35 @@
+Thu Dec 29 17:40:54 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 17:42:10 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 17:42:11 2022 - INFO  - Start testing...
+Job for ipmi.service failed because the control process exited with error code.
+See "systemctl status ipmi.service" and "journalctl -xeu ipmi.service" for details.
+Thu Dec 29 17:42:16 2022 - ERROR - ipmi.service restart failed
+Thu Dec 29 17:42:17 2022 - ERROR - ../common/common_lib.sh line 34
+Thu Dec 29 17:42:26 2022 - ERROR - ipmi.service restart failed
+Thu Dec 29 17:42:27 2022 - ERROR - ../common/common_lib.sh line 37
+Thu Dec 29 17:42:36 2022 - ERROR - ipmi.service stop failed
+Thu Dec 29 17:42:37 2022 - ERROR - ../common/common_lib.sh line 42
+Job for ipmi.service failed because the control process exited with error code.
+See "systemctl status ipmi.service" and "journalctl -xeu ipmi.service" for details.
+Thu Dec 29 17:42:41 2022 - ERROR - ipmi.service start failed
+Thu Dec 29 17:42:43 2022 - ERROR - ../common/common_lib.sh line 44
+Thu Dec 29 17:42:52 2022 - ERROR - ipmi.service start failed
+Thu Dec 29 17:42:53 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/ipmi.service
+Removed /etc/systemd/system/multi-user.target.wants/ipmi.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/ipmi.service’: No such file or directory
+Dec 29 17:42:14 openEuler-riscv64 openipmi-helper[464]: Startup failed.
+Dec 29 17:42:14 openEuler-riscv64 systemd[1]: ipmi.service: Failed with result 'exit-code'.
+Dec 29 17:42:14 openEuler-riscv64 systemd[1]: Failed to start IPMI Driver.
+Dec 29 17:42:40 openEuler-riscv64 openipmi-helper[509]: Startup failed.
+Dec 29 17:42:40 openEuler-riscv64 systemd[1]: ipmi.service: Failed with result 'exit-code'.
+Dec 29 17:42:40 openEuler-riscv64 systemd[1]: Failed to start IPMI Driver.
+Thu Dec 29 17:43:15 2022 - ERROR - There is an error message for the log of ipmi.service
+Thu Dec 29 17:43:16 2022 - ERROR - ../common/common_lib.sh line 28
+Job for ipmi.service failed because the control process exited with error code.
+See "systemctl status ipmi.service" and "journalctl -xeu ipmi.service" for details.
+Failed to reload ipmi.service: Job type reload is not applicable for unit ipmi.service.
+Thu Dec 29 17:43:21 2022 - INFO  - Finish test!
+Thu Dec 29 17:43:23 2022 - ERROR - failed to execute the case.
+Thu Dec 29 17:43:24 2022 - INFO  - start environment cleanup.
+Thu Dec 29 17:43:59 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,33 @@
+Thu Dec 29 23:24:45 2022 - INFO  - Start to prepare the database config.
+Thu Dec 29 23:26:46 2022 - INFO  - End to prepare the database config.
+Thu Dec 29 23:26:48 2022 - INFO  - Start to run test.
+Dec 29 23:26:49 Debug: Loading modules from directory: /usr/lib64/dovecot/doveadm
+Dec 29 23:26:49 Debug: Skipping module doveadm_acl_plugin, because dlopen() failed: /usr/lib64/dovecot/doveadm/lib10_doveadm_acl_plugin.so: undefined symbol: acl_user_module (this is usually intentional, so just ignore this message)
+Dec 29 23:26:49 Debug: Skipping module doveadm_quota_plugin, because dlopen() failed: /usr/lib64/dovecot/doveadm/lib10_doveadm_quota_plugin.so: undefined symbol: quota_user_module (this is usually intentional, so just ignore this message)
+Dec 29 23:26:49 Debug: Skipping module doveadm_fts_lucene_plugin, because dlopen() failed: /usr/lib64/dovecot/doveadm/lib20_doveadm_fts_lucene_plugin.so: undefined symbol: lucene_index_iter_deinit (this is usually intentional, so just ignore this message)
+Dec 29 23:26:49 Debug: Skipping module doveadm_fts_plugin, because dlopen() failed: /usr/lib64/dovecot/doveadm/lib20_doveadm_fts_plugin.so: undefined symbol: fts_user_get_language_list (this is usually intentional, so just ignore this message)
+Dec 29 23:26:49 Debug: Skipping module doveadm_mail_crypt_plugin, because dlopen() failed: /usr/lib64/dovecot/doveadm/libdoveadm_mail_crypt_plugin.so: undefined symbol: mail_crypt_box_get_public_key (this is usually intentional, so just ignore this message)
+username # proto (pids) (ips)                         
+username # proto (pids) (ips)                         
+username                              proto pid ip
+username # proto (pids) (ips)                         
+username # proto (pids) (ips)                         
+SHA1 SSHA512 SCRAM-SHA-256 BLF-CRYPT PLAIN HMAC-MD5 OTP SHA512 SHA DES-CRYPT CRYPT SSHA MD5-CRYPT PLAIN-MD4 PLAIN-MD5 SCRAM-SHA-1 SHA512-CRYPT CLEAR CLEARTEXT SSHA256 MD5 PBKDF2 SHA256 CRAM-MD5 PLAIN-TRUNC SHA256-CRYPT SMD5 DIGEST-MD5 LDAP-MD5 
+{CRYPT}$2y$05$jIe9vIsgobhgFO0xLUWr7OoYBbeGDiK7oCwxQ4mBD6WsfHj6EBSw.
+{CRYPT}$2y$05$NxPQHElFuuxThR3JRnTG1eHw64DQzvDilEbTb5BGnnbAwUhv.9idm
+root        1522    1433 48 23:26 ?        00:00:00 doveadm pw -r 1002
+{CRYPT}$2y$05$TB0IfWexXI.af4MGboshr.dPPLxdttZvDmxPn4ZHQEFKyHj2A/BrK
+{CRYPT}$2y$05$t2bEVw.ebMeoBAtg6uEK8OekC4Zs7zX1ykpE7gdE3A9SGr3M/MC0m (verified)
+{SHA512-CRYPT}$6$PzgXWampCupfTg2x$3CA2aXiwN2CpwuK16lQkbkbze42bg1BDX71Nwdtqdd0CGUGzNkpJberwyuonEtKc5oExld97hPeSfQFEGAco6.
+Looking for log files from /var/log
+Debug: Not found
+Info: Not found
+Warning: Not found
+Error: Not found
+Fatal: Not found
+Thu Dec 29 23:26:58 2022 - INFO  - End to run test.
+Thu Dec 29 23:27:00 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 23:27:02 2022 - INFO  - Start to restore the test environment.
+/root/GitRepo/mugen-riscv/libs/locallibs/common_lib_python.sh: line 97:  1521 Done                    printf 'password\npassword\n'
+      1522 Killed                  | doveadm pw -r 1002
+Thu Dec 29 23:28:12 2022 - INFO  - End to restore the test environment.

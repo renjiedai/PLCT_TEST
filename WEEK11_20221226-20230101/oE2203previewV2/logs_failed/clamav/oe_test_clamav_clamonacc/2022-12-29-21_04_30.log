@@ -1,0 +1,71 @@
+Thu Dec 29 21:04:36 2022 - INFO  - Start to prepare the database config.
+Thu Dec 29 21:14:27 2022 - INFO  - End to prepare the database config.
+Thu Dec 29 21:14:28 2022 - INFO  - Start to run test.
+WARNING: Ignoring deprecated option ScanOnAccess at /etc/clamd.d/scan.conf:9
+ERROR: Clamonacc: fanotify_init failed: Function not implemented
+Thu Dec 29 21:14:30 2022 - ERROR - Execute clamonacc -v failed.
+Thu Dec 29 21:14:32 2022 - ERROR - oe_test_clamav_clamonacc.sh line 54
+WARNING: Ignoring deprecated option ScanOnAccess at /etc/clamd.d/scan.conf:9
+ERROR: Clamonacc: fanotify_init failed: Function not implemented
+Thu Dec 29 21:14:33 2022 - ERROR - Execute clamonacc -w failed.
+Thu Dec 29 21:14:35 2022 - ERROR - oe_test_clamav_clamonacc.sh line 56
+WARNING: Ignoring deprecated option ScanOnAccess at /etc/clamd.d/scan.conf:9
+ERROR: Clamonacc: fanotify_init failed: Function not implemented
+Thu Dec 29 21:14:38 2022 - ERROR - Execute clamonacc -W testfile failed.
+Thu Dec 29 21:14:40 2022 - ERROR - oe_test_clamav_clamonacc.sh line 58
+WARNING: Ignoring deprecated option ScanOnAccess at /etc/clamd.d/scan.conf:9
+ERROR: Clamonacc: fanotify_init failed: Function not implemented
+Thu Dec 29 21:14:42 2022 - ERROR - Execute clamonacc -l clamonacc_log /opt --fdpass failed.
+Thu Dec 29 21:14:44 2022 - ERROR - oe_test_clamav_clamonacc.sh line 60
+WARNING: Ignoring deprecated option ScanOnAccess at /etc/clamd.d/scan.conf:9
+ERROR: Clamonacc: fanotify_init failed: Function not implemented
+Thu Dec 29 21:14:46 2022 - ERROR - Execute clamonacc --exclude-list=testlist failed.
+Thu Dec 29 21:14:48 2022 - ERROR - oe_test_clamav_clamonacc.sh line 62
+WARNING: Ignoring deprecated option ScanOnAccess at /etc/clamd.d/scan.conf:9
+ERROR: Clamonacc: fanotify_init failed: Function not implemented
+Thu Dec 29 21:14:50 2022 - ERROR - Execute clamonacc --config-file=/etc/clamd.d/scan.conf failed.
+Thu Dec 29 21:14:51 2022 - ERROR - oe_test_clamav_clamonacc.sh line 64
+WARNING: Ignoring deprecated option ScanOnAccess at /etc/clamd.d/scan.conf:9
+ERROR: Clamonacc: fanotify_init failed: Function not implemented
+Thu Dec 29 21:14:53 2022 - ERROR - Execute clamonacc -p 3:1  -w failed.
+Thu Dec 29 21:14:55 2022 - ERROR - oe_test_clamav_clamonacc.sh line 66
+WARNING: Ignoring deprecated option ScanOnAccess at /etc/clamd.d/scan.conf:9
+ERROR: Clamonacc: fanotify_init failed: Function not implemented
+Thu Dec 29 21:14:57 2022 - ERROR - Execute clamonacc --remove failed.
+Thu Dec 29 21:14:58 2022 - ERROR - oe_test_clamav_clamonacc.sh line 68
+WARNING: Ignoring deprecated option ScanOnAccess at /etc/clamd.d/scan.conf:9
+ERROR: Clamonacc: fanotify_init failed: Function not implemented
+Thu Dec 29 21:15:00 2022 - ERROR - Execute clamonacc --move testdir /opt failed.
+Thu Dec 29 21:15:01 2022 - ERROR - oe_test_clamav_clamonacc.sh line 70
+WARNING: Ignoring deprecated option ScanOnAccess at /etc/clamd.d/scan.conf:9
+ERROR: Clamonacc: fanotify_init failed: Function not implemented
+Thu Dec 29 21:15:03 2022 - ERROR - Execute clamonacc --copy testdir /opt failed.
+Thu Dec 29 21:15:04 2022 - ERROR - oe_test_clamav_clamonacc.sh line 72
+WARNING: Ignoring deprecated option ScanOnAccess at /etc/clamd.d/scan.conf:9
+ERROR: Clamonacc: fanotify_init failed: Function not implemented
+Thu Dec 29 21:15:06 2022 - ERROR - Execute clamonacc -z failed.
+Thu Dec 29 21:15:07 2022 - ERROR - oe_test_clamav_clamonacc.sh line 74
+WARNING: Ignoring deprecated option ScanOnAccess at /etc/clamd.d/scan.conf:9
+ERROR: Clamonacc: fanotify_init failed: Function not implemented
+Thu Dec 29 21:15:09 2022 - ERROR - Execute clamonacc --stream failed.
+Thu Dec 29 21:15:10 2022 - ERROR - oe_test_clamav_clamonacc.sh line 76
+WARNING: Ignoring deprecated option ScanOnAccess at /etc/clamd.d/scan.conf:9
+ERROR: Clamonacc: fanotify_init failed: Function not implemented
+Thu Dec 29 21:15:17 2022 - WARN  - the remote user uses the default configuration.
+Thu Dec 29 21:15:18 2022 - WARN  - the remote password uses the default configuration.
+Thu Dec 29 21:15:20 2022 - WARN  - the connect port using the default configuration
+spawn ssh -o ConnectTimeout=300 -p 22 root@127.0.0.1 echo 'test force file' >/opt/test_forcefile
+The authenticity of host '127.0.0.1 (127.0.0.1)' can't be established.
+ED25519 key fingerprint is SHA256:53HL8MM5jPwedn9DlT1whSzColbrfz8DKyZ8irHxaQo.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.
+root@127.0.0.1's password: 
+grep: nohup.out: No such file or directory
+Thu Dec 29 21:15:30 2022 - ERROR - Execute clamonacc -F failed.
+Thu Dec 29 21:15:32 2022 - ERROR - oe_test_clamav_clamonacc.sh line 84
+Thu Dec 29 21:15:33 2022 - INFO  - End to run test.
+Thu Dec 29 21:15:35 2022 - ERROR - failed to execute the case.
+Thu Dec 29 21:15:36 2022 - INFO  - Start to restore the test environment.
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Thu Dec 29 21:16:38 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,11 @@
+Thu Dec 29 18:01:40 2022 - INFO  - Start to prepare the test environment.
+Thu Dec 29 18:04:01 2022 - INFO  - End to prepare the test environment.
+Thu Dec 29 18:04:03 2022 - INFO  - Start to run test.
+test1.jpg JPEG 256x144 256x144+0+0 8-bit sRGB 8793B 0.060u 0:00.065
+Image:
+test1.jpg JPEG 256x144 256x144+0+0 8-bit sRGB 8793B 0.150u 0:00.130
+    identify:features: 1
+Thu Dec 29 18:04:27 2022 - INFO  - End to run test.
+Thu Dec 29 18:04:29 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 18:04:30 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 18:05:06 2022 - INFO  - End to restore the test environment.

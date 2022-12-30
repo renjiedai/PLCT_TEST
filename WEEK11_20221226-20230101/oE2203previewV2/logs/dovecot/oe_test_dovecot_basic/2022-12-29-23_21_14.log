@@ -1,0 +1,18 @@
+Thu Dec 29 23:21:20 2022 - INFO  - Start to prepare the database config.
+Thu Dec 29 23:23:08 2022 - INFO  - End to prepare the database config.
+Thu Dec 29 23:23:09 2022 - INFO  - Start to run test.
+2.3.15 (0503334ab1)
+Usage: dovecot [-F] [-c <config file>] [-p] [-n] [-a] [--help] [--version]
+       [--build-options] [--hostdomain] [reload] [stop]
+# OS: Linux 5.10.0-9.oe2203.riscv64 riscv64  
+# OS: Linux 5.10.0-9.oe2203.riscv64 riscv64  
+Thu Dec 29 23:23:15 2022 - ERROR - Check dovecot hostdomain failed.
+Thu Dec 29 23:23:17 2022 - ERROR - oe_test_dovecot_basic.sh line 46
+Build options: ioloop=epoll notify=inotify openssl io_block_size=8192
+SQL driver plugins: mysql postgresql sqlite
+Passdb: checkpassword ldap pam passwd passwd-file shadow sql
+Userdb: checkpassword ldap(plugin) passwd prefetch passwd-file sql
+Thu Dec 29 23:23:23 2022 - INFO  - End to run test.
+Thu Dec 29 23:23:25 2022 - ERROR - failed to execute the case.
+Thu Dec 29 23:23:26 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 23:24:24 2022 - INFO  - End to restore the test environment.

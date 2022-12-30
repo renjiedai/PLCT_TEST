@@ -1,0 +1,87 @@
+Thu Dec 29 21:06:21 2022 - INFO  - Start to prepare the test environment.
+Thu Dec 29 21:08:22 2022 - INFO  - Finish preparing the test environment.
+Thu Dec 29 21:08:23 2022 - INFO  - Start to run test.
+Usage
+  ctest [options]
+ctest version 3.22.0
+CMake Deprecation Warning at CMakeLists.txt:1 (CMAKE_MINIMUM_REQUIRED):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 10.3.1
+-- The CXX compiler identification is GNU 10.3.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/GitRepo/mugen-riscv/testcases/cli-test/cmake/oe_test_ctest/build
+[100%] Built target my_test
+100% tests passed, 0 tests failed out of 2
+UpdateCTestConfiguration  from :/root/GitRepo/mugen-riscv/testcases/cli-test/cmake/oe_test_ctest/build/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/root/GitRepo/mugen-riscv/testcases/cli-test/cmake/oe_test_ctest/build/DartConfiguration.tcl
+1: Test command: /root/GitRepo/mugen-riscv/testcases/cli-test/cmake/oe_test_ctest/build/my_test "1" "2"
+2: Test command: /root/GitRepo/mugen-riscv/testcases/cli-test/cmake/oe_test_ctest/build/my_test "1" "3"
+100% tests passed, 0 tests failed out of 2
+UpdateCTestConfiguration  from :/root/GitRepo/mugen-riscv/testcases/cli-test/cmake/oe_test_ctest/build/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/root/GitRepo/mugen-riscv/testcases/cli-test/cmake/oe_test_ctest/build/DartConfiguration.tcl
+1: Test command: /root/GitRepo/mugen-riscv/testcases/cli-test/cmake/oe_test_ctest/build/my_test "1" "2"
+2: Test command: /root/GitRepo/mugen-riscv/testcases/cli-test/cmake/oe_test_ctest/build/my_test "1" "3"
+100% tests passed, 0 tests failed out of 2
+/home/abuild/rpmbuild/BUILD/cmake-3.22.0/Source/CTest/cmCTestTestHandler.cxx:1785 Constructing a list of tests
+/home/abuild/rpmbuild/BUILD/cmake-3.22.0/Source/CTest/cmCTestTestHandler.cxx:1836 Done constructing a list of tests
+/home/abuild/rpmbuild/BUILD/cmake-3.22.0/Source/CTest/cmCTestTestHandler.cxx:980 Updating test list for fixtures
+/home/abuild/rpmbuild/BUILD/cmake-3.22.0/Source/CTest/cmCTestTestHandler.cxx:1203 Added 0 tests to meet fixture requirements
+100% tests passed, 0 tests failed out of 2
+100% tests passed, 0 tests failed out of 2
+100% tests passed, 0 tests failed out of 2
+100% tests passed, 0 tests failed out of 2
+Test project /root/GitRepo/mugen-riscv/testcases/cli-test/cmake/oe_test_ctest/build
+    Start 1: test_run2
+1/2 Test #1: test_run2 ........................   Passed    0.07 sec
+    Start 2: test_1_plus_3
+2/2 Test #2: test_1_plus_3 ....................   Passed    0.06 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.25 sec
+[HANDLER_OUTPUT] 
+100% tests passed, 0 tests failed out of 2
+Total Tests: 2
+  Test #1: test_run2
+Total Tests: 1
+1/1 Test #1: test_run2 ........................   Passed    0.06 sec
+100% tests passed, 0 tests failed out of 2
+100% tests passed, 0 tests failed out of 2
+100% tests passed, 0 tests failed out of 2
+100% tests passed, 0 tests failed out of 2
+100% tests passed, 0 tests failed out of 2
+100% tests passed, 0 tests failed out of 2
+100% tests passed, 0 tests failed out of 2
+100% tests passed, 0 tests failed out of 2
+100% tests passed, 0 tests failed out of 2
+No Labels Exist
+Errors while running CTest
+Output from these tests are in: /root/GitRepo/mugen-riscv/testcases/cli-test/cmake/oe_test_ctest/build/Testing/Temporary/LastTest.log
+Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.
+0% tests passed, 2 tests failed out of 2
+	  1 - test_run2 (Timeout)
+	  2 - test_1_plus_3 (Timeout)
+100% tests passed, 0 tests failed out of 2
+100% tests passed, 0 tests failed out of 2
+100% tests passed, 0 tests failed out of 2
+Thu Dec 29 21:09:09 2022 - INFO  - End of the test.
+Thu Dec 29 21:09:11 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 21:09:13 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 21:09:50 2022 - INFO  - Finish restoring the test environment.

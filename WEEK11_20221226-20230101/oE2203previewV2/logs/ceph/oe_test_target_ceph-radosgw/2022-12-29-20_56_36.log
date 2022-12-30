@@ -1,0 +1,18 @@
+Thu Dec 29 20:56:43 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 21:03:37 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 21:03:38 2022 - INFO  - Start to run test.
+     Active: active since Thu 2022-12-29 21:03:39 CST; 7s ago
+     Active: inactive (dead) since Thu 2022-12-29 21:03:46 CST; 6s ago
+     Active: active since Thu 2022-12-29 21:03:53 CST; 6s ago
+find: ‘/etc/systemd/system/ceph.target.wants/ceph-radosgw.target’: No such file or directory
+find: ‘/etc/systemd/system/multi-user.target.wants/ceph-radosgw.target’: No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/ceph-radosgw.target → /usr/lib/systemd/system/ceph-radosgw.target.
+Created symlink /etc/systemd/system/ceph.target.wants/ceph-radosgw.target → /usr/lib/systemd/system/ceph-radosgw.target.
+/etc/systemd/system/ceph.target.wants/ceph-radosgw.target
+/etc/systemd/system/multi-user.target.wants/ceph-radosgw.target
+Failed to reload ceph-radosgw.target: Job type reload is not applicable for unit ceph-radosgw.target.
+     Active: active since Thu 2022-12-29 21:03:53 CST; 28s ago
+Thu Dec 29 21:04:23 2022 - INFO  - End of the test.
+Thu Dec 29 21:04:25 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 21:04:26 2022 - INFO  - start environment cleanup.
+Thu Dec 29 21:05:53 2022 - INFO  - Finish environment cleanup!

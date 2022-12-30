@@ -1,0 +1,7 @@
+Thu Dec 29 23:15:47 2022 - INFO  - Start testing...
+Unit dracut-pre-udev.service could not be found.
+Failed to get unit file state for dracut-pre-udev.service: No such file or directory
+Thu Dec 29 23:15:50 2022 - INFO  - Unit is indirect, ignoring.
+Thu Dec 29 23:15:52 2022 - INFO  - Finish test!
+Thu Dec 29 23:15:53 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 23:15:54 2022 - INFO  - oe_test_service_dracut-pre-udev.sh post_test

@@ -1,0 +1,42 @@
+Thu Dec 29 21:53:22 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 21:57:40 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 21:57:42 2022 - INFO  - Start to run testcase.
+cobblerd does not appear to be running/accessible: ConnectionRefusedError(111, 'Connection refused')
+Traceback (most recent call last):
+  File "/usr/bin/cobbler", line 35, in <module>
+    sys.exit(app.main())
+  File "/usr/lib/python3.9/site-packages/cobbler/cli.py", line 852, in main
+    rc = cli.run(sys.argv)
+  File "/usr/lib/python3.9/site-packages/cobbler/cli.py", line 418, in run
+    self.token = self.remote.login("", self.shared_secret)
+  File "/usr/lib64/python3.9/xmlrpc/client.py", line 1122, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib64/python3.9/xmlrpc/client.py", line 1464, in __request
+    response = self.__transport.request(
+  File "/usr/lib64/python3.9/xmlrpc/client.py", line 1166, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib64/python3.9/xmlrpc/client.py", line 1196, in single_request
+    raise ProtocolError(
+xmlrpc.client.ProtocolError: <ProtocolError for 127.0.0.1:80/cobbler_api: 503 Service Unavailable>
+Thu Dec 29 21:57:59 2022 - ERROR - Failed option: image add
+Thu Dec 29 21:58:01 2022 - ERROR - oe_test_cobbler_image.sh line 33
+exception on server: 'internal error, unknown image name OpenEuler1'
+Thu Dec 29 21:58:29 2022 - ERROR - Failed option: image copy
+Thu Dec 29 21:58:30 2022 - ERROR - oe_test_cobbler_image.sh line 37
+exception on server: 'internal error, unknown image name openEuler1'
+Thu Dec 29 21:58:59 2022 - ERROR - Failed option: image edit
+Thu Dec 29 21:59:01 2022 - ERROR - oe_test_cobbler_image.sh line 41
+Thu Dec 29 21:59:16 2022 - ERROR - Failed option: image list
+Thu Dec 29 21:59:17 2022 - ERROR - oe_test_cobbler_image.sh line 43
+Thu Dec 29 21:59:31 2022 - ERROR - Failed option: image find
+Thu Dec 29 21:59:32 2022 - ERROR - oe_test_cobbler_image.sh line 45
+exception on server: 'internal error, unknown image name OpenEuler1'
+exception on server: 'internal error, unknown image name OpenEuler2'
+Thu Dec 29 22:00:23 2022 - ERROR - Failed option: image rename
+Thu Dec 29 22:00:25 2022 - ERROR - oe_test_cobbler_image.sh line 53
+Thu Dec 29 22:00:43 2022 - ERROR - Failed option: image report
+Thu Dec 29 22:00:45 2022 - ERROR - oe_test_cobbler_image.sh line 55
+Thu Dec 29 22:00:47 2022 - INFO  - End to run testcase.
+Thu Dec 29 22:00:49 2022 - ERROR - failed to execute the case.
+Thu Dec 29 22:00:50 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 22:02:40 2022 - INFO  - End to restore the test environment.

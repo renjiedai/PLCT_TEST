@@ -1,0 +1,8 @@
+Thu Dec 29 19:43:08 2022 - INFO  - Start to run test.
+oe_test_audit_count_time.sh: line 25: service: command not found
+oe_test_audit_count_time.sh: line 26: aureport: command not found
+Thu Dec 29 19:43:10 2022 - ERROR - grep failed
+Thu Dec 29 19:43:12 2022 - ERROR - oe_test_audit_count_time.sh line 27
+Thu Dec 29 19:43:14 2022 - INFO  - End to run test.
+Thu Dec 29 19:43:15 2022 - ERROR - failed to execute the case.
+Thu Dec 29 19:43:17 2022 - INFO  - oe_test_audit_count_time.sh post_test

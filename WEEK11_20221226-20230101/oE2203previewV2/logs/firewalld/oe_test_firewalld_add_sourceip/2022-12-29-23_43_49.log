@@ -1,0 +1,12 @@
+Thu Dec 29 23:43:56 2022 - INFO  - Start environmental preparation.
+Failed to start firewalld.service: Unit firewalld.service not found.
+sudo: firewall-cmd: command not found
+Thu Dec 29 23:43:59 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 23:44:00 2022 - INFO  - Start executing testcase.
+sudo: firewall-cmd: command not found
+Thu Dec 29 23:44:02 2022 - ERROR - oe_test_firewalld_add_sourceip.sh line 33
+sudo: firewall-cmd: command not found
+Thu Dec 29 23:44:04 2022 - ERROR - oe_test_firewalld_add_sourceip.sh line 35
+Thu Dec 29 23:44:06 2022 - INFO  - Finish testcase execution.
+Thu Dec 29 23:44:07 2022 - ERROR - failed to execute the case.
+Thu Dec 29 23:44:09 2022 - INFO  - oe_test_firewalld_add_sourceip.sh post_test

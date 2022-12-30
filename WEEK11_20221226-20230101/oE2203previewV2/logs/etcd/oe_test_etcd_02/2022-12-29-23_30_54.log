@@ -1,0 +1,24 @@
+Thu Dec 29 23:31:02 2022 - INFO  - Start to prepare the test environment.
+Thu Dec 29 23:33:11 2022 - INFO  - End to prepare the test environment.
+Thu Dec 29 23:33:13 2022 - INFO  - Start to run test.
+     Active: active (running) since Thu 2022-12-29 23:33:10 CST; 3s ago
+8e9e05c52164694d, started, default, http://localhost:2380, http://localhost:2379, false
+|    ENDPOINT    |        ID        | VERSION | DB SIZE | IS LEADER | IS LEARNER | RAFT TERM | RAFT INDEX | RAFT APPLIED INDEX | ERRORS |
+|    ENDPOINT    | HEALTH |    TOOK     | ERROR |
+127.0.0.1:2379 is healthy: successfully committed proposal: took = 96.147115ms
+127.0.0.1:2379, 8e9e05c52164694d, 3.4.14, 20 kB, true, false, 5, 13, 13, 
+{"level":"info","ts":1672328000.5782373,"caller":"snapshot/v3_snapshot.go:119","msg":"created temporary db file","path":"snapshot.db.part"}
+{"level":"info","ts":"2022-12-29T23:33:20.621+0800","caller":"clientv3/maintenance.go:200","msg":"opened snapshot stream; downloading"}
+{"level":"info","ts":1672328000.6257231,"caller":"snapshot/v3_snapshot.go:127","msg":"fetching snapshot","endpoint":"127.0.0.1:2379"}
+{"level":"info","ts":"2022-12-29T23:33:20.684+0800","caller":"clientv3/maintenance.go:208","msg":"completed snapshot read; closing"}
+{"level":"info","ts":1672328000.7009032,"caller":"snapshot/v3_snapshot.go:142","msg":"fetched snapshot","endpoint":"127.0.0.1:2379","size":"20 kB","took":0.1110617}
+{"level":"info","ts":1672328000.7043364,"caller":"snapshot/v3_snapshot.go:152","msg":"saved","path":"snapshot.db"}
+Snapshot saved at snapshot.db
+ea330b40, 3, 6, 20 kB
+|   HASH   | REVISION | TOTAL KEYS | TOTAL SIZE |
+|       ENDPOINT        |        ID        | VERSION | DB SIZE | IS LEADER | IS LEARNER | RAFT TERM | RAFT INDEX | RAFT APPLIED INDEX | ERRORS |
+Leadership transferred from 8e9e05c52164694d to 8e9e05c52164694d
+Thu Dec 29 23:33:26 2022 - INFO  - End to run test.
+Thu Dec 29 23:33:27 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 23:33:29 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 23:34:11 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,9 @@
+Thu Dec 29 18:26:39 2022 - INFO  - Start to prepare the test environment.
+Thu Dec 29 18:32:35 2022 - INFO  - End to prepare the test environment.
+Thu Dec 29 18:32:36 2022 - INFO  - Start to run test.
+done.
+usage: exrmaketiled [options] infile outfile
+Thu Dec 29 18:32:52 2022 - INFO  - End to run test.
+Thu Dec 29 18:32:53 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 18:32:54 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 18:34:17 2022 - INFO  - End to restore the test environment.

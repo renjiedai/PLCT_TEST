@@ -1,0 +1,12 @@
+Thu Dec 29 17:32:46 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-12-29 17:32:48 CST; 7s ago
+     Active: inactive (dead)
+     Active: active (running) since Thu 2022-12-29 17:33:04 CST; 7s ago
+/etc/systemd/system/multi-user.target.wants/wpa_supplicant.service
+Removed /etc/systemd/system/multi-user.target.wants/wpa_supplicant.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/wpa_supplicant.service’: No such file or directory
+Failed to reload wpa_supplicant.service: Job type reload is not applicable for unit wpa_supplicant.service.
+     Active: active (running) since Thu 2022-12-29 17:33:04 CST; 28s ago
+Thu Dec 29 17:33:35 2022 - INFO  - Finish test!
+Thu Dec 29 17:33:37 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 17:33:39 2022 - INFO  - oe_test_service_wpa_supplicant.sh post_test

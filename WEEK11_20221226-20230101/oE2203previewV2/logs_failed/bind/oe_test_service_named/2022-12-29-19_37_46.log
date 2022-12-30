@@ -1,0 +1,40 @@
+Thu Dec 29 19:37:53 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 19:40:30 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 19:40:31 2022 - INFO  - Start testing...
+Job for named.service failed because the control process exited with error code.
+See "systemctl status named.service" and "journalctl -xeu named.service" for details.
+Thu Dec 29 19:40:35 2022 - ERROR - named.service restart failed
+Thu Dec 29 19:40:37 2022 - ERROR - ../common/common_lib.sh line 34
+Thu Dec 29 19:40:47 2022 - ERROR - named.service restart failed
+Thu Dec 29 19:40:49 2022 - ERROR - ../common/common_lib.sh line 37
+Thu Dec 29 19:40:59 2022 - ERROR - named.service stop failed
+Thu Dec 29 19:41:01 2022 - ERROR - ../common/common_lib.sh line 42
+Job for named.service failed because the control process exited with error code.
+See "systemctl status named.service" and "journalctl -xeu named.service" for details.
+Thu Dec 29 19:41:05 2022 - ERROR - named.service start failed
+Thu Dec 29 19:41:07 2022 - ERROR - ../common/common_lib.sh line 44
+Thu Dec 29 19:41:17 2022 - ERROR - named.service start failed
+Thu Dec 29 19:41:19 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/named.service
+Removed /etc/systemd/system/multi-user.target.wants/named.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/named.service’: No such file or directory
+Dec 29 19:40:33 openEuler-riscv64 systemd[1]: named.service: Control process exited, code=exited, status=1/FAILURE
+Dec 29 19:40:33 openEuler-riscv64 systemd[1]: named.service: Failed with result 'exit-code'.
+Dec 29 19:40:33 openEuler-riscv64 systemd[1]: Failed to start Berkeley Internet Name Domain (DNS).
+Dec 29 19:41:03 openEuler-riscv64 systemd[1]: named.service: Control process exited, code=exited, status=1/FAILURE
+Dec 29 19:41:03 openEuler-riscv64 systemd[1]: named.service: Failed with result 'exit-code'.
+Dec 29 19:41:03 openEuler-riscv64 systemd[1]: Failed to start Berkeley Internet Name Domain (DNS).
+Thu Dec 29 19:41:42 2022 - ERROR - There is an error message for the log of named.service
+Thu Dec 29 19:41:44 2022 - ERROR - oe_test_service_named.sh line 36
+Job for named.service failed because the control process exited with error code.
+See "systemctl status named.service" and "journalctl -xeu named.service" for details.
+named.service is not active, cannot reload.
+Thu Dec 29 19:41:58 2022 - ERROR - named.service reload failed
+Thu Dec 29 19:42:00 2022 - ERROR - oe_test_service_named.sh line 41
+Thu Dec 29 19:42:02 2022 - ERROR - named.service reload causes the service status to change
+Thu Dec 29 19:42:04 2022 - ERROR - oe_test_service_named.sh line 43
+Thu Dec 29 19:42:06 2022 - INFO  - Finish test!
+Thu Dec 29 19:42:08 2022 - ERROR - failed to execute the case.
+Thu Dec 29 19:42:09 2022 - INFO  - start environment cleanup.
+named.service is not active, cannot reload.
+Thu Dec 29 19:43:15 2022 - INFO  - Finish environment cleanup!

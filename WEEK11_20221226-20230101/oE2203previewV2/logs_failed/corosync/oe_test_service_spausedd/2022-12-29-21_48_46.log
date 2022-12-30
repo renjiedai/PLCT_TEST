@@ -1,0 +1,35 @@
+Thu Dec 29 21:48:54 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 21:49:20 2022 - ERROR - pkgs:(spausedd) not found
+Thu Dec 29 21:49:23 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 21:49:25 2022 - INFO  - Start to run test.
+Failed to restart spausedd.service: Unit spausedd.service not found.
+Thu Dec 29 21:49:27 2022 - ERROR - spausedd.service restart failed
+Thu Dec 29 21:49:29 2022 - ERROR - ../common/common_lib.sh line 34
+Unit spausedd.service could not be found.
+Thu Dec 29 21:49:39 2022 - ERROR - spausedd.service restart failed
+Thu Dec 29 21:49:41 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop spausedd.service: Unit spausedd.service not loaded.
+Thu Dec 29 21:49:44 2022 - ERROR - spausedd.service stop failed
+Thu Dec 29 21:49:46 2022 - ERROR - ../common/common_lib.sh line 39
+Unit spausedd.service could not be found.
+Thu Dec 29 21:49:56 2022 - ERROR - spausedd.service stop failed
+Thu Dec 29 21:49:58 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start spausedd.service: Unit spausedd.service not found.
+Thu Dec 29 21:50:01 2022 - ERROR - spausedd.service start failed
+Thu Dec 29 21:50:04 2022 - ERROR - ../common/common_lib.sh line 44
+Unit spausedd.service could not be found.
+Thu Dec 29 21:50:15 2022 - ERROR - spausedd.service start failed
+Thu Dec 29 21:50:17 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for spausedd.service: No such file or directory
+Thu Dec 29 21:50:19 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start spausedd.service: Unit spausedd.service not found.
+Thu Dec 29 21:50:22 2022 - ERROR - Job type reload is not applicable for unit spausedd.service
+Thu Dec 29 21:50:24 2022 - ERROR - ../common/common_lib.sh line 91
+Unit spausedd.service could not be found.
+Unit spausedd.service could not be found.
+Thu Dec 29 21:50:26 2022 - INFO  - End of the test.
+Thu Dec 29 21:50:28 2022 - ERROR - failed to execute the case.
+Thu Dec 29 21:50:30 2022 - INFO  - start environment cleanup.
+Failed to stop spausedd.service: Unit spausedd.service not loaded.
+Thu Dec 29 21:50:32 2022 - WARN  - no thing to do.
+Thu Dec 29 21:50:34 2022 - INFO  - Finish environment cleanup!

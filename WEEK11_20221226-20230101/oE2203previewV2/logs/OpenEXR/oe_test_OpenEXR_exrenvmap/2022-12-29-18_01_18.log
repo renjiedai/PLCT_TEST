@@ -1,0 +1,8 @@
+Thu Dec 29 18:01:24 2022 - INFO  - Start to prepare the test environment.
+Thu Dec 29 18:07:28 2022 - INFO  - End to prepare the test environment.
+Thu Dec 29 18:07:29 2022 - INFO  - Start to run test.
+usage: exrenvmap [options] infile outfile
+Thu Dec 29 18:24:29 2022 - INFO  - End to run test.
+Thu Dec 29 18:24:30 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 18:24:32 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 18:26:18 2022 - INFO  - End to restore the test environment.

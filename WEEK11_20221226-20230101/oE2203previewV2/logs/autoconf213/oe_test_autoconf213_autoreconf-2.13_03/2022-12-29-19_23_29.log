@@ -1,0 +1,12 @@
+Thu Dec 29 19:23:35 2022 - INFO  - Start to prepare the test environment.
+Thu Dec 29 19:24:28 2022 - INFO  - End to prepare the test environment.
+Thu Dec 29 19:24:30 2022 - INFO  - Start to run test.
+< trap 'rm -fr `echo "Makefilere" | sed "s/:[^ ]*//g"` conftest*; exit 1' 1 2 15
+< CONFIG_FILES=\${CONFIG_FILES-"Makefilere"}
+running autoconf in .
+< trap 'rm -fr `echo "Makefilere" | sed "s/:[^ ]*//g"` conftest*; exit 1' 1 2 15
+< CONFIG_FILES=\${CONFIG_FILES-"Makefilere"}
+Thu Dec 29 19:24:36 2022 - INFO  - End to run test.
+Thu Dec 29 19:24:37 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 19:24:38 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 19:25:00 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,21 @@
+Thu Dec 29 19:36:26 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 19:38:03 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 19:38:05 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-12-29 19:38:06 CST; 7s ago
+     Active: inactive (dead)
+     Active: active (running) since Thu 2022-12-29 19:38:22 CST; 7s ago
+/etc/systemd/system/default.target.wants/brltty.service
+/etc/systemd/system/emergency.target.wants/brltty.service
+/etc/systemd/system/rescue.target.wants/brltty.service
+Removed /etc/systemd/system/default.target.wants/brltty.service.
+Removed /etc/systemd/system/emergency.target.wants/brltty.service.
+Removed /etc/systemd/system/rescue.target.wants/brltty.service.
+find: ‘/etc/systemd/system/default.target.wants/brltty.service’: No such file or directory
+find: ‘/etc/systemd/system/emergency.target.wants/brltty.service’: No such file or directory
+find: ‘/etc/systemd/system/rescue.target.wants/brltty.service’: No such file or directory
+Failed to reload brltty.service: Job type reload is not applicable for unit brltty.service.
+     Active: active (running) since Thu 2022-12-29 19:38:22 CST; 29s ago
+Thu Dec 29 19:38:53 2022 - INFO  - Finish test!
+Thu Dec 29 19:38:55 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 19:38:56 2022 - INFO  - start environment cleanup.
+Thu Dec 29 19:39:35 2022 - INFO  - Finish environment cleanup!

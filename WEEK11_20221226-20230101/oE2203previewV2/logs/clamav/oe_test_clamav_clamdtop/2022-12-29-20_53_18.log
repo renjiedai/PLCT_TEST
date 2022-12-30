@@ -1,0 +1,46 @@
+Thu Dec 29 20:53:25 2022 - INFO  - Start to prepare the database config.
+Thu Dec 29 21:03:06 2022 - INFO  - End to prepare the database config.
+Thu Dec 29 21:03:08 2022 - INFO  - Start to run test.
+connect: Connection refused
+Failed to initialize curses
+Abnormal program termination
+Connecting to: localhost
+Connecting to: localhost
+Failed to initialize curses
+Abnormal program termination
+Connecting to: /run/clamd.scan/clamd.sock
+Clam AntiVirus Monitoring Tool 0.103.6
+
+                       Clam AntiVirus: Monitoring Tool 0.103.6
+           By The ClamAV Team: https://www.clamav.net/about.html#credits
+           (C) 2022 Cisco Systems, Inc.
+
+    clamdtop [-hVc] [host[:port] /path/to/clamd.socket ...]
+
+    --help                 -h         Show this help
+    --version              -V         Show version
+    --config-file=FILE     -c FILE    Read clamd's configuration files from FILE
+    --defaultcolors        -d         Use default terminal colors
+    host[:port]                       Connect to clamd on host at port (default 3310)
+    /path/to/clamd.socket             Connect to clamd over a local socket
+
+Failed to initialize curses
+Abnormal program termination
+Connecting to: /run/clamd.scan/clamd.sock
+Failed to initialize curses
+Abnormal program termination
+        __                    ____
+  _____/ /___ _____ ___  ____/ / /_____  ____
+ / ___/ / __ `/ __ `__ \/ __  / __/ __ \/ __ \
+/ /__/ / /_/ / / / / / / /_/ / /_/ /_/ / /_/ /
+\___/_/\__,_/_/ /_/ /_/\__,_/\__/\____/ .___/
+                                     /_/
+Connecting to: /run/clamd.scan/clamd.sock
+Thu Dec 29 21:03:10 2022 - ERROR - Execute clamdtop -d failed.
+Thu Dec 29 21:03:12 2022 - ERROR - oe_test_clamav_clamdtop.sh line 54
+Thu Dec 29 21:03:13 2022 - INFO  - End to run test.
+Thu Dec 29 21:03:14 2022 - ERROR - failed to execute the case.
+Thu Dec 29 21:03:16 2022 - INFO  - Start to restore the test environment.
+Job for clamd@scan.service failed because the control process exited with error code.
+See "systemctl status clamd@scan.service" and "journalctl -xeu clamd@scan.service" for details.
+Thu Dec 29 21:04:16 2022 - INFO  - End to restore the test environment.

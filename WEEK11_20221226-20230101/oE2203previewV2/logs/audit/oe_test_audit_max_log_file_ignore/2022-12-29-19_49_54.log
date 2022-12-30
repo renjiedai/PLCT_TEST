@@ -1,0 +1,68 @@
+Thu Dec 29 19:50:02 2022 - INFO  - Start to prepare the test environment.
+sed: can't read /etc/audit/auditd.conf: No such file or directory
+sed: can't read /etc/audit/auditd.conf: No such file or directory
+sed: can't read /etc/audit/auditd.conf: No such file or directory
+oe_test_audit_max_log_file_ignore.sh: line 27: service: command not found
+Thu Dec 29 19:50:04 2022 - INFO  - End to prepare the environment
+Thu Dec 29 19:50:06 2022 - INFO  - Start to run test.
+ls: cannot access '/var/log/audit/audit.log': No such file or directory
+../common/comlib.sh: line 24: auditctl: command not found
+../common/comlib.sh: line 30: auditctl: command not found
+ls: cannot access '/var/log/audit/audit.log': No such file or directory
+du: cannot access '/var/log/audit/audit.log': No such file or directory
+oe_test_audit_max_log_file_ignore.sh: line 38: test: : integer expression expected
+../common/comlib.sh: line 24: auditctl: command not found
+../common/comlib.sh: line 30: auditctl: command not found
+ls: cannot access '/var/log/audit/audit.log': No such file or directory
+du: cannot access '/var/log/audit/audit.log': No such file or directory
+oe_test_audit_max_log_file_ignore.sh: line 38: test: : integer expression expected
+../common/comlib.sh: line 24: auditctl: command not found
+../common/comlib.sh: line 30: auditctl: command not found
+ls: cannot access '/var/log/audit/audit.log': No such file or directory
+du: cannot access '/var/log/audit/audit.log': No such file or directory
+oe_test_audit_max_log_file_ignore.sh: line 38: test: : integer expression expected
+../common/comlib.sh: line 24: auditctl: command not found
+../common/comlib.sh: line 30: auditctl: command not found
+ls: cannot access '/var/log/audit/audit.log': No such file or directory
+du: cannot access '/var/log/audit/audit.log': No such file or directory
+oe_test_audit_max_log_file_ignore.sh: line 38: test: : integer expression expected
+../common/comlib.sh: line 24: auditctl: command not found
+../common/comlib.sh: line 30: auditctl: command not found
+ls: cannot access '/var/log/audit/audit.log': No such file or directory
+du: cannot access '/var/log/audit/audit.log': No such file or directory
+oe_test_audit_max_log_file_ignore.sh: line 38: test: : integer expression expected
+../common/comlib.sh: line 24: auditctl: command not found
+../common/comlib.sh: line 30: auditctl: command not found
+ls: cannot access '/var/log/audit/audit.log': No such file or directory
+du: cannot access '/var/log/audit/audit.log': No such file or directory
+oe_test_audit_max_log_file_ignore.sh: line 38: test: : integer expression expected
+../common/comlib.sh: line 24: auditctl: command not found
+../common/comlib.sh: line 30: auditctl: command not found
+ls: cannot access '/var/log/audit/audit.log': No such file or directory
+du: cannot access '/var/log/audit/audit.log': No such file or directory
+oe_test_audit_max_log_file_ignore.sh: line 38: test: : integer expression expected
+../common/comlib.sh: line 24: auditctl: command not found
+../common/comlib.sh: line 30: auditctl: command not found
+ls: cannot access '/var/log/audit/audit.log': No such file or directory
+du: cannot access '/var/log/audit/audit.log': No such file or directory
+oe_test_audit_max_log_file_ignore.sh: line 38: test: : integer expression expected
+../common/comlib.sh: line 24: auditctl: command not found
+../common/comlib.sh: line 30: auditctl: command not found
+ls: cannot access '/var/log/audit/audit.log': No such file or directory
+du: cannot access '/var/log/audit/audit.log': No such file or directory
+oe_test_audit_max_log_file_ignore.sh: line 38: test: : integer expression expected
+../common/comlib.sh: line 24: auditctl: command not found
+../common/comlib.sh: line 30: auditctl: command not found
+ls: cannot access '/var/log/audit/audit.log': No such file or directory
+du: cannot access '/var/log/audit/audit.log': No such file or directory
+oe_test_audit_max_log_file_ignore.sh: line 38: test: : integer expression expected
+Thu Dec 29 20:08:56 2022 - ERROR - ignore error
+Thu Dec 29 20:08:58 2022 - ERROR - oe_test_audit_max_log_file_ignore.sh line 44
+Thu Dec 29 20:09:00 2022 - INFO  - End to run test.
+Thu Dec 29 20:09:01 2022 - ERROR - failed to execute the case.
+Thu Dec 29 20:09:03 2022 - INFO  - Start to restore the test environment.
+sed: can't read /etc/audit/auditd.conf: No such file or directory
+sed: can't read /etc/audit/auditd.conf: No such file or directory
+sed: can't read /etc/audit/auditd.conf: No such file or directory
+oe_test_audit_max_log_file_ignore.sh: line 57: service: command not found
+Thu Dec 29 20:09:05 2022 - INFO  - End to restore the test environment.

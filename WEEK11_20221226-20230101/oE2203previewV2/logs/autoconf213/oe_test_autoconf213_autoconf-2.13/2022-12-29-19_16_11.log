@@ -1,0 +1,10 @@
+Thu Dec 29 19:16:17 2022 - INFO  - Start to prepare the test environment.
+Thu Dec 29 19:17:16 2022 - INFO  - End to prepare the test environment.
+Thu Dec 29 19:17:18 2022 - INFO  - Start to run test.
+Usage: autoconf [-h] [--help] [-m dir] [--macrodir=dir]
+Usage: autoconf [-h] [--help] [-m dir] [--macrodir=dir]
+Autoconf version 2.13
+Thu Dec 29 19:17:26 2022 - INFO  - End to run test.
+Thu Dec 29 19:17:28 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 19:17:30 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 19:17:52 2022 - INFO  - End to restore the test environment.

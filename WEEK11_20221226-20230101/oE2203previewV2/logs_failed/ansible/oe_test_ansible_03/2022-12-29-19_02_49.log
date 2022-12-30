@@ -1,0 +1,65 @@
+Thu Dec 29 19:02:56 2022 - INFO  - Start to prepare the test environment.
+spawn ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Created directory '/root/.ssh'.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa
+Your public key has been saved in /root/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:z1HH0VlUzdNiNgL9674BKJhKCrshh0MbhfCxIaOcVGM root@openEuler-riscv64
+The key's randomart image is:
++---[RSA 3072]----+
+|+.+E      .o  .+X|
+|=+++.       o.=+=|
+|.+o.        .=oo.|
+|  .    o   o ..  |
+|.o  . o S o .  . |
+|.+oo .   + . ..  |
+|*.o .     o  ..  |
+|.=            .. |
+|.            .o. |
++----[SHA256]-----+
+spawn ssh-copy-id root@
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: ERROR: ssh: Could not resolve hostname : Name or service not known
+
+send: spawn id exp3 not open
+    while executing
+"send "yes\n""
+Thu Dec 29 19:06:26 2022 - INFO  - End to prepare the test environment.
+Thu Dec 29 19:06:27 2022 - INFO  - Start to run test.
+Thu Dec 29 19:06:37 2022 - ERROR - Check ansible-doc --help failed.
+Thu Dec 29 19:06:38 2022 - ERROR - oe_test_ansible_03.sh line 27
+ansible-doc 2.9.27
+  executable location = /usr/bin/ansible-doc
+spawn ansible-doc -l
+wq  mysql_user:
+spawn ansible-doc -a
+usage: ansible-doc
+       [-h]
+       [--version]
+       [-v]
+       [-M MODULE_PATH]
+       [--playbook-dir BASEDIR]
+       [-t {become,cache,callback,cliconf,connection,httpapi,inventory,lookup,netconf,shell,module,strategy,vars}]
+       [-j]
+       [-F | -l | -s | --metadata-dump]
+       [plugin ...]
+ansible-doc: error: unrecognized arguments: -a
+wqThu Dec 29 19:07:49 2022 - ERROR - Check ansible-galaxy --help failed.
+Thu Dec 29 19:07:50 2022 - ERROR - oe_test_ansible_03.sh line 47
+ansible-galaxy 2.9.27
+  executable location = /usr/bin/ansible-galaxy
+# /etc/ansible/roles
+[WARNING]: - the configured path /root/.ansible/roles does not exist.
+[WARNING]: - the configured path /usr/share/ansible/roles does not exist.
+Found 85 roles matching your search:
+	description: Nginx installation for Linux, FreeBSD and OpenBSD.
+Thu Dec 29 19:08:49 2022 - INFO  - End to run test.
+Thu Dec 29 19:08:50 2022 - ERROR - failed to execute the case.
+Thu Dec 29 19:08:51 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 19:10:00 2022 - INFO  - End to restore the test environment.

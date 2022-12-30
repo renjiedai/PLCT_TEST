@@ -1,0 +1,28 @@
+Thu Dec 29 19:39:06 2022 - INFO  - Start to prepare the test environment.
+Thu Dec 29 19:39:09 2022 - INFO  - End to prepare the environment
+Thu Dec 29 19:39:10 2022 - INFO  - Start to run test.
+oe_test_audit_rule_conflict_strategy.sh: line 32: service: command not found
+oe_test_audit_rule_conflict_strategy.sh: line 33: auditctl: command not found
+Thu Dec 29 19:39:12 2022 - ERROR - delete failed
+Thu Dec 29 19:39:13 2022 - ERROR - oe_test_audit_rule_conflict_strategy.sh line 34
+oe_test_audit_rule_conflict_strategy.sh: line 35: auditctl: command not found
+Thu Dec 29 19:39:15 2022 - ERROR - add failed
+Thu Dec 29 19:39:17 2022 - ERROR - oe_test_audit_rule_conflict_strategy.sh line 36
+oe_test_audit_rule_conflict_strategy.sh: line 37: auditctl: command not found
+Thu Dec 29 19:39:19 2022 - ERROR - grep failed
+Thu Dec 29 19:39:20 2022 - ERROR - oe_test_audit_rule_conflict_strategy.sh line 38
+oe_test_audit_rule_conflict_strategy.sh: line 39: auditctl: command not found
+Thu Dec 29 19:39:22 2022 - ERROR - add second failed
+Thu Dec 29 19:39:24 2022 - ERROR - oe_test_audit_rule_conflict_strategy.sh line 40
+oe_test_audit_rule_conflict_strategy.sh: line 41: auditctl: command not found
+Thu Dec 29 19:39:26 2022 - ERROR - grep second failed
+Thu Dec 29 19:39:27 2022 - ERROR - oe_test_audit_rule_conflict_strategy.sh line 42
+/home/Jevons
+oe_test_audit_rule_conflict_strategy.sh: line 47: ausearch: command not found
+Thu Dec 29 19:39:35 2022 - ERROR - ausearch failed
+Thu Dec 29 19:39:36 2022 - ERROR - oe_test_audit_rule_conflict_strategy.sh line 48
+Thu Dec 29 19:39:38 2022 - INFO  - End to run test.
+Thu Dec 29 19:39:40 2022 - ERROR - failed to execute the case.
+Thu Dec 29 19:39:42 2022 - INFO  - Start to restore the test environment.
+oe_test_audit_rule_conflict_strategy.sh: line 56: auditctl: command not found
+Thu Dec 29 19:39:45 2022 - INFO  - End to restore the test environment.

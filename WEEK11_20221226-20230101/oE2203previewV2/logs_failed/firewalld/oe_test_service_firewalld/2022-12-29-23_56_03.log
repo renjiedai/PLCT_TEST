@@ -1,0 +1,35 @@
+Thu Dec 29 23:56:07 2022 - INFO  - Start testing...
+Failed to restart firewalld.service: Unit firewalld.service not found.
+Thu Dec 29 23:56:08 2022 - ERROR - firewalld.service restart failed
+Thu Dec 29 23:56:09 2022 - ERROR - ../common/common_lib.sh line 34
+Unit firewalld.service could not be found.
+Thu Dec 29 23:56:17 2022 - ERROR - firewalld.service restart failed
+Thu Dec 29 23:56:18 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop firewalld.service: Unit firewalld.service not loaded.
+Thu Dec 29 23:56:19 2022 - ERROR - firewalld.service stop failed
+Thu Dec 29 23:56:20 2022 - ERROR - ../common/common_lib.sh line 39
+Unit firewalld.service could not be found.
+Thu Dec 29 23:56:28 2022 - ERROR - firewalld.service stop failed
+Thu Dec 29 23:56:29 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start firewalld.service: Unit firewalld.service not found.
+Thu Dec 29 23:56:30 2022 - ERROR - firewalld.service start failed
+Thu Dec 29 23:56:31 2022 - ERROR - ../common/common_lib.sh line 44
+Unit firewalld.service could not be found.
+Thu Dec 29 23:56:39 2022 - ERROR - firewalld.service start failed
+Thu Dec 29 23:56:40 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for firewalld.service: No such file or directory
+Thu Dec 29 23:56:41 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start firewalld.service: Unit firewalld.service not found.
+sed: can't read /usr/lib/systemd/system/firewalld.service: No such file or directory
+Failed to reload firewalld.service: Unit firewalld.service not found.
+Thu Dec 29 23:56:56 2022 - ERROR - firewalld.service reload failed
+Thu Dec 29 23:56:57 2022 - ERROR - oe_test_service_firewalld.sh line 30
+Unit firewalld.service could not be found.
+Thu Dec 29 23:57:05 2022 - ERROR - firewalld.service reload causes the service status to change
+Thu Dec 29 23:57:06 2022 - ERROR - oe_test_service_firewalld.sh line 33
+Thu Dec 29 23:57:07 2022 - INFO  - Finish test!
+Thu Dec 29 23:57:08 2022 - ERROR - failed to execute the case.
+Thu Dec 29 23:57:09 2022 - INFO  - start environment cleanup.
+sed: can't read /usr/lib/systemd/system/firewalld.service: No such file or directory
+Failed to reload firewalld.service: Unit firewalld.service not found.
+Thu Dec 29 23:57:17 2022 - INFO  - Finish environment cleanup!

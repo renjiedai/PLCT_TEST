@@ -1,0 +1,15 @@
+Thu Dec 29 18:13:10 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 18:14:17 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 18:14:19 2022 - INFO  - Start to run test.
+     Active: active (listening) since Thu 2022-12-29 18:14:19 CST; 7s ago
+     Active: inactive (dead) since Thu 2022-12-29 18:14:27 CST; 6s ago
+     Active: active (listening) since Thu 2022-12-29 18:14:34 CST; 6s ago
+find: ‘/etc/systemd/system/sockets.target.wants/acpid.socket’: No such file or directory
+Created symlink /etc/systemd/system/sockets.target.wants/acpid.socket → /usr/lib/systemd/system/acpid.socket.
+/etc/systemd/system/sockets.target.wants/acpid.socket
+Failed to reload acpid.socket: Job type reload is not applicable for unit acpid.socket.
+     Active: active (listening) since Thu 2022-12-29 18:14:34 CST; 26s ago
+Thu Dec 29 18:15:01 2022 - INFO  - End of the test.
+Thu Dec 29 18:15:03 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 18:15:04 2022 - INFO  - start environment cleanup.
+Thu Dec 29 18:15:35 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,15 @@
+Thu Dec 29 22:59:29 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 23:00:53 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 23:00:55 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-12-29 23:00:56 CST; 7s ago
+     Active: inactive (dead)
+     Active: active (running) since Thu 2022-12-29 23:01:12 CST; 7s ago
+/etc/systemd/system/multi-user.target.wants/dnsmasq.service
+Removed /etc/systemd/system/multi-user.target.wants/dnsmasq.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/dnsmasq.service’: No such file or directory
+Failed to reload dnsmasq.service: Job type reload is not applicable for unit dnsmasq.service.
+     Active: active (running) since Thu 2022-12-29 23:01:12 CST; 28s ago
+Thu Dec 29 23:01:42 2022 - INFO  - Finish test!
+Thu Dec 29 23:01:44 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 23:01:45 2022 - INFO  - start environment cleanup.
+Thu Dec 29 23:02:20 2022 - INFO  - Finish environment cleanup!

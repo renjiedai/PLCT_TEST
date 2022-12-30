@@ -1,0 +1,4 @@
+Thu Dec 29 17:32:38 2022 - INFO  - start to run testcase:oe_test_service_wpa_supplicant.
+Thu Dec 29 17:33:42 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 17:33:43 2022 - INFO  - End to run testcase:oe_test_service_wpa_supplicant.
+Thu Dec 29 17:33:45 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.

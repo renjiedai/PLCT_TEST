@@ -1,0 +1,11 @@
+Thu Dec 29 20:16:06 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 20:18:02 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 20:18:05 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-12-29 20:18:00 CST; 5s ago
+Thu Dec 29 20:18:08 2022 - ERROR - There is an error for the status of clevis-luks-askpass.service
+Thu Dec 29 20:18:10 2022 - ERROR - ../common/common_lib.sh line 54
+Thu Dec 29 20:18:13 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Thu Dec 29 20:18:16 2022 - INFO  - Finish test!
+Thu Dec 29 20:18:18 2022 - ERROR - failed to execute the case.
+Thu Dec 29 20:18:20 2022 - INFO  - start environment cleanup.
+Thu Dec 29 20:19:11 2022 - INFO  - Finish environment cleanup!

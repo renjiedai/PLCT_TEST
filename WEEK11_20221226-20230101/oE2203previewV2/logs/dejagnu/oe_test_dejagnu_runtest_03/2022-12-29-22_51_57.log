@@ -1,0 +1,85 @@
+Thu Dec 29 22:52:05 2022 - INFO  - Start to prepare the test environment!
+Thu Dec 29 22:53:25 2022 - INFO  - End to prepare the test environment!
+Thu Dec 29 22:53:27 2022 - INFO  - Start to run test.
+Native configuration is riscv64-pc-linux-gnu
+Target is aarch64-pc-linux-gnu
+Native configuration is riscv64-pc-linux-gnu
+Expect binary is /usr/bin/expect
+Using /usr/share/dejagnu/runtest.exp as main test driver
+Verbose level is 1
+Login name is root
+Using test sources in common
+Using test binaries in /root/GitRepo/mugen-riscv/testcases/cli-test/dejagnu
+Tool root directory is /root/GitRepo/mugen-riscv/testcases/cli-test
+Using /usr/share/dejagnu to find libraries
+Found /usr/share/dejagnu/libexec/config.guess
+Assuming build host is riscv64-unknown-linux-gnu
+WARNING: Couldn't find the global config file.
+Loading /usr/share/dejagnu/utils.exp
+Loading /usr/share/dejagnu/framework.exp
+Loading /usr/share/dejagnu/debugger.exp
+Loading /usr/share/dejagnu/remote.exp
+Loading /usr/share/dejagnu/telnet.exp
+Loading /usr/share/dejagnu/rlogin.exp
+Loading /usr/share/dejagnu/kermit.exp
+Loading /usr/share/dejagnu/tip.exp
+Loading /usr/share/dejagnu/rsh.exp
+Loading /usr/share/dejagnu/ssh.exp
+Loading /usr/share/dejagnu/ftp.exp
+Loading /usr/share/dejagnu/target.exp
+Loading /usr/share/dejagnu/targetdb.exp
+Loading /usr/share/dejagnu/libgloss.exp
+Test output put in tmp
+WARNING: No tool specified
+Opening log files in tmp
+Test run by root on Thu Dec 29 22:53:40 2022
+Native configuration is riscv64-unknown-linux-gnu
+
+		===  tests ===
+
+setting trap for SIGINT to interrupted by user
+setting trap for SIGQUIT to interrupted by user
+setting trap for SIGTERM to terminated
+dirlist is /usr/share/dejagnu/baseboards
+pushing config for build, name is openEuler-riscv64
+dirlist is /usr/share/dejagnu/baseboards
+pushing config for host, name is openEuler-riscv64
+Schedule of variations:
+    unix
+
+target is unix
+Running target unix
+dirlist is /usr/share/dejagnu/baseboards/openEuler-riscv64 /usr/share/dejagnu/baseboards
+Using /usr/share/dejagnu/baseboards/unix.exp as board description file for target.
+Using /usr/share/dejagnu/config/unix.exp as generic interface file for target.
+Using common/config/unix.exp as tool-and-target-specific interface file.
+pushing config for target, name is unix
+Running common/calc.test/calc.exp ...
+ERROR: tcl error sourcing common/calc.test/calc.exp.
+ERROR: expect: spawn id exp5 not open
+    while executing
+"expect_after {
+    -re "\[^\n\r\]*$prompt$" {
+	fail "$test (bad match)"
+	if { $verbose > 0 } {
+	    regexp ".*\r\n(\[^\r\n\]+)(\[\r\n\])+$prompt$" \
+	..."
+    (file "common/calc.test/calc.exp" line 28)
+    invoked from within
+"source common/calc.test/calc.exp"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 source common/calc.test/calc.exp"
+    invoked from within
+"catch "uplevel #0 source $test_file_name""
+
+		===  Summary ===
+
+runtest completed at Thu Dec 29 22:53:41 2022
+Running only tests --tool_exec=common/calc.test/calc.exp
+Running only tests --tool_opts=common/calc.test/calc.exp
+Verbose level is 2
+Thu Dec 29 22:53:56 2022 - INFO  - End to run test.
+Thu Dec 29 22:53:57 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 22:53:59 2022 - INFO  - start environment cleanup.
+Thu Dec 29 22:54:22 2022 - INFO  - Finish environment cleanup!

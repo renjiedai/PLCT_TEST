@@ -1,0 +1,10 @@
+Thu Dec 29 22:57:26 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 22:58:30 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 22:58:32 2022 - INFO  - Start testing...
+makepage: discount 2.2.4
+makepage: discount 2.2.4
+makepage: discount 2.2.4 LINKS IMAGE PANTS HTML !STRICT !TAGTEXT EXT !CDATA SUPERSCRIPT RELAXED TABLES STRIKETHROUGH !TOC !MKD_1_COMPAT !AUTOLINK !SAFELINK HEADER !TABSTOP DIVQUOTE ALPHALIST DLIST !FOOTNOTE STYLE DLDISCOUNT !DLEXTRA !FENCEDCODE !IDANCHOR !GITHUBTAGS !URLENCODEDANCHOR !LATEX !EXPLICITLIST
+Thu Dec 29 22:58:34 2022 - INFO  - Finish test!
+Thu Dec 29 22:58:36 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 22:58:37 2022 - INFO  - start environment cleanup.
+Thu Dec 29 22:59:06 2022 - INFO  - Finish environment cleanup!

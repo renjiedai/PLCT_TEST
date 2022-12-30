@@ -1,0 +1,22 @@
+Thu Dec 29 20:19:33 2022 - INFO  - Start environmental preparation.
+ls: cannot access '/etc/systemd/system/tangd.socket.d': No such file or directory
+FirewallD is not running
+FirewallD is not running
+Thu Dec 29 20:22:10 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 20:22:12 2022 - INFO  - Start executing testcase.
+Created symlink /etc/systemd/system/multi-user.target.wants/tangd.socket → /usr/lib/systemd/system/tangd.socket.
+Listen=[::]:8009 (Stream)
+IN_WJ4pXHXOihuhETf2ijTFqYD3i8R9Y6melv8HdWvE  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   618  100   618    0     0   1058      0 --:--:-- --:--:-- --:--:--  1204
+Key derivation key not available!
+Thu Dec 29 20:23:23 2022 - ERROR - Failed to encrypt file
+Thu Dec 29 20:23:25 2022 - ERROR - oe_test_install_clevis.sh line 67
+Thu Dec 29 20:23:31 2022 - ERROR - Failed to decrypt file
+Thu Dec 29 20:23:33 2022 - ERROR - oe_test_install_clevis.sh line 70
+Thu Dec 29 20:23:35 2022 - INFO  - Finish testcase execution.
+Thu Dec 29 20:23:37 2022 - ERROR - failed to execute the case.
+Thu Dec 29 20:23:39 2022 - INFO  - start environment cleanup.
+oe_test_install_clevis.sh: line 79: /usr/bin/firewall-cmd: No such file or directory
+oe_test_install_clevis.sh: line 80: /usr/bin/firewall-cmd: No such file or directory
+Thu Dec 29 20:24:49 2022 - INFO  - Finish environment cleanup!

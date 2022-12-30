@@ -1,0 +1,15 @@
+Thu Dec 29 18:06:45 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 18:08:17 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 18:08:19 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-12-29 18:08:19 CST; 7s ago
+     Active: inactive (dead) since Thu 2022-12-29 18:08:27 CST; 6s ago
+     Active: active (running) since Thu 2022-12-29 18:08:34 CST; 6s ago
+find: ‘/etc/systemd/system/multi-user.target.wants/abrt-xorg.service’: No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/abrt-xorg.service → /usr/lib/systemd/system/abrt-xorg.service.
+/etc/systemd/system/multi-user.target.wants/abrt-xorg.service
+Failed to reload abrt-xorg.service: Job type reload is not applicable for unit abrt-xorg.service.
+     Active: active (running) since Thu 2022-12-29 18:08:34 CST; 29s ago
+Thu Dec 29 18:09:05 2022 - INFO  - Finish test!
+Thu Dec 29 18:09:06 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 18:09:08 2022 - INFO  - start environment cleanup.
+Thu Dec 29 18:10:00 2022 - INFO  - Finish environment cleanup!

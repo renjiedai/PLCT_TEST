@@ -1,0 +1,21 @@
+Thu Dec 29 20:05:32 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 20:30:36 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 20:30:38 2022 - INFO  - Start to run test.
+     Active: active since Thu 2022-12-29 20:30:39 CST; 8s ago
+     Active: inactive (dead) since Thu 2022-12-29 20:30:47 CST; 7s ago
+     Active: active since Thu 2022-12-29 20:30:55 CST; 7s ago
+find: ‘/etc/systemd/system/ceph.target.wants/ceph-mgr.target’: No such file or directory
+find: ‘/etc/systemd/system/multi-user.target.wants/ceph-mgr.target’: No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/ceph-mgr.target → /usr/lib/systemd/system/ceph-mgr.target.
+Created symlink /etc/systemd/system/ceph.target.wants/ceph-mgr.target → /usr/lib/systemd/system/ceph-mgr.target.
+/etc/systemd/system/ceph.target.wants/ceph-mgr.target
+/etc/systemd/system/multi-user.target.wants/ceph-mgr.target
+Failed to reload ceph-mgr.target: Job type reload is not applicable for unit ceph-mgr.target.
+     Active: active since Thu 2022-12-29 20:30:55 CST; 32s ago
+Thu Dec 29 20:31:30 2022 - INFO  - End of the test.
+Thu Dec 29 20:31:32 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 20:31:34 2022 - INFO  - start environment cleanup.
+Thu Dec 29 20:35:27 2022 - ERROR - Timeout : Command 'bash oe_test_target_ceph-mgr.sh' timed out after 1799.9935780769997 seconds
+Thu Dec 29 20:36:13 2022 - INFO  - start environment cleanup.
+Thu Dec 29 20:36:36 2022 - INFO  - Finish environment cleanup!
+Thu Dec 29 20:36:38 2022 - INFO  - Finish environment cleanup!

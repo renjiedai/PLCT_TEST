@@ -1,0 +1,15 @@
+Thu Dec 29 23:17:05 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 23:19:01 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 23:19:02 2022 - INFO  - Start to run test.
+     Active: active (listening) since Thu 2022-12-29 23:19:03 CST; 7s ago
+     Active: inactive (dead)
+     Active: active (listening) since Thu 2022-12-29 23:19:18 CST; 7s ago
+/etc/systemd/system/sockets.target.wants/dovecot.socket
+Removed /etc/systemd/system/sockets.target.wants/dovecot.socket.
+find: ‘/etc/systemd/system/sockets.target.wants/dovecot.socket’: No such file or directory
+Failed to reload dovecot.socket: Job type reload is not applicable for unit dovecot.socket.
+     Active: active (listening) since Thu 2022-12-29 23:19:18 CST; 30s ago
+Thu Dec 29 23:19:50 2022 - INFO  - End of the test.
+Thu Dec 29 23:19:52 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 23:19:54 2022 - INFO  - start environment cleanup.
+Thu Dec 29 23:21:01 2022 - INFO  - Finish environment cleanup!

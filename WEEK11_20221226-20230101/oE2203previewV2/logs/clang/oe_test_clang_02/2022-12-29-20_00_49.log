@@ -1,0 +1,131 @@
+Thu Dec 29 20:00:56 2022 - INFO  - Start to prepare the test environment.
+Thu Dec 29 20:06:01 2022 - INFO  - End to prepare the test environment.
+Thu Dec 29 20:06:02 2022 - INFO  - Start to run test.
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0314 seconds (0.0314 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0089 ( 53.6%)   0.0055 ( 37.6%)   0.0145 ( 46.1%)   0.0145 ( 46.1%)  AlwaysInlinerPass
+   0.0067 ( 40.2%)   0.0075 ( 50.9%)   0.0142 ( 45.2%)   0.0142 ( 45.2%)  AnnotationRemarksPass
+   0.0005 (  3.0%)   0.0008 (  5.5%)   0.0013 (  4.2%)   0.0013 (  4.2%)  ProfileSummaryAnalysis
+   0.0004 (  2.4%)   0.0007 (  4.5%)   0.0011 (  3.4%)   0.0011 (  3.4%)  TargetLibraryAnalysis
+   0.0001 (  0.8%)   0.0002 (  1.4%)   0.0003 (  1.1%)   0.0003 (  1.1%)  CoroConditionalWrapper
+   0.0167 (100.0%)   0.0147 (100.0%)   0.0314 (100.0%)   0.0314 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                         Miscellaneous Ungrouped Timers
+===-------------------------------------------------------------------------===
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.3634 ( 79.4%)   0.5848 ( 68.4%)   0.9481 ( 72.3%)   0.9482 ( 72.2%)  Code Generation Time
+   0.0944 ( 20.6%)   0.2696 ( 31.6%)   0.3640 ( 27.7%)   0.3653 ( 27.8%)  LLVM IR Generation Time
+   0.4578 (100.0%)   0.8543 (100.0%)   1.3122 (100.0%)   1.3135 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                      Instruction Selection and Scheduling
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.2242 seconds (0.2240 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0074 ( 12.4%)   0.0870 ( 52.8%)   0.0943 ( 42.1%)   0.0943 ( 42.1%)  Instruction Selection
+   0.0165 ( 27.7%)   0.0248 ( 15.1%)   0.0413 ( 18.4%)   0.0413 ( 18.4%)  Type Legalization
+   0.0076 ( 12.7%)   0.0313 ( 19.0%)   0.0389 ( 17.4%)   0.0389 ( 17.4%)  DAG Combining 1
+   0.0068 ( 11.4%)   0.0107 (  6.5%)   0.0174 (  7.8%)   0.0174 (  7.8%)  DAG Legalization
+   0.0070 ( 11.7%)   0.0023 (  1.4%)   0.0093 (  4.2%)   0.0093 (  4.2%)  DAG Combining after legalize types
+   0.0058 (  9.8%)   0.0018 (  1.1%)   0.0076 (  3.4%)   0.0076 (  3.4%)  Instruction Creation
+   0.0071 ( 11.9%)   0.0000 (  0.0%)   0.0071 (  3.2%)   0.0071 (  3.2%)  Instruction Scheduling
+   0.0011 (  1.9%)   0.0058 (  3.5%)   0.0069 (  3.1%)   0.0069 (  3.1%)  Vector Legalization
+   0.0003 (  0.5%)   0.0005 (  0.3%)   0.0008 (  0.4%)   0.0008 (  0.4%)  DAG Combining 2
+   0.0000 (  0.0%)   0.0004 (  0.3%)   0.0004 (  0.2%)   0.0004 (  0.2%)  Instruction Scheduling Cleanup
+   0.0596 (100.0%)   0.1646 (100.0%)   0.2242 (100.0%)   0.2240 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.4861 seconds (0.4861 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.1045 ( 56.0%)   0.2371 ( 79.1%)   0.3416 ( 70.3%)   0.3414 ( 70.2%)  RISCV DAG->DAG Pattern Instruction Selection
+   0.0252 ( 13.5%)   0.0197 (  6.6%)   0.0449 (  9.2%)   0.0450 (  9.2%)  Expand Atomic instructions
+   0.0115 (  6.1%)   0.0214 (  7.1%)   0.0328 (  6.8%)   0.0328 (  6.8%)  RISCV Assembly Printer
+   0.0119 (  6.4%)   0.0000 (  0.0%)   0.0120 (  2.5%)   0.0119 (  2.5%)  Prologue/Epilogue Insertion & Frame Finalization
+   0.0092 (  4.9%)   0.0000 (  0.0%)   0.0092 (  1.9%)   0.0092 (  1.9%)  Fast Register Allocator
+   0.0044 (  2.4%)   0.0046 (  1.5%)   0.0090 (  1.9%)   0.0090 (  1.9%)  RISCV pseudo instruction expansion pass
+   0.0000 (  0.0%)   0.0075 (  2.5%)   0.0075 (  1.5%)   0.0075 (  1.5%)  Remove unreachable blocks from the CFG
+   0.0033 (  1.8%)   0.0036 (  1.2%)   0.0070 (  1.4%)   0.0069 (  1.4%)  Lower constant intrinsics
+   0.0008 (  0.4%)   0.0026 (  0.9%)   0.0033 (  0.7%)   0.0033 (  0.7%)  Safe Stack instrumentation pass
+   0.0027 (  1.5%)   0.0000 (  0.0%)   0.0027 (  0.6%)   0.0027 (  0.6%)  Two-Address instruction pass
+   0.0019 (  1.0%)   0.0000 (  0.0%)   0.0019 (  0.4%)   0.0019 (  0.4%)  Branch relaxation pass
+   0.0017 (  0.9%)   0.0000 (  0.0%)   0.0017 (  0.3%)   0.0017 (  0.3%)  Free MachineFunction
+   0.0015 (  0.8%)   0.0000 (  0.0%)   0.0015 (  0.3%)   0.0015 (  0.3%)  Expand vector predication intrinsics
+   0.0012 (  0.7%)   0.0000 (  0.0%)   0.0012 (  0.3%)   0.0012 (  0.3%)  Finalize ISel and expand pseudo-instructions
+   0.0012 (  0.6%)   0.0000 (  0.0%)   0.0012 (  0.2%)   0.0012 (  0.2%)  Exception handling preparation
+   0.0004 (  0.2%)   0.0007 (  0.2%)   0.0010 (  0.2%)   0.0010 (  0.2%)  Insert stack protectors
+   0.0010 (  0.5%)   0.0000 (  0.0%)   0.0010 (  0.2%)   0.0010 (  0.2%)  Scalarize Masked Memory Intrinsics
+   0.0000 (  0.0%)   0.0008 (  0.3%)   0.0008 (  0.2%)   0.0008 (  0.2%)  Post-RA pseudo instruction expansion pass
+   0.0006 (  0.3%)   0.0001 (  0.0%)   0.0007 (  0.1%)   0.0007 (  0.1%)  Expand reduction intrinsics
+   0.0005 (  0.2%)   0.0000 (  0.0%)   0.0005 (  0.1%)   0.0005 (  0.1%)  Eliminate PHI nodes for register allocation
+   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0002 (  0.0%)   0.0004 (  0.1%)  Lazy Machine Block Frequency Analysis
+   0.0003 (  0.1%)   0.0000 (  0.0%)   0.0003 (  0.1%)   0.0003 (  0.1%)  RISCV atomic pseudo instruction expansion pass
+   0.0003 (  0.1%)   0.0000 (  0.0%)   0.0003 (  0.1%)   0.0003 (  0.1%)  Contiguously Lay Out Funclets
+   0.0000 (  0.0%)   0.0003 (  0.1%)   0.0003 (  0.1%)   0.0003 (  0.1%)  Insert XRay ops
+   0.0003 (  0.1%)   0.0000 (  0.0%)   0.0003 (  0.1%)   0.0003 (  0.1%)  Live DEBUG_VALUE analysis
+   0.0003 (  0.1%)   0.0000 (  0.0%)   0.0003 (  0.1%)   0.0003 (  0.1%)  Assumption Cache Tracker
+   0.0002 (  0.1%)   0.0000 (  0.0%)   0.0002 (  0.1%)   0.0003 (  0.1%)  Pre-ISel Intrinsic Lowering
+   0.0000 (  0.0%)   0.0002 (  0.1%)   0.0002 (  0.1%)   0.0002 (  0.1%)  Implement the 'patchable-function' attribute
+   0.0002 (  0.1%)   0.0001 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Remove Redundant DEBUG_VALUE analysis
+   0.0000 (  0.0%)   0.0002 (  0.1%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Insert fentry calls
+   0.0002 (  0.1%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Local Stack Slot Allocation
+   0.0001 (  0.1%)   0.0001 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Shadow Stack GC Lowering
+   0.0002 (  0.1%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  StackMap Liveness Analysis
+   0.0002 (  0.1%)   0.0000 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  RISCV Insert VSETVLI pass
+   0.0001 (  0.0%)   0.0001 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Machine Optimization Remark Emitter
+   0.0001 (  0.0%)   0.0001 (  0.0%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Fixup Statepoint Caller Saved
+   0.0000 (  0.0%)   0.0002 (  0.1%)   0.0002 (  0.0%)   0.0002 (  0.0%)  Analyze Machine Code For Garbage Collection
+   0.0001 (  0.1%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  RISCV Make Compressible
+   0.0001 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Lazy Machine Block Frequency Analysis #2
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Machine Optimization Remark Emitter #2
+   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)   0.0001 (  0.0%)  Lower Garbage Collection Instructions
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)  Machine Module Information
+   0.0001 (  0.0%)   0.0000 (  0.0%)   0.0001 (  0.0%)   0.0000 (  0.0%)  Create Garbage Collector Module Metadata
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Target Library Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Machine Branch Probability Analysis
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Profile summary info
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Target Transform Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Target Pass Configuration
+   0.1865 (100.0%)   0.2996 (100.0%)   0.4861 (100.0%)   0.4861 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                 DWARF Emission
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0030 seconds (0.0028 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0015 (100.0%)   0.0016 (100.0%)   0.0030 (100.0%)   0.0028 (100.0%)  DWARF Exception Writer
+   0.0015 (100.0%)   0.0016 (100.0%)   0.0030 (100.0%)   0.0028 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                          Clang front-end time report
+===-------------------------------------------------------------------------===
+  Total Execution Time: 2.2302 seconds (2.2322 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.8700 (100.0%)   1.3602 (100.0%)   2.2302 (100.0%)   2.2322 (100.0%)  Clang front-end timer
+   0.8700 (100.0%)   1.3602 (100.0%)   2.2302 (100.0%)   2.2322 (100.0%)  Total
+
+clang-15: warning: argument unused during compilation: '-dump-raw-token' [-Wunused-command-line-argument]
+clang-15: warning: treating 'c' input as 'c++' when in C++ mode, this behavior is deprecated [-Wdeprecated]
+clang-15: warning: treating 'cpp-output' input as 'c++-cpp-output' when in C++ mode, this behavior is deprecated [-Wdeprecated]
+clang-15: warning: treating 'c' input as 'c++' when in C++ mode, this behavior is deprecated [-Wdeprecated]
+#include <stdio.h>
+
+int main(void) {
+  printf("HelloWorld!");
+  return 0;
+}
+Thu Dec 29 20:06:35 2022 - INFO  - End to run test.
+Thu Dec 29 20:06:37 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 20:06:38 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 20:07:09 2022 - INFO  - End to restore the test environment.

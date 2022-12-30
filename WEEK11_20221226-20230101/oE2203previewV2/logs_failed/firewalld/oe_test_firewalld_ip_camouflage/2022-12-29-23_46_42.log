@@ -1,0 +1,15 @@
+Thu Dec 29 23:46:48 2022 - INFO  - Start environmental preparation.
+Failed to start firewalld.service: Unit firewalld.service not found.
+Thu Dec 29 23:46:51 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 23:46:53 2022 - INFO  - Start executing testcase.
+sudo: firewall-cmd: command not found
+Thu Dec 29 23:46:56 2022 - ERROR - oe_test_firewalld_ip_camouflage.sh line 31
+sudo: firewall-cmd: command not found
+Thu Dec 29 23:46:58 2022 - ERROR - oe_test_firewalld_ip_camouflage.sh line 33
+sudo: firewall-cmd: command not found
+Thu Dec 29 23:47:01 2022 - ERROR - oe_test_firewalld_ip_camouflage.sh line 35
+sudo: firewall-cmd: command not found
+Thu Dec 29 23:47:03 2022 - ERROR - oe_test_firewalld_ip_camouflage.sh line 37
+Thu Dec 29 23:47:05 2022 - INFO  - Finish testcase execution.
+Thu Dec 29 23:47:07 2022 - ERROR - failed to execute the case.
+Thu Dec 29 23:47:09 2022 - INFO  - oe_test_firewalld_ip_camouflage.sh post_test

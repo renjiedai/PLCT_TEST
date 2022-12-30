@@ -1,0 +1,36 @@
+Thu Dec 29 23:28:31 2022 - INFO  - Start to prepare the database config.
+New password: BAD PASSWORD: The password contains less than 3 character classes
+Retype new password: Changing password for user testuser.
+passwd: all authentication tokens updated successfully.
+Thu Dec 29 23:30:16 2022 - INFO  - End to prepare the database config.
+Thu Dec 29 23:30:19 2022 - INFO  - Start to run test.
+path                           name    last used           running
+/var/run/dovecot               dovecot 2022-12-29 23:30:14 yes    
+IP penalty last_penalty last_update                      
+0 connections kicked
+0 cache entries flushed
+passdb: testuser auth succeeded
+extra fields:
+  user=testuser
+  
+userdb extra fields:
+  testuser
+  system_groups_user=testuser
+  uid=1001
+  gid=1001
+  home=/home/testuser
+  auth_mech=PLAIN
+passdb: testuser auth succeeded
+extra fields:
+  user=testuser
+  
+Gathering configurations ...
+Gathering system informations ...
+Creating archive ...
+All done! Please report file dovecot-sysreport-openEuler-riscv64-1672327826.tar.gz
+Removing temp files at /tmp/tmp.TdVyUOUMmR ...
+dovecot-sysreport-openEuler-riscv64-1672327826.tar.gz
+Thu Dec 29 23:30:36 2022 - INFO  - End to run test.
+Thu Dec 29 23:30:38 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 23:30:40 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 23:31:55 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,20 @@
+Thu Dec 29 17:54:16 2022 - INFO  - Start to prepare the test environment.
+Thu Dec 29 17:56:46 2022 - INFO  - End to prepare the test environment.
+Thu Dec 29 17:56:47 2022 - INFO  - Start to run test.
+test2.jpg JPEG 256x160 256x160+0+0 8-bit sRGB 17153B 0.100u 0:00.100
+test2.jpg JPEG 256x160 256x160+0+0 8-bit sRGB 17153B 0.020u 0:00.028
+Image: test2.jpg
+  Channel distortion: MAE
+    red: 0 (0)
+    green: 0 (0)
+    blue: 0 (0)
+    all: 0 (0)
+writing raw profile: type=8bim, length=84
+writing raw profile: type=icc, length=596
+writing raw profile: type=iptc, length=44
+writing raw profile: type=xmp, length=2480
+test2.jpg=>difference.png JPEG 256x160 8-bit sRGB 17153B 0.490u 0:00.434
+0 (0)Thu Dec 29 17:57:15 2022 - INFO  - End to run test.
+Thu Dec 29 17:57:16 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 17:57:18 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 17:57:53 2022 - INFO  - End to restore the test environment.

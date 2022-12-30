@@ -1,0 +1,88 @@
+Thu Dec 29 23:43:48 2022 - INFO  - start to run testcase:oe_test_firewalld_add_sourceip.
+Thu Dec 29 23:44:11 2022 - ERROR - The case exit by code 2.
+Thu Dec 29 23:44:12 2022 - INFO  - End to run testcase:oe_test_firewalld_add_sourceip.
+Thu Dec 29 23:44:14 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 23:44:25 2022 - INFO  - start to run testcase:oe_test_firewalld_add_sourceport.
+Thu Dec 29 23:44:58 2022 - ERROR - The case exit by code 2.
+Thu Dec 29 23:45:00 2022 - INFO  - End to run testcase:oe_test_firewalld_add_sourceport.
+Thu Dec 29 23:45:02 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 23:45:13 2022 - INFO  - start to run testcase:oe_test_firewalld_block_all_icmp.
+Thu Dec 29 23:45:40 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 23:45:43 2022 - INFO  - End to run testcase:oe_test_firewalld_block_all_icmp.
+Thu Dec 29 23:45:45 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Thu Dec 29 23:45:56 2022 - INFO  - start to run testcase:oe_test_firewalld_getzone.
+Thu Dec 29 23:46:27 2022 - ERROR - The case exit by code 3.
+Thu Dec 29 23:46:29 2022 - INFO  - End to run testcase:oe_test_firewalld_getzone.
+Thu Dec 29 23:46:31 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 23:46:42 2022 - INFO  - start to run testcase:oe_test_firewalld_ip_camouflage.
+Thu Dec 29 23:47:11 2022 - ERROR - The case exit by code 4.
+Thu Dec 29 23:47:13 2022 - INFO  - End to run testcase:oe_test_firewalld_ip_camouflage.
+Thu Dec 29 23:47:15 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 23:47:25 2022 - INFO  - start to run testcase:oe_test_firewalld_list.
+Thu Dec 29 23:47:46 2022 - ERROR - The case exit by code 2.
+Thu Dec 29 23:47:48 2022 - INFO  - End to run testcase:oe_test_firewalld_list.
+Thu Dec 29 23:47:49 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 23:47:56 2022 - INFO  - start to run testcase:oe_test_firewalld_lockdown.
+Thu Dec 29 23:48:16 2022 - ERROR - The case exit by code 3.
+Thu Dec 29 23:48:18 2022 - INFO  - End to run testcase:oe_test_firewalld_lockdown.
+Thu Dec 29 23:48:19 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 23:48:24 2022 - INFO  - start to run testcase:oe_test_firewalld_log_denied.
+Thu Dec 29 23:50:22 2022 - ERROR - The case exit by code 3.
+Thu Dec 29 23:50:23 2022 - INFO  - End to run testcase:oe_test_firewalld_log_denied.
+Thu Dec 29 23:50:24 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 23:50:29 2022 - INFO  - start to run testcase:oe_test_firewalld_manage_icmp.
+Thu Dec 29 23:50:41 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 23:50:42 2022 - INFO  - End to run testcase:oe_test_firewalld_manage_icmp.
+Thu Dec 29 23:50:43 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Thu Dec 29 23:50:49 2022 - INFO  - start to run testcase:oe_test_firewalld_new_zone.
+Thu Dec 29 23:51:04 2022 - ERROR - The case exit by code 3.
+Thu Dec 29 23:51:05 2022 - INFO  - End to run testcase:oe_test_firewalld_new_zone.
+Thu Dec 29 23:51:07 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 23:51:12 2022 - INFO  - start to run testcase:oe_test_firewalld_runtime_permanent.
+Thu Dec 29 23:51:29 2022 - ERROR - The case exit by code 2.
+Thu Dec 29 23:51:30 2022 - INFO  - End to run testcase:oe_test_firewalld_runtime_permanent.
+Thu Dec 29 23:51:31 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 23:51:37 2022 - INFO  - start to run testcase:oe_test_firewalld_set_priority.
+Thu Dec 29 23:51:49 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 23:51:50 2022 - INFO  - End to run testcase:oe_test_firewalld_set_priority.
+Thu Dec 29 23:51:51 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Thu Dec 29 23:51:56 2022 - INFO  - start to run testcase:oe_test_firewalld_set_target.
+Thu Dec 29 23:52:13 2022 - ERROR - The case exit by code 3.
+Thu Dec 29 23:52:14 2022 - INFO  - End to run testcase:oe_test_firewalld_set_target.
+Thu Dec 29 23:52:15 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 23:52:20 2022 - INFO  - start to run testcase:oe_test_firewalld_start_check.
+Thu Dec 29 23:52:32 2022 - ERROR - The case exit by code 1.
+Thu Dec 29 23:52:33 2022 - INFO  - End to run testcase:oe_test_firewalld_start_check.
+Thu Dec 29 23:52:34 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 23:52:40 2022 - INFO  - start to run testcase:oe_test_firewalld_start_status.
+Thu Dec 29 23:52:55 2022 - ERROR - The case exit by code 3.
+Thu Dec 29 23:52:56 2022 - INFO  - End to run testcase:oe_test_firewalld_start_status.
+Thu Dec 29 23:52:58 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 23:53:04 2022 - INFO  - start to run testcase:oe_test_firewalld_start_stop.
+Thu Dec 29 23:53:45 2022 - ERROR - The case exit by code 3.
+Thu Dec 29 23:53:47 2022 - INFO  - End to run testcase:oe_test_firewalld_start_stop.
+Thu Dec 29 23:53:48 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 23:53:54 2022 - INFO  - start to run testcase:oe_test_firewalld_whitelist_command.
+Thu Dec 29 23:54:15 2022 - ERROR - The case exit by code 4.
+Thu Dec 29 23:54:16 2022 - INFO  - End to run testcase:oe_test_firewalld_whitelist_command.
+Thu Dec 29 23:54:18 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 23:54:23 2022 - INFO  - start to run testcase:oe_test_firewalld_whitelist_contexts.
+Thu Dec 29 23:54:38 2022 - ERROR - The case exit by code 1.
+Thu Dec 29 23:54:40 2022 - INFO  - End to run testcase:oe_test_firewalld_whitelist_contexts.
+Thu Dec 29 23:54:41 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 23:54:47 2022 - INFO  - start to run testcase:oe_test_firewalld_whitelist_uids.
+Thu Dec 29 23:55:05 2022 - ERROR - The case exit by code 2.
+Thu Dec 29 23:55:06 2022 - INFO  - End to run testcase:oe_test_firewalld_whitelist_uids.
+Thu Dec 29 23:55:07 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 23:55:13 2022 - INFO  - start to run testcase:oe_test_firewalld_whitelist_user.
+Thu Dec 29 23:55:32 2022 - ERROR - The case exit by code 4.
+Thu Dec 29 23:55:33 2022 - INFO  - End to run testcase:oe_test_firewalld_whitelist_user.
+Thu Dec 29 23:55:34 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 23:55:40 2022 - INFO  - start to run testcase:oe_test_firewalld_zone_add_service.
+Thu Dec 29 23:55:54 2022 - ERROR - The case exit by code 2.
+Thu Dec 29 23:55:55 2022 - INFO  - End to run testcase:oe_test_firewalld_zone_add_service.
+Thu Dec 29 23:55:57 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 23:56:03 2022 - INFO  - start to run testcase:oe_test_service_firewalld.
+Thu Dec 29 23:57:18 2022 - ERROR - The case exit by code 8.
+Thu Dec 29 23:57:20 2022 - INFO  - End to run testcase:oe_test_service_firewalld.
+Thu Dec 29 23:57:21 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.

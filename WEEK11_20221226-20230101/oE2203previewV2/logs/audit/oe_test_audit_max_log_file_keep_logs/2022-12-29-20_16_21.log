@@ -1,0 +1,22 @@
+Thu Dec 29 20:16:30 2022 - INFO  - Start to prepare the test environment.
+sed: can't read /etc/audit/auditd.conf: No such file or directory
+sed: can't read /etc/audit/auditd.conf: No such file or directory
+sed: can't read /etc/audit/auditd.conf: No such file or directory
+oe_test_audit_max_log_file_keep_logs.sh: line 27: service: command not found
+Thu Dec 29 20:16:34 2022 - INFO  - End to prepare the environment
+Thu Dec 29 20:16:35 2022 - INFO  - Start to run test.
+du: cannot access '/var/log/audit/': No such file or directory
+find: ‘/var/log/audit’: No such file or directory
+ls: cannot access '/var/log/audit/audit.log*': No such file or directory
+../common/comlib.sh: line 24: auditctl: command not found
+../common/comlib.sh: line 30: auditctl: command not found
+ls: cannot access '/var/log/audit/audit.log*': No such file or directory
+du: cannot access '/var/log/audit/': No such file or directory
+find: ‘/var/log/audit’: No such file or directory
+oe_test_audit_max_log_file_keep_logs.sh: line 41: - : syntax error: operand expected (error token is "- ")
+Thu Dec 29 20:18:54 2022 - INFO  - Start to restore the test environment.
+sed: can't read /etc/audit/auditd.conf: No such file or directory
+sed: can't read /etc/audit/auditd.conf: No such file or directory
+sed: can't read /etc/audit/auditd.conf: No such file or directory
+oe_test_audit_max_log_file_keep_logs.sh: line 60: service: command not found
+Thu Dec 29 20:18:56 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,12 @@
+Thu Dec 29 19:19:56 2022 - INFO  - Start to prepare the test environment.
+Thu Dec 29 19:20:52 2022 - INFO  - End to prepare the test environment.
+Thu Dec 29 19:20:53 2022 - INFO  - Start to run test.
+Usage: autoreconf [-f] [-h] [--help] [-m dir] [--macrodir=dir]
+Usage: autoreconf [-f] [-h] [--help] [-m dir] [--macrodir=dir]
+Autoconf version 2.13
+< trap 'rm -fr `echo "Makefilere" | sed "s/:[^ ]*//g"` conftest*; exit 1' 1 2 15
+< CONFIG_FILES=\${CONFIG_FILES-"Makefilere"}
+Thu Dec 29 19:20:59 2022 - INFO  - End to run test.
+Thu Dec 29 19:21:01 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 19:21:02 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 19:21:28 2022 - INFO  - End to restore the test environment.

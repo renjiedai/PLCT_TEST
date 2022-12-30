@@ -1,0 +1,31 @@
+Thu Dec 29 20:32:17 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 20:32:19 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 20:32:20 2022 - INFO  - Start testing...
+oe_test_service_auditd.sh: line 31: service: command not found
+Thu Dec 29 20:32:22 2022 - ERROR - auditd restart failed
+Thu Dec 29 20:32:24 2022 - ERROR - oe_test_service_auditd.sh line 32
+Unit auditd.service could not be found.
+Thu Dec 29 20:32:33 2022 - ERROR - auditd restart failed
+Thu Dec 29 20:32:35 2022 - ERROR - oe_test_service_auditd.sh line 35
+oe_test_service_auditd.sh: line 36: service: command not found
+Thu Dec 29 20:32:37 2022 - ERROR - auditd stop failed
+Thu Dec 29 20:32:39 2022 - ERROR - oe_test_service_auditd.sh line 37
+Unit auditd.service could not be found.
+Thu Dec 29 20:32:48 2022 - ERROR - auditd stop failed
+Thu Dec 29 20:32:50 2022 - ERROR - oe_test_service_auditd.sh line 40
+oe_test_service_auditd.sh: line 41: service: command not found
+Thu Dec 29 20:32:53 2022 - ERROR - auditd start failed
+Thu Dec 29 20:32:54 2022 - ERROR - oe_test_service_auditd.sh line 42
+Unit auditd.service could not be found.
+Thu Dec 29 20:33:04 2022 - ERROR - auditd start failed
+Thu Dec 29 20:33:06 2022 - ERROR - oe_test_service_auditd.sh line 45
+Failed to get unit file state for auditd.service: No such file or directory
+Thu Dec 29 20:33:08 2022 - ERROR - auditd is not enabled
+Failed to start auditd.service: Unit auditd.service not found.
+Thu Dec 29 20:33:11 2022 - ERROR - Job type reload is not applicable for unit auditd
+Thu Dec 29 20:33:13 2022 - ERROR - ../common/common_lib.sh line 91
+Unit auditd.service could not be found.
+Unit auditd.service could not be found.
+Thu Dec 29 20:33:15 2022 - INFO  - Finish test!
+Thu Dec 29 20:33:17 2022 - ERROR - failed to execute the case.
+Thu Dec 29 20:33:19 2022 - INFO  - oe_test_service_auditd.sh post_test

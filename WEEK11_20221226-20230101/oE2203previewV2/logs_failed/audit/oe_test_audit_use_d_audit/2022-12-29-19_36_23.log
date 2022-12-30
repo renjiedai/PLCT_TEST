@@ -1,0 +1,18 @@
+Thu Dec 29 19:36:30 2022 - INFO  - Start to run test.
+oe_test_audit_use_d_audit.sh: line 25: service: command not found
+oe_test_audit_use_d_audit.sh: line 26: auditctl: command not found
+Thu Dec 29 19:36:32 2022 - ERROR - delete failed
+Thu Dec 29 19:36:33 2022 - ERROR - oe_test_audit_use_d_audit.sh line 27
+oe_test_audit_use_d_audit.sh: line 28: auditctl: command not found
+Thu Dec 29 19:36:35 2022 - ERROR - add failed
+Thu Dec 29 19:36:38 2022 - ERROR - oe_test_audit_use_d_audit.sh line 29
+oe_test_audit_use_d_audit.sh: line 30: auditctl: command not found
+Thu Dec 29 19:36:40 2022 - ERROR - grep failed
+Thu Dec 29 19:36:42 2022 - ERROR - oe_test_audit_use_d_audit.sh line 31
+oe_test_audit_use_d_audit.sh: line 32: auditctl: command not found
+Thu Dec 29 19:36:44 2022 - ERROR - delete failed
+Thu Dec 29 19:36:47 2022 - ERROR - oe_test_audit_use_d_audit.sh line 33
+oe_test_audit_use_d_audit.sh: line 34: auditctl: command not found
+Thu Dec 29 19:36:49 2022 - INFO  - End to run test.
+Thu Dec 29 19:36:51 2022 - ERROR - failed to execute the case.
+Thu Dec 29 19:36:53 2022 - INFO  - oe_test_audit_use_d_audit.sh post_test

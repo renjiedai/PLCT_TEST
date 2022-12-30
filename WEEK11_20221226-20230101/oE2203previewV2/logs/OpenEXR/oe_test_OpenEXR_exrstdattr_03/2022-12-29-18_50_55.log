@@ -1,0 +1,7 @@
+Thu Dec 29 18:51:02 2022 - INFO  - Start to prepare the test environment.
+Thu Dec 29 18:57:25 2022 - INFO  - End to prepare the test environment.
+Thu Dec 29 18:57:27 2022 - INFO  - Start to run test.
+Thu Dec 29 18:57:32 2022 - INFO  - End to run test.
+Thu Dec 29 18:57:34 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 18:57:35 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 18:59:15 2022 - INFO  - End to restore the test environment.

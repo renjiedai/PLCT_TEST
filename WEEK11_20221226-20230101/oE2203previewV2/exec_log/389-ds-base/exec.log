@@ -1,0 +1,8 @@
+Thu Dec 29 17:32:39 2022 - INFO  - start to run testcase:oe_test_service_dirsrv-snmp.
+Thu Dec 29 17:38:17 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 17:38:19 2022 - INFO  - End to run testcase:oe_test_service_dirsrv-snmp.
+Thu Dec 29 17:38:21 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Thu Dec 29 17:38:29 2022 - INFO  - start to run testcase:oe_test_target_dirsrv.
+Thu Dec 29 17:43:20 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 17:43:21 2022 - INFO  - End to run testcase:oe_test_target_dirsrv.
+Thu Dec 29 17:43:23 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.

@@ -1,0 +1,12 @@
+Thu Dec 29 19:35:50 2022 - INFO  - Start to run test.
+oe_test_audit_track_designated_access.sh: line 25: service: command not found
+oe_test_audit_track_designated_access.sh: line 26: auditctl: command not found
+Thu Dec 29 19:35:52 2022 - ERROR - delete failed
+Thu Dec 29 19:35:54 2022 - ERROR - oe_test_audit_track_designated_access.sh line 27
+oe_test_audit_track_designated_access.sh: line 28: autrace: command not found
+oe_test_audit_track_designated_access.sh: line 30: aureport: command not found
+Thu Dec 29 19:35:57 2022 - ERROR - aureport failed
+Thu Dec 29 19:35:59 2022 - ERROR - oe_test_audit_track_designated_access.sh line 31
+Thu Dec 29 19:36:01 2022 - INFO  - End to run test.
+Thu Dec 29 19:36:03 2022 - ERROR - failed to execute the case.
+Thu Dec 29 19:36:05 2022 - INFO  - oe_test_audit_track_designated_access.sh post_test

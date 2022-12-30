@@ -1,0 +1,16 @@
+Thu Dec 29 20:15:56 2022 - INFO  - start to run testcase:oe_test_service_clevis-luks-askpass.
+Thu Dec 29 20:19:13 2022 - ERROR - The case exit by code 1.
+Thu Dec 29 20:19:15 2022 - INFO  - End to run testcase:oe_test_service_clevis-luks-askpass.
+Thu Dec 29 20:19:17 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 20:19:26 2022 - INFO  - start to run testcase:oe_test_install_clevis.
+Thu Dec 29 20:24:52 2022 - ERROR - The case exit by code 2.
+Thu Dec 29 20:24:54 2022 - INFO  - End to run testcase:oe_test_install_clevis.
+Thu Dec 29 20:24:56 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 20:25:06 2022 - INFO  - start to run testcase:oe_test_tang_encrypt.
+Thu Dec 29 20:28:30 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 20:28:32 2022 - INFO  - End to run testcase:oe_test_tang_encrypt.
+Thu Dec 29 20:28:34 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Thu Dec 29 20:28:44 2022 - INFO  - start to run testcase:oe_test_tang_nbde.
+Thu Dec 29 20:32:58 2022 - ERROR - The case exit by code 1.
+Thu Dec 29 20:33:00 2022 - INFO  - End to run testcase:oe_test_tang_nbde.
+Thu Dec 29 20:33:02 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.

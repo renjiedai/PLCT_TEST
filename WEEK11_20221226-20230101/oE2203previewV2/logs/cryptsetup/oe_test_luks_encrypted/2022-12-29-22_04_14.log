@@ -1,0 +1,88 @@
+Thu Dec 29 22:04:22 2022 - INFO  - Start loading data!
+Thu Dec 29 22:04:36 2022 - INFO  - Loading data is complete!
+Thu Dec 29 22:04:38 2022 - INFO  - Start environmental preparation.
+fdisk: cannot open /dev/vdb vdc vdd vde vdf vdg vdh vdi vdj: No such file or directory
+
+Welcome to fdisk (util-linux 2.37.2).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+Thu Dec 29 22:06:43 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 22:06:45 2022 - INFO  - Start executing testcase.
+Cannot open device /dev/vdb vdc vdd vde vdf vdg vdh vdi vdj1.
+Thu Dec 29 22:06:47 2022 - ERROR - Disk encryption failed
+Thu Dec 29 22:06:49 2022 - ERROR - oe_test_luks_encrypted.sh line 44
+Device /dev/vdb vdc vdd vde vdf vdg vdh vdi vdj1 does not exist or access denied.
+Thu Dec 29 22:06:52 2022 - ERROR - Disk mapping failed
+Thu Dec 29 22:06:54 2022 - ERROR - oe_test_luks_encrypted.sh line 46
+mke2fs 1.46.4 (18-Aug-2021)
+The file /dev/mapper/test_encrypted does not exist and no size was specified.
+Thu Dec 29 22:06:56 2022 - ERROR - Failed to format partition
+Thu Dec 29 22:06:59 2022 - ERROR - oe_test_luks_encrypted.sh line 48
+mount: /mnt/test_encrypted: special device /dev/mapper/test_encrypted does not exist.
+Thu Dec 29 22:07:01 2022 - ERROR - Disk mount failed
+Thu Dec 29 22:07:03 2022 - ERROR - oe_test_luks_encrypted.sh line 50
+Thu Dec 29 22:07:05 2022 - ERROR - Backup luksHeader information failed
+Thu Dec 29 22:07:08 2022 - ERROR - oe_test_luks_encrypted.sh line 52
+Created symlink /etc/systemd/system/multi-user.target.wants/tangd.socket → /usr/lib/systemd/system/tangd.socket.
+Listen=[::]:8009 (Stream)
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   618  100   618    0     0   1845      0 --:--:-- --:--:-- --:--:--  2026
+Key derivation key not available!
+Thu Dec 29 22:07:56 2022 - ERROR - Failed to encrypt data
+Thu Dec 29 22:07:57 2022 - ERROR - oe_test_luks_encrypted.sh line 64
+spawn luksmeta init -n -d /dev/vdb vdc vdd vde vdf vdg vdh vdi vdj1
+Usage: luksmeta test -d DEVICE
+   or: luksmeta nuke -d DEVICE [-f]
+   or: luksmeta init -d DEVICE [-f] [-n]
+   or: luksmeta show -d DEVICE [-s SLOT]
+   or: luksmeta save -d DEVICE [-s SLOT]  -u UUID  < DATA
+   or: luksmeta load -d DEVICE  -s SLOT  [-u UUID] > DATA
+   or: luksmeta wipe -d DEVICE  -s SLOT  [-u UUID] [-f]
+expect: spawn id exp3 not open
+    while executing
+"expect eof{"
+Usage: luksmeta test -d DEVICE
+   or: luksmeta nuke -d DEVICE [-f]
+   or: luksmeta init -d DEVICE [-f] [-n]
+   or: luksmeta show -d DEVICE [-s SLOT]
+   or: luksmeta save -d DEVICE [-s SLOT]  -u UUID  < DATA
+   or: luksmeta load -d DEVICE  -s SLOT  [-u UUID] > DATA
+   or: luksmeta wipe -d DEVICE  -s SLOT  [-u UUID] [-f]
+Thu Dec 29 22:08:06 2022 - ERROR - Failed to write data
+Thu Dec 29 22:08:08 2022 - ERROR - oe_test_luks_encrypted.sh line 86
+spawn clevis luks bind -d /dev/vdb vdc vdd vde vdf vdg vdh vdi vdj1 tang '{"url":"http://127.0.0.1:8009"}'
+/dev/vdb is not a supported LUKS device
+expect: spawn id exp3 not open
+    while executing
+"expect eof{"
+Thu Dec 29 22:08:10 2022 - INFO  - Finish testcase execution.
+Thu Dec 29 22:08:12 2022 - ERROR - failed to execute the case.
+Thu Dec 29 22:08:14 2022 - INFO  - start environment cleanup.
+spawn clevis luks unbind -d /dev/vdb vdc vdd vde vdf vdg vdh vdi vdj1 -s 1
+Did not specify a slot!
+
+Usage: clevis luks unbind -d DEV -s SLT
+
+Unbinds a pin bound to a LUKS volume:
+
+  -d DEV  The bound LUKS device
+
+  -s SLOT The LUKS slot number for the pin unbind
+
+  -f      Do not ask for confirmation and wipe slot in batch-mode
+
+umount: /mnt/test_encrypted: not mounted.
+Cannot initialize device-mapper. Is dm_mod kernel module loaded?
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: invalid blocks 'vdc' on device '/dev/vdb'
+fdisk: cannot open /dev/vdb vdc vdd vde vdf vdg vdh vdi vdj: No such file or directory
+
+Welcome to fdisk (util-linux 2.37.2).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: invalid blocks 'vdc' on device '/dev/vdb'
+Thu Dec 29 22:09:07 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,46 @@
+Thu Dec 29 21:21:42 2022 - INFO  - Start environmental preparation.
+mount: /mnt: special device /dev/cdrom does not exist.
+cobblerd does not appear to be running/accessible: ConnectionRefusedError(111, 'Connection refused')
+Traceback (most recent call last):
+  File "/usr/bin/cobbler", line 35, in <module>
+    sys.exit(app.main())
+  File "/usr/lib/python3.9/site-packages/cobbler/cli.py", line 852, in main
+    rc = cli.run(sys.argv)
+  File "/usr/lib/python3.9/site-packages/cobbler/cli.py", line 418, in run
+    self.token = self.remote.login("", self.shared_secret)
+  File "/usr/lib64/python3.9/xmlrpc/client.py", line 1122, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib64/python3.9/xmlrpc/client.py", line 1464, in __request
+    response = self.__transport.request(
+  File "/usr/lib64/python3.9/xmlrpc/client.py", line 1166, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib64/python3.9/xmlrpc/client.py", line 1196, in single_request
+    raise ProtocolError(
+xmlrpc.client.ProtocolError: <ProtocolError for 127.0.0.1:80/cobbler_api: 503 Service Unavailable>
+Thu Dec 29 21:25:35 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 21:25:38 2022 - INFO  - Start to run testcase.
+exception on server: 'distribution not found'
+exception on server: 'internal error, unknown profile name OpenEuler1'
+Thu Dec 29 21:26:13 2022 - ERROR - Failed option: profile copy
+Thu Dec 29 21:26:14 2022 - ERROR - oe_test_cobbler_profile.sh line 39
+Thu Dec 29 21:26:26 2022 - ERROR - Failed option: profile dumpvars
+Thu Dec 29 21:26:28 2022 - ERROR - oe_test_cobbler_profile.sh line 41
+exception on server: 'internal error, unknown profile name openEuler1'
+Thu Dec 29 21:26:52 2022 - ERROR - Failed option: profile edit
+Thu Dec 29 21:26:54 2022 - ERROR - oe_test_cobbler_profile.sh line 45
+Thu Dec 29 21:27:10 2022 - ERROR - Failed option: profile list
+Thu Dec 29 21:27:11 2022 - ERROR - oe_test_cobbler_profile.sh line 47
+Thu Dec 29 21:27:25 2022 - ERROR - Failed option: profile find
+Thu Dec 29 21:27:26 2022 - ERROR - oe_test_cobbler_profile.sh line 49
+exception on server: 'internal error, unknown profile name OpenEuler1'
+exception on server: 'internal error, unknown profile name OpenEuler2'
+Thu Dec 29 21:28:17 2022 - ERROR - Failed option: profile rename
+Thu Dec 29 21:28:20 2022 - ERROR - oe_test_cobbler_profile.sh line 57
+Thu Dec 29 21:28:33 2022 - ERROR - Failed option: profile report
+Thu Dec 29 21:28:35 2022 - ERROR - oe_test_cobbler_profile.sh line 59
+# profile not found
+Thu Dec 29 21:28:47 2022 - INFO  - End to run testcase.
+Thu Dec 29 21:28:49 2022 - ERROR - failed to execute the case.
+Thu Dec 29 21:28:50 2022 - INFO  - Start to restore the test environment.
+umount: /dev/cdrom: no mount point specified.
+Thu Dec 29 21:30:44 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,120 @@
+Thu Dec 29 22:49:24 2022 - INFO  - Start to prepare the test environment!
+Thu Dec 29 22:50:26 2022 - INFO  - End to prepare the test environment!
+Thu Dec 29 22:50:27 2022 - INFO  - Start to run test.
+Thu Dec 29 22:50:33 2022 - ERROR - Failed option : --objdir
+Thu Dec 29 22:50:35 2022 - ERROR - oe_test_dejagnu_runtest_02.sh line 32
+WARNING: Couldn't find the global config file.
+WARNING: No tool specified
+Test run by root on Thu Dec 29 22:50:38 2022
+Native configuration is riscv64-unknown-linux-gnu
+
+		===  tests ===
+
+Schedule of variations:
+    unix
+
+Running target unix
+Using /usr/share/dejagnu/baseboards/unix.exp as board description file for target.
+Using /usr/share/dejagnu/config/unix.exp as generic interface file for target.
+Using common/config/unix.exp as tool-and-target-specific interface file.
+Running common/calc.test/calc.exp ...
+ERROR: tcl error sourcing common/calc.test/calc.exp.
+ERROR: expect: spawn id exp5 not open
+    while executing
+"expect_after {
+    -re "\[^\n\r\]*$prompt$" {
+	fail "$test (bad match)"
+	if { $verbose > 0 } {
+	    regexp ".*\r\n(\[^\r\n\]+)(\[\r\n\])+$prompt$" \
+	..."
+    (file "common/calc.test/calc.exp" line 28)
+    invoked from within
+"source common/calc.test/calc.exp"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 source common/calc.test/calc.exp"
+    invoked from within
+"catch "uplevel #0 source $test_file_name""
+
+		===  Summary ===
+
+Will reboot the target (if supported)
+	trap "send_error \"got a \[trap -name\] signal, $str \\n\"; set exit_status $code; log_and_exit;" $signal
+Testing version
+Tcl debugger is ON
+WARNING: Couldn't find the global config file.
+WARNING: No tool specified
+Test run by root on Thu Dec 29 22:50:59 2022
+Native configuration is riscv64-unknown-linux-gnu
+
+		===  tests ===
+
+Schedule of variations:
+    unix
+
+Running target unix
+Using /usr/share/dejagnu/baseboards/unix.exp as board description file for target.
+Using /usr/share/dejagnu/config/unix.exp as generic interface file for target.
+Using common/config/unix.exp as tool-and-target-specific interface file.
+Running common/calc.test/calc.exp ...
+ERROR: tcl error sourcing common/calc.test/calc.exp.
+ERROR: expect: spawn id exp6 not open
+    while executing
+"expect_after {
+    -re "\[^\n\r\]*$prompt$" {
+	fail "$test (bad match)"
+	if { $verbose > 0 } {
+	    regexp ".*\r\n(\[^\r\n\]+)(\[\r\n\])+$prompt$" \
+	..."
+    (file "common/calc.test/calc.exp" line 28)
+    invoked from within
+"source common/calc.test/calc.exp"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 source common/calc.test/calc.exp"
+    invoked from within
+"catch "uplevel #0 source $test_file_name""
+
+		===  Summary ===
+
+WARNING: Couldn't find the global config file.
+WARNING: No tool specified
+Test run by root on Thu Dec 29 22:51:03 2022
+Native configuration is riscv64-unknown-linux-gnu
+
+		===  tests ===
+
+Schedule of variations:
+    unix
+
+Running target unix
+Using /usr/share/dejagnu/baseboards/unix.exp as board description file for target.
+Using /usr/share/dejagnu/config/unix.exp as generic interface file for target.
+Using common/config/unix.exp as tool-and-target-specific interface file.
+Running common/calc.test/calc.exp ...
+ERROR: tcl error sourcing common/calc.test/calc.exp.
+ERROR: expect: spawn id exp6 not open
+    while executing
+"expect_after {
+    -re "\[^\n\r\]*$prompt$" {
+	fail "$test (bad match)"
+	if { $verbose > 0 } {
+	    regexp ".*\r\n(\[^\r\n\]+)(\[\r\n\])+$prompt$" \
+	..."
+    (file "common/calc.test/calc.exp" line 28)
+    invoked from within
+"source common/calc.test/calc.exp"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 source common/calc.test/calc.exp"
+    invoked from within
+"catch "uplevel #0 source $test_file_name""
+
+		===  Summary ===
+
+Running only tests --script.exp
+Running target unix
+Thu Dec 29 22:51:14 2022 - INFO  - End to run test.
+Thu Dec 29 22:51:16 2022 - ERROR - failed to execute the case.
+Thu Dec 29 22:51:17 2022 - INFO  - start environment cleanup.
+Thu Dec 29 22:51:42 2022 - INFO  - Finish environment cleanup!

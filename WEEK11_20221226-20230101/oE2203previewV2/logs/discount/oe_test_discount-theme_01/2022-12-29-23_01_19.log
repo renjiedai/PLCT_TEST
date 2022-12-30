@@ -1,0 +1,19 @@
+Thu Dec 29 23:01:26 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 23:02:30 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 23:02:31 2022 - INFO  - Start testing...
+theme+discount 2.2.4
+<h1>test_T</h1>
+<h1>test_toc</h1>
+<h2>head2</h2>
+<p style="text-align:center;">test</p>
+<p>[test](/test)</p>
+<p>&lt;http://foo.com></p>
+<p><section>test_h5</section></p>
+<h1>Hello world!</h1>
+<p><code>bash
+echo test code
+</code></p>
+Thu Dec 29 23:02:34 2022 - INFO  - Finish test!
+Thu Dec 29 23:02:36 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 23:02:38 2022 - INFO  - start environment cleanup.
+Thu Dec 29 23:03:03 2022 - INFO  - Finish environment cleanup!

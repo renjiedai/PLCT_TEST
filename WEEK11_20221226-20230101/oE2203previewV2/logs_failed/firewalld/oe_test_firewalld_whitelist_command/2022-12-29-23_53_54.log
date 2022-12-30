@@ -1,0 +1,23 @@
+Thu Dec 29 23:53:59 2022 - INFO  - Start environmental preparation.
+Failed to start firewalld.service: Unit firewalld.service not found.
+Thu Dec 29 23:54:00 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 23:54:01 2022 - INFO  - Start executing testcase.
+sudo: firewall-cmd: command not found
+sudo: firewall-cmd: command not found
+sudo: firewall-cmd: command not found
+Thu Dec 29 23:54:03 2022 - ERROR - oe_test_firewalld_whitelist_command.sh line 33
+sudo: firewall-cmd: command not found
+/usr/bin/python3: can't open file '/usr/bin/firewall-cmd': [Errno 2] No such file or directory
+Thu Dec 29 23:54:05 2022 - ERROR - oe_test_firewalld_whitelist_command.sh line 36
+/usr/bin/python3: can't open file '/usr/bin/firewall-cmd': [Errno 2] No such file or directory
+Thu Dec 29 23:54:07 2022 - ERROR - oe_test_firewalld_whitelist_command.sh line 38
+/usr/bin/python3: can't open file '/usr/bin/firewall-cmd': [Errno 2] No such file or directory
+sudo: firewall-cmd: command not found
+Thu Dec 29 23:54:09 2022 - ERROR - oe_test_firewalld_whitelist_command.sh line 42
+Thu Dec 29 23:54:10 2022 - INFO  - Finish testcase execution.
+Thu Dec 29 23:54:11 2022 - ERROR - failed to execute the case.
+Thu Dec 29 23:54:12 2022 - INFO  - start environment cleanup.
+sudo: firewall-cmd: command not found
+sudo: firewall-cmd: command not found
+sudo: firewall-cmd: command not found
+Thu Dec 29 23:54:14 2022 - INFO  - Finish environment cleanup!

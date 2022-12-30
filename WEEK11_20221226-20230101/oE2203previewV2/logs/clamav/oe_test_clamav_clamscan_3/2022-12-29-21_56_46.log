@@ -1,0 +1,72 @@
+Thu Dec 29 21:56:53 2022 - INFO  - Start to prepare the database config.
+Thu Dec 29 22:01:53 2022 - INFO  - End to prepare the database config.
+Thu Dec 29 22:01:55 2022 - INFO  - Start to run test.
+LibClamAV Warning: **************************************************
+LibClamAV Warning: ***  The virus database is older than 7 days!  ***
+LibClamAV Warning: ***   Please update it as soon as possible.    ***
+LibClamAV Warning: **************************************************
+LibClamAV Warning: **************************************************
+LibClamAV Warning: ***  The virus database is older than 7 days!  ***
+LibClamAV Warning: ***   Please update it as soon as possible.    ***
+LibClamAV Warning: **************************************************
+LibClamAV Warning: **************************************************
+LibClamAV Warning: ***  The virus database is older than 7 days!  ***
+LibClamAV Warning: ***   Please update it as soon as possible.    ***
+LibClamAV Warning: **************************************************
+LibClamAV Warning: **************************************************
+LibClamAV Warning: ***  The virus database is older than 7 days!  ***
+LibClamAV Warning: ***   Please update it as soon as possible.    ***
+LibClamAV Warning: **************************************************
+LibClamAV Warning: **************************************************
+LibClamAV Warning: ***  The virus database is older than 7 days!  ***
+LibClamAV Warning: ***   Please update it as soon as possible.    ***
+LibClamAV Warning: **************************************************
+Thu Dec 29 22:26:48 2022 - ERROR - Timeout : Command 'bash oe_test_clamav_clamscan_3.sh' timed out after 1799.9955342199992 seconds
+Thu Dec 29 22:30:07 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 22:31:12 2022 - INFO  - End to restore the test environment.
+oe_test_clamav_clamscan_3.sh: line 46: /usr/bin/clamscan: No such file or directory
+Thu Dec 29 22:31:14 2022 - ERROR - Check clamscan --file-list /opt --exclude-dir=REGEX --max-partitions 5 --max-iconspe 5 failed.
+Thu Dec 29 22:31:16 2022 - ERROR - oe_test_clamav_clamscan_3.sh line 47
+oe_test_clamav_clamscan_3.sh: line 48: /usr/bin/clamscan: No such file or directory
+Thu Dec 29 22:31:17 2022 - ERROR - Check clamscan --bytecode test_virus_collection --bytecode-timeout 50 --max-rechwp3 5 failed.
+Thu Dec 29 22:31:19 2022 - ERROR - oe_test_clamav_clamscan_3.sh line 49
+oe_test_clamav_clamscan_3.sh: line 50: /usr/bin/clamscan: No such file or directory
+Thu Dec 29 22:31:21 2022 - ERROR - Check clamscan --bytecode-unsigned test_virus_collection --statistics bytecode --pcre-match-limit 5 failed.
+Thu Dec 29 22:31:23 2022 - ERROR - oe_test_clamav_clamscan_3.sh line 51
+oe_test_clamav_clamscan_3.sh: line 52: /usr/bin/clamscan: No such file or directory
+Thu Dec 29 22:31:25 2022 - ERROR - Check clamscan --detect-pua test_virus_collection  --pcre-recmatch-limit 5 --phishing-sigs test_virus_collection --statistics pcre failed.
+Thu Dec 29 22:31:26 2022 - ERROR - oe_test_clamav_clamscan_3.sh line 53
+oe_test_clamav_clamscan_3.sh: line 54: /usr/bin/clamscan: No such file or directory
+Thu Dec 29 22:31:28 2022 - ERROR - Check clamscan --include-pua=CAT --detect-structured test_virus_collection --structured-ssn-format=2 --pcre-max-filesize 5 --statistics none failed.
+Thu Dec 29 22:31:30 2022 - ERROR - oe_test_clamav_clamscan_3.sh line 55
+oe_test_clamav_clamscan_3.sh: line 56: /usr/bin/clamscan: No such file or directory
+Thu Dec 29 22:31:31 2022 - ERROR - Check clamscan --structured-ssn-count 1 --structured-cc-count 1 --scan-mail test_virus_collection --disable-cache failed.
+Thu Dec 29 22:31:34 2022 - ERROR - oe_test_clamav_clamscan_3.sh line 57
+LibClamAV Error: cli_loaddbdir(): No supported database files found in /var/lib/clamav
+ERROR: Can't open file or directory
+Thu Dec 29 22:31:35 2022 - ERROR - Check clamscan --phishing-scan-urls test_virus_collection --heuristic-alerts test_virus_collection --heuristic-scan-precedence test_virus_collection failed.
+Thu Dec 29 22:31:37 2022 - ERROR - oe_test_clamav_clamscan_3.sh line 59
+LibClamAV Error: cli_loaddbdir(): No supported database files found in /var/lib/clamav
+ERROR: Can't open file or directory
+
+----------- SCAN SUMMARY -----------
+Known viruses: 0
+Engine version: 0.103.6
+Scanned directories: 0
+Scanned files: 0
+Infected files: 0
+Data scanned: 0.00 MB
+Data read: 0.00 MB (ratio 0.00:1)
+Time: 0.169 sec (0 m 0 s)
+Start Date: 2022:12:29 22:31:37
+End Date:   2022:12:29 22:31:37
+Thu Dec 29 22:31:39 2022 - ERROR - Check clamscan --normalize test_virus_collection --scan-pe test_virus_collection --alert-encrypted-doc test_virus_collection --alert-macros test_virus_collection failed.
+Thu Dec 29 22:31:41 2022 - ERROR - oe_test_clamav_clamscan_3.sh line 61
+LibClamAV Error: cli_loaddbdir(): No supported database files found in /var/lib/clamav
+ERROR: Can't open file or directory
+Thu Dec 29 22:31:43 2022 - ERROR - Check clamscan --alert-phishing-ssl test_virus_collection --alert-phishing-cloak test_virus_collection --alert-partition-intersection test_virus_collection --nocerts --dumpcerts --max-scantime 100 failed.
+Thu Dec 29 22:31:45 2022 - ERROR - oe_test_clamav_clamscan_3.sh line 63
+Thu Dec 29 22:31:47 2022 - INFO  - End to run test.
+Thu Dec 29 22:31:49 2022 - ERROR - failed to execute the case.
+Thu Dec 29 22:31:51 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 22:32:37 2022 - INFO  - End to restore the test environment.

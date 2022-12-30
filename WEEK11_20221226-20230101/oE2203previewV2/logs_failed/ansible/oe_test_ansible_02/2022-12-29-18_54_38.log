@@ -1,0 +1,104 @@
+Thu Dec 29 18:54:52 2022 - INFO  - Start to prepare the test environment.
+spawn ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Created directory '/root/.ssh'.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa
+Your public key has been saved in /root/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:5H5fFaGyGFH068YbOIoV9BebVzOQqdd7udk4BIXQjyE root@openEuler-riscv64
+The key's randomart image is:
++---[RSA 3072]----+
+|         .+= oo. |
+|          E =o+ .|
+|        .o o.O.+.|
+|       o. +.=.*.=|
+|        So o.* .+|
+|       .  . = o+.|
+|        ...o *..=|
+|        o...o.=o.|
+|       . .  .. . |
++----[SHA256]-----+
+spawn ssh-copy-id root@
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: ERROR: ssh: Could not resolve hostname : Name or service not known
+
+send: spawn id exp3 not open
+    while executing
+"send "yes\n""
+Thu Dec 29 18:58:55 2022 - INFO  - End to prepare the test environment.
+Thu Dec 29 18:58:57 2022 - INFO  - Start to run test.
+ansible-config 2.9.27
+  executable location = /usr/bin/ansible-config
+Thu Dec 29 18:59:21 2022 - ERROR - Check ansible-config --help failed.
+Thu Dec 29 18:59:22 2022 - ERROR - oe_test_ansible_02.sh line 30
+spawn ansible-config view
+wqWARNING: terminal is not fully functional
+Press RETURN to continue 
+# config file for ansible -- https://ansible.com/[m
+# ===============================================[m
+[m
+# nearly all parameters can be overridden in ansible-playbook[m
+# or with command line flags. ansible will read ANSIBLE_CONFIG,[m
+# ansible.cfg in the current working directory, .ansible.cfg in[m
+# the home directory or /etc/ansible/ansible.cfg, whichever it[m
+# finds first[m
+[m
+[defaults][m
+[m
+# some basic default values...[m
+[m
+#inventory      = /etc/ansible/hosts[m
+#library        = /usr/share/my_modules/[m
+#module_utils   = /usr/share/my_module_utils/[m
+#remote_tmp     = ~/.ansible/tmp[m
+#local_tmp      = ~/.ansible/tmp[m
+#plugin_filters_cfg = /etc/ansible/plugin_filters.yml[m
+#forks          = 5[m
+#poll_interval  = 15[m
+#sudo_user      = root[m
+#ask_sudo_pass = True[m
+:spawn ansible-config dump
+wqWARNING: terminal is not fully functional
+Press RETURN to continue 
+ACTION_WARNINGS(default) = True[m
+AGNOSTIC_BECOME_PROMPT(default) = True[m
+ALLOW_WORLD_READABLE_TMPFILES(default) = False[m
+ANSIBLE_CONNECTION_PATH(default) = None[m
+ANSIBLE_COW_PATH(default) = None[m
+ANSIBLE_COW_SELECTION(default) = default[m
+ANSIBLE_COW_WHITELIST(default) = ['bud-frogs', 'bunny', 'cheese', 'daemon', 'de[m>
+ANSIBLE_FORCE_COLOR(default) = False[m
+ANSIBLE_NOCOLOR(default) = False[m
+ANSIBLE_NOCOWS(default) = False[m
+ANSIBLE_PIPELINING(default) = False[m
+ANSIBLE_SSH_ARGS(default) = -C -o ControlMaster=auto -o ControlPersist=60s[m
+ANSIBLE_SSH_CONTROL_PATH(default) = None[m
+ANSIBLE_SSH_CONTROL_PATH_DIR(default) = ~/.ansible/cp[m
+ANSIBLE_SSH_EXECUTABLE(default) = ssh[m
+ANSIBLE_SSH_RETRIES(default) = 0[m
+ANY_ERRORS_FATAL(default) = False[m
+BECOME_ALLOW_SAME_USER(default) = False[m
+BECOME_PLUGIN_PATH(default) = ['/root/.ansible/plugins/become', '/usr/share/ans[m>
+CACHE_PLUGIN(default) = memory[m
+CACHE_PLUGIN_CONNECTION(default) = None[m
+CACHE_PLUGIN_PREFIX(default) = ansible_facts[m
+CACHE_PLUGIN_TIMEOUT(default) = 86400[m
+:spawn ansible-config list -v
+wqUsing /etc/ansible/ansible.cfg as config file
+Thu Dec 29 19:00:35 2022 - ERROR - Check ansible-console --help failed.
+Thu Dec 29 19:00:36 2022 - ERROR - oe_test_ansible_02.sh line 53
+ansible-console 2.9.27
+  executable location = /usr/bin/ansible-console
+spawn ansible-console
+ip a
+ls
+exit
+Thu Dec 29 19:01:02 2022 - INFO  - End to run test.
+Thu Dec 29 19:01:04 2022 - ERROR - failed to execute the case.
+Thu Dec 29 19:01:06 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 19:02:33 2022 - INFO  - End to restore the test environment.

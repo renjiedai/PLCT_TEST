@@ -1,0 +1,36 @@
+Thu Dec 29 21:12:53 2022 - INFO  - start to run testcase:oe_test_cobbler_distro.
+Thu Dec 29 21:21:24 2022 - ERROR - The case exit by code 9.
+Thu Dec 29 21:21:26 2022 - INFO  - End to run testcase:oe_test_cobbler_distro.
+Thu Dec 29 21:21:27 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 21:21:36 2022 - INFO  - start to run testcase:oe_test_cobbler_profile.
+Thu Dec 29 21:30:46 2022 - ERROR - The case exit by code 7.
+Thu Dec 29 21:30:48 2022 - INFO  - End to run testcase:oe_test_cobbler_profile.
+Thu Dec 29 21:30:49 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 21:30:58 2022 - INFO  - start to run testcase:oe_test_cobbler_system.
+Thu Dec 29 21:42:17 2022 - ERROR - The case exit by code 7.
+Thu Dec 29 21:42:19 2022 - INFO  - End to run testcase:oe_test_cobbler_system.
+Thu Dec 29 21:42:21 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 21:42:29 2022 - INFO  - start to run testcase:oe_test_cobbler_repo.
+Thu Dec 29 21:52:53 2022 - ERROR - The case exit by code 8.
+Thu Dec 29 21:52:56 2022 - INFO  - End to run testcase:oe_test_cobbler_repo.
+Thu Dec 29 21:52:59 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 21:53:12 2022 - INFO  - start to run testcase:oe_test_cobbler_image.
+Thu Dec 29 22:02:42 2022 - ERROR - The case exit by code 7.
+Thu Dec 29 22:02:44 2022 - INFO  - End to run testcase:oe_test_cobbler_image.
+Thu Dec 29 22:02:46 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 22:02:54 2022 - INFO  - start to run testcase:oe_test_cobbler_mgmtclass.
+Thu Dec 29 22:12:13 2022 - ERROR - The case exit by code 7.
+Thu Dec 29 22:12:15 2022 - INFO  - End to run testcase:oe_test_cobbler_mgmtclass.
+Thu Dec 29 22:12:17 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 22:12:25 2022 - INFO  - start to run testcase:oe_test_cobbler_package.
+Thu Dec 29 22:21:05 2022 - ERROR - The case exit by code 7.
+Thu Dec 29 22:21:06 2022 - INFO  - End to run testcase:oe_test_cobbler_package.
+Thu Dec 29 22:21:08 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 22:21:16 2022 - INFO  - start to run testcase:oe_test_cobbler_file.
+Thu Dec 29 22:30:45 2022 - ERROR - The case exit by code 8.
+Thu Dec 29 22:30:47 2022 - INFO  - End to run testcase:oe_test_cobbler_file.
+Thu Dec 29 22:30:49 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 22:30:59 2022 - INFO  - start to run testcase:oe_test_cobbler_other.
+Thu Dec 29 22:40:45 2022 - ERROR - The case exit by code 2.
+Thu Dec 29 22:40:47 2022 - INFO  - End to run testcase:oe_test_cobbler_other.
+Thu Dec 29 22:40:48 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.

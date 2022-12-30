@@ -1,0 +1,12 @@
+Thu Dec 29 17:32:37 2022 - INFO  - start to run testcase:oe_test_service_fstrim.
+Thu Dec 29 17:33:01 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 17:33:03 2022 - INFO  - End to run testcase:oe_test_service_fstrim.
+Thu Dec 29 17:33:04 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Thu Dec 29 17:33:12 2022 - INFO  - start to run testcase:oe_test_service_uuidd.
+Thu Dec 29 17:35:57 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 17:35:58 2022 - INFO  - End to run testcase:oe_test_service_uuidd.
+Thu Dec 29 17:36:00 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Thu Dec 29 17:36:10 2022 - INFO  - start to run testcase:oe_test_socket_uuidd.
+Thu Dec 29 17:38:49 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 17:38:51 2022 - INFO  - End to run testcase:oe_test_socket_uuidd.
+Thu Dec 29 17:38:52 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.

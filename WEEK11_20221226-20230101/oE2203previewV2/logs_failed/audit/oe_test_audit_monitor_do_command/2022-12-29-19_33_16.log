@@ -1,0 +1,22 @@
+Thu Dec 29 19:33:23 2022 - INFO  - Start to prepare the test environment.
+Thu Dec 29 19:33:25 2022 - INFO  - End to prepare the environment
+Thu Dec 29 19:33:27 2022 - INFO  - Start to run test.
+oe_test_audit_monitor_do_command.sh: line 31: service: command not found
+oe_test_audit_monitor_do_command.sh: line 32: auditctl: command not found
+Thu Dec 29 19:33:28 2022 - ERROR - clean failed
+Thu Dec 29 19:33:30 2022 - ERROR - oe_test_audit_monitor_do_command.sh line 33
+oe_test_audit_monitor_do_command.sh: line 34: auditctl: command not found
+Thu Dec 29 19:33:32 2022 - ERROR - add rule failed
+Thu Dec 29 19:33:33 2022 - ERROR - oe_test_audit_monitor_do_command.sh line 35
+oe_test_audit_monitor_do_command.sh: line 36: auditctl: command not found
+Thu Dec 29 19:33:35 2022 - ERROR - grep failed
+Thu Dec 29 19:33:36 2022 - ERROR - oe_test_audit_monitor_do_command.sh line 37
+/home/Jevons
+oe_test_audit_monitor_do_command.sh: line 42: ausearch: command not found
+Thu Dec 29 19:33:44 2022 - ERROR - ausearch failed
+Thu Dec 29 19:33:45 2022 - ERROR - oe_test_audit_monitor_do_command.sh line 43
+Thu Dec 29 19:33:47 2022 - INFO  - End to run test.
+Thu Dec 29 19:33:49 2022 - ERROR - failed to execute the case.
+oe_test_audit_monitor_do_command.sh: line 48: fOG_INFO: command not found
+oe_test_audit_monitor_do_command.sh: line 50: auditctl: command not found
+Thu Dec 29 19:33:52 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,12 @@
+Thu Dec 29 22:39:07 2022 - INFO  - start to run testcase:oe_test_dejagnu_runtest_01.
+Thu Dec 29 22:49:05 2022 - ERROR - The case exit by code 4.
+Thu Dec 29 22:49:07 2022 - INFO  - End to run testcase:oe_test_dejagnu_runtest_01.
+Thu Dec 29 22:49:09 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 22:49:17 2022 - INFO  - start to run testcase:oe_test_dejagnu_runtest_02.
+Thu Dec 29 22:51:44 2022 - ERROR - The case exit by code 1.
+Thu Dec 29 22:51:46 2022 - INFO  - End to run testcase:oe_test_dejagnu_runtest_02.
+Thu Dec 29 22:51:47 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 22:51:57 2022 - INFO  - start to run testcase:oe_test_dejagnu_runtest_03.
+Thu Dec 29 22:54:24 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 22:54:26 2022 - INFO  - End to run testcase:oe_test_dejagnu_runtest_03.
+Thu Dec 29 22:54:27 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.

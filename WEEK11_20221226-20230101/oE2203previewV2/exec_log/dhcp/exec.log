@@ -1,0 +1,20 @@
+Thu Dec 29 22:42:33 2022 - INFO  - start to run testcase:oe_test_service_dhcpd6.
+Thu Dec 29 22:43:29 2022 - ERROR - The case exit by code 7.
+Thu Dec 29 22:43:30 2022 - INFO  - End to run testcase:oe_test_service_dhcpd6.
+Thu Dec 29 22:43:31 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 22:43:37 2022 - INFO  - start to run testcase:oe_test_service_dhcpd.
+Thu Dec 29 22:44:35 2022 - ERROR - The case exit by code 7.
+Thu Dec 29 22:44:36 2022 - INFO  - End to run testcase:oe_test_service_dhcpd.
+Thu Dec 29 22:44:38 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 22:44:46 2022 - INFO  - start to run testcase:oe_test_service_dhcrelay.
+Thu Dec 29 22:45:59 2022 - ERROR - The case exit by code 7.
+Thu Dec 29 22:46:00 2022 - INFO  - End to run testcase:oe_test_service_dhcrelay.
+Thu Dec 29 22:46:01 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 22:46:08 2022 - INFO  - start to run testcase:oe_test_allocate_ipv4_addresses_dhcpd.
+Thu Dec 29 22:48:42 2022 - ERROR - The case exit by code 4.
+Thu Dec 29 22:48:43 2022 - INFO  - End to run testcase:oe_test_allocate_ipv4_addresses_dhcpd.
+Thu Dec 29 22:48:46 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 22:48:55 2022 - INFO  - start to run testcase:oe_test_allocate_ipv6_addresses_dhcpd.
+Thu Dec 29 22:51:30 2022 - ERROR - The case exit by code 4.
+Thu Dec 29 22:51:32 2022 - INFO  - End to run testcase:oe_test_allocate_ipv6_addresses_dhcpd.
+Thu Dec 29 22:51:34 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.

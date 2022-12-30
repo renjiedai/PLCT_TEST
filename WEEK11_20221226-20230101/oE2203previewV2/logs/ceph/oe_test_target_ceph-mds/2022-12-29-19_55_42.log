@@ -1,0 +1,18 @@
+Thu Dec 29 19:55:49 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 20:02:51 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 20:02:52 2022 - INFO  - Start to run test.
+     Active: active since Thu 2022-12-29 20:02:52 CST; 6s ago
+     Active: inactive (dead) since Thu 2022-12-29 20:02:59 CST; 6s ago
+     Active: active since Thu 2022-12-29 20:03:06 CST; 6s ago
+find: ‘/etc/systemd/system/ceph.target.wants/ceph-mds.target’: No such file or directory
+find: ‘/etc/systemd/system/multi-user.target.wants/ceph-mds.target’: No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/ceph-mds.target → /usr/lib/systemd/system/ceph-mds.target.
+Created symlink /etc/systemd/system/ceph.target.wants/ceph-mds.target → /usr/lib/systemd/system/ceph-mds.target.
+/etc/systemd/system/ceph.target.wants/ceph-mds.target
+/etc/systemd/system/multi-user.target.wants/ceph-mds.target
+Failed to reload ceph-mds.target: Job type reload is not applicable for unit ceph-mds.target.
+     Active: active since Thu 2022-12-29 20:03:06 CST; 29s ago
+Thu Dec 29 20:03:37 2022 - INFO  - End of the test.
+Thu Dec 29 20:03:39 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 20:03:41 2022 - INFO  - start environment cleanup.
+Thu Dec 29 20:05:12 2022 - INFO  - Finish environment cleanup!

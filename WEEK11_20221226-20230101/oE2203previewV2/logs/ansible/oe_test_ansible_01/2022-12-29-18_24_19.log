@@ -1,0 +1,48 @@
+Thu Dec 29 18:24:28 2022 - INFO  - Start to prepare the test environment.
+spawn ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Created directory '/root/.ssh'.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa
+Your public key has been saved in /root/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:NRJin3uZwMHnwHxjSOORhppyFN/bpNXKx9AdOslyX5M root@openEuler-riscv64
+The key's randomart image is:
++---[RSA 3072]----+
+|    ..o**o    .  |
+|    .o.*O*=+ + ..|
+|   . o..O*B.O .E.|
+|  . +    %.X o ..|
+|   o    S B o .  |
+|         . .     |
+|                 |
+|                 |
+|                 |
++----[SHA256]-----+
+spawn ssh-copy-id root@
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: ERROR: ssh: Could not resolve hostname : Name or service not known
+
+send: spawn id exp3 not open
+    while executing
+"send "yes\n""
+Thu Dec 29 18:28:43 2022 - INFO  - End to prepare the test environment.
+Thu Dec 29 18:28:45 2022 - INFO  - Start to run test.
+ansible 2.9.27
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3.9/site-packages/ansible
+  executable location = /usr/bin/ansible
+Thu Dec 29 18:29:15 2022 - ERROR - Check ansible --help failed.
+Thu Dec 29 18:29:17 2022 - ERROR - oe_test_ansible_01.sh line 30
+Thu Dec 29 18:53:32 2022 - INFO  - End to run test.
+Thu Dec 29 18:53:34 2022 - ERROR - failed to execute the case.
+Thu Dec 29 18:53:35 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 18:54:21 2022 - ERROR - Timeout : Command 'bash oe_test_ansible_01.sh' timed out after 1799.99645762 seconds
+Thu Dec 29 18:55:16 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 18:55:39 2022 - INFO  - End to restore the test environment.
+Thu Dec 29 18:55:41 2022 - INFO  - End to restore the test environment.

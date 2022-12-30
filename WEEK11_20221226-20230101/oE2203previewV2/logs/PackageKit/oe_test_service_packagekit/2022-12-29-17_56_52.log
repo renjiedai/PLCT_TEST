@@ -1,0 +1,13 @@
+Thu Dec 29 17:56:57 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 18:06:02 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 18:06:04 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-12-29 18:06:09 CST; 8s ago
+     Active: inactive (dead)
+     Active: active (running) since Thu 2022-12-29 18:06:27 CST; 7s ago
+Thu Dec 29 18:06:36 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload packagekit.service: Job type reload is not applicable for unit packagekit.service.
+     Active: active (running) since Thu 2022-12-29 18:06:27 CST; 9s ago
+Thu Dec 29 18:06:38 2022 - INFO  - Finish test!
+Thu Dec 29 18:06:40 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 18:06:41 2022 - INFO  - start environment cleanup.
+Thu Dec 29 18:08:18 2022 - INFO  - Finish environment cleanup!

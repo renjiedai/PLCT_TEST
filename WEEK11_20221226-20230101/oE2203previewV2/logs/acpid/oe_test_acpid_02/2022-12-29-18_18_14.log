@@ -1,0 +1,56 @@
+Thu Dec 29 18:18:21 2022 - INFO  - Start to prepare the test environment.
+Thu Dec 29 18:19:26 2022 - INFO  - End to prepare the test environment.
+Thu Dec 29 18:19:28 2022 - INFO  - Start to run test.
+acpid-2.0.33
+Usage: acpid [OPTIONS]
+spawn acpid --foreground
+RTNETLINK1 answers: No such file or directory
+acpid: error talking to the kernel via netlink
+starting up with netlink and the input layer
+^Cexiting
+spawn acpid --foreground --logevents
+RTNETLINK1 answers: No such file or directory
+acpid: error talking to the kernel via netlink
+starting up with netlink and the input layer
+1 rule loaded
+waiting for events: event logging is on
+^Cexiting
+spawn acpid --foreground --debug
+Deprecated /proc/acpi/event was not found.  Trying netlink and the input layer...
+inotify fd: 3
+inotify wd: 1
+input layer /dev/input/event0 (QEMU QEMU USB Keyboard) opened successfully, fd 4
+RTNETLINK1 answers: No such file or directory
+acpid: error talking to the kernel via netlink
+netlink opened successfully
+starting up with netlink and the input layer
+^Cparsing conf file /etc/acpi/events/powerconf
+exiting
+spawn acpid --foreground --debug --netlink
+inotify fd: 3
+inotify wd: 1
+input layer /dev/input/event0 (QEMU QEMU USB Keyboard) opened successfully, fd 4
+RTNETLINK1 answers: No such file or directory
+acpid: error talking to the kernel via netlink
+netlink opened successfully
+starting up with netlink and the input layer^Csrw-rw-rw-  1 root root      0 Dec 29 18:19 acpid.socket
+RTNETLINK1 answers: No such file or directory
+acpid: error talking to the kernel via netlink
+srw-rw-rw-  1 root test      0 Dec 29 18:19 acpid.socket
+RTNETLINK1 answers: No such file or directory
+acpid: error talking to the kernel via netlink
+srw-rw-rw-  1 root root      0 Dec 29 18:19 acpid.socket
+RTNETLINK1 answers: No such file or directory
+acpid: error talking to the kernel via netlink
+srwxrwxrwx  1 root root      0 Dec 29 18:19 acpid.socket
+RTNETLINK1 answers: No such file or directory
+acpid: error talking to the kernel via netlink
+RTNETLINK1 answers: No such file or directory
+acpid: error talking to the kernel via netlink
+-rw-r--r--  1 root root      5 Dec 29 18:19 acpid.test.pid
+RTNETLINK1 answers: No such file or directory
+acpid: error talking to the kernel via netlink
+Thu Dec 29 18:19:50 2022 - INFO  - End to run test.
+Thu Dec 29 18:19:51 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 18:19:52 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 18:20:24 2022 - INFO  - End to restore the test environment.

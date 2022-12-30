@@ -1,0 +1,48 @@
+Thu Dec 29 21:13:00 2022 - INFO  - Start environmental preparation.
+mount: /mnt: special device /dev/cdrom does not exist.
+Thu Dec 29 21:17:00 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 21:17:02 2022 - INFO  - Start to run testcase.
+cobblerd does not appear to be running/accessible: ConnectionRefusedError(111, 'Connection refused')
+Traceback (most recent call last):
+  File "/usr/bin/cobbler", line 35, in <module>
+    sys.exit(app.main())
+  File "/usr/lib/python3.9/site-packages/cobbler/cli.py", line 852, in main
+    rc = cli.run(sys.argv)
+  File "/usr/lib/python3.9/site-packages/cobbler/cli.py", line 418, in run
+    self.token = self.remote.login("", self.shared_secret)
+  File "/usr/lib64/python3.9/xmlrpc/client.py", line 1122, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib64/python3.9/xmlrpc/client.py", line 1464, in __request
+    response = self.__transport.request(
+  File "/usr/lib64/python3.9/xmlrpc/client.py", line 1166, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib64/python3.9/xmlrpc/client.py", line 1196, in single_request
+    raise ProtocolError(
+xmlrpc.client.ProtocolError: <ProtocolError for 127.0.0.1:80/cobbler_api: 503 Service Unavailable>
+Thu Dec 29 21:17:19 2022 - ERROR - Failed option: distro add
+Thu Dec 29 21:17:21 2022 - ERROR - oe_test_cobbler_distro.sh line 34
+Thu Dec 29 21:17:32 2022 - ERROR - Failed option: distro add
+Thu Dec 29 21:17:34 2022 - ERROR - oe_test_cobbler_distro.sh line 36
+Thu Dec 29 21:17:45 2022 - ERROR - Failed option: distro add
+Thu Dec 29 21:17:47 2022 - ERROR - oe_test_cobbler_distro.sh line 38
+exception on server: 'internal error, unknown distro name OpenEuler1'
+Thu Dec 29 21:18:08 2022 - ERROR - Failed option: distro copy
+Thu Dec 29 21:18:09 2022 - ERROR - oe_test_cobbler_distro.sh line 42
+exception on server: 'internal error, unknown distro name openEuler1'
+Thu Dec 29 21:18:29 2022 - ERROR - Failed option: distro edit
+Thu Dec 29 21:18:30 2022 - ERROR - oe_test_cobbler_distro.sh line 46
+Thu Dec 29 21:18:40 2022 - ERROR - Failed option: distro list
+Thu Dec 29 21:18:42 2022 - ERROR - oe_test_cobbler_distro.sh line 48
+Thu Dec 29 21:18:53 2022 - ERROR - Failed option: distro find
+Thu Dec 29 21:18:54 2022 - ERROR - oe_test_cobbler_distro.sh line 50
+exception on server: 'internal error, unknown distro name OpenEuler1'
+exception on server: 'internal error, unknown distro name OpenEuler2'
+Thu Dec 29 21:19:35 2022 - ERROR - Failed option: distro rename
+Thu Dec 29 21:19:36 2022 - ERROR - oe_test_cobbler_distro.sh line 58
+Thu Dec 29 21:19:48 2022 - ERROR - Failed option: distro report
+Thu Dec 29 21:19:49 2022 - ERROR - oe_test_cobbler_distro.sh line 60
+Thu Dec 29 21:19:51 2022 - INFO  - End to run testcase.
+Thu Dec 29 21:19:52 2022 - ERROR - failed to execute the case.
+Thu Dec 29 21:19:53 2022 - INFO  - Start to restore the test environment.
+umount: /dev/cdrom: no mount point specified.
+Thu Dec 29 21:21:23 2022 - INFO  - End to restore the test environment.

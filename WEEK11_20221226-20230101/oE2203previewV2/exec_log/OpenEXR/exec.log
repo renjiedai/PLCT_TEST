@@ -1,0 +1,28 @@
+Thu Dec 29 17:40:33 2022 - INFO  - start to run testcase:oe_test_OpenEXR_cmd.
+Thu Dec 29 17:49:30 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 17:49:32 2022 - INFO  - End to run testcase:oe_test_OpenEXR_cmd.
+Thu Dec 29 17:49:33 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Thu Dec 29 17:49:40 2022 - INFO  - start to run testcase:oe_test_OpenEXR_exrenvmap_exrmakepreview.
+Thu Dec 29 18:01:06 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 18:01:08 2022 - INFO  - End to run testcase:oe_test_OpenEXR_exrenvmap_exrmakepreview.
+Thu Dec 29 18:01:10 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Thu Dec 29 18:01:17 2022 - INFO  - start to run testcase:oe_test_OpenEXR_exrenvmap.
+Thu Dec 29 18:26:20 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 18:26:22 2022 - INFO  - End to run testcase:oe_test_OpenEXR_exrenvmap.
+Thu Dec 29 18:26:24 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Thu Dec 29 18:26:32 2022 - INFO  - start to run testcase:oe_test_OpenEXR_exrmaketiled.
+Thu Dec 29 18:34:19 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 18:34:21 2022 - INFO  - End to run testcase:oe_test_OpenEXR_exrmaketiled.
+Thu Dec 29 18:34:22 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Thu Dec 29 18:34:29 2022 - INFO  - start to run testcase:oe_test_OpenEXR_exrstdattr_01.
+Thu Dec 29 18:42:32 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 18:42:34 2022 - INFO  - End to run testcase:oe_test_OpenEXR_exrstdattr_01.
+Thu Dec 29 18:42:35 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Thu Dec 29 18:42:42 2022 - INFO  - start to run testcase:oe_test_OpenEXR_exrstdattr_02.
+Thu Dec 29 18:50:45 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 18:50:46 2022 - INFO  - End to run testcase:oe_test_OpenEXR_exrstdattr_02.
+Thu Dec 29 18:50:48 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Thu Dec 29 18:50:55 2022 - INFO  - start to run testcase:oe_test_OpenEXR_exrstdattr_03.
+Thu Dec 29 18:59:17 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 18:59:19 2022 - INFO  - End to run testcase:oe_test_OpenEXR_exrstdattr_03.
+Thu Dec 29 18:59:20 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.

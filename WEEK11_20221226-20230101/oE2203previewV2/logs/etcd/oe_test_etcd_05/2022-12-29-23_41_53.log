@@ -1,0 +1,12 @@
+Thu Dec 29 23:42:01 2022 - INFO  - Start to prepare the test environment.
+Thu Dec 29 23:44:08 2022 - INFO  - End to prepare the test environment.
+Thu Dec 29 23:44:10 2022 - INFO  - Start to run test.
+     Active: active (running) since Thu 2022-12-29 23:44:07 CST; 3s ago
+Finished defragmenting etcd member[127.0.0.1:2379]
+:2379, 8e9e05c52164694d, 3.4.14, 20 kB, true, false, 8, 51, 51, 
+PASS: Approximate system memory used : 56.71 MB.
+PASS: Stddev is 0.074664s
+Thu Dec 29 23:46:41 2022 - INFO  - End to run test.
+Thu Dec 29 23:46:42 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 23:46:44 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 23:47:29 2022 - INFO  - End to restore the test environment.

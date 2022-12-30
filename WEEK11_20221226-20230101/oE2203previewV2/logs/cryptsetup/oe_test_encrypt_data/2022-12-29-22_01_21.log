@@ -1,0 +1,40 @@
+Thu Dec 29 22:01:29 2022 - INFO  - Start loading data!
+Thu Dec 29 22:01:47 2022 - INFO  - Loading data is complete!
+Thu Dec 29 22:01:49 2022 - INFO  - Start environmental preparation.
+fdisk: cannot open /dev/vdb vdc vdd vde vdf vdg vdh vdi vdj: No such file or directory
+
+Welcome to fdisk (util-linux 2.37.2).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+Thu Dec 29 22:03:07 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 22:03:09 2022 - INFO  - Start executing testcase.
+Cannot open device /dev/vdb vdc vdd vde vdf vdg vdh vdi vdj1.
+Thu Dec 29 22:03:11 2022 - ERROR - Disk encryption failed
+Thu Dec 29 22:03:12 2022 - ERROR - oe_test_encrypt_data.sh line 39
+Device /dev/vdb vdc vdd vde vdf vdg vdh vdi vdj1 does not exist or access denied.
+Thu Dec 29 22:03:14 2022 - ERROR - Disk mapping failed
+Thu Dec 29 22:03:16 2022 - ERROR - oe_test_encrypt_data.sh line 41
+mke2fs 1.46.4 (18-Aug-2021)
+The file /dev/mapper/test_encrypted does not exist and no size was specified.
+Thu Dec 29 22:03:18 2022 - ERROR - Failed to format partition
+Thu Dec 29 22:03:19 2022 - ERROR - oe_test_encrypt_data.sh line 43
+mount: /mnt/test_encrypted: special device /dev/mapper/test_encrypted does not exist.
+Thu Dec 29 22:03:21 2022 - ERROR - Disk mount failed
+Thu Dec 29 22:03:23 2022 - ERROR - oe_test_encrypt_data.sh line 45
+Thu Dec 29 22:03:24 2022 - INFO  - Finish testcase execution.
+Thu Dec 29 22:03:26 2022 - ERROR - failed to execute the case.
+Thu Dec 29 22:03:28 2022 - INFO  - start environment cleanup.
+umount: /mnt/test_encrypted: not mounted.
+Cannot initialize device-mapper. Is dm_mod kernel module loaded?
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: invalid blocks 'vdc' on device '/dev/vdb'
+fdisk: cannot open /dev/vdb vdc vdd vde vdf vdg vdh vdi vdj: No such file or directory
+
+Welcome to fdisk (util-linux 2.37.2).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: invalid blocks 'vdc' on device '/dev/vdb'
+Thu Dec 29 22:03:59 2022 - INFO  - Finish environment cleanup!

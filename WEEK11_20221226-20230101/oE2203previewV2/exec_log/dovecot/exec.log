@@ -1,0 +1,28 @@
+Thu Dec 29 23:08:39 2022 - INFO  - start to run testcase:oe_test_service_dovecot-init.
+Thu Dec 29 23:11:54 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 23:11:56 2022 - INFO  - End to run testcase:oe_test_service_dovecot-init.
+Thu Dec 29 23:11:58 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Thu Dec 29 23:12:08 2022 - INFO  - start to run testcase:oe_test_service_dovecot.
+Thu Dec 29 23:16:46 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 23:16:48 2022 - INFO  - End to run testcase:oe_test_service_dovecot.
+Thu Dec 29 23:16:50 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Thu Dec 29 23:16:58 2022 - INFO  - start to run testcase:oe_test_socket_dovecot.
+Thu Dec 29 23:21:03 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 23:21:04 2022 - INFO  - End to run testcase:oe_test_socket_dovecot.
+Thu Dec 29 23:21:06 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Thu Dec 29 23:21:13 2022 - INFO  - start to run testcase:oe_test_dovecot_basic.
+Thu Dec 29 23:24:26 2022 - ERROR - The case exit by code 1.
+Thu Dec 29 23:24:28 2022 - INFO  - End to run testcase:oe_test_dovecot_basic.
+Thu Dec 29 23:24:29 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 23:24:37 2022 - INFO  - start to run testcase:oe_test_dovecot_doveadm_1.
+Thu Dec 29 23:28:14 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 23:28:15 2022 - INFO  - End to run testcase:oe_test_dovecot_doveadm_1.
+Thu Dec 29 23:28:17 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Thu Dec 29 23:28:24 2022 - INFO  - start to run testcase:oe_test_dovecot_doveadm_2.
+Thu Dec 29 23:31:57 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 23:31:59 2022 - INFO  - End to run testcase:oe_test_dovecot_doveadm_2.
+Thu Dec 29 23:32:01 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Thu Dec 29 23:32:10 2022 - INFO  - start to run testcase:oe_test_dovecot_doveadm_3.
+Thu Dec 29 23:35:42 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 23:35:44 2022 - INFO  - End to run testcase:oe_test_dovecot_doveadm_3.
+Thu Dec 29 23:35:45 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.

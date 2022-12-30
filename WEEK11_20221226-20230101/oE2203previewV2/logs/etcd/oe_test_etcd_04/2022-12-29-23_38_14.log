@@ -1,0 +1,27 @@
+Thu Dec 29 23:38:20 2022 - INFO  - Start to prepare the test environment.
+Thu Dec 29 23:40:18 2022 - INFO  - End to prepare the test environment.
+Thu Dec 29 23:40:20 2022 - INFO  - Start to run test.
+     Active: active (running) since Thu 2022-12-29 23:40:16 CST; 4s ago
+spawn etcdctl user add root
+Password of root: 123456
+
+Type password of root again for confirmation: 123456
+
+User root created
+spawn etcdctl user passwd root
+Password of root: 12345
+
+Type password of root again for confirmation: 12345
+
+Password updated
+Password updated
+lease 694d855e8a89bb06 granted with TTL(100s)
+lease 694d855e8a89bb08 keepalived with TTL(100)
+lease 694d855e8a89bb08 granted with TTL(100s), remaining(88s), attached keys([])
+694d855e8a89bb08
+lease 694d855e8a89bb08 revoked
+User root deleted
+Thu Dec 29 23:40:55 2022 - INFO  - End to run test.
+Thu Dec 29 23:40:56 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 23:40:58 2022 - INFO  - Start to restore the test environment.
+Thu Dec 29 23:41:38 2022 - INFO  - End to restore the test environment.

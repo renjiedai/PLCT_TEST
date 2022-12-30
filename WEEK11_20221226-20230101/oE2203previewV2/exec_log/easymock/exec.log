@@ -1,0 +1,48 @@
+Thu Dec 29 23:13:07 2022 - INFO  - start to run testcase:oe_test_easymock_junit4.
+Thu Dec 29 23:38:08 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 23:38:10 2022 - INFO  - End to run testcase:oe_test_easymock_junit4.
+Thu Dec 29 23:38:11 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Thu Dec 29 23:38:19 2022 - INFO  - start to run testcase:oe_test_easymock_order_abnormal.
+Thu Dec 29 23:45:39 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 23:45:42 2022 - INFO  - End to run testcase:oe_test_easymock_order_abnormal.
+Thu Dec 29 23:45:44 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Thu Dec 29 23:45:55 2022 - INFO  - start to run testcase:oe_test_easymock_set_parms.
+Thu Dec 29 23:51:27 2022 - INFO  - The case exit by code 0.
+Thu Dec 29 23:51:28 2022 - INFO  - End to run testcase:oe_test_easymock_set_parms.
+Thu Dec 29 23:51:29 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Thu Dec 29 23:51:35 2022 - INFO  - start to run testcase:oe_test_easymock_spring.
+Thu Dec 29 23:56:25 2022 - ERROR - The case exit by code 2.
+Thu Dec 29 23:56:26 2022 - INFO  - End to run testcase:oe_test_easymock_spring.
+Thu Dec 29 23:56:27 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Dec 29 23:56:33 2022 - INFO  - start to run testcase:oe_test_easymock_createNiceMock.
+Fri Dec 30 00:00:32 2022 - INFO  - The case exit by code 0.
+Fri Dec 30 00:00:33 2022 - INFO  - End to run testcase:oe_test_easymock_createNiceMock.
+Fri Dec 30 00:00:34 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Fri Dec 30 00:00:39 2022 - INFO  - start to run testcase:oe_test_easymock_junit5.
+Fri Dec 30 00:13:56 2022 - INFO  - The case exit by code 0.
+Fri Dec 30 00:13:57 2022 - INFO  - End to run testcase:oe_test_easymock_junit5.
+Fri Dec 30 00:13:58 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Fri Dec 30 00:14:03 2022 - INFO  - start to run testcase:oe_test_easymock_parms_abnormal.
+Fri Dec 30 00:17:56 2022 - INFO  - The case exit by code 0.
+Fri Dec 30 00:17:57 2022 - INFO  - End to run testcase:oe_test_easymock_parms_abnormal.
+Fri Dec 30 00:17:58 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Fri Dec 30 00:18:03 2022 - INFO  - start to run testcase:oe_test_easymock_simulate_interface.
+Fri Dec 30 00:21:54 2022 - INFO  - The case exit by code 0.
+Fri Dec 30 00:21:55 2022 - INFO  - End to run testcase:oe_test_easymock_simulate_interface.
+Fri Dec 30 00:21:56 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Fri Dec 30 00:22:01 2022 - INFO  - start to run testcase:oe_test_easymock_frequency_abnormal.
+Fri Dec 30 00:25:52 2022 - INFO  - The case exit by code 0.
+Fri Dec 30 00:25:53 2022 - INFO  - End to run testcase:oe_test_easymock_frequency_abnormal.
+Fri Dec 30 00:25:53 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Fri Dec 30 00:25:58 2022 - INFO  - start to run testcase:oe_test_easymock_mock_abnormal.
+Fri Dec 30 00:29:49 2022 - INFO  - The case exit by code 0.
+Fri Dec 30 00:29:50 2022 - INFO  - End to run testcase:oe_test_easymock_mock_abnormal.
+Fri Dec 30 00:29:51 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Fri Dec 30 00:29:55 2022 - INFO  - start to run testcase:oe_test_easymock_parms_match.
+Fri Dec 30 00:33:46 2022 - INFO  - The case exit by code 0.
+Fri Dec 30 00:33:47 2022 - INFO  - End to run testcase:oe_test_easymock_parms_match.
+Fri Dec 30 00:33:48 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Fri Dec 30 00:33:52 2022 - INFO  - start to run testcase:oe_test_easymock_simulate_object.
+Fri Dec 30 00:38:46 2022 - INFO  - The case exit by code 0.
+Fri Dec 30 00:38:47 2022 - INFO  - End to run testcase:oe_test_easymock_simulate_object.
+Fri Dec 30 00:38:48 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.

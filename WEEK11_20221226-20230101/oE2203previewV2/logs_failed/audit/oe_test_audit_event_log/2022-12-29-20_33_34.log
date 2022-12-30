@@ -1,0 +1,17 @@
+Thu Dec 29 20:33:42 2022 - INFO  - Start environmental preparation.
+oe_test_audit_event_log.sh: line 24: auditctl: command not found
+oe_test_audit_event_log.sh: line 25: service: command not found
+Thu Dec 29 20:33:44 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 20:33:45 2022 - INFO  - Start executing testcase.
+oe_test_audit_event_log.sh: line 31: auditctl: command not found
+Thu Dec 29 20:33:47 2022 - ERROR - For '/etc/ssh/sshd_config' file setting auditctl rules failed
+Thu Dec 29 20:33:49 2022 - ERROR - oe_test_audit_event_log.sh line 32
+grep: /var/log/audit/audit.log: No such file or directory
+Thu Dec 29 20:33:51 2022 - ERROR - Failed to find 'sshd_config' from '/var/log/audit/audit.log' file
+Thu Dec 29 20:33:53 2022 - ERROR - oe_test_audit_event_log.sh line 34
+Thu Dec 29 20:33:55 2022 - INFO  - Finish testcase execution.
+Thu Dec 29 20:33:57 2022 - ERROR - failed to execute the case.
+Thu Dec 29 20:33:59 2022 - INFO  - start environment cleanup.
+oe_test_audit_event_log.sh: line 40: auditctl: command not found
+oe_test_audit_event_log.sh: line 41: service: command not found
+Thu Dec 29 20:34:01 2022 - INFO  - Finish environment cleanup!

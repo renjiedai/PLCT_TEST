@@ -1,0 +1,15 @@
+Thu Dec 29 18:02:33 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 18:04:29 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 18:04:31 2022 - INFO  - Start testing...
+     Active: active (exited) since Thu 2022-12-29 18:04:36 CST; 7s ago
+     Active: inactive (dead) since Thu 2022-12-29 18:04:43 CST; 6s ago
+     Active: active (exited) since Thu 2022-12-29 18:04:55 CST; 6s ago
+find: ‘/etc/systemd/system/multi-user.target.wants/abrt-vmcore.service’: No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/abrt-vmcore.service → /usr/lib/systemd/system/abrt-vmcore.service.
+/etc/systemd/system/multi-user.target.wants/abrt-vmcore.service
+Failed to reload abrt-vmcore.service: Job type reload is not applicable for unit abrt-vmcore.service.
+     Active: active (exited) since Thu 2022-12-29 18:04:55 CST; 30s ago
+Thu Dec 29 18:05:26 2022 - INFO  - Finish test!
+Thu Dec 29 18:05:28 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 18:05:30 2022 - INFO  - start environment cleanup.
+Thu Dec 29 18:06:28 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,28 @@
+Thu Dec 29 20:34:26 2022 - INFO  - Start executing testcase.
+oe_test_audit_other.sh: line 23: service: command not found
+Thu Dec 29 20:34:28 2022 - ERROR - Failed to start auditd service
+Thu Dec 29 20:34:29 2022 - ERROR - oe_test_audit_other.sh line 24
+oe_test_audit_other.sh: line 25: service: command not found
+Thu Dec 29 20:34:31 2022 - ERROR - Failed to stop auditd service
+Thu Dec 29 20:34:33 2022 - ERROR - oe_test_audit_other.sh line 26
+oe_test_audit_other.sh: line 27: service: command not found
+Thu Dec 29 20:34:34 2022 - ERROR - Failed to restart auditd service
+Thu Dec 29 20:34:36 2022 - ERROR - oe_test_audit_other.sh line 28
+oe_test_audit_other.sh: line 29: service: command not found
+Thu Dec 29 20:34:37 2022 - ERROR - Failed to reload auditd service
+Thu Dec 29 20:34:39 2022 - ERROR - oe_test_audit_other.sh line 30
+oe_test_audit_other.sh: line 31: service: command not found
+Thu Dec 29 20:34:41 2022 - ERROR - Failed to rotate auditd service
+Thu Dec 29 20:34:42 2022 - ERROR - oe_test_audit_other.sh line 32
+oe_test_audit_other.sh: line 33: service: command not found
+Thu Dec 29 20:34:44 2022 - ERROR - Failed to resume auditd service
+Thu Dec 29 20:34:46 2022 - ERROR - oe_test_audit_other.sh line 34
+oe_test_audit_other.sh: line 35: service: command not found
+Thu Dec 29 20:34:48 2022 - ERROR - Failed to condrestart auditd service
+Thu Dec 29 20:34:49 2022 - ERROR - oe_test_audit_other.sh line 36
+Unit auditd.service could not be found.
+Thu Dec 29 20:34:51 2022 - ERROR - Failed to systemctl auditd services with running status
+Thu Dec 29 20:34:53 2022 - ERROR - oe_test_audit_other.sh line 38
+Thu Dec 29 20:34:55 2022 - INFO  - Finish testcase execution.
+Thu Dec 29 20:34:56 2022 - ERROR - failed to execute the case.
+Thu Dec 29 20:34:58 2022 - INFO  - oe_test_audit_other.sh post_test

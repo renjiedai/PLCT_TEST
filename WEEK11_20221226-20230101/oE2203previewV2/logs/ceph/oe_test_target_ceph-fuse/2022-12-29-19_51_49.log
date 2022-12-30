@@ -1,0 +1,18 @@
+Thu Dec 29 19:51:56 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 19:53:47 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 19:53:50 2022 - INFO  - Start to run test.
+     Active: active since Thu 2022-12-29 19:53:50 CST; 8s ago
+     Active: inactive (dead)
+     Active: active since Thu 2022-12-29 19:54:07 CST; 7s ago
+/etc/systemd/system/remote-fs.target.wants/ceph-fuse.target
+/etc/systemd/system/ceph.target.wants/ceph-fuse.target
+Removed /etc/systemd/system/remote-fs.target.wants/ceph-fuse.target.
+Removed /etc/systemd/system/ceph.target.wants/ceph-fuse.target.
+find: ‘/etc/systemd/system/remote-fs.target.wants/ceph-fuse.target’: No such file or directory
+find: ‘/etc/systemd/system/ceph.target.wants/ceph-fuse.target’: No such file or directory
+Failed to reload ceph-fuse.target: Job type reload is not applicable for unit ceph-fuse.target.
+     Active: active since Thu 2022-12-29 19:54:07 CST; 30s ago
+Thu Dec 29 19:54:39 2022 - INFO  - End of the test.
+Thu Dec 29 19:54:42 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 19:54:43 2022 - INFO  - start environment cleanup.
+Thu Dec 29 19:55:28 2022 - INFO  - Finish environment cleanup!

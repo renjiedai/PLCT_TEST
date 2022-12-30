@@ -1,0 +1,20 @@
+Thu Dec 29 21:41:23 2022 - INFO  - Start environmental preparation.
+oe_test_container-exception-logger.sh: line 29: openEuler-docker.riscv64.tar.xz: No such file or directory
+Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+time="2022-12-29T21:45:10+08:00" level=error msg="failed to dial gRPC: cannot connect to the Docker daemon. Is 'docker daemon' running on this host?: dial unix /var/run/docker.sock: connect: connection refused"
+Thu Dec 29 21:45:12 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 21:45:14 2022 - INFO  - Start testing...
+Thu Dec 29 21:45:17 2022 - ERROR - test failed without option
+Thu Dec 29 21:45:19 2022 - ERROR - oe_test_container-exception-logger.sh line 45
+Thu Dec 29 21:45:23 2022 - ERROR - test failed with option --help
+Thu Dec 29 21:45:25 2022 - ERROR - oe_test_container-exception-logger.sh line 48
+Thu Dec 29 21:45:28 2022 - ERROR - test failed with option --no-tag
+Thu Dec 29 21:45:30 2022 - ERROR - oe_test_container-exception-logger.sh line 51
+Thu Dec 29 21:45:34 2022 - ERROR - test failed with option --tag
+Thu Dec 29 21:45:35 2022 - ERROR - oe_test_container-exception-logger.sh line 54
+Thu Dec 29 21:45:37 2022 - INFO  - Finish test!
+Thu Dec 29 21:45:39 2022 - ERROR - failed to execute the case.
+Thu Dec 29 21:45:41 2022 - INFO  - start environment cleanup.
+Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+Thu Dec 29 21:46:31 2022 - INFO  - Finish environment cleanup!

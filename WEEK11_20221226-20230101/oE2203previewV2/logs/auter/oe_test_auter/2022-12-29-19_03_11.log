@@ -1,0 +1,19 @@
+Thu Dec 29 19:03:17 2022 - INFO  - Start to prepare the test environment!
+Thu Dec 29 19:04:18 2022 - INFO  - End to prepare the test environment!
+Thu Dec 29 19:04:20 2022 - INFO  - Start to run test.
+Usage: auter [--enable|--disable|--status] [--prep] [--apply] [--reboot] [--postreboot] [--config=<configfile>] [OPTIONS]
+auter 1.0.0
+auter is currently enabled and not running
+auter is currently disabled
+Thu Dec 29 19:04:25 2022 - ERROR - Enable the failure
+Thu Dec 29 19:04:26 2022 - ERROR - oe_test_auter.sh line 40
+Thu Dec 29 19:04:51 2022 - ERROR - Predownload failed
+Thu Dec 29 19:04:53 2022 - ERROR - oe_test_auter.sh line 42
+Thu Dec 29 19:05:06 2022 - ERROR - Application of failure
+Thu Dec 29 19:05:07 2022 - ERROR - oe_test_auter.sh line 44
+Thu Dec 29 19:10:10 2022 - ERROR - Postreboot of failure
+Thu Dec 29 19:10:11 2022 - ERROR - oe_test_auter.sh line 46
+Thu Dec 29 19:10:13 2022 - INFO  - End to run test.
+Thu Dec 29 19:10:14 2022 - ERROR - failed to execute the case.
+Thu Dec 29 19:10:15 2022 - INFO  - start environment cleanup.
+Thu Dec 29 19:10:38 2022 - INFO  - Finish environment cleanup!

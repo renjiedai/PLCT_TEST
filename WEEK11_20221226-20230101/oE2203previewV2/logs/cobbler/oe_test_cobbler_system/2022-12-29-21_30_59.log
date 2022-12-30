@@ -1,0 +1,60 @@
+Thu Dec 29 21:31:06 2022 - INFO  - Start environmental preparation.
+mount: /mnt: special device /dev/cdrom does not exist.
+cobblerd does not appear to be running/accessible: ConnectionRefusedError(111, 'Connection refused')
+Traceback (most recent call last):
+  File "/usr/bin/cobbler", line 35, in <module>
+    sys.exit(app.main())
+  File "/usr/lib/python3.9/site-packages/cobbler/cli.py", line 852, in main
+    rc = cli.run(sys.argv)
+  File "/usr/lib/python3.9/site-packages/cobbler/cli.py", line 418, in run
+    self.token = self.remote.login("", self.shared_secret)
+  File "/usr/lib64/python3.9/xmlrpc/client.py", line 1122, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib64/python3.9/xmlrpc/client.py", line 1464, in __request
+    response = self.__transport.request(
+  File "/usr/lib64/python3.9/xmlrpc/client.py", line 1166, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib64/python3.9/xmlrpc/client.py", line 1196, in single_request
+    raise ProtocolError(
+xmlrpc.client.ProtocolError: <ProtocolError for 127.0.0.1:80/cobbler_api: 503 Service Unavailable>
+exception on server: 'distribution not found'
+Thu Dec 29 21:36:14 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 21:36:16 2022 - INFO  - Start to run testcase.
+exception on server: 'invalid profile name: OpenEuler'
+exception on server: 'internal error, unknown system name OpenEuler1'
+Thu Dec 29 21:36:52 2022 - ERROR - Failed option: sysetm copy
+Thu Dec 29 21:36:54 2022 - ERROR - oe_test_cobbler_system.sh line 40
+Thu Dec 29 21:37:07 2022 - ERROR - Failed option: system dumpvars
+Thu Dec 29 21:37:09 2022 - ERROR - oe_test_cobbler_system.sh line 42
+exception on server: 'internal error, unknown system name openEuler1'
+Thu Dec 29 21:37:34 2022 - ERROR - Failed option: system edit
+Thu Dec 29 21:37:35 2022 - ERROR - oe_test_cobbler_system.sh line 46
+Thu Dec 29 21:37:47 2022 - ERROR - Failed option: system list
+Thu Dec 29 21:37:48 2022 - ERROR - oe_test_cobbler_system.sh line 48
+Thu Dec 29 21:38:01 2022 - ERROR - Failed option: system find
+Thu Dec 29 21:38:02 2022 - ERROR - oe_test_cobbler_system.sh line 50
+exception on server: 'internal error, unknown system name OpenEuler1'
+exception on server: 'internal error, unknown system name OpenEuler2'
+Thu Dec 29 21:38:50 2022 - ERROR - Failed option: system rename
+Thu Dec 29 21:38:52 2022 - ERROR - oe_test_cobbler_system.sh line 58
+Thu Dec 29 21:39:06 2022 - ERROR - Failed option: system report
+Thu Dec 29 21:39:07 2022 - ERROR - oe_test_cobbler_system.sh line 60
+# system not found
+task started: 2022-12-29_213930_power
+running python triggers from /var/lib/cobbler/triggers/task/power/pre/*
+running shell triggers from /var/lib/cobbler/triggers/task/power/pre/*
+failed to execute power task on OpenEuler3, exception: 'internal error, unknown system name OpenEuler3'
+task started: 2022-12-29_213945_power
+running python triggers from /var/lib/cobbler/triggers/task/power/pre/*
+running shell triggers from /var/lib/cobbler/triggers/task/power/pre/*
+failed to execute power task on OpenEuler3, exception: 'internal error, unknown system name OpenEuler3'
+task started: 2022-12-29_213958_power
+running python triggers from /var/lib/cobbler/triggers/task/power/pre/*
+running shell triggers from /var/lib/cobbler/triggers/task/power/pre/*
+failed to execute power task on OpenEuler3, exception: 'internal error, unknown system name OpenEuler3'
+task started (id=Power management (reboot), time=Thu Dec 29 21:40:12 2022)
+Thu Dec 29 21:40:16 2022 - INFO  - End to run testcase.
+Thu Dec 29 21:40:17 2022 - ERROR - failed to execute the case.
+Thu Dec 29 21:40:20 2022 - INFO  - Start to restore the test environment.
+umount: /dev/cdrom: no mount point specified.
+Thu Dec 29 21:42:15 2022 - INFO  - End to restore the test environment.

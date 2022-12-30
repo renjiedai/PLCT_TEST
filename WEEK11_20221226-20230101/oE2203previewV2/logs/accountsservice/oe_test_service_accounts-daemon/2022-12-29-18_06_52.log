@@ -1,0 +1,15 @@
+Thu Dec 29 18:06:59 2022 - INFO  - Start environmental preparation.
+Thu Dec 29 18:08:14 2022 - INFO  - End of environmental preparation!
+Thu Dec 29 18:08:15 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-12-29 18:08:18 CST; 7s ago
+     Active: inactive (dead) since Thu 2022-12-29 18:08:26 CST; 6s ago
+     Active: active (running) since Thu 2022-12-29 18:08:34 CST; 6s ago
+find: ‘/etc/systemd/system/graphical.target.wants/accounts-daemon.service’: No such file or directory
+Created symlink /etc/systemd/system/graphical.target.wants/accounts-daemon.service → /usr/lib/systemd/system/accounts-daemon.service.
+/etc/systemd/system/graphical.target.wants/accounts-daemon.service
+Failed to reload accounts-daemon.service: Job type reload is not applicable for unit accounts-daemon.service.
+     Active: active (running) since Thu 2022-12-29 18:08:34 CST; 30s ago
+Thu Dec 29 18:09:05 2022 - INFO  - Finish test!
+Thu Dec 29 18:09:06 2022 - INFO  - succeed to execute the case.
+Thu Dec 29 18:09:08 2022 - INFO  - start environment cleanup.
+Thu Dec 29 18:09:50 2022 - INFO  - Finish environment cleanup!

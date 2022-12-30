@@ -1,0 +1,76 @@
+Thu Dec 29 22:30:08 2022 - INFO  - Start to prepare the database config.
+cp: cannot stat '/etc/clamd.conf': No such file or directory
+Thu Dec 29 22:31:49 2022 - INFO  - End to prepare the database config.
+Thu Dec 29 22:31:51 2022 - INFO  - Start to run test.
+ClamAV update process started at Thu Dec 29 22:31:52 2022
+WARNING: Your ClamAV installation is OUTDATED!
+WARNING: Local version: 0.103.6 Recommended version: 0.103.7
+DON'T PANIC! Read https://docs.clamav.net/manual/Installing.html
+daily database available for download (remote version: 26765)
+Testing database: '/var/lib/clamav/tmp.4cbb32757c/clamav-e0676b9677588494caf40c14aeac1df3.tmp-daily.cvd' ...
+Database test passed.
+daily.cvd updated (version: 26765, sigs: 2014567, f-level: 90, builder: raynman)
+main database available for download (remote version: 62)
+Testing database: '/var/lib/clamav/tmp.4cbb32757c/clamav-d15831ddbb9b824f91d624f09b292d5e.tmp-main.cvd' ...
+Database test passed.
+main.cvd updated (version: 62, sigs: 6647427, f-level: 90, builder: sigmgr)
+bytecode database available for download (remote version: 333)
+Testing database: '/var/lib/clamav/tmp.4cbb32757c/clamav-e0e74d405187673e07adb38a83cbf276.tmp-bytecode.cvd' ...
+Database test passed.
+bytecode.cvd updated (version: 333, sigs: 92, f-level: 63, builder: awillia2)
+oe_test_clamav_freshclam.sh: line 35: /usr/bin/freshclam: No such file or directory
+Thu Dec 29 22:39:32 2022 - ERROR - Execute freshclam --debug failed.
+Thu Dec 29 22:39:34 2022 - ERROR - oe_test_clamav_freshclam.sh line 36
+oe_test_clamav_freshclam.sh: line 37: /usr/bin/freshclam: No such file or directory
+Thu Dec 29 22:39:35 2022 - ERROR - Execute freshclam --quiet failed.
+Thu Dec 29 22:39:36 2022 - ERROR - oe_test_clamav_freshclam.sh line 38
+oe_test_clamav_freshclam.sh: line 39: /usr/bin/freshclam: No such file or directory
+Thu Dec 29 22:39:38 2022 - ERROR - Execute freshclam --no-warnings failed.
+Thu Dec 29 22:39:41 2022 - ERROR - oe_test_clamav_freshclam.sh line 40
+oe_test_clamav_freshclam.sh: line 41: /usr/bin/freshclam: No such file or directory
+Thu Dec 29 22:39:42 2022 - ERROR - Execute freshclam --show-progress failed.
+Thu Dec 29 22:39:44 2022 - ERROR - oe_test_clamav_freshclam.sh line 42
+oe_test_clamav_freshclam.sh: line 43: /usr/bin/freshclam: No such file or directory
+Thu Dec 29 22:39:46 2022 - ERROR - Execute freshclam -d -p pid_log failed.
+Thu Dec 29 22:39:48 2022 - ERROR - oe_test_clamav_freshclam.sh line 44
+oe_test_clamav_freshclam.sh: line 45: /usr/bin/freshclam: No such file or directory
+Thu Dec 29 22:39:50 2022 - ERROR - Execute freshclam -u root failed.
+Thu Dec 29 22:39:52 2022 - ERROR - oe_test_clamav_freshclam.sh line 46
+oe_test_clamav_freshclam.sh: line 47: /usr/bin/freshclam: No such file or directory
+Thu Dec 29 22:39:54 2022 - ERROR - Execute freshclam --no-dns failed.
+Thu Dec 29 22:39:56 2022 - ERROR - oe_test_clamav_freshclam.sh line 48
+oe_test_clamav_freshclam.sh: line 49: /usr/bin/freshclam: No such file or directory
+Thu Dec 29 22:39:58 2022 - ERROR - Execute freshclam -c 3 failed.
+Thu Dec 29 22:39:59 2022 - ERROR - oe_test_clamav_freshclam.sh line 50
+oe_test_clamav_freshclam.sh: line 51: /usr/bin/freshclam: No such file or directory
+Thu Dec 29 22:40:01 2022 - ERROR - Execute freshclam --datadir /opt failed.
+Thu Dec 29 22:40:03 2022 - ERROR - oe_test_clamav_freshclam.sh line 52
+oe_test_clamav_freshclam.sh: line 53: /usr/bin/freshclam: No such file or directory
+Thu Dec 29 22:40:05 2022 - ERROR - Execute freshclam --daemon-notify failed.
+Thu Dec 29 22:40:06 2022 - ERROR - oe_test_clamav_freshclam.sh line 54
+oe_test_clamav_freshclam.sh: line 55: /usr/bin/freshclam: No such file or directory
+Thu Dec 29 22:40:08 2022 - ERROR - Execute freshclam --update-db main -a localhost failed.
+Thu Dec 29 22:40:10 2022 - ERROR - oe_test_clamav_freshclam.sh line 56
+oe_test_clamav_freshclam.sh: line 59: /usr/bin/freshclam: No such file or directory
+Thu Dec 29 22:40:11 2022 - ERROR - Check freshclam --on-update-execute failed.
+Thu Dec 29 22:40:13 2022 - ERROR - oe_test_clamav_freshclam.sh line 60
+oe_test_clamav_freshclam.sh: line 61: /usr/bin/freshclam: No such file or directory
+Thu Dec 29 22:40:15 2022 - ERROR - Check freshclam --on-error-execute failed.
+Thu Dec 29 22:40:16 2022 - ERROR - oe_test_clamav_freshclam.sh line 62
+oe_test_clamav_freshclam.sh: line 63: /usr/bin/freshclam: No such file or directory
+Thu Dec 29 22:40:18 2022 - ERROR - Check freshclam --on-outdated-execute failed.
+Thu Dec 29 22:40:19 2022 - ERROR - oe_test_clamav_freshclam.sh line 64
+oe_test_clamav_freshclam.sh: line 66: /usr/bin/freshclam: No such file or directory
+Thu Dec 29 22:40:21 2022 - ERROR - Check freshclam version failed.
+Thu Dec 29 22:40:22 2022 - ERROR - oe_test_clamav_freshclam.sh line 67
+oe_test_clamav_freshclam.sh: line 68: /usr/bin/freshclam: No such file or directory
+Thu Dec 29 22:40:24 2022 - ERROR - Check freshclam help message failed.
+Thu Dec 29 22:40:26 2022 - ERROR - oe_test_clamav_freshclam.sh line 69
+oe_test_clamav_freshclam.sh: line 70: /usr/bin/freshclam: No such file or directory
+Thu Dec 29 22:40:27 2022 - ERROR - Check freshclam list mirrors failed.
+Thu Dec 29 22:40:29 2022 - ERROR - oe_test_clamav_freshclam.sh line 71
+Thu Dec 29 22:40:30 2022 - INFO  - End to run test.
+Thu Dec 29 22:40:32 2022 - ERROR - failed to execute the case.
+Thu Dec 29 22:40:34 2022 - INFO  - Start to restore the test environment.
+mv: cannot stat '/etc/clamd.conf.bak': No such file or directory
+Thu Dec 29 22:40:52 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,16 @@
+Thu Dec 29 19:40:09 2022 - INFO  - Start to prepare the test environment.
+Thu Dec 29 19:40:11 2022 - INFO  - End to prepare the test environment.
+Thu Dec 29 19:40:13 2022 - INFO  - Start to run test.
+oe_test_audit_rule_fetch_from_rule.sh: line 32: service: command not found
+oe_test_audit_rule_fetch_from_rule.sh: line 33: auditctl: command not found
+Thu Dec 29 19:40:15 2022 - ERROR - delete failed
+Thu Dec 29 19:40:17 2022 - ERROR - oe_test_audit_rule_fetch_from_rule.sh line 34
+oe_test_audit_rule_fetch_from_rule.sh: line 35: auditctl: command not found
+oe_test_audit_rule_fetch_from_rule.sh: line 36: auditctl: command not found
+Thu Dec 29 19:40:19 2022 - ERROR - grep failed
+Thu Dec 29 19:40:20 2022 - ERROR - oe_test_audit_rule_fetch_from_rule.sh line 37
+Thu Dec 29 19:40:22 2022 - INFO  - End to run test.
+Thu Dec 29 19:40:24 2022 - ERROR - failed to execute the case.
+Thu Dec 29 19:40:26 2022 - INFO  - Start to restore the test environment.
+oe_test_audit_rule_fetch_from_rule.sh: line 44: auditctl: command not found
+Thu Dec 29 19:40:28 2022 - INFO  - End to restore the test environment.
