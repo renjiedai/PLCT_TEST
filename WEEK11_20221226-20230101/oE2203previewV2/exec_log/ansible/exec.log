@@ -1,17 +1,16 @@
-Thu Dec 29 18:24:18 2022 - INFO  - start to run testcase:oe_test_ansible_01.
-Thu Dec 29 18:54:23 2022 - WARN  - The case execution timeout.
-Thu Dec 29 18:54:24 2022 - ERROR - The case exit by code 143.
-Thu Dec 29 18:54:26 2022 - INFO  - End to run testcase:oe_test_ansible_01.
-Thu Dec 29 18:54:28 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
-Thu Dec 29 18:54:37 2022 - INFO  - start to run testcase:oe_test_ansible_02.
-Thu Dec 29 19:02:35 2022 - ERROR - The case exit by code 2.
-Thu Dec 29 19:02:37 2022 - INFO  - End to run testcase:oe_test_ansible_02.
-Thu Dec 29 19:02:39 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
-Thu Dec 29 19:02:48 2022 - INFO  - start to run testcase:oe_test_ansible_03.
-Thu Dec 29 19:10:02 2022 - ERROR - The case exit by code 2.
-Thu Dec 29 19:10:03 2022 - INFO  - End to run testcase:oe_test_ansible_03.
-Thu Dec 29 19:10:04 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
-Thu Dec 29 19:10:11 2022 - INFO  - start to run testcase:oe_test_ansible_04.
-Thu Dec 29 19:18:17 2022 - ERROR - The case exit by code 4.
-Thu Dec 29 19:18:19 2022 - INFO  - End to run testcase:oe_test_ansible_04.
-Thu Dec 29 19:18:20 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Jan  5 20:18:20 2023 - INFO  - start to run testcase:oe_test_ansible_01.
+Thu Jan  5 20:42:21 2023 - ERROR - The case exit by code 1.
+Thu Jan  5 20:42:23 2023 - INFO  - End to run testcase:oe_test_ansible_01.
+Thu Jan  5 20:42:24 2023 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Jan  5 20:42:29 2023 - INFO  - start to run testcase:oe_test_ansible_02.
+Thu Jan  5 20:48:39 2023 - ERROR - The case exit by code 2.
+Thu Jan  5 20:48:40 2023 - INFO  - End to run testcase:oe_test_ansible_02.
+Thu Jan  5 20:48:41 2023 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Jan  5 20:48:48 2023 - INFO  - start to run testcase:oe_test_ansible_03.
+Thu Jan  5 20:55:44 2023 - ERROR - The case exit by code 2.
+Thu Jan  5 20:55:45 2023 - INFO  - End to run testcase:oe_test_ansible_03.
+Thu Jan  5 20:55:46 2023 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Thu Jan  5 20:55:53 2023 - INFO  - start to run testcase:oe_test_ansible_04.
+Thu Jan  5 21:02:42 2023 - ERROR - The case exit by code 4.
+Thu Jan  5 21:02:44 2023 - INFO  - End to run testcase:oe_test_ansible_04.
+Thu Jan  5 21:02:46 2023 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.

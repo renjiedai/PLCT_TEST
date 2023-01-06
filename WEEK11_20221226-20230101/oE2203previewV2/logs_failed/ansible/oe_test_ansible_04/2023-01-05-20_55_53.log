@@ -1,0 +1,296 @@
++ source ../common/common_lib.sh
+++ source /root/GitRepo/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/GitRepo/mugen-riscv/libs/locallibs/common_lib_python.sh
+++ main
++++ type -t post_test
+++ '[' -n '' ']'
+++ trap POST_TEST_DEFAULT EXIT INT HUP TERM
+++ rpm -qa
+++ grep expect
++++ type -t config_params
+++ '[' -n '' ']'
++++ type -t pre_test
+++ '[' -n '' ']'
++++ type -t run_test
+++ '[' -n '' ']'
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Thu Jan  5 20:55:59 2023 - INFO  - Start to prepare the test environment.
++ Pre_Test
++ DNF_INSTALL ansible
++ pkgs=ansible
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs ansible --node 1 --tempfile ''
++ tmpfile2=/tmp/tmp3xsvxamy
++ '[' -z '' ']'
++ tmpfile=/tmp/tmp3xsvxamy
++ sed -i '1i\${NODE2_IPV4}' /etc/ansible/hosts
++ expect
+spawn ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Created directory '/root/.ssh'.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa
+Your public key has been saved in /root/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:veN5+hqfSGsvj7tXFq9kckBzy/KNN4wEYHSUp5bvPeo root@openEuler-riscv64
+The key's randomart image is:
++---[RSA 3072]----+
+|        .+oo.    |
+|        . .oo..  |
+|           .=+ . |
+|         . +o.+  |
+|        S o o+o= |
+|           ..oOo+|
+|          = .B.o.|
+|         ooOoo.o |
+|         .@%BE. .|
++----[SHA256]-----+
++ expect
+spawn ssh-copy-id root@
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: ERROR: ssh: Could not resolve hostname : Name or service not known
+
+send: spawn id exp3 not open
+    while executing
+"send "yes\n""
++ echo ''
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Thu Jan  5 20:59:08 2023 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Thu Jan  5 20:59:09 2023 - INFO  - Start to run test.
++ ansible-inventory --help
++ grep Usage:
++ CHECK_RESULT 1 0 0 'Check ansible-inventory --help failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ansible-inventory --help failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ansible-inventory --help failed.'
++ LOG_ERROR 'Check ansible-inventory --help failed.'
++ message='Check ansible-inventory --help failed.'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ansible-inventory --help failed.'
+Thu Jan  5 20:59:19 2023 - ERROR - Check ansible-inventory --help failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ansible_04.sh line 28'
++ message='oe_test_ansible_04.sh line 28'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ansible_04.sh line 28'
+Thu Jan  5 20:59:20 2023 - ERROR - oe_test_ansible_04.sh line 28
++ return 0
++ ansible-inventory --version
++ grep ansible-inventory
+ansible-inventory 2.9.27
+  executable location = /usr/bin/ansible-inventory
++ CHECK_RESULT 0 0 0 'Check ansible-inventory --version failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ansible-inventory --version failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ expect
+spawn ansible-console
+exit
++ CHECK_RESULT 0 0 0 'Check ansible-console failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ansible-console failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ expect
+spawn ansible-console --ask-vault-pass
+
+exit
+Vault password: + CHECK_RESULT 0 0 0 'Check ansible-console --ask-vault-pass failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ansible-console --ask-vault-pass failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ expect
+spawn ansible-console --vault-password-file=/tmp/pass
+exit
++ CHECK_RESULT 0 0 0 'Check ansible-console --vault-password failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ansible-console --vault-password failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ansible-playbook --help
++ grep Usage:
++ CHECK_RESULT 1 0 0 'Check ansible-playbook --help failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ansible-playbook --help failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ansible-playbook --help failed.'
++ LOG_ERROR 'Check ansible-playbook --help failed.'
++ message='Check ansible-playbook --help failed.'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ansible-playbook --help failed.'
+Thu Jan  5 21:00:19 2023 - ERROR - Check ansible-playbook --help failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ansible_04.sh line 55'
++ message='oe_test_ansible_04.sh line 55'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ansible_04.sh line 55'
+Thu Jan  5 21:00:20 2023 - ERROR - oe_test_ansible_04.sh line 55
++ return 0
++ ansible-playbook --version
++ grep ansible-playbook
+ansible-playbook 2.9.27
+  executable location = /usr/bin/ansible-playbook
++ CHECK_RESULT 0 0 0 'Check ansible-playbook --version failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ansible-playbook --version failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ansible-pull --help
++ grep Usage:
++ CHECK_RESULT 1 0 0 'Check ansible-pull --help failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ansible-pull --help failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ansible-pull --help failed.'
++ LOG_ERROR 'Check ansible-pull --help failed.'
++ message='Check ansible-pull --help failed.'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ansible-pull --help failed.'
+Thu Jan  5 21:00:40 2023 - ERROR - Check ansible-pull --help failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ansible_04.sh line 59'
++ message='oe_test_ansible_04.sh line 59'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ansible_04.sh line 59'
+Thu Jan  5 21:00:41 2023 - ERROR - oe_test_ansible_04.sh line 59
++ return 0
++ ansible-pull --version
++ grep ansible-pull
+ansible-pull 2.9.27
+  executable location = /usr/bin/ansible-pull
++ CHECK_RESULT 0 0 0 'Check ansible-pull --version failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ansible-pull --version failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ansible-vault --help
++ grep Usage:
++ CHECK_RESULT 1 0 0 'Check ansible-vault --help failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ansible-vault --help failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ansible-vault --help failed.'
++ LOG_ERROR 'Check ansible-vault --help failed.'
++ message='Check ansible-vault --help failed.'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ansible-vault --help failed.'
+Thu Jan  5 21:00:58 2023 - ERROR - Check ansible-vault --help failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ansible_04.sh line 63'
++ message='oe_test_ansible_04.sh line 63'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ansible_04.sh line 63'
+Thu Jan  5 21:00:59 2023 - ERROR - oe_test_ansible_04.sh line 63
++ return 0
++ ansible-vault --version
++ grep ansible-vault
+ansible-vault 2.9.27
+  executable location = /usr/bin/ansible-vault
++ CHECK_RESULT 0 0 0 'Check ansible-vault --version failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ansible-vault --version failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Thu Jan  5 21:01:12 2023 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 4
++ test 4 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Thu Jan  5 21:01:13 2023 - ERROR - failed to execute the case.
++ exit 4
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Thu Jan  5 21:01:15 2023 - INFO  - Start to restore the test environment.
++ Post_Test
++ rm -rf /etc/ansible/hosts
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmp3xsvxamy ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmp3xsvxamy
++ '[' 0 -ne 0 ']'
++ rm -rf /root/.ssh
++ rm -rf /tmp/pass
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Thu Jan  5 21:02:40 2023 - INFO  - End to restore the test environment.

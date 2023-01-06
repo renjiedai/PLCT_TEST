@@ -7,6 +7,9 @@
     "cases": [
         {
             "name": "oe_test_tang_encrypt"
+        },
+        {
+            "name": "oe_test_tang_nbde"
         }
     ]
 }

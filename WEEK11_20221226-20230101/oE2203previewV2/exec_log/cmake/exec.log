@@ -1,32 +1,32 @@
-Thu Dec 29 20:39:07 2022 - INFO  - start to run testcase:oe_test_ccmake.
-Thu Dec 29 20:42:20 2022 - ERROR - The case exit by code 12.
-Thu Dec 29 20:42:22 2022 - INFO  - End to run testcase:oe_test_ccmake.
-Thu Dec 29 20:42:24 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
-Thu Dec 29 20:42:33 2022 - INFO  - start to run testcase:oe_test_ccmake3.
-Thu Dec 29 20:46:12 2022 - ERROR - The case exit by code 12.
-Thu Dec 29 20:46:14 2022 - INFO  - End to run testcase:oe_test_ccmake3.
-Thu Dec 29 20:46:15 2022 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
-Thu Dec 29 20:46:23 2022 - INFO  - start to run testcase:oe_test_cmake.
-Thu Dec 29 20:52:20 2022 - INFO  - The case exit by code 0.
-Thu Dec 29 20:52:23 2022 - INFO  - End to run testcase:oe_test_cmake.
-Thu Dec 29 20:52:25 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
-Thu Dec 29 20:52:33 2022 - INFO  - start to run testcase:oe_test_cmake3.
-Thu Dec 29 20:57:50 2022 - INFO  - The case exit by code 0.
-Thu Dec 29 20:57:52 2022 - INFO  - End to run testcase:oe_test_cmake3.
-Thu Dec 29 20:57:54 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
-Thu Dec 29 20:58:02 2022 - INFO  - start to run testcase:oe_test_cpack.
-Thu Dec 29 21:01:53 2022 - INFO  - The case exit by code 0.
-Thu Dec 29 21:01:56 2022 - INFO  - End to run testcase:oe_test_cpack.
-Thu Dec 29 21:01:57 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
-Thu Dec 29 21:02:05 2022 - INFO  - start to run testcase:oe_test_cpack3.
-Thu Dec 29 21:06:03 2022 - INFO  - The case exit by code 0.
-Thu Dec 29 21:06:05 2022 - INFO  - End to run testcase:oe_test_cpack3.
-Thu Dec 29 21:06:06 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
-Thu Dec 29 21:06:15 2022 - INFO  - start to run testcase:oe_test_ctest.
-Thu Dec 29 21:09:52 2022 - INFO  - The case exit by code 0.
-Thu Dec 29 21:09:54 2022 - INFO  - End to run testcase:oe_test_ctest.
-Thu Dec 29 21:09:55 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
-Thu Dec 29 21:10:03 2022 - INFO  - start to run testcase:oe_test_ctest3.
-Thu Dec 29 21:13:36 2022 - INFO  - The case exit by code 0.
-Thu Dec 29 21:13:38 2022 - INFO  - End to run testcase:oe_test_ctest3.
-Thu Dec 29 21:13:39 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Fri Jan  6 00:30:01 2023 - INFO  - start to run testcase:oe_test_ccmake.
+Fri Jan  6 00:32:18 2023 - ERROR - The case exit by code 12.
+Fri Jan  6 00:32:19 2023 - INFO  - End to run testcase:oe_test_ccmake.
+Fri Jan  6 00:32:20 2023 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Fri Jan  6 00:32:26 2023 - INFO  - start to run testcase:oe_test_ccmake3.
+Fri Jan  6 00:34:35 2023 - ERROR - The case exit by code 12.
+Fri Jan  6 00:34:36 2023 - INFO  - End to run testcase:oe_test_ccmake3.
+Fri Jan  6 00:34:37 2023 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Fri Jan  6 00:34:43 2023 - INFO  - start to run testcase:oe_test_cmake.
+Fri Jan  6 00:38:08 2023 - INFO  - The case exit by code 0.
+Fri Jan  6 00:38:09 2023 - INFO  - End to run testcase:oe_test_cmake.
+Fri Jan  6 00:38:10 2023 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Fri Jan  6 00:38:15 2023 - INFO  - start to run testcase:oe_test_cmake3.
+Fri Jan  6 00:41:35 2023 - INFO  - The case exit by code 0.
+Fri Jan  6 00:41:36 2023 - INFO  - End to run testcase:oe_test_cmake3.
+Fri Jan  6 00:41:37 2023 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Fri Jan  6 00:41:42 2023 - INFO  - start to run testcase:oe_test_cpack.
+Fri Jan  6 00:44:20 2023 - INFO  - The case exit by code 0.
+Fri Jan  6 00:44:21 2023 - INFO  - End to run testcase:oe_test_cpack.
+Fri Jan  6 00:44:22 2023 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Fri Jan  6 00:44:27 2023 - INFO  - start to run testcase:oe_test_cpack3.
+Fri Jan  6 00:47:18 2023 - INFO  - The case exit by code 0.
+Fri Jan  6 00:47:19 2023 - INFO  - End to run testcase:oe_test_cpack3.
+Fri Jan  6 00:47:20 2023 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Fri Jan  6 00:47:25 2023 - INFO  - start to run testcase:oe_test_ctest.
+Fri Jan  6 00:49:45 2023 - INFO  - The case exit by code 0.
+Fri Jan  6 00:49:46 2023 - INFO  - End to run testcase:oe_test_ctest.
+Fri Jan  6 00:49:47 2023 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Fri Jan  6 00:49:53 2023 - INFO  - start to run testcase:oe_test_ctest3.
+Fri Jan  6 00:52:35 2023 - INFO  - The case exit by code 0.
+Fri Jan  6 00:52:36 2023 - INFO  - End to run testcase:oe_test_ctest3.
+Fri Jan  6 00:52:37 2023 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.

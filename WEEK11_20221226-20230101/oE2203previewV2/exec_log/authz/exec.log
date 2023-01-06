@@ -1,4 +1,4 @@
-Thu Dec 29 19:12:25 2022 - INFO  - start to run testcase:oe_test_service_authz.
-Thu Dec 29 19:14:44 2022 - INFO  - The case exit by code 0.
-Thu Dec 29 19:14:46 2022 - INFO  - End to run testcase:oe_test_service_authz.
-Thu Dec 29 19:14:47 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Thu Jan  5 21:29:32 2023 - INFO  - start to run testcase:oe_test_service_authz.
+Thu Jan  5 21:31:26 2023 - INFO  - The case exit by code 0.
+Thu Jan  5 21:31:27 2023 - INFO  - End to run testcase:oe_test_service_authz.
+Thu Jan  5 21:31:28 2023 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.

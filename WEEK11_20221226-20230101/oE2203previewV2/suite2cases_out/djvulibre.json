@@ -2,9 +2,6 @@
     "path": "$OET_PATH/testcases/cli-test/djvulibre",
     "cases": [
         {
-            "name": "oe_test_djvulibre_01"
-        },
-        {
             "name": "oe_test_djvulibre_02"
         },
         {

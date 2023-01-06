@@ -1,20 +1,20 @@
-Thu Dec 29 22:53:31 2022 - INFO  - start to run testcase:oe_test_djvulibre_01.
-Thu Dec 29 22:57:46 2022 - INFO  - The case exit by code 0.
-Thu Dec 29 22:57:48 2022 - INFO  - End to run testcase:oe_test_djvulibre_01.
-Thu Dec 29 22:57:50 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
-Thu Dec 29 22:57:58 2022 - INFO  - start to run testcase:oe_test_djvulibre_02.
-Thu Dec 29 23:01:59 2022 - INFO  - The case exit by code 0.
-Thu Dec 29 23:02:01 2022 - INFO  - End to run testcase:oe_test_djvulibre_02.
-Thu Dec 29 23:02:02 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
-Thu Dec 29 23:02:11 2022 - INFO  - start to run testcase:oe_test_djvulibre_03.
-Thu Dec 29 23:04:44 2022 - INFO  - The case exit by code 0.
-Thu Dec 29 23:04:45 2022 - INFO  - End to run testcase:oe_test_djvulibre_03.
-Thu Dec 29 23:04:47 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
-Thu Dec 29 23:04:55 2022 - INFO  - start to run testcase:oe_test_djvulibre_04.
-Thu Dec 29 23:07:11 2022 - INFO  - The case exit by code 0.
-Thu Dec 29 23:07:13 2022 - INFO  - End to run testcase:oe_test_djvulibre_04.
-Thu Dec 29 23:07:14 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
-Thu Dec 29 23:07:23 2022 - INFO  - start to run testcase:oe_test_djvulibre_05.
-Thu Dec 29 23:09:33 2022 - INFO  - The case exit by code 0.
-Thu Dec 29 23:09:35 2022 - INFO  - End to run testcase:oe_test_djvulibre_05.
-Thu Dec 29 23:09:36 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Fri Jan  6 02:30:44 2023 - INFO  - start to run testcase:oe_test_djvulibre_01.
+Fri Jan  6 02:33:36 2023 - ERROR - The case exit by code 1.
+Fri Jan  6 02:33:37 2023 - INFO  - End to run testcase:oe_test_djvulibre_01.
+Fri Jan  6 02:33:38 2023 - INFO  - A total of 1 use cases were executed, with 0 successes and 1 failures.
+Fri Jan  6 02:33:43 2023 - INFO  - start to run testcase:oe_test_djvulibre_02.
+Fri Jan  6 02:36:19 2023 - INFO  - The case exit by code 0.
+Fri Jan  6 02:36:20 2023 - INFO  - End to run testcase:oe_test_djvulibre_02.
+Fri Jan  6 02:36:21 2023 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Fri Jan  6 02:36:27 2023 - INFO  - start to run testcase:oe_test_djvulibre_03.
+Fri Jan  6 02:37:55 2023 - INFO  - The case exit by code 0.
+Fri Jan  6 02:37:56 2023 - INFO  - End to run testcase:oe_test_djvulibre_03.
+Fri Jan  6 02:37:57 2023 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Fri Jan  6 02:38:03 2023 - INFO  - start to run testcase:oe_test_djvulibre_04.
+Fri Jan  6 02:39:39 2023 - INFO  - The case exit by code 0.
+Fri Jan  6 02:39:40 2023 - INFO  - End to run testcase:oe_test_djvulibre_04.
+Fri Jan  6 02:39:41 2023 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Fri Jan  6 02:39:47 2023 - INFO  - start to run testcase:oe_test_djvulibre_05.
+Fri Jan  6 02:41:14 2023 - INFO  - The case exit by code 0.
+Fri Jan  6 02:41:16 2023 - INFO  - End to run testcase:oe_test_djvulibre_05.
+Fri Jan  6 02:41:17 2023 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.

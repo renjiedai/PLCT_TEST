@@ -20,7 +20,7 @@
             "name": "oe_test_clamav_clamdscan_service"
         },
         {
-            "name": "oe_test_clamav_clamsubmit"
+            "name": "oe_test_clamav_freshclam"
         },
         {
             "name": "oe_test_clamav_sigtool_1"

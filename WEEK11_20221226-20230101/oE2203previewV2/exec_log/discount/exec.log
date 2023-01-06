@@ -1,20 +1,20 @@
-Thu Dec 29 22:53:20 2022 - INFO  - start to run testcase:oe_test_discount_markdown_01.
-Thu Dec 29 22:55:11 2022 - INFO  - The case exit by code 0.
-Thu Dec 29 22:55:12 2022 - INFO  - End to run testcase:oe_test_discount_markdown_01.
-Thu Dec 29 22:55:14 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
-Thu Dec 29 22:55:23 2022 - INFO  - start to run testcase:oe_test_discount_markdown_02.
-Thu Dec 29 22:57:08 2022 - INFO  - The case exit by code 0.
-Thu Dec 29 22:57:10 2022 - INFO  - End to run testcase:oe_test_discount_markdown_02.
-Thu Dec 29 22:57:11 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
-Thu Dec 29 22:57:19 2022 - INFO  - start to run testcase:oe_test_discount-makepage_01.
-Thu Dec 29 22:59:08 2022 - INFO  - The case exit by code 0.
-Thu Dec 29 22:59:10 2022 - INFO  - End to run testcase:oe_test_discount-makepage_01.
-Thu Dec 29 22:59:12 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
-Thu Dec 29 22:59:20 2022 - INFO  - start to run testcase:oe_test_discount-mkd2html_01.
-Thu Dec 29 23:01:09 2022 - INFO  - The case exit by code 0.
-Thu Dec 29 23:01:10 2022 - INFO  - End to run testcase:oe_test_discount-mkd2html_01.
-Thu Dec 29 23:01:11 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
-Thu Dec 29 23:01:18 2022 - INFO  - start to run testcase:oe_test_discount-theme_01.
-Thu Dec 29 23:03:05 2022 - INFO  - The case exit by code 0.
-Thu Dec 29 23:03:07 2022 - INFO  - End to run testcase:oe_test_discount-theme_01.
-Thu Dec 29 23:03:08 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Fri Jan  6 02:28:48 2023 - INFO  - start to run testcase:oe_test_discount_markdown_01.
+Fri Jan  6 02:30:00 2023 - INFO  - The case exit by code 0.
+Fri Jan  6 02:30:02 2023 - INFO  - End to run testcase:oe_test_discount_markdown_01.
+Fri Jan  6 02:30:03 2023 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Fri Jan  6 02:30:09 2023 - INFO  - start to run testcase:oe_test_discount_markdown_02.
+Fri Jan  6 02:31:23 2023 - INFO  - The case exit by code 0.
+Fri Jan  6 02:31:24 2023 - INFO  - End to run testcase:oe_test_discount_markdown_02.
+Fri Jan  6 02:31:25 2023 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Fri Jan  6 02:31:30 2023 - INFO  - start to run testcase:oe_test_discount-makepage_01.
+Fri Jan  6 02:32:36 2023 - INFO  - The case exit by code 0.
+Fri Jan  6 02:32:37 2023 - INFO  - End to run testcase:oe_test_discount-makepage_01.
+Fri Jan  6 02:32:38 2023 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Fri Jan  6 02:32:43 2023 - INFO  - start to run testcase:oe_test_discount-mkd2html_01.
+Fri Jan  6 02:33:48 2023 - INFO  - The case exit by code 0.
+Fri Jan  6 02:33:49 2023 - INFO  - End to run testcase:oe_test_discount-mkd2html_01.
+Fri Jan  6 02:33:50 2023 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Fri Jan  6 02:33:55 2023 - INFO  - start to run testcase:oe_test_discount-theme_01.
+Fri Jan  6 02:35:02 2023 - INFO  - The case exit by code 0.
+Fri Jan  6 02:35:03 2023 - INFO  - End to run testcase:oe_test_discount-theme_01.
+Fri Jan  6 02:35:04 2023 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
